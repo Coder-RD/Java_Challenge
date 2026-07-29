@@ -1,0 +1,136 @@
+# ☕ 100 Days of Java Challenge
+
+Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
+
+This repository contains my daily Java programming solutions from **HackerRank**, where I practice core Java concepts to improve my programming, problem-solving, and coding skills.
+
+---
+
+## 🎯 Goal
+
+- 💻 Practice Java programming every day for 100 days.
+- 📚 Build a strong foundation in Core Java.
+- 🧠 Improve problem-solving and logical thinking.
+- 🚀 Stay consistent with the **#100DaysOfCode** challenge.
+- 🌱 Become a better Java developer through daily practice.
+
+---
+
+## 🛠️ Platform
+
+- 💻 **HackerRank**
+- ☕ **Java (Core Java)**
+
+---
+
+## 📂 Repository Structure
+
+```text
+Java_Challenge/
+│
+├── Day-1/
+│   ├── Java Stdin and Stdout I.java
+│   └── Screenshot.png
+│
+├── Day-2/
+│   ├── Java Datatypes.java
+│   └── Screenshot.png
+│
+├── Day-3/
+│   ├── Welcome to Java!.java
+│   └── Screenshot (183).png
+│
+└── README.md
+```
+
+---
+
+## ✅ Progress
+
+| Day | Challenge | Status |
+|------|-----------|--------|
+| Day 1 | Java Stdin and Stdout I | ✅ Completed |
+| Day 2 | Java Datatypes | ✅ Completed |
+| Day 3 | Welcome to Java! | ✅ Completed |
+| Day 4 | Coming Soon | ⏳ |
+| Day 5 | Coming Soon | ⏳ |
+| ... | ... | ... |
+| Day 100 | Coming Soon | ⏳ |
+
+---
+
+## 📖 Topics Covered
+
+- ✅ Java Basics
+- ✅ Standard Input & Output
+- ✅ Variables
+- ✅ Primitive Data Types
+- ✅ Data Type Ranges
+- ✅ Printing Output
+- ✅ Java Syntax
+- ✅ Basic Problem Solving
+
+🔜 More Java concepts will be added throughout this challenge.
+
+---
+
+## 🧠 Skills I'm Building
+
+- ☕ Core Java
+- 💻 Programming Fundamentals
+- 🧩 Problem Solving
+- 🧠 Logical Thinking
+- ⚡ Clean Coding
+- 🔍 Debugging
+- 📚 Object-Oriented Programming (Coming Soon)
+- 🚀 Java Development
+
+---
+
+## 📅 Challenge Progress
+
+- ✅ Day 1 Completed
+- ✅ Day 2 Completed
+- ✅ Day 3 Completed
+- ⏳ Continuing every day...
+
+---
+
+## 🎯 Why This Repository?
+
+This repository documents my Java learning journey and showcases my daily progress while solving coding challenges. It serves as a record of my growth in Java programming and demonstrates my commitment to continuous learning.
+
+---
+
+## 🌟 Future Topics
+
+- 🔹 Operators
+- 🔹 Conditional Statements
+- 🔹 Loops
+- 🔹 Methods
+- 🔹 Arrays
+- 🔹 Strings
+- 🔹 Object-Oriented Programming
+- 🔹 Exception Handling
+- 🔹 Collections Framework
+- 🔹 File Handling
+- 🔹 Multithreading
+- 🔹 Java 8 Features
+
+---
+
+## ⭐ Support
+
+If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
+
+Your support motivates me to continue learning and sharing my journey! 🚀
+
+---
+
+## 🤝 Connect With Me
+
+Let's learn, code, and grow together! 🌱
+
+### 🔖 Hashtags
+
+**#100DaysOfCode #Java #CoreJava #HackerRank #CodingChallenge #Programming #DeveloperJourney #LearningInPublic #GitHub #JavaDeveloper #OpenToWork**
