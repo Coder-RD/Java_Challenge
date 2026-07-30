@@ -2,28 +2,28 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository contains my daily Java programming solutions from **HackerRank**, where I practice core Java concepts to improve my programming, problem-solving, and coding skills.
+This repository contains my daily Java programming solutions from **HackerRank**, where I practice Core Java concepts to strengthen my programming, problem-solving, and logical thinking skills.
 
 ---
 
-## 🎯 Goal
+# 🎯 Goal
 
 - 💻 Practice Java programming every day for 100 days.
 - 📚 Build a strong foundation in Core Java.
 - 🧠 Improve problem-solving and logical thinking.
-- 🚀 Stay consistent with the **#100DaysOfCode** challenge.
+- 🚀 Stay consistent with the #100DaysOfCode challenge.
 - 🌱 Become a better Java developer through daily practice.
 
 ---
 
-## 🛠️ Platform
+# 🛠️ Platform
 
-- 💻 **HackerRank**
-- ☕ **Java (Core Java)**
+- 💻 HackerRank
+- ☕ Core Java
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```text
 Java_Challenge/
@@ -40,26 +40,30 @@ Java_Challenge/
 │   ├── Welcome to Java!.java
 │   └── Screenshot (183).png
 │
+├── Day-4/
+│   ├── Java Stdin and Stdout II.java
+│   └── Screenshot (185).png
+│
 └── README.md
 ```
 
 ---
 
-## ✅ Progress
+# ✅ Progress
 
 | Day | Challenge | Status |
 |------|-----------|--------|
-| Day 1 | Java Stdin and Stdout I | ✅ Completed |
-| Day 2 | Java Datatypes | ✅ Completed |
-| Day 3 | Welcome to Java! | ✅ Completed |
-| Day 4 | Coming Soon | ⏳ |
-| Day 5 | Coming Soon | ⏳ |
+| ✅ Day 1 | Java Stdin and Stdout I | Completed |
+| ✅ Day 2 | Java Datatypes | Completed |
+| ✅ Day 3 | Welcome to Java! | Completed |
+| ✅ Day 4 | Java Stdin and Stdout II | Completed |
+| ⏳ Day 5 | Coming Soon | Pending |
 | ... | ... | ... |
-| Day 100 | Coming Soon | ⏳ |
+| 🎯 Day 100 | Coming Soon | Pending |
 
 ---
 
-## 📖 Topics Covered
+# 📖 Topics Covered
 
 - ✅ Java Basics
 - ✅ Standard Input & Output
@@ -68,13 +72,19 @@ Java_Challenge/
 - ✅ Data Type Ranges
 - ✅ Printing Output
 - ✅ Java Syntax
+- ✅ Scanner Class
+- ✅ nextInt()
+- ✅ nextDouble()
+- ✅ nextLine()
+- ✅ Input Buffer Handling
+- ✅ String Input
 - ✅ Basic Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
 
 ---
 
-## 🧠 Skills I'm Building
+# 🧠 Skills I'm Building
 
 - ☕ Core Java
 - 💻 Programming Fundamentals
@@ -87,22 +97,25 @@ Java_Challenge/
 
 ---
 
-## 📅 Challenge Progress
+# 📅 Challenge Progress
 
 - ✅ Day 1 Completed
 - ✅ Day 2 Completed
 - ✅ Day 3 Completed
+- ✅ Day 4 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-## 🎯 Why This Repository?
+# 🎯 Why This Repository?
 
-This repository documents my Java learning journey and showcases my daily progress while solving coding challenges. It serves as a record of my growth in Java programming and demonstrates my commitment to continuous learning.
+This repository documents my Java learning journey and showcases my daily progress while solving coding challenges.
+
+It serves as a record of my growth in Java programming, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
 
 ---
 
-## 🌟 Future Topics
+# 🌟 Future Topics
 
 - 🔹 Operators
 - 🔹 Conditional Statements
@@ -110,16 +123,29 @@ This repository documents my Java learning journey and showcases my daily progre
 - 🔹 Methods
 - 🔹 Arrays
 - 🔹 Strings
+- 🔹 Functions
 - 🔹 Object-Oriented Programming
 - 🔹 Exception Handling
 - 🔹 Collections Framework
+- 🔹 Generics
 - 🔹 File Handling
 - 🔹 Multithreading
 - 🔹 Java 8 Features
+- 🔹 Streams API
+- 🔹 Lambda Expressions
 
 ---
 
-## ⭐ Support
+# 📈 Current Statistics
+
+- 📅 Days Completed: **4 / 100**
+- 💻 Challenges Solved: **4**
+- ☕ Language: **Java**
+- 🎯 Progress: **4% Complete**
+
+---
+
+# ⭐ Support
 
 If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
 
@@ -127,10 +153,14 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 
 ---
 
-## 🤝 Connect With Me
+# 🤝 Connect With Me
 
 Let's learn, code, and grow together! 🌱
 
-### 🔖 Hashtags
+📌 **GitHub:** https://github.com/Coder-RD
 
-**#100DaysOfCode #Java #CoreJava #HackerRank #CodingChallenge #Programming #DeveloperJourney #LearningInPublic #GitHub #JavaDeveloper #OpenToWork**
+---
+
+# 🔖 Hashtags
+
+`#100DaysOfCode` `#Java` `#CoreJava` `#HackerRank` `#CodingChallenge` `#Programming` `#DeveloperJourney` `#LearningInPublic` `#GitHub` `#JavaDeveloper` `#OpenToWork`
