@@ -44,6 +44,10 @@ Java_Challenge/
 │   ├── Java Stdin and Stdout II.java
 │   └── Screenshot (185).png
 │
+├── Day-5/
+│   ├── Java If-Else.java
+│   └── Screenshot (187).png
+│
 └── README.md
 ```
 
@@ -57,7 +61,8 @@ Java_Challenge/
 | ✅ Day 2 | Java Datatypes | Completed |
 | ✅ Day 3 | Welcome to Java! | Completed |
 | ✅ Day 4 | Java Stdin and Stdout II | Completed |
-| ⏳ Day 5 | Coming Soon | Pending |
+| ✅ Day 5 | Java If-Else | Completed |
+| ⏳ Day 6 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -78,6 +83,8 @@ Java_Challenge/
 - ✅ nextLine()
 - ✅ Input Buffer Handling
 - ✅ String Input
+- ✅ Conditional Statements (if-else)
+- ✅ Decision Making
 - ✅ Basic Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
@@ -92,6 +99,7 @@ Java_Challenge/
 - 🧠 Logical Thinking
 - ⚡ Clean Coding
 - 🔍 Debugging
+- 🎯 Conditional Logic
 - 📚 Object-Oriented Programming (Coming Soon)
 - 🚀 Java Development
 
@@ -102,7 +110,8 @@ Java_Challenge/
 - ✅ Day 1 Completed
 - ✅ Day 2 Completed
 - ✅ Day 3 Completed
-- ✅ Day 4 Completed 🎉
+- ✅ Day 4 Completed
+- ✅ Day 5 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -118,7 +127,6 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 # 🌟 Future Topics
 
 - 🔹 Operators
-- 🔹 Conditional Statements
 - 🔹 Loops
 - 🔹 Methods
 - 🔹 Arrays
@@ -138,10 +146,10 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **4 / 100**
-- 💻 Challenges Solved: **4**
+- 📅 Days Completed: **5 / 100**
+- 💻 Challenges Solved: **5**
 - ☕ Language: **Java**
-- 🎯 Progress: **4% Complete**
+- 🎯 Progress: **5% Complete** 🚀
 
 ---
 
