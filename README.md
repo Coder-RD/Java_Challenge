@@ -48,6 +48,10 @@ Java_Challenge/
 │   ├── Java If-Else.java
 │   └── Screenshot (187).png
 │
+├── Day-6/
+│   ├── Java Output Formatting.java
+│   └── Screenshot (190).png
+│
 └── README.md
 ```
 
@@ -62,7 +66,8 @@ Java_Challenge/
 | ✅ Day 3 | Welcome to Java! | Completed |
 | ✅ Day 4 | Java Stdin and Stdout II | Completed |
 | ✅ Day 5 | Java If-Else | Completed |
-| ⏳ Day 6 | Coming Soon | Pending |
+| ✅ Day 6 | Java Output Formatting | Completed |
+| ⏳ Day 7 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -85,6 +90,10 @@ Java_Challenge/
 - ✅ String Input
 - ✅ Conditional Statements (if-else)
 - ✅ Decision Making
+- ✅ Output Formatting
+- ✅ System.out.printf()
+- ✅ String Formatting
+- ✅ Field Width & Left Alignment
 - ✅ Basic Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
@@ -100,6 +109,7 @@ Java_Challenge/
 - ⚡ Clean Coding
 - 🔍 Debugging
 - 🎯 Conditional Logic
+- 📄 Output Formatting
 - 📚 Object-Oriented Programming (Coming Soon)
 - 🚀 Java Development
 
@@ -111,7 +121,8 @@ Java_Challenge/
 - ✅ Day 2 Completed
 - ✅ Day 3 Completed
 - ✅ Day 4 Completed
-- ✅ Day 5 Completed 🎉
+- ✅ Day 5 Completed
+- ✅ Day 6 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -146,10 +157,10 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **5 / 100**
-- 💻 Challenges Solved: **5**
+- 📅 Days Completed: **6 / 100**
+- 💻 Challenges Solved: **6**
 - ☕ Language: **Java**
-- 🎯 Progress: **5% Complete** 🚀
+- 🎯 Progress: **6% Complete** 🚀
 
 ---
 
