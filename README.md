@@ -52,6 +52,10 @@ Java_Challenge/
 │   ├── Java Output Formatting.java
 │   └── Screenshot (190).png
 │
+├── Day-7/
+│   ├── Java Loops I.java
+│   └── Screenshot (192).png
+│
 └── README.md
 ```
 
@@ -67,7 +71,8 @@ Java_Challenge/
 | ✅ Day 4 | Java Stdin and Stdout II | Completed |
 | ✅ Day 5 | Java If-Else | Completed |
 | ✅ Day 6 | Java Output Formatting | Completed |
-| ⏳ Day 7 | Coming Soon | Pending |
+| ✅ Day 7 | Java Loops I | Completed |
+| ⏳ Day 8 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -94,6 +99,9 @@ Java_Challenge/
 - ✅ System.out.printf()
 - ✅ String Formatting
 - ✅ Field Width & Left Alignment
+- ✅ Loops (`for`)
+- ✅ Iteration
+- ✅ Multiplication Table
 - ✅ Basic Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
@@ -109,6 +117,7 @@ Java_Challenge/
 - ⚡ Clean Coding
 - 🔍 Debugging
 - 🎯 Conditional Logic
+- 🔁 Loops & Iteration
 - 📄 Output Formatting
 - 📚 Object-Oriented Programming (Coming Soon)
 - 🚀 Java Development
@@ -122,7 +131,8 @@ Java_Challenge/
 - ✅ Day 3 Completed
 - ✅ Day 4 Completed
 - ✅ Day 5 Completed
-- ✅ Day 6 Completed 🎉
+- ✅ Day 6 Completed
+- ✅ Day 7 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -138,7 +148,6 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 # 🌟 Future Topics
 
 - 🔹 Operators
-- 🔹 Loops
 - 🔹 Methods
 - 🔹 Arrays
 - 🔹 Strings
@@ -157,10 +166,10 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **6 / 100**
-- 💻 Challenges Solved: **6**
+- 📅 Days Completed: **7 / 100**
+- 💻 Challenges Solved: **7**
 - ☕ Language: **Java**
-- 🎯 Progress: **6% Complete** 🚀
+- 🎯 Progress: **7% Complete** 🚀
 
 ---
 
