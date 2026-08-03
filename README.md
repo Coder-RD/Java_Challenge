@@ -11,7 +11,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 💻 Practice Java programming every day for 100 days.
 - 📚 Build a strong foundation in Core Java.
 - 🧠 Improve problem-solving and logical thinking.
-- 🚀 Stay consistent with the #100DaysOfCode challenge.
+- 🚀 Stay consistent with the **#100DaysOfCode** challenge.
 - 🌱 Become a better Java developer through daily practice.
 
 ---
@@ -56,6 +56,10 @@ Java_Challenge/
 │   ├── Java Loops I.java
 │   └── Screenshot (192).png
 │
+├── Day-8/
+│   ├── Java Loops II.java
+│   └── Screenshot (200).png
+│
 └── README.md
 ```
 
@@ -72,7 +76,8 @@ Java_Challenge/
 | ✅ Day 5 | Java If-Else | Completed |
 | ✅ Day 6 | Java Output Formatting | Completed |
 | ✅ Day 7 | Java Loops I | Completed |
-| ⏳ Day 8 | Coming Soon | Pending |
+| ✅ Day 8 | Java Loops II | Completed |
+| ⏳ Day 9 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -100,8 +105,11 @@ Java_Challenge/
 - ✅ String Formatting
 - ✅ Field Width & Left Alignment
 - ✅ Loops (`for`)
-- ✅ Iteration
-- ✅ Multiplication Table
+- ✅ Nested Loops
+- ✅ Series Generation
+- ✅ Bitwise Left Shift (`<<`)
+- ✅ Mathematical Expressions
+- ✅ Pattern-Based Problem Solving
 - ✅ Basic Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
@@ -119,6 +127,8 @@ Java_Challenge/
 - 🎯 Conditional Logic
 - 🔁 Loops & Iteration
 - 📄 Output Formatting
+- ➗ Mathematical Computation
+- ⚙️ Bitwise Operations
 - 📚 Object-Oriented Programming (Coming Soon)
 - 🚀 Java Development
 
@@ -132,14 +142,15 @@ Java_Challenge/
 - ✅ Day 4 Completed
 - ✅ Day 5 Completed
 - ✅ Day 6 Completed
-- ✅ Day 7 Completed 🎉
+- ✅ Day 7 Completed
+- ✅ Day 8 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
 # 🎯 Why This Repository?
 
-This repository documents my Java learning journey and showcases my daily progress while solving coding challenges.
+This repository documents my Java learning journey and showcases my daily progress while solving HackerRank coding challenges.
 
 It serves as a record of my growth in Java programming, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
 
@@ -152,7 +163,7 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 - 🔹 Arrays
 - 🔹 Strings
 - 🔹 Functions
-- 🔹 Object-Oriented Programming
+- 🔹 Object-Oriented Programming (OOP)
 - 🔹 Exception Handling
 - 🔹 Collections Framework
 - 🔹 Generics
@@ -161,15 +172,17 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 - 🔹 Java 8 Features
 - 🔹 Streams API
 - 🔹 Lambda Expressions
+- 🔹 JDBC
+- 🔹 Java Collections
 
 ---
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **7 / 100**
-- 💻 Challenges Solved: **7**
+- 📅 Days Completed: **8 / 100**
+- 💻 Challenges Solved: **8**
 - ☕ Language: **Java**
-- 🎯 Progress: **7% Complete** 🚀
+- 🎯 Progress: **8% Complete** 🚀
 
 ---
 
