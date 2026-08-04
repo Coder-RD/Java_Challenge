@@ -60,6 +60,10 @@ Java_Challenge/
 │   ├── Java Loops II.java
 │   └── Screenshot (200).png
 │
+├── Day-9/
+│   ├── Java End-of-file.java
+│   └── Screenshot (202).png
+│
 └── README.md
 ```
 
@@ -77,7 +81,8 @@ Java_Challenge/
 | ✅ Day 6 | Java Output Formatting | Completed |
 | ✅ Day 7 | Java Loops I | Completed |
 | ✅ Day 8 | Java Loops II | Completed |
-| ⏳ Day 9 | Coming Soon | Pending |
+| ✅ Day 9 | Java End-of-file | Completed |
+| ⏳ Day 10 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -96,6 +101,8 @@ Java_Challenge/
 - ✅ nextInt()
 - ✅ nextDouble()
 - ✅ nextLine()
+- ✅ hasNextLine()
+- ✅ End-of-File (EOF)
 - ✅ Input Buffer Handling
 - ✅ String Input
 - ✅ Conditional Statements (if-else)
@@ -127,6 +134,8 @@ Java_Challenge/
 - 🎯 Conditional Logic
 - 🔁 Loops & Iteration
 - 📄 Output Formatting
+- 📥 Input Handling
+- 📑 File Input Concepts (EOF)
 - ➗ Mathematical Computation
 - ⚙️ Bitwise Operations
 - 📚 Object-Oriented Programming (Coming Soon)
@@ -143,7 +152,8 @@ Java_Challenge/
 - ✅ Day 5 Completed
 - ✅ Day 6 Completed
 - ✅ Day 7 Completed
-- ✅ Day 8 Completed 🎉
+- ✅ Day 8 Completed
+- ✅ Day 9 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -179,10 +189,10 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **8 / 100**
-- 💻 Challenges Solved: **8**
+- 📅 Days Completed: **9 / 100**
+- 💻 Challenges Solved: **9**
 - ☕ Language: **Java**
-- 🎯 Progress: **8% Complete** 🚀
+- 🎯 Progress: **9% Complete** 🚀
 
 ---
 
