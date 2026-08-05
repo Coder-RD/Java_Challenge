@@ -64,6 +64,10 @@ Java_Challenge/
 │   ├── Java End-of-file.java
 │   └── Screenshot (202).png
 │
+├── Day-10/
+│   ├── Java Static Initializer Block.java
+│   └── Screenshot (203).png
+│
 └── README.md
 ```
 
@@ -82,7 +86,8 @@ Java_Challenge/
 | ✅ Day 7 | Java Loops I | Completed |
 | ✅ Day 8 | Java Loops II | Completed |
 | ✅ Day 9 | Java End-of-file | Completed |
-| ⏳ Day 10 | Coming Soon | Pending |
+| ✅ Day 10 | Java Static Initializer Block | Completed |
+| ⏳ Day 11 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -117,6 +122,9 @@ Java_Challenge/
 - ✅ Bitwise Left Shift (`<<`)
 - ✅ Mathematical Expressions
 - ✅ Pattern-Based Problem Solving
+- ✅ Static Variables
+- ✅ Static Initialization Blocks
+- ✅ Class Loading
 - ✅ Basic Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
@@ -138,6 +146,8 @@ Java_Challenge/
 - 📑 File Input Concepts (EOF)
 - ➗ Mathematical Computation
 - ⚙️ Bitwise Operations
+- 🏗️ Static Variables & Static Initialization
+- 📦 Class Loading Concepts
 - 📚 Object-Oriented Programming (Coming Soon)
 - 🚀 Java Development
 
@@ -153,7 +163,8 @@ Java_Challenge/
 - ✅ Day 6 Completed
 - ✅ Day 7 Completed
 - ✅ Day 8 Completed
-- ✅ Day 9 Completed 🎉
+- ✅ Day 9 Completed
+- ✅ Day 10 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -189,10 +200,10 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **9 / 100**
-- 💻 Challenges Solved: **9**
+- 📅 Days Completed: **10 / 100**
+- 💻 Challenges Solved: **10**
 - ☕ Language: **Java**
-- 🎯 Progress: **9% Complete** 🚀
+- 🎯 Progress: **10% Complete** 🚀
 
 ---
 
