@@ -68,6 +68,10 @@ Java_Challenge/
 │   ├── Java Static Initializer Block.java
 │   └── Screenshot (203).png
 │
+├── Day-11/
+│   ├── Java Int to String.java
+│   └── Screenshot (206).png
+│
 └── README.md
 ```
 
@@ -87,7 +91,8 @@ Java_Challenge/
 | ✅ Day 8 | Java Loops II | Completed |
 | ✅ Day 9 | Java End-of-file | Completed |
 | ✅ Day 10 | Java Static Initializer Block | Completed |
-| ⏳ Day 11 | Coming Soon | Pending |
+| ✅ Day 11 | Java Int to String | Completed |
+| ⏳ Day 12 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -125,6 +130,10 @@ Java_Challenge/
 - ✅ Static Variables
 - ✅ Static Initialization Blocks
 - ✅ Class Loading
+- ✅ Integer to String Conversion
+- ✅ Integer.toString()
+- ✅ String.valueOf()
+- ✅ Type Conversion
 - ✅ Basic Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
@@ -147,6 +156,7 @@ Java_Challenge/
 - ➗ Mathematical Computation
 - ⚙️ Bitwise Operations
 - 🏗️ Static Variables & Static Initialization
+- 🔄 Type Conversion
 - 📦 Class Loading Concepts
 - 📚 Object-Oriented Programming (Coming Soon)
 - 🚀 Java Development
@@ -164,7 +174,8 @@ Java_Challenge/
 - ✅ Day 7 Completed
 - ✅ Day 8 Completed
 - ✅ Day 9 Completed
-- ✅ Day 10 Completed 🎉
+- ✅ Day 10 Completed
+- ✅ Day 11 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -200,10 +211,10 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **10 / 100**
-- 💻 Challenges Solved: **10**
+- 📅 Days Completed: **11 / 100**
+- 💻 Challenges Solved: **11**
 - ☕ Language: **Java**
-- 🎯 Progress: **10% Complete** 🚀
+- 🎯 Progress: **11% Complete** 🚀
 
 ---
 
