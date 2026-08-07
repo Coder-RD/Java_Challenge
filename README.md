@@ -72,6 +72,10 @@ Java_Challenge/
 │   ├── Java Int to String.java
 │   └── Screenshot (206).png
 │
+├── Day-12/
+│   ├── Java Date and Time.java
+│   └── Screenshot (208).png
+│
 └── README.md
 ```
 
@@ -80,7 +84,7 @@ Java_Challenge/
 # ✅ Progress
 
 | Day | Challenge | Status |
-|------|-----------|--------|
+|------|-----------|---------|
 | ✅ Day 1 | Java Stdin and Stdout I | Completed |
 | ✅ Day 2 | Java Datatypes | Completed |
 | ✅ Day 3 | Welcome to Java! | Completed |
@@ -92,7 +96,8 @@ Java_Challenge/
 | ✅ Day 9 | Java End-of-file | Completed |
 | ✅ Day 10 | Java Static Initializer Block | Completed |
 | ✅ Day 11 | Java Int to String | Completed |
-| ⏳ Day 12 | Coming Soon | Pending |
+| ✅ Day 12 | Java Date and Time | Completed |
+| ⏳ Day 13 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -134,6 +139,11 @@ Java_Challenge/
 - ✅ Integer.toString()
 - ✅ String.valueOf()
 - ✅ Type Conversion
+- ✅ Calendar Class
+- ✅ Date & Time Handling
+- ✅ Day of the Week Calculation
+- ✅ Calendar Constants
+- ✅ Date Manipulation
 - ✅ Basic Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
@@ -157,6 +167,8 @@ Java_Challenge/
 - ⚙️ Bitwise Operations
 - 🏗️ Static Variables & Static Initialization
 - 🔄 Type Conversion
+- 📅 Date & Time Programming
+- 📆 Calendar API
 - 📦 Class Loading Concepts
 - 📚 Object-Oriented Programming (Coming Soon)
 - 🚀 Java Development
@@ -175,7 +187,8 @@ Java_Challenge/
 - ✅ Day 8 Completed
 - ✅ Day 9 Completed
 - ✅ Day 10 Completed
-- ✅ Day 11 Completed 🎉
+- ✅ Day 11 Completed
+- ✅ Day 12 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -211,10 +224,10 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **11 / 100**
-- 💻 Challenges Solved: **11**
+- 📅 Days Completed: **12 / 100**
+- 💻 Challenges Solved: **12**
 - ☕ Language: **Java**
-- 🎯 Progress: **11% Complete** 🚀
+- 🎯 Progress: **12% Complete** 🚀
 
 ---
 
