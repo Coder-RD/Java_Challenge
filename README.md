@@ -76,6 +76,10 @@ Java_Challenge/
 │   ├── Java Date and Time.java
 │   └── Screenshot (208).png
 │
+├── Day-13/
+│   ├── Java Currency Formatter.java
+│   └── Screenshot (211).png
+│
 └── README.md
 ```
 
@@ -84,7 +88,7 @@ Java_Challenge/
 # ✅ Progress
 
 | Day | Challenge | Status |
-|------|-----------|---------|
+|---|---|---|
 | ✅ Day 1 | Java Stdin and Stdout I | Completed |
 | ✅ Day 2 | Java Datatypes | Completed |
 | ✅ Day 3 | Welcome to Java! | Completed |
@@ -97,13 +101,16 @@ Java_Challenge/
 | ✅ Day 10 | Java Static Initializer Block | Completed |
 | ✅ Day 11 | Java Int to String | Completed |
 | ✅ Day 12 | Java Date and Time | Completed |
-| ⏳ Day 13 | Coming Soon | Pending |
+| ✅ Day 13 | Java Currency Formatter | Completed |
+| ⏳ Day 14 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
 ---
 
 # 📖 Topics Covered
+
+### ☕ Java Basics
 
 - ✅ Java Basics
 - ✅ Standard Input & Output
@@ -113,40 +120,110 @@ Java_Challenge/
 - ✅ Printing Output
 - ✅ Java Syntax
 - ✅ Scanner Class
-- ✅ nextInt()
-- ✅ nextDouble()
-- ✅ nextLine()
-- ✅ hasNextLine()
+- ✅ `nextInt()`
+- ✅ `nextDouble()`
+- ✅ `nextLine()`
+- ✅ `hasNextLine()`
+
+### 📥 Input & Output
+
+- ✅ Input Handling
+- ✅ String Input
 - ✅ End-of-File (EOF)
 - ✅ Input Buffer Handling
-- ✅ String Input
-- ✅ Conditional Statements (if-else)
-- ✅ Decision Making
 - ✅ Output Formatting
-- ✅ System.out.printf()
+- ✅ `System.out.printf()`
 - ✅ String Formatting
 - ✅ Field Width & Left Alignment
-- ✅ Loops (`for`)
+
+### 🔀 Conditional Statements
+
+- ✅ Conditional Statements
+- ✅ `if-else`
+- ✅ Decision Making
+- ✅ Logical Conditions
+
+### 🔁 Loops
+
+- ✅ `for` Loop
 - ✅ Nested Loops
 - ✅ Series Generation
-- ✅ Bitwise Left Shift (`<<`)
 - ✅ Mathematical Expressions
+- ✅ Bitwise Left Shift (`<<`)
 - ✅ Pattern-Based Problem Solving
+
+### ⚙️ Static & Type Conversion
+
 - ✅ Static Variables
 - ✅ Static Initialization Blocks
 - ✅ Class Loading
 - ✅ Integer to String Conversion
-- ✅ Integer.toString()
-- ✅ String.valueOf()
+- ✅ `Integer.toString()`
+- ✅ `String.valueOf()`
 - ✅ Type Conversion
+
+### 📅 Date & Time
+
 - ✅ Calendar Class
 - ✅ Date & Time Handling
 - ✅ Day of the Week Calculation
 - ✅ Calendar Constants
 - ✅ Date Manipulation
-- ✅ Basic Problem Solving
+
+### 💰 Currency Formatting
+
+- ✅ `NumberFormat` Class
+- ✅ `getCurrencyInstance()`
+- ✅ `Locale.US`
+- ✅ `Locale.CHINA`
+- ✅ `Locale.FRANCE`
+- ✅ Custom Indian Locale
+- ✅ Currency Formatting
+- ✅ Internationalization Concepts
 
 🔜 More Java concepts will be added throughout this challenge.
+
+---
+
+# 🆕 Day 13 – Java Currency Formatter
+
+### 🎯 Challenge
+
+**Java Currency Formatter**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 💰 Currency Formatting
+- 🔢 `NumberFormat`
+- 🌍 `Locale`
+- 🇺🇸 US Currency
+- 🇮🇳 Indian Currency
+- 🇨🇳 Chinese Currency
+- 🇫🇷 French Currency
+- 🔧 Custom Indian Locale using `new Locale("en", "IN")`
+
+### 📂 Files Added
+
+```text
+Day-13/
+│
+├── Java Currency Formatter.java
+└── Screenshot (211).png
+```
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -162,15 +239,16 @@ Java_Challenge/
 - 🔁 Loops & Iteration
 - 📄 Output Formatting
 - 📥 Input Handling
-- 📑 File Input Concepts (EOF)
+- 📑 File Input Concepts
 - ➗ Mathematical Computation
 - ⚙️ Bitwise Operations
 - 🏗️ Static Variables & Static Initialization
 - 🔄 Type Conversion
 - 📅 Date & Time Programming
 - 📆 Calendar API
+- 💰 Currency Formatting
+- 🌍 Locale & Internationalization
 - 📦 Class Loading Concepts
-- 📚 Object-Oriented Programming (Coming Soon)
 - 🚀 Java Development
 
 ---
@@ -188,16 +266,25 @@ Java_Challenge/
 - ✅ Day 9 Completed
 - ✅ Day 10 Completed
 - ✅ Day 11 Completed
-- ✅ Day 12 Completed 🎉
+- ✅ Day 12 Completed
+- ✅ Day 13 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
 # 🎯 Why This Repository?
 
-This repository documents my Java learning journey and showcases my daily progress while solving HackerRank coding challenges.
+This repository documents my **Java learning journey** and showcases my daily progress while solving HackerRank coding challenges.
 
 It serves as a record of my growth in Java programming, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
+
+Every challenge helps me improve my:
+
+- 🧠 Logical Thinking
+- 💻 Programming Skills
+- 🧩 Problem-Solving Ability
+- ☕ Core Java Knowledge
+- 🚀 Coding Confidence
 
 ---
 
@@ -219,15 +306,29 @@ It serves as a record of my growth in Java programming, demonstrates consistency
 - 🔹 Lambda Expressions
 - 🔹 JDBC
 - 🔹 Java Collections
+- 🔹 Advanced Java Concepts
 
 ---
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **12 / 100**
-- 💻 Challenges Solved: **12**
-- ☕ Language: **Java**
-- 🎯 Progress: **12% Complete** 🚀
+| 📊 Category | Details |
+|---|---|
+| 📅 Days Completed | **13 / 100** |
+| 💻 Challenges Solved | **13** |
+| ☕ Language | **Java** |
+| 🏆 Platform | **HackerRank** |
+| 🎯 Progress | **13% Complete** 🚀 |
+
+---
+
+# 🔥 Current Streak
+
+**13 Days of Java Practice Completed! 🎉**
+
+> 13 days down, 87 more to go! 🚀
+
+Consistency is the key to growth. Every challenge is helping me become a better Java programmer.
 
 ---
 
@@ -243,10 +344,11 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 
 Let's learn, code, and grow together! 🌱
 
-📌 **GitHub:** https://github.com/Coder-RD
+📌 **GitHub:**  
+https://github.com/Coder-RD
 
 ---
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#Java` `#CoreJava` `#HackerRank` `#CodingChallenge` `#Programming` `#DeveloperJourney` `#LearningInPublic` `#GitHub` `#JavaDeveloper` `#OpenToWork`
+`#100DaysOfCode` `#Java` `#CoreJava` `#HackerRank` `#CodingChallenge` `#Programming` `#DeveloperJourney` `#LearningInPublic` `#GitHub` `#JavaDeveloper` `#ProblemSolving` `#CodingJourney` `#OpenToWork`
