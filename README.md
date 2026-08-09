@@ -80,6 +80,10 @@ Java_Challenge/
 │   ├── Java Currency Formatter.java
 │   └── Screenshot (211).png
 │
+├── Day-14/
+│   ├── Java Strings.java
+│   └── Screenshot.png
+│
 └── README.md
 ```
 
@@ -87,24 +91,25 @@ Java_Challenge/
 
 # ✅ Progress
 
-| Day | Challenge | Status |
-|---|---|---|
-| ✅ Day 1 | Java Stdin and Stdout I | Completed |
-| ✅ Day 2 | Java Datatypes | Completed |
-| ✅ Day 3 | Welcome to Java! | Completed |
-| ✅ Day 4 | Java Stdin and Stdout II | Completed |
-| ✅ Day 5 | Java If-Else | Completed |
-| ✅ Day 6 | Java Output Formatting | Completed |
-| ✅ Day 7 | Java Loops I | Completed |
-| ✅ Day 8 | Java Loops II | Completed |
-| ✅ Day 9 | Java End-of-file | Completed |
-| ✅ Day 10 | Java Static Initializer Block | Completed |
-| ✅ Day 11 | Java Int to String | Completed |
-| ✅ Day 12 | Java Date and Time | Completed |
-| ✅ Day 13 | Java Currency Formatter | Completed |
-| ⏳ Day 14 | Coming Soon | Pending |
-| ... | ... | ... |
-| 🎯 Day 100 | Coming Soon | Pending |
+| Day        | Challenge                     | Status    |
+| ---------- | ----------------------------- | --------- |
+| ✅ Day 1    | Java Stdin and Stdout I       | Completed |
+| ✅ Day 2    | Java Datatypes                | Completed |
+| ✅ Day 3    | Welcome to Java!              | Completed |
+| ✅ Day 4    | Java Stdin and Stdout II      | Completed |
+| ✅ Day 5    | Java If-Else                  | Completed |
+| ✅ Day 6    | Java Output Formatting        | Completed |
+| ✅ Day 7    | Java Loops I                  | Completed |
+| ✅ Day 8    | Java Loops II                 | Completed |
+| ✅ Day 9    | Java End-of-file              | Completed |
+| ✅ Day 10   | Java Static Initializer Block | Completed |
+| ✅ Day 11   | Java Int to String             | Completed |
+| ✅ Day 12   | Java Date and Time             | Completed |
+| ✅ Day 13   | Java Currency Formatter        | Completed |
+| ✅ Day 14   | Java Strings                   | Completed |
+| ⏳ Day 15   | Coming Soon                    | Pending   |
+| ...        | ...                           | ...       |
+| 🎯 Day 100 | Coming Soon                   | Pending   |
 
 ---
 
@@ -181,15 +186,28 @@ Java_Challenge/
 - ✅ Currency Formatting
 - ✅ Internationalization Concepts
 
+### 🔤 Strings
+
+- ✅ String Creation
+- ✅ String Comparison
+- ✅ `String.length()`
+- ✅ `String.compareTo()`
+- ✅ `String.substring()`
+- ✅ Lexicographical Ordering
+- ✅ String Manipulation
+- ✅ Character Comparison
+- ✅ Substring Extraction
+- ✅ Basic String Problem Solving
+
 🔜 More Java concepts will be added throughout this challenge.
 
 ---
 
-# 🆕 Day 13 – Java Currency Formatter
+# 🆕 Day 14 – Java Strings
 
 ### 🎯 Challenge
 
-**Java Currency Formatter**
+**Java Strings**
 
 ### 💻 Platform
 
@@ -201,22 +219,21 @@ Java_Challenge/
 
 ### 📚 Concepts Practiced
 
-- 💰 Currency Formatting
-- 🔢 `NumberFormat`
-- 🌍 `Locale`
-- 🇺🇸 US Currency
-- 🇮🇳 Indian Currency
-- 🇨🇳 Chinese Currency
-- 🇫🇷 French Currency
-- 🔧 Custom Indian Locale using `new Locale("en", "IN")`
+- 🔤 String Handling
+- 🔍 String Comparison
+- 📏 String Length
+- 🔠 Lexicographical Order
+- ✂️ Substring Extraction
+- 🧩 String Manipulation
+- 🧠 Problem-Solving with Strings
 
 ### 📂 Files Added
 
 ```text
-Day-13/
+Day-14/
 │
-├── Java Currency Formatter.java
-└── Screenshot (211).png
+├── Java Strings.java
+└── Screenshot.png
 ```
 
 ### ✅ Status
@@ -248,6 +265,9 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 - 📆 Calendar API
 - 💰 Currency Formatting
 - 🌍 Locale & Internationalization
+- 🔤 String Manipulation
+- 🔍 String Comparison
+- ✂️ Substring Handling
 - 📦 Class Loading Concepts
 - 🚀 Java Development
 
@@ -267,7 +287,8 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 - ✅ Day 10 Completed
 - ✅ Day 11 Completed
 - ✅ Day 12 Completed
-- ✅ Day 13 Completed 🎉
+- ✅ Day 13 Completed
+- ✅ Day 14 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -312,21 +333,21 @@ Every challenge helps me improve my:
 
 # 📈 Current Statistics
 
-| 📊 Category | Details |
-|---|---|
-| 📅 Days Completed | **13 / 100** |
-| 💻 Challenges Solved | **13** |
-| ☕ Language | **Java** |
-| 🏆 Platform | **HackerRank** |
-| 🎯 Progress | **13% Complete** 🚀 |
+| 📊 Category          | Details             |
+| -------------------- | ------------------- |
+| 📅 Days Completed    | **14 / 100**        |
+| 💻 Challenges Solved | **14**              |
+| ☕ Language           | **Java**            |
+| 🏆 Platform          | **HackerRank**      |
+| 🎯 Progress          | **14% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**13 Days of Java Practice Completed! 🎉**
+**14 Days of Java Practice Completed! 🎉**
 
-> 13 days down, 87 more to go! 🚀
+> 14 days down, 86 more to go! 🚀
 
 Consistency is the key to growth. Every challenge is helping me become a better Java programmer.
 
@@ -344,7 +365,7 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 
 Let's learn, code, and grow together! 🌱
 
-📌 **GitHub:**  
+📌 **GitHub:**
 https://github.com/Coder-RD
 
 ---
