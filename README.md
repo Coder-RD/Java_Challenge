@@ -227,15 +227,6 @@ Java_Challenge/
 - 🧩 String Manipulation
 - 🧠 Problem-Solving with Strings
 
-### 📂 Files Added
-
-```text
-Day-14/
-│
-├── Java Strings.java
-└── Screenshot.png
-```
-
 ### ✅ Status
 
 **Completed 🎉**
