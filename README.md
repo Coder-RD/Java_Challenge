@@ -25,91 +25,94 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 # 📂 Repository Structure
 
-```text
-Java_Challenge/
-│
-├── Day-1/
-│   ├── Java Stdin and Stdout I.java
-│   └── Screenshot.png
-│
-├── Day-2/
-│   ├── Java Datatypes.java
-│   └── Screenshot.png
-│
-├── Day-3/
-│   ├── Welcome to Java!.java
-│   └── Screenshot (183).png
-│
-├── Day-4/
-│   ├── Java Stdin and Stdout II.java
-│   └── Screenshot (185).png
-│
-├── Day-5/
-│   ├── Java If-Else.java
-│   └── Screenshot (187).png
-│
-├── Day-6/
-│   ├── Java Output Formatting.java
-│   └── Screenshot (190).png
-│
-├── Day-7/
-│   ├── Java Loops I.java
-│   └── Screenshot (192).png
-│
-├── Day-8/
-│   ├── Java Loops II.java
-│   └── Screenshot (200).png
-│
-├── Day-9/
-│   ├── Java End-of-file.java
-│   └── Screenshot (202).png
-│
-├── Day-10/
-│   ├── Java Static Initializer Block.java
-│   └── Screenshot (203).png
-│
-├── Day-11/
-│   ├── Java Int to String.java
-│   └── Screenshot (206).png
-│
-├── Day-12/
-│   ├── Java Date and Time.java
-│   └── Screenshot (208).png
-│
-├── Day-13/
-│   ├── Java Currency Formatter.java
-│   └── Screenshot (211).png
-│
-├── Day-14/
-│   ├── Java Strings.java
-│   └── Screenshot.png
-│
-└── README.md
-```
+    Java_Challenge/
+    │
+    ├── Day-1/
+    │   ├── Java Stdin and Stdout I.java
+    │   └── Screenshot.png
+    │
+    ├── Day-2/
+    │   ├── Java Datatypes.java
+    │   └── Screenshot.png
+    │
+    ├── Day-3/
+    │   ├── Welcome to Java!.java
+    │   └── Screenshot (183).png
+    │
+    ├── Day-4/
+    │   ├── Java Stdin and Stdout II.java
+    │   └── Screenshot (185).png
+    │
+    ├── Day-5/
+    │   ├── Java If-Else.java
+    │   └── Screenshot (187).png
+    │
+    ├── Day-6/
+    │   ├── Java Output Formatting.java
+    │   └── Screenshot (190).png
+    │
+    ├── Day-7/
+    │   ├── Java Loops I.java
+    │   └── Screenshot (192).png
+    │
+    ├── Day-8/
+    │   ├── Java Loops II.java
+    │   └── Screenshot (200).png
+    │
+    ├── Day-9/
+    │   ├── Java End-of-file.java
+    │   └── Screenshot (202).png
+    │
+    ├── Day-10/
+    │   ├── Java Static Initializer Block.java
+    │   └── Screenshot (203).png
+    │
+    ├── Day-11/
+    │   ├── Java Int to String.java
+    │   └── Screenshot (206).png
+    │
+    ├── Day-12/
+    │   ├── Java Date and Time.java
+    │   └── Screenshot (208).png
+    │
+    ├── Day-13/
+    │   ├── Java Currency Formatter.java
+    │   └── Screenshot (211).png
+    │
+    ├── Day-14/
+    │   ├── Java Strings.java
+    │   └── Screenshot.png
+    │
+    ├── Day-15/
+    │   ├── Java Substring.java
+    │   └── Screenshot (216).png
+    │
+    └── README.md
 
 ---
 
 # ✅ Progress
 
-| Day        | Challenge                     | Status    |
-| ---------- | ----------------------------- | --------- |
-| ✅ Day 1    | Java Stdin and Stdout I       | Completed |
-| ✅ Day 2    | Java Datatypes                | Completed |
-| ✅ Day 3    | Welcome to Java!              | Completed |
-| ✅ Day 4    | Java Stdin and Stdout II      | Completed |
-| ✅ Day 5    | Java If-Else                  | Completed |
-| ✅ Day 6    | Java Output Formatting        | Completed |
-| ✅ Day 7    | Java Loops I                  | Completed |
-| ✅ Day 8    | Java Loops II                 | Completed |
-| ✅ Day 9    | Java End-of-file              | Completed |
-| ✅ Day 10   | Java Static Initializer Block | Completed |
-| ✅ Day 11   | Java Int to String             | Completed |
-| ✅ Day 12   | Java Date and Time             | Completed |
-| ✅ Day 13   | Java Currency Formatter        | Completed |
-| ✅ Day 14   | Java Strings                   | Completed |
-| ⏳ Day 15   | Coming Soon                    | Pending   |
-| ...        | ...                           | ...       |
-| 🎯 Day 100 | Coming Soon                   | Pending   |
+| Day | Challenge | Status |
+| --- | --- | --- |
+| ✅ Day 1 | Java Stdin and Stdout I | Completed |
+| ✅ Day 2 | Java Datatypes | Completed |
+| ✅ Day 3 | Welcome to Java! | Completed |
+| ✅ Day 4 | Java Stdin and Stdout II | Completed |
+| ✅ Day 5 | Java If-Else | Completed |
+| ✅ Day 6 | Java Output Formatting | Completed |
+| ✅ Day 7 | Java Loops I | Completed |
+| ✅ Day 8 | Java Loops II | Completed |
+| ✅ Day 9 | Java End-of-file | Completed |
+| ✅ Day 10 | Java Static Initializer Block | Completed |
+| ✅ Day 11 | Java Int to String | Completed |
+| ✅ Day 12 | Java Date and Time | Completed |
+| ✅ Day 13 | Java Currency Formatter | Completed |
+| ✅ Day 14 | Java Strings | Completed |
+| ✅ Day 15 | Java Substring | Completed |
+| ⏳ Day 16 | Coming Soon | Pending |
+| ... | ... | ... |
+| 🎯 Day 100 | Coming Soon | Pending |
 
 ---
 
@@ -199,15 +202,27 @@ Java_Challenge/
 - ✅ Substring Extraction
 - ✅ Basic String Problem Solving
 
+### ✂️ Substring
+
+- ✅ String Substring
+- ✅ `substring()` Method
+- ✅ Start Index
+- ✅ End Index
+- ✅ Inclusive Character Range
+- ✅ String Indexing
+- ✅ String Manipulation
+- ✅ Substring Extraction
+- ✅ Problem Solving with Strings
+
 🔜 More Java concepts will be added throughout this challenge.
 
 ---
 
-# 🆕 Day 14 – Java Strings
+# 🆕 Day 15 – Java Substring
 
 ### 🎯 Challenge
 
-**Java Strings**
+**Java Substring**
 
 ### 💻 Platform
 
@@ -220,12 +235,28 @@ Java_Challenge/
 ### 📚 Concepts Practiced
 
 - 🔤 String Handling
-- 🔍 String Comparison
-- 📏 String Length
-- 🔠 Lexicographical Order
 - ✂️ Substring Extraction
-- 🧩 String Manipulation
-- 🧠 Problem-Solving with Strings
+- 📌 String Indexing
+- 🔢 Start and End Index
+- 🧩 `substring()` Method
+- 🔍 Character Range Handling
+- 🧠 String Manipulation
+- 💻 Problem Solving
+
+### 📂 Files Added
+
+    Day-15/
+    │
+    ├── Java Substring.java
+    └── Screenshot (216).png
+
+### 💡 Key Concept
+
+The Java `substring()` method is used to extract a portion of a string.
+
+    String result = s.substring(start, end);
+
+The `start` index is included, while the `end` index is excluded.
 
 ### ✅ Status
 
@@ -279,7 +310,8 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 - ✅ Day 11 Completed
 - ✅ Day 12 Completed
 - ✅ Day 13 Completed
-- ✅ Day 14 Completed 🎉
+- ✅ Day 14 Completed
+- ✅ Day 15 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -324,21 +356,21 @@ Every challenge helps me improve my:
 
 # 📈 Current Statistics
 
-| 📊 Category          | Details             |
-| -------------------- | ------------------- |
-| 📅 Days Completed    | **14 / 100**        |
-| 💻 Challenges Solved | **14**              |
-| ☕ Language           | **Java**            |
-| 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **14% Complete** 🚀 |
+| 📊 Category | Details |
+| --- | --- |
+| 📅 Days Completed | **15 / 100** |
+| 💻 Challenges Solved | **15** |
+| ☕ Language | **Java** |
+| 🏆 Platform | **HackerRank** |
+| 🎯 Progress | **15% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**14 Days of Java Practice Completed! 🎉**
+**15 Days of Java Practice Completed! 🎉**
 
-> 14 days down, 86 more to go! 🚀
+> 15 days down, 85 more to go! 🚀
 
 Consistency is the key to growth. Every challenge is helping me become a better Java programmer.
 
@@ -357,6 +389,7 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 Let's learn, code, and grow together! 🌱
 
 📌 **GitHub:**
+
 https://github.com/Coder-RD
 
 ---
