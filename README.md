@@ -91,6 +91,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java Substring Comparisons.java
     │   └── Screenshot (217).png
     │
+    ├── Day-17/
+    │   ├── Java String Reverse.java
+    │   └── Screenshot (220).png
+    │
     └── README.md
 
 ---
@@ -99,25 +103,26 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 | Day        | Challenge                       | Status    |
 | ---------- | ------------------------------- | --------- |
-| ✅ Day 1    | Java Stdin and Stdout I         | Completed |
-| ✅ Day 2    | Java Datatypes                  | Completed |
-| ✅ Day 3    | Welcome to Java!                | Completed |
-| ✅ Day 4    | Java Stdin and Stdout II        | Completed |
-| ✅ Day 5    | Java If-Else                    | Completed |
-| ✅ Day 6    | Java Output Formatting          | Completed |
-| ✅ Day 7    | Java Loops I                    | Completed |
-| ✅ Day 8    | Java Loops II                   | Completed |
-| ✅ Day 9    | Java End-of-file                | Completed |
-| ✅ Day 10   | Java Static Initializer Block   | Completed |
-| ✅ Day 11   | Java Int to String              | Completed |
-| ✅ Day 12   | Java Date and Time              | Completed |
-| ✅ Day 13   | Java Currency Formatter         | Completed |
-| ✅ Day 14   | Java Strings                    | Completed |
-| ✅ Day 15   | Java Substring                  | Completed |
-| ✅ Day 16   | Java Substring Comparisons      | Completed |
-| ⏳ Day 17   | Coming Soon                     | Pending   |
-| ...         | ...                             | ...       |
-| 🎯 Day 100  | Coming Soon                     | Pending   |
+| ✅ Day 1   | Java Stdin and Stdout I         | Completed |
+| ✅ Day 2   | Java Datatypes                  | Completed |
+| ✅ Day 3   | Welcome to Java!                | Completed |
+| ✅ Day 4   | Java Stdin and Stdout II        | Completed |
+| ✅ Day 5   | Java If-Else                    | Completed |
+| ✅ Day 6   | Java Output Formatting          | Completed |
+| ✅ Day 7   | Java Loops I                    | Completed |
+| ✅ Day 8   | Java Loops II                   | Completed |
+| ✅ Day 9   | Java End-of-file                | Completed |
+| ✅ Day 10  | Java Static Initializer Block   | Completed |
+| ✅ Day 11  | Java Int to String              | Completed |
+| ✅ Day 12  | Java Date and Time              | Completed |
+| ✅ Day 13  | Java Currency Formatter         | Completed |
+| ✅ Day 14  | Java Strings                    | Completed |
+| ✅ Day 15  | Java Substring                  | Completed |
+| ✅ Day 16  | Java Substring Comparisons      | Completed |
+| ✅ Day 17  | Java String Reverse             | Completed |
+| ⏳ Day 18  | Coming Soon                     | Pending   |
+| ...        | ...                             | ...       |
+| 🎯 Day 100 | Coming Soon                     | Pending   |
 
 ---
 
@@ -234,15 +239,27 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ String Manipulation
 - ✅ Problem Solving with Strings
 
+### 🔄 String Reverse & Palindrome
+
+- ✅ String Reversal
+- ✅ Palindrome Checking
+- ✅ `StringBuilder`
+- ✅ `reverse()` Method
+- ✅ `equals()` Method
+- ✅ String Comparison
+- ✅ Character Sequence Handling
+- ✅ String Manipulation
+- ✅ Problem Solving with Strings
+
 🔜 More Java concepts will be added throughout this challenge.
 
 ---
 
-# 🆕 Day 16 – Java Substring Comparisons
+# 🆕 Day 17 – Java String Reverse
 
 ### 🎯 Challenge
 
-**Java Substring Comparisons**
+**Java String Reverse**
 
 ### 💻 Platform
 
@@ -255,37 +272,38 @@ This repository contains my daily Java programming solutions from **HackerRank**
 ### 📚 Concepts Practiced
 
 - 🔤 String Handling
-- ✂️ Substring Extraction
-- 🔍 String Comparison
-- 🔠 Lexicographical Ordering
-- 📌 String Indexing
-- 🧩 `substring()` Method
-- ⚖️ `compareTo()` Method
-- 🔢 Fixed-Length Substrings
-- 🔎 Finding Smallest Substring
-- 🔎 Finding Largest Substring
+- 🔄 String Reversal
+- 🔁 Palindrome Checking
+- 🧩 `StringBuilder`
+- 🔄 `reverse()` Method
+- 🔍 `equals()` Method
+- 📌 String Comparison
 - 🧠 Problem Solving with Strings
 
 ### 📂 Files Added
 
-    Day-16/
+    Day-17/
     │
-    ├── Java Substring Comparisons.java
-    └── Screenshot (217).png
+    ├── Java String Reverse.java
+    └── Screenshot (220).png
 
 ### 💡 Key Concept
 
-The Java `substring()` method is used to extract a portion of a string.
+A palindrome is a word, phrase, number, or sequence of characters that reads the same backward as forward.
 
-    String sub = s.substring(i, i + k);
+The `StringBuilder` class can be used to reverse a string using the `reverse()` method.
 
-The `substring()` method extracts characters from the given start index up to, but not including, the end index.
+    String reverse = new StringBuilder(A).reverse().toString();
 
-The `compareTo()` method is used to compare strings in lexicographical order.
+The original string can then be compared with the reversed string using the `equals()` method.
 
-    sub.compareTo(smallest)
+    if (A.equals(reverse)) {
+        System.out.println("Yes");
+    } else {
+        System.out.println("No");
+    }
 
-It helps find the lexicographically smallest and largest substrings of a given length.
+If the original string and reversed string are the same, the string is a palindrome.
 
 ### ✅ Status
 
@@ -323,7 +341,9 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 - ⚖️ String Comparison using `compareTo()`
 - 📌 String Indexing
 - 🧩 Substring Extraction
-- 📦 Class Loading Concepts
+- 🔄 String Reversal
+- 🔁 Palindrome Checking
+- 🏗️ `StringBuilder`
 - 🚀 Java Development
 
 ---
@@ -345,7 +365,8 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 - ✅ Day 13 Completed
 - ✅ Day 14 Completed
 - ✅ Day 15 Completed
-- ✅ Day 16 Completed 🎉
+- ✅ Day 16 Completed
+- ✅ Day 17 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -365,6 +386,8 @@ Every challenge helps me improve my:
 - 🔤 String Manipulation Skills
 - ✂️ Substring Handling
 - 🔠 Lexicographical Comparison
+- 🔄 String Reversal
+- 🔁 Palindrome Checking
 - 🚀 Coding Confidence
 
 ---
@@ -395,19 +418,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **16 / 100**        |
-| 💻 Challenges Solved | **16**              |
+| 📅 Days Completed    | **17 / 100**        |
+| 💻 Challenges Solved | **17**              |
 | ☕ Language           | **Java**            |
 | 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **16% Complete** 🚀 |
+| 🎯 Progress          | **17% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**16 Days of Java Practice Completed! 🎉**
+**17 Days of Java Practice Completed! 🎉**
 
-> 16 days down, 84 more to go! 🚀
+> 17 days down, 83 more to go! 🚀
 
 Consistency is the key to growth. Every challenge is helping me become a better Java programmer.
 
