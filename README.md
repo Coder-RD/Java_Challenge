@@ -95,34 +95,39 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java String Reverse.java
     │   └── Screenshot (220).png
     │
+    ├── Day-18/
+    │   ├── Java Anagrams.java
+    │   └── Screenshot (222).png
+    │
     └── README.md
 
 ---
 
 # ✅ Progress
 
-| Day        | Challenge                       | Status    |
-| ---------- | ------------------------------- | --------- |
-| ✅ Day 1   | Java Stdin and Stdout I         | Completed |
-| ✅ Day 2   | Java Datatypes                  | Completed |
-| ✅ Day 3   | Welcome to Java!                | Completed |
-| ✅ Day 4   | Java Stdin and Stdout II        | Completed |
-| ✅ Day 5   | Java If-Else                    | Completed |
-| ✅ Day 6   | Java Output Formatting          | Completed |
-| ✅ Day 7   | Java Loops I                    | Completed |
-| ✅ Day 8   | Java Loops II                   | Completed |
-| ✅ Day 9   | Java End-of-file                | Completed |
-| ✅ Day 10  | Java Static Initializer Block   | Completed |
-| ✅ Day 11  | Java Int to String              | Completed |
-| ✅ Day 12  | Java Date and Time              | Completed |
-| ✅ Day 13  | Java Currency Formatter         | Completed |
-| ✅ Day 14  | Java Strings                    | Completed |
-| ✅ Day 15  | Java Substring                  | Completed |
-| ✅ Day 16  | Java Substring Comparisons      | Completed |
-| ✅ Day 17  | Java String Reverse             | Completed |
-| ⏳ Day 18  | Coming Soon                     | Pending   |
+| Day        | Challenge                     | Status    |
+| ---------- | ----------------------------- | --------- |
+| ✅ Day 1    | Java Stdin and Stdout I       | Completed |
+| ✅ Day 2    | Java Datatypes                | Completed |
+| ✅ Day 3    | Welcome to Java!              | Completed |
+| ✅ Day 4    | Java Stdin and Stdout II      | Completed |
+| ✅ Day 5    | Java If-Else                  | Completed |
+| ✅ Day 6    | Java Output Formatting        | Completed |
+| ✅ Day 7    | Java Loops I                  | Completed |
+| ✅ Day 8    | Java Loops II                 | Completed |
+| ✅ Day 9    | Java End-of-file              | Completed |
+| ✅ Day 10   | Java Static Initializer Block | Completed |
+| ✅ Day 11   | Java Int to String             | Completed |
+| ✅ Day 12   | Java Date and Time             | Completed |
+| ✅ Day 13   | Java Currency Formatter        | Completed |
+| ✅ Day 14   | Java Strings                   | Completed |
+| ✅ Day 15   | Java Substring                 | Completed |
+| ✅ Day 16   | Java Substring Comparisons     | Completed |
+| ✅ Day 17   | Java String Reverse             | Completed |
+| ✅ Day 18   | Java Anagrams                   | Completed |
+| ⏳ Day 19   | Coming Soon                     | Pending   |
 | ...        | ...                             | ...       |
-| 🎯 Day 100 | Coming Soon                     | Pending   |
+| 🎯 Day 100  | Coming Soon                     | Pending   |
 
 ---
 
@@ -138,10 +143,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Printing Output
 - ✅ Java Syntax
 - ✅ Scanner Class
-- ✅ `nextInt()`
-- ✅ `nextDouble()`
-- ✅ `nextLine()`
-- ✅ `hasNextLine()`
+- ✅ nextInt()
+- ✅ nextDouble()
+- ✅ nextLine()
+- ✅ hasNextLine()
 
 ### 📥 Input & Output
 
@@ -150,24 +155,24 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ End-of-File (EOF)
 - ✅ Input Buffer Handling
 - ✅ Output Formatting
-- ✅ `System.out.printf()`
+- ✅ System.out.printf()
 - ✅ String Formatting
 - ✅ Field Width & Left Alignment
 
 ### 🔀 Conditional Statements
 
 - ✅ Conditional Statements
-- ✅ `if-else`
+- ✅ if-else
 - ✅ Decision Making
 - ✅ Logical Conditions
 
 ### 🔁 Loops
 
-- ✅ `for` Loop
+- ✅ for Loop
 - ✅ Nested Loops
 - ✅ Series Generation
 - ✅ Mathematical Expressions
-- ✅ Bitwise Left Shift (`<<`)
+- ✅ Bitwise Left Shift (<<)
 - ✅ Pattern-Based Problem Solving
 
 ### ⚙️ Static & Type Conversion
@@ -176,8 +181,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Static Initialization Blocks
 - ✅ Class Loading
 - ✅ Integer to String Conversion
-- ✅ `Integer.toString()`
-- ✅ `String.valueOf()`
+- ✅ Integer.toString()
+- ✅ String.valueOf()
 - ✅ Type Conversion
 
 ### 📅 Date & Time
@@ -190,11 +195,11 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 ### 💰 Currency Formatting
 
-- ✅ `NumberFormat` Class
-- ✅ `getCurrencyInstance()`
-- ✅ `Locale.US`
-- ✅ `Locale.CHINA`
-- ✅ `Locale.FRANCE`
+- ✅ NumberFormat Class
+- ✅ getCurrencyInstance()
+- ✅ Locale.US
+- ✅ Locale.CHINA
+- ✅ Locale.FRANCE
 - ✅ Custom Indian Locale
 - ✅ Currency Formatting
 - ✅ Internationalization Concepts
@@ -203,9 +208,9 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 - ✅ String Creation
 - ✅ String Comparison
-- ✅ `String.length()`
-- ✅ `String.compareTo()`
-- ✅ `String.substring()`
+- ✅ String.length()
+- ✅ String.compareTo()
+- ✅ String.substring()
 - ✅ Lexicographical Ordering
 - ✅ String Manipulation
 - ✅ Character Comparison
@@ -215,101 +220,39 @@ This repository contains my daily Java programming solutions from **HackerRank**
 ### ✂️ Substring
 
 - ✅ String Substring
-- ✅ `substring()` Method
+- ✅ substring() Method
 - ✅ Start Index
 - ✅ End Index
-- ✅ Inclusive Character Range
 - ✅ String Indexing
 - ✅ String Manipulation
 - ✅ Substring Extraction
 - ✅ Problem Solving with Strings
 
-### 🔤 Substring Comparisons
-
-- ✅ Lexicographical Order
-- ✅ Lexicographically Smallest Substring
-- ✅ Lexicographically Largest Substring
-- ✅ `substring()` Method
-- ✅ `compareTo()` Method
-- ✅ String Comparison
-- ✅ Fixed-Length Substrings
-- ✅ String Indexing
-- ✅ Substring Traversal
-- ✅ Character Comparison
-- ✅ String Manipulation
-- ✅ Problem Solving with Strings
-
 ### 🔄 String Reverse & Palindrome
 
-- ✅ String Reversal
+- ✅ String Reverse
 - ✅ Palindrome Checking
-- ✅ `StringBuilder`
-- ✅ `reverse()` Method
-- ✅ `equals()` Method
+- ✅ StringBuilder
+- ✅ reverse() Method
 - ✅ String Comparison
-- ✅ Character Sequence Handling
+- ✅ equals() Method
+- ✅ Conditional Statements
+- ✅ Logical Thinking
 - ✅ String Manipulation
-- ✅ Problem Solving with Strings
+
+### 🔠 Anagrams
+
+- ✅ Anagram Concept
+- ✅ String Comparison
+- ✅ Character Frequency
+- ✅ Character Arrays
+- ✅ Sorting Characters
+- ✅ Case-Insensitive Comparison
+- ✅ String Manipulation
+- ✅ Character Handling
+- ✅ Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
-
----
-
-# 🆕 Day 17 – Java String Reverse
-
-### 🎯 Challenge
-
-**Java String Reverse**
-
-### 💻 Platform
-
-**HackerRank**
-
-### ☕ Language
-
-**Java**
-
-### 📚 Concepts Practiced
-
-- 🔤 String Handling
-- 🔄 String Reversal
-- 🔁 Palindrome Checking
-- 🧩 `StringBuilder`
-- 🔄 `reverse()` Method
-- 🔍 `equals()` Method
-- 📌 String Comparison
-- 🧠 Problem Solving with Strings
-
-### 📂 Files Added
-
-    Day-17/
-    │
-    ├── Java String Reverse.java
-    └── Screenshot (220).png
-
-### 💡 Key Concept
-
-A palindrome is a word, phrase, number, or sequence of characters that reads the same backward as forward.
-
-The `StringBuilder` class can be used to reverse a string using the `reverse()` method.
-
-    String reverse = new StringBuilder(A).reverse().toString();
-
-The original string can then be compared with the reversed string using the `equals()` method.
-
-    if (A.equals(reverse)) {
-        System.out.println("Yes");
-    } else {
-        System.out.println("No");
-    }
-
-If the original string and reversed string are the same, the string is a palindrome.
-
-### ✅ Status
-
-**Completed 🎉**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -337,13 +280,10 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 - 🔤 String Manipulation
 - 🔍 String Comparison
 - ✂️ Substring Handling
-- 🔠 Lexicographical Ordering
-- ⚖️ String Comparison using `compareTo()`
-- 📌 String Indexing
-- 🧩 Substring Extraction
-- 🔄 String Reversal
+- 🔄 String Reverse
 - 🔁 Palindrome Checking
-- 🏗️ `StringBuilder`
+- 🔠 Anagram Detection
+- 📊 Character Frequency
 - 🚀 Java Development
 
 ---
@@ -366,8 +306,63 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 - ✅ Day 14 Completed
 - ✅ Day 15 Completed
 - ✅ Day 16 Completed
-- ✅ Day 17 Completed 🎉
+- ✅ Day 17 Completed
+- ✅ Day 18 Completed 🎉
 - ⏳ Continuing every day...
+
+---
+
+# 🆕 Day 18 – Java Anagrams
+
+### 🎯 Challenge
+
+**Java Anagrams**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔠 Anagram Checking
+- 🔤 String Handling
+- 🔍 Character Comparison
+- 📊 Character Frequency
+- 🔄 String Manipulation
+- 🔡 Case-Insensitive Comparison
+- 🧩 Character Arrays
+- 🧠 Logical Thinking
+- 💻 Problem Solving
+
+### 📂 Files Added
+
+    Day-18/
+    │
+    ├── Java Anagrams.java
+    └── Screenshot (222).png
+
+### 💡 Key Concept
+
+Two strings are called **anagrams** if they contain the same characters with the same frequency, regardless of their order.
+
+For example:
+
+    Listen
+    Silent
+
+Both strings contain the same characters, so they are anagrams.
+
+The solution checks the characters of both strings and determines whether they contain the same set of characters with the same frequency.
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -383,11 +378,6 @@ Every challenge helps me improve my:
 - 💻 Programming Skills
 - 🧩 Problem-Solving Ability
 - ☕ Core Java Knowledge
-- 🔤 String Manipulation Skills
-- ✂️ Substring Handling
-- 🔠 Lexicographical Comparison
-- 🔄 String Reversal
-- 🔁 Palindrome Checking
 - 🚀 Coding Confidence
 
 ---
@@ -418,19 +408,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **17 / 100**        |
-| 💻 Challenges Solved | **17**              |
+| 📅 Days Completed    | **18 / 100**        |
+| 💻 Challenges Solved | **18**              |
 | ☕ Language           | **Java**            |
 | 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **17% Complete** 🚀 |
+| 🎯 Progress          | **18% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**17 Days of Java Practice Completed! 🎉**
+**18 Days of Java Practice Completed! 🎉**
 
-> 17 days down, 83 more to go! 🚀
+> 18 days down, 82 more to go! 🚀
 
 Consistency is the key to growth. Every challenge is helping me become a better Java programmer.
 
