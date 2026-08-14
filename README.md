@@ -99,6 +99,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java Anagrams.java
     │   └── Screenshot (222).png
     │
+    ├── Day-19/
+    │   ├── Java String Tokens.java
+    │   └── Screenshot (224).png
+    │
     └── README.md
 
 ---
@@ -117,17 +121,18 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 8    | Java Loops II                 | Completed |
 | ✅ Day 9    | Java End-of-file              | Completed |
 | ✅ Day 10   | Java Static Initializer Block | Completed |
-| ✅ Day 11   | Java Int to String             | Completed |
-| ✅ Day 12   | Java Date and Time             | Completed |
-| ✅ Day 13   | Java Currency Formatter        | Completed |
-| ✅ Day 14   | Java Strings                   | Completed |
-| ✅ Day 15   | Java Substring                 | Completed |
-| ✅ Day 16   | Java Substring Comparisons     | Completed |
-| ✅ Day 17   | Java String Reverse             | Completed |
-| ✅ Day 18   | Java Anagrams                   | Completed |
-| ⏳ Day 19   | Coming Soon                     | Pending   |
-| ...        | ...                             | ...       |
-| 🎯 Day 100  | Coming Soon                     | Pending   |
+| ✅ Day 11   | Java Int to String            | Completed |
+| ✅ Day 12   | Java Date and Time            | Completed |
+| ✅ Day 13   | Java Currency Formatter       | Completed |
+| ✅ Day 14   | Java Strings                  | Completed |
+| ✅ Day 15   | Java Substring                | Completed |
+| ✅ Day 16   | Java Substring Comparisons    | Completed |
+| ✅ Day 17   | Java String Reverse           | Completed |
+| ✅ Day 18   | Java Anagrams                 | Completed |
+| ✅ Day 19   | Java String Tokens            | Completed |
+| ⏳ Day 20   | Coming Soon                   | Pending   |
+| ...        | ...                           | ...       |
+| 🎯 Day 100  | Coming Soon                   | Pending   |
 
 ---
 
@@ -143,10 +148,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Printing Output
 - ✅ Java Syntax
 - ✅ Scanner Class
-- ✅ nextInt()
-- ✅ nextDouble()
-- ✅ nextLine()
-- ✅ hasNextLine()
+- ✅ `nextInt()`
+- ✅ `nextDouble()`
+- ✅ `nextLine()`
+- ✅ `hasNextLine()`
 
 ### 📥 Input & Output
 
@@ -155,24 +160,24 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ End-of-File (EOF)
 - ✅ Input Buffer Handling
 - ✅ Output Formatting
-- ✅ System.out.printf()
+- ✅ `System.out.printf()`
 - ✅ String Formatting
 - ✅ Field Width & Left Alignment
 
 ### 🔀 Conditional Statements
 
 - ✅ Conditional Statements
-- ✅ if-else
+- ✅ `if-else`
 - ✅ Decision Making
 - ✅ Logical Conditions
 
 ### 🔁 Loops
 
-- ✅ for Loop
+- ✅ `for` Loop
 - ✅ Nested Loops
 - ✅ Series Generation
 - ✅ Mathematical Expressions
-- ✅ Bitwise Left Shift (<<)
+- ✅ Bitwise Left Shift (`<<`)
 - ✅ Pattern-Based Problem Solving
 
 ### ⚙️ Static & Type Conversion
@@ -181,8 +186,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Static Initialization Blocks
 - ✅ Class Loading
 - ✅ Integer to String Conversion
-- ✅ Integer.toString()
-- ✅ String.valueOf()
+- ✅ `Integer.toString()`
+- ✅ `String.valueOf()`
 - ✅ Type Conversion
 
 ### 📅 Date & Time
@@ -195,11 +200,11 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 ### 💰 Currency Formatting
 
-- ✅ NumberFormat Class
-- ✅ getCurrencyInstance()
-- ✅ Locale.US
-- ✅ Locale.CHINA
-- ✅ Locale.FRANCE
+- ✅ `NumberFormat` Class
+- ✅ `getCurrencyInstance()`
+- ✅ `Locale.US`
+- ✅ `Locale.CHINA`
+- ✅ `Locale.FRANCE`
 - ✅ Custom Indian Locale
 - ✅ Currency Formatting
 - ✅ Internationalization Concepts
@@ -208,9 +213,9 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 - ✅ String Creation
 - ✅ String Comparison
-- ✅ String.length()
-- ✅ String.compareTo()
-- ✅ String.substring()
+- ✅ `String.length()`
+- ✅ `String.compareTo()`
+- ✅ `String.substring()`
 - ✅ Lexicographical Ordering
 - ✅ String Manipulation
 - ✅ Character Comparison
@@ -220,7 +225,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 ### ✂️ Substring
 
 - ✅ String Substring
-- ✅ substring() Method
+- ✅ `substring()` Method
 - ✅ Start Index
 - ✅ End Index
 - ✅ String Indexing
@@ -233,9 +238,9 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ String Reverse
 - ✅ Palindrome Checking
 - ✅ StringBuilder
-- ✅ reverse() Method
+- ✅ `reverse()` Method
 - ✅ String Comparison
-- ✅ equals() Method
+- ✅ `equals()` Method
 - ✅ Conditional Statements
 - ✅ Logical Thinking
 - ✅ String Manipulation
@@ -251,6 +256,19 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ String Manipulation
 - ✅ Character Handling
 - ✅ Problem Solving
+
+### 🔤 String Tokens
+
+- ✅ String Tokenization
+- ✅ `String.split()` Method
+- ✅ Regular Expressions
+- ✅ Token Extraction
+- ✅ Alphabetic Character Filtering
+- ✅ String Manipulation
+- ✅ Input String Processing
+- ✅ Counting Tokens
+- ✅ Printing Tokens
+- ✅ Problem Solving with Strings
 
 🔜 More Java concepts will be added throughout this challenge.
 
@@ -284,6 +302,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔁 Palindrome Checking
 - 🔠 Anagram Detection
 - 📊 Character Frequency
+- 🔤 String Tokenization
+- 🧩 Regular Expressions
 - 🚀 Java Development
 
 ---
@@ -307,16 +327,17 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 15 Completed
 - ✅ Day 16 Completed
 - ✅ Day 17 Completed
-- ✅ Day 18 Completed 🎉
+- ✅ Day 18 Completed
+- ✅ Day 19 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 18 – Java Anagrams
+# 🆕 Day 19 – Java String Tokens
 
 ### 🎯 Challenge
 
-**Java Anagrams**
+**Java String Tokens**
 
 ### 💻 Platform
 
@@ -328,35 +349,40 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 ### 📚 Concepts Practiced
 
-- 🔠 Anagram Checking
-- 🔤 String Handling
-- 🔍 Character Comparison
-- 📊 Character Frequency
-- 🔄 String Manipulation
-- 🔡 Case-Insensitive Comparison
-- 🧩 Character Arrays
+- 🔤 String Tokenization
+- ✂️ String Splitting
+- 🧩 `String.split()` Method
+- 🔍 Regular Expressions
+- 🔠 Alphabetic Character Filtering
+- 📊 Token Counting
+- 📝 String Processing
 - 🧠 Logical Thinking
 - 💻 Problem Solving
 
 ### 📂 Files Added
 
-    Day-18/
+    Day-19/
     │
-    ├── Java Anagrams.java
-    └── Screenshot (222).png
+    ├── Java String Tokens.java
+    └── Screenshot (224).png
 
 ### 💡 Key Concept
 
-Two strings are called **anagrams** if they contain the same characters with the same frequency, regardless of their order.
+The **Java String Tokens** challenge requires splitting a given string into tokens.
 
-For example:
+A token is defined as one or more consecutive English alphabetic letters.
 
-    Listen
-    Silent
+The `String.split()` method can be used with a regular expression to separate the input string into individual tokens.
 
-Both strings contain the same characters, so they are anagrams.
+The program first determines the total number of tokens and then prints each token on a new line in the same order as it appears in the input.
 
-The solution checks the characters of both strings and determines whether they contain the same set of characters with the same frequency.
+### 🔑 Java Concept Used
+
+    String[] tokens = s.split("[^A-Za-z]+");
+
+The regular expression separates the string whenever one or more non-alphabetic characters are encountered.
+
+This allows the program to extract only the required alphabetic tokens from the input string.
 
 ### ✅ Status
 
@@ -408,19 +434,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **18 / 100**        |
-| 💻 Challenges Solved | **18**              |
+| 📅 Days Completed    | **19 / 100**        |
+| 💻 Challenges Solved | **19**              |
 | ☕ Language           | **Java**            |
 | 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **18% Complete** 🚀 |
+| 🎯 Progress          | **19% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**18 Days of Java Practice Completed! 🎉**
+**19 Days of Java Practice Completed! 🎉**
 
-> 18 days down, 82 more to go! 🚀
+> 19 days down, 81 more to go! 🚀
 
 Consistency is the key to growth. Every challenge is helping me become a better Java programmer.
 
