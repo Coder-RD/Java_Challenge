@@ -103,6 +103,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java String Tokens.java
     │   └── Screenshot (224).png
     │
+    ├── Day-20/
+    │   ├── Pattern Syntax Checker.java
+    │   └── Screenshot (228).png
+    │
     └── README.md
 
 ---
@@ -120,19 +124,20 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 7    | Java Loops I                  | Completed |
 | ✅ Day 8    | Java Loops II                 | Completed |
 | ✅ Day 9    | Java End-of-file              | Completed |
-| ✅ Day 10   | Java Static Initializer Block | Completed |
-| ✅ Day 11   | Java Int to String            | Completed |
-| ✅ Day 12   | Java Date and Time            | Completed |
-| ✅ Day 13   | Java Currency Formatter       | Completed |
-| ✅ Day 14   | Java Strings                  | Completed |
-| ✅ Day 15   | Java Substring                | Completed |
-| ✅ Day 16   | Java Substring Comparisons    | Completed |
-| ✅ Day 17   | Java String Reverse           | Completed |
-| ✅ Day 18   | Java Anagrams                 | Completed |
-| ✅ Day 19   | Java String Tokens            | Completed |
-| ⏳ Day 20   | Coming Soon                   | Pending   |
-| ...        | ...                           | ...       |
-| 🎯 Day 100  | Coming Soon                   | Pending   |
+| ✅ Day 10   | Java Static Initializer Block  | Completed |
+| ✅ Day 11   | Java Int to String             | Completed |
+| ✅ Day 12   | Java Date and Time             | Completed |
+| ✅ Day 13   | Java Currency Formatter        | Completed |
+| ✅ Day 14   | Java Strings                   | Completed |
+| ✅ Day 15   | Java Substring                 | Completed |
+| ✅ Day 16   | Java Substring Comparisons     | Completed |
+| ✅ Day 17   | Java String Reverse             | Completed |
+| ✅ Day 18   | Java Anagrams                   | Completed |
+| ✅ Day 19   | Java String Tokens              | Completed |
+| ✅ Day 20   | Pattern Syntax Checker          | Completed |
+| ⏳ Day 21   | Coming Soon                     | Pending   |
+| ...        | ...                             | ...       |
+| 🎯 Day 100  | Coming Soon                     | Pending   |
 
 ---
 
@@ -270,6 +275,20 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Printing Tokens
 - ✅ Problem Solving with Strings
 
+### 🔎 Pattern Syntax Checker
+
+- ✅ Regular Expressions
+- ✅ Regex Pattern Validation
+- ✅ `Pattern` Class
+- ✅ `Pattern.compile()`
+- ✅ Exception Handling
+- ✅ `PatternSyntaxException`
+- ✅ Regex Syntax Checking
+- ✅ Valid and Invalid Patterns
+- ✅ String Input Handling
+- ✅ Conditional Statements
+- ✅ Problem Solving
+
 🔜 More Java concepts will be added throughout this challenge.
 
 ---
@@ -304,6 +323,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 📊 Character Frequency
 - 🔤 String Tokenization
 - 🧩 Regular Expressions
+- 🔎 Regex Pattern Validation
+- ⚙️ Exception Handling
 - 🚀 Java Development
 
 ---
@@ -328,16 +349,17 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 16 Completed
 - ✅ Day 17 Completed
 - ✅ Day 18 Completed
-- ✅ Day 19 Completed 🎉
+- ✅ Day 19 Completed
+- ✅ Day 20 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 19 – Java String Tokens
+# 🆕 Day 20 – Pattern Syntax Checker
 
 ### 🎯 Challenge
 
-**Java String Tokens**
+**Pattern Syntax Checker**
 
 ### 💻 Platform
 
@@ -349,40 +371,39 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 ### 📚 Concepts Practiced
 
-- 🔤 String Tokenization
-- ✂️ String Splitting
-- 🧩 `String.split()` Method
-- 🔍 Regular Expressions
-- 🔠 Alphabetic Character Filtering
-- 📊 Token Counting
-- 📝 String Processing
+- 🔎 Regular Expressions
+- 🧩 Regex Pattern Validation
+- ⚙️ `Pattern` Class
+- 🔧 `Pattern.compile()`
+- 🚨 Exception Handling
+- ❌ Invalid Regex Detection
+- ✅ Valid Regex Detection
+- 🔤 String Processing
 - 🧠 Logical Thinking
 - 💻 Problem Solving
 
 ### 📂 Files Added
 
-    Day-19/
+    Day-20/
     │
-    ├── Java String Tokens.java
-    └── Screenshot (224).png
+    ├── Pattern Syntax Checker.java
+    └── Screenshot (228).png
 
 ### 💡 Key Concept
 
-The **Java String Tokens** challenge requires splitting a given string into tokens.
+The **Pattern Syntax Checker** challenge requires checking whether a given regular expression pattern has valid syntax.
 
-A token is defined as one or more consecutive English alphabetic letters.
+Java provides the `Pattern.compile()` method to compile a regular expression. If the pattern is syntactically correct, it can be compiled successfully.
 
-The `String.split()` method can be used with a regular expression to separate the input string into individual tokens.
-
-The program first determines the total number of tokens and then prints each token on a new line in the same order as it appears in the input.
+If the pattern contains invalid regular expression syntax, Java throws a `PatternSyntaxException`.
 
 ### 🔑 Java Concept Used
 
-    String[] tokens = s.split("[^A-Za-z]+");
+    Pattern.compile(pattern);
 
-The regular expression separates the string whenever one or more non-alphabetic characters are encountered.
+The `Pattern.compile()` method is used to compile the given regular expression.
 
-This allows the program to extract only the required alphabetic tokens from the input string.
+A `try-catch` block can be used to handle invalid regular expression patterns and determine whether the pattern is **Valid** or **Invalid**.
 
 ### ✅ Status
 
@@ -434,19 +455,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **19 / 100**        |
-| 💻 Challenges Solved | **19**              |
+| 📅 Days Completed    | **20 / 100**        |
+| 💻 Challenges Solved | **20**              |
 | ☕ Language           | **Java**            |
 | 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **19% Complete** 🚀 |
+| 🎯 Progress          | **20% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**19 Days of Java Practice Completed! 🎉**
+**20 Days of Java Practice Completed! 🎉**
 
-> 19 days down, 81 more to go! 🚀
+> 20 days down, 80 more to go! 🚀
 
 Consistency is the key to growth. Every challenge is helping me become a better Java programmer.
 
