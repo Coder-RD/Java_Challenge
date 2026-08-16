@@ -107,37 +107,42 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Pattern Syntax Checker.java
     │   └── Screenshot (228).png
     │
+    ├── Day-21/
+    │   ├── Java Regex 2 - Duplicate Words.java
+    │   └── Screenshot 2026-08-16 193102.png
+    │
     └── README.md
 
 ---
 
 # ✅ Progress
 
-| Day        | Challenge                     | Status    |
-| ---------- | ----------------------------- | --------- |
-| ✅ Day 1    | Java Stdin and Stdout I       | Completed |
-| ✅ Day 2    | Java Datatypes                | Completed |
-| ✅ Day 3    | Welcome to Java!              | Completed |
-| ✅ Day 4    | Java Stdin and Stdout II      | Completed |
-| ✅ Day 5    | Java If-Else                  | Completed |
-| ✅ Day 6    | Java Output Formatting        | Completed |
-| ✅ Day 7    | Java Loops I                  | Completed |
-| ✅ Day 8    | Java Loops II                 | Completed |
-| ✅ Day 9    | Java End-of-file              | Completed |
-| ✅ Day 10   | Java Static Initializer Block  | Completed |
-| ✅ Day 11   | Java Int to String             | Completed |
-| ✅ Day 12   | Java Date and Time             | Completed |
-| ✅ Day 13   | Java Currency Formatter        | Completed |
-| ✅ Day 14   | Java Strings                   | Completed |
-| ✅ Day 15   | Java Substring                 | Completed |
-| ✅ Day 16   | Java Substring Comparisons     | Completed |
-| ✅ Day 17   | Java String Reverse             | Completed |
-| ✅ Day 18   | Java Anagrams                   | Completed |
-| ✅ Day 19   | Java String Tokens              | Completed |
-| ✅ Day 20   | Pattern Syntax Checker          | Completed |
-| ⏳ Day 21   | Coming Soon                     | Pending   |
-| ...        | ...                             | ...       |
-| 🎯 Day 100  | Coming Soon                     | Pending   |
+| Day        | Challenge                         | Status    |
+| ---------- | --------------------------------- | --------- |
+| ✅ Day 1    | Java Stdin and Stdout I           | Completed |
+| ✅ Day 2    | Java Datatypes                    | Completed |
+| ✅ Day 3    | Welcome to Java!                  | Completed |
+| ✅ Day 4    | Java Stdin and Stdout II          | Completed |
+| ✅ Day 5    | Java If-Else                      | Completed |
+| ✅ Day 6    | Java Output Formatting            | Completed |
+| ✅ Day 7    | Java Loops I                      | Completed |
+| ✅ Day 8    | Java Loops II                     | Completed |
+| ✅ Day 9    | Java End-of-file                  | Completed |
+| ✅ Day 10   | Java Static Initializer Block     | Completed |
+| ✅ Day 11   | Java Int to String                | Completed |
+| ✅ Day 12   | Java Date and Time                | Completed |
+| ✅ Day 13   | Java Currency Formatter           | Completed |
+| ✅ Day 14   | Java Strings                      | Completed |
+| ✅ Day 15   | Java Substring                    | Completed |
+| ✅ Day 16   | Java Substring Comparisons        | Completed |
+| ✅ Day 17   | Java String Reverse               | Completed |
+| ✅ Day 18   | Java Anagrams                     | Completed |
+| ✅ Day 19   | Java String Tokens                | Completed |
+| ✅ Day 20   | Pattern Syntax Checker            | Completed |
+| ✅ Day 21   | Regex 2 - Duplicate Words         | Completed |
+| ⏳ Day 22   | Coming Soon                       | Pending   |
+| ...        | ...                               | ...       |
+| 🎯 Day 100  | Coming Soon                       | Pending   |
 
 ---
 
@@ -289,6 +294,24 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Conditional Statements
 - ✅ Problem Solving
 
+### 🔁 Regex 2 - Duplicate Words
+
+- ✅ Regular Expressions
+- ✅ Regex Pattern Matching
+- ✅ `Pattern` Class
+- ✅ `Pattern.compile()`
+- ✅ `Pattern.CASE_INSENSITIVE`
+- ✅ `Matcher` Class
+- ✅ Capturing Groups
+- ✅ Backreferences
+- ✅ Duplicate Word Detection
+- ✅ Case-Insensitive Matching
+- ✅ `replaceAll()`
+- ✅ Preserving First Occurrence
+- ✅ String Manipulation
+- ✅ Exception-Free Pattern Processing
+- ✅ Problem Solving with Regex
+
 🔜 More Java concepts will be added throughout this challenge.
 
 ---
@@ -324,6 +347,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔤 String Tokenization
 - 🧩 Regular Expressions
 - 🔎 Regex Pattern Validation
+- 🔁 Duplicate Word Detection
+- 🔤 Case-Insensitive Matching
 - ⚙️ Exception Handling
 - 🚀 Java Development
 
@@ -350,16 +375,17 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 17 Completed
 - ✅ Day 18 Completed
 - ✅ Day 19 Completed
-- ✅ Day 20 Completed 🎉
+- ✅ Day 20 Completed
+- ✅ Day 21 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 20 – Pattern Syntax Checker
+# 🆕 Day 21 – Regex 2: Duplicate Words
 
 ### 🎯 Challenge
 
-**Pattern Syntax Checker**
+**Regex 2 - Duplicate Words**
 
 ### 💻 Platform
 
@@ -372,38 +398,40 @@ This repository contains my daily Java programming solutions from **HackerRank**
 ### 📚 Concepts Practiced
 
 - 🔎 Regular Expressions
-- 🧩 Regex Pattern Validation
+- 🧩 Regex Pattern Matching
 - ⚙️ `Pattern` Class
 - 🔧 `Pattern.compile()`
-- 🚨 Exception Handling
-- ❌ Invalid Regex Detection
-- ✅ Valid Regex Detection
-- 🔤 String Processing
+- 🔤 `Pattern.CASE_INSENSITIVE`
+- 🔍 `Matcher`
+- 🔗 Capturing Groups
+- 🔄 Backreferences
+- 🗑️ Removing Duplicate Words
+- 🔠 Case-Insensitive Matching
+- 🔁 `replaceAll()`
+- 🎯 Preserving First Occurrence
 - 🧠 Logical Thinking
 - 💻 Problem Solving
 
 ### 📂 Files Added
 
-    Day-20/
+    Day-21/
     │
-    ├── Pattern Syntax Checker.java
-    └── Screenshot (228).png
+    ├── Java Regex 2 - Duplicate Words.java
+    └── Screenshot 2026-08-16 193102.png
 
 ### 💡 Key Concept
 
-The **Pattern Syntax Checker** challenge requires checking whether a given regular expression pattern has valid syntax.
+The **Regex 2 - Duplicate Words** challenge requires removing repeated words from a sentence while retaining the **first occurrence** of each word.
 
-Java provides the `Pattern.compile()` method to compile a regular expression. If the pattern is syntactically correct, it can be compiled successfully.
+The matching is performed in a **case-insensitive** manner. For example, `love`, `Love`, and `LOVE` are treated as the same word, while the exact first occurrence is preserved in the final sentence.
 
-If the pattern contains invalid regular expression syntax, Java throws a `PatternSyntaxException`.
+### 🔑 Java Concepts Used
 
-### 🔑 Java Concept Used
+    Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 
-    Pattern.compile(pattern);
+The `Pattern.CASE_INSENSITIVE` flag allows the regular expression to match repeated words without considering their letter case.
 
-The `Pattern.compile()` method is used to compile the given regular expression.
-
-A `try-catch` block can be used to handle invalid regular expression patterns and determine whether the pattern is **Valid** or **Invalid**.
+Capturing groups and backreferences are used to identify repeated words, while `replaceAll()` removes the duplicate occurrences and retains the first occurrence.
 
 ### ✅ Status
 
@@ -455,19 +483,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **20 / 100**        |
-| 💻 Challenges Solved | **20**              |
+| 📅 Days Completed    | **21 / 100**        |
+| 💻 Challenges Solved | **21**              |
 | ☕ Language           | **Java**            |
-| 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **20% Complete** 🚀 |
+| 🏆 Platform           | **HackerRank**      |
+| 🎯 Progress          | **21% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**20 Days of Java Practice Completed! 🎉**
+**21 Days of Java Practice Completed! 🎉**
 
-> 20 days down, 80 more to go! 🚀
+> 21 days down, 79 more to go! 🚀
 
 Consistency is the key to growth. Every challenge is helping me become a better Java programmer.
 
@@ -493,4 +521,4 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#Java` `#CoreJava` `#HackerRank` `#CodingChallenge` `#Programming` `#DeveloperJourney` `#LearningInPublic` `#GitHub` `#JavaDeveloper` `#ProblemSolving` `#CodingJourney` `#OpenToWork`
+`#100DaysOfCode` `#Java` `#CoreJava` `#HackerRank` `#CodingChallenge` `#Programming` `#DeveloperJourney` `#LearningInPublic` `#GitHub` `#JavaDeveloper` `#ProblemSolving` `#CodingJourney` `#RegularExpressions` `#Regex` `#OpenToWork`
