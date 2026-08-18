@@ -23,7 +23,9 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ☕ **Java**
 - 🧠 **Core Java**
 - 🔤 **String Handling**
-- 🔢 **Problem Solving**
+- 🔍 **Regular Expressions**
+- 🔢 **BigDecimal**
+- 🧩 **Problem Solving**
 
 ---
 
@@ -32,52 +34,52 @@ This repository contains my daily Java programming solutions from **HackerRank**
     Java_Challenge/
     │
     ├── Day-1/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-2/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-3/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-4/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-5/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-6/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-7/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-8/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-9/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-10/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-11/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-12/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-13/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-14/
-    │   └── ...
+    │   └── Java String Reverse.java
     │
     ├── Day-15/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-16/
-    │   └── ...
+    │   └── Java Challenge
     │
     ├── Day-17/
     │   └── Java String Reverse.java
@@ -99,6 +101,9 @@ This repository contains my daily Java programming solutions from **HackerRank**
     ├── Day-22/
     │   ├── Tag Content Extractor.java
     │   └── Screenshot 2026-08-17 212544.png
+    │
+    ├── Day-23/
+    │   └── Java BigDecimal.java
     │
     └── README.md
 
@@ -130,13 +135,16 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 20 | Pattern Syntax Checker | Completed |
 | ✅ Day 21 | Duplicate Words | Completed |
 | ✅ Day 22 | Tag Content Extractor | Completed |
-| ⏳ Day 23 | Coming Soon | Pending |
+| ✅ Day 23 | Java BigDecimal | Completed |
+| ⏳ Day 24 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
 ---
 
 # 📖 Topics Covered
+
+### ☕ Java Fundamentals
 
 - ✅ Java Basics
 - ✅ Variables and Data Types
@@ -145,24 +153,47 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Arrays
 - ✅ Strings
 - ✅ String Manipulation
+
+### 🔤 String Programming
+
 - ✅ String Reverse
 - ✅ Palindrome
 - ✅ Anagrams
 - ✅ String Tokens
+- ✅ String Splitting
+- ✅ Character Processing
+- ✅ String Comparison
+
+### 🔍 Regular Expressions
+
 - ✅ Regular Expressions
 - ✅ Regex Pattern Matching
 - ✅ Pattern Syntax Checking
-- ✅ Duplicate Word Detection
-- ✅ Case-Insensitive Regex
-- ✅ String Replacement
-- ✅ Tag Content Extraction
-- ✅ Nested Tags
 - ✅ Pattern Compilation
 - ✅ `Pattern.compile()`
 - ✅ `Matcher`
-- ✅ `replaceAll()`
-- ✅ Problem Solving
+- ✅ `find()`
+- ✅ Capturing Groups
+- ✅ Case-Insensitive Regex
+- ✅ Duplicate Word Detection
+- ✅ String Replacement
+- ✅ Tag Content Extraction
+- ✅ Nested Tags
+
+### 🔢 Number Handling
+
+- ✅ BigDecimal
+- ✅ BigDecimal Precision
+- ✅ BigDecimal Comparison
+- ✅ Decimal Number Sorting
+
+### 🧩 Problem Solving
+
 - ✅ Logical Thinking
+- ✅ Problem Solving
+- ✅ Pattern Recognition
+- ✅ Algorithmic Thinking
+- ✅ Efficient Coding
 
 🔜 More Java concepts will be added throughout this challenge.
 
@@ -177,6 +208,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔍 Regular Expressions
 - 💻 Programming Fundamentals
 - 📝 Pattern Matching
+- 🔢 Number Handling
 - ⚡ Efficient Coding
 - 🎯 Algorithmic Thinking
 - 🚀 Coding Consistency
@@ -208,6 +240,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 20 Completed
 - ✅ Day 21 Completed
 - ✅ Day 22 Completed 🎉
+- ✅ Day 23 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -274,6 +307,73 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 
 ---
 
+# 🆕 Day 23 – Java BigDecimal
+
+### 🎯 Challenge
+
+**Java BigDecimal**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 `BigDecimal`
+- 🔹 Decimal Number Handling
+- 🔹 High Precision
+- 🔹 Number Comparison
+- 🔹 Sorting
+- 🔹 Arrays
+- 🔹 `compareTo()`
+- 🔹 Problem Solving
+
+### 📂 Files Added
+
+    Day-23/
+    │
+    └── Java BigDecimal.java
+
+### 💡 Key Concept
+
+The **Java BigDecimal** challenge focuses on handling decimal numbers with high precision in Java.
+
+`BigDecimal` is useful when accurate decimal calculations are required because floating-point data types such as `float` and `double` can sometimes produce precision errors.
+
+The challenge also focuses on sorting decimal values while preserving their original representations.
+
+### 🔑 Java Concepts Used
+
+- `BigDecimal`
+- `BigDecimal.compareTo()`
+- Arrays
+- Array Sorting
+- String Handling
+- Number Comparison
+- Precision Handling
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Handle decimal numbers accurately.
+- Use `BigDecimal` for precise calculations.
+- Compare decimal values.
+- Sort decimal numbers.
+- Work with arrays and numerical data.
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
+
+---
+
 # 🎯 Why This Repository?
 
 This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
@@ -295,6 +395,7 @@ Every challenge helps me improve my:
 
 - 🔹 Object-Oriented Programming
 - 🔹 Classes and Objects
+- 🔹 Constructors
 - 🔹 Inheritance
 - 🔹 Polymorphism
 - 🔹 Abstraction
@@ -306,15 +407,31 @@ Every challenge helps me improve my:
 - 🔹 LinkedList
 - 🔹 HashMap
 - 🔹 HashSet
+- 🔹 TreeMap
+- 🔹 TreeSet
 - 🔹 Stack
 - 🔹 Queue
+- 🔹 PriorityQueue
 - 🔹 Generics
 - 🔹 File Handling
 - 🔹 Multithreading
 - 🔹 Java 8 Features
 - 🔹 Lambda Expressions
+- 🔹 Functional Interfaces
 - 🔹 Streams
 - 🔹 Advanced Java
+
+---
+
+# 🚀 Learning Journey
+
+This challenge is not only about solving 100 problems.
+
+It is about building a consistent habit of:
+
+> **Learn → Practice → Solve → Improve → Repeat 🔁**
+
+Every day brings a new challenge and an opportunity to improve my Java programming skills.
 
 ---
 
@@ -322,21 +439,24 @@ Every challenge helps me improve my:
 
 | 📊 Category | Details |
 | --- | --- |
-| 📅 Days Completed | **22 / 100** |
-| 💻 Challenges Solved | **22** |
+| 📅 Days Completed | **23 / 100** |
+| 💻 Challenges Solved | **23** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🎯 Progress | **22% Complete** 🚀 |
+| 🎯 Progress | **23% Complete** 🚀 |
+| 🔥 Current Streak | **23 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-**22 Days of Java Practice Completed! 🎉**
+## 🎉 23 Days of Java Practice Completed!
 
-> 22 days down, 78 more to go! 🚀
+> **23 days down, 77 more to go! 🚀**
 
-Consistency is the key to growth. Every problem I solve is helping me become better at Java, programming, and problem-solving.
+Consistency is the key to growth.
+
+Every problem I solve is helping me become better at Java, programming, and problem-solving.
 
 ---
 
