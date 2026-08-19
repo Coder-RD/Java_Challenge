@@ -25,6 +25,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔤 **String Handling**
 - 🔍 **Regular Expressions**
 - 🔢 **BigDecimal**
+- 🔢 **BigInteger**
 - 🧩 **Problem Solving**
 
 ---
@@ -105,6 +106,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
     ├── Day-23/
     │   └── Java BigDecimal.java
     │
+    ├── Day-24/
+    │   ├── Java Primality Test.java
+    │   └── Screenshot 2026-08-19 103022.png
+    │
     └── README.md
 
 ---
@@ -136,7 +141,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 21 | Duplicate Words | Completed |
 | ✅ Day 22 | Tag Content Extractor | Completed |
 | ✅ Day 23 | Java BigDecimal | Completed |
-| ⏳ Day 24 | Coming Soon | Pending |
+| ✅ Day 24 | Java Primality Test | Completed |
+| ⏳ Day 25 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -186,6 +192,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ BigDecimal Precision
 - ✅ BigDecimal Comparison
 - ✅ Decimal Number Sorting
+- ✅ BigInteger
+- ✅ Large Number Handling
+- ✅ Prime Number Checking
+- ✅ `isProbablePrime()`
 
 ### 🧩 Problem Solving
 
@@ -241,6 +251,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 21 Completed
 - ✅ Day 22 Completed 🎉
 - ✅ Day 23 Completed 🎉
+- ✅ Day 24 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -302,8 +313,6 @@ The solution checks that:
 ### ✅ Status
 
 **Completed 🎉**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -370,114 +379,49 @@ Through this challenge, I practiced how to:
 
 **Completed 🎉**
 
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
-
 ---
 
-# 🎯 Why This Repository?
+# 🆕 Day 24 – Java Primality Test
 
-This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
+### 🎯 Challenge
 
-It serves as a portfolio of my programming practice and demonstrates my consistency, problem-solving ability, and commitment to continuous learning.
+**Java Primality Test**
 
-Every challenge helps me improve my:
+### 💻 Platform
 
-- 🧠 Logical Thinking
-- ☕ Java Programming Skills
-- 🧩 Problem-Solving Ability
-- 🔍 Pattern Recognition
-- 💻 Coding Skills
-- 🚀 Programming Confidence
+**HackerRank**
 
----
+### ☕ Language
 
-# 🌟 Future Topics
+**Java**
 
-- 🔹 Object-Oriented Programming
-- 🔹 Classes and Objects
-- 🔹 Constructors
-- 🔹 Inheritance
-- 🔹 Polymorphism
-- 🔹 Abstraction
-- 🔹 Encapsulation
-- 🔹 Interfaces
-- 🔹 Exception Handling
-- 🔹 Collections Framework
-- 🔹 ArrayList
-- 🔹 LinkedList
-- 🔹 HashMap
-- 🔹 HashSet
-- 🔹 TreeMap
-- 🔹 TreeSet
-- 🔹 Stack
-- 🔹 Queue
-- 🔹 PriorityQueue
-- 🔹 Generics
-- 🔹 File Handling
-- 🔹 Multithreading
-- 🔹 Java 8 Features
-- 🔹 Lambda Expressions
-- 🔹 Functional Interfaces
-- 🔹 Streams
-- 🔹 Advanced Java
+### 📚 Concepts Practiced
 
----
+- 🔹 `BigInteger`
+- 🔹 `isProbablePrime()`
+- 🔹 Large Number Handling
+- 🔹 Prime Number Checking
+- 🔹 Conditional Statements
+- 🔹 Input Handling
+- 🔹 Problem Solving
+- 🔹 Logical Thinking
 
-# 🚀 Learning Journey
+### 📂 Files Added
 
-This challenge is not only about solving 100 problems.
+    Day-24/
+    │
+    ├── Java Primality Test.java
+    └── Screenshot 2026-08-19 103022.png
 
-It is about building a consistent habit of:
+### 💡 Key Concept
 
-> **Learn → Practice → Solve → Improve → Repeat 🔁**
+The **Java Primality Test** challenge focuses on determining whether a large integer is a prime number using Java's `BigInteger` class.
 
-Every day brings a new challenge and an opportunity to improve my Java programming skills.
+A prime number is a natural number greater than 1 whose only positive divisors are 1 and itself.
 
----
+Since the input number can contain a large number of digits, the `BigInteger` class is used instead of primitive data types such as `int` or `long`.
 
-# 📈 Current Statistics
+The solution uses:
 
-| 📊 Category | Details |
-| --- | --- |
-| 📅 Days Completed | **23 / 100** |
-| 💻 Challenges Solved | **23** |
-| ☕ Language | **Java** |
-| 🏆 Platform | **HackerRank** |
-| 🎯 Progress | **23% Complete** 🚀 |
-| 🔥 Current Streak | **23 Days** |
-
----
-
-# 🔥 Current Streak
-
-## 🎉 23 Days of Java Practice Completed!
-
-> **23 days down, 77 more to go! 🚀**
-
-Consistency is the key to growth.
-
-Every problem I solve is helping me become better at Java, programming, and problem-solving.
-
----
-
-# ⭐ Support
-
-If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
-
-Your support motivates me to continue learning and sharing my coding journey! 🚀
-
----
-
-# 🤝 Connect With Me
-
-Let's learn, build, and grow together! 🌱
-
-📌 **GitHub:**
-
-https://github.com/Coder-RD
-
----
-
-# 🔖 Hashtags
-
-`#100DaysOfCode` `#Java` `#CoreJava` `#HackerRank` `#JavaProgramming` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#Programming` `#SoftwareDevelopment`
+```java
+number.isProbablePrime(1)
