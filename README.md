@@ -110,6 +110,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java Primality Test.java
     │   └── Screenshot 2026-08-19 103022.png
     │
+    ├── Day-25/
+    │   ├── Java BigInteger.java
+    │   └── Screenshot 2026-08-20 162029.png
+    │
     └── README.md
 
 ---
@@ -142,7 +146,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 22 | Tag Content Extractor | Completed |
 | ✅ Day 23 | Java BigDecimal | Completed |
 | ✅ Day 24 | Java Primality Test | Completed |
-| ⏳ Day 25 | Coming Soon | Pending |
+| ✅ Day 25 | Java BigInteger | Completed |
+| ⏳ Day 26 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -196,6 +201,9 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Large Number Handling
 - ✅ Prime Number Checking
 - ✅ `isProbablePrime()`
+- ✅ BigInteger Addition
+- ✅ BigInteger Multiplication
+- ✅ Handling Extremely Large Integers
 
 ### 🧩 Problem Solving
 
@@ -223,6 +231,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🎯 Algorithmic Thinking
 - 🚀 Coding Consistency
 - 💼 Technical Interview Preparation
+- 🔢 BigInteger & BigDecimal
+- 📊 Numerical Data Processing
 
 ---
 
@@ -252,6 +262,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 22 Completed 🎉
 - ✅ Day 23 Completed 🎉
 - ✅ Day 24 Completed 🎉
+- ✅ Day 25 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -423,5 +434,361 @@ Since the input number can contain a large number of digits, the `BigInteger` cl
 
 The solution uses:
 
-```java
-number.isProbablePrime(1)
+    number.isProbablePrime(1);
+
+The `isProbablePrime()` method checks whether the `BigInteger` is probably prime.
+
+### 🔑 Java Concepts Used
+
+- `BigInteger`
+- `isProbablePrime()`
+- Large Integer Handling
+- Prime Number Testing
+- Conditional Statements
+- Input Handling
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Work with very large integers.
+- Use the `BigInteger` class.
+- Check whether a number is prime.
+- Use `isProbablePrime()`.
+- Handle numbers beyond the range of primitive data types.
+
+### ✅ Status
+
+**Completed 🎉**
+
+---
+
+# 🆕 Day 25 – Java BigInteger
+
+### 🎯 Challenge
+
+**Java BigInteger**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 `BigInteger`
+- 🔹 Large Number Handling
+- 🔹 Arbitrary-Precision Integers
+- 🔹 BigInteger Addition
+- 🔹 BigInteger Multiplication
+- 🔹 `add()`
+- 🔹 `multiply()`
+- 🔹 Input Handling
+- 🔹 Problem Solving
+
+### 📂 Files Added
+
+    Day-25/
+    │
+    ├── Java BigInteger.java
+    └── Screenshot 2026-08-20 162029.png
+
+### 💡 Key Concept
+
+The **Java BigInteger** challenge focuses on performing mathematical operations on extremely large integers that cannot be stored in primitive Java data types such as `int` or `long`.
+
+Java's `BigInteger` class from the `java.math` package provides support for integers of arbitrary precision.
+
+This allows us to perform calculations on numbers containing a very large number of digits.
+
+### 🔑 Java Concepts Used
+
+- `BigInteger`
+- `add()`
+- `multiply()`
+- Arbitrary-Precision Arithmetic
+- Large Integer Handling
+- Input Handling
+- Mathematical Operations
+
+### 🧮 Operations Practiced
+
+The challenge performs:
+
+- ➕ Addition of two large integers.
+- ✖️ Multiplication of two large integers.
+
+### Example
+
+    BigInteger a = new BigInteger("123456789");
+    BigInteger b = new BigInteger("987654321");
+
+    BigInteger sum = a.add(b);
+    BigInteger product = a.multiply(b);
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Handle extremely large integers.
+- Use Java's `BigInteger` class.
+- Perform addition using `add()`.
+- Perform multiplication using `multiply()`.
+- Work with arbitrary-precision numbers.
+- Understand why `BigInteger` is required when primitive data types are insufficient.
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
+
+---
+
+# 🎯 Why This Repository?
+
+This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
+
+It serves as a portfolio of my Java programming skills, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
+
+Every challenge helps me improve my:
+
+- 🧠 Logical Thinking
+- ☕ Java Programming Skills
+- 🧩 Problem-Solving Ability
+- 💻 Programming Fundamentals
+- 🔍 Pattern Recognition
+- 🔤 String Handling
+- 🔢 Number Processing
+- 🚀 Coding Confidence
+
+---
+
+# 🌟 Future Topics
+
+The upcoming days will focus on more Java concepts, including:
+
+- 🔹 Object-Oriented Programming
+- 🔹 Classes and Objects
+- 🔹 Constructors
+- 🔹 Inheritance
+- 🔹 Polymorphism
+- 🔹 Encapsulation
+- 🔹 Abstraction
+- 🔹 Interfaces
+- 🔹 Exception Handling
+- 🔹 Collections Framework
+- 🔹 ArrayList
+- 🔹 LinkedList
+- 🔹 HashSet
+- 🔹 HashMap
+- 🔹 Stack
+- 🔹 Queue
+- 🔹 Generics
+- 🔹 File Handling
+- 🔹 Multithreading
+- 🔹 Java 8 Features
+- 🔹 Lambda Expressions
+- 🔹 Stream API
+- 🔹 Functional Interfaces
+- 🔹 Advanced Java Concepts
+
+---
+
+# 📈 Current Statistics
+
+| 📊 Category | Details |
+| --- | --- |
+| 📅 Days Completed | **25 / 100** |
+| 💻 Challenges Solved | **25** |
+| ☕ Language | **Java** |
+| 🏆 Platform | **HackerRank** |
+| 🧠 Level | **Core Java** |
+| 📈 Progress | **25% Complete** 🚀 |
+| 🔥 Current Streak | **25 Days** |
+
+---
+
+# 🔥 Current Streak
+
+**25 Days of Java Practice Completed! 🎉🔥**
+
+> 25 days down, 75 more to go! 🚀
+
+Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
+
+---
+
+# 🏆 Milestones
+
+| 🏁 Milestone | Status |
+| --- | --- |
+| 🎯 Day 10 | ✅ Completed |
+| 🎯 Day 20 | ✅ Completed |
+| 🎯 Day 25 | ✅ Completed |
+| 🎯 Day 50 | ⏳ Upcoming |
+| 🎯 Day 75 | ⏳ Upcoming |
+| 🏆 Day 100 | ⏳ Goal |
+
+---
+
+# 📚 Learning Approach
+
+My daily learning process includes:
+
+1. 📖 Understand the problem statement.
+2. 🧠 Analyze the required output.
+3. ✍️ Write the Java solution.
+4. 🧪 Test the solution on HackerRank.
+5. 🔍 Understand the result.
+6. 📂 Save the Java solution in this repository.
+7. 📸 Add the successful submission screenshot.
+8. 🚀 Continue to the next challenge.
+
+---
+
+# 📊 Progress Tracker
+
+    Day 1    ████████████████████ 100% ✅
+    Day 5    ████████████████████ 100% ✅
+    Day 10   ████████████████████ 100% ✅
+    Day 15   ████████████████████ 100% ✅
+    Day 20   ████████████████████ 100% ✅
+    Day 25   ████████████████████ 100% ✅
+    Day 50   ░░░░░░░░░░░░░░░░░░░░  50% ⏳
+    Day 75   ░░░░░░░░░░░░░░░░░░░░  25% ⏳
+    Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
+
+### 🚀 Overall Progress
+
+    [█████░░░░░░░░░░░░░░░] 25%
+
+**25 / 100 Days Completed**
+
+---
+
+# 💻 Java Concepts Practiced
+
+### 🔹 String Handling
+
+    String
+    StringBuilder
+    String Manipulation
+    String Reverse
+    Anagrams
+    String Tokens
+
+### 🔹 Regular Expressions
+
+    Pattern
+    Matcher
+    Pattern.compile()
+    find()
+    Capturing Groups
+    Regex Matching
+
+### 🔹 BigDecimal
+
+    BigDecimal
+    compareTo()
+    Decimal Precision
+    Decimal Sorting
+
+### 🔹 BigInteger
+
+    BigInteger
+    add()
+    multiply()
+    isProbablePrime()
+    Arbitrary-Precision Arithmetic
+
+---
+
+# 📖 Topics Learned So Far
+
+Throughout the first 25 days, I have practiced Java concepts related to:
+
+- ☕ Core Java
+- 🔤 Strings
+- 🔄 String Manipulation
+- 🔍 Regular Expressions
+- 🧩 Pattern Matching
+- 📝 String Tokens
+- 🔤 Anagrams
+- 🏷️ Tag Content Extraction
+- 🔢 BigDecimal
+- 🔢 BigInteger
+- 🧮 Large Number Handling
+- 🔬 Prime Number Testing
+- 🧠 Logical Thinking
+- 💻 Problem Solving
+- 🚀 Efficient Coding
+
+---
+
+# 📌 Daily Practice
+
+Every day, I solve a new Java programming problem and add the solution to this repository.
+
+Each day's folder may contain:
+
+- ☕ Java Solution
+- 📸 HackerRank Submission Screenshot
+
+This makes the repository a complete record of my **100 Days of Java learning journey**.
+
+---
+
+# 🌱 Learning in Public
+
+This challenge is not only about solving programming problems.
+
+It is also about:
+
+- 🔥 Building consistency
+- 📚 Learning new Java concepts
+- 🧠 Improving logical thinking
+- 💻 Writing better Java programs
+- 🧩 Improving problem-solving skills
+- 🎯 Preparing for technical interviews
+- 🚀 Building a strong technical portfolio
+- 💼 Preparing for software development opportunities
+
+---
+
+# ⭐ Support
+
+If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
+
+Your support motivates me to continue learning and sharing my journey! 🚀
+
+---
+
+# 🤝 Connect With Me
+
+Let's learn, build, and grow together! 🌱
+
+📌 **GitHub:**
+
+https://github.com/Coder-RD
+
+---
+
+# 🔖 Hashtags
+
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#OpenToWork`
+
+---
+
+# 🚀 Keep Learning. Keep Coding. Keep Growing.
+
+> **"Consistency is the key to mastering any skill."** 💻🔥
+
+### 🎯 Goal: Complete 100 Days of Java
+
+**25 Days Completed ✅ | 75 Days Remaining ⏳ | 100 Days Goal 🎯**
+
+**Let's keep coding! ☕💻🚀**
