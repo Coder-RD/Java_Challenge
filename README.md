@@ -26,6 +26,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔍 **Regular Expressions**
 - 🔢 **BigDecimal**
 - 🔢 **BigInteger**
+- 📦 **Arrays**
 - 🧩 **Problem Solving**
 
 ---
@@ -114,6 +115,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java BigInteger.java
     │   └── Screenshot 2026-08-20 162029.png
     │
+    ├── Day-26/
+    │   ├── Java 1D Array.java
+    │   └── Screenshot 2026-08-21 145008.png
+    │
     └── README.md
 
 ---
@@ -147,7 +152,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 23 | Java BigDecimal | Completed |
 | ✅ Day 24 | Java Primality Test | Completed |
 | ✅ Day 25 | Java BigInteger | Completed |
-| ⏳ Day 26 | Coming Soon | Pending |
+| ✅ Day 26 | Java 1D Array | Completed |
+| ⏳ Day 27 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -164,6 +170,18 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Arrays
 - ✅ Strings
 - ✅ String Manipulation
+
+### 📦 Array Programming
+
+- ✅ One-Dimensional Arrays
+- ✅ Array Declaration
+- ✅ Array Initialization
+- ✅ Array Indexing
+- ✅ Storing Elements in Arrays
+- ✅ Accessing Array Elements
+- ✅ Traversing Arrays
+- ✅ `array.length`
+- ✅ `for` Loop with Arrays
 
 ### 🔤 String Programming
 
@@ -212,6 +230,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Pattern Recognition
 - ✅ Algorithmic Thinking
 - ✅ Efficient Coding
+- ✅ Array-Based Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
 
@@ -225,6 +244,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔤 String Handling
 - 🔍 Regular Expressions
 - 💻 Programming Fundamentals
+- 📦 Array Handling
 - 📝 Pattern Matching
 - 🔢 Number Handling
 - ⚡ Efficient Coding
@@ -233,6 +253,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 💼 Technical Interview Preparation
 - 🔢 BigInteger & BigDecimal
 - 📊 Numerical Data Processing
+- 📦 Array Traversal
 
 ---
 
@@ -263,6 +284,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 23 Completed 🎉
 - ✅ Day 24 Completed 🎉
 - ✅ Day 25 Completed 🎉
+- ✅ Day 26 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -548,6 +570,123 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 
 ---
 
+# 🆕 Day 26 – Java 1D Array
+
+### 🎯 Challenge
+
+**Java 1D Array**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 One-Dimensional Arrays
+- 🔹 Array Declaration
+- 🔹 Array Initialization
+- 🔹 Array Indexing
+- 🔹 Storing Array Elements
+- 🔹 Accessing Array Elements
+- 🔹 Array Traversal
+- 🔹 `array.length`
+- 🔹 `for` Loop
+- 🔹 Input Handling
+- 🔹 Problem Solving
+
+### 📂 Files Added
+
+    Day-26/
+    │
+    ├── Java 1D Array.java
+    └── Screenshot 2026-08-21 145008.png
+
+### 💡 Key Concept
+
+The **Java 1D Array** challenge focuses on creating and working with a one-dimensional integer array.
+
+The array is created according to the size provided by the user. Each input value is then stored at its corresponding array index.
+
+For example:
+
+    int[] myArray = new int[n];
+
+The values are stored using:
+
+    myArray[i] = scan.nextInt();
+
+The array elements are then accessed sequentially using a `for` loop.
+
+### 🔑 Java Concepts Used
+
+- `int[]`
+- Array Declaration
+- Array Initialization
+- Array Indexing
+- `array.length`
+- `for` Loop
+- `Scanner`
+- Sequential Data Storage
+
+### 💻 Main Code Concept
+
+    int myArray[] = new int[n];
+
+    for (int i = 0; i < n; i++) {
+        myArray[i] = scan.nextInt();
+    }
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Create a one-dimensional array.
+- Store values inside an array.
+- Access elements using indexes.
+- Traverse an array using a `for` loop.
+- Use `array.length`.
+- Handle multiple input values.
+- Strengthen basic data structure concepts.
+
+### 📌 Example
+
+For the input:
+
+    5
+    10
+    20
+    30
+    40
+    50
+
+The array stores:
+
+    Index 0 → 10
+    Index 1 → 20
+    Index 2 → 30
+    Index 3 → 40
+    Index 4 → 50
+
+The output is:
+
+    10
+    20
+    30
+    40
+    50
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
+
+---
+
 # 🎯 Why This Repository?
 
 This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
@@ -563,6 +702,7 @@ Every challenge helps me improve my:
 - 🔍 Pattern Recognition
 - 🔤 String Handling
 - 🔢 Number Processing
+- 📦 Array Handling
 - 🚀 Coding Confidence
 
 ---
@@ -602,21 +742,21 @@ The upcoming days will focus on more Java concepts, including:
 
 | 📊 Category | Details |
 | --- | --- |
-| 📅 Days Completed | **25 / 100** |
-| 💻 Challenges Solved | **25** |
+| 📅 Days Completed | **26 / 100** |
+| 💻 Challenges Solved | **26** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 Level | **Core Java** |
-| 📈 Progress | **25% Complete** 🚀 |
-| 🔥 Current Streak | **25 Days** |
+| 📈 Progress | **26% Complete** 🚀 |
+| 🔥 Current Streak | **26 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-**25 Days of Java Practice Completed! 🎉🔥**
+**26 Days of Java Practice Completed! 🎉🔥**
 
-> 25 days down, 75 more to go! 🚀
+> 26 days down, 74 more to go! 🚀
 
 Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
 
@@ -629,6 +769,7 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
+| 🎯 Day 26 | ✅ Completed |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -658,19 +799,38 @@ My daily learning process includes:
     Day 15   ████████████████████ 100% ✅
     Day 20   ████████████████████ 100% ✅
     Day 25   ████████████████████ 100% ✅
+    Day 26   ████████████████████ 100% ✅
     Day 50   ░░░░░░░░░░░░░░░░░░░░  50% ⏳
     Day 75   ░░░░░░░░░░░░░░░░░░░░  25% ⏳
     Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
 
 ### 🚀 Overall Progress
 
-    [█████░░░░░░░░░░░░░░░] 25%
+    [█████░░░░░░░░░░░░░░] 26%
 
-**25 / 100 Days Completed**
+**26 / 100 Days Completed**
 
 ---
 
 # 💻 Java Concepts Practiced
+
+### 🔹 Java Fundamentals
+
+    Variables
+    Data Types
+    Conditional Statements
+    Loops
+    Arrays
+    Strings
+
+### 🔹 Array Handling
+
+    One-Dimensional Arrays
+    Array Declaration
+    Array Initialization
+    Array Indexing
+    Array Traversal
+    array.length
 
 ### 🔹 String Handling
 
@@ -709,7 +869,7 @@ My daily learning process includes:
 
 # 📖 Topics Learned So Far
 
-Throughout the first 25 days, I have practiced Java concepts related to:
+Throughout the first 26 days, I have practiced Java concepts related to:
 
 - ☕ Core Java
 - 🔤 Strings
@@ -723,6 +883,9 @@ Throughout the first 25 days, I have practiced Java concepts related to:
 - 🔢 BigInteger
 - 🧮 Large Number Handling
 - 🔬 Prime Number Testing
+- 📦 One-Dimensional Arrays
+- 🔢 Array Indexing
+- 🔄 Array Traversal
 - 🧠 Logical Thinking
 - 💻 Problem Solving
 - 🚀 Efficient Coding
@@ -789,6 +952,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**25 Days Completed ✅ | 75 Days Remaining ⏳ | 100 Days Goal 🎯**
+**26 Days Completed ✅ | 74 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🚀**
