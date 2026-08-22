@@ -119,6 +119,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java 1D Array.java
     │   └── Screenshot 2026-08-21 145008.png
     │
+    ├── Day-27/
+    │   ├── Java 2D Array.java
+    │   └── Screenshot 2026-08-22 162405.png
+    │
     └── README.md
 
 ---
@@ -153,7 +157,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 24 | Java Primality Test | Completed |
 | ✅ Day 25 | Java BigInteger | Completed |
 | ✅ Day 26 | Java 1D Array | Completed |
-| ⏳ Day 27 | Coming Soon | Pending |
+| ✅ Day 27 | Java 2D Array | Completed |
+| ⏳ Day 28 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -170,10 +175,12 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Arrays
 - ✅ Strings
 - ✅ String Manipulation
+- ✅ Input Handling
 
 ### 📦 Array Programming
 
 - ✅ One-Dimensional Arrays
+- ✅ Two-Dimensional Arrays
 - ✅ Array Declaration
 - ✅ Array Initialization
 - ✅ Array Indexing
@@ -181,7 +188,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Accessing Array Elements
 - ✅ Traversing Arrays
 - ✅ `array.length`
-- ✅ `for` Loop with Arrays
+- ✅ Nested `for` Loops
+- ✅ Matrix/Grid Processing
+- ✅ 2D Array Traversal
+- ✅ Hourglass Pattern
 
 ### 🔤 String Programming
 
@@ -231,6 +241,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Algorithmic Thinking
 - ✅ Efficient Coding
 - ✅ Array-Based Problem Solving
+- ✅ Matrix-Based Problem Solving
 
 🔜 More Java concepts will be added throughout this challenge.
 
@@ -245,6 +256,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔍 Regular Expressions
 - 💻 Programming Fundamentals
 - 📦 Array Handling
+- 📐 2D Array Processing
 - 📝 Pattern Matching
 - 🔢 Number Handling
 - ⚡ Efficient Coding
@@ -254,6 +266,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔢 BigInteger & BigDecimal
 - 📊 Numerical Data Processing
 - 📦 Array Traversal
+- 🧮 Matrix Processing
 
 ---
 
@@ -285,6 +298,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 24 Completed 🎉
 - ✅ Day 25 Completed 🎉
 - ✅ Day 26 Completed 🎉
+- ✅ Day 27 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -566,8 +580,6 @@ Through this challenge, I practiced how to:
 
 **Completed 🎉**
 
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
-
 ---
 
 # 🆕 Day 26 – Java 1D Array
@@ -611,16 +623,6 @@ The **Java 1D Array** challenge focuses on creating and working with a one-dimen
 
 The array is created according to the size provided by the user. Each input value is then stored at its corresponding array index.
 
-For example:
-
-    int[] myArray = new int[n];
-
-The values are stored using:
-
-    myArray[i] = scan.nextInt();
-
-The array elements are then accessed sequentially using a `for` loop.
-
 ### 🔑 Java Concepts Used
 
 - `int[]`
@@ -652,32 +654,117 @@ Through this challenge, I practiced how to:
 - Handle multiple input values.
 - Strengthen basic data structure concepts.
 
-### 📌 Example
+### ✅ Status
 
-For the input:
+**Completed 🎉**
 
-    5
-    10
-    20
-    30
-    40
-    50
+---
 
-The array stores:
+# 🆕 Day 27 – Java 2D Array
 
-    Index 0 → 10
-    Index 1 → 20
-    Index 2 → 30
-    Index 3 → 40
-    Index 4 → 50
+### 🎯 Challenge
 
-The output is:
+**Java 2D Array**
 
-    10
-    20
-    30
-    40
-    50
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 Two-Dimensional Arrays
+- 🔹 2D Array Declaration
+- 🔹 Array Initialization
+- 🔹 Matrix/Grid Processing
+- 🔹 Nested `for` Loops
+- 🔹 Array Indexing
+- 🔹 Array Traversal
+- 🔹 Hourglass Pattern
+- 🔹 Maximum Sum
+- 🔹 Input Handling
+- 🔹 Problem Solving
+
+### 📂 Files Added
+
+    Day-27/
+    │
+    ├── Java 2D Array.java
+    └── Screenshot 2026-08-22 162405.png
+
+### 💡 Key Concept
+
+The **Java 2D Array** challenge focuses on processing a `6 × 6` two-dimensional array and finding the **maximum hourglass sum**.
+
+An hourglass in a 2D array has the following structure:
+
+    a b c
+      d
+    e f g
+
+The sum of an hourglass is calculated as:
+
+    a + b + c
+        + d
+    e + f + g
+
+Since a `6 × 6` array contains multiple possible hourglasses, the solution checks every valid hourglass and keeps track of the maximum sum.
+
+### 🔑 Java Concepts Used
+
+- `List<List<Integer>>`
+- `ArrayList`
+- Nested Loops
+- 2D Array Traversal
+- Index-Based Access
+- Mathematical Calculation
+- Maximum Value Tracking
+- `BufferedReader`
+- `InputStreamReader`
+
+### 💻 Input Handling
+
+The HackerRank solution reads six rows containing six integers each:
+
+    BufferedReader bufferedReader =
+        new BufferedReader(new InputStreamReader(System.in));
+
+The values are stored in:
+
+    List<List<Integer>> arr = new ArrayList<>();
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Work with two-dimensional arrays.
+- Process rows and columns using nested loops.
+- Access elements using row and column indexes.
+- Identify an hourglass pattern.
+- Calculate hourglass sums.
+- Find the maximum value among multiple results.
+- Work with nested `ArrayList` structures.
+- Handle structured input using `BufferedReader`.
+
+### 📌 Hourglass Pattern
+
+    a b c
+      d
+    e f g
+
+For every valid starting position, the program calculates the sum of the seven elements forming the hourglass.
+
+### 🎯 Problem-Solving Approach
+
+1. Read the `6 × 6` input matrix.
+2. Traverse possible hourglass starting positions.
+3. Calculate the sum of each hourglass.
+4. Compare each sum with the current maximum.
+5. Store the largest hourglass sum.
+6. Print the maximum sum.
 
 ### ✅ Status
 
@@ -703,6 +790,7 @@ Every challenge helps me improve my:
 - 🔤 String Handling
 - 🔢 Number Processing
 - 📦 Array Handling
+- 📐 2D Array Processing
 - 🚀 Coding Confidence
 
 ---
@@ -742,21 +830,21 @@ The upcoming days will focus on more Java concepts, including:
 
 | 📊 Category | Details |
 | --- | --- |
-| 📅 Days Completed | **26 / 100** |
-| 💻 Challenges Solved | **26** |
+| 📅 Days Completed | **27 / 100** |
+| 💻 Challenges Solved | **27** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 Level | **Core Java** |
-| 📈 Progress | **26% Complete** 🚀 |
-| 🔥 Current Streak | **26 Days** |
+| 📈 Progress | **27% Complete** 🚀 |
+| 🔥 Current Streak | **27 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-**26 Days of Java Practice Completed! 🎉🔥**
+**27 Days of Java Practice Completed! 🎉🔥**
 
-> 26 days down, 74 more to go! 🚀
+> 27 days down, 73 more to go! 🚀
 
 Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
 
@@ -769,7 +857,7 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
-| 🎯 Day 26 | ✅ Completed |
+| 🎯 Day 27 | ✅ Completed 🎉 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -787,7 +875,8 @@ My daily learning process includes:
 5. 🔍 Understand the result.
 6. 📂 Save the Java solution in this repository.
 7. 📸 Add the successful submission screenshot.
-8. 🚀 Continue to the next challenge.
+8. 📝 Review the Java concepts used.
+9. 🚀 Continue to the next challenge.
 
 ---
 
@@ -799,16 +888,16 @@ My daily learning process includes:
     Day 15   ████████████████████ 100% ✅
     Day 20   ████████████████████ 100% ✅
     Day 25   ████████████████████ 100% ✅
-    Day 26   ████████████████████ 100% ✅
+    Day 27   ████████████████████ 100% ✅
     Day 50   ░░░░░░░░░░░░░░░░░░░░  50% ⏳
     Day 75   ░░░░░░░░░░░░░░░░░░░░  25% ⏳
     Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
 
 ### 🚀 Overall Progress
 
-    [█████░░░░░░░░░░░░░░] 26%
+    [█████░░░░░░░░░░░░░░] 27%
 
-**26 / 100 Days Completed**
+**27 / 100 Days Completed**
 
 ---
 
@@ -822,15 +911,20 @@ My daily learning process includes:
     Loops
     Arrays
     Strings
+    Input Handling
 
 ### 🔹 Array Handling
 
     One-Dimensional Arrays
+    Two-Dimensional Arrays
     Array Declaration
     Array Initialization
     Array Indexing
     Array Traversal
     array.length
+    Nested Loops
+    Matrix Processing
+    Hourglass Pattern
 
 ### 🔹 String Handling
 
@@ -869,7 +963,7 @@ My daily learning process includes:
 
 # 📖 Topics Learned So Far
 
-Throughout the first 26 days, I have practiced Java concepts related to:
+Throughout the first 27 days, I have practiced Java concepts related to:
 
 - ☕ Core Java
 - 🔤 Strings
@@ -884,8 +978,12 @@ Throughout the first 26 days, I have practiced Java concepts related to:
 - 🧮 Large Number Handling
 - 🔬 Prime Number Testing
 - 📦 One-Dimensional Arrays
+- 📐 Two-Dimensional Arrays
 - 🔢 Array Indexing
 - 🔄 Array Traversal
+- 🧮 Matrix Processing
+- ⌛ Hourglass Pattern
+- 📊 Maximum Sum Calculation
 - 🧠 Logical Thinking
 - 💻 Problem Solving
 - 🚀 Efficient Coding
@@ -942,7 +1040,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#OpenToWork`
 
 ---
 
@@ -952,6 +1050,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**26 Days Completed ✅ | 74 Days Remaining ⏳ | 100 Days Goal 🎯**
+**27 Days Completed ✅ | 73 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🚀**
