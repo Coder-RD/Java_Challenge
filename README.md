@@ -27,6 +27,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔢 **BigDecimal**
 - 🔢 **BigInteger**
 - 📦 **Arrays**
+- 📐 **2D Arrays**
 - 🧩 **Problem Solving**
 
 ---
@@ -123,6 +124,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java 2D Array.java
     │   └── Screenshot 2026-08-22 162405.png
     │
+    ├── Day-28/
+    │   ├── Java Subarray.java
+    │   └── Screenshot 2026-08-23 111331.png
+    │
     └── README.md
 
 ---
@@ -158,9 +163,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 25 | Java BigInteger | Completed |
 | ✅ Day 26 | Java 1D Array | Completed |
 | ✅ Day 27 | Java 2D Array | Completed |
-| ⏳ Day 28 | Coming Soon | Pending |
+| ✅ Day 28 | Java Subarray | Completed |
+| ⏳ Day 29 | Coming Soon | Pending |
 | ... | ... | ... |
-| 🎯 Day 100 | Coming Soon | Pending |
+| 🎯 Day 100 | Goal | Pending |
 
 ---
 
@@ -184,14 +190,14 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Array Declaration
 - ✅ Array Initialization
 - ✅ Array Indexing
-- ✅ Storing Elements in Arrays
-- ✅ Accessing Array Elements
-- ✅ Traversing Arrays
+- ✅ Array Traversal
 - ✅ `array.length`
 - ✅ Nested `for` Loops
 - ✅ Matrix/Grid Processing
-- ✅ 2D Array Traversal
 - ✅ Hourglass Pattern
+- ✅ Subarray Processing
+- ✅ Contiguous Array Elements
+- ✅ Negative Subarray Sum
 
 ### 🔤 String Programming
 
@@ -242,8 +248,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Efficient Coding
 - ✅ Array-Based Problem Solving
 - ✅ Matrix-Based Problem Solving
-
-🔜 More Java concepts will be added throughout this challenge.
+- ✅ Subarray-Based Problem Solving
 
 ---
 
@@ -267,6 +272,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 📊 Numerical Data Processing
 - 📦 Array Traversal
 - 🧮 Matrix Processing
+- 🔗 Subarray Processing
 
 ---
 
@@ -299,15 +305,16 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Day 25 Completed 🎉
 - ✅ Day 26 Completed 🎉
 - ✅ Day 27 Completed 🎉
+- ✅ Day 28 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 22 – Tag Content Extractor
+# 🆕 Day 28 – Java Subarray
 
 ### 🎯 Challenge
 
-**Tag Content Extractor**
+**Java Subarray**
 
 ### 💻 Platform
 
@@ -319,43 +326,181 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 ### 📚 Concepts Practiced
 
-- 🔹 Regular Expressions
-- 🔹 Pattern Matching
-- 🔹 `Pattern.compile()`
-- 🔹 `Matcher`
-- 🔹 Tag Matching
-- 🔹 Start and End Tags
-- 🔹 Nested Tags
-- 🔹 String Processing
+- 🔹 Arrays
+- 🔹 Subarrays
+- 🔹 Contiguous Elements
+- 🔹 Nested Loops
+- 🔹 Array Traversal
+- 🔹 Array Sum
+- 🔹 Negative Sum Detection
+- 🔹 Input Handling
 - 🔹 Problem Solving
+- 🔹 Logical Thinking
 
 ### 📂 Files Added
 
-    Day-22/
+    Day-28/
     │
-    ├── Tag Content Extractor.java
-    └── Screenshot 2026-08-17 212544.png
+    ├── Java Subarray.java
+    └── Screenshot 2026-08-23 111331.png
 
 ### 💡 Key Concept
 
-The **Tag Content Extractor** challenge uses **Regular Expressions in Java** to find valid content enclosed between matching start and end tags.
+The **Java Subarray** challenge focuses on finding the number of contiguous subarrays whose sum is negative.
 
-The solution checks that:
+A **subarray** is a contiguous portion of an array. The elements must appear next to each other in the original array.
 
-- The start and end tag names are the same.
-- The content is properly enclosed within tags.
-- Valid content inside nested tags can be extracted.
-- Invalid or unmatched tags are ignored.
-- If no valid content is found, `None` is displayed.
+For example, for:
+
+    [1, -2, 4]
+
+Possible subarrays include:
+
+    [1]
+    [-2]
+    [4]
+    [1, -2]
+    [-2, 4]
+    [1, -2, 4]
+
+The solution checks each possible starting position and calculates the sum of every contiguous subarray.
+
+Whenever the calculated sum is negative, the counter is increased.
 
 ### 🔑 Java Concepts Used
 
-- `Pattern`
-- `Matcher`
-- Regular Expression
-- `find()`
-- Capturing Groups
-- String Matching
+- `int[]`
+- Arrays
+- Nested `for` Loops
+- Array Indexing
+- Subarray Traversal
+- Running Sum
+- Conditional Statements
+- `Scanner`
+- Input Handling
+
+### 💻 Main Logic
+
+The solution uses nested loops:
+
+    for (int i = 0; i < n; i++) {
+        int sum = 0;
+
+        for (int j = i; j < n; j++) {
+            sum += arr[j];
+
+            if (sum < 0) {
+                count++;
+            }
+        }
+    }
+
+### 🎯 Problem-Solving Approach
+
+1. Read the size of the array.
+2. Read all array elements.
+3. Select each element as the starting point of a subarray.
+4. Maintain a running sum while extending the subarray.
+5. Check whether the current sum is negative.
+6. Increase the counter whenever the sum is negative.
+7. Print the total number of negative-sum subarrays.
+
+### 📌 Example
+
+For:
+
+    1 -2 4 -5 1
+
+The program checks all contiguous subarrays and counts those whose total sum is negative.
+
+The output is:
+
+    9
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Understand the concept of subarrays.
+- Work with contiguous elements.
+- Generate subarrays using nested loops.
+- Maintain a running sum.
+- Identify negative sums.
+- Count valid subarrays.
+- Improve array-based problem-solving skills.
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
+
+---
+
+# 🆕 Day 27 – Java 2D Array
+
+### 🎯 Challenge
+
+**Java 2D Array**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 Two-Dimensional Arrays
+- 🔹 Matrix/Grid Processing
+- 🔹 Nested `for` Loops
+- 🔹 Array Indexing
+- 🔹 Array Traversal
+- 🔹 Hourglass Pattern
+- 🔹 Maximum Sum
+- 🔹 Input Handling
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Java 2D Array** challenge focuses on processing a `6 × 6` array and finding the **maximum hourglass sum**.
+
+An hourglass has the following structure:
+
+    a b c
+      d
+    e f g
+
+The sum is calculated as:
+
+    a + b + c + d + e + f + g
+
+The solution checks every possible hourglass in the matrix and stores the maximum sum.
+
+### 🔑 Java Concepts Used
+
+- `List<List<Integer>>`
+- `ArrayList`
+- Nested Loops
+- 2D Array Traversal
+- Index-Based Access
+- Maximum Value Tracking
+- `BufferedReader`
+- `InputStreamReader`
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Work with 2D arrays.
+- Process rows and columns.
+- Use nested loops.
+- Identify patterns in matrices.
+- Calculate hourglass sums.
+- Find the maximum value among multiple results.
+- Handle structured input.
 
 ### ✅ Status
 
@@ -363,11 +508,11 @@ The solution checks that:
 
 ---
 
-# 🆕 Day 23 – Java BigDecimal
+# 🆕 Day 26 – Java 1D Array
 
 ### 🎯 Challenge
 
-**Java BigDecimal**
+**Java 1D Array**
 
 ### 💻 Platform
 
@@ -379,48 +524,94 @@ The solution checks that:
 
 ### 📚 Concepts Practiced
 
-- 🔹 `BigDecimal`
-- 🔹 Decimal Number Handling
-- 🔹 High Precision
-- 🔹 Number Comparison
-- 🔹 Sorting
-- 🔹 Arrays
-- 🔹 `compareTo()`
-- 🔹 Problem Solving
-
-### 📂 Files Added
-
-    Day-23/
-    │
-    └── Java BigDecimal.java
+- 🔹 One-Dimensional Arrays
+- 🔹 Array Declaration
+- 🔹 Array Initialization
+- 🔹 Array Indexing
+- 🔹 Array Traversal
+- 🔹 `array.length`
+- 🔹 `for` Loop
+- 🔹 `Scanner`
+- 🔹 Input Handling
 
 ### 💡 Key Concept
 
-The **Java BigDecimal** challenge focuses on handling decimal numbers with high precision in Java.
+The **Java 1D Array** challenge focuses on creating and processing a one-dimensional integer array.
 
-`BigDecimal` is useful when accurate decimal calculations are required because floating-point data types such as `float` and `double` can sometimes produce precision errors.
+The array is created using the size provided by the user:
 
-The challenge also focuses on sorting decimal values while preserving their original representations.
+    int[] myArray = new int[n];
 
-### 🔑 Java Concepts Used
-
-- `BigDecimal`
-- `BigDecimal.compareTo()`
-- Arrays
-- Array Sorting
-- String Handling
-- Number Comparison
-- Precision Handling
+Each input value is stored at its corresponding index and then processed sequentially.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+Through this challenge, I practiced:
 
-- Handle decimal numbers accurately.
-- Use `BigDecimal` for precise calculations.
-- Compare decimal values.
-- Sort decimal numbers.
-- Work with arrays and numerical data.
+- Creating arrays.
+- Storing values.
+- Accessing array elements.
+- Using array indexes.
+- Traversing arrays using loops.
+- Handling multiple input values.
+
+### ✅ Status
+
+**Completed 🎉**
+
+---
+
+# 🆕 Day 25 – Java BigInteger
+
+### 🎯 Challenge
+
+**Java BigInteger**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 `BigInteger`
+- 🔹 Arbitrary-Precision Integers
+- 🔹 Large Number Handling
+- 🔹 `add()`
+- 🔹 `multiply()`
+- 🔹 Input Handling
+- 🔹 Mathematical Operations
+
+### 💡 Key Concept
+
+The **Java BigInteger** challenge focuses on performing mathematical operations on extremely large integers that cannot be stored using primitive data types such as `int` or `long`.
+
+Java's `BigInteger` class provides support for integers of arbitrary precision.
+
+### 🧮 Operations Practiced
+
+- ➕ Addition using `add()`
+- ✖️ Multiplication using `multiply()`
+
+### Example
+
+    BigInteger a = new BigInteger("123456789");
+    BigInteger b = new BigInteger("987654321");
+
+    BigInteger sum = a.add(b);
+    BigInteger product = a.multiply(b);
+
+### 🎯 Learning Outcome
+
+I practiced how to:
+
+- Handle extremely large integers.
+- Use `BigInteger`.
+- Perform addition and multiplication.
+- Work with arbitrary-precision numbers.
 
 ### ✅ Status
 
@@ -451,47 +642,26 @@ Through this challenge, I practiced how to:
 - 🔹 Conditional Statements
 - 🔹 Input Handling
 - 🔹 Problem Solving
-- 🔹 Logical Thinking
-
-### 📂 Files Added
-
-    Day-24/
-    │
-    ├── Java Primality Test.java
-    └── Screenshot 2026-08-19 103022.png
 
 ### 💡 Key Concept
 
-The **Java Primality Test** challenge focuses on determining whether a large integer is a prime number using Java's `BigInteger` class.
-
-A prime number is a natural number greater than 1 whose only positive divisors are 1 and itself.
-
-Since the input number can contain a large number of digits, the `BigInteger` class is used instead of primitive data types such as `int` or `long`.
+The challenge determines whether a large integer is a prime number using Java's `BigInteger` class.
 
 The solution uses:
 
     number.isProbablePrime(1);
 
-The `isProbablePrime()` method checks whether the `BigInteger` is probably prime.
-
-### 🔑 Java Concepts Used
-
-- `BigInteger`
-- `isProbablePrime()`
-- Large Integer Handling
-- Prime Number Testing
-- Conditional Statements
-- Input Handling
+This method checks whether the number is probably prime.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+I practiced:
 
-- Work with very large integers.
-- Use the `BigInteger` class.
-- Check whether a number is prime.
-- Use `isProbablePrime()`.
-- Handle numbers beyond the range of primitive data types.
+- Working with large integers.
+- Using `BigInteger`.
+- Checking prime numbers.
+- Using `isProbablePrime()`.
+- Handling numbers beyond primitive data types.
 
 ### ✅ Status
 
@@ -499,11 +669,11 @@ Through this challenge, I practiced how to:
 
 ---
 
-# 🆕 Day 25 – Java BigInteger
+# 🆕 Day 23 – Java BigDecimal
 
 ### 🎯 Challenge
 
-**Java BigInteger**
+**Java BigDecimal**
 
 ### 💻 Platform
 
@@ -515,66 +685,31 @@ Through this challenge, I practiced how to:
 
 ### 📚 Concepts Practiced
 
-- 🔹 `BigInteger`
-- 🔹 Large Number Handling
-- 🔹 Arbitrary-Precision Integers
-- 🔹 BigInteger Addition
-- 🔹 BigInteger Multiplication
-- 🔹 `add()`
-- 🔹 `multiply()`
-- 🔹 Input Handling
-- 🔹 Problem Solving
-
-### 📂 Files Added
-
-    Day-25/
-    │
-    ├── Java BigInteger.java
-    └── Screenshot 2026-08-20 162029.png
+- 🔹 `BigDecimal`
+- 🔹 High Precision
+- 🔹 Decimal Number Handling
+- 🔹 `compareTo()`
+- 🔹 Sorting
+- 🔹 Arrays
+- 🔹 Number Comparison
 
 ### 💡 Key Concept
 
-The **Java BigInteger** challenge focuses on performing mathematical operations on extremely large integers that cannot be stored in primitive Java data types such as `int` or `long`.
+The **Java BigDecimal** challenge focuses on handling decimal numbers with high precision.
 
-Java's `BigInteger` class from the `java.math` package provides support for integers of arbitrary precision.
+`BigDecimal` is useful when accurate decimal calculations are required because floating-point types such as `float` and `double` may introduce precision issues.
 
-This allows us to perform calculations on numbers containing a very large number of digits.
-
-### 🔑 Java Concepts Used
-
-- `BigInteger`
-- `add()`
-- `multiply()`
-- Arbitrary-Precision Arithmetic
-- Large Integer Handling
-- Input Handling
-- Mathematical Operations
-
-### 🧮 Operations Practiced
-
-The challenge performs:
-
-- ➕ Addition of two large integers.
-- ✖️ Multiplication of two large integers.
-
-### Example
-
-    BigInteger a = new BigInteger("123456789");
-    BigInteger b = new BigInteger("987654321");
-
-    BigInteger sum = a.add(b);
-    BigInteger product = a.multiply(b);
+The challenge also involves sorting decimal values while preserving their original representations.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+I practiced:
 
-- Handle extremely large integers.
-- Use Java's `BigInteger` class.
-- Perform addition using `add()`.
-- Perform multiplication using `multiply()`.
-- Work with arbitrary-precision numbers.
-- Understand why `BigInteger` is required when primitive data types are insufficient.
+- Handling decimal numbers accurately.
+- Using `BigDecimal`.
+- Comparing decimal values.
+- Sorting decimal numbers.
+- Working with numerical arrays.
 
 ### ✅ Status
 
@@ -582,11 +717,11 @@ Through this challenge, I practiced how to:
 
 ---
 
-# 🆕 Day 26 – Java 1D Array
+# 🆕 Day 22 – Tag Content Extractor
 
 ### 🎯 Challenge
 
-**Java 1D Array**
+**Tag Content Extractor**
 
 ### 💻 Platform
 
@@ -598,179 +733,34 @@ Through this challenge, I practiced how to:
 
 ### 📚 Concepts Practiced
 
-- 🔹 One-Dimensional Arrays
-- 🔹 Array Declaration
-- 🔹 Array Initialization
-- 🔹 Array Indexing
-- 🔹 Storing Array Elements
-- 🔹 Accessing Array Elements
-- 🔹 Array Traversal
-- 🔹 `array.length`
-- 🔹 `for` Loop
-- 🔹 Input Handling
-- 🔹 Problem Solving
-
-### 📂 Files Added
-
-    Day-26/
-    │
-    ├── Java 1D Array.java
-    └── Screenshot 2026-08-21 145008.png
+- 🔹 Regular Expressions
+- 🔹 Pattern Matching
+- 🔹 `Pattern.compile()`
+- 🔹 `Matcher`
+- 🔹 `find()`
+- 🔹 Capturing Groups
+- 🔹 Tag Matching
+- 🔹 String Processing
 
 ### 💡 Key Concept
 
-The **Java 1D Array** challenge focuses on creating and working with a one-dimensional integer array.
+The **Tag Content Extractor** challenge uses Regular Expressions to find valid content enclosed between matching start and end tags.
 
-The array is created according to the size provided by the user. Each input value is then stored at its corresponding array index.
-
-### 🔑 Java Concepts Used
-
-- `int[]`
-- Array Declaration
-- Array Initialization
-- Array Indexing
-- `array.length`
-- `for` Loop
-- `Scanner`
-- Sequential Data Storage
-
-### 💻 Main Code Concept
-
-    int myArray[] = new int[n];
-
-    for (int i = 0; i < n; i++) {
-        myArray[i] = scan.nextInt();
-    }
+The solution identifies matching tags and extracts their valid content.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+I practiced:
 
-- Create a one-dimensional array.
-- Store values inside an array.
-- Access elements using indexes.
-- Traverse an array using a `for` loop.
-- Use `array.length`.
-- Handle multiple input values.
-- Strengthen basic data structure concepts.
+- Regular expression matching.
+- Capturing groups.
+- Pattern compilation.
+- Using `Matcher`.
+- Extracting content from tags.
 
 ### ✅ Status
 
 **Completed 🎉**
-
----
-
-# 🆕 Day 27 – Java 2D Array
-
-### 🎯 Challenge
-
-**Java 2D Array**
-
-### 💻 Platform
-
-**HackerRank**
-
-### ☕ Language
-
-**Java**
-
-### 📚 Concepts Practiced
-
-- 🔹 Two-Dimensional Arrays
-- 🔹 2D Array Declaration
-- 🔹 Array Initialization
-- 🔹 Matrix/Grid Processing
-- 🔹 Nested `for` Loops
-- 🔹 Array Indexing
-- 🔹 Array Traversal
-- 🔹 Hourglass Pattern
-- 🔹 Maximum Sum
-- 🔹 Input Handling
-- 🔹 Problem Solving
-
-### 📂 Files Added
-
-    Day-27/
-    │
-    ├── Java 2D Array.java
-    └── Screenshot 2026-08-22 162405.png
-
-### 💡 Key Concept
-
-The **Java 2D Array** challenge focuses on processing a `6 × 6` two-dimensional array and finding the **maximum hourglass sum**.
-
-An hourglass in a 2D array has the following structure:
-
-    a b c
-      d
-    e f g
-
-The sum of an hourglass is calculated as:
-
-    a + b + c
-        + d
-    e + f + g
-
-Since a `6 × 6` array contains multiple possible hourglasses, the solution checks every valid hourglass and keeps track of the maximum sum.
-
-### 🔑 Java Concepts Used
-
-- `List<List<Integer>>`
-- `ArrayList`
-- Nested Loops
-- 2D Array Traversal
-- Index-Based Access
-- Mathematical Calculation
-- Maximum Value Tracking
-- `BufferedReader`
-- `InputStreamReader`
-
-### 💻 Input Handling
-
-The HackerRank solution reads six rows containing six integers each:
-
-    BufferedReader bufferedReader =
-        new BufferedReader(new InputStreamReader(System.in));
-
-The values are stored in:
-
-    List<List<Integer>> arr = new ArrayList<>();
-
-### 🎯 Learning Outcome
-
-Through this challenge, I practiced how to:
-
-- Work with two-dimensional arrays.
-- Process rows and columns using nested loops.
-- Access elements using row and column indexes.
-- Identify an hourglass pattern.
-- Calculate hourglass sums.
-- Find the maximum value among multiple results.
-- Work with nested `ArrayList` structures.
-- Handle structured input using `BufferedReader`.
-
-### 📌 Hourglass Pattern
-
-    a b c
-      d
-    e f g
-
-For every valid starting position, the program calculates the sum of the seven elements forming the hourglass.
-
-### 🎯 Problem-Solving Approach
-
-1. Read the `6 × 6` input matrix.
-2. Traverse possible hourglass starting positions.
-3. Calculate the sum of each hourglass.
-4. Compare each sum with the current maximum.
-5. Store the largest hourglass sum.
-6. Print the maximum sum.
-
-### ✅ Status
-
-**Completed 🎉**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -791,6 +781,7 @@ Every challenge helps me improve my:
 - 🔢 Number Processing
 - 📦 Array Handling
 - 📐 2D Array Processing
+- 🔗 Subarray Processing
 - 🚀 Coding Confidence
 
 ---
@@ -830,21 +821,21 @@ The upcoming days will focus on more Java concepts, including:
 
 | 📊 Category | Details |
 | --- | --- |
-| 📅 Days Completed | **27 / 100** |
-| 💻 Challenges Solved | **27** |
+| 📅 Days Completed | **28 / 100** |
+| 💻 Challenges Solved | **28** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 Level | **Core Java** |
-| 📈 Progress | **27% Complete** 🚀 |
-| 🔥 Current Streak | **27 Days** |
+| 📈 Progress | **28% Complete** 🚀 |
+| 🔥 Current Streak | **28 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-**27 Days of Java Practice Completed! 🎉🔥**
+**28 Days of Java Practice Completed! 🎉🔥**
 
-> 27 days down, 73 more to go! 🚀
+> 28 days down, 72 more to go! 🚀
 
 Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
 
@@ -857,7 +848,8 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
-| 🎯 Day 27 | ✅ Completed 🎉 |
+| 🎯 Day 27 | ✅ Completed |
+| 🎯 Day 28 | ✅ Completed 🎉 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -888,16 +880,16 @@ My daily learning process includes:
     Day 15   ████████████████████ 100% ✅
     Day 20   ████████████████████ 100% ✅
     Day 25   ████████████████████ 100% ✅
-    Day 27   ████████████████████ 100% ✅
+    Day 28   ████████████████████ 100% ✅
     Day 50   ░░░░░░░░░░░░░░░░░░░░  50% ⏳
     Day 75   ░░░░░░░░░░░░░░░░░░░░  25% ⏳
     Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
 
 ### 🚀 Overall Progress
 
-    [█████░░░░░░░░░░░░░░] 27%
+    [██████░░░░░░░░░░░░] 28%
 
-**27 / 100 Days Completed**
+**28 / 100 Days Completed**
 
 ---
 
@@ -925,6 +917,9 @@ My daily learning process includes:
     Nested Loops
     Matrix Processing
     Hourglass Pattern
+    Subarray Processing
+    Running Sum
+    Negative Sum Detection
 
 ### 🔹 String Handling
 
@@ -963,7 +958,7 @@ My daily learning process includes:
 
 # 📖 Topics Learned So Far
 
-Throughout the first 27 days, I have practiced Java concepts related to:
+Throughout the first 28 days, I have practiced Java concepts related to:
 
 - ☕ Core Java
 - 🔤 Strings
@@ -984,6 +979,9 @@ Throughout the first 27 days, I have practiced Java concepts related to:
 - 🧮 Matrix Processing
 - ⌛ Hourglass Pattern
 - 📊 Maximum Sum Calculation
+- 🔗 Subarray Processing
+- ➕ Running Sum
+- ➖ Negative Subarray Detection
 - 🧠 Logical Thinking
 - 💻 Problem Solving
 - 🚀 Efficient Coding
@@ -1040,7 +1038,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#OpenToWork`
 
 ---
 
@@ -1050,6 +1048,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**27 Days Completed ✅ | 73 Days Remaining ⏳ | 100 Days Goal 🎯**
+**28 Days Completed ✅ | 72 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🚀**
