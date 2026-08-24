@@ -28,6 +28,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔢 **BigInteger**
 - 📦 **Arrays**
 - 📐 **2D Arrays**
+- 🔗 **Subarrays**
 - 🧩 **Problem Solving**
 
 ---
@@ -135,7 +136,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 # ✅ Progress
 
 | Day | Challenge | Status |
-| --- | --- | --- |
+|---|---|---|
 | ✅ Day 1 | Java Challenge | Completed |
 | ✅ Day 2 | Java Challenge | Completed |
 | ✅ Day 3 | Java Challenge | Completed |
@@ -172,7 +173,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 
 # 📖 Topics Covered
 
-### ☕ Java Fundamentals
+## ☕ Java Fundamentals
 
 - ✅ Java Basics
 - ✅ Variables and Data Types
@@ -183,7 +184,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ String Manipulation
 - ✅ Input Handling
 
-### 📦 Array Programming
+## 📦 Array Programming
 
 - ✅ One-Dimensional Arrays
 - ✅ Two-Dimensional Arrays
@@ -199,7 +200,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Contiguous Array Elements
 - ✅ Negative Subarray Sum
 
-### 🔤 String Programming
+## 🔤 String Programming
 
 - ✅ String Reverse
 - ✅ Palindrome
@@ -209,7 +210,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Character Processing
 - ✅ String Comparison
 
-### 🔍 Regular Expressions
+## 🔍 Regular Expressions
 
 - ✅ Regular Expressions
 - ✅ Regex Pattern Matching
@@ -225,7 +226,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Tag Content Extraction
 - ✅ Nested Tags
 
-### 🔢 Number Handling
+## 🔢 Number Handling
 
 - ✅ BigDecimal
 - ✅ BigDecimal Precision
@@ -239,7 +240,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ BigInteger Multiplication
 - ✅ Handling Extremely Large Integers
 
-### 🧩 Problem Solving
+## 🧩 Problem Solving
 
 - ✅ Logical Thinking
 - ✅ Problem Solving
@@ -337,13 +338,6 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 🔹 Problem Solving
 - 🔹 Logical Thinking
 
-### 📂 Files Added
-
-    Day-28/
-    │
-    ├── Java Subarray.java
-    └── Screenshot 2026-08-23 111331.png
-
 ### 💡 Key Concept
 
 The **Java Subarray** challenge focuses on finding the number of contiguous subarrays whose sum is negative.
@@ -381,8 +375,6 @@ Whenever the calculated sum is negative, the counter is increased.
 
 ### 💻 Main Logic
 
-The solution uses nested loops:
-
     for (int i = 0; i < n; i++) {
         int sum = 0;
 
@@ -413,10 +405,6 @@ For:
 
 The program checks all contiguous subarrays and counts those whose total sum is negative.
 
-The output is:
-
-    9
-
 ### 🎯 Learning Outcome
 
 Through this challenge, I practiced how to:
@@ -428,6 +416,12 @@ Through this challenge, I practiced how to:
 - Identify negative sums.
 - Count valid subarrays.
 - Improve array-based problem-solving skills.
+
+### 📂 Files Added
+
+    Day-28/
+    ├── Java Subarray.java
+    └── Screenshot 2026-08-23 111331.png
 
 ### ✅ Status
 
@@ -473,11 +467,11 @@ An hourglass has the following structure:
       d
     e f g
 
-The sum is calculated as:
+The sum is:
 
     a + b + c + d + e + f + g
 
-The solution checks every possible hourglass in the matrix and stores the maximum sum.
+The solution checks every possible hourglass in the matrix and determines the maximum sum.
 
 ### 🔑 Java Concepts Used
 
@@ -501,6 +495,12 @@ Through this challenge, I practiced how to:
 - Calculate hourglass sums.
 - Find the maximum value among multiple results.
 - Handle structured input.
+
+### 📂 Files Added
+
+    Day-27/
+    ├── Java 2D Array.java
+    └── Screenshot 2026-08-22 162405.png
 
 ### ✅ Status
 
@@ -546,7 +546,7 @@ Each input value is stored at its corresponding index and then processed sequent
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced:
+I practiced:
 
 - Creating arrays.
 - Storing values.
@@ -554,6 +554,12 @@ Through this challenge, I practiced:
 - Using array indexes.
 - Traversing arrays using loops.
 - Handling multiple input values.
+
+### 📂 Files Added
+
+    Day-26/
+    ├── Java 1D Array.java
+    └── Screenshot 2026-08-21 145008.png
 
 ### ✅ Status
 
@@ -613,6 +619,12 @@ I practiced how to:
 - Perform addition and multiplication.
 - Work with arbitrary-precision numbers.
 
+### 📂 Files Added
+
+    Day-25/
+    ├── Java BigInteger.java
+    └── Screenshot 2026-08-20 162029.png
+
 ### ✅ Status
 
 **Completed 🎉**
@@ -651,7 +663,7 @@ The solution uses:
 
     number.isProbablePrime(1);
 
-This method checks whether the number is probably prime.
+This method checks whether the number is probably prime with the specified certainty.
 
 ### 🎯 Learning Outcome
 
@@ -662,6 +674,12 @@ I practiced:
 - Checking prime numbers.
 - Using `isProbablePrime()`.
 - Handling numbers beyond primitive data types.
+
+### 📂 Files Added
+
+    Day-24/
+    ├── Java Primality Test.java
+    └── Screenshot 2026-08-19 103022.png
 
 ### ✅ Status
 
@@ -711,6 +729,11 @@ I practiced:
 - Sorting decimal numbers.
 - Working with numerical arrays.
 
+### 📂 Files Added
+
+    Day-23/
+    └── Java BigDecimal.java
+
 ### ✅ Status
 
 **Completed 🎉**
@@ -757,6 +780,12 @@ I practiced:
 - Pattern compilation.
 - Using `Matcher`.
 - Extracting content from tags.
+
+### 📂 Files Added
+
+    Day-22/
+    ├── Tag Content Extractor.java
+    └── Screenshot 2026-08-17 212544.png
 
 ### ✅ Status
 
@@ -820,7 +849,7 @@ The upcoming days will focus on more Java concepts, including:
 # 📈 Current Statistics
 
 | 📊 Category | Details |
-| --- | --- |
+|---|---|
 | 📅 Days Completed | **28 / 100** |
 | 💻 Challenges Solved | **28** |
 | ☕ Language | **Java** |
@@ -828,14 +857,15 @@ The upcoming days will focus on more Java concepts, including:
 | 🧠 Level | **Core Java** |
 | 📈 Progress | **28% Complete** 🚀 |
 | 🔥 Current Streak | **28 Days** |
+| ⏳ Days Remaining | **72 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-**28 Days of Java Practice Completed! 🎉🔥**
+## **28 Days of Java Practice Completed! 🎉🔥**
 
-> 28 days down, 72 more to go! 🚀
+> **28 days down, 72 more to go! 🚀**
 
 Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
 
@@ -844,7 +874,7 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 # 🏆 Milestones
 
 | 🏁 Milestone | Status |
-| --- | --- |
+|---|---|
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
@@ -881,11 +911,11 @@ My daily learning process includes:
     Day 20   ████████████████████ 100% ✅
     Day 25   ████████████████████ 100% ✅
     Day 28   ████████████████████ 100% ✅
-    Day 50   ░░░░░░░░░░░░░░░░░░░░  50% ⏳
-    Day 75   ░░░░░░░░░░░░░░░░░░░░  25% ⏳
-    Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
+    Day 50   ██████░░░░░░░░░░░░░░  56% ⏳
+    Day 75   ███████░░░░░░░░░░░░░  37% ⏳
+    Day 100  ██████░░░░░░░░░░░░░░  28% ⏳
 
-### 🚀 Overall Progress
+## 🚀 Overall Progress
 
     [██████░░░░░░░░░░░░] 28%
 
@@ -895,7 +925,7 @@ My daily learning process includes:
 
 # 💻 Java Concepts Practiced
 
-### 🔹 Java Fundamentals
+## 🔹 Java Fundamentals
 
     Variables
     Data Types
@@ -905,7 +935,7 @@ My daily learning process includes:
     Strings
     Input Handling
 
-### 🔹 Array Handling
+## 🔹 Array Handling
 
     One-Dimensional Arrays
     Two-Dimensional Arrays
@@ -921,7 +951,7 @@ My daily learning process includes:
     Running Sum
     Negative Sum Detection
 
-### 🔹 String Handling
+## 🔹 String Handling
 
     String
     StringBuilder
@@ -930,7 +960,7 @@ My daily learning process includes:
     Anagrams
     String Tokens
 
-### 🔹 Regular Expressions
+## 🔹 Regular Expressions
 
     Pattern
     Matcher
@@ -939,14 +969,14 @@ My daily learning process includes:
     Capturing Groups
     Regex Matching
 
-### 🔹 BigDecimal
+## 🔹 BigDecimal
 
     BigDecimal
     compareTo()
     Decimal Precision
     Decimal Sorting
 
-### 🔹 BigInteger
+## 🔹 BigInteger
 
     BigInteger
     add()
