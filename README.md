@@ -2,7 +2,9 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository contains my daily Java programming solutions from **HackerRank**, where I practice Core Java concepts, problem-solving, logical thinking, and programming skills.
+This repository contains my daily Java programming solutions from **HackerRank**, where I practice Core Java concepts, problem-solving, logical thinking, algorithmic thinking, and programming skills.
+
+The goal is to solve **one Java programming challenge every day for 100 days** and continuously improve my coding and problem-solving abilities. 💻☕
 
 ---
 
@@ -12,8 +14,11 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 📚 Strengthen Core Java concepts.
 - 🧩 Improve problem-solving and logical thinking.
 - 💻 Solve programming challenges on HackerRank.
+- 🧠 Develop algorithmic thinking.
 - 🚀 Build consistency through the **#100DaysOfCode** challenge.
-- 🎯 Prepare for technical interviews and software development opportunities.
+- 🎯 Prepare for technical interviews.
+- 💼 Build a strong programming portfolio.
+- 🌱 Learn and improve through consistent daily practice.
 
 ---
 
@@ -29,7 +34,10 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 📦 **Arrays**
 - 📐 **2D Arrays**
 - 🔗 **Subarrays**
+- 🔄 **Recursion**
+- 🔙 **Backtracking**
 - 🧩 **Problem Solving**
+- 🧠 **Algorithmic Thinking**
 
 ---
 
@@ -129,6 +137,13 @@ This repository contains my daily Java programming solutions from **HackerRank**
     │   ├── Java Subarray.java
     │   └── Screenshot 2026-08-23 111331.png
     │
+    ├── Day-29/
+    │   └── Java Challenge
+    │
+    ├── Day-30/
+    │   ├── Java 1D Array (Part 2).java
+    │   └── Screenshot 2026-08-25 205949.png
+    │
     └── README.md
 
 ---
@@ -165,7 +180,9 @@ This repository contains my daily Java programming solutions from **HackerRank**
 | ✅ Day 26 | Java 1D Array | Completed |
 | ✅ Day 27 | Java 2D Array | Completed |
 | ✅ Day 28 | Java Subarray | Completed |
-| ⏳ Day 29 | Coming Soon | Pending |
+| ✅ Day 29 | Java Challenge | Completed |
+| ✅ Day 30 | Java 1D Array (Part 2) | Completed |
+| ⏳ Day 31 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -183,6 +200,8 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Strings
 - ✅ String Manipulation
 - ✅ Input Handling
+- ✅ Problem Solving
+- ✅ Logical Thinking
 
 ## 📦 Array Programming
 
@@ -198,7 +217,15 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Hourglass Pattern
 - ✅ Subarray Processing
 - ✅ Contiguous Array Elements
+- ✅ Running Sum
 - ✅ Negative Subarray Sum
+- ✅ Forward Movement
+- ✅ Backward Movement
+- ✅ Leap Movement
+- ✅ Array Path Traversal
+- ✅ Visited Cell Handling
+- ✅ Recursion
+- ✅ Backtracking
 
 ## 🔤 String Programming
 
@@ -209,6 +236,7 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ String Splitting
 - ✅ Character Processing
 - ✅ String Comparison
+- ✅ String Manipulation
 
 ## 🔍 Regular Expressions
 
@@ -250,6 +278,9 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - ✅ Array-Based Problem Solving
 - ✅ Matrix-Based Problem Solving
 - ✅ Subarray-Based Problem Solving
+- ✅ Recursion
+- ✅ Backtracking
+- ✅ Traversal Techniques
 
 ---
 
@@ -274,40 +305,148 @@ This repository contains my daily Java programming solutions from **HackerRank**
 - 📦 Array Traversal
 - 🧮 Matrix Processing
 - 🔗 Subarray Processing
+- 🔄 Recursion
+- 🔙 Backtracking
 
 ---
 
-# 📅 Challenge Progress
+# 🆕 Day 30 – Java 1D Array (Part 2)
 
-- ✅ Day 1 Completed
-- ✅ Day 2 Completed
-- ✅ Day 3 Completed
-- ✅ Day 4 Completed
-- ✅ Day 5 Completed
-- ✅ Day 6 Completed
-- ✅ Day 7 Completed
-- ✅ Day 8 Completed
-- ✅ Day 9 Completed
-- ✅ Day 10 Completed
-- ✅ Day 11 Completed
-- ✅ Day 12 Completed
-- ✅ Day 13 Completed
-- ✅ Day 14 Completed
-- ✅ Day 15 Completed
-- ✅ Day 16 Completed
-- ✅ Day 17 Completed
-- ✅ Day 18 Completed
-- ✅ Day 19 Completed
-- ✅ Day 20 Completed
-- ✅ Day 21 Completed
-- ✅ Day 22 Completed 🎉
-- ✅ Day 23 Completed 🎉
-- ✅ Day 24 Completed 🎉
-- ✅ Day 25 Completed 🎉
-- ✅ Day 26 Completed 🎉
-- ✅ Day 27 Completed 🎉
-- ✅ Day 28 Completed 🎉
-- ⏳ Continuing every day...
+### 🎯 Challenge
+
+**Java 1D Array (Part 2)**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 One-Dimensional Arrays
+- 🔹 Array Traversal
+- 🔹 Recursion
+- 🔹 Backtracking
+- 🔹 Forward Movement
+- 🔹 Backward Movement
+- 🔹 Leap Movement
+- 🔹 Visited Cell Handling
+- 🔹 Boolean Logic
+- 🔹 Problem Solving
+- 🔹 Algorithmic Thinking
+
+### 💡 Key Concept
+
+The **Java 1D Array (Part 2)** challenge focuses on determining whether it is possible to reach the end of an array by making valid moves.
+
+From the current position, three types of moves are possible:
+
+- ➡️ Move forward by `1`
+- ⬅️ Move backward by `1`
+- 🚀 Jump forward by the given `leap` value
+
+A cell containing `0` can be visited, while a cell containing `1` cannot be visited.
+
+The objective is to determine whether we can move beyond the end of the array and win the game.
+
+### 🔑 Java Concepts Used
+
+- `int[]`
+- Array traversal
+- Recursion
+- Backtracking
+- Boolean conditions
+- Index validation
+- Visited position handling
+- Logical OR operator
+- Input handling
+
+### 🎯 Problem-Solving Approach
+
+1. Start from index `0`.
+2. Check whether the current position is valid.
+3. Mark the current position as visited.
+4. Try moving forward by `1`.
+5. Try moving backward by `1`.
+6. Try jumping by the given `leap`.
+7. Continue recursively until the end is reached or no valid move remains.
+8. Return `YES` if the end can be reached; otherwise return `NO`.
+
+### 📌 Example
+
+For:
+
+    game = [0, 0, 0, 0, 0]
+    leap = 3
+
+A possible path is:
+
+    0 → 3 → 6
+
+Since `6` is outside the array, the game is won.
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Work with one-dimensional arrays.
+- Implement recursive solutions.
+- Apply backtracking.
+- Explore multiple possible paths.
+- Handle visited positions.
+- Validate array indexes.
+- Implement game/path traversal logic.
+- Improve algorithmic problem-solving skills.
+
+### 📂 Files Added
+
+    Day-30/
+    ├── Java 1D Array (Part 2).java
+    └── Screenshot 2026-08-25 205949.png
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
+
+---
+
+# 🆕 Day 29 – Java Challenge
+
+### 🎯 Challenge
+
+**Java Challenge**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 Core Java
+- 🔹 Problem Solving
+- 🔹 Logical Thinking
+- 🔹 Input Handling
+- 🔹 Conditional Logic
+- 🔹 Programming Fundamentals
+
+### 🎯 Learning Outcome
+
+Day 29 continued my daily Java practice with another HackerRank programming challenge.
+
+The focus was on understanding the problem statement, developing the required logic, implementing the solution in Java, and validating the output.
+
+### ✅ Status
+
+**Completed 🎉**
 
 ---
 
@@ -344,7 +483,7 @@ The **Java Subarray** challenge focuses on finding the number of contiguous suba
 
 A **subarray** is a contiguous portion of an array. The elements must appear next to each other in the original array.
 
-For example, for:
+For example:
 
     [1, -2, 4]
 
@@ -373,38 +512,6 @@ Whenever the calculated sum is negative, the counter is increased.
 - `Scanner`
 - Input Handling
 
-### 💻 Main Logic
-
-    for (int i = 0; i < n; i++) {
-        int sum = 0;
-
-        for (int j = i; j < n; j++) {
-            sum += arr[j];
-
-            if (sum < 0) {
-                count++;
-            }
-        }
-    }
-
-### 🎯 Problem-Solving Approach
-
-1. Read the size of the array.
-2. Read all array elements.
-3. Select each element as the starting point of a subarray.
-4. Maintain a running sum while extending the subarray.
-5. Check whether the current sum is negative.
-6. Increase the counter whenever the sum is negative.
-7. Print the total number of negative-sum subarrays.
-
-### 📌 Example
-
-For:
-
-    1 -2 4 -5 1
-
-The program checks all contiguous subarrays and counts those whose total sum is negative.
-
 ### 🎯 Learning Outcome
 
 Through this challenge, I practiced how to:
@@ -426,8 +533,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -486,14 +591,14 @@ The solution checks every possible hourglass in the matrix and determines the ma
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+I practiced how to:
 
 - Work with 2D arrays.
 - Process rows and columns.
 - Use nested loops.
 - Identify patterns in matrices.
 - Calculate hourglass sums.
-- Find the maximum value among multiple results.
+- Find maximum values.
 - Handle structured input.
 
 ### 📂 Files Added
@@ -538,7 +643,7 @@ Through this challenge, I practiced how to:
 
 The **Java 1D Array** challenge focuses on creating and processing a one-dimensional integer array.
 
-The array is created using the size provided by the user:
+The array is created using:
 
     int[] myArray = new int[n];
 
@@ -793,25 +898,135 @@ I practiced:
 
 ---
 
-# 🎯 Why This Repository?
+# 📅 Challenge Progress
 
-This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
+- ✅ Day 1 Completed
+- ✅ Day 2 Completed
+- ✅ Day 3 Completed
+- ✅ Day 4 Completed
+- ✅ Day 5 Completed
+- ✅ Day 6 Completed
+- ✅ Day 7 Completed
+- ✅ Day 8 Completed
+- ✅ Day 9 Completed
+- ✅ Day 10 Completed
+- ✅ Day 11 Completed
+- ✅ Day 12 Completed
+- ✅ Day 13 Completed
+- ✅ Day 14 Completed
+- ✅ Day 15 Completed
+- ✅ Day 16 Completed
+- ✅ Day 17 Completed
+- ✅ Day 18 Completed
+- ✅ Day 19 Completed
+- ✅ Day 20 Completed
+- ✅ Day 21 Completed
+- ✅ Day 22 Completed 🎉
+- ✅ Day 23 Completed 🎉
+- ✅ Day 24 Completed 🎉
+- ✅ Day 25 Completed 🎉
+- ✅ Day 26 Completed 🎉
+- ✅ Day 27 Completed 🎉
+- ✅ Day 28 Completed 🎉
+- ✅ Day 29 Completed 🎉
+- ✅ Day 30 Completed 🎉
+- ⏳ Continuing every day...
 
-It serves as a portfolio of my Java programming skills, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
+---
 
-Every challenge helps me improve my:
+# 📊 Current Statistics
 
-- 🧠 Logical Thinking
-- ☕ Java Programming Skills
-- 🧩 Problem-Solving Ability
-- 💻 Programming Fundamentals
-- 🔍 Pattern Recognition
-- 🔤 String Handling
-- 🔢 Number Processing
-- 📦 Array Handling
-- 📐 2D Array Processing
-- 🔗 Subarray Processing
-- 🚀 Coding Confidence
+| 📊 Category | Details |
+|---|---|
+| 📅 Days Completed | **30 / 100** |
+| 💻 Challenges Solved | **30** |
+| ☕ Language | **Java** |
+| 🏆 Platform | **HackerRank** |
+| 🧠 Focus | **Core Java & Problem Solving** |
+| 📈 Progress | **30% Complete** 🚀 |
+| 🔥 Current Streak | **30 Days** |
+| ⏳ Days Remaining | **70 Days** |
+
+---
+
+# 🔥 Current Streak
+
+## **30 Days of Java Practice Completed! 🎉🔥**
+
+> **30 days down, 70 more to go! 🚀**
+
+Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
+
+---
+
+# 🏆 Milestones
+
+| 🏁 Milestone | Status |
+|---|---|
+| 🎯 Day 10 | ✅ Completed |
+| 🎯 Day 20 | ✅ Completed |
+| 🎯 Day 25 | ✅ Completed |
+| 🎯 Day 28 | ✅ Completed |
+| 🎯 Day 30 | ✅ Completed 🎉 |
+| 🎯 Day 50 | ⏳ Upcoming |
+| 🎯 Day 75 | ⏳ Upcoming |
+| 🏆 Day 100 | ⏳ Goal |
+
+---
+
+# 📊 Progress Tracker
+
+    Day 1    ████████████████████ 100% ✅
+    Day 5    ████████████████████ 100% ✅
+    Day 10   ████████████████████ 100% ✅
+    Day 15   ████████████████████ 100% ✅
+    Day 20   ████████████████████ 100% ✅
+    Day 25   ████████████████████ 100% ✅
+    Day 28   ████████████████████ 100% ✅
+    Day 29   ████████████████████ 100% ✅
+    Day 30   ████████████████████ 100% ✅
+    Day 50   ████████████░░░░░░░░  60% ⏳
+    Day 75   ████████░░░░░░░░░░░░  40% ⏳
+    Day 100  ██████░░░░░░░░░░░░░░  30% ⏳
+
+## 🚀 Overall Progress
+
+    [██████░░░░░░░░░░░░] 30%
+
+**30 / 100 Days Completed**
+
+---
+
+# 📚 Learning Approach
+
+My daily learning process includes:
+
+1. 📖 Understand the problem statement.
+2. 🧠 Analyze the required output.
+3. ✍️ Write the Java solution.
+4. 🧪 Test the solution on HackerRank.
+5. 🔍 Understand the result.
+6. 📂 Save the Java solution in this repository.
+7. 📸 Add the successful submission screenshot.
+8. 📝 Review the Java concepts used.
+9. 🚀 Continue to the next challenge.
+
+---
+
+# 🌱 Learning in Public
+
+This challenge is not only about solving programming problems.
+
+It is also about:
+
+- 🔥 Building consistency
+- 📚 Learning new Java concepts
+- 🧠 Improving logical thinking
+- 💻 Writing better Java programs
+- 🧩 Improving problem-solving skills
+- 🎯 Preparing for technical interviews
+- 🚀 Building a strong technical portfolio
+- 💼 Preparing for software development opportunities
 
 ---
 
@@ -843,208 +1058,32 @@ The upcoming days will focus on more Java concepts, including:
 - 🔹 Stream API
 - 🔹 Functional Interfaces
 - 🔹 Advanced Java Concepts
+- 🔹 Data Structures
+- 🔹 Algorithms
 
 ---
 
-# 📈 Current Statistics
+# 🎯 Why This Repository?
 
-| 📊 Category | Details |
-|---|---|
-| 📅 Days Completed | **28 / 100** |
-| 💻 Challenges Solved | **28** |
-| ☕ Language | **Java** |
-| 🏆 Platform | **HackerRank** |
-| 🧠 Level | **Core Java** |
-| 📈 Progress | **28% Complete** 🚀 |
-| 🔥 Current Streak | **28 Days** |
-| ⏳ Days Remaining | **72 Days** |
+This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
 
----
+It serves as a portfolio of my Java programming skills, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
 
-# 🔥 Current Streak
+Every challenge helps me improve my:
 
-## **28 Days of Java Practice Completed! 🎉🔥**
-
-> **28 days down, 72 more to go! 🚀**
-
-Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
-
----
-
-# 🏆 Milestones
-
-| 🏁 Milestone | Status |
-|---|---|
-| 🎯 Day 10 | ✅ Completed |
-| 🎯 Day 20 | ✅ Completed |
-| 🎯 Day 25 | ✅ Completed |
-| 🎯 Day 27 | ✅ Completed |
-| 🎯 Day 28 | ✅ Completed 🎉 |
-| 🎯 Day 50 | ⏳ Upcoming |
-| 🎯 Day 75 | ⏳ Upcoming |
-| 🏆 Day 100 | ⏳ Goal |
-
----
-
-# 📚 Learning Approach
-
-My daily learning process includes:
-
-1. 📖 Understand the problem statement.
-2. 🧠 Analyze the required output.
-3. ✍️ Write the Java solution.
-4. 🧪 Test the solution on HackerRank.
-5. 🔍 Understand the result.
-6. 📂 Save the Java solution in this repository.
-7. 📸 Add the successful submission screenshot.
-8. 📝 Review the Java concepts used.
-9. 🚀 Continue to the next challenge.
-
----
-
-# 📊 Progress Tracker
-
-    Day 1    ████████████████████ 100% ✅
-    Day 5    ████████████████████ 100% ✅
-    Day 10   ████████████████████ 100% ✅
-    Day 15   ████████████████████ 100% ✅
-    Day 20   ████████████████████ 100% ✅
-    Day 25   ████████████████████ 100% ✅
-    Day 28   ████████████████████ 100% ✅
-    Day 50   ██████░░░░░░░░░░░░░░  56% ⏳
-    Day 75   ███████░░░░░░░░░░░░░  37% ⏳
-    Day 100  ██████░░░░░░░░░░░░░░  28% ⏳
-
-## 🚀 Overall Progress
-
-    [██████░░░░░░░░░░░░] 28%
-
-**28 / 100 Days Completed**
-
----
-
-# 💻 Java Concepts Practiced
-
-## 🔹 Java Fundamentals
-
-    Variables
-    Data Types
-    Conditional Statements
-    Loops
-    Arrays
-    Strings
-    Input Handling
-
-## 🔹 Array Handling
-
-    One-Dimensional Arrays
-    Two-Dimensional Arrays
-    Array Declaration
-    Array Initialization
-    Array Indexing
-    Array Traversal
-    array.length
-    Nested Loops
-    Matrix Processing
-    Hourglass Pattern
-    Subarray Processing
-    Running Sum
-    Negative Sum Detection
-
-## 🔹 String Handling
-
-    String
-    StringBuilder
-    String Manipulation
-    String Reverse
-    Anagrams
-    String Tokens
-
-## 🔹 Regular Expressions
-
-    Pattern
-    Matcher
-    Pattern.compile()
-    find()
-    Capturing Groups
-    Regex Matching
-
-## 🔹 BigDecimal
-
-    BigDecimal
-    compareTo()
-    Decimal Precision
-    Decimal Sorting
-
-## 🔹 BigInteger
-
-    BigInteger
-    add()
-    multiply()
-    isProbablePrime()
-    Arbitrary-Precision Arithmetic
-
----
-
-# 📖 Topics Learned So Far
-
-Throughout the first 28 days, I have practiced Java concepts related to:
-
-- ☕ Core Java
-- 🔤 Strings
-- 🔄 String Manipulation
-- 🔍 Regular Expressions
-- 🧩 Pattern Matching
-- 📝 String Tokens
-- 🔤 Anagrams
-- 🏷️ Tag Content Extraction
-- 🔢 BigDecimal
-- 🔢 BigInteger
-- 🧮 Large Number Handling
-- 🔬 Prime Number Testing
-- 📦 One-Dimensional Arrays
-- 📐 Two-Dimensional Arrays
-- 🔢 Array Indexing
-- 🔄 Array Traversal
-- 🧮 Matrix Processing
-- ⌛ Hourglass Pattern
-- 📊 Maximum Sum Calculation
-- 🔗 Subarray Processing
-- ➕ Running Sum
-- ➖ Negative Subarray Detection
 - 🧠 Logical Thinking
-- 💻 Problem Solving
-- 🚀 Efficient Coding
-
----
-
-# 📌 Daily Practice
-
-Every day, I solve a new Java programming problem and add the solution to this repository.
-
-Each day's folder may contain:
-
-- ☕ Java Solution
-- 📸 HackerRank Submission Screenshot
-
-This makes the repository a complete record of my **100 Days of Java learning journey**.
-
----
-
-# 🌱 Learning in Public
-
-This challenge is not only about solving programming problems.
-
-It is also about:
-
-- 🔥 Building consistency
-- 📚 Learning new Java concepts
-- 🧠 Improving logical thinking
-- 💻 Writing better Java programs
-- 🧩 Improving problem-solving skills
-- 🎯 Preparing for technical interviews
-- 🚀 Building a strong technical portfolio
-- 💼 Preparing for software development opportunities
+- ☕ Java Programming Skills
+- 🧩 Problem-Solving Ability
+- 💻 Programming Fundamentals
+- 🔍 Pattern Recognition
+- 🔤 String Handling
+- 🔢 Number Processing
+- 📦 Array Handling
+- 📐 2D Array Processing
+- 🔗 Subarray Processing
+- 🔄 Recursion
+- 🔙 Backtracking
+- 🚀 Coding Confidence
 
 ---
 
@@ -1068,7 +1107,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#Recursion` `#Backtracking` `#OpenToWork`
 
 ---
 
@@ -1078,6 +1117,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**28 Days Completed ✅ | 72 Days Remaining ⏳ | 100 Days Goal 🎯**
+**30 Days Completed ✅ | 70 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🚀**
