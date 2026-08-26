@@ -36,6 +36,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 🔗 **Subarrays**
 - 🔄 **Recursion**
 - 🔙 **Backtracking**
+- 📋 **Java List**
+- 📦 **ArrayList**
 - 🧩 **Problem Solving**
 - 🧠 **Algorithmic Thinking**
 
@@ -144,6 +146,10 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
     │   ├── Java 1D Array (Part 2).java
     │   └── Screenshot 2026-08-25 205949.png
     │
+    ├── Day-31/
+    │   ├── Java List.java
+    │   └── Screenshot 2026-08-26 165602.png
+    │
     └── README.md
 
 ---
@@ -182,7 +188,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 | ✅ Day 28 | Java Subarray | Completed |
 | ✅ Day 29 | Java Challenge | Completed |
 | ✅ Day 30 | Java 1D Array (Part 2) | Completed |
-| ⏳ Day 31 | Coming Soon | Pending |
+| ✅ Day 31 | Java List | Completed |
+| ⏳ Day 32 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -226,6 +233,21 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Visited Cell Handling
 - ✅ Recursion
 - ✅ Backtracking
+
+## 📋 Java List & Collections
+
+- ✅ Java `List`
+- ✅ `ArrayList`
+- ✅ List Initialization
+- ✅ List Indexing
+- ✅ List Traversal
+- ✅ Adding Elements
+- ✅ Inserting Elements at an Index
+- ✅ Deleting Elements
+- ✅ Updating List Structure
+- ✅ Processing Multiple Queries
+- ✅ Dynamic List Operations
+- ✅ Collection-Based Problem Solving
 
 ## 🔤 String Programming
 
@@ -278,6 +300,7 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Array-Based Problem Solving
 - ✅ Matrix-Based Problem Solving
 - ✅ Subarray-Based Problem Solving
+- ✅ Collection-Based Problem Solving
 - ✅ Recursion
 - ✅ Backtracking
 - ✅ Traversal Techniques
@@ -294,6 +317,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 💻 Programming Fundamentals
 - 📦 Array Handling
 - 📐 2D Array Processing
+- 📋 List Handling
+- 📦 ArrayList
 - 📝 Pattern Matching
 - 🔢 Number Handling
 - ⚡ Efficient Coding
@@ -307,6 +332,112 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 🔗 Subarray Processing
 - 🔄 Recursion
 - 🔙 Backtracking
+- 📚 Collection Fundamentals
+
+---
+
+# 🆕 Day 31 – Java List
+
+### 🎯 Challenge
+
+**Java List**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 Java `List`
+- 🔹 `ArrayList`
+- 🔹 List Operations
+- 🔹 Inserting Elements
+- 🔹 Deleting Elements
+- 🔹 Index-Based Operations
+- 🔹 Dynamic List Manipulation
+- 🔹 Query Processing
+- 🔹 Input Handling
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Java List** challenge focuses on performing multiple operations on a list of integers.
+
+Two types of queries are performed:
+
+- ➕ **Insert** an element at a specific index.
+- 🗑️ **Delete** an element from a specific index.
+
+The solution processes all queries sequentially and prints the final modified list.
+
+### 🔑 Java Concepts Used
+
+- `List<Integer>`
+- `ArrayList`
+- `add(index, value)`
+- `remove(index)`
+- `Scanner`
+- List traversal
+- Index-based operations
+- Query processing
+- Dynamic data manipulation
+
+### 🎯 Problem-Solving Approach
+
+1. Create an integer list using `ArrayList`.
+2. Read the initial list elements.
+3. Read the number of queries.
+4. Check the type of each query.
+5. For an `Insert` query, add the given value at the specified index.
+6. For a `Delete` query, remove the element at the specified index.
+7. Process all queries in sequence.
+8. Print the final list as space-separated values.
+
+### 📌 Example
+
+Initial List:
+
+    12 0 1 78 12
+
+Insert `23` at index `5`:
+
+    12 0 1 78 12 23
+
+Delete the element at index `0`:
+
+    0 1 78 12 23
+
+Final Output:
+
+    0 1 78 12 23
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Work with Java Lists.
+- Use `ArrayList` for dynamic data storage.
+- Insert elements at specific positions.
+- Delete elements using indexes.
+- Process multiple queries.
+- Manipulate collection data dynamically.
+- Improve collection-based problem-solving skills.
+
+### 📂 Files Added
+
+    Day-31/
+    ├── Java List.java
+    └── Screenshot 2026-08-26 165602.png
+
+### ✅ Status
+
+**Completed 🎉🔥**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -411,8 +542,6 @@ Through this challenge, I practiced how to:
 
 **Completed 🎉**
 
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
-
 ---
 
 # 🆕 Day 29 – Java Challenge
@@ -483,38 +612,13 @@ The **Java Subarray** challenge focuses on finding the number of contiguous suba
 
 A **subarray** is a contiguous portion of an array. The elements must appear next to each other in the original array.
 
-For example:
-
-    [1, -2, 4]
-
-Possible subarrays include:
-
-    [1]
-    [-2]
-    [4]
-    [1, -2]
-    [-2, 4]
-    [1, -2, 4]
-
-The solution checks each possible starting position and calculates the sum of every contiguous subarray.
+The solution checks every possible starting position and calculates the sum of every contiguous subarray.
 
 Whenever the calculated sum is negative, the counter is increased.
 
-### 🔑 Java Concepts Used
-
-- `int[]`
-- Arrays
-- Nested `for` Loops
-- Array Indexing
-- Subarray Traversal
-- Running Sum
-- Conditional Statements
-- `Scanner`
-- Input Handling
-
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+I practiced how to:
 
 - Understand the concept of subarrays.
 - Work with contiguous elements.
@@ -577,17 +681,6 @@ The sum is:
     a + b + c + d + e + f + g
 
 The solution checks every possible hourglass in the matrix and determines the maximum sum.
-
-### 🔑 Java Concepts Used
-
-- `List<List<Integer>>`
-- `ArrayList`
-- Nested Loops
-- 2D Array Traversal
-- Index-Based Access
-- Maximum Value Tracking
-- `BufferedReader`
-- `InputStreamReader`
 
 ### 🎯 Learning Outcome
 
@@ -706,14 +799,6 @@ Java's `BigInteger` class provides support for integers of arbitrary precision.
 
 - ➕ Addition using `add()`
 - ✖️ Multiplication using `multiply()`
-
-### Example
-
-    BigInteger a = new BigInteger("123456789");
-    BigInteger b = new BigInteger("987654321");
-
-    BigInteger sum = a.add(b);
-    BigInteger product = a.multiply(b);
 
 ### 🎯 Learning Outcome
 
@@ -930,6 +1015,7 @@ I practiced:
 - ✅ Day 28 Completed 🎉
 - ✅ Day 29 Completed 🎉
 - ✅ Day 30 Completed 🎉
+- ✅ Day 31 Completed 🎉🔥
 - ⏳ Continuing every day...
 
 ---
@@ -938,22 +1024,22 @@ I practiced:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **30 / 100** |
-| 💻 Challenges Solved | **30** |
+| 📅 Days Completed | **31 / 100** |
+| 💻 Challenges Solved | **31** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 Focus | **Core Java & Problem Solving** |
-| 📈 Progress | **30% Complete** 🚀 |
-| 🔥 Current Streak | **30 Days** |
-| ⏳ Days Remaining | **70 Days** |
+| 📈 Progress | **31% Complete** 🚀 |
+| 🔥 Current Streak | **31 Days** |
+| ⏳ Days Remaining | **69 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **30 Days of Java Practice Completed! 🎉🔥**
+## **31 Days of Java Practice Completed! 🎉🔥**
 
-> **30 days down, 70 more to go! 🚀**
+> **31 days down, 69 more to go! 🚀**
 
 Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
 
@@ -968,6 +1054,7 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 | 🎯 Day 25 | ✅ Completed |
 | 🎯 Day 28 | ✅ Completed |
 | 🎯 Day 30 | ✅ Completed 🎉 |
+| 🎯 Day 31 | ✅ Completed 🎉🔥 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -985,15 +1072,16 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
     Day 28   ████████████████████ 100% ✅
     Day 29   ████████████████████ 100% ✅
     Day 30   ████████████████████ 100% ✅
-    Day 50   ████████████░░░░░░░░  60% ⏳
-    Day 75   ████████░░░░░░░░░░░░  40% ⏳
-    Day 100  ██████░░░░░░░░░░░░░░  30% ⏳
+    Day 31   ████████████████████ 100% ✅
+    Day 50   ████████████░░░░░░░░  62% ⏳
+    Day 75   ████████░░░░░░░░░░░░  41% ⏳
+    Day 100  ██████░░░░░░░░░░░░░░  31% ⏳
 
 ## 🚀 Overall Progress
 
-    [██████░░░░░░░░░░░░] 30%
+    [██████░░░░░░░░░░░░] 31%
 
-**30 / 100 Days Completed**
+**31 / 100 Days Completed**
 
 ---
 
@@ -1080,6 +1168,7 @@ Every challenge helps me improve my:
 - 🔢 Number Processing
 - 📦 Array Handling
 - 📐 2D Array Processing
+- 📋 List & Collection Handling
 - 🔗 Subarray Processing
 - 🔄 Recursion
 - 🔙 Backtracking
@@ -1107,7 +1196,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#Recursion` `#Backtracking` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#Collections` `#Recursion` `#Backtracking` `#OpenToWork`
 
 ---
 
@@ -1117,6 +1206,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**30 Days Completed ✅ | 70 Days Remaining ⏳ | 100 Days Goal 🎯**
+**31 Days Completed ✅ | 69 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🚀**
