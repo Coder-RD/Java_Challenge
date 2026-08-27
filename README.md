@@ -38,6 +38,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 🔙 **Backtracking**
 - 📋 **Java List**
 - 📦 **ArrayList**
+- 🗺️ **Java Map**
+- 🔑 **HashMap**
 - 🧩 **Problem Solving**
 - 🧠 **Algorithmic Thinking**
 
@@ -45,112 +47,116 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 
 # 📂 Repository Structure
 
-    Java_Challenge/
-    │
-    ├── Day-1/
-    │   └── Java Challenge
-    │
-    ├── Day-2/
-    │   └── Java Challenge
-    │
-    ├── Day-3/
-    │   └── Java Challenge
-    │
-    ├── Day-4/
-    │   └── Java Challenge
-    │
-    ├── Day-5/
-    │   └── Java Challenge
-    │
-    ├── Day-6/
-    │   └── Java Challenge
-    │
-    ├── Day-7/
-    │   └── Java Challenge
-    │
-    ├── Day-8/
-    │   └── Java Challenge
-    │
-    ├── Day-9/
-    │   └── Java Challenge
-    │
-    ├── Day-10/
-    │   └── Java Challenge
-    │
-    ├── Day-11/
-    │   └── Java Challenge
-    │
-    ├── Day-12/
-    │   └── Java Challenge
-    │
-    ├── Day-13/
-    │   └── Java Challenge
-    │
-    ├── Day-14/
-    │   └── Java String Reverse.java
-    │
-    ├── Day-15/
-    │   └── Java Challenge
-    │
-    ├── Day-16/
-    │   └── Java Challenge
-    │
-    ├── Day-17/
-    │   └── Java String Reverse.java
-    │
-    ├── Day-18/
-    │   └── Java Anagrams.java
-    │
-    ├── Day-19/
-    │   └── Java String Tokens.java
-    │
-    ├── Day-20/
-    │   ├── Pattern Syntax Checker.java
-    │   └── Screenshot (228).png
-    │
-    ├── Day-21/
-    │   ├── Java Regex 2 - Duplicate Words.java
-    │   └── Screenshot 2026-08-16 193102.png
-    │
-    ├── Day-22/
-    │   ├── Tag Content Extractor.java
-    │   └── Screenshot 2026-08-17 212544.png
-    │
-    ├── Day-23/
-    │   └── Java BigDecimal.java
-    │
-    ├── Day-24/
-    │   ├── Java Primality Test.java
-    │   └── Screenshot 2026-08-19 103022.png
-    │
-    ├── Day-25/
-    │   ├── Java BigInteger.java
-    │   └── Screenshot 2026-08-20 162029.png
-    │
-    ├── Day-26/
-    │   ├── Java 1D Array.java
-    │   └── Screenshot 2026-08-21 145008.png
-    │
-    ├── Day-27/
-    │   ├── Java 2D Array.java
-    │   └── Screenshot 2026-08-22 162405.png
-    │
-    ├── Day-28/
-    │   ├── Java Subarray.java
-    │   └── Screenshot 2026-08-23 111331.png
-    │
-    ├── Day-29/
-    │   └── Java Challenge
-    │
-    ├── Day-30/
-    │   ├── Java 1D Array (Part 2).java
-    │   └── Screenshot 2026-08-25 205949.png
-    │
-    ├── Day-31/
-    │   ├── Java List.java
-    │   └── Screenshot 2026-08-26 165602.png
-    │
-    └── README.md
+Java_Challenge/
+│
+├── Day-1/
+│   └── Java Challenge
+│
+├── Day-2/
+│   └── Java Challenge
+│
+├── Day-3/
+│   └── Java Challenge
+│
+├── Day-4/
+│   └── Java Challenge
+│
+├── Day-5/
+│   └── Java Challenge
+│
+├── Day-6/
+│   └── Java Challenge
+│
+├── Day-7/
+│   └── Java Challenge
+│
+├── Day-8/
+│   └── Java Challenge
+│
+├── Day-9/
+│   └── Java Challenge
+│
+├── Day-10/
+│   └── Java Challenge
+│
+├── Day-11/
+│   └── Java Challenge
+│
+├── Day-12/
+│   └── Java Challenge
+│
+├── Day-13/
+│   └── Java Challenge
+│
+├── Day-14/
+│   └── Java String Reverse.java
+│
+├── Day-15/
+│   └── Java Challenge
+│
+├── Day-16/
+│   └── Java Challenge
+│
+├── Day-17/
+│   └── Java String Reverse.java
+│
+├── Day-18/
+│   └── Java Anagrams.java
+│
+├── Day-19/
+│   └── Java String Tokens.java
+│
+├── Day-20/
+│   ├── Pattern Syntax Checker.java
+│   └── Screenshot (228).png
+│
+├── Day-21/
+│   ├── Java Regex 2 - Duplicate Words.java
+│   └── Screenshot 2026-08-16 193102.png
+│
+├── Day-22/
+│   ├── Tag Content Extractor.java
+│   └── Screenshot 2026-08-17 212544.png
+│
+├── Day-23/
+│   └── Java BigDecimal.java
+│
+├── Day-24/
+│   ├── Java Primality Test.java
+│   └── Screenshot 2026-08-19 103022.png
+│
+├── Day-25/
+│   ├── Java BigInteger.java
+│   └── Screenshot 2026-08-20 162029.png
+│
+├── Day-26/
+│   ├── Java 1D Array.java
+│   └── Screenshot 2026-08-21 145008.png
+│
+├── Day-27/
+│   ├── Java 2D Array.java
+│   └── Screenshot 2026-08-22 162405.png
+│
+├── Day-28/
+│   ├── Java Subarray.java
+│   └── Screenshot 2026-08-23 111331.png
+│
+├── Day-29/
+│   └── Java Challenge
+│
+├── Day-30/
+│   ├── Java 1D Array (Part 2).java
+│   └── Screenshot 2026-08-25 205949.png
+│
+├── Day-31/
+│   ├── Java List.java
+│   └── Screenshot 2026-08-26 165602.png
+│
+├── Day-32/
+│   ├── Java Map.java
+│   └── Screenshot 2026-08-27 222417.png
+│
+└── README.md
 
 ---
 
@@ -189,9 +195,11 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 | ✅ Day 29 | Java Challenge | Completed |
 | ✅ Day 30 | Java 1D Array (Part 2) | Completed |
 | ✅ Day 31 | Java List | Completed |
-| ⏳ Day 32 | Coming Soon | Pending |
+| ✅ Day 32 | Java Map | Completed |
+| ⏳ Day 33 | Coming Soon | Pending |
+| ⏳ Day 34 | Coming Soon | Pending |
 | ... | ... | ... |
-| 🎯 Day 100 | Goal | Pending |
+| 🎯 Day 100 | Final Goal | Pending |
 
 ---
 
@@ -209,6 +217,7 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Input Handling
 - ✅ Problem Solving
 - ✅ Logical Thinking
+- ✅ Algorithmic Thinking
 
 ## 📦 Array Programming
 
@@ -218,8 +227,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Array Initialization
 - ✅ Array Indexing
 - ✅ Array Traversal
-- ✅ `array.length`
-- ✅ Nested `for` Loops
+- ✅ array.length
+- ✅ Nested for Loops
 - ✅ Matrix/Grid Processing
 - ✅ Hourglass Pattern
 - ✅ Subarray Processing
@@ -236,8 +245,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 
 ## 📋 Java List & Collections
 
-- ✅ Java `List`
-- ✅ `ArrayList`
+- ✅ Java List
+- ✅ ArrayList
 - ✅ List Initialization
 - ✅ List Indexing
 - ✅ List Traversal
@@ -247,6 +256,21 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Updating List Structure
 - ✅ Processing Multiple Queries
 - ✅ Dynamic List Operations
+- ✅ Collection-Based Problem Solving
+
+## 🗺️ Java Map & HashMap
+
+- ✅ Java Map
+- ✅ HashMap
+- ✅ Key-Value Pair Storage
+- ✅ put()
+- ✅ get()
+- ✅ containsKey()
+- ✅ Searching Data
+- ✅ Efficient Data Retrieval
+- ✅ Phone Book Implementation
+- ✅ Query Processing
+- ✅ EOF Handling
 - ✅ Collection-Based Problem Solving
 
 ## 🔤 String Programming
@@ -266,9 +290,9 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Regex Pattern Matching
 - ✅ Pattern Syntax Checking
 - ✅ Pattern Compilation
-- ✅ `Pattern.compile()`
-- ✅ `Matcher`
-- ✅ `find()`
+- ✅ Pattern.compile()
+- ✅ Matcher
+- ✅ find()
 - ✅ Capturing Groups
 - ✅ Case-Insensitive Regex
 - ✅ Duplicate Word Detection
@@ -285,7 +309,7 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ BigInteger
 - ✅ Large Number Handling
 - ✅ Prime Number Checking
-- ✅ `isProbablePrime()`
+- ✅ isProbablePrime()
 - ✅ BigInteger Addition
 - ✅ BigInteger Multiplication
 - ✅ Handling Extremely Large Integers
@@ -304,6 +328,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Recursion
 - ✅ Backtracking
 - ✅ Traversal Techniques
+- ✅ Query Processing
+- ✅ Key-Value Data Lookup
 
 ---
 
@@ -319,6 +345,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 📐 2D Array Processing
 - 📋 List Handling
 - 📦 ArrayList
+- 🗺️ Map
+- 🔑 HashMap
 - 📝 Pattern Matching
 - 🔢 Number Handling
 - ⚡ Efficient Coding
@@ -333,27 +361,151 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 🔄 Recursion
 - 🔙 Backtracking
 - 📚 Collection Fundamentals
+- 🔍 Efficient Data Searching
+
+---
+
+# 🆕 Day 32 – Java Map
+
+## 🎯 Challenge
+
+**Java Map**
+
+## 💻 Platform
+
+**HackerRank**
+
+## ☕ Language
+
+**Java**
+
+## 📚 Concepts Practiced
+
+- 🔹 Java Map
+- 🔹 HashMap
+- 🔹 Key-Value Pairs
+- 🔹 put()
+- 🔹 get()
+- 🔹 containsKey()
+- 🔹 Efficient Data Retrieval
+- 🔹 Searching Data
+- 🔹 Query Processing
+- 🔹 EOF Handling
+- 🔹 Input Handling
+- 🔹 Problem Solving
+
+## 💡 Key Concept
+
+The **Java Map** challenge focuses on creating a phone book using Java's Map and HashMap.
+
+Each person's name is stored as a **key**, while their phone number is stored as the corresponding **value**.
+
+The program receives multiple names as queries and searches for each name in the phone book.
+
+If the name exists, the program prints the person's name and phone number.
+
+If the name does not exist, it prints **Not found**.
+
+## 🔑 Java Concepts Used
+
+- Map<String, String>
+- HashMap
+- put()
+- get()
+- containsKey()
+- Scanner
+- hasNextLine()
+- Key-Value Data Storage
+- Data Searching
+- Query Processing
+- EOF Handling
+
+## 🎯 Problem-Solving Approach
+
+1. Create a HashMap to store names and phone numbers.
+2. Read the number of phone book entries.
+3. Read each person's name.
+4. Read the corresponding phone number.
+5. Store the name and phone number using put().
+6. Read queries until the end of the input.
+7. Check whether the queried name exists using containsKey().
+8. If found, retrieve the phone number using get().
+9. Print the name and phone number in the required format.
+10. If the name is not found, print Not found.
+
+## 📌 Example
+
+### Input
+
+    3
+    uncle sam
+    99912222
+    tom
+    11122222
+    harry
+    12299933
+    uncle sam
+    uncle tom
+    harry
+
+### Phone Book
+
+    uncle sam → 99912222
+    tom       → 11122222
+    harry     → 12299933
+
+### Output
+
+    uncle sam=99912222
+    Not found
+    harry=12299933
+
+## 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Work with Java Map.
+- Use HashMap for key-value storage.
+- Store and retrieve data efficiently.
+- Search for values using keys.
+- Use containsKey() to check whether a key exists.
+- Process multiple queries.
+- Handle input until EOF.
+- Apply Java Collections to a real-world problem.
+- Improve collection-based problem-solving skills.
+
+## 📂 Files Added
+
+Day-32/
+├── Java Map.java
+└── Screenshot 2026-08-27 222417.png
+
+## ✅ Status
+
+**Completed 🎉🔥**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
 # 🆕 Day 31 – Java List
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java List**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
-- 🔹 Java `List`
-- 🔹 `ArrayList`
+- 🔹 Java List
+- 🔹 ArrayList
 - 🔹 List Operations
 - 🔹 Inserting Elements
 - 🔹 Deleting Elements
@@ -363,7 +515,7 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 🔹 Input Handling
 - 🔹 Problem Solving
 
-### 💡 Key Concept
+## 💡 Key Concept
 
 The **Java List** challenge focuses on performing multiple operations on a list of integers.
 
@@ -374,88 +526,86 @@ Two types of queries are performed:
 
 The solution processes all queries sequentially and prints the final modified list.
 
-### 🔑 Java Concepts Used
+## 🔑 Java Concepts Used
 
-- `List<Integer>`
-- `ArrayList`
-- `add(index, value)`
-- `remove(index)`
-- `Scanner`
+- List<Integer>
+- ArrayList
+- add(index, value)
+- remove(index)
+- Scanner
 - List traversal
 - Index-based operations
 - Query processing
 - Dynamic data manipulation
 
-### 🎯 Problem-Solving Approach
+## 🎯 Problem-Solving Approach
 
-1. Create an integer list using `ArrayList`.
+1. Create an integer list using ArrayList.
 2. Read the initial list elements.
 3. Read the number of queries.
 4. Check the type of each query.
-5. For an `Insert` query, add the given value at the specified index.
-6. For a `Delete` query, remove the element at the specified index.
+5. For an Insert query, add the given value at the specified index.
+6. For a Delete query, remove the element at the specified index.
 7. Process all queries in sequence.
 8. Print the final list as space-separated values.
 
-### 📌 Example
+## 📌 Example
 
-Initial List:
+### Initial List
 
     12 0 1 78 12
 
-Insert `23` at index `5`:
+### Insert 23 at index 5
 
     12 0 1 78 12 23
 
-Delete the element at index `0`:
+### Delete the element at index 0
 
     0 1 78 12 23
 
-Final Output:
+### Final Output
 
     0 1 78 12 23
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 Through this challenge, I practiced how to:
 
 - Work with Java Lists.
-- Use `ArrayList` for dynamic data storage.
+- Use ArrayList for dynamic data storage.
 - Insert elements at specific positions.
 - Delete elements using indexes.
 - Process multiple queries.
 - Manipulate collection data dynamically.
 - Improve collection-based problem-solving skills.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-31/
-    ├── Java List.java
-    └── Screenshot 2026-08-26 165602.png
+Day-31/
+├── Java List.java
+└── Screenshot 2026-08-26 165602.png
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉🔥**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
 # 🆕 Day 30 – Java 1D Array (Part 2)
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java 1D Array (Part 2)**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
 - 🔹 One-Dimensional Arrays
 - 🔹 Array Traversal
@@ -469,23 +619,23 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 - 🔹 Problem Solving
 - 🔹 Algorithmic Thinking
 
-### 💡 Key Concept
+## 💡 Key Concept
 
 The **Java 1D Array (Part 2)** challenge focuses on determining whether it is possible to reach the end of an array by making valid moves.
 
 From the current position, three types of moves are possible:
 
-- ➡️ Move forward by `1`
-- ⬅️ Move backward by `1`
-- 🚀 Jump forward by the given `leap` value
+- ➡️ Move forward by 1
+- ⬅️ Move backward by 1
+- 🚀 Jump forward by the given leap value
 
-A cell containing `0` can be visited, while a cell containing `1` cannot be visited.
+A cell containing 0 can be visited, while a cell containing 1 cannot be visited.
 
 The objective is to determine whether we can move beyond the end of the array and win the game.
 
-### 🔑 Java Concepts Used
+## 🔑 Java Concepts Used
 
-- `int[]`
+- int[]
 - Array traversal
 - Recursion
 - Backtracking
@@ -495,31 +645,29 @@ The objective is to determine whether we can move beyond the end of the array an
 - Logical OR operator
 - Input handling
 
-### 🎯 Problem-Solving Approach
+## 🎯 Problem-Solving Approach
 
-1. Start from index `0`.
+1. Start from index 0.
 2. Check whether the current position is valid.
 3. Mark the current position as visited.
-4. Try moving forward by `1`.
-5. Try moving backward by `1`.
-6. Try jumping by the given `leap`.
+4. Try moving forward by 1.
+5. Try moving backward by 1.
+6. Try jumping by the leap value.
 7. Continue recursively until the end is reached or no valid move remains.
-8. Return `YES` if the end can be reached; otherwise return `NO`.
+8. Return YES if the end can be reached; otherwise return NO.
 
-### 📌 Example
-
-For:
+## 📌 Example
 
     game = [0, 0, 0, 0, 0]
     leap = 3
 
-A possible path is:
+Possible path:
 
     0 → 3 → 6
 
-Since `6` is outside the array, the game is won.
+Since 6 is outside the array, the game is won.
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 Through this challenge, I practiced how to:
 
@@ -532,33 +680,33 @@ Through this challenge, I practiced how to:
 - Implement game/path traversal logic.
 - Improve algorithmic problem-solving skills.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-30/
-    ├── Java 1D Array (Part 2).java
-    └── Screenshot 2026-08-25 205949.png
+Day-30/
+├── Java 1D Array (Part 2).java
+└── Screenshot 2026-08-25 205949.png
 
-### ✅ Status
+## ✅ Status
 
-**Completed 🎉**
+**Completed 🎉🔥**
 
 ---
 
 # 🆕 Day 29 – Java Challenge
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java Challenge**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
 - 🔹 Core Java
 - 🔹 Problem Solving
@@ -567,13 +715,13 @@ Through this challenge, I practiced how to:
 - 🔹 Conditional Logic
 - 🔹 Programming Fundamentals
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 Day 29 continued my daily Java practice with another HackerRank programming challenge.
 
 The focus was on understanding the problem statement, developing the required logic, implementing the solution in Java, and validating the output.
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉**
 
@@ -581,19 +729,19 @@ The focus was on understanding the problem statement, developing the required lo
 
 # 🆕 Day 28 – Java Subarray
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java Subarray**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
 - 🔹 Arrays
 - 🔹 Subarrays
@@ -606,17 +754,17 @@ The focus was on understanding the problem statement, developing the required lo
 - 🔹 Problem Solving
 - 🔹 Logical Thinking
 
-### 💡 Key Concept
+## 💡 Key Concept
 
 The **Java Subarray** challenge focuses on finding the number of contiguous subarrays whose sum is negative.
 
-A **subarray** is a contiguous portion of an array. The elements must appear next to each other in the original array.
+A subarray is a contiguous portion of an array. The elements must appear next to each other in the original array.
 
 The solution checks every possible starting position and calculates the sum of every contiguous subarray.
 
 Whenever the calculated sum is negative, the counter is increased.
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 I practiced how to:
 
@@ -628,13 +776,13 @@ I practiced how to:
 - Count valid subarrays.
 - Improve array-based problem-solving skills.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-28/
-    ├── Java Subarray.java
-    └── Screenshot 2026-08-23 111331.png
+Day-28/
+├── Java Subarray.java
+└── Screenshot 2026-08-23 111331.png
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉**
 
@@ -642,23 +790,23 @@ I practiced how to:
 
 # 🆕 Day 27 – Java 2D Array
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java 2D Array**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
 - 🔹 Two-Dimensional Arrays
 - 🔹 Matrix/Grid Processing
-- 🔹 Nested `for` Loops
+- 🔹 Nested for Loops
 - 🔹 Array Indexing
 - 🔹 Array Traversal
 - 🔹 Hourglass Pattern
@@ -666,9 +814,9 @@ I practiced how to:
 - 🔹 Input Handling
 - 🔹 Problem Solving
 
-### 💡 Key Concept
+## 💡 Key Concept
 
-The **Java 2D Array** challenge focuses on processing a `6 × 6` array and finding the **maximum hourglass sum**.
+The **Java 2D Array** challenge focuses on processing a 6 × 6 array and finding the **maximum hourglass sum**.
 
 An hourglass has the following structure:
 
@@ -682,7 +830,7 @@ The sum is:
 
 The solution checks every possible hourglass in the matrix and determines the maximum sum.
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 I practiced how to:
 
@@ -694,13 +842,13 @@ I practiced how to:
 - Find maximum values.
 - Handle structured input.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-27/
-    ├── Java 2D Array.java
-    └── Screenshot 2026-08-22 162405.png
+Day-27/
+├── Java 2D Array.java
+└── Screenshot 2026-08-22 162405.png
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉**
 
@@ -708,31 +856,31 @@ I practiced how to:
 
 # 🆕 Day 26 – Java 1D Array
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java 1D Array**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
 - 🔹 One-Dimensional Arrays
 - 🔹 Array Declaration
 - 🔹 Array Initialization
 - 🔹 Array Indexing
 - 🔹 Array Traversal
-- 🔹 `array.length`
-- 🔹 `for` Loop
-- 🔹 `Scanner`
+- 🔹 array.length
+- 🔹 for Loop
+- 🔹 Scanner
 - 🔹 Input Handling
 
-### 💡 Key Concept
+## 💡 Key Concept
 
 The **Java 1D Array** challenge focuses on creating and processing a one-dimensional integer array.
 
@@ -742,7 +890,7 @@ The array is created using:
 
 Each input value is stored at its corresponding index and then processed sequentially.
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 I practiced:
 
@@ -753,13 +901,13 @@ I practiced:
 - Traversing arrays using loops.
 - Handling multiple input values.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-26/
-    ├── Java 1D Array.java
-    └── Screenshot 2026-08-21 145008.png
+Day-26/
+├── Java 1D Array.java
+└── Screenshot 2026-08-21 145008.png
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉**
 
@@ -767,55 +915,55 @@ I practiced:
 
 # 🆕 Day 25 – Java BigInteger
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java BigInteger**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
-- 🔹 `BigInteger`
+- 🔹 BigInteger
 - 🔹 Arbitrary-Precision Integers
 - 🔹 Large Number Handling
-- 🔹 `add()`
-- 🔹 `multiply()`
+- 🔹 add()
+- 🔹 multiply()
 - 🔹 Input Handling
 - 🔹 Mathematical Operations
 
-### 💡 Key Concept
+## 💡 Key Concept
 
-The **Java BigInteger** challenge focuses on performing mathematical operations on extremely large integers that cannot be stored using primitive data types such as `int` or `long`.
+The **Java BigInteger** challenge focuses on performing mathematical operations on extremely large integers that cannot be stored using primitive data types such as int or long.
 
-Java's `BigInteger` class provides support for integers of arbitrary precision.
+Java's BigInteger class provides support for integers of arbitrary precision.
 
-### 🧮 Operations Practiced
+## 🧮 Operations Practiced
 
-- ➕ Addition using `add()`
-- ✖️ Multiplication using `multiply()`
+- ➕ Addition using add()
+- ✖️ Multiplication using multiply()
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 I practiced how to:
 
 - Handle extremely large integers.
-- Use `BigInteger`.
+- Use BigInteger.
 - Perform addition and multiplication.
 - Work with arbitrary-precision numbers.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-25/
-    ├── Java BigInteger.java
-    └── Screenshot 2026-08-20 162029.png
+Day-25/
+├── Java BigInteger.java
+└── Screenshot 2026-08-20 162029.png
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉**
 
@@ -823,31 +971,31 @@ I practiced how to:
 
 # 🆕 Day 24 – Java Primality Test
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java Primality Test**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
-- 🔹 `BigInteger`
-- 🔹 `isProbablePrime()`
+- 🔹 BigInteger
+- 🔹 isProbablePrime()
 - 🔹 Large Number Handling
 - 🔹 Prime Number Checking
 - 🔹 Conditional Statements
 - 🔹 Input Handling
 - 🔹 Problem Solving
 
-### 💡 Key Concept
+## 💡 Key Concept
 
-The challenge determines whether a large integer is a prime number using Java's `BigInteger` class.
+The challenge determines whether a large integer is a prime number using Java's BigInteger class.
 
 The solution uses:
 
@@ -855,23 +1003,23 @@ The solution uses:
 
 This method checks whether the number is probably prime with the specified certainty.
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 I practiced:
 
 - Working with large integers.
-- Using `BigInteger`.
+- Using BigInteger.
 - Checking prime numbers.
-- Using `isProbablePrime()`.
+- Using isProbablePrime().
 - Handling numbers beyond primitive data types.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-24/
-    ├── Java Primality Test.java
-    └── Screenshot 2026-08-19 103022.png
+Day-24/
+├── Java Primality Test.java
+└── Screenshot 2026-08-19 103022.png
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉**
 
@@ -879,52 +1027,52 @@ I practiced:
 
 # 🆕 Day 23 – Java BigDecimal
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Java BigDecimal**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
-- 🔹 `BigDecimal`
+- 🔹 BigDecimal
 - 🔹 High Precision
 - 🔹 Decimal Number Handling
-- 🔹 `compareTo()`
+- 🔹 compareTo()
 - 🔹 Sorting
 - 🔹 Arrays
 - 🔹 Number Comparison
 
-### 💡 Key Concept
+## 💡 Key Concept
 
 The **Java BigDecimal** challenge focuses on handling decimal numbers with high precision.
 
-`BigDecimal` is useful when accurate decimal calculations are required because floating-point types such as `float` and `double` may introduce precision issues.
+BigDecimal is useful when accurate decimal calculations are required because floating-point types such as float and double may introduce precision issues.
 
 The challenge also involves sorting decimal values while preserving their original representations.
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 I practiced:
 
 - Handling decimal numbers accurately.
-- Using `BigDecimal`.
+- Using BigDecimal.
 - Comparing decimal values.
 - Sorting decimal numbers.
 - Working with numerical arrays.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-23/
-    └── Java BigDecimal.java
+Day-23/
+└── Java BigDecimal.java
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉**
 
@@ -932,52 +1080,52 @@ I practiced:
 
 # 🆕 Day 22 – Tag Content Extractor
 
-### 🎯 Challenge
+## 🎯 Challenge
 
 **Tag Content Extractor**
 
-### 💻 Platform
+## 💻 Platform
 
 **HackerRank**
 
-### ☕ Language
+## ☕ Language
 
 **Java**
 
-### 📚 Concepts Practiced
+## 📚 Concepts Practiced
 
 - 🔹 Regular Expressions
 - 🔹 Pattern Matching
-- 🔹 `Pattern.compile()`
-- 🔹 `Matcher`
-- 🔹 `find()`
+- 🔹 Pattern.compile()
+- 🔹 Matcher
+- 🔹 find()
 - 🔹 Capturing Groups
 - 🔹 Tag Matching
 - 🔹 String Processing
 
-### 💡 Key Concept
+## 💡 Key Concept
 
 The **Tag Content Extractor** challenge uses Regular Expressions to find valid content enclosed between matching start and end tags.
 
 The solution identifies matching tags and extracts their valid content.
 
-### 🎯 Learning Outcome
+## 🎯 Learning Outcome
 
 I practiced:
 
 - Regular expression matching.
 - Capturing groups.
 - Pattern compilation.
-- Using `Matcher`.
+- Using Matcher.
 - Extracting content from tags.
 
-### 📂 Files Added
+## 📂 Files Added
 
-    Day-22/
-    ├── Tag Content Extractor.java
-    └── Screenshot 2026-08-17 212544.png
+Day-22/
+├── Tag Content Extractor.java
+└── Screenshot 2026-08-17 212544.png
 
-### ✅ Status
+## ✅ Status
 
 **Completed 🎉**
 
@@ -1016,6 +1164,7 @@ I practiced:
 - ✅ Day 29 Completed 🎉
 - ✅ Day 30 Completed 🎉
 - ✅ Day 31 Completed 🎉🔥
+- ✅ Day 32 Completed 🎉🔥
 - ⏳ Continuing every day...
 
 ---
@@ -1024,22 +1173,22 @@ I practiced:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **31 / 100** |
-| 💻 Challenges Solved | **31** |
+| 📅 Days Completed | **32 / 100** |
+| 💻 Challenges Solved | **32** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 Focus | **Core Java & Problem Solving** |
-| 📈 Progress | **31% Complete** 🚀 |
-| 🔥 Current Streak | **31 Days** |
-| ⏳ Days Remaining | **69 Days** |
+| 📈 Progress | **32% Complete** 🚀 |
+| 🔥 Current Streak | **32 Days** |
+| ⏳ Days Remaining | **68 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **31 Days of Java Practice Completed! 🎉🔥**
+## **32 Days of Java Practice Completed! 🎉🔥**
 
-> **31 days down, 69 more to go! 🚀**
+> **32 days down, 68 more to go! 🚀**
 
 Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, and Core Java.
 
@@ -1052,9 +1201,8 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
-| 🎯 Day 28 | ✅ Completed |
 | 🎯 Day 30 | ✅ Completed 🎉 |
-| 🎯 Day 31 | ✅ Completed 🎉🔥 |
+| 🎯 Day 32 | ✅ Completed 🎉🔥 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -1063,25 +1211,28 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 
 # 📊 Progress Tracker
 
-    Day 1    ████████████████████ 100% ✅
-    Day 5    ████████████████████ 100% ✅
-    Day 10   ████████████████████ 100% ✅
-    Day 15   ████████████████████ 100% ✅
-    Day 20   ████████████████████ 100% ✅
-    Day 25   ████████████████████ 100% ✅
-    Day 28   ████████████████████ 100% ✅
-    Day 29   ████████████████████ 100% ✅
-    Day 30   ████████████████████ 100% ✅
-    Day 31   ████████████████████ 100% ✅
-    Day 50   ████████████░░░░░░░░  62% ⏳
-    Day 75   ████████░░░░░░░░░░░░  41% ⏳
-    Day 100  ██████░░░░░░░░░░░░░░  31% ⏳
+Day 1    ████████████████████ 100% ✅
+Day 5    ████████████████████ 100% ✅
+Day 10   ████████████████████ 100% ✅
+Day 15   ████████████████████ 100% ✅
+Day 20   ████████████████████ 100% ✅
+Day 25   ████████████████████ 100% ✅
+Day 28   ████████████████████ 100% ✅
+Day 29   ████████████████████ 100% ✅
+Day 30   ████████████████████ 100% ✅
+Day 31   ████████████████████ 100% ✅
+Day 32   ████████████████████ 100% ✅
+Day 50   █████████████░░░░░░░  64% ⏳
+Day 75   █████████░░░░░░░░░░░  43% ⏳
+Day 100  ██████░░░░░░░░░░░░░░  32% ⏳
 
-## 🚀 Overall Progress
+---
 
-    [██████░░░░░░░░░░░░] 31%
+# 🚀 Overall Progress
 
-**31 / 100 Days Completed**
+**[██████░░░░░░░░░░░░] 32%**
+
+**32 / 100 Days Completed**
 
 ---
 
@@ -1132,7 +1283,6 @@ The upcoming days will focus on more Java concepts, including:
 - 🔹 Interfaces
 - 🔹 Exception Handling
 - 🔹 Collections Framework
-- 🔹 ArrayList
 - 🔹 LinkedList
 - 🔹 HashSet
 - 🔹 HashMap
@@ -1169,6 +1319,7 @@ Every challenge helps me improve my:
 - 📦 Array Handling
 - 📐 2D Array Processing
 - 📋 List & Collection Handling
+- 🗺️ Map & HashMap
 - 🔗 Subarray Processing
 - 🔄 Recursion
 - 🔙 Backtracking
@@ -1196,7 +1347,31 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#Collections` `#Recursion` `#Backtracking` `#OpenToWork`
+#100DaysOfCode
+#100DaysOfJava
+#Java
+#JavaProgramming
+#CoreJava
+#HackerRank
+#CodingChallenge
+#LearningInPublic
+#GitHub
+#CodingJourney
+#Developer
+#ProblemSolving
+#JavaDeveloper
+#Programming
+#Arrays
+#2DArray
+#Subarray
+#JavaList
+#ArrayList
+#JavaMap
+#HashMap
+#Collections
+#Recursion
+#Backtracking
+#OpenToWork
 
 ---
 
@@ -1204,8 +1379,8 @@ https://github.com/Coder-RD
 
 > **"Consistency is the key to mastering any skill."** 💻🔥
 
-### 🎯 Goal: Complete 100 Days of Java
+## 🎯 Goal: Complete 100 Days of Java
 
-**31 Days Completed ✅ | 69 Days Remaining ⏳ | 100 Days Goal 🎯**
+**32 Days Completed ✅ | 68 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🚀**
