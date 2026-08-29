@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository contains my daily Java programming solutions from **HackerRank**, where I practice Core Java concepts, problem-solving, logical thinking, algorithmic thinking, data structures, and programming skills.
+This repository contains my daily Java programming solutions from **HackerRank**, where I practice Core Java concepts, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, and programming skills.
 
 The goal is to solve **one Java programming challenge every day for 100 days** and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -39,9 +39,13 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 🔙 **Backtracking**
 - 📋 **Java List**
 - 📦 **ArrayList**
+- 🗺️ **Map**
+- 🔑 **HashMap**
 - 🗂️ **Stack**
-- 🧩 **Problem Solving**
-- 🧠 **Algorithmic Thinking**
+- 🧩 **HashSet**
+- 🔄 **Set Operations**
+- 🧠 **Problem Solving**
+- 🎯 **Algorithmic Thinking**
 
 ---
 
@@ -160,6 +164,10 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
     │   ├── Java Stack.java
     │   └── Screenshot 2026-08-28 223052.png
     │
+    ├── Day-34/
+    │   ├── Java Hashset.java
+    │   └── Screenshot 2026-08-29 210605.png
+    │
     └── README.md
 
 ---
@@ -201,7 +209,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 | ✅ Day 31 | Java List | Completed |
 | ✅ Day 32 | Java Map | Completed 🎉 |
 | ✅ Day 33 | Java Stack | Completed 🎉🔥 |
-| ⏳ Day 34 | Coming Soon | Pending |
+| ✅ Day 34 | Java HashSet | Completed 🎉🔥 |
+| ⏳ Day 35 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -290,6 +299,20 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Input Processing
 - ✅ Logical Validation
 
+## 🧩 Java HashSet
+
+- ✅ `HashSet`
+- ✅ Set Data Structure
+- ✅ Unique Elements
+- ✅ Duplicate Handling
+- ✅ `add()`
+- ✅ `size()`
+- ✅ String Pair Storage
+- ✅ Set-Based Problem Solving
+- ✅ Collection Framework
+- ✅ Unique Pair Identification
+- ✅ Dynamic Set Operations
+
 ## 🔤 String Programming
 
 - ✅ String Reverse
@@ -333,6 +356,124 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 
 ---
 
+# 🆕 Day 34 – Java HashSet
+
+### 🎯 Challenge
+
+**Java HashSet**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 HashSet
+- 🔹 Set Data Structure
+- 🔹 Unique Elements
+- 🔹 Duplicate Handling
+- 🔹 `add()`
+- 🔹 `size()`
+- 🔹 String Pair Storage
+- 🔹 Java Collections Framework
+- 🔹 Collection-Based Problem Solving
+- 🔹 Input Processing
+- 🔹 Logical Thinking
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Java HashSet** challenge focuses on storing pairs of strings and determining how many **unique pairs** have been entered so far.
+
+A `HashSet` is a collection that stores **unique elements**. If the same pair is added more than once, the `HashSet` automatically ignores the duplicate.
+
+For example:
+
+    (john, tom)
+
+and
+
+    (john, tom)
+
+are considered the same pair.
+
+However:
+
+    (john, tom)
+
+and
+
+    (tom, john)
+
+are considered different pairs because the order of the strings matters.
+
+### 🧠 Problem-Solving Approach
+
+1. Read the number of pairs.
+2. Store the left and right strings.
+3. Create a `HashSet`.
+4. Combine each pair into a single string representation.
+5. Add the pair to the `HashSet`.
+6. Use `set.size()` to determine the number of unique pairs.
+7. Print the number of unique pairs after each input.
+
+### 🔑 Important Java Methods
+
+- `HashSet<String>`
+- `add()`
+- `size()`
+
+### 📌 Example
+
+Input:
+
+    5
+    john tom
+    john mary
+    john tom
+    mary anna
+    mary anna
+
+Output:
+
+    1
+    2
+    2
+    3
+    3
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Understand the `HashSet` data structure.
+- Store unique elements.
+- Automatically handle duplicate values.
+- Use `add()` to insert elements.
+- Use `size()` to count unique elements.
+- Work with string pairs.
+- Understand the concept of sets.
+- Apply Java Collections Framework concepts.
+- Improve logical and problem-solving skills.
+
+### 📂 Files Added
+
+    Day-34/
+    ├── Java Hashset.java
+    └── Screenshot 2026-08-29 210605.png
+
+### ✅ Status
+
+**Completed 🎉🔥**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
+
+---
+
 # 🆕 Day 33 – Java Stack
 
 ### 🎯 Challenge
@@ -370,9 +511,9 @@ A string is considered balanced when every opening bracket has a corresponding c
 
 The three supported bracket pairs are:
 
-- `()` 
-- `{}`
-- `[]`
+    ()
+    {}
+    []
 
 A **Stack** follows the **LIFO (Last In, First Out)** principle, which makes it suitable for checking nested brackets.
 
@@ -387,21 +528,6 @@ A **Stack** follows the **LIFO (Last In, First Out)** principle, which makes it 
 7. If they do not match, the string is unbalanced.
 8. After processing the complete string, check whether the stack is empty.
 9. Print `true` for a balanced string and `false` otherwise.
-
-### 📌 Examples
-
-Balanced strings:
-
-    {}()
-    [{()}]
-    ({()})
-
-Unbalanced strings:
-
-    {}(
-    ({)}
-    [[
-    }{
 
 ### 🎯 Learning Outcome
 
@@ -425,8 +551,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -496,8 +620,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -576,6 +698,8 @@ Through this challenge, I practiced how to:
 - 📋 List Handling
 - 🗺️ Map Handling
 - 🗂️ Stack Data Structure
+- 🧩 HashSet
+- 🔑 HashMap
 - 📝 Pattern Matching
 - 🔢 Number Handling
 - ⚡ Efficient Coding
@@ -629,6 +753,7 @@ Through this challenge, I practiced how to:
 - ✅ Day 31 Completed 🎉🔥
 - ✅ Day 32 Completed 🎉🔥
 - ✅ Day 33 Completed 🎉🔥
+- ✅ Day 34 Completed 🎉🔥
 - ⏳ Continuing every day...
 
 ---
@@ -637,25 +762,25 @@ Through this challenge, I practiced how to:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **33 / 100** |
-| 💻 Challenges Solved | **33** |
+| 📅 Days Completed | **34 / 100** |
+| 💻 Challenges Solved | **34** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 Focus | **Core Java, Collections & Problem Solving** |
-| 📦 Data Structures Practiced | **Arrays, List, Map & Stack** |
-| 📈 Progress | **33% Complete** 🚀 |
-| 🔥 Current Streak | **33 Days** |
-| ⏳ Days Remaining | **67 Days** |
+| 📦 Data Structures Practiced | **Arrays, List, Map, Stack & HashSet** |
+| 📈 Progress | **34% Complete** 🚀 |
+| 🔥 Current Streak | **34 Days** |
+| ⏳ Days Remaining | **66 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **33 Days of Java Practice Completed! 🎉🔥**
+## **34 Days of Java Practice Completed! 🎉🔥**
 
-> **33 days down, 67 more to go! 🚀**
+> **34 days down, 66 more to go! 🚀**
 
-Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, data structures, and Core Java.
+Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, data structures, Java Collections, and Core Java.
 
 ---
 
@@ -671,6 +796,7 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 | 🎯 Day 31 | ✅ Completed 🎉 |
 | 🎯 Day 32 | ✅ Completed 🎉 |
 | 🎯 Day 33 | ✅ Completed 🎉🔥 |
+| 🎯 Day 34 | ✅ Completed 🎉🔥 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -691,15 +817,16 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
     Day 31    ████████████████████ 100% ✅
     Day 32    ████████████████████ 100% ✅
     Day 33    ████████████████████ 100% ✅
-    Day 50    ███████░░░░░░░░░░░░░  66% ⏳
-    Day 75    █████████░░░░░░░░░░░  44% ⏳
-    Day 100   ███████░░░░░░░░░░░░░  33% ⏳
+    Day 34    ████████████████████ 100% ✅
+    Day 50    █████████████░░░░░░░  68% ⏳
+    Day 75    █████████░░░░░░░░░░░  45% ⏳
+    Day 100   ███████░░░░░░░░░░░░░  34% ⏳
 
 ## 🚀 Overall Progress
 
-    [███████░░░░░░░░░░░] 33%
+    [███████░░░░░░░░░░░] 34%
 
-**33 / 100 Days Completed**
+**34 / 100 Days Completed**
 
 ---
 
@@ -791,6 +918,7 @@ Every challenge helps me improve my:
 - 📋 List & Collection Handling
 - 🗺️ Map Handling
 - 🗂️ Stack-Based Problem Solving
+- 🧩 Set-Based Problem Solving
 - 🔗 Subarray Processing
 - 🔄 Recursion
 - 🔙 Backtracking
@@ -832,7 +960,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#Stack` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Stack` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#OpenToWork`
 
 ---
 
@@ -842,6 +970,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**33 Days Completed ✅ | 67 Days Remaining ⏳ | 100 Days Goal 🎯**
+**34 Days Completed ✅ | 66 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🚀**
