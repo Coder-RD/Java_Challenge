@@ -2,9 +2,9 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository contains my daily Java programming solutions from **HackerRank**, where I practice **Core Java, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, and programming fundamentals**.
 
-The goal is to solve **one Java programming challenge every day for 100 days** and continuously improve my coding and problem-solving abilities. 💻☕
+The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
 ---
 
@@ -17,6 +17,7 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 💻 Solve programming challenges on HackerRank.
 - 📦 Understand Java Collections and Data Structures.
 - 🧬 Learn and apply Java Generics.
+- ⚖️ Understand Comparator and custom sorting.
 - 🚀 Build consistency through the **#100DaysOfCode** challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -45,7 +46,6 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - 🗂️ **Stack**
 - 🧩 **HashSet**
 - 🧬 **Generics**
-- 🔄 **Set Operations**
 - ⚖️ **Comparator**
 - 🔤 **Custom Sorting**
 - 🧠 **Problem Solving**
@@ -180,6 +180,10 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
     │   ├── Java Comparator.java
     │   └── Screenshot 2026-08-31 130957.png
     │
+    ├── Day-37/
+    │   ├── Java Sort.java
+    │   └── Screenshot 2026-09-01 143710.png
+    │
     └── README.md
 
 ---
@@ -224,7 +228,8 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 | ✅ Day 34 | Java HashSet | Completed 🎉🔥 |
 | ✅ Day 35 | Java Generics | Completed 🎉🔥🧬 |
 | ✅ Day 36 | Java Comparator | Completed 🎉🔥⚖️ |
-| ⏳ Day 37 | Coming Soon | Pending |
+| ✅ Day 37 | Java Sort | Completed 🎉🔥🚀 |
+| ⏳ Day 38 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -371,7 +376,7 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 - ✅ Comparing Integer Values
 - ✅ Comparing String Values
 - ✅ Java Collections Concepts
-- ✅ Anonymous / Custom Comparator Logic
+- ✅ Interface Implementation
 - ✅ Problem-Solving with Interfaces
 
 ---
@@ -423,6 +428,125 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 
 ---
 
+## 🔀 Java Sorting
+
+- ✅ Object Sorting
+- ✅ Custom Sorting
+- ✅ `Comparator`
+- ✅ `compareTo()`
+- ✅ `Arrays.sort()`
+- ✅ Multi-Level Sorting
+- ✅ Descending Order
+- ✅ Alphabetical Order
+- ✅ CGPA-Based Sorting
+- ✅ Name-Based Sorting
+- ✅ ID-Based Tie Breaking
+- ✅ Object Comparison
+- ✅ Sorting Complex Objects
+
+---
+
+# 🆕 Day 37 – Java Sort
+
+### 🎯 Challenge
+
+**Java Sort**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 Object-Oriented Programming
+- 🔹 Student Class
+- 🔹 Arrays
+- 🔹 Object Arrays
+- 🔹 `Comparator`
+- 🔹 Custom Sorting
+- 🔹 Multiple Sorting Criteria
+- 🔹 CGPA Comparison
+- 🔹 String Comparison
+- 🔹 ID Comparison
+- 🔹 `Arrays.sort()`
+- 🔹 Descending Order
+- 🔹 Alphabetical Order
+- 🔹 Tie-Breaking Logic
+- 🔹 Java Collections Concepts
+- 🔹 Problem Solving
+
+### 💡 What I Implemented
+
+In the **Java Sort** challenge, I worked with a collection of `Student` objects and implemented custom sorting logic.
+
+The students are sorted using multiple conditions:
+
+1. 📈 **Higher CGPA comes first.**
+2. 🔤 If two students have the same CGPA, their **first names are sorted alphabetically**.
+3. 🔢 If both CGPA and first names are the same, the **student ID is used as the final tie-breaker in ascending order**.
+
+This challenge demonstrates how Java can sort complex objects using multiple sorting conditions.
+
+### 🧠 Problem-Solving Approach
+
+1. Create the `Student` class with:
+   - `id`
+   - `fname`
+   - `cgpa`
+2. Create a list/array of Student objects.
+3. Implement custom comparison logic.
+4. Compare CGPA values first.
+5. Sort CGPA in descending order.
+6. If CGPA values are equal, compare student names alphabetically.
+7. If names are also equal, compare student IDs.
+8. Use the sorting mechanism to arrange all students according to the required rules.
+9. Display the sorted student information.
+
+### 🔑 Sorting Logic
+
+The sorting priority is:
+
+    Higher CGPA
+          ↓
+    Alphabetical First Name
+          ↓
+    Lower Student ID
+
+This is an example of **multi-level custom sorting** in Java.
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Work with arrays of objects.
+- Create and use custom sorting rules.
+- Compare numeric values.
+- Compare strings alphabetically.
+- Handle tie-breaking conditions.
+- Sort objects using multiple criteria.
+- Understand `Comparator` concepts.
+- Use Java sorting methods effectively.
+- Strengthen Java Collections and object comparison concepts.
+- Improve logical and problem-solving skills.
+
+### 📂 Files Added
+
+    Day-37/
+    ├── Java Sort.java
+    └── Screenshot 2026-09-01 143710.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
+
+---
+
 # 🆕 Day 36 – Java Comparator
 
 ### 🎯 Challenge
@@ -456,7 +580,7 @@ The goal is to solve **one Java programming challenge every day for 100 days** a
 
 The **Java Comparator** challenge focuses on creating a custom comparison rule for sorting an array of `Player` objects.
 
-Players must be sorted according to two conditions:
+Players are sorted according to two conditions:
 
 1. Players with **higher scores come first**.
 2. If two or more players have the **same score**, they are sorted alphabetically by name.
@@ -472,59 +596,21 @@ A custom `Checker` class implements the `Comparator<Player>` interface and overr
 5. Sort scores in descending order.
 6. If scores are equal, compare player names alphabetically.
 7. Use `Arrays.sort()` with the custom comparator.
-8. Print the sorted players using the locked `Solution` class.
-
-### 🔑 Important Java Concepts
-
-The comparator follows the sorting logic:
-
-- Higher score → comes first.
-- Same score → name is compared alphabetically.
-
-For score comparison, the comparator can use:
-
-    Integer.compare(b.score, a.score)
-
-For alphabetical name comparison:
-
-    a.name.compareTo(b.name)
-
-This creates a clear **multi-level sorting strategy**.
-
-### 📌 Example
-
-Input:
-
-    5
-    amy 100
-    david 100
-    heraldo 50
-    aakansha 75
-    aleksa 150
-
-Output:
-
-    aleksa 150
-    amy 100
-    david 100
-    aakansha 75
-    heraldo 50
+8. Print the sorted players.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+Through this challenge, I practiced:
 
-- Understand the `Comparator` interface.
-- Create custom sorting logic.
-- Compare objects based on multiple fields.
-- Sort integers in descending order.
-- Sort strings alphabetically.
-- Use `compare()` effectively.
-- Work with object arrays.
-- Use `Arrays.sort()` with a custom comparator.
-- Apply multi-level sorting.
-- Strengthen Java Collections concepts.
-- Improve logical and problem-solving skills.
+- Understanding the `Comparator` interface.
+- Creating custom sorting logic.
+- Comparing objects based on multiple fields.
+- Sorting integers in descending order.
+- Sorting strings alphabetically.
+- Using `compare()` effectively.
+- Working with object arrays.
+- Applying multi-level sorting.
+- Strengthening Java Collections concepts.
 
 ### 📂 Files Added
 
@@ -535,8 +621,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥⚖️**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -573,9 +657,7 @@ Another Java challenge successfully completed as part of my **100 Days of Java C
 
 The **Java Generics** challenge focuses on creating a single generic method that can work with arrays containing different data types.
 
-Instead of creating separate methods for `Integer[]` and `String[]`, a generic method can accept both types using a type parameter.
-
-The `printArray()` method can therefore be reused for different array data types.
+Instead of creating separate methods for `Integer[]` and `String[]`, a generic method can process both types.
 
 ### 🧠 Problem-Solving Approach
 
@@ -585,40 +667,20 @@ The `printArray()` method can therefore be reused for different array data types
 4. Accept an array of type `T[]`.
 5. Traverse the array using a loop.
 6. Print each element.
-7. Use the same method for both `Integer[]` and `String[]`.
-8. Avoid unnecessary method overloading.
-
-### 🔑 Important Java Concept
-
-A generic method can be written using a type parameter:
-
-    public <T> void printArray(T[] array)
-
-The same method can process different types of arrays.
-
-For example:
-
-    Integer[] intArray = {1, 2, 3};
-
-and:
-
-    String[] stringArray = {"Hello", "World"};
-
-Both arrays can be passed to the same `printArray()` method.
+7. Reuse the same method for different data types.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+Through this challenge, I practiced:
 
-- Understand Java Generics.
-- Create generic methods.
-- Work with multiple data types using one method.
-- Improve code reusability.
-- Understand type parameters.
-- Avoid unnecessary method overloading.
-- Process generic arrays.
-- Strengthen Core Java concepts.
-- Improve problem-solving skills.
+- Understanding Java Generics.
+- Creating generic methods.
+- Working with multiple data types.
+- Improving code reusability.
+- Understanding type parameters.
+- Avoiding unnecessary method overloading.
+- Processing generic arrays.
+- Strengthening Core Java concepts.
 
 ### 📂 Files Added
 
@@ -659,62 +721,33 @@ Through this challenge, I practiced how to:
 - 🔹 Collection-Based Problem Solving
 - 🔹 Input Processing
 - 🔹 Logical Thinking
-- 🔹 Problem Solving
 
 ### 💡 Key Concept
 
-The **Java HashSet** challenge focuses on storing pairs of strings and determining how many unique pairs have been entered so far.
+The **Java HashSet** challenge focuses on storing pairs of strings and determining the number of unique pairs.
 
-A `HashSet` stores unique elements. If the same pair is added more than once, the duplicate is automatically ignored.
-
-For example:
-
-    (john, tom)
-
-and:
-
-    (john, tom)
-
-are considered the same pair.
-
-However:
-
-    (john, tom)
-
-and:
-
-    (tom, john)
-
-are considered different pairs because the order of the strings matters.
+A `HashSet` stores unique elements, so duplicate pairs are automatically ignored.
 
 ### 🧠 Problem-Solving Approach
 
 1. Read the number of pairs.
-2. Read the left and right strings.
-3. Create a `HashSet`.
-4. Combine each pair into a unique string representation.
-5. Add the pair to the `HashSet`.
-6. Use `set.size()` to determine the number of unique pairs.
-7. Print the number of unique pairs after each input.
-
-### 🔑 Important Java Methods
-
-- `HashSet<String>`
-- `add()`
-- `size()`
+2. Read the two strings for each pair.
+3. Store each pair in a `HashSet`.
+4. Add each pair to the set.
+5. Use `set.size()` to determine the number of unique pairs.
+6. Print the count after each input.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+Through this challenge, I practiced:
 
-- Understand the `HashSet` data structure.
-- Store unique elements.
-- Automatically handle duplicate values.
-- Use `add()` to insert elements.
-- Use `size()` to count unique elements.
-- Work with string pairs.
-- Apply Java Collections Framework concepts.
-- Improve logical and problem-solving skills.
+- Understanding the HashSet data structure.
+- Storing unique elements.
+- Handling duplicate values.
+- Using `add()`.
+- Using `size()`.
+- Working with string pairs.
+- Applying Java Collections Framework concepts.
 
 ### 📂 Files Added
 
@@ -746,7 +779,6 @@ Through this challenge, I practiced how to:
 
 - 🔹 Stack Data Structure
 - 🔹 LIFO Principle
-- 🔹 `Stack`
 - 🔹 `push()`
 - 🔹 `pop()`
 - 🔹 `peek()`
@@ -754,14 +786,11 @@ Through this challenge, I practiced how to:
 - 🔹 Bracket Matching
 - 🔹 String Processing
 - 🔹 Input Handling
-- 🔹 Logical Thinking
-- 🔹 Problem Solving
+- 🔹 Logical Validation
 
 ### 💡 Key Concept
 
 The **Java Stack** challenge focuses on determining whether a string containing different types of brackets is balanced.
-
-A string is balanced when every opening bracket has a corresponding closing bracket in the correct order.
 
 The supported bracket pairs are:
 
@@ -774,27 +803,25 @@ A Stack follows the **LIFO (Last In, First Out)** principle, making it suitable 
 ### 🧠 Problem-Solving Approach
 
 1. Read each input string.
-2. Create a stack to store opening brackets.
-3. Traverse the string character by character.
-4. Push opening brackets onto the stack.
-5. When a closing bracket is encountered, check the top element.
-6. If the brackets match, remove the opening bracket using `pop()`.
-7. If they do not match, the string is unbalanced.
-8. After processing the string, check whether the stack is empty.
-9. Print `true` for balanced strings and `false` otherwise.
+2. Create a stack for opening brackets.
+3. Push opening brackets onto the stack.
+4. When a closing bracket appears, check the top element.
+5. If the brackets match, remove the opening bracket.
+6. If they do not match, the string is unbalanced.
+7. Finally, check whether the stack is empty.
+8. Print the result.
 
 ### 🎯 Learning Outcome
 
 Through this challenge, I practiced:
 
-- Understanding the Stack data structure.
+- Understanding Stack.
 - Applying the LIFO principle.
 - Using `push()`, `pop()`, and `peek()`.
-- Matching different types of brackets.
-- Processing strings character by character.
+- Matching brackets.
+- Processing strings.
 - Validating nested structures.
-- Handling multiple inputs.
-- Improving logical and data-structure-based problem solving.
+- Improving data-structure-based problem solving.
 
 ### 📂 Files Added
 
@@ -824,8 +851,8 @@ Through this challenge, I practiced:
 
 ### 📚 Concepts Practiced
 
-- 🔹 Java Map
-- 🔹 `HashMap`
+- 🔹 Map
+- 🔹 HashMap
 - 🔹 Key-Value Pairs
 - 🔹 Key Searching
 - 🔹 `containsKey()`
@@ -834,36 +861,35 @@ Through this challenge, I practiced:
 - 🔹 Dynamic Data Storage
 - 🔹 Collection Handling
 - 🔹 Input Processing
-- 🔹 Problem Solving
 
 ### 💡 Key Concept
 
-The **Java Map** challenge focuses on storing and retrieving data using key-value pairs.
+The **Java Map** challenge focuses on storing and retrieving information using key-value pairs.
 
-A `Map` is useful when each value needs to be associated with a unique key. In this challenge, data can be stored and searched efficiently using a `HashMap`.
+A `HashMap` provides an efficient way to associate values with unique keys and retrieve them when needed.
 
 ### 🧠 Problem-Solving Approach
 
 1. Create a `HashMap`.
-2. Read the required input values.
-3. Store each entry in the map.
-4. Read the search queries.
-5. Check whether the requested key exists.
-6. Retrieve the corresponding value when available.
+2. Read input data.
+3. Store entries as key-value pairs.
+4. Read search queries.
+5. Check whether a key exists.
+6. Retrieve the corresponding value.
 7. Display the required output.
 
 ### 🎯 Learning Outcome
 
 Through this challenge, I practiced:
 
-- Working with Java `Map`.
-- Using `HashMap` for key-value storage.
-- Inserting and retrieving values.
+- Working with Java Map.
+- Using HashMap.
+- Storing key-value pairs.
 - Searching for keys.
 - Using `containsKey()`.
 - Using `get()`.
 - Processing multiple queries.
-- Improving collection-based problem-solving skills.
+- Improving collection-based problem solving.
 
 ### 📂 Files Added
 
@@ -893,8 +919,8 @@ Through this challenge, I practiced:
 
 ### 📚 Concepts Practiced
 
-- 🔹 Java `List`
-- 🔹 `ArrayList`
+- 🔹 Java List
+- 🔹 ArrayList
 - 🔹 List Operations
 - 🔹 Inserting Elements
 - 🔹 Deleting Elements
@@ -908,24 +934,23 @@ Through this challenge, I practiced:
 
 The **Java List** challenge focuses on performing multiple operations on a list of integers.
 
-Two main operations are performed:
+The main operations include:
 
 - ➕ Insert an element at a specific index.
 - 🗑️ Delete an element from a specific index.
 
-The solution processes the queries sequentially and prints the final modified list.
+The queries are processed sequentially to produce the final list.
 
 ### 🎯 Learning Outcome
 
 Through this challenge, I practiced:
 
 - Working with Java Lists.
-- Using `ArrayList` for dynamic data storage.
+- Using ArrayList.
 - Inserting elements at specific positions.
 - Deleting elements using indexes.
 - Processing multiple queries.
-- Manipulating collection data dynamically.
-- Improving collection-based problem-solving skills.
+- Dynamically modifying collection data.
 
 ### 📂 Files Added
 
@@ -956,6 +981,7 @@ Through this challenge, I practiced:
 - 🔑 HashMap
 - 🧬 Java Generics
 - ⚖️ Comparator
+- 🔀 Custom Sorting
 - 📝 Pattern Matching
 - 🔢 Number Handling
 - ⚡ Efficient Coding
@@ -964,16 +990,13 @@ Through this challenge, I practiced:
 - 💼 Technical Interview Preparation
 - 🔢 BigInteger & BigDecimal
 - 📊 Numerical Data Processing
-- 📦 Array Traversal
-- 🧮 Matrix Processing
-- 🔗 Subarray Processing
 - 🔄 Recursion
 - 🔙 Backtracking
-- 🗃️ Collection Fundamentals
+- 🗃️ Collection Framework
 - 🧠 Data Structure Fundamentals
 - ♻️ Code Reusability
 - 🛡️ Type Safety
-- 🔀 Custom Sorting
+- 🔀 Multi-Level Sorting
 - ⚖️ Object Comparison
 
 ---
@@ -1016,7 +1039,8 @@ Through this challenge, I practiced:
 - ✅ Day 34 Completed 🎉🔥
 - ✅ Day 35 Completed 🎉🔥🧬
 - ✅ Day 36 Completed 🎉🔥⚖️
-- ⏳ Continuing every day...
+- ✅ Day 37 Completed 🎉🔥🚀
+- ⏳ Day 38 → Day 100 Continuing...
 
 ---
 
@@ -1024,27 +1048,27 @@ Through this challenge, I practiced:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **36 / 100** |
-| 💻 Challenges Solved | **36** |
+| 📅 Days Completed | **37 / 100** |
+| 💻 Challenges Solved | **37** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, Collections, Generics, Comparator & Problem Solving** |
+| 🧠 Focus | **Core Java, Collections, Generics, Comparator & Sorting** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack & HashSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
-| ⚖️ Sorting Concepts | **Comparator & Custom Object Sorting** |
-| 📈 Progress | **36% Complete** 🚀 |
-| 🔥 Current Streak | **36 Days** |
-| ⏳ Days Remaining | **64 Days** |
+| ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
+| 📈 Progress | **37% Complete** 🚀 |
+| 🔥 Current Streak | **37 Days** |
+| ⏳ Days Remaining | **63 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **36 Days of Java Practice Completed! 🎉🔥**
+## **37 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **36 days down, 64 more to go! 🚀**
+> **37 days down, 63 more to go!**
 
-Consistency is the key to growth. Every Java problem I solve is helping me become better at programming, problem-solving, logical thinking, data structures, Java Collections, Generics, custom sorting, and Core Java.
+Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, and custom sorting skills.
 
 ---
 
@@ -1055,7 +1079,6 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
-| 🎯 Day 28 | ✅ Completed |
 | 🎯 Day 30 | ✅ Completed 🎉 |
 | 🎯 Day 31 | ✅ Completed 🎉 |
 | 🎯 Day 32 | ✅ Completed 🎉 |
@@ -1063,6 +1086,7 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 | 🎯 Day 34 | ✅ Completed 🎉🔥 |
 | 🎯 Day 35 | ✅ Completed 🎉🔥🧬 |
 | 🎯 Day 36 | ✅ Completed 🎉🔥⚖️ |
+| 🎯 Day 37 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -1071,34 +1095,30 @@ Consistency is the key to growth. Every Java problem I solve is helping me becom
 
 # 📊 Progress Tracker
 
-    Day 1     ████████████████████ 100% ✅
-    Day 5     ████████████████████ 100% ✅
-    Day 10    ████████████████████ 100% ✅
-    Day 15    ████████████████████ 100% ✅
-    Day 20    ████████████████████ 100% ✅
-    Day 25    ████████████████████ 100% ✅
-    Day 28    ████████████████████ 100% ✅
-    Day 29    ████████████████████ 100% ✅
-    Day 30    ████████████████████ 100% ✅
-    Day 31    ████████████████████ 100% ✅
-    Day 32    ████████████████████ 100% ✅
-    Day 33    ████████████████████ 100% ✅
-    Day 34    ████████████████████ 100% ✅
-    Day 35    ████████████████████ 100% ✅
-    Day 36    ████████████████████ 100% ✅
-    Day 50    ███████░░░░░░░░░░░░░  72% ⏳
-    Day 75    █████████░░░░░░░░░░░  48% ⏳
-    Day 100   ███████░░░░░░░░░░░░░  36% ⏳
+    Day 1      ████████████████████ 100% ✅
+    Day 10     ████████████████████ 100% ✅
+    Day 20     ████████████████████ 100% ✅
+    Day 30     ████████████████████ 100% ✅
+    Day 31     ████████████████████ 100% ✅
+    Day 32     ████████████████████ 100% ✅
+    Day 33     ████████████████████ 100% ✅
+    Day 34     ████████████████████ 100% ✅
+    Day 35     ████████████████████ 100% ✅
+    Day 36     ████████████████████ 100% ✅
+    Day 37     ████████████████████ 100% ✅
+    Day 50     ███████░░░░░░░░░░░░░  37% ⏳
+    Day 75     █████████░░░░░░░░░░░  37% ⏳
+    Day 100    ███████░░░░░░░░░░░░░  37% ⏳
 
 ## 🚀 Overall Progress
 
-    [███████░░░░░░░░░░░] 36%
+    [███████░░░░░░░░░░░] 37%
 
-**36 / 100 Days Completed**
+**37 / 100 Days Completed**
 
 ---
 
-# 📚 Learning Approach
+# 📖 Learning Approach
 
 My daily learning process includes:
 
@@ -1129,10 +1149,44 @@ It is also about:
 - 📦 Understanding data structures
 - 🗂️ Working with Java Collections
 - 🧬 Understanding Generic Programming
-- ⚖️ Learning custom object comparison and sorting
+- ⚖️ Learning object comparison and custom sorting
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
+
+---
+
+# 🎯 Why This Repository?
+
+This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
+
+It serves as a portfolio of my Java programming skills and demonstrates my commitment to continuous learning through the **#100DaysOfCode** challenge.
+
+Every challenge helps me improve my:
+
+- 🧠 Logical Thinking
+- ☕ Java Programming Skills
+- 🧩 Problem-Solving Ability
+- 💻 Programming Fundamentals
+- 🔍 Pattern Recognition
+- 🔤 String Handling
+- 🔢 Number Processing
+- 📦 Array Handling
+- 📐 2D Array Processing
+- 📋 List & Collection Handling
+- 🗺️ Map Handling
+- 🗂️ Stack-Based Problem Solving
+- 🧩 Set-Based Problem Solving
+- 🧬 Generic Programming
+- ⚖️ Object Comparison
+- 🔀 Custom Sorting
+- 🔗 Subarray Processing
+- 🔄 Recursion
+- 🔙 Backtracking
+- 🧠 Data Structure Fundamentals
+- 🚀 Coding Confidence
+- ♻️ Code Reusability
+- 🛡️ Type-Safe Programming
 
 ---
 
@@ -1174,40 +1228,6 @@ The upcoming days will focus on more Java concepts, including:
 
 ---
 
-# 🎯 Why This Repository?
-
-This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
-
-It serves as a portfolio of my Java programming skills, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
-
-Every challenge helps me improve my:
-
-- 🧠 Logical Thinking
-- ☕ Java Programming Skills
-- 🧩 Problem-Solving Ability
-- 💻 Programming Fundamentals
-- 🔍 Pattern Recognition
-- 🔤 String Handling
-- 🔢 Number Processing
-- 📦 Array Handling
-- 📐 2D Array Processing
-- 📋 List & Collection Handling
-- 🗺️ Map Handling
-- 🗂️ Stack-Based Problem Solving
-- 🧩 Set-Based Problem Solving
-- 🧬 Generic Programming
-- ⚖️ Object Comparison
-- 🔀 Custom Sorting
-- 🔗 Subarray Processing
-- 🔄 Recursion
-- 🔙 Backtracking
-- 🧠 Data Structure Fundamentals
-- 🚀 Coding Confidence
-- ♻️ Code Reusability
-- 🛡️ Type-Safe Programming
-
----
-
 # 📌 Daily Practice
 
 Every day, I solve a new Java programming problem and add the solution to this repository.
@@ -1241,7 +1261,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#Stack` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#OpenToWork`
 
 ---
 
@@ -1251,6 +1271,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**36 Days Completed ✅ | 64 Days Remaining ⏳ | 100 Days Goal 🎯**
+**37 Days Completed ✅ | 63 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻⚖️🧬🚀**
+**Let's keep coding! ☕💻⚖️🧬🔀🚀**
