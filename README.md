@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -18,6 +18,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 📦 Understand Java Collections and Data Structures.
 - 🧬 Learn and apply Java Generics.
 - ⚖️ Understand Comparator and custom sorting.
+- 🔢 Learn Bit Manipulation and BitSet.
 - 🚀 Build consistency through the **#100DaysOfCode** challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -48,6 +49,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🧬 **Generics**
 - ⚖️ **Comparator**
 - 🔤 **Custom Sorting**
+- 🔢 **BitSet**
+- 🔀 **Bit Manipulation**
 - 🧠 **Problem Solving**
 - 🎯 **Algorithmic Thinking**
 
@@ -184,6 +187,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
     │   ├── Java Sort.java
     │   └── Screenshot 2026-09-01 143710.png
     │
+    ├── Day-38/
+    │   ├── Java BitSet.java
+    │   └── Screenshot 2026-09-02 105729.png
+    │
     └── README.md
 
 ---
@@ -229,7 +236,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 35 | Java Generics | Completed 🎉🔥🧬 |
 | ✅ Day 36 | Java Comparator | Completed 🎉🔥⚖️ |
 | ✅ Day 37 | Java Sort | Completed 🎉🔥🚀 |
-| ⏳ Day 38 | Coming Soon | Pending |
+| ✅ Day 38 | Java BitSet | Completed 🎉🔥🔢 |
+| ⏳ Day 39 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -446,6 +454,142 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
+## 🔢 Bit Manipulation & BitSet
+
+- ✅ Java `BitSet`
+- ✅ Bit Manipulation
+- ✅ Binary Representation Concepts
+- ✅ BitSet Initialization
+- ✅ `SET` Operation
+- ✅ `FLIP` Operation
+- ✅ `AND` Operation
+- ✅ `OR` Operation
+- ✅ `XOR` Operation
+- ✅ `cardinality()`
+- ✅ Bit-Based Data Processing
+- ✅ Logical Bit Operations
+- ✅ Java Collections/Data Structure Concepts
+- ✅ Problem Solving with BitSet
+
+---
+
+# 🆕 Day 38 – Java BitSet
+
+### 🎯 Challenge
+
+**Java BitSet**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 `BitSet`
+- 🔹 Bit Manipulation
+- 🔹 Binary Data Representation
+- 🔹 `SET`
+- 🔹 `FLIP`
+- 🔹 `AND`
+- 🔹 `OR`
+- 🔹 `XOR`
+- 🔹 `cardinality()`
+- 🔹 Logical Bit Operations
+- 🔹 Data Structures
+- 🔹 Input Processing
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Java BitSet** challenge focuses on working with a set of bits and performing logical operations on them.
+
+A `BitSet` is a data structure that represents a sequence of bits and provides efficient operations for manipulating individual bits and performing set-like logical operations.
+
+The challenge requires processing different commands such as:
+
+- `SET` → Sets a specific bit to `1`.
+- `FLIP` → Changes a specific bit from `0` to `1` or from `1` to `0`.
+- `AND` → Performs a bitwise AND operation between two BitSets.
+- `OR` → Performs a bitwise OR operation between two BitSets.
+- `XOR` → Performs a bitwise XOR operation between two BitSets.
+
+After each operation, the number of set bits is calculated using `cardinality()`.
+
+### 🧠 Problem-Solving Approach
+
+1. Create two `BitSet` objects.
+2. Read the size of the BitSets and the number of operations.
+3. Process each operation one by one.
+4. Identify the operation type.
+5. Identify which BitSet is involved.
+6. Apply the required operation.
+7. For `SET`, set the specified bit.
+8. For `FLIP`, toggle the specified bit.
+9. For `AND`, perform a logical AND between the selected BitSets.
+10. For `OR`, perform a logical OR between the selected BitSets.
+11. For `XOR`, perform a logical XOR between the selected BitSets.
+12. Use `cardinality()` to count the number of set bits.
+13. Print the count of set bits for both BitSets after every operation.
+
+### 🔑 Important Operations
+
+    SET
+      ↓
+    Set a bit to 1
+
+    FLIP
+      ↓
+    Toggle a bit
+
+    AND
+      ↓
+    Keep bits set in both BitSets
+
+    OR
+      ↓
+    Keep bits set in either BitSet
+
+    XOR
+      ↓
+    Keep bits that differ
+
+    cardinality()
+      ↓
+    Count the number of set bits
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Work with Java `BitSet`.
+- Understand bit-based data structures.
+- Perform logical operations on BitSets.
+- Set individual bits.
+- Flip individual bits.
+- Apply AND, OR, and XOR operations.
+- Count set bits using `cardinality()`.
+- Process multiple commands efficiently.
+- Strengthen logical and problem-solving skills.
+- Understand another useful Java data structure.
+
+### 📂 Files Added
+
+    Day-38/
+    ├── Java BitSet.java
+    └── Screenshot 2026-09-02 105729.png
+
+### ✅ Status
+
+**Completed 🎉🔥🔢**
+
+Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
+
+---
+
 # 🆕 Day 37 – Java Sort
 
 ### 🎯 Challenge
@@ -542,8 +686,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🚀**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -984,6 +1126,8 @@ Through this challenge, I practiced:
 - 🔀 Custom Sorting
 - 📝 Pattern Matching
 - 🔢 Number Handling
+- 🔢 Bit Manipulation
+- 📊 BitSet
 - ⚡ Efficient Coding
 - 🎯 Algorithmic Thinking
 - 🚀 Coding Consistency
@@ -1040,7 +1184,8 @@ Through this challenge, I practiced:
 - ✅ Day 35 Completed 🎉🔥🧬
 - ✅ Day 36 Completed 🎉🔥⚖️
 - ✅ Day 37 Completed 🎉🔥🚀
-- ⏳ Day 38 → Day 100 Continuing...
+- ✅ Day 38 Completed 🎉🔥🔢
+- ⏳ Day 39 → Day 100 Continuing...
 
 ---
 
@@ -1048,27 +1193,28 @@ Through this challenge, I practiced:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **37 / 100** |
-| 💻 Challenges Solved | **37** |
+| 📅 Days Completed | **38 / 100** |
+| 💻 Challenges Solved | **38** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, Collections, Generics, Comparator & Sorting** |
-| 📦 Data Structures Practiced | **Arrays, List, Map, Stack & HashSet** |
+| 🧠 Focus | **Core Java, Collections, Generics, Comparator, Sorting & BitSet** |
+| 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
-| 📈 Progress | **37% Complete** 🚀 |
-| 🔥 Current Streak | **37 Days** |
-| ⏳ Days Remaining | **63 Days** |
+| 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
+| 📈 Progress | **38% Complete** 🚀 |
+| 🔥 Current Streak | **38 Days** |
+| ⏳ Days Remaining | **62 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **37 Days of Java Practice Completed! 🎉🔥🚀**
+## **38 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **37 days down, 63 more to go!**
+> **38 days down, 62 more to go!**
 
-Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, and custom sorting skills.
+Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, and bit manipulation skills.
 
 ---
 
@@ -1087,6 +1233,7 @@ Every Java challenge I solve helps me improve my programming fundamentals, probl
 | 🎯 Day 35 | ✅ Completed 🎉🔥🧬 |
 | 🎯 Day 36 | ✅ Completed 🎉🔥⚖️ |
 | 🎯 Day 37 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 38 | ✅ Completed 🎉🔥🔢 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -1106,15 +1253,16 @@ Every Java challenge I solve helps me improve my programming fundamentals, probl
     Day 35     ████████████████████ 100% ✅
     Day 36     ████████████████████ 100% ✅
     Day 37     ████████████████████ 100% ✅
-    Day 50     ███████░░░░░░░░░░░░░  37% ⏳
-    Day 75     █████████░░░░░░░░░░░  37% ⏳
-    Day 100    ███████░░░░░░░░░░░░░  37% ⏳
+    Day 38     ████████████████████ 100% ✅
+    Day 50     ████████░░░░░░░░░░░░  38% ⏳
+    Day 75     ████████░░░░░░░░░░░░  38% ⏳
+    Day 100    ████████░░░░░░░░░░░░  38% ⏳
 
 ## 🚀 Overall Progress
 
-    [███████░░░░░░░░░░░] 37%
+    [████████░░░░░░░░░░░] 38%
 
-**37 / 100 Days Completed**
+**38 / 100 Days Completed**
 
 ---
 
@@ -1150,6 +1298,7 @@ It is also about:
 - 🗂️ Working with Java Collections
 - 🧬 Understanding Generic Programming
 - ⚖️ Learning object comparison and custom sorting
+- 🔢 Understanding Bit Manipulation
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1180,6 +1329,8 @@ Every challenge helps me improve my:
 - 🧬 Generic Programming
 - ⚖️ Object Comparison
 - 🔀 Custom Sorting
+- 🔢 Bit Manipulation
+- 📊 BitSet Operations
 - 🔗 Subarray Processing
 - 🔄 Recursion
 - 🔙 Backtracking
@@ -1261,7 +1412,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#OpenToWork`
 
 ---
 
@@ -1271,6 +1422,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**37 Days Completed ✅ | 63 Days Remaining ⏳ | 100 Days Goal 🎯**
+**38 Days Completed ✅ | 62 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻⚖️🧬🔀🚀**
+**Let's keep coding! ☕💻⚖️🧬🔀🔢🚀**
