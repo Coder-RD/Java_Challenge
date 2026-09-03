@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -19,6 +19,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🧬 Learn and apply Java Generics.
 - ⚖️ Understand Comparator and custom sorting.
 - 🔢 Learn Bit Manipulation and BitSet.
+- 🏛️ Strengthen Object-Oriented Programming concepts.
+- 🔗 Understand Java Inheritance and code reusability.
 - 🚀 Build consistency through the **#100DaysOfCode** challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -31,6 +33,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 💻 **HackerRank**
 - ☕ **Java**
 - 🧠 **Core Java**
+- 🏛️ **Object-Oriented Programming**
+- 🔗 **Inheritance**
 - 🔤 **String Handling**
 - 🔍 **Regular Expressions**
 - 🔢 **BigDecimal**
@@ -191,6 +195,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
     │   ├── Java BitSet.java
     │   └── Screenshot 2026-09-02 105729.png
     │
+    ├── Day-39/
+    │   ├── Java Inheritance I.java
+    │   └── Screenshot 2026-09-03 125918.png
+    │
     └── README.md
 
 ---
@@ -237,7 +245,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 36 | Java Comparator | Completed 🎉🔥⚖️ |
 | ✅ Day 37 | Java Sort | Completed 🎉🔥🚀 |
 | ✅ Day 38 | Java BitSet | Completed 🎉🔥🔢 |
-| ⏳ Day 39 | Coming Soon | Pending |
+| ✅ Day 39 | Java Inheritance I | Completed 🎉🔥🔗 |
+| ⏳ Day 40 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -258,6 +267,38 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ Problem Solving
 - ✅ Logical Thinking
 - ✅ Algorithmic Thinking
+
+---
+
+## 🏛️ Object-Oriented Programming
+
+- ✅ Classes and Objects
+- ✅ Object Creation
+- ✅ Methods
+- ✅ Inheritance
+- ✅ Parent Class
+- ✅ Child Class
+- ✅ `extends` Keyword
+- ✅ Method Inheritance
+- ✅ Code Reusability
+- ⏳ Polymorphism
+- ⏳ Encapsulation
+- ⏳ Abstraction
+- ⏳ Interfaces
+
+---
+
+## 🔗 Java Inheritance
+
+- ✅ Parent Class
+- ✅ Child Class
+- ✅ `extends` Keyword
+- ✅ Inheriting Methods
+- ✅ Adding Child-Specific Methods
+- ✅ Code Reusability
+- ✅ IS-A Relationship
+- ✅ Object Creation Using Child Class
+- ✅ Method Access Through Inheritance
 
 ---
 
@@ -473,6 +514,132 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
+# 🆕 Day 39 – Java Inheritance I
+
+### 🎯 Challenge
+
+**Java Inheritance I**
+
+### 💻 Platform
+
+**HackerRank**
+
+### ☕ Language
+
+**Java**
+
+### 📚 Concepts Practiced
+
+- 🔹 Object-Oriented Programming
+- 🔹 Classes and Objects
+- 🔹 Inheritance
+- 🔹 Parent Class
+- 🔹 Child Class
+- 🔹 `extends` Keyword
+- 🔹 Method Inheritance
+- 🔹 Code Reusability
+- 🔹 Creating Child Class Objects
+- 🔹 Inherited Methods
+- 🔹 Adding Child-Specific Methods
+- 🔹 Core Java
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Java Inheritance I** challenge focuses on understanding how one class can acquire the properties and methods of another class.
+
+The `Animal` class contains the `walk()` method.
+
+The `Bird` class extends `Animal`, which means that the `Bird` class automatically inherits the `walk()` method.
+
+The `Bird` class also contains its own methods:
+
+- `fly()`
+- `sing()`
+
+Therefore, a `Bird` object can access:
+
+- `walk()` → inherited from `Animal`
+- `fly()` → defined in `Bird`
+- `sing()` → defined in `Bird`
+
+### 🧠 Inheritance Structure
+
+    Animal
+      │
+      │ extends
+      ↓
+    Bird
+
+    Animal
+      └── walk()
+
+    Bird
+      ├── walk()  ← inherited
+      ├── fly()   ← own method
+      └── sing()  ← own method
+
+### 🔑 Important Keyword
+
+The `extends` keyword is used to create an inheritance relationship between two classes.
+
+    class Bird extends Animal {
+        ...
+    }
+
+Here:
+
+- `Animal` → Parent/Superclass
+- `Bird` → Child/Subclass
+- `extends` → Inheritance keyword
+
+### 🧠 Problem-Solving Approach
+
+1. Create the `Animal` class.
+2. Define the `walk()` method inside `Animal`.
+3. Create the `Bird` class.
+4. Use `extends Animal` to inherit from the `Animal` class.
+5. Define the `fly()` method inside `Bird`.
+6. Add the required `sing()` method.
+7. Create a `Bird` object.
+8. Call the inherited `walk()` method.
+9. Call the `fly()` method.
+10. Call the `sing()` method.
+11. Verify the required output.
+
+### 💻 Expected Output
+
+    I am walking
+    I am flying
+    I am singing
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Understand Java inheritance.
+- Create parent and child classes.
+- Use the `extends` keyword.
+- Inherit methods from a parent class.
+- Reuse existing code.
+- Add new functionality to a child class.
+- Create objects of a child class.
+- Access inherited methods.
+- Understand basic OOP relationships.
+- Strengthen Core Java concepts.
+
+### 📂 Files Added
+
+    Day-39/
+    ├── Java Inheritance I.java
+    └── Screenshot 2026-09-03 125918.png
+
+### ✅ Status
+
+**Completed 🎉🔥🔗**
+
+---
+
 # 🆕 Day 38 – Java BitSet
 
 ### 🎯 Challenge
@@ -513,9 +680,9 @@ The challenge requires processing different commands such as:
 
 - `SET` → Sets a specific bit to `1`.
 - `FLIP` → Changes a specific bit from `0` to `1` or from `1` to `0`.
-- `AND` → Performs a bitwise AND operation between two BitSets.
-- `OR` → Performs a bitwise OR operation between two BitSets.
-- `XOR` → Performs a bitwise XOR operation between two BitSets.
+- `AND` → Performs a logical AND operation between two BitSets.
+- `OR` → Performs a logical OR operation between two BitSets.
+- `XOR` → Performs a logical XOR operation between two BitSets.
 
 After each operation, the number of set bits is calculated using `cardinality()`.
 
@@ -534,32 +701,6 @@ After each operation, the number of set bits is calculated using `cardinality()`
 11. For `XOR`, perform a logical XOR between the selected BitSets.
 12. Use `cardinality()` to count the number of set bits.
 13. Print the count of set bits for both BitSets after every operation.
-
-### 🔑 Important Operations
-
-    SET
-      ↓
-    Set a bit to 1
-
-    FLIP
-      ↓
-    Toggle a bit
-
-    AND
-      ↓
-    Keep bits set in both BitSets
-
-    OR
-      ↓
-    Keep bits set in either BitSet
-
-    XOR
-      ↓
-    Keep bits that differ
-
-    cardinality()
-      ↓
-    Count the number of set bits
 
 ### 🎯 Learning Outcome
 
@@ -585,8 +726,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🔢**
-
-Another Java challenge successfully completed as part of my **100 Days of Java Challenge**.
 
 ---
 
@@ -629,30 +768,11 @@ In the **Java Sort** challenge, I worked with a collection of `Student` objects 
 
 The students are sorted using multiple conditions:
 
-1. 📈 **Higher CGPA comes first.**
-2. 🔤 If two students have the same CGPA, their **first names are sorted alphabetically**.
-3. 🔢 If both CGPA and first names are the same, the **student ID is used as the final tie-breaker in ascending order**.
+1. 📈 Higher CGPA comes first.
+2. 🔤 If two students have the same CGPA, their first names are sorted alphabetically.
+3. 🔢 If both CGPA and first names are the same, the student ID is used as the final tie-breaker in ascending order.
 
-This challenge demonstrates how Java can sort complex objects using multiple sorting conditions.
-
-### 🧠 Problem-Solving Approach
-
-1. Create the `Student` class with:
-   - `id`
-   - `fname`
-   - `cgpa`
-2. Create a list/array of Student objects.
-3. Implement custom comparison logic.
-4. Compare CGPA values first.
-5. Sort CGPA in descending order.
-6. If CGPA values are equal, compare student names alphabetically.
-7. If names are also equal, compare student IDs.
-8. Use the sorting mechanism to arrange all students according to the required rules.
-9. Display the sorted student information.
-
-### 🔑 Sorting Logic
-
-The sorting priority is:
+### 🧠 Sorting Priority
 
     Higher CGPA
           ↓
@@ -667,7 +787,7 @@ This is an example of **multi-level custom sorting** in Java.
 Through this challenge, I practiced how to:
 
 - Work with arrays of objects.
-- Create and use custom sorting rules.
+- Create custom sorting rules.
 - Compare numeric values.
 - Compare strings alphabetically.
 - Handle tie-breaking conditions.
@@ -675,7 +795,6 @@ Through this challenge, I practiced how to:
 - Understand `Comparator` concepts.
 - Use Java sorting methods effectively.
 - Strengthen Java Collections and object comparison concepts.
-- Improve logical and problem-solving skills.
 
 ### 📂 Files Added
 
@@ -724,8 +843,8 @@ The **Java Comparator** challenge focuses on creating a custom comparison rule f
 
 Players are sorted according to two conditions:
 
-1. Players with **higher scores come first**.
-2. If two or more players have the **same score**, they are sorted alphabetically by name.
+1. Players with higher scores come first.
+2. If two or more players have the same score, they are sorted alphabetically by name.
 
 A custom `Checker` class implements the `Comparator<Player>` interface and overrides the `compare()` method to define these sorting rules.
 
@@ -1109,6 +1228,8 @@ Through this challenge, I practiced:
 # 🧠 Skills I'm Building
 
 - ☕ Core Java
+- 🏛️ Object-Oriented Programming
+- 🔗 Inheritance
 - 🧩 Problem Solving
 - 🧠 Logical Thinking
 - 🔤 String Handling
@@ -1185,7 +1306,8 @@ Through this challenge, I practiced:
 - ✅ Day 36 Completed 🎉🔥⚖️
 - ✅ Day 37 Completed 🎉🔥🚀
 - ✅ Day 38 Completed 🎉🔥🔢
-- ⏳ Day 39 → Day 100 Continuing...
+- ✅ Day 39 Completed 🎉🔥🔗
+- ⏳ Day 40 → Day 100 Continuing...
 
 ---
 
@@ -1193,28 +1315,29 @@ Through this challenge, I practiced:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **38 / 100** |
-| 💻 Challenges Solved | **38** |
+| 📅 Days Completed | **39 / 100** |
+| 💻 Challenges Solved | **39** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, Collections, Generics, Comparator, Sorting & BitSet** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet & Inheritance** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
-| 📈 Progress | **38% Complete** 🚀 |
-| 🔥 Current Streak | **38 Days** |
-| ⏳ Days Remaining | **62 Days** |
+| 🏛️ OOP Concepts | **Classes, Objects & Inheritance** |
+| 📈 Progress | **39% Complete** 🚀 |
+| 🔥 Current Streak | **39 Days** |
+| ⏳ Days Remaining | **61 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **38 Days of Java Practice Completed! 🎉🔥🚀**
+## **39 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **38 days down, 62 more to go!**
+> **39 days down, 61 more to go!**
 
-Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, and bit manipulation skills.
+Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, and Object-Oriented Programming skills.
 
 ---
 
@@ -1234,6 +1357,8 @@ Every Java challenge I solve helps me improve my programming fundamentals, probl
 | 🎯 Day 36 | ✅ Completed 🎉🔥⚖️ |
 | 🎯 Day 37 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 38 | ✅ Completed 🎉🔥🔢 |
+| 🎯 Day 39 | ✅ Completed 🎉🔥🔗 |
+| 🎯 Day 40 | ⏳ Upcoming |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -1254,15 +1379,16 @@ Every Java challenge I solve helps me improve my programming fundamentals, probl
     Day 36     ████████████████████ 100% ✅
     Day 37     ████████████████████ 100% ✅
     Day 38     ████████████████████ 100% ✅
-    Day 50     ████████░░░░░░░░░░░░  38% ⏳
-    Day 75     ████████░░░░░░░░░░░░  38% ⏳
-    Day 100    ████████░░░░░░░░░░░░  38% ⏳
+    Day 39     ████████████████████ 100% ✅
+    Day 50     ████████░░░░░░░░░░░░  39% ⏳
+    Day 75     ████████░░░░░░░░░░░░  39% ⏳
+    Day 100    ████████░░░░░░░░░░░░  39% ⏳
 
 ## 🚀 Overall Progress
 
-    [████████░░░░░░░░░░░] 38%
+    [████████░░░░░░░░░░░] 39%
 
-**38 / 100 Days Completed**
+**39 / 100 Days Completed**
 
 ---
 
@@ -1299,6 +1425,7 @@ It is also about:
 - 🧬 Understanding Generic Programming
 - ⚖️ Learning object comparison and custom sorting
 - 🔢 Understanding Bit Manipulation
+- 🔗 Understanding Object-Oriented Programming and Inheritance
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1334,6 +1461,8 @@ Every challenge helps me improve my:
 - 🔗 Subarray Processing
 - 🔄 Recursion
 - 🔙 Backtracking
+- 🏛️ Object-Oriented Programming
+- 🔗 Inheritance
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1412,7 +1541,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#OOP` `#ObjectOrientedProgramming` `#CodeReusability` `#OpenToWork`
 
 ---
 
@@ -1422,6 +1551,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**38 Days Completed ✅ | 62 Days Remaining ⏳ | 100 Days Goal 🎯**
+**39 Days Completed ✅ | 61 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻⚖️🧬🔀🔢🚀**
+**Let's keep coding! ☕💻🏛️🔗⚖️🧬🔀🔢🚀**
