@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, Inheritance, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -21,6 +21,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔢 Learn Bit Manipulation and BitSet.
 - 🏛️ Strengthen Object-Oriented Programming concepts.
 - 🔗 Understand Java Inheritance and code reusability.
+- 🎭 Understand Java Abstraction and abstract classes.
 - 🚀 Build consistency through the **#100DaysOfCode** challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -35,6 +36,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🧠 **Core Java**
 - 🏛️ **Object-Oriented Programming**
 - 🔗 **Inheritance**
+- 🎭 **Abstraction**
 - 🔤 **String Handling**
 - 🔍 **Regular Expressions**
 - 🔢 **BigDecimal**
@@ -203,6 +205,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
     │   ├── Java Inheritance II.java
     │   └── Screenshot 2026-09-04 180508.png
     │
+    ├── Day-41/
+    │   ├── Java Abstract Class.java
+    │   └── Screenshot 2026-09-05 190747.png
+    │
     └── README.md
 
 ---
@@ -251,7 +257,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 38 | Java BitSet | Completed 🎉🔥🔢 |
 | ✅ Day 39 | Java Inheritance I | Completed 🎉🔥🔗 |
 | ✅ Day 40 | Java Inheritance II | Completed 🎉🔥🏛️ |
-| ⏳ Day 41 | Coming Soon | Pending |
+| ✅ Day 41 | Java Abstract Class | Completed 🎉🔥🎭 |
+| ⏳ Day 42 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -286,10 +293,33 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ `extends` Keyword
 - ✅ Method Inheritance
 - ✅ Code Reusability
+- ✅ Superclass and Subclass
+- ✅ Method Reuse
+- ✅ Inherited Methods
+- ✅ Abstract Classes
+- ✅ Abstract Methods
+- ✅ Method Overriding
 - ⏳ Polymorphism
 - ⏳ Encapsulation
-- ⏳ Abstraction
 - ⏳ Interfaces
+
+---
+
+## 🎭 Java Abstraction
+
+- ✅ Abstract Classes
+- ✅ Abstract Methods
+- ✅ `abstract` Keyword
+- ✅ Implementing Abstract Methods
+- ✅ Concrete Child Classes
+- ✅ Method Overriding
+- ✅ Inheritance with Abstract Classes
+- ✅ Cannot Instantiate Abstract Classes
+- ✅ Base Class Design
+- ✅ Abstraction in OOP
+- ✅ Code Reusability
+- ⏳ Interfaces
+- ⏳ Advanced Abstraction Concepts
 
 ---
 
@@ -311,7 +341,161 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 📦 Array Programming
+# 🆕 Day 41 – Java Abstract Class
+
+## 🎯 Challenge
+
+**Java Abstract Class**
+
+## 💻 Platform
+
+**HackerRank**
+
+## ☕ Language
+
+**Java**
+
+## 📚 Concepts Practiced
+
+- 🔹 Abstract Classes
+- 🔹 Abstract Methods
+- 🔹 Abstraction
+- 🔹 Inheritance
+- 🔹 Method Overriding
+- 🔹 `abstract` Keyword
+- 🔹 `extends` Keyword
+- 🔹 Parent and Child Classes
+- 🔹 Concrete Classes
+- 🔹 Object Creation
+- 🔹 Method Implementation
+- 🔹 Code Reusability
+- 🔹 Object-Oriented Programming
+- 🔹 Core Java
+- 🔹 Problem Solving
+
+## 💡 Key Concept
+
+An **abstract class** is a class that cannot be instantiated directly.
+
+It is designed to act as a base class for other classes.
+
+An abstract class can contain:
+
+- Regular methods
+- Abstract methods
+- Variables
+- Constructors
+
+An **abstract method** is declared without a method body and must be implemented by a concrete child class.
+
+## 🧠 Example Structure
+
+    abstract class Book
+    {
+        String title;
+
+        abstract void setTitle(String s);
+
+        String getTitle()
+        {
+            return title;
+        }
+    }
+
+The `Book` class is abstract, so we cannot create an object directly:
+
+    Book book = new Book();
+
+Instead, we create a child class:
+
+    class MyBook extends Book
+    {
+        void setTitle(String s)
+        {
+            title = s;
+        }
+    }
+
+The `MyBook` class provides the implementation of the abstract `setTitle()` method.
+
+## 🔑 Important Keywords
+
+### `abstract`
+
+The `abstract` keyword is used to declare an abstract class or abstract method.
+
+### `extends`
+
+The `extends` keyword is used to create an inheritance relationship between a child class and its parent class.
+
+### `@Override`
+
+The `@Override` annotation indicates that a child class is providing its own implementation of an inherited or abstract method.
+
+## 🧠 Abstraction Structure
+
+    Book
+      │
+      │ abstract class
+      │
+      ├── title
+      ├── setTitle() ← abstract method
+      └── getTitle()
+             │
+             │ extends
+             ↓
+          MyBook
+             │
+             └── setTitle() ← implemented method
+
+## 🧩 Problem-Solving Approach
+
+1. Understand the provided abstract `Book` class.
+2. Identify the abstract `setTitle()` method.
+3. Create a new class named `MyBook`.
+4. Extend the `Book` class using `extends`.
+5. Implement the abstract `setTitle()` method.
+6. Store the provided title inside the inherited `title` variable.
+7. Create a `MyBook` object in the `Main` class.
+8. Set the book title.
+9. Retrieve the title using the inherited `getTitle()` method.
+10. Display the required output.
+11. Verify the HackerRank submission.
+
+## 💻 Expected Output
+
+    The title is: A tale of two cities
+
+## 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Understand abstract classes.
+- Understand abstract methods.
+- Use the `abstract` keyword.
+- Use inheritance with abstract classes.
+- Implement abstract methods in child classes.
+- Override methods.
+- Understand why abstract classes cannot be instantiated.
+- Create concrete subclasses.
+- Reuse inherited variables and methods.
+- Strengthen Object-Oriented Programming concepts.
+- Improve Core Java knowledge.
+- Apply abstraction in practical programming problems.
+
+## 📂 Files Added
+
+    Day-41/
+    ├── Java Abstract Class.java
+    └── Screenshot 2026-09-05 190747.png
+
+## ✅ Status
+
+**Completed 🎉🔥🎭**
+
+---
+
+# 🧩 Array Programming
 
 - ✅ One-Dimensional Arrays
 - ✅ Two-Dimensional Arrays
@@ -337,7 +521,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 📋 Java List & Collections
+# 📋 Java List & Collections
 
 - ✅ Java `List`
 - ✅ `ArrayList`
@@ -354,7 +538,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🗺️ Java Map
+# 🗺️ Java Map
 
 - ✅ `Map`
 - ✅ `HashMap`
@@ -369,7 +553,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🗂️ Java Stack
+# 🗂️ Java Stack
 
 - ✅ Stack Data Structure
 - ✅ LIFO Principle
@@ -387,7 +571,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🧩 Java HashSet
+# 🧩 Java HashSet
 
 - ✅ `HashSet`
 - ✅ Set Data Structure
@@ -403,7 +587,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🧬 Java Generics
+# 🧬 Java Generics
 
 - ✅ Generic Methods
 - ✅ Generic Classes
@@ -420,7 +604,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## ⚖️ Java Comparator
+# ⚖️ Java Comparator
 
 - ✅ `Comparator` Interface
 - ✅ Custom Object Comparison
@@ -439,7 +623,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🔤 String Programming
+# 🔤 String Programming
 
 - ✅ String Reverse
 - ✅ Palindrome
@@ -452,7 +636,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🔍 Regular Expressions
+# 🔍 Regular Expressions
 
 - ✅ Regular Expressions
 - ✅ Regex Pattern Matching
@@ -470,7 +654,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🔢 Number Handling
+# 🔢 Number Handling
 
 - ✅ BigDecimal
 - ✅ BigDecimal Precision
@@ -486,7 +670,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🔀 Java Sorting
+# 🔀 Java Sorting
 
 - ✅ Object Sorting
 - ✅ Custom Sorting
@@ -504,7 +688,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🔢 Bit Manipulation & BitSet
+# 🔢 Bit Manipulation & BitSet
 
 - ✅ Java `BitSet`
 - ✅ Bit Manipulation
@@ -523,253 +707,12 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-# 🆕 Day 40 – Java Inheritance II
-
-## 🎯 Challenge
-
-**Java Inheritance II**
-
-## 💻 Platform
-
-**HackerRank**
-
-## ☕ Language
-
-**Java**
-
-## 📚 Concepts Practiced
-
-- 🔹 Object-Oriented Programming
-- 🔹 Classes and Objects
-- 🔹 Inheritance
-- 🔹 Parent Class
-- 🔹 Child Class
-- 🔹 `extends` Keyword
-- 🔹 Superclass
-- 🔹 Subclass
-- 🔹 Method Inheritance
-- 🔹 Code Reusability
-- 🔹 Method Reuse
-- 🔹 Inherited Methods
-- 🔹 Object Creation
-- 🔹 Method Calling
-- 🔹 Core Java
-- 🔹 Problem Solving
-
-## 💡 Key Concept
-
-The **Java Inheritance II** challenge focuses on understanding how inheritance allows a child class to reuse methods defined in a parent class.
-
-In this challenge, an `Arithmetic` class contains an `add()` method.
-
-The `Adder` class extends `Arithmetic`, allowing it to inherit the `add()` method without redefining it.
-
-## 🧠 Inheritance Structure
-
-    Arithmetic
-        │
-        │ extends
-        ↓
-      Adder
-
-The relationship can be represented as:
-
-    Arithmetic
-        └── add()
-
-    Adder
-        └── add()  ← inherited from Arithmetic
-
-## 🔑 Important Keyword
-
-The `extends` keyword is used to establish an inheritance relationship between two classes.
-
-    class Adder extends Arithmetic {
-    }
-
-Here:
-
-- `Arithmetic` → Parent/Superclass
-- `Adder` → Child/Subclass
-- `extends` → Inheritance keyword
-
-## 🧠 Problem-Solving Approach
-
-1. Create the `Arithmetic` class.
-2. Define the `add(int a, int b)` method inside the parent class.
-3. Return the sum of the two integers.
-4. Create the `Adder` class.
-5. Use `extends Arithmetic` to inherit from the parent class.
-6. Do not redefine the `add()` method in `Adder`.
-7. Create an `Adder` object.
-8. Access the inherited `add()` method.
-9. Perform the required addition operations.
-10. Verify the superclass name.
-11. Verify the required output.
-
-## 💻 Expected Output
-
-    My superclass is: Arithmetic
-    42 13 20
-
-## 🎯 Learning Outcome
-
-Through this challenge, I practiced how to:
-
-- Understand Java inheritance.
-- Create parent and child classes.
-- Use the `extends` keyword.
-- Inherit methods from a superclass.
-- Reuse existing methods.
-- Access inherited methods through a child-class object.
-- Understand superclass and subclass relationships.
-- Understand code reusability.
-- Strengthen Object-Oriented Programming concepts.
-- Improve Core Java knowledge.
-
-## 📂 Files Added
-
-    Day-40/
-    ├── Java Inheritance II.java
-    └── Screenshot 2026-09-04 180508.png
-
-## ✅ Status
-
-**Completed 🎉🔥🏛️**
-
----
-
-# 🆕 Day 39 – Java Inheritance I
-
-## 🎯 Challenge
-
-**Java Inheritance I**
-
-## 💻 Platform
-
-**HackerRank**
-
-## ☕ Language
-
-**Java**
-
-## 📚 Concepts Practiced
-
-- 🔹 Object-Oriented Programming
-- 🔹 Classes and Objects
-- 🔹 Inheritance
-- 🔹 Parent Class
-- 🔹 Child Class
-- 🔹 `extends` Keyword
-- 🔹 Method Inheritance
-- 🔹 Code Reusability
-- 🔹 Creating Child Class Objects
-- 🔹 Inherited Methods
-- 🔹 Adding Child-Specific Methods
-- 🔹 Core Java
-- 🔹 Problem Solving
-
-## 💡 Key Concept
-
-The **Java Inheritance I** challenge focuses on understanding how one class can acquire the properties and methods of another class.
-
-The `Animal` class contains the `walk()` method.
-
-The `Bird` class extends `Animal`, which means that the `Bird` class automatically inherits the `walk()` method.
-
-The `Bird` class also contains its own methods:
-
-- `fly()`
-- `sing()`
-
-Therefore, a `Bird` object can access:
-
-- `walk()` → inherited from `Animal`
-- `fly()` → defined in `Bird`
-- `sing()` → defined in `Bird`
-
-## 🧠 Inheritance Structure
-
-    Animal
-        │
-        │ extends
-        ↓
-      Bird
-
-    Animal
-        └── walk()
-
-    Bird
-        ├── walk()  ← inherited
-        ├── fly()   ← own method
-        └── sing()  ← own method
-
-## 🔑 Important Keyword
-
-The `extends` keyword is used to create an inheritance relationship between two classes.
-
-    class Bird extends Animal {
-        ...
-    }
-
-Here:
-
-- `Animal` → Parent/Superclass
-- `Bird` → Child/Subclass
-- `extends` → Inheritance keyword
-
-## 🧠 Problem-Solving Approach
-
-1. Create the `Animal` class.
-2. Define the `walk()` method inside `Animal`.
-3. Create the `Bird` class.
-4. Use `extends Animal` to inherit from the `Animal` class.
-5. Define the `fly()` method inside `Bird`.
-6. Add the required `sing()` method.
-7. Create a `Bird` object.
-8. Call the inherited `walk()` method.
-9. Call the `fly()` method.
-10. Call the `sing()` method.
-11. Verify the required output.
-
-## 💻 Expected Output
-
-    I am walking
-    I am flying
-    I am singing
-
-## 🎯 Learning Outcome
-
-Through this challenge, I practiced how to:
-
-- Understand Java inheritance.
-- Create parent and child classes.
-- Use the `extends` keyword.
-- Inherit methods from a parent class.
-- Reuse existing code.
-- Add new functionality to a child class.
-- Create objects of a child class.
-- Access inherited methods.
-- Understand basic OOP relationships.
-- Strengthen Core Java concepts.
-
-## 📂 Files Added
-
-    Day-39/
-    ├── Java Inheritance I.java
-    └── Screenshot 2026-09-03 125918.png
-
-## ✅ Status
-
-**Completed 🎉🔥🔗**
-
----
-
 # 🧠 Skills I'm Building
 
 - ☕ Core Java
 - 🏛️ Object-Oriented Programming
 - 🔗 Inheritance
+- 🎭 Abstraction
 - 🧩 Problem Solving
 - 🧠 Logical Thinking
 - 🔤 String Handling
@@ -806,6 +749,9 @@ Through this challenge, I practiced how to:
 - 🏛️ Superclass and Subclass Concepts
 - 🔗 Method Reuse
 - 🧩 Inherited Methods
+- 🎭 Abstract Classes
+- 🧱 Abstract Methods
+- 🛠️ Method Overriding
 
 ---
 
@@ -851,7 +797,8 @@ Through this challenge, I practiced how to:
 - ✅ Day 38 Completed 🎉🔥🔢
 - ✅ Day 39 Completed 🎉🔥🔗
 - ✅ Day 40 Completed 🎉🔥🏛️
-- ⏳ Day 41 → Day 100 Continuing...
+- ✅ Day 41 Completed 🎉🔥🎭
+- ⏳ Day 42 → Day 100 Continuing...
 
 ---
 
@@ -859,29 +806,29 @@ Through this challenge, I practiced how to:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **40 / 100** |
-| 💻 Challenges Solved | **40** |
+| 📅 Days Completed | **41 / 100** |
+| 💻 Challenges Solved | **41** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet & Inheritance** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance & Abstraction** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
-| 🏛️ OOP Concepts | **Classes, Objects & Inheritance** |
-| 📈 Progress | **40% Complete** 🚀 |
-| 🔥 Current Streak | **40 Days** |
-| ⏳ Days Remaining | **60 Days** |
+| 🏛️ OOP Concepts | **Classes, Objects, Inheritance & Abstraction** |
+| 📈 Progress | **41% Complete** 🚀 |
+| 🔥 Current Streak | **41 Days** |
+| ⏳ Days Remaining | **59 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **40 Days of Java Practice Completed! 🎉🔥🚀**
+## **41 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **40 days down, 60 more to go!**
+> **41 days down, 59 more to go!**
 
-Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, and Object-Oriented Programming skills.
+Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, and Object-Oriented Programming skills.
 
 The journey continues with consistency, discipline, and continuous learning. ☕💻🔥
 
@@ -905,6 +852,7 @@ The journey continues with consistency, discipline, and continuous learning. ☕
 | 🎯 Day 38 | ✅ Completed 🎉🔥🔢 |
 | 🎯 Day 39 | ✅ Completed 🎉🔥🔗 |
 | 🎯 Day 40 | ✅ Completed 🎉🔥🏛️ |
+| 🎯 Day 41 | ✅ Completed 🎉🔥🎭 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -927,15 +875,16 @@ The journey continues with consistency, discipline, and continuous learning. ☕
     Day 38     ████████████████████ 100% ✅
     Day 39     ████████████████████ 100% ✅
     Day 40     ████████████████████ 100% ✅
-    Day 50     ████████░░░░░░░░░░░░  40% ⏳
-    Day 75     ████████░░░░░░░░░░░░  40% ⏳
-    Day 100    ████████░░░░░░░░░░░░  40% ⏳
+    Day 41     ████████████████████ 100% ✅
+    Day 50     ████████░░░░░░░░░░░░  41% ⏳
+    Day 75     ████████░░░░░░░░░░░░  41% ⏳
+    Day 100    ████████░░░░░░░░░░░░  41% ⏳
 
 ## 🚀 Overall Progress
 
-    [████████░░░░░░░░░░░] 40%
+    [████████░░░░░░░░░░░] 41%
 
-**40 / 100 Days Completed**
+**41 / 100 Days Completed**
 
 ---
 
@@ -973,6 +922,7 @@ It is also about:
 - ⚖️ Learning object comparison and custom sorting
 - 🔢 Understanding Bit Manipulation
 - 🔗 Understanding Object-Oriented Programming and Inheritance
+- 🎭 Understanding Abstraction and Abstract Classes
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1010,10 +960,12 @@ Every challenge helps me improve my:
 - 🔙 Backtracking
 - 🏛️ Object-Oriented Programming
 - 🔗 Inheritance
+- 🎭 Abstraction
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
 - 🛡️ Type-Safe Programming
+- 🔀 Multi-Level Sorting
 - 🧩 Method Reusability
 
 ---
@@ -1089,7 +1041,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#OOP` `#ObjectOrientedProgramming` `#CodeReusability` `#MethodInheritance` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#OOP` `#ObjectOrientedProgramming` `#CodeReusability` `#MethodInheritance` `#MethodOverriding` `#OpenToWork`
 
 ---
 
@@ -1099,6 +1051,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**40 Days Completed ✅ | 60 Days Remaining ⏳ | 100 Days Goal 🎯**
+**41 Days Completed ✅ | 59 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗⚖️🧬🔀🔢🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭⚖️🧬🔀🔢🚀**
