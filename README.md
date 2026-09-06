@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -22,6 +22,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🏛️ Strengthen Object-Oriented Programming concepts.
 - 🔗 Understand Java Inheritance and code reusability.
 - 🎭 Understand Java Abstraction and abstract classes.
+- 🔌 Understand Java Interfaces and polymorphism.
 - 🚀 Build consistency through the **#100DaysOfCode** challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -37,6 +38,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🏛️ **Object-Oriented Programming**
 - 🔗 **Inheritance**
 - 🎭 **Abstraction**
+- 🔌 **Interfaces**
 - 🔤 **String Handling**
 - 🔍 **Regular Expressions**
 - 🔢 **BigDecimal**
@@ -209,6 +211,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
     │   ├── Java Abstract Class.java
     │   └── Screenshot 2026-09-05 190747.png
     │
+    ├── Day-42/
+    │   ├── Java Interface.java
+    │   └── Screenshot 2026-09-06 141746.png
+    │
     └── README.md
 
 ---
@@ -258,7 +264,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 39 | Java Inheritance I | Completed 🎉🔥🔗 |
 | ✅ Day 40 | Java Inheritance II | Completed 🎉🔥🏛️ |
 | ✅ Day 41 | Java Abstract Class | Completed 🎉🔥🎭 |
-| ⏳ Day 42 | Coming Soon | Pending |
+| ✅ Day 42 | Java Interface | Completed 🎉🔥🔌 |
+| ⏳ Day 43 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -282,7 +289,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-## 🏛️ Object-Oriented Programming
+# 🏛️ Object-Oriented Programming
 
 - ✅ Classes and Objects
 - ✅ Object Creation
@@ -299,13 +306,16 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ Abstract Classes
 - ✅ Abstract Methods
 - ✅ Method Overriding
-- ⏳ Polymorphism
+- ✅ Interfaces
+- ✅ Interface Implementation
+- ✅ `implements` Keyword
+- ✅ Polymorphism through Interfaces
 - ⏳ Encapsulation
-- ⏳ Interfaces
+- ⏳ Advanced Polymorphism Concepts
 
 ---
 
-## 🎭 Java Abstraction
+# 🎭 Java Abstraction
 
 - ✅ Abstract Classes
 - ✅ Abstract Methods
@@ -318,12 +328,31 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ Base Class Design
 - ✅ Abstraction in OOP
 - ✅ Code Reusability
-- ⏳ Interfaces
+- ✅ Interfaces
+- ✅ Interface-Based Abstraction
 - ⏳ Advanced Abstraction Concepts
 
 ---
 
-## 🔗 Java Inheritance
+# 🔌 Java Interfaces
+
+- ✅ Interface Basics
+- ✅ Interface Method Signatures
+- ✅ Implementing an Interface
+- ✅ `implements` Keyword
+- ✅ Method Implementation
+- ✅ Method Overriding
+- ✅ Interface-Based Abstraction
+- ✅ Polymorphism
+- ✅ Multiple Interface Concepts
+- ✅ Interface Reference Concepts
+- ✅ Using Interfaces with Classes
+- ✅ Core OOP Principles
+- ⏳ Advanced Interface Concepts
+
+---
+
+# 🔗 Java Inheritance
 
 - ✅ Parent Class
 - ✅ Child Class
@@ -341,11 +370,11 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-# 🆕 Day 41 – Java Abstract Class
+# 🆕 Day 42 – Java Interface
 
 ## 🎯 Challenge
 
-**Java Abstract Class**
+**Java Interface**
 
 ## 💻 Platform
 
@@ -357,141 +386,116 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ## 📚 Concepts Practiced
 
-- 🔹 Abstract Classes
-- 🔹 Abstract Methods
-- 🔹 Abstraction
-- 🔹 Inheritance
+- 🔹 Java Interfaces
+- 🔹 Interface Implementation
+- 🔹 `implements` Keyword
+- 🔹 Method Signatures
 - 🔹 Method Overriding
-- 🔹 `abstract` Keyword
-- 🔹 `extends` Keyword
-- 🔹 Parent and Child Classes
-- 🔹 Concrete Classes
-- 🔹 Object Creation
-- 🔹 Method Implementation
-- 🔹 Code Reusability
+- 🔹 Abstraction
+- 🔹 Polymorphism
 - 🔹 Object-Oriented Programming
 - 🔹 Core Java
 - 🔹 Problem Solving
+- 🔹 Divisor Calculation
+- 🔹 Mathematical Logic
 
-## 💡 Key Concept
+## 💡 Problem Overview
 
-An **abstract class** is a class that cannot be instantiated directly.
+The challenge provides an interface named `AdvancedArithmetic` containing the method signature:
 
-It is designed to act as a base class for other classes.
+`int divisor_sum(int n)`
 
-An abstract class can contain:
+The task is to create a class named `MyCalculator` that implements the `AdvancedArithmetic` interface.
 
-- Regular methods
-- Abstract methods
-- Variables
-- Constructors
+The `divisor_sum()` method calculates and returns the sum of all divisors of a given integer.
 
-An **abstract method** is declared without a method body and must be implemented by a concrete child class.
+For example, the divisors of `6` are:
 
-## 🧠 Example Structure
+`1, 2, 3, 6`
 
-    abstract class Book
-    {
-        String title;
+Therefore:
 
-        abstract void setTitle(String s);
+`1 + 2 + 3 + 6 = 12`
 
-        String getTitle()
-        {
-            return title;
-        }
-    }
+## 🧠 Key Concept
 
-The `Book` class is abstract, so we cannot create an object directly:
+An **interface** in Java defines a contract that implementing classes must follow.
 
-    Book book = new Book();
+A class can implement an interface using the `implements` keyword.
 
-Instead, we create a child class:
-
-    class MyBook extends Book
-    {
-        void setTitle(String s)
-        {
-            title = s;
-        }
-    }
-
-The `MyBook` class provides the implementation of the abstract `setTitle()` method.
+The implementing class must provide the required implementation for the interface methods.
 
 ## 🔑 Important Keywords
 
-### `abstract`
+### `interface`
 
-The `abstract` keyword is used to declare an abstract class or abstract method.
+Used to define an interface containing method declarations and constants.
 
-### `extends`
+### `implements`
 
-The `extends` keyword is used to create an inheritance relationship between a child class and its parent class.
+Used when a class implements an interface.
 
 ### `@Override`
 
-The `@Override` annotation indicates that a child class is providing its own implementation of an inherited or abstract method.
-
-## 🧠 Abstraction Structure
-
-    Book
-      │
-      │ abstract class
-      │
-      ├── title
-      ├── setTitle() ← abstract method
-      └── getTitle()
-             │
-             │ extends
-             ↓
-          MyBook
-             │
-             └── setTitle() ← implemented method
+Used to indicate that a class is providing an implementation of an inherited or interface method.
 
 ## 🧩 Problem-Solving Approach
 
-1. Understand the provided abstract `Book` class.
-2. Identify the abstract `setTitle()` method.
-3. Create a new class named `MyBook`.
-4. Extend the `Book` class using `extends`.
-5. Implement the abstract `setTitle()` method.
-6. Store the provided title inside the inherited `title` variable.
-7. Create a `MyBook` object in the `Main` class.
-8. Set the book title.
-9. Retrieve the title using the inherited `getTitle()` method.
-10. Display the required output.
-11. Verify the HackerRank submission.
+1. Understand the `AdvancedArithmetic` interface.
+2. Identify the `divisor_sum()` method.
+3. Create the `MyCalculator` class.
+4. Implement the `AdvancedArithmetic` interface.
+5. Override the `divisor_sum()` method.
+6. Initialize a variable to store the divisor sum.
+7. Iterate from `1` to `n`.
+8. Check whether each number is a divisor using the modulus operator.
+9. Add every divisor to the sum.
+10. Return the final divisor sum.
+11. Test the solution using HackerRank.
 
-## 💻 Expected Output
+## 🔢 Example
 
-    The title is: A tale of two cities
+For:
+
+`n = 6`
+
+Divisors:
+
+`1, 2, 3, 6`
+
+Sum:
+
+`1 + 2 + 3 + 6 = 12`
+
+Expected result:
+
+`12`
 
 ## 🎯 Learning Outcome
 
 Through this challenge, I practiced how to:
 
-- Understand abstract classes.
-- Understand abstract methods.
-- Use the `abstract` keyword.
-- Use inheritance with abstract classes.
-- Implement abstract methods in child classes.
-- Override methods.
-- Understand why abstract classes cannot be instantiated.
-- Create concrete subclasses.
-- Reuse inherited variables and methods.
-- Strengthen Object-Oriented Programming concepts.
-- Improve Core Java knowledge.
-- Apply abstraction in practical programming problems.
+- Understand Java interfaces.
+- Implement interfaces using `implements`.
+- Override interface methods.
+- Understand interface-based abstraction.
+- Understand polymorphism.
+- Work with method signatures.
+- Implement mathematical logic in Java.
+- Calculate divisors efficiently using loops.
+- Apply Object-Oriented Programming concepts.
+- Strengthen Core Java knowledge.
+- Improve problem-solving skills.
 
 ## 📂 Files Added
 
-    Day-41/
-    ├── Java Abstract Class.java
-    └── Screenshot 2026-09-05 190747.png
+    Day-42/
+    ├── Java Interface.java
+    └── Screenshot 2026-09-06 141746.png
 
 ## ✅ Status
 
-**Completed 🎉🔥🎭**
+**Completed 🎉🔥🔌**
 
 ---
 
@@ -667,6 +671,7 @@ Through this challenge, I practiced how to:
 - ✅ BigInteger Addition
 - ✅ BigInteger Multiplication
 - ✅ Handling Extremely Large Integers
+- ✅ Divisor Calculation
 
 ---
 
@@ -713,6 +718,8 @@ Through this challenge, I practiced how to:
 - 🏛️ Object-Oriented Programming
 - 🔗 Inheritance
 - 🎭 Abstraction
+- 🔌 Interfaces
+- 🧩 Polymorphism
 - 🧩 Problem Solving
 - 🧠 Logical Thinking
 - 🔤 String Handling
@@ -752,6 +759,8 @@ Through this challenge, I practiced how to:
 - 🎭 Abstract Classes
 - 🧱 Abstract Methods
 - 🛠️ Method Overriding
+- 🔌 Interface Implementation
+- 🔄 Interface-Based Polymorphism
 
 ---
 
@@ -798,7 +807,8 @@ Through this challenge, I practiced how to:
 - ✅ Day 39 Completed 🎉🔥🔗
 - ✅ Day 40 Completed 🎉🔥🏛️
 - ✅ Day 41 Completed 🎉🔥🎭
-- ⏳ Day 42 → Day 100 Continuing...
+- ✅ Day 42 Completed 🎉🔥🔌
+- ⏳ Day 43 → Day 100 Continuing...
 
 ---
 
@@ -806,29 +816,30 @@ Through this challenge, I practiced how to:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **41 / 100** |
-| 💻 Challenges Solved | **41** |
+| 📅 Days Completed | **42 / 100** |
+| 💻 Challenges Solved | **42** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance & Abstraction** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction & Interfaces** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
-| 🏛️ OOP Concepts | **Classes, Objects, Inheritance & Abstraction** |
-| 📈 Progress | **41% Complete** 🚀 |
-| 🔥 Current Streak | **41 Days** |
-| ⏳ Days Remaining | **59 Days** |
+| 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction & Interfaces** |
+| 🔌 Interface Concepts | **Interface Implementation, Method Overriding & Polymorphism** |
+| 📈 Progress | **42% Complete** 🚀 |
+| 🔥 Current Streak | **42 Days** |
+| ⏳ Days Remaining | **58 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **41 Days of Java Practice Completed! 🎉🔥🚀**
+## **42 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **41 days down, 59 more to go!**
+> **42 days down, 58 more to go!**
 
-Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, and Object-Oriented Programming skills.
+Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, and Object-Oriented Programming skills.
 
 The journey continues with consistency, discipline, and continuous learning. ☕💻🔥
 
@@ -853,6 +864,7 @@ The journey continues with consistency, discipline, and continuous learning. ☕
 | 🎯 Day 39 | ✅ Completed 🎉🔥🔗 |
 | 🎯 Day 40 | ✅ Completed 🎉🔥🏛️ |
 | 🎯 Day 41 | ✅ Completed 🎉🔥🎭 |
+| 🎯 Day 42 | ✅ Completed 🎉🔥🔌 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -876,15 +888,16 @@ The journey continues with consistency, discipline, and continuous learning. ☕
     Day 39     ████████████████████ 100% ✅
     Day 40     ████████████████████ 100% ✅
     Day 41     ████████████████████ 100% ✅
-    Day 50     ████████░░░░░░░░░░░░  41% ⏳
-    Day 75     ████████░░░░░░░░░░░░  41% ⏳
-    Day 100    ████████░░░░░░░░░░░░  41% ⏳
+    Day 42     ████████████████████ 100% ✅
+    Day 50     ████████░░░░░░░░░░░░  42% ⏳
+    Day 75     ████████░░░░░░░░░░░░  42% ⏳
+    Day 100    ████████░░░░░░░░░░░░  42% ⏳
 
 ## 🚀 Overall Progress
 
-    [████████░░░░░░░░░░░] 41%
+    [████████░░░░░░░░░░░] 42%
 
-**41 / 100 Days Completed**
+**42 / 100 Days Completed**
 
 ---
 
@@ -923,6 +936,7 @@ It is also about:
 - 🔢 Understanding Bit Manipulation
 - 🔗 Understanding Object-Oriented Programming and Inheritance
 - 🎭 Understanding Abstraction and Abstract Classes
+- 🔌 Understanding Interfaces and Polymorphism
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -961,6 +975,8 @@ Every challenge helps me improve my:
 - 🏛️ Object-Oriented Programming
 - 🔗 Inheritance
 - 🎭 Abstraction
+- 🔌 Interfaces
+- 🧩 Polymorphism
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -977,11 +993,8 @@ The upcoming days will focus on more Java concepts, including:
 - 🔹 Object-Oriented Programming
 - 🔹 Classes and Objects
 - 🔹 Constructors
-- 🔹 Inheritance
 - 🔹 Polymorphism
 - 🔹 Encapsulation
-- 🔹 Abstraction
-- 🔹 Interfaces
 - 🔹 Exception Handling
 - 🔹 Collections Framework
 - 🔹 ArrayList
@@ -1005,6 +1018,7 @@ The upcoming days will focus on more Java concepts, including:
 - 🔹 Sorting Algorithms
 - 🔹 Advanced Collections
 - 🔹 Object-Oriented Design
+- 🔹 Advanced Problem Solving
 
 ---
 
@@ -1041,7 +1055,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#OOP` `#ObjectOrientedProgramming` `#CodeReusability` `#MethodInheritance` `#MethodOverriding` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#CodeReusability` `#MethodInheritance` `#MethodOverriding` `#OpenToWork`
 
 ---
 
@@ -1051,6 +1065,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**41 Days Completed ✅ | 59 Days Remaining ⏳ | 100 Days Goal 🎯**
+**42 Days Completed ✅ | 58 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭⚖️🧬🔀🔢🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌⚖️🧬🔀🔢🚀**
