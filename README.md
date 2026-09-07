@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -23,7 +23,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔗 Understand Java Inheritance and code reusability.
 - 🎭 Understand Java Abstraction and abstract classes.
 - 🔌 Understand Java Interfaces and polymorphism.
-- 🚀 Build consistency through the **#100DaysOfCode** challenge.
+- 🔄 Understand Method Overriding and Runtime Polymorphism.
+- 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
 - 🌱 Learn and improve through consistent daily practice.
@@ -32,35 +33,37 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 # 🛠️ Platform & Technology
 
-- 💻 **HackerRank**
-- ☕ **Java**
-- 🧠 **Core Java**
-- 🏛️ **Object-Oriented Programming**
-- 🔗 **Inheritance**
-- 🎭 **Abstraction**
-- 🔌 **Interfaces**
-- 🔤 **String Handling**
-- 🔍 **Regular Expressions**
-- 🔢 **BigDecimal**
-- 🔢 **BigInteger**
-- 📦 **Arrays**
-- 📐 **2D Arrays**
-- 🔗 **Subarrays**
-- 🔄 **Recursion**
-- 🔙 **Backtracking**
-- 📋 **Java List**
-- 📦 **ArrayList**
-- 🗺️ **Map**
-- 🔑 **HashMap**
-- 🗂️ **Stack**
-- 🧩 **HashSet**
-- 🧬 **Generics**
-- ⚖️ **Comparator**
-- 🔤 **Custom Sorting**
-- 🔢 **BitSet**
-- 🔀 **Bit Manipulation**
-- 🧠 **Problem Solving**
-- 🎯 **Algorithmic Thinking**
+- 💻 HackerRank
+- ☕ Java
+- 🧠 Core Java
+- 🏛️ Object-Oriented Programming
+- 🔗 Inheritance
+- 🎭 Abstraction
+- 🔌 Interfaces
+- 🔄 Method Overriding
+- 🧩 Polymorphism
+- 🔤 String Handling
+- 🔍 Regular Expressions
+- 🔢 BigDecimal
+- 🔢 BigInteger
+- 📦 Arrays
+- 📐 2D Arrays
+- 🔗 Subarrays
+- 🔄 Recursion
+- 🔙 Backtracking
+- 📋 Java List
+- 📦 ArrayList
+- 🗺️ Map
+- 🔑 HashMap
+- 🗂️ Stack
+- 🧩 HashSet
+- 🧬 Generics
+- ⚖️ Comparator
+- 🔤 Custom Sorting
+- 🔢 BitSet
+- 🔀 Bit Manipulation
+- 🧠 Problem Solving
+- 🎯 Algorithmic Thinking
 
 ---
 
@@ -215,6 +218,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
     │   ├── Java Interface.java
     │   └── Screenshot 2026-09-06 141746.png
     │
+    ├── Day-43/
+    │   ├── Java Method Overriding.java
+    │   └── Screenshot 2026-09-07 090202.png
+    │
     └── README.md
 
 ---
@@ -265,7 +272,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 40 | Java Inheritance II | Completed 🎉🔥🏛️ |
 | ✅ Day 41 | Java Abstract Class | Completed 🎉🔥🎭 |
 | ✅ Day 42 | Java Interface | Completed 🎉🔥🔌 |
-| ⏳ Day 43 | Coming Soon | Pending |
+| ✅ Day 43 | Java Method Overriding | Completed 🎉🔥🔄 |
+| ⏳ Day 44 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -309,9 +317,28 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ Interfaces
 - ✅ Interface Implementation
 - ✅ `implements` Keyword
-- ✅ Polymorphism through Interfaces
+- ✅ Polymorphism
+- ✅ Runtime Polymorphism
 - ⏳ Encapsulation
 - ⏳ Advanced Polymorphism Concepts
+
+---
+
+# 🔗 Java Inheritance
+
+- ✅ Parent Class
+- ✅ Child Class
+- ✅ `extends` Keyword
+- ✅ Inheriting Methods
+- ✅ Adding Child-Specific Methods
+- ✅ Code Reusability
+- ✅ IS-A Relationship
+- ✅ Object Creation Using Child Class
+- ✅ Method Access Through Inheritance
+- ✅ Superclass and Subclass
+- ✅ Method Reuse
+- ✅ Inherited Methods
+- ✅ Basic Inheritance Hierarchy
 
 ---
 
@@ -352,150 +379,21 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 ---
 
-# 🔗 Java Inheritance
+# 🔄 Java Method Overriding
 
-- ✅ Parent Class
-- ✅ Child Class
-- ✅ `extends` Keyword
-- ✅ Inheriting Methods
-- ✅ Adding Child-Specific Methods
+- ✅ Method Overriding
+- ✅ Parent Class Method
+- ✅ Child Class Method
+- ✅ Method Redefinition
+- ✅ `@Override` Annotation
+- ✅ Inheritance and Overriding
+- ✅ Runtime Method Dispatch
+- ✅ Runtime Polymorphism
+- ✅ Dynamic Method Dispatch
+- ✅ Parent and Child Class Relationships
 - ✅ Code Reusability
-- ✅ IS-A Relationship
-- ✅ Object Creation Using Child Class
-- ✅ Method Access Through Inheritance
-- ✅ Superclass and Subclass
-- ✅ Method Reuse
-- ✅ Inherited Methods
-- ✅ Basic Inheritance Hierarchy
-
----
-
-# 🆕 Day 42 – Java Interface
-
-## 🎯 Challenge
-
-**Java Interface**
-
-## 💻 Platform
-
-**HackerRank**
-
-## ☕ Language
-
-**Java**
-
-## 📚 Concepts Practiced
-
-- 🔹 Java Interfaces
-- 🔹 Interface Implementation
-- 🔹 `implements` Keyword
-- 🔹 Method Signatures
-- 🔹 Method Overriding
-- 🔹 Abstraction
-- 🔹 Polymorphism
-- 🔹 Object-Oriented Programming
-- 🔹 Core Java
-- 🔹 Problem Solving
-- 🔹 Divisor Calculation
-- 🔹 Mathematical Logic
-
-## 💡 Problem Overview
-
-The challenge provides an interface named `AdvancedArithmetic` containing the method signature:
-
-`int divisor_sum(int n)`
-
-The task is to create a class named `MyCalculator` that implements the `AdvancedArithmetic` interface.
-
-The `divisor_sum()` method calculates and returns the sum of all divisors of a given integer.
-
-For example, the divisors of `6` are:
-
-`1, 2, 3, 6`
-
-Therefore:
-
-`1 + 2 + 3 + 6 = 12`
-
-## 🧠 Key Concept
-
-An **interface** in Java defines a contract that implementing classes must follow.
-
-A class can implement an interface using the `implements` keyword.
-
-The implementing class must provide the required implementation for the interface methods.
-
-## 🔑 Important Keywords
-
-### `interface`
-
-Used to define an interface containing method declarations and constants.
-
-### `implements`
-
-Used when a class implements an interface.
-
-### `@Override`
-
-Used to indicate that a class is providing an implementation of an inherited or interface method.
-
-## 🧩 Problem-Solving Approach
-
-1. Understand the `AdvancedArithmetic` interface.
-2. Identify the `divisor_sum()` method.
-3. Create the `MyCalculator` class.
-4. Implement the `AdvancedArithmetic` interface.
-5. Override the `divisor_sum()` method.
-6. Initialize a variable to store the divisor sum.
-7. Iterate from `1` to `n`.
-8. Check whether each number is a divisor using the modulus operator.
-9. Add every divisor to the sum.
-10. Return the final divisor sum.
-11. Test the solution using HackerRank.
-
-## 🔢 Example
-
-For:
-
-`n = 6`
-
-Divisors:
-
-`1, 2, 3, 6`
-
-Sum:
-
-`1 + 2 + 3 + 6 = 12`
-
-Expected result:
-
-`12`
-
-## 🎯 Learning Outcome
-
-Through this challenge, I practiced how to:
-
-- Understand Java interfaces.
-- Implement interfaces using `implements`.
-- Override interface methods.
-- Understand interface-based abstraction.
-- Understand polymorphism.
-- Work with method signatures.
-- Implement mathematical logic in Java.
-- Calculate divisors efficiently using loops.
-- Apply Object-Oriented Programming concepts.
-- Strengthen Core Java knowledge.
-- Improve problem-solving skills.
-
-## 📂 Files Added
-
-    Day-42/
-    ├── Java Interface.java
-    └── Screenshot 2026-09-06 141746.png
-
-## ✅ Status
-
-**Completed 🎉🔥🔌**
+- ✅ Object-Oriented Programming
+- ⏳ Advanced Polymorphism
 
 ---
 
@@ -627,6 +525,43 @@ Through this challenge, I practiced how to:
 
 ---
 
+# 🔀 Java Sorting
+
+- ✅ Object Sorting
+- ✅ Custom Sorting
+- ✅ `Comparator`
+- ✅ `compareTo()`
+- ✅ `Arrays.sort()`
+- ✅ Multi-Level Sorting
+- ✅ Descending Order
+- ✅ Alphabetical Order
+- ✅ CGPA-Based Sorting
+- ✅ Name-Based Sorting
+- ✅ ID-Based Tie Breaking
+- ✅ Object Comparison
+- ✅ Sorting Complex Objects
+
+---
+
+# 🔢 Bit Manipulation & BitSet
+
+- ✅ Java `BitSet`
+- ✅ Bit Manipulation
+- ✅ Binary Representation Concepts
+- ✅ BitSet Initialization
+- ✅ `SET` Operation
+- ✅ `FLIP` Operation
+- ✅ `AND` Operation
+- ✅ `OR` Operation
+- ✅ `XOR` Operation
+- ✅ `cardinality()`
+- ✅ Bit-Based Data Processing
+- ✅ Logical Bit Operations
+- ✅ Java Collections/Data Structure Concepts
+- ✅ Problem Solving with BitSet
+
+---
+
 # 🔤 String Programming
 
 - ✅ String Reverse
@@ -675,43 +610,6 @@ Through this challenge, I practiced how to:
 
 ---
 
-# 🔀 Java Sorting
-
-- ✅ Object Sorting
-- ✅ Custom Sorting
-- ✅ `Comparator`
-- ✅ `compareTo()`
-- ✅ `Arrays.sort()`
-- ✅ Multi-Level Sorting
-- ✅ Descending Order
-- ✅ Alphabetical Order
-- ✅ CGPA-Based Sorting
-- ✅ Name-Based Sorting
-- ✅ ID-Based Tie Breaking
-- ✅ Object Comparison
-- ✅ Sorting Complex Objects
-
----
-
-# 🔢 Bit Manipulation & BitSet
-
-- ✅ Java `BitSet`
-- ✅ Bit Manipulation
-- ✅ Binary Representation Concepts
-- ✅ BitSet Initialization
-- ✅ `SET` Operation
-- ✅ `FLIP` Operation
-- ✅ `AND` Operation
-- ✅ `OR` Operation
-- ✅ `XOR` Operation
-- ✅ `cardinality()`
-- ✅ Bit-Based Data Processing
-- ✅ Logical Bit Operations
-- ✅ Java Collections/Data Structure Concepts
-- ✅ Problem Solving with BitSet
-
----
-
 # 🧠 Skills I'm Building
 
 - ☕ Core Java
@@ -719,6 +617,7 @@ Through this challenge, I practiced how to:
 - 🔗 Inheritance
 - 🎭 Abstraction
 - 🔌 Interfaces
+- 🔄 Method Overriding
 - 🧩 Polymorphism
 - 🧩 Problem Solving
 - 🧠 Logical Thinking
@@ -761,6 +660,7 @@ Through this challenge, I practiced how to:
 - 🛠️ Method Overriding
 - 🔌 Interface Implementation
 - 🔄 Interface-Based Polymorphism
+- ⚡ Runtime Method Dispatch
 
 ---
 
@@ -808,7 +708,8 @@ Through this challenge, I practiced how to:
 - ✅ Day 40 Completed 🎉🔥🏛️
 - ✅ Day 41 Completed 🎉🔥🎭
 - ✅ Day 42 Completed 🎉🔥🔌
-- ⏳ Day 43 → Day 100 Continuing...
+- ✅ Day 43 Completed 🎉🔥🔄
+- ⏳ Day 44 → Day 100 Continuing...
 
 ---
 
@@ -816,32 +717,32 @@ Through this challenge, I practiced how to:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **42 / 100** |
-| 💻 Challenges Solved | **42** |
+| 📅 Days Completed | **43 / 100** |
+| 💻 Challenges Solved | **43** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction & Interfaces** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces & Method Overriding** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
-| 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction & Interfaces** |
-| 🔌 Interface Concepts | **Interface Implementation, Method Overriding & Polymorphism** |
-| 📈 Progress | **42% Complete** 🚀 |
-| 🔥 Current Streak | **42 Days** |
-| ⏳ Days Remaining | **58 Days** |
+| 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
+| 🔄 Overriding Concepts | **Method Overriding, Runtime Polymorphism & Dynamic Method Dispatch** |
+| 📈 Progress | **43% Complete** 🚀 |
+| 🔥 Current Streak | **43 Days** |
+| ⏳ Days Remaining | **57 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **42 Days of Java Practice Completed! 🎉🔥🚀**
+## **43 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **42 days down, 58 more to go!**
+> **43 days down, 57 more to go!**
 
-Every Java challenge I solve helps me improve my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, and Object-Oriented Programming skills.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, and Object-Oriented Programming skills.
 
-The journey continues with consistency, discipline, and continuous learning. ☕💻🔥
+The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
 ---
 
@@ -865,6 +766,7 @@ The journey continues with consistency, discipline, and continuous learning. ☕
 | 🎯 Day 40 | ✅ Completed 🎉🔥🏛️ |
 | 🎯 Day 41 | ✅ Completed 🎉🔥🎭 |
 | 🎯 Day 42 | ✅ Completed 🎉🔥🔌 |
+| 🎯 Day 43 | ✅ Completed 🎉🔥🔄 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -889,15 +791,16 @@ The journey continues with consistency, discipline, and continuous learning. ☕
     Day 40     ████████████████████ 100% ✅
     Day 41     ████████████████████ 100% ✅
     Day 42     ████████████████████ 100% ✅
-    Day 50     ████████░░░░░░░░░░░░  42% ⏳
-    Day 75     ████████░░░░░░░░░░░░  42% ⏳
-    Day 100    ████████░░░░░░░░░░░░  42% ⏳
+    Day 43     ████████████████████ 100% ✅
+    Day 50     ████████░░░░░░░░░░░░  43% ⏳
+    Day 75     ████████░░░░░░░░░░░░  43% ⏳
+    Day 100    ████████░░░░░░░░░░░░  43% ⏳
 
 ## 🚀 Overall Progress
 
-    [████████░░░░░░░░░░░] 42%
+    [█████████░░░░░░░░░░░] 43%
 
-**42 / 100 Days Completed**
+**43 / 100 Days Completed**
 
 ---
 
@@ -937,6 +840,7 @@ It is also about:
 - 🔗 Understanding Object-Oriented Programming and Inheritance
 - 🎭 Understanding Abstraction and Abstract Classes
 - 🔌 Understanding Interfaces and Polymorphism
+- 🔄 Understanding Method Overriding
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -976,6 +880,7 @@ Every challenge helps me improve my:
 - 🔗 Inheritance
 - 🎭 Abstraction
 - 🔌 Interfaces
+- 🔄 Method Overriding
 - 🧩 Polymorphism
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
@@ -983,6 +888,7 @@ Every challenge helps me improve my:
 - 🛡️ Type-Safe Programming
 - 🔀 Multi-Level Sorting
 - 🧩 Method Reusability
+- ⚡ Runtime Method Dispatch
 
 ---
 
@@ -990,11 +896,9 @@ Every challenge helps me improve my:
 
 The upcoming days will focus on more Java concepts, including:
 
-- 🔹 Object-Oriented Programming
-- 🔹 Classes and Objects
-- 🔹 Constructors
-- 🔹 Polymorphism
 - 🔹 Encapsulation
+- 🔹 Advanced Polymorphism
+- 🔹 Constructors
 - 🔹 Exception Handling
 - 🔹 Collections Framework
 - 🔹 ArrayList
@@ -1055,7 +959,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#CodeReusability` `#MethodInheritance` `#MethodOverriding` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#RuntimePolymorphism` `#CodeReusability` `#OpenToWork`
 
 ---
 
@@ -1065,6 +969,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**42 Days Completed ✅ | 58 Days Remaining ⏳ | 100 Days Goal 🎯**
+**43 Days Completed ✅ | 57 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌⚖️🧬🔀🔢🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄⚖️🧬🔀🔢🚀**
