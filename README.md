@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super` keyword, `instanceof` operator, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -24,6 +24,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🎭 Understand Java Abstraction and abstract classes.
 - 🔌 Understand Java Interfaces and polymorphism.
 - 🔄 Understand Method Overriding and Runtime Polymorphism.
+- 🔍 Understand object type checking using the `instanceof` operator.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -42,6 +43,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔌 Interfaces
 - 🔄 Method Overriding
 - 🧩 Polymorphism
+- 🔍 `instanceof` Operator
 - 🔤 String Handling
 - 🔍 Regular Expressions
 - 🔢 BigDecimal
@@ -69,164 +71,154 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 # 📂 Repository Structure
 
-    Java_Challenge/
-    │
-    ├── Day-1/
-    │   └── Java Challenge
-    │
-    ├── Day-2/
-    │   └── Java Challenge
-    │
-    ├── Day-3/
-    │   └── Java Challenge
-    │
-    ├── Day-4/
-    │   └── Java Challenge
-    │
-    ├── Day-5/
-    │   └── Java Challenge
-    │
-    ├── Day-6/
-    │   └── Java Challenge
-    │
-    ├── Day-7/
-    │   └── Java Challenge
-    │
-    ├── Day-8/
-    │   └── Java Challenge
-    │
-    ├── Day-9/
-    │   └── Java Challenge
-    │
-    ├── Day-10/
-    │   └── Java Challenge
-    │
-    ├── Day-11/
-    │   └── Java Challenge
-    │
-    ├── Day-12/
-    │   └── Java Challenge
-    │
-    ├── Day-13/
-    │   └── Java Challenge
-    │
-    ├── Day-14/
-    │   └── Java String Reverse.java
-    │
-    ├── Day-15/
-    │   └── Java Challenge
-    │
-    ├── Day-16/
-    │   └── Java Challenge
-    │
-    ├── Day-17/
-    │   └── Java String Reverse.java
-    │
-    ├── Day-18/
-    │   └── Java Anagrams.java
-    │
-    ├── Day-19/
-    │   └── Java String Tokens.java
-    │
-    ├── Day-20/
-    │   ├── Pattern Syntax Checker.java
-    │   └── Screenshot (228).png
-    │
-    ├── Day-21/
-    │   ├── Java Regex 2 - Duplicate Words.java
-    │   └── Screenshot 2026-08-16 193102.png
-    │
-    ├── Day-22/
-    │   ├── Tag Content Extractor.java
-    │   └── Screenshot 2026-08-17 212544.png
-    │
-    ├── Day-23/
-    │   └── Java BigDecimal.java
-    │
-    ├── Day-24/
-    │   ├── Java Primality Test.java
-    │   └── Screenshot 2026-08-19 103022.png
-    │
-    ├── Day-25/
-    │   ├── Java BigInteger.java
-    │   └── Screenshot 2026-08-20 162029.png
-    │
-    ├── Day-26/
-    │   ├── Java 1D Array.java
-    │   └── Screenshot 2026-08-21 145008.png
-    │
-    ├── Day-27/
-    │   ├── Java 2D Array.java
-    │   └── Screenshot 2026-08-22 162405.png
-    │
-    ├── Day-28/
-    │   ├── Java Subarray.java
-    │   └── Screenshot 2026-08-23 111331.png
-    │
-    ├── Day-29/
-    │   └── Java Challenge
-    │
-    ├── Day-30/
-    │   ├── Java 1D Array (Part 2).java
-    │   └── Screenshot 2026-08-25 205949.png
-    │
-    ├── Day-31/
-    │   ├── Java List.java
-    │   └── Screenshot 2026-08-26 165602.png
-    │
-    ├── Day-32/
-    │   ├── Java Map.java
-    │   └── Screenshot 2026-08-27 222417.png
-    │
-    ├── Day-33/
-    │   ├── Java Stack.java
-    │   └── Screenshot 2026-08-28 223052.png
-    │
-    ├── Day-34/
-    │   ├── Java Hashset.java
-    │   └── Screenshot 2026-08-29 210605.png
-    │
-    ├── Day-35/
-    │   ├── Java Generics.java
-    │   └── Screenshot 2026-08-30 220107.png
-    │
-    ├── Day-36/
-    │   ├── Java Comparator.java
-    │   └── Screenshot 2026-08-31 130957.png
-    │
-    ├── Day-37/
-    │   ├── Java Sort.java
-    │   └── Screenshot 2026-09-01 143710.png
-    │
-    ├── Day-38/
-    │   ├── Java BitSet.java
-    │   └── Screenshot 2026-09-02 105729.png
-    │
-    ├── Day-39/
-    │   ├── Java Inheritance I.java
-    │   └── Screenshot 2026-09-03 125918.png
-    │
-    ├── Day-40/
-    │   ├── Java Inheritance II.java
-    │   └── Screenshot 2026-09-04 180508.png
-    │
-    ├── Day-41/
-    │   ├── Java Abstract Class.java
-    │   └── Screenshot 2026-09-05 190747.png
-    │
-    ├── Day-42/
-    │   ├── Java Interface.java
-    │   └── Screenshot 2026-09-06 141746.png
-    │
-    ├── Day-43/
-    │   ├── Java Method Overriding.java
-    │   └── Screenshot 2026-09-07 090202.png
-    │
-    ├── Day-44/
-    │   ├── Java Method Overriding 2 (Super Keyword).java
-    │   └── Screenshot 2026-09-08 130629.png
-    │
-    └── README.md
+````markdown
+## 📂 Repository Structure
+
+```text
+100-Days-of-Java-Challenge/
+│
+├── 📁 Day-01/
+│   └── Java Hello World.java
+│
+├── 📁 Day-02/
+│   └── Java Stdin and Stdout I.java
+│
+├── 📁 Day-03/
+│   └── Java Stdin and Stdout II.java
+│
+├── 📁 Day-04/
+│   └── Java If-Else.java
+│
+├── 📁 Day-05/
+│   └── Java Loops I.java
+│
+├── 📁 Day-06/
+│   └── Java Loops II.java
+│
+├── 📁 Day-07/
+│   └── Java Output Formatting.java
+│
+├── 📁 Day-08/
+│   └── Java Datatypes.java
+│
+├── 📁 Day-09/
+│   └── Java End-of-file.java
+│
+├── 📁 Day-10/
+│   └── Java Static Initializer Block.java
+│
+├── 📁 Day-11/
+│   └── Java Int to String.java
+│
+├── 📁 Day-12/
+│   └── Java Date and Time.java
+│
+├── 📁 Day-13/
+│   └── Java Currency Formatter.java
+│
+├── 📁 Day-14/
+│   └── Java BigInteger.java
+│
+├── 📁 Day-15/
+│   └── Java BigDecimal.java
+│
+├── 📁 Day-16/
+│   └── Java 1D Array.java
+│
+├── 📁 Day-17/
+│   └── Java 2D Array.java
+│
+├── 📁 Day-18/
+│   └── Java Subarray.java
+│
+├── 📁 Day-19/
+│   └── Java Arraylist.java
+│
+├── 📁 Day-20/
+│   └── Java List.java
+│
+├── 📁 Day-21/
+│   └── Java Map.java
+│
+├── 📁 Day-22/
+│   └── Java Stack.java
+│
+├── 📁 Day-23/
+│   └── Java Hashset.java
+│
+├── 📁 Day-24/
+│   └── Java Generics.java
+│
+├── 📁 Day-25/
+│   └── Java Comparator.java
+│
+├── 📁 Day-26/
+│   └── Java Inheritance I.java
+│
+├── 📁 Day-27/
+│   └── Java Inheritance II.java
+│
+├── 📁 Day-28/
+│   └── Java Abstract Class.java
+│
+├── 📁 Day-29/
+│   └── Java Interface.java
+│
+├── 📁 Day-30/
+│   └── Java Method Overriding.java
+│
+├── 📁 Day-31/
+│   └── Java Method Overloading.java
+│
+├── 📁 Day-32/
+│   └── Java Encapsulation.java
+│
+├── 📁 Day-33/
+│   └── Java Polymorphism.java
+│
+├── 📁 Day-34/
+│   └── Java Exception Handling.java
+│
+├── 📁 Day-35/
+│   └── Java Try Catch.java
+│
+├── 📁 Day-36/
+│   └── Java Multiple Exceptions.java
+│
+├── 📁 Day-37/
+│   └── Java Custom Exception.java
+│
+├── 📁 Day-38/
+│   └── Java Exception Handling Advanced.java
+│
+├── 📁 Day-39/
+│   └── Java Inheritance Advanced.java
+│
+├── 📁 Day-40/
+│   └── Java OOP Challenge.java
+│
+├── 📁 Day-41/
+│   └── Java Classes and Objects.java
+│
+├── 📁 Day-42/
+│   └── Java Constructors.java
+│
+├── 📁 Day-43/
+│   └── Java Access Modifiers.java
+│
+├── 📁 Day-44/
+│   └── Java This Keyword.java
+│
+├── 📁 Day-45/
+│   ├── Java Instanceof keyword.java
+│   └── Screenshot 2026-09-09 095507.png
+│
+├── 📄 README.md
+│
+└── 📄 LICENSE
+````
+
+
 
 ---
 
@@ -277,10 +269,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 41 | Java Abstract Class | Completed |
 | ✅ Day 42 | Java Interface | Completed |
 | ✅ Day 43 | Java Method Overriding | Completed |
-| ✅ Day 44 | Java Method Overriding 2 (Super Keyword) | Completed 🎉 |
-| ⏳ Day 45 | Coming Soon | Pending |
-| ... | ... | ... |
-| 🎯 Day 100 | Goal | Pending |
+| ✅ Day 44 | Java Method Overriding 2 (Super Keyword) | Completed |
+| ✅ Day 45 | Java Instanceof Keyword | Completed 🎉 |
+| ⏳ Day 46–99 | Upcoming Challenges | Pending |
+| 🎯 Day 100 | Final Goal | Pending |
 
 ---
 
@@ -318,6 +310,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ Inherited Methods
 - ✅ Abstract Classes
 - ✅ Abstract Methods
+- ✅ `abstract` Keyword
 - ✅ Method Overriding
 - ✅ `@Override` Annotation
 - ✅ `super` Keyword
@@ -328,8 +321,41 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ Polymorphism
 - ✅ Runtime Polymorphism
 - ✅ Dynamic Method Dispatch
+- ✅ `instanceof` Operator
+- ✅ Runtime Type Checking
 - ⏳ Encapsulation
 - ⏳ Advanced Polymorphism Concepts
+
+---
+
+# 🔍 Java `instanceof` Operator
+
+The `instanceof` operator is used to check whether an object is an instance of a specified class or type.
+
+### Concepts Practiced
+
+- ✅ `instanceof` Operator
+- ✅ Object Type Checking
+- ✅ Runtime Type Identification
+- ✅ Checking Class Instances
+- ✅ Multiple Class Types
+- ✅ Working with `ArrayList<Object>`
+- ✅ Student, Rockstar and Hacker Objects
+- ✅ Counting Objects Based on Type
+- ✅ Object-Oriented Programming
+- ✅ Polymorphism and Type Checking
+
+### Day 45 Challenge
+
+The Day 45 challenge demonstrates how `instanceof` can be used to identify different object types stored inside an `ArrayList`.
+
+The solution checks whether each object is an instance of:
+
+- `Student`
+- `Rockstar`
+- `Hacker`
+
+and counts the number of objects belonging to each class.
 
 ---
 
@@ -634,6 +660,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔄 Method Overriding
 - 🧩 Polymorphism
 - 🔑 `super` Keyword
+- 🔍 `instanceof` Operator
 - 🧩 Problem Solving
 - 🧠 Logical Thinking
 - 🔤 String Handling
@@ -703,30 +730,31 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ Day 19 Completed
 - ✅ Day 20 Completed
 - ✅ Day 21 Completed
-- ✅ Day 22 Completed 🎉
-- ✅ Day 23 Completed 🎉
-- ✅ Day 24 Completed 🎉
-- ✅ Day 25 Completed 🎉
-- ✅ Day 26 Completed 🎉
-- ✅ Day 27 Completed 🎉
-- ✅ Day 28 Completed 🎉
-- ✅ Day 29 Completed 🎉
-- ✅ Day 30 Completed 🎉🔥
-- ✅ Day 31 Completed 🎉🔥
-- ✅ Day 32 Completed 🎉🔥
-- ✅ Day 33 Completed 🎉🔥
-- ✅ Day 34 Completed 🎉🔥
-- ✅ Day 35 Completed 🎉🔥🧬
-- ✅ Day 36 Completed 🎉🔥⚖️
-- ✅ Day 37 Completed 🎉🔥🚀
-- ✅ Day 38 Completed 🎉🔥🔢
-- ✅ Day 39 Completed 🎉🔥🔗
-- ✅ Day 40 Completed 🎉🔥🏛️
-- ✅ Day 41 Completed 🎉🔥🎭
-- ✅ Day 42 Completed 🎉🔥🔌
-- ✅ Day 43 Completed 🎉🔥🔄
-- ✅ Day 44 Completed 🎉🔥🔑
-- ⏳ Day 45 → Day 100 Continuing...
+- ✅ Day 22 Completed
+- ✅ Day 23 Completed
+- ✅ Day 24 Completed
+- ✅ Day 25 Completed
+- ✅ Day 26 Completed
+- ✅ Day 27 Completed
+- ✅ Day 28 Completed
+- ✅ Day 29 Completed
+- ✅ Day 30 Completed
+- ✅ Day 31 Completed
+- ✅ Day 32 Completed
+- ✅ Day 33 Completed
+- ✅ Day 34 Completed
+- ✅ Day 35 Completed
+- ✅ Day 36 Completed
+- ✅ Day 37 Completed
+- ✅ Day 38 Completed
+- ✅ Day 39 Completed
+- ✅ Day 40 Completed
+- ✅ Day 41 Completed
+- ✅ Day 42 Completed
+- ✅ Day 43 Completed
+- ✅ Day 44 Completed
+- ✅ Day 45 Completed 🎉🔥
+- ⏳ Day 46 → Day 100 Continuing...
 
 ---
 
@@ -734,30 +762,31 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **44 / 100** |
-| 💻 Challenges Solved | **44** |
+| 📅 Days Completed | **45 / 100** |
+| 💻 Challenges Solved | **45** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding & Super Keyword** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Super Keyword & `instanceof`** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
 | 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
 | 🔄 Overriding Concepts | **Method Overriding, Runtime Polymorphism, Dynamic Method Dispatch & `super`** |
-| 📈 Progress | **44% Complete** 🚀 |
-| 🔥 Current Streak | **44 Days** |
-| ⏳ Days Remaining | **56 Days** |
+| 🔍 Type Checking | **`instanceof` Operator & Runtime Type Checking** |
+| 📈 Progress | **45% Complete** 🚀 |
+| 🔥 Current Streak | **45 Days** |
+| ⏳ Days Remaining | **55 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **44 Days of Java Practice Completed! 🎉🔥🚀**
+## **45 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **44 days down, 56 more to go!**
+> **45 days down, 55 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, and Object-Oriented Programming skills.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, `super`, and runtime type checking using `instanceof`.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -771,20 +800,13 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
 | 🎯 Day 30 | ✅ Completed 🎉 |
-| 🎯 Day 31 | ✅ Completed 🎉 |
-| 🎯 Day 32 | ✅ Completed 🎉 |
-| 🎯 Day 33 | ✅ Completed 🎉🔥 |
-| 🎯 Day 34 | ✅ Completed 🎉🔥 |
-| 🎯 Day 35 | ✅ Completed 🎉🔥🧬 |
-| 🎯 Day 36 | ✅ Completed 🎉🔥⚖️ |
-| 🎯 Day 37 | ✅ Completed 🎉🔥🚀 |
-| 🎯 Day 38 | ✅ Completed 🎉🔥🔢 |
-| 🎯 Day 39 | ✅ Completed 🎉🔥🔗 |
-| 🎯 Day 40 | ✅ Completed 🎉🔥🏛️ |
-| 🎯 Day 41 | ✅ Completed 🎉🔥🎭 |
-| 🎯 Day 42 | ✅ Completed 🎉🔥🔌 |
-| 🎯 Day 43 | ✅ Completed 🎉🔥🔄 |
-| 🎯 Day 44 | ✅ Completed 🎉🔥🔑 |
+| 🎯 Day 35 | ✅ Completed 🎉🔥 |
+| 🎯 Day 40 | ✅ Completed 🎉🔥 |
+| 🎯 Day 41 | ✅ Completed 🎉🔥 |
+| 🎯 Day 42 | ✅ Completed 🎉🔥 |
+| 🎯 Day 43 | ✅ Completed 🎉🔥 |
+| 🎯 Day 44 | ✅ Completed 🎉🔥 |
+| 🎯 Day 45 | ✅ Completed 🎉🔥🔍 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -793,33 +815,26 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 # 📊 Progress Tracker
 
-    Day 1      ████████████████████ 100% ✅
-    Day 10     ████████████████████ 100% ✅
-    Day 20     ████████████████████ 100% ✅
-    Day 30     ████████████████████ 100% ✅
-    Day 31     ████████████████████ 100% ✅
-    Day 32     ████████████████████ 100% ✅
-    Day 33     ████████████████████ 100% ✅
-    Day 34     ████████████████████ 100% ✅
-    Day 35     ████████████████████ 100% ✅
-    Day 36     ████████████████████ 100% ✅
-    Day 37     ████████████████████ 100% ✅
-    Day 38     ████████████████████ 100% ✅
-    Day 39     ████████████████████ 100% ✅
-    Day 40     ████████████████████ 100% ✅
-    Day 41     ████████████████████ 100% ✅
-    Day 42     ████████████████████ 100% ✅
-    Day 43     ████████████████████ 100% ✅
-    Day 44     ████████████████████ 100% ✅
-    Day 50     █████████░░░░░░░░░░░  44% ⏳
-    Day 75     █████████░░░░░░░░░░░  44% ⏳
-    Day 100    █████████░░░░░░░░░░░  44% ⏳
+    Day 1       ████████████████████ 100% ✅
+    Day 10      ████████████████████ 100% ✅
+    Day 20      ████████████████████ 100% ✅
+    Day 30      ████████████████████ 100% ✅
+    Day 35      ████████████████████ 100% ✅
+    Day 40      ████████████████████ 100% ✅
+    Day 41      ████████████████████ 100% ✅
+    Day 42      ████████████████████ 100% ✅
+    Day 43      ████████████████████ 100% ✅
+    Day 44      ████████████████████ 100% ✅
+    Day 45      ████████████████████ 100% ✅
+    Day 50      █████████░░░░░░░░░░░  45% ⏳
+    Day 75      █████████░░░░░░░░░░░  45% ⏳
+    Day 100     █████████░░░░░░░░░░░  45% ⏳
 
 ## 🚀 Overall Progress
 
-    [█████████░░░░░░░░░░░] 44%
+    [█████████░░░░░░░░░░░] 45%
 
-**44 / 100 Days Completed**
+**45 / 100 Days Completed**
 
 ---
 
@@ -861,6 +876,7 @@ It is also about:
 - 🔌 Understanding Interfaces and Polymorphism
 - 🔄 Understanding Method Overriding
 - 🔑 Understanding the `super` keyword
+- 🔍 Understanding runtime type checking with `instanceof`
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -903,6 +919,7 @@ Every challenge helps me improve my:
 - 🔄 Method Overriding
 - 🔑 Superclass Method Access
 - 🧩 Polymorphism
+- 🔍 Runtime Type Checking
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -988,7 +1005,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#RuntimePolymorphism` `#CodeReusability` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#Instanceof` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#OpenToWork`
 
 ---
 
@@ -998,6 +1015,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**44 Days Completed ✅ | 56 Days Remaining ⏳ | 100 Days Goal 🎯**
+**45 Days Completed ✅ | 55 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑⚖️🧬🔀🔢🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍⚖️🧬🔀🔢🚀**
