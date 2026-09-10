@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super` keyword, `instanceof` operator, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super` keyword, `instanceof` operator, Iterator, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -25,6 +25,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔌 Understand Java Interfaces and polymorphism.
 - 🔄 Understand Method Overriding and Runtime Polymorphism.
 - 🔍 Understand object type checking using the `instanceof` operator.
+- 🔁 Learn how to use the Java `Iterator` interface.
+- 🧭 Understand collection traversal using `Iterator`.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -44,6 +46,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔄 Method Overriding
 - 🧩 Polymorphism
 - 🔍 `instanceof` Operator
+- 🔁 Iterator
+- 📦 Collection Framework
+- 📋 List
+- 📦 ArrayList
 - 🔤 String Handling
 - 🔍 Regular Expressions
 - 🔢 BigDecimal
@@ -53,8 +59,6 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔗 Subarrays
 - 🔄 Recursion
 - 🔙 Backtracking
-- 📋 Java List
-- 📦 ArrayList
 - 🗺️ Map
 - 🔑 HashMap
 - 🗂️ Stack
@@ -71,10 +75,6 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 # 📂 Repository Structure
 
-````markdown
-## 📂 Repository Structure
-
-```text
 100-Days-of-Java-Challenge/
 │
 ├── 📁 Day-01/
@@ -213,12 +213,13 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Instanceof keyword.java
 │   └── Screenshot 2026-09-09 095507.png
 │
+├── 📁 Day-46/
+│   ├── Java Iterator.java
+│   └── Screenshot 2026-09-10 182611.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
-````
-
-
 
 ---
 
@@ -271,8 +272,85 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 43 | Java Method Overriding | Completed |
 | ✅ Day 44 | Java Method Overriding 2 (Super Keyword) | Completed |
 | ✅ Day 45 | Java Instanceof Keyword | Completed 🎉 |
-| ⏳ Day 46–99 | Upcoming Challenges | Pending |
+| ✅ Day 46 | Java Iterator | Completed 🎉🔥 |
+| ⏳ Day 47–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 🔁 Day 46 – Java Iterator
+
+## 📚 Challenge
+
+The **Java Iterator** challenge focuses on using the `Iterator` interface to traverse elements of an `ArrayList`.
+
+The `ArrayList` contains one or more integer values followed by a special string:
+
+`###`
+
+After the special string, additional string values are present.
+
+The task is to modify the `func()` method so that the iterator stops when it encounters the first `String` element and returns the iterator positioned immediately after `"###"`.
+
+The remaining elements are then printed using the returned iterator.
+
+## 💡 Concepts Practiced
+
+- ✅ `Iterator` Interface
+- ✅ `ArrayList`
+- ✅ `hasNext()`
+- ✅ `next()`
+- ✅ `instanceof` Operator
+- ✅ Object Type Checking
+- ✅ Collection Traversal
+- ✅ Runtime Type Identification
+- ✅ Working with `ArrayList`
+- ✅ Iterating through mixed-type collections
+- ✅ Breaking an iteration at a specific element
+
+## 🧠 Key Logic
+
+The important part of the solution is:
+
+`Object element = it.next();`
+
+`if (element instanceof String)`
+
+When the iterator reaches the special `"###"` string, the loop stops.
+
+The returned iterator is already positioned after `"###"`, allowing the remaining string elements to be printed.
+
+## 📌 Example
+
+Input elements:
+
+42
+10
+###
+Hello
+Java
+
+Iterator traversal:
+
+42 → Integer → Continue
+10 → Integer → Continue
+### → String → Break
+
+Remaining elements:
+
+Hello
+Java
+
+Output:
+
+Hello
+Java
+
+## 🎯 What I Learned
+
+Through this challenge, I learned how Java's `Iterator` can be used to traverse a collection and how the `instanceof` operator can identify the type of an object at runtime.
+
+This challenge also helped me understand how an iterator maintains its current position while traversing an `ArrayList`.
 
 ---
 
@@ -306,15 +384,12 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ✅ Method Inheritance
 - ✅ Code Reusability
 - ✅ Superclass and Subclass
-- ✅ Method Reuse
-- ✅ Inherited Methods
 - ✅ Abstract Classes
 - ✅ Abstract Methods
 - ✅ `abstract` Keyword
 - ✅ Method Overriding
 - ✅ `@Override` Annotation
 - ✅ `super` Keyword
-- ✅ Calling Superclass Methods
 - ✅ Interfaces
 - ✅ Interface Implementation
 - ✅ `implements` Keyword
@@ -356,6 +431,38 @@ The solution checks whether each object is an instance of:
 - `Hacker`
 
 and counts the number of objects belonging to each class.
+
+---
+
+# 🔁 Java Iterator
+
+The Java `Iterator` interface provides a way to traverse elements of a collection one by one.
+
+### Concepts Practiced
+
+- ✅ `Iterator` Interface
+- ✅ `iterator()`
+- ✅ `hasNext()`
+- ✅ `next()`
+- ✅ `ArrayList` Traversal
+- ✅ Collection Traversal
+- ✅ Object Type Checking
+- ✅ `instanceof`
+- ✅ Mixed-Type Collections
+- ✅ Iterator Position
+- ✅ Breaking Iteration
+- ✅ Processing Remaining Elements
+- ✅ ArrayList Iterator
+
+### Day 46 Challenge
+
+The Day 46 challenge demonstrates how an `Iterator` can be used to traverse an `ArrayList` containing integers and strings.
+
+The iterator identifies the first `String` element using:
+
+`element instanceof String`
+
+When the special `"###"` string is reached, the loop stops and the remaining string elements are printed.
 
 ---
 
@@ -477,6 +584,25 @@ and counts the number of objects belonging to each class.
 - ✅ Processing Multiple Queries
 - ✅ Dynamic List Operations
 - ✅ Collection-Based Problem Solving
+- ✅ Iterator-Based Traversal
+
+---
+
+# 🔁 Java Iterator Concepts
+
+- ✅ `Iterator` Interface
+- ✅ `iterator()` Method
+- ✅ `hasNext()` Method
+- ✅ `next()` Method
+- ✅ Traversing Collections
+- ✅ Accessing Collection Elements
+- ✅ Maintaining Iterator Position
+- ✅ Detecting Object Types
+- ✅ `instanceof` with Iterator
+- ✅ Breaking Collection Traversal
+- ✅ Processing Remaining Elements
+- ✅ ArrayList Iterator
+- ✅ Mixed-Type ArrayList
 
 ---
 
@@ -661,6 +787,9 @@ and counts the number of objects belonging to each class.
 - 🧩 Polymorphism
 - 🔑 `super` Keyword
 - 🔍 `instanceof` Operator
+- 🔁 Iterator
+- 📦 Collection Framework
+- 📋 ArrayList
 - 🧩 Problem Solving
 - 🧠 Logical Thinking
 - 🔤 String Handling
@@ -703,7 +832,6 @@ and counts the number of objects belonging to each class.
 - 🔌 Interface Implementation
 - 🔄 Interface-Based Polymorphism
 - ⚡ Runtime Method Dispatch
-- 🎯 Technical Interview Preparation
 
 ---
 
@@ -753,8 +881,9 @@ and counts the number of objects belonging to each class.
 - ✅ Day 42 Completed
 - ✅ Day 43 Completed
 - ✅ Day 44 Completed
-- ✅ Day 45 Completed 🎉🔥
-- ⏳ Day 46 → Day 100 Continuing...
+- ✅ Day 45 Completed 🎉
+- ✅ Day 46 Completed 🎉🔥
+- ⏳ Day 47 → Day 100 Continuing...
 
 ---
 
@@ -762,11 +891,11 @@ and counts the number of objects belonging to each class.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **45 / 100** |
-| 💻 Challenges Solved | **45** |
+| 📅 Days Completed | **46 / 100** |
+| 💻 Challenges Solved | **46** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Super Keyword & `instanceof`** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Super Keyword, `instanceof` & Iterator** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
@@ -774,19 +903,20 @@ and counts the number of objects belonging to each class.
 | 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
 | 🔄 Overriding Concepts | **Method Overriding, Runtime Polymorphism, Dynamic Method Dispatch & `super`** |
 | 🔍 Type Checking | **`instanceof` Operator & Runtime Type Checking** |
-| 📈 Progress | **45% Complete** 🚀 |
-| 🔥 Current Streak | **45 Days** |
-| ⏳ Days Remaining | **55 Days** |
+| 🔁 Collection Traversal | **Iterator, `hasNext()`, `next()` & ArrayList Traversal** |
+| 📈 Progress | **46% Complete** 🚀 |
+| 🔥 Current Streak | **46 Days** |
+| ⏳ Days Remaining | **54 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **45 Days of Java Practice Completed! 🎉🔥🚀**
+## **46 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **45 days down, 55 more to go!**
+> **46 days down, 54 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, `super`, and runtime type checking using `instanceof`.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, `super`, runtime type checking using `instanceof`, and collection traversal using `Iterator`.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -807,6 +937,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 43 | ✅ Completed 🎉🔥 |
 | 🎯 Day 44 | ✅ Completed 🎉🔥 |
 | 🎯 Day 45 | ✅ Completed 🎉🔥🔍 |
+| 🎯 Day 46 | ✅ Completed 🎉🔥🔁 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -815,26 +946,27 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 # 📊 Progress Tracker
 
-    Day 1       ████████████████████ 100% ✅
-    Day 10      ████████████████████ 100% ✅
-    Day 20      ████████████████████ 100% ✅
-    Day 30      ████████████████████ 100% ✅
-    Day 35      ████████████████████ 100% ✅
-    Day 40      ████████████████████ 100% ✅
-    Day 41      ████████████████████ 100% ✅
-    Day 42      ████████████████████ 100% ✅
-    Day 43      ████████████████████ 100% ✅
-    Day 44      ████████████████████ 100% ✅
-    Day 45      ████████████████████ 100% ✅
-    Day 50      █████████░░░░░░░░░░░  45% ⏳
-    Day 75      █████████░░░░░░░░░░░  45% ⏳
-    Day 100     █████████░░░░░░░░░░░  45% ⏳
+Day 1       ████████████████████ 100% ✅
+Day 10      ████████████████████ 100% ✅
+Day 20      ████████████████████ 100% ✅
+Day 30      ████████████████████ 100% ✅
+Day 35      ████████████████████ 100% ✅
+Day 40      ████████████████████ 100% ✅
+Day 41      ████████████████████ 100% ✅
+Day 42      ████████████████████ 100% ✅
+Day 43      ████████████████████ 100% ✅
+Day 44      ████████████████████ 100% ✅
+Day 45      ████████████████████ 100% ✅
+Day 46      ████████████████████ 100% ✅
+Day 50      █████████░░░░░░░░░░░  46% ⏳
+Day 75      █████████░░░░░░░░░░░  46% ⏳
+Day 100     █████████░░░░░░░░░░░  46% ⏳
 
 ## 🚀 Overall Progress
 
-    [█████████░░░░░░░░░░░] 45%
+[█████████░░░░░░░░░░░] 46%
 
-**45 / 100 Days Completed**
+**46 / 100 Days Completed**
 
 ---
 
@@ -877,6 +1009,7 @@ It is also about:
 - 🔄 Understanding Method Overriding
 - 🔑 Understanding the `super` keyword
 - 🔍 Understanding runtime type checking with `instanceof`
+- 🔁 Understanding collection traversal with `Iterator`
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -920,21 +1053,11 @@ Every challenge helps me improve my:
 - 🔑 Superclass Method Access
 - 🧩 Polymorphism
 - 🔍 Runtime Type Checking
+- 🔁 Iterator-Based Collection Traversal
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
 - 🛡️ Type-Safe Programming
-- 🔀 Multi-Level Sorting
-- ⚖️ Object Comparison
-- 🏛️ Superclass and Subclass Concepts
-- 🔗 Method Reuse
-- 🧩 Inherited Methods
-- 🎭 Abstract Classes
-- 🧱 Abstract Methods
-- 🛠️ Method Overriding
-- 🔌 Interface Implementation
-- 🔄 Interface-Based Polymorphism
-- ⚡ Runtime Method Dispatch
 
 ---
 
@@ -955,6 +1078,7 @@ The upcoming days will focus on more Java concepts, including:
 - 🔹 Queue
 - 🔹 Generics
 - 🔹 Comparator
+- 🔹 Iterator
 - 🔹 File Handling
 - 🔹 Multithreading
 - 🔹 Java 8 Features
@@ -1005,7 +1129,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#Instanceof` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#OpenToWork`
 
 ---
 
@@ -1015,6 +1139,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**45 Days Completed ✅ | 55 Days Remaining ⏳ | 100 Days Goal 🎯**
+**46 Days Completed ✅ | 54 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍⚖️🧬🔀🔢🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁⚖️🧬🔀🔢🚀**
