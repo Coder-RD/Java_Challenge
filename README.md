@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super` keyword, `instanceof` operator, Iterator, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -27,6 +27,11 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔍 Understand object type checking using the `instanceof` operator.
 - 🔁 Learn how to use the Java `Iterator` interface.
 - 🧭 Understand collection traversal using `Iterator`.
+- 🛡️ Learn Java Exception Handling.
+- 🔄 Understand `try-catch` blocks.
+- ⚠️ Handle runtime exceptions safely.
+- 🎯 Understand `InputMismatchException`.
+- ➗ Understand `ArithmeticException`.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -47,6 +52,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🧩 Polymorphism
 - 🔍 `instanceof` Operator
 - 🔁 Iterator
+- 🛡️ Exception Handling
+- 🔄 Try-Catch
 - 📦 Collection Framework
 - 📋 List
 - 📦 ArrayList
@@ -217,6 +224,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Iterator.java
 │   └── Screenshot 2026-09-10 182611.png
 │
+├── 📁 Day-47/
+│   ├── Java Exception Handling (Try-catch).java
+│   └── Screenshot 2026-09-11 152427.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -273,84 +284,110 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 44 | Java Method Overriding 2 (Super Keyword) | Completed |
 | ✅ Day 45 | Java Instanceof Keyword | Completed 🎉 |
 | ✅ Day 46 | Java Iterator | Completed 🎉🔥 |
-| ⏳ Day 47–99 | Upcoming Challenges | Pending |
+| ✅ Day 47 | Java Exception Handling (Try-Catch) | Completed 🎉🔥🛡️ |
+| ⏳ Day 48–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
 
-# 🔁 Day 46 – Java Iterator
+# 🛡️ Day 47 – Java Exception Handling (Try-Catch)
 
 ## 📚 Challenge
 
-The **Java Iterator** challenge focuses on using the `Iterator` interface to traverse elements of an `ArrayList`.
+The **Java Exception Handling (Try-Catch)** challenge focuses on handling runtime exceptions while taking integer input from the user.
 
-The `ArrayList` contains one or more integer values followed by a special string:
+The program reads two integers and performs division.
 
-`###`
+Different types of invalid input are handled using Java exception handling:
 
-After the special string, additional string values are present.
+- `InputMismatchException` when the input is not a valid 32-bit signed integer.
+- `ArithmeticException` when the second number is zero and division by zero occurs.
 
-The task is to modify the `func()` method so that the iterator stops when it encounters the first `String` element and returns the iterator positioned immediately after `"###"`.
-
-The remaining elements are then printed using the returned iterator.
+The program uses `try-catch` blocks to prevent the program from terminating unexpectedly and displays the appropriate exception message.
 
 ## 💡 Concepts Practiced
 
-- ✅ `Iterator` Interface
-- ✅ `ArrayList`
-- ✅ `hasNext()`
-- ✅ `next()`
-- ✅ `instanceof` Operator
-- ✅ Object Type Checking
-- ✅ Collection Traversal
-- ✅ Runtime Type Identification
-- ✅ Working with `ArrayList`
-- ✅ Iterating through mixed-type collections
-- ✅ Breaking an iteration at a specific element
+- ✅ Exception Handling
+- ✅ `try` Block
+- ✅ `catch` Block
+- ✅ `InputMismatchException`
+- ✅ `ArithmeticException`
+- ✅ Integer Input
+- ✅ `Scanner`
+- ✅ Division Operation
+- ✅ Handling Invalid Input
+- ✅ Handling Division by Zero
+- ✅ Runtime Exception Handling
+- ✅ Multiple `catch` Blocks
+- ✅ Exception Flow
+- ✅ Error Handling
+- ✅ Preventing Program Termination
 
 ## 🧠 Key Logic
 
-The important part of the solution is:
+The program reads two integer values using `Scanner`.
 
-`Object element = it.next();`
+The division operation is performed inside a `try` block.
 
-`if (element instanceof String)`
+If the input is not a valid integer, Java throws:
 
-When the iterator reaches the special `"###"` string, the loop stops.
+`java.util.InputMismatchException`
 
-The returned iterator is already positioned after `"###"`, allowing the remaining string elements to be printed.
+If the second integer is zero, Java throws:
+
+`java.lang.ArithmeticException: / by zero`
+
+The corresponding `catch` blocks handle these exceptions and print the required messages.
 
 ## 📌 Example
 
-Input elements:
+### Valid Input
 
-42
-10
-###
-Hello
-Java
+Input:
 
-Iterator traversal:
-
-42 → Integer → Continue
-10 → Integer → Continue
-### → String → Break
-
-Remaining elements:
-
-Hello
-Java
+10 3
 
 Output:
 
-Hello
-Java
+3
+
+### Invalid Integer Input
+
+Input:
+
+10 Hello
+
+Output:
+
+java.util.InputMismatchException
+
+### Division by Zero
+
+Input:
+
+10 0
+
+Output:
+
+java.lang.ArithmeticException: / by zero
+
+### Decimal Input
+
+Input:
+
+23.323 0
+
+Output:
+
+java.util.InputMismatchException
 
 ## 🎯 What I Learned
 
-Through this challenge, I learned how Java's `Iterator` can be used to traverse a collection and how the `instanceof` operator can identify the type of an object at runtime.
+Through this challenge, I learned how Java exception handling allows a program to handle unexpected situations without abruptly terminating.
 
-This challenge also helped me understand how an iterator maintains its current position while traversing an `ArrayList`.
+I practiced using `try-catch`, handling multiple exception types, working with `Scanner`, identifying invalid input, and handling division-by-zero errors.
+
+This challenge improved my understanding of **runtime exception handling and defensive programming in Java**.
 
 ---
 
@@ -400,6 +437,40 @@ This challenge also helped me understand how an iterator maintains its current p
 - ✅ Runtime Type Checking
 - ⏳ Encapsulation
 - ⏳ Advanced Polymorphism Concepts
+
+---
+
+# 🛡️ Java Exception Handling
+
+Exception handling is used to handle unexpected situations and runtime errors in Java programs.
+
+### Concepts Practiced
+
+- ✅ Exception Handling
+- ✅ `try` Block
+- ✅ `catch` Block
+- ✅ Multiple `catch` Blocks
+- ✅ `InputMismatchException`
+- ✅ `ArithmeticException`
+- ✅ Runtime Exceptions
+- ✅ Invalid Input Handling
+- ✅ Division by Zero
+- ✅ Exception Flow
+- ✅ Error Handling
+- ✅ `Scanner` Input Handling
+- ✅ Preventing Program Termination
+- ✅ Defensive Programming
+
+### Day 47 Challenge
+
+The Day 47 challenge demonstrates how Java can handle different runtime exceptions using `try-catch`.
+
+The program performs integer division and handles:
+
+- Invalid integer input using `InputMismatchException`
+- Division by zero using `ArithmeticException`
+
+This challenge provides practical experience with Java's exception-handling mechanism.
 
 ---
 
@@ -788,6 +859,11 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - 🔑 `super` Keyword
 - 🔍 `instanceof` Operator
 - 🔁 Iterator
+- 🛡️ Exception Handling
+- 🔄 Try-Catch
+- ⚠️ Runtime Exception Handling
+- 🚨 InputMismatchException
+- ➗ ArithmeticException
 - 📦 Collection Framework
 - 📋 ArrayList
 - 🧩 Problem Solving
@@ -883,7 +959,8 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ Day 44 Completed
 - ✅ Day 45 Completed 🎉
 - ✅ Day 46 Completed 🎉🔥
-- ⏳ Day 47 → Day 100 Continuing...
+- ✅ Day 47 Completed 🎉🔥🛡️
+- ⏳ Day 48 → Day 100 Continuing...
 
 ---
 
@@ -891,32 +968,33 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **46 / 100** |
-| 💻 Challenges Solved | **46** |
+| 📅 Days Completed | **47 / 100** |
+| 💻 Challenges Solved | **47** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Super Keyword, `instanceof` & Iterator** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super`, `instanceof`, Iterator & Exception Handling** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
-| 🧬 Advanced Concepts | **Generics, Regex, BigInteger & BigDecimal** |
+| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal & Exception Handling** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
 | 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
 | 🔄 Overriding Concepts | **Method Overriding, Runtime Polymorphism, Dynamic Method Dispatch & `super`** |
 | 🔍 Type Checking | **`instanceof` Operator & Runtime Type Checking** |
 | 🔁 Collection Traversal | **Iterator, `hasNext()`, `next()` & ArrayList Traversal** |
-| 📈 Progress | **46% Complete** 🚀 |
-| 🔥 Current Streak | **46 Days** |
-| ⏳ Days Remaining | **54 Days** |
+| 🛡️ Exception Handling | **Try-Catch, InputMismatchException & ArithmeticException** |
+| 📈 Progress | **47% Complete** 🚀 |
+| 🔥 Current Streak | **47 Days** |
+| ⏳ Days Remaining | **53 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **46 Days of Java Practice Completed! 🎉🔥🚀**
+## **47 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **46 days down, 54 more to go!**
+> **47 days down, 53 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, `super`, runtime type checking using `instanceof`, and collection traversal using `Iterator`.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, and exception handling using `try-catch`.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -938,6 +1016,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 44 | ✅ Completed 🎉🔥 |
 | 🎯 Day 45 | ✅ Completed 🎉🔥🔍 |
 | 🎯 Day 46 | ✅ Completed 🎉🔥🔁 |
+| 🎯 Day 47 | ✅ Completed 🎉🔥🛡️ |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -958,15 +1037,16 @@ Day 43      ████████████████████ 100% �
 Day 44      ████████████████████ 100% ✅
 Day 45      ████████████████████ 100% ✅
 Day 46      ████████████████████ 100% ✅
-Day 50      █████████░░░░░░░░░░░  46% ⏳
-Day 75      █████████░░░░░░░░░░░  46% ⏳
-Day 100     █████████░░░░░░░░░░░  46% ⏳
+Day 47      ████████████████████ 100% ✅
+Day 50      █████████░░░░░░░░░░░  47% ⏳
+Day 75      █████████░░░░░░░░░░░  47% ⏳
+Day 100     █████████░░░░░░░░░░░  47% ⏳
 
 ## 🚀 Overall Progress
 
-[█████████░░░░░░░░░░░] 46%
+[█████████░░░░░░░░░░░] 47%
 
-**46 / 100 Days Completed**
+**47 / 100 Days Completed**
 
 ---
 
@@ -1010,6 +1090,9 @@ It is also about:
 - 🔑 Understanding the `super` keyword
 - 🔍 Understanding runtime type checking with `instanceof`
 - 🔁 Understanding collection traversal with `Iterator`
+- 🛡️ Understanding Java Exception Handling
+- 🔄 Understanding `try-catch`
+- ⚠️ Handling runtime exceptions
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1054,6 +1137,9 @@ Every challenge helps me improve my:
 - 🧩 Polymorphism
 - 🔍 Runtime Type Checking
 - 🔁 Iterator-Based Collection Traversal
+- 🛡️ Exception Handling
+- 🔄 Try-Catch Based Error Handling
+- ⚠️ Runtime Exception Management
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1129,7 +1215,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#OpenToWork`
 
 ---
 
@@ -1139,6 +1225,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**46 Days Completed ✅ | 54 Days Remaining ⏳ | 100 Days Goal 🎯**
+**47 Days Completed ✅ | 53 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁⚖️🧬🔀🔢🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢🚀**
