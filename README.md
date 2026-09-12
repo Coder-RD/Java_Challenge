@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -32,6 +32,9 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ⚠️ Handle runtime exceptions safely.
 - 🎯 Understand `InputMismatchException`.
 - ➗ Understand `ArithmeticException`.
+- 🚨 Understand custom exception handling.
+- 🧮 Implement power calculation using Java methods.
+- 🧾 Understand `throw` and `throws`.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -54,6 +57,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔁 Iterator
 - 🛡️ Exception Handling
 - 🔄 Try-Catch
+- 🚨 Custom Exceptions
+- 🧾 `throw`
+- 🧾 `throws`
+- 🧮 Power Calculation
 - 📦 Collection Framework
 - 📋 List
 - 📦 ArrayList
@@ -228,6 +235,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Exception Handling (Try-catch).java
 │   └── Screenshot 2026-09-11 152427.png
 │
+├── 📁 Day-48/
+│   ├── Java Exception Handling.java
+│   └── Screenshot 2026-09-12 143319.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -285,59 +296,65 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 45 | Java Instanceof Keyword | Completed 🎉 |
 | ✅ Day 46 | Java Iterator | Completed 🎉🔥 |
 | ✅ Day 47 | Java Exception Handling (Try-Catch) | Completed 🎉🔥🛡️ |
-| ⏳ Day 48–99 | Upcoming Challenges | Pending |
+| ✅ Day 48 | Java Exception Handling – Power Calculator | Completed 🎉🔥⚡ |
+| ⏳ Day 49–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
 
-# 🛡️ Day 47 – Java Exception Handling (Try-Catch)
+# ⚡ Day 48 – Java Exception Handling – Power Calculator
 
 ## 📚 Challenge
 
-The **Java Exception Handling (Try-Catch)** challenge focuses on handling runtime exceptions while taking integer input from the user.
+The **Java Exception Handling** challenge focuses on creating a calculator that computes the power of a number while handling invalid input conditions using exceptions.
 
-The program reads two integers and performs division.
+The program implements a `MyCalculator` class containing a method:
 
-Different types of invalid input are handled using Java exception handling:
+`long power(int n, int p)`
 
-- `InputMismatchException` when the input is not a valid 32-bit signed integer.
-- `ArithmeticException` when the second number is zero and division by zero occurs.
+The method calculates `n` raised to the power `p`.
 
-The program uses `try-catch` blocks to prevent the program from terminating unexpectedly and displays the appropriate exception message.
+The program must handle invalid values using custom exception messages.
 
 ## 💡 Concepts Practiced
 
 - ✅ Exception Handling
-- ✅ `try` Block
-- ✅ `catch` Block
-- ✅ `InputMismatchException`
-- ✅ `ArithmeticException`
+- ✅ `try-catch`
+- ✅ `throw`
+- ✅ `throws`
+- ✅ Custom Exception Messages
+- ✅ Method Implementation
+- ✅ Power Calculation
+- ✅ `Math.pow()`
+- ✅ Negative Number Validation
+- ✅ Zero Value Validation
 - ✅ Integer Input
-- ✅ `Scanner`
-- ✅ Division Operation
-- ✅ Handling Invalid Input
-- ✅ Handling Division by Zero
-- ✅ Runtime Exception Handling
-- ✅ Multiple `catch` Blocks
+- ✅ Type Conversion
 - ✅ Exception Flow
 - ✅ Error Handling
-- ✅ Preventing Program Termination
 
 ## 🧠 Key Logic
 
-The program reads two integer values using `Scanner`.
+The `power()` method receives two integer values:
 
-The division operation is performed inside a `try` block.
+- `n` → Base number
+- `p` → Power/exponent
 
-If the input is not a valid integer, Java throws:
+The method first checks whether either value is negative.
 
-`java.util.InputMismatchException`
+If `n` or `p` is negative, it throws:
 
-If the second integer is zero, Java throws:
+`n or p should not be negative.`
 
-`java.lang.ArithmeticException: / by zero`
+If both `n` and `p` are zero, it throws:
 
-The corresponding `catch` blocks handle these exceptions and print the required messages.
+`n and p should not be zero.`
+
+Otherwise, the method calculates:
+
+`n^p`
+
+and returns the result as a `long`.
 
 ## 📌 Example
 
@@ -345,98 +362,59 @@ The corresponding `catch` blocks handle these exceptions and print the required 
 
 Input:
 
-10 3
+3 5
 
 Output:
 
-3
+243
 
-### Invalid Integer Input
+### Another Valid Input
 
 Input:
 
-10 Hello
+2 4
 
 Output:
 
-java.util.InputMismatchException
+16
 
-### Division by Zero
+### Both Values Are Zero
 
 Input:
 
-10 0
+0 0
 
 Output:
 
-java.lang.ArithmeticException: / by zero
+java.lang.Exception: n and p should not be zero.
 
-### Decimal Input
+### Negative Values
 
 Input:
 
-23.323 0
+-1 -2
 
 Output:
 
-java.util.InputMismatchException
+java.lang.Exception: n or p should not be negative.
 
 ## 🎯 What I Learned
 
-Through this challenge, I learned how Java exception handling allows a program to handle unexpected situations without abruptly terminating.
+Through this challenge, I learned how Java exceptions can be used to validate input and handle invalid conditions.
 
-I practiced using `try-catch`, handling multiple exception types, working with `Scanner`, identifying invalid input, and handling division-by-zero errors.
+I practiced creating a method that throws exceptions when invalid values are provided and returning the correct result when valid values are entered.
 
-This challenge improved my understanding of **runtime exception handling and defensive programming in Java**.
+This challenge improved my understanding of:
 
----
+- Exception handling
+- Custom exception messages
+- `throw` and `throws`
+- Method implementation
+- Input validation
+- Power calculation
+- Defensive programming
 
-# 📖 Topics Covered
-
-## ☕ Java Fundamentals
-
-- ✅ Java Basics
-- ✅ Variables and Data Types
-- ✅ Conditional Statements
-- ✅ Loops
-- ✅ Arrays
-- ✅ Strings
-- ✅ String Manipulation
-- ✅ Input Handling
-- ✅ Problem Solving
-- ✅ Logical Thinking
-- ✅ Algorithmic Thinking
-
----
-
-# 🏛️ Object-Oriented Programming
-
-- ✅ Classes and Objects
-- ✅ Object Creation
-- ✅ Methods
-- ✅ Inheritance
-- ✅ Parent Class
-- ✅ Child Class
-- ✅ `extends` Keyword
-- ✅ Method Inheritance
-- ✅ Code Reusability
-- ✅ Superclass and Subclass
-- ✅ Abstract Classes
-- ✅ Abstract Methods
-- ✅ `abstract` Keyword
-- ✅ Method Overriding
-- ✅ `@Override` Annotation
-- ✅ `super` Keyword
-- ✅ Interfaces
-- ✅ Interface Implementation
-- ✅ `implements` Keyword
-- ✅ Polymorphism
-- ✅ Runtime Polymorphism
-- ✅ Dynamic Method Dispatch
-- ✅ `instanceof` Operator
-- ✅ Runtime Type Checking
-- ⏳ Encapsulation
-- ⏳ Advanced Polymorphism Concepts
+It also strengthened my understanding of how exceptions can make Java programs more reliable and easier to manage.
 
 ---
 
@@ -460,6 +438,10 @@ Exception handling is used to handle unexpected situations and runtime errors in
 - ✅ `Scanner` Input Handling
 - ✅ Preventing Program Termination
 - ✅ Defensive Programming
+- ✅ `throw`
+- ✅ `throws`
+- ✅ Custom Exception Messages
+- ✅ Input Validation
 
 ### Day 47 Challenge
 
@@ -470,7 +452,15 @@ The program performs integer division and handles:
 - Invalid integer input using `InputMismatchException`
 - Division by zero using `ArithmeticException`
 
-This challenge provides practical experience with Java's exception-handling mechanism.
+### Day 48 Challenge
+
+The Day 48 challenge demonstrates how Java exceptions can be used to validate input values in a power calculator.
+
+The program handles:
+
+- Negative values using a custom exception message
+- Both values being zero using a custom exception message
+- Valid values using power calculation
 
 ---
 
@@ -844,6 +834,28 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ BigInteger Multiplication
 - ✅ Handling Extremely Large Integers
 - ✅ Divisor Calculation
+- ✅ Power Calculation
+- ✅ Numeric Validation
+
+---
+
+# 🛡️ Exception & Error Handling
+
+- ✅ Exception Handling
+- ✅ `try-catch`
+- ✅ `throw`
+- ✅ `throws`
+- ✅ Custom Exception Messages
+- ✅ Runtime Exceptions
+- ✅ `InputMismatchException`
+- ✅ `ArithmeticException`
+- ✅ Input Validation
+- ✅ Division by Zero Handling
+- ✅ Negative Input Handling
+- ✅ Zero Input Validation
+- ✅ Exception Flow
+- ✅ Defensive Programming
+- ✅ Error Handling
 
 ---
 
@@ -861,9 +873,12 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - 🔁 Iterator
 - 🛡️ Exception Handling
 - 🔄 Try-Catch
+- 🚨 Custom Exceptions
+- 🧾 `throw` and `throws`
+- 🧮 Power Calculation
 - ⚠️ Runtime Exception Handling
-- 🚨 InputMismatchException
-- ➗ ArithmeticException
+- 🚨 `InputMismatchException`
+- ➗ `ArithmeticException`
 - 📦 Collection Framework
 - 📋 ArrayList
 - 🧩 Problem Solving
@@ -960,7 +975,8 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ Day 45 Completed 🎉
 - ✅ Day 46 Completed 🎉🔥
 - ✅ Day 47 Completed 🎉🔥🛡️
-- ⏳ Day 48 → Day 100 Continuing...
+- ✅ Day 48 Completed 🎉🔥⚡
+- ⏳ Day 49 → Day 100 Continuing...
 
 ---
 
@@ -968,8 +984,8 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **47 / 100** |
-| 💻 Challenges Solved | **47** |
+| 📅 Days Completed | **48 / 100** |
+| 💻 Challenges Solved | **48** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super`, `instanceof`, Iterator & Exception Handling** |
@@ -981,20 +997,21 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 | 🔄 Overriding Concepts | **Method Overriding, Runtime Polymorphism, Dynamic Method Dispatch & `super`** |
 | 🔍 Type Checking | **`instanceof` Operator & Runtime Type Checking** |
 | 🔁 Collection Traversal | **Iterator, `hasNext()`, `next()` & ArrayList Traversal** |
-| 🛡️ Exception Handling | **Try-Catch, InputMismatchException & ArithmeticException** |
-| 📈 Progress | **47% Complete** 🚀 |
-| 🔥 Current Streak | **47 Days** |
-| ⏳ Days Remaining | **53 Days** |
+| 🛡️ Exception Handling | **Try-Catch, InputMismatchException, ArithmeticException, `throw`, `throws` & Custom Exceptions** |
+| 🧮 Power Calculation | **MyCalculator, `power(int, int)` & Input Validation** |
+| 📈 Progress | **48% Complete** 🚀 |
+| 🔥 Current Streak | **48 Days** |
+| ⏳ Days Remaining | **52 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **47 Days of Java Practice Completed! 🎉🔥🚀**
+## **48 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **47 days down, 53 more to go!**
+> **48 days down, 52 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, and exception handling using `try-catch`.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, and exception handling using `try-catch`, `throw`, and `throws`.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -1017,6 +1034,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 45 | ✅ Completed 🎉🔥🔍 |
 | 🎯 Day 46 | ✅ Completed 🎉🔥🔁 |
 | 🎯 Day 47 | ✅ Completed 🎉🔥🛡️ |
+| 🎯 Day 48 | ✅ Completed 🎉🔥⚡ |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -1038,15 +1056,16 @@ Day 44      ████████████████████ 100% �
 Day 45      ████████████████████ 100% ✅
 Day 46      ████████████████████ 100% ✅
 Day 47      ████████████████████ 100% ✅
-Day 50      █████████░░░░░░░░░░░  47% ⏳
-Day 75      █████████░░░░░░░░░░░  47% ⏳
-Day 100     █████████░░░░░░░░░░░  47% ⏳
+Day 48      ████████████████████ 100% ✅
+Day 50      ██████████░░░░░░░░░░  48% ⏳
+Day 75      ██████████░░░░░░░░░░  48% ⏳
+Day 100     ██████████░░░░░░░░░░  48% ⏳
 
 ## 🚀 Overall Progress
 
-[█████████░░░░░░░░░░░] 47%
+[██████████░░░░░░░░░░░] 48%
 
-**47 / 100 Days Completed**
+**48 / 100 Days Completed**
 
 ---
 
@@ -1093,6 +1112,8 @@ It is also about:
 - 🛡️ Understanding Java Exception Handling
 - 🔄 Understanding `try-catch`
 - ⚠️ Handling runtime exceptions
+- 🧾 Understanding `throw` and `throws`
+- 🧮 Implementing power calculation
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1139,7 +1160,9 @@ Every challenge helps me improve my:
 - 🔁 Iterator-Based Collection Traversal
 - 🛡️ Exception Handling
 - 🔄 Try-Catch Based Error Handling
-- ⚠️ Runtime Exception Management
+- 🚨 Custom Exception Handling
+- 🧾 `throw` and `throws`
+- 🧮 Power Calculation
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1215,7 +1238,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#OpenToWork`
 
 ---
 
@@ -1225,6 +1248,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**47 Days Completed ✅ | 53 Days Remaining ⏳ | 100 Days Goal 🎯**
+**48 Days Completed ✅ | 52 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢🚀**
