@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -24,6 +24,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🎭 Understand Java Abstraction and abstract classes.
 - 🔌 Understand Java Interfaces and polymorphism.
 - 🔄 Understand Method Overriding and Runtime Polymorphism.
+- 🔀 Understand Method Overloading.
 - 🔍 Understand object type checking using the `instanceof` operator.
 - 🔁 Learn how to use the Java `Iterator` interface.
 - 🧭 Understand collection traversal using `Iterator`.
@@ -35,6 +36,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🚨 Understand custom exception handling.
 - 🧮 Implement power calculation using Java methods.
 - 🧾 Understand `throw` and `throws`.
+- 📌 Understand Java Varargs.
+- ➕ Perform operations using variable-length arguments.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -52,6 +55,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🎭 Abstraction
 - 🔌 Interfaces
 - 🔄 Method Overriding
+- 🔀 Method Overloading
 - 🧩 Polymorphism
 - 🔍 `instanceof` Operator
 - 🔁 Iterator
@@ -61,6 +65,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🧾 `throw`
 - 🧾 `throws`
 - 🧮 Power Calculation
+- 📌 Varargs
+- ➕ Variable-Length Arguments
 - 📦 Collection Framework
 - 📋 List
 - 📦 ArrayList
@@ -239,6 +245,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Exception Handling.java
 │   └── Screenshot 2026-09-12 143319.png
 │
+├── 📁 Day-49/
+│   ├── Java Varargs - Simple Addition.java
+│   └── Screenshot 2026-09-13 091213.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -297,124 +307,89 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 46 | Java Iterator | Completed 🎉🔥 |
 | ✅ Day 47 | Java Exception Handling (Try-Catch) | Completed 🎉🔥🛡️ |
 | ✅ Day 48 | Java Exception Handling – Power Calculator | Completed 🎉🔥⚡ |
-| ⏳ Day 49–99 | Upcoming Challenges | Pending |
+| ✅ Day 49 | Java Varargs – Simple Addition | Completed 🎉🔥📌 |
+| ⏳ Day 50–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
 
-# ⚡ Day 48 – Java Exception Handling – Power Calculator
+# 📌 Day 49 – Java Varargs – Simple Addition
 
 ## 📚 Challenge
 
-The **Java Exception Handling** challenge focuses on creating a calculator that computes the power of a number while handling invalid input conditions using exceptions.
+The **Java Varargs – Simple Addition** challenge focuses on using **variable-length arguments** in Java.
 
-The program implements a `MyCalculator` class containing a method:
+Varargs allow a method to accept a variable number of arguments of the same data type.
 
-`long power(int n, int p)`
+In this challenge, overloaded `add()` methods are used to calculate the sum of different numbers of integer arguments.
 
-The method calculates `n` raised to the power `p`.
+The program demonstrates adding:
 
-The program must handle invalid values using custom exception messages.
+- 2 numbers
+- 3 numbers
+- 5 numbers
+- 6 numbers
+
+The output displays both the mathematical expression and the calculated sum.
 
 ## 💡 Concepts Practiced
 
-- ✅ Exception Handling
-- ✅ `try-catch`
-- ✅ `throw`
-- ✅ `throws`
-- ✅ Custom Exception Messages
+- ✅ Java Varargs
+- ✅ Variable-Length Arguments
+- ✅ Method Parameters
+- ✅ Method Overloading
+- ✅ Multiple Arguments
+- ✅ Integer Addition
 - ✅ Method Implementation
-- ✅ Power Calculation
-- ✅ `Math.pow()`
-- ✅ Negative Number Validation
-- ✅ Zero Value Validation
-- ✅ Integer Input
-- ✅ Type Conversion
-- ✅ Exception Flow
-- ✅ Error Handling
+- ✅ `System.out.println()`
+- ✅ Problem Solving
+- ✅ Core Java Fundamentals
 
-## 🧠 Key Logic
+## 🧠 Key Learning
 
-The `power()` method receives two integer values:
+Varargs provide a convenient way to pass multiple values to a method.
 
-- `n` → Base number
-- `p` → Power/exponent
+A method can use the syntax:
 
-The method first checks whether either value is negative.
+`int... numbers`
 
-If `n` or `p` is negative, it throws:
+to accept a variable number of integer arguments.
 
-`n or p should not be negative.`
-
-If both `n` and `p` are zero, it throws:
-
-`n and p should not be zero.`
-
-Otherwise, the method calculates:
-
-`n^p`
-
-and returns the result as a `long`.
+This makes the method flexible because it can work with different numbers of arguments without requiring a separate method for every possible argument count.
 
 ## 📌 Example
 
-### Valid Input
+### Input
 
-Input:
+The program processes multiple integer values.
 
-3 5
+### Output
 
-Output:
+The program displays expressions and their corresponding sums, such as:
 
-243
+`1+2=3`
 
-### Another Valid Input
+`1+2+3=6`
 
-Input:
+`1+2+3+4+5=15`
 
-2 4
-
-Output:
-
-16
-
-### Both Values Are Zero
-
-Input:
-
-0 0
-
-Output:
-
-java.lang.Exception: n and p should not be zero.
-
-### Negative Values
-
-Input:
-
--1 -2
-
-Output:
-
-java.lang.Exception: n or p should not be negative.
+`1+2+3+4+5+6=21`
 
 ## 🎯 What I Learned
 
-Through this challenge, I learned how Java exceptions can be used to validate input and handle invalid conditions.
+Through this challenge, I learned how **Varargs** can be used to pass a variable number of arguments to Java methods.
 
-I practiced creating a method that throws exceptions when invalid values are provided and returning the correct result when valid values are entered.
+I also strengthened my understanding of:
 
-This challenge improved my understanding of:
+- Variable-length arguments
+- Method parameters
+- Method overloading
+- Multiple integer values
+- Addition operations
+- Flexible method design
+- Java programming fundamentals
 
-- Exception handling
-- Custom exception messages
-- `throw` and `throws`
-- Method implementation
-- Input validation
-- Power calculation
-- Defensive programming
-
-It also strengthened my understanding of how exceptions can make Java programs more reliable and easier to manage.
+This challenge improved my understanding of how Java methods can handle different numbers of arguments efficiently.
 
 ---
 
@@ -461,6 +436,30 @@ The program handles:
 - Negative values using a custom exception message
 - Both values being zero using a custom exception message
 - Valid values using power calculation
+
+---
+
+# 📌 Java Varargs
+
+Varargs, or variable-length arguments, allow a Java method to accept zero or more arguments of the same type.
+
+### Concepts Practiced
+
+- ✅ Varargs
+- ✅ Variable-Length Arguments
+- ✅ Method Parameters
+- ✅ Integer Arguments
+- ✅ Multiple Values
+- ✅ Method Flexibility
+- ✅ Method Overloading
+- ✅ Addition Operations
+- ✅ Core Java
+
+### Day 49 Challenge
+
+The Day 49 challenge demonstrates how Java methods can work with different numbers of arguments.
+
+The challenge uses addition operations to calculate the sum of multiple integer values and displays the complete mathematical expression along with the result.
 
 ---
 
@@ -602,6 +601,21 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ `super.method()` Syntax
 - ✅ Accessing Superclass Implementation
 - ⏳ Advanced Polymorphism
+
+---
+
+# 🔀 Java Method Overloading
+
+- ✅ Method Overloading
+- ✅ Multiple Methods with Same Name
+- ✅ Different Parameter Lists
+- ✅ Compile-Time Polymorphism
+- ✅ Method Parameters
+- ✅ Method Reusability
+- ✅ Flexible Method Design
+- ✅ Overloaded `add()` Methods
+- ✅ Integer Arguments
+- ✅ Core Java Concepts
 
 ---
 
@@ -859,6 +873,21 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 
 ---
 
+# 📌 Varargs & Flexible Methods
+
+- ✅ Java Varargs
+- ✅ Variable-Length Arguments
+- ✅ Method Parameters
+- ✅ Multiple Integer Arguments
+- ✅ Flexible Method Calls
+- ✅ Addition Using Varargs
+- ✅ Method Overloading
+- ✅ Expression Formatting
+- ✅ Result Calculation
+- ✅ Core Java Programming
+
+---
+
 # 🧠 Skills I'm Building
 
 - ☕ Core Java
@@ -867,6 +896,7 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - 🎭 Abstraction
 - 🔌 Interfaces
 - 🔄 Method Overriding
+- 🔀 Method Overloading
 - 🧩 Polymorphism
 - 🔑 `super` Keyword
 - 🔍 `instanceof` Operator
@@ -876,6 +906,8 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - 🚨 Custom Exceptions
 - 🧾 `throw` and `throws`
 - 🧮 Power Calculation
+- 📌 Java Varargs
+- ➕ Variable-Length Arguments
 - ⚠️ Runtime Exception Handling
 - 🚨 `InputMismatchException`
 - ➗ `ArithmeticException`
@@ -923,6 +955,8 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - 🔌 Interface Implementation
 - 🔄 Interface-Based Polymorphism
 - ⚡ Runtime Method Dispatch
+- 📌 Flexible Method Design
+- ➕ Multiple Argument Processing
 
 ---
 
@@ -976,7 +1010,8 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ Day 46 Completed 🎉🔥
 - ✅ Day 47 Completed 🎉🔥🛡️
 - ✅ Day 48 Completed 🎉🔥⚡
-- ⏳ Day 49 → Day 100 Continuing...
+- ✅ Day 49 Completed 🎉🔥📌
+- ⏳ Day 50 → Day 100 Continuing...
 
 ---
 
@@ -984,34 +1019,35 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **48 / 100** |
-| 💻 Challenges Solved | **48** |
+| 📅 Days Completed | **49 / 100** |
+| 💻 Challenges Solved | **49** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, `super`, `instanceof`, Iterator & Exception Handling** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling & Varargs** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
-| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal & Exception Handling** |
+| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling & Varargs** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
 | 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
-| 🔄 Overriding Concepts | **Method Overriding, Runtime Polymorphism, Dynamic Method Dispatch & `super`** |
+| 🔄 Polymorphism Concepts | **Method Overriding, Method Overloading, Runtime Polymorphism, Dynamic Method Dispatch & `super`** |
 | 🔍 Type Checking | **`instanceof` Operator & Runtime Type Checking** |
 | 🔁 Collection Traversal | **Iterator, `hasNext()`, `next()` & ArrayList Traversal** |
 | 🛡️ Exception Handling | **Try-Catch, InputMismatchException, ArithmeticException, `throw`, `throws` & Custom Exceptions** |
 | 🧮 Power Calculation | **MyCalculator, `power(int, int)` & Input Validation** |
-| 📈 Progress | **48% Complete** 🚀 |
-| 🔥 Current Streak | **48 Days** |
-| ⏳ Days Remaining | **52 Days** |
+| 📌 Varargs | **Variable-Length Arguments & Multiple Integer Processing** |
+| 📈 Progress | **49% Complete** 🚀 |
+| 🔥 Current Streak | **49 Days** |
+| ⏳ Days Remaining | **51 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **48 Days of Java Practice Completed! 🎉🔥🚀**
+## **49 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **48 days down, 52 more to go!**
+> **49 days down, 51 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, and exception handling using `try-catch`, `throw`, and `throws`.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, and flexible method design using Varargs.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -1035,6 +1071,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 46 | ✅ Completed 🎉🔥🔁 |
 | 🎯 Day 47 | ✅ Completed 🎉🔥🛡️ |
 | 🎯 Day 48 | ✅ Completed 🎉🔥⚡ |
+| 🎯 Day 49 | ✅ Completed 🎉🔥📌 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -1057,15 +1094,16 @@ Day 45      ████████████████████ 100% �
 Day 46      ████████████████████ 100% ✅
 Day 47      ████████████████████ 100% ✅
 Day 48      ████████████████████ 100% ✅
-Day 50      ██████████░░░░░░░░░░  48% ⏳
-Day 75      ██████████░░░░░░░░░░  48% ⏳
-Day 100     ██████████░░░░░░░░░░  48% ⏳
+Day 49      ████████████████████ 100% ✅
+Day 50      ██████████░░░░░░░░░░  49% ⏳
+Day 75      ██████████░░░░░░░░░░  49% ⏳
+Day 100     ██████████░░░░░░░░░░  49% ⏳
 
 ## 🚀 Overall Progress
 
-[██████████░░░░░░░░░░░] 48%
+[██████████░░░░░░░░░░░] 49%
 
-**48 / 100 Days Completed**
+**49 / 100 Days Completed**
 
 ---
 
@@ -1106,6 +1144,7 @@ It is also about:
 - 🎭 Understanding Abstraction and Abstract Classes
 - 🔌 Understanding Interfaces and Polymorphism
 - 🔄 Understanding Method Overriding
+- 🔀 Understanding Method Overloading
 - 🔑 Understanding the `super` keyword
 - 🔍 Understanding runtime type checking with `instanceof`
 - 🔁 Understanding collection traversal with `Iterator`
@@ -1114,6 +1153,8 @@ It is also about:
 - ⚠️ Handling runtime exceptions
 - 🧾 Understanding `throw` and `throws`
 - 🧮 Implementing power calculation
+- 📌 Understanding Java Varargs
+- ➕ Processing variable numbers of arguments
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1154,6 +1195,7 @@ Every challenge helps me improve my:
 - 🎭 Abstraction
 - 🔌 Interfaces
 - 🔄 Method Overriding
+- 🔀 Method Overloading
 - 🔑 Superclass Method Access
 - 🧩 Polymorphism
 - 🔍 Runtime Type Checking
@@ -1163,6 +1205,8 @@ Every challenge helps me improve my:
 - 🚨 Custom Exception Handling
 - 🧾 `throw` and `throws`
 - 🧮 Power Calculation
+- 📌 Varargs
+- ➕ Variable-Length Argument Processing
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1238,7 +1282,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#OpenToWork`
 
 ---
 
@@ -1248,6 +1292,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**48 Days Completed ✅ | 52 Days Remaining ⏳ | 100 Days Goal 🎯**
+**49 Days Completed ✅ | 51 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🚀**
