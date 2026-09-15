@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -41,6 +41,9 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔬 Learn Java Reflection.
 - 🧩 Inspect classes and methods using Reflection API.
 - 📋 Retrieve declared methods dynamically.
+- 🔢 Understand Prime Number Logic.
+- 🔍 Check whether numbers are prime.
+- ➕ Process multiple integers using Varargs.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -95,6 +98,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔤 Custom Sorting
 - 🔢 BitSet
 - 🔀 Bit Manipulation
+- 🔢 Prime Number Logic
+- 🔍 Number Validation
 - 🧠 Problem Solving
 - 🎯 Algorithmic Thinking
 
@@ -260,6 +265,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Reflection - Attributes.java
 │   └── Screenshot 2026-09-14 084223.png
 │
+├── 📁 Day-51/
+│   ├── Prime Checker.java
+│   └── Output Screenshot
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -320,8 +329,64 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 48 | Java Exception Handling – Power Calculator | Completed 🎉🔥⚡ |
 | ✅ Day 49 | Java Varargs – Simple Addition | Completed 🎉🔥📌 |
 | ✅ Day 50 | Java Reflection – Attributes | Completed 🎉🔥🔬 |
-| ⏳ Day 51–99 | Upcoming Challenges | Pending |
+| ✅ Day 51 | Prime Checker | Completed 🎉🔥🔢 |
+| ⏳ Day 52–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 📌 Day 51 – Prime Checker
+
+## 📚 Challenge
+
+The **Prime Checker** challenge focuses on checking whether multiple integers are prime numbers using Java **Varargs**.
+
+In this challenge, the program uses a method with the `int... numbers` parameter to handle multiple integer inputs through a single method.
+
+The program applies prime number logic using loops and conditions to determine whether each given number is prime.
+
+## 💡 Concepts Practiced
+
+- ✅ Prime number logic
+- ✅ Varargs
+- ✅ `int... numbers`
+- ✅ Multiple integer inputs
+- ✅ Loops & conditions
+- ✅ Number validation
+- ✅ Method design
+- ✅ Variable-length arguments
+- ✅ Avoiding unnecessary method overloading
+- ✅ Java Reflection compatibility
+- ✅ HackerRank problem solving
+- ✅ Core Java
+
+## 🧠 Key Learning
+
+A prime number is a number greater than 1 that has only two factors: `1` and itself.
+
+The main steps used in this challenge are:
+
+1. Accept multiple integers using `int... numbers`.
+2. Process each number using a loop.
+3. Check whether the number is prime using conditions.
+4. Determine the prime status of each given number.
+
+Using Varargs makes the method flexible because it can process multiple integer values with a single method definition.
+
+This challenge helped me strengthen my understanding of **prime number logic, Varargs, loops, conditions, and flexible method design**.
+
+## 🎯 What I Learned
+
+Through this challenge, I learned:
+
+- How to check whether a number is prime.
+- How to process multiple integers using Java Varargs.
+- How `int... numbers` works in a method.
+- How loops and conditions can be used for prime number validation.
+- How Varargs can reduce the need for multiple overloaded methods.
+- How to write a flexible method for multiple integer inputs.
+- How the solution remains compatible with Java Reflection requirements.
+- How to apply logical thinking to HackerRank programming problems.
 
 ---
 
@@ -484,6 +549,7 @@ Varargs, or variable-length arguments, allow a Java method to accept zero or mor
 - ✅ Method Flexibility
 - ✅ Method Overloading
 - ✅ Addition Operations
+- ✅ Prime Number Processing
 - ✅ Core Java
 
 ## Day 49 Challenge
@@ -491,6 +557,12 @@ Varargs, or variable-length arguments, allow a Java method to accept zero or mor
 The Day 49 challenge demonstrates how Java methods can work with different numbers of arguments.
 
 The challenge uses addition operations to calculate the sum of multiple integer values and displays the complete mathematical expression along with the result.
+
+## Day 51 Challenge
+
+The Day 51 challenge demonstrates how Java Varargs can be used to process multiple integer values through a single method.
+
+The method uses `int... numbers` to accept multiple integers and applies prime number logic to check each value.
 
 ---
 
@@ -882,6 +954,32 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ Divisor Calculation
 - ✅ Power Calculation
 - ✅ Numeric Validation
+- ✅ Prime Checker
+- ✅ Prime Number Logic
+- ✅ Divisibility Checking
+- ✅ Multiple Integer Validation
+
+---
+
+# 🔢 Prime Number Checking
+
+## Concepts Practiced
+
+- ✅ Prime Number Logic
+- ✅ Checking Numbers Greater Than 1
+- ✅ Divisibility Checking
+- ✅ Loops and Conditions
+- ✅ Multiple Integer Processing
+- ✅ Java Varargs
+- ✅ `int... numbers`
+- ✅ Number Validation
+- ✅ Core Java Problem Solving
+
+## Day 51 Challenge
+
+The Day 51 challenge focuses on checking multiple integers to determine whether they are prime numbers.
+
+The solution uses Java Varargs with `int... numbers`, allowing one method to receive multiple integer values and process them using prime number logic.
 
 ---
 
@@ -916,6 +1014,7 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ Method Overloading
 - ✅ Expression Formatting
 - ✅ Result Calculation
+- ✅ Prime Number Processing
 - ✅ Core Java Programming
 
 ---
@@ -960,6 +1059,8 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ➕ Variable-Length Arguments
 - 🔬 Java Reflection
 - 📋 Class and Method Inspection
+- 🔢 Prime Number Checking
+- 🧮 Number Validation
 - ⚠️ Runtime Exception Handling
 - 🚨 `InputMismatchException`
 - ➗ `ArithmeticException`
@@ -1044,7 +1145,8 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ Day 48 Completed 🎉🔥⚡
 - ✅ Day 49 Completed 🎉🔥📌
 - ✅ Day 50 Completed 🎉🔥🔬
-- ⏳ Day 51–99 Continuing...
+- ✅ Day 51 Completed 🎉🔥🔢
+- ⏳ Day 52–99 Continuing...
 - 🎯 Day 100 Final Goal
 
 ---
@@ -1053,11 +1155,11 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **50 / 100** |
-| 💻 Challenges Solved | **50** |
+| 📅 Days Completed | **51 / 100** |
+| 💻 Challenges Solved | **51** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs & Reflection** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection & Prime Number Logic** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs & Reflection** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
@@ -1068,23 +1170,24 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 | 🔁 Collection Traversal | **Iterator, `hasNext()`, `next()` & ArrayList Traversal** |
 | 🛡️ Exception Handling | **Try-Catch, InputMismatchException, ArithmeticException, `throw`, `throws` & Custom Exceptions** |
 | 🧮 Power Calculation | **MyCalculator, `power(int, int)` & Input Validation** |
-| 📌 Varargs | **Variable-Length Arguments & Multiple Integer Processing** |
+| 📌 Varargs | **Variable-Length Arguments, Multiple Integer Processing & Prime Checker** |
 | 🔬 Reflection | **Class, Method, `getDeclaredMethods()` & Runtime Inspection** |
-| 📈 Progress | **50% Complete** 🚀 |
-| 🔥 Current Streak | **50 Days** |
-| ⏳ Days Remaining | **50 Days** |
+| 🔢 Prime Checker | **Prime Number Logic, Loops, Conditions & Multiple Integer Validation** |
+| 📈 Progress | **51% Complete** 🚀 |
+| 🔥 Current Streak | **51 Days** |
+| ⏳ Days Remaining | **49 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **50 Days of Java Practice Completed! 🎉🔥🚀**
+## **51 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **50 days down, 50 more to go!**
+> **51 days down, 49 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, and runtime inspection using Java Reflection.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, and prime number logic.
 
-The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
+The journey continues with **consistency, discipline, practice, and continuous learning.** Day 51 adds **Prime Number Logic and flexible Varargs-based processing** to the journey. ☕💻🔥
 
 ---
 
@@ -1108,6 +1211,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 48 | ✅ Completed 🎉🔥⚡ |
 | 🎯 Day 49 | ✅ Completed 🎉🔥📌 |
 | 🎯 Day 50 | ✅ Completed 🎉🔥🔬 |
+| 🎯 Day 51 | ✅ Completed 🎉🔥🔢 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
 
@@ -1131,14 +1235,15 @@ Day 47      ████████████████████ 100% �
 Day 48      ████████████████████ 100% ✅
 Day 49      ████████████████████ 100% ✅
 Day 50      ████████████████████ 100% ✅
-Day 75      ██████████░░░░░░░░░░ 50% ⏳
-Day 100     ██████████░░░░░░░░░░ 50% ⏳
+Day 51      ████████████████████ 100% ✅
+Day 75      ██████████░░░░░░░░░░ 51% ⏳
+Day 100     ██████████░░░░░░░░░░ 51% ⏳
 
 ## 🚀 Overall Progress
 
-[██████████░░░░░░░░░░░] 50%
+[██████████░░░░░░░░░░░] 51%
 
-**50 / 100 Days Completed**
+**51 / 100 Days Completed**
 
 ---
 
@@ -1192,6 +1297,8 @@ It is also about:
 - ➕ Processing variable numbers of arguments
 - 🔬 Understanding Java Reflection
 - 📋 Inspecting classes and methods at runtime
+- 🔢 Checking prime numbers using Java logic
+- ➕ Processing multiple integers using Varargs
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1246,6 +1353,8 @@ Every challenge helps me improve my:
 - ➕ Variable-Length Argument Processing
 - 🔬 Java Reflection
 - 📋 Runtime Class and Method Inspection
+- 🔢 Prime Number Checking
+- 🧮 Number Validation
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1321,7 +1430,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#Day51` `#OpenToWork`
 
 ---
 
@@ -1331,6 +1440,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**50 Days Completed ✅ | 50 Days Remaining ⏳ | 100 Days Goal 🎯**
+**51 Days Completed ✅ | 49 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🚀**
