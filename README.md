@@ -1,4 +1,3 @@
-```markdown
 # ☕ 100 Days of Java Challenge
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
@@ -1569,4 +1568,3 @@ https://github.com/Coder-RD
 **52 Days Completed ✅ | 48 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🚀**
-```
