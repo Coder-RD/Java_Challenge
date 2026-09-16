@@ -1,8 +1,9 @@
+```markdown
 # ☕ 100 Days of Java Challenge
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, Factory Pattern, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -43,7 +44,9 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 📋 Retrieve declared methods dynamically.
 - 🔢 Understand Prime Number Logic.
 - 🔍 Check whether numbers are prime.
-- ➕ Process multiple integers using Varargs.
+- 🏭 Understand the Factory Pattern.
+- 🧱 Learn object creation using a factory class.
+- 🔄 Return different object types through a common interface.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -100,6 +103,9 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔀 Bit Manipulation
 - 🔢 Prime Number Logic
 - 🔍 Number Validation
+- 🏭 Factory Pattern
+- 🏗️ Object Creation
+- 🔌 Interface-Based Object Creation
 - 🧠 Problem Solving
 - 🎯 Algorithmic Thinking
 
@@ -269,6 +275,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Prime Checker.java
 │   └── Output Screenshot
 │
+├── 📁 Day-52/
+│   ├── Java Factory Pattern.java
+│   └── Screenshot 2026-09-16 094737.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -330,8 +340,67 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 49 | Java Varargs – Simple Addition | Completed 🎉🔥📌 |
 | ✅ Day 50 | Java Reflection – Attributes | Completed 🎉🔥🔬 |
 | ✅ Day 51 | Prime Checker | Completed 🎉🔥🔢 |
-| ⏳ Day 52–99 | Upcoming Challenges | Pending |
+| ✅ Day 52 | Java Factory Pattern | Completed 🎉🔥🏭 |
+| ⏳ Day 53–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 📌 Day 52 – Java Factory Pattern
+
+## 📚 Challenge
+
+The **Java Factory Pattern** challenge focuses on understanding how a factory can be used to create objects based on a given input.
+
+In this challenge, a `Food` interface is implemented by two classes: `Pizza` and `Cake`.
+
+The `FoodFactory` class contains a `getFood(String order)` method. Based on the given order, the factory creates and returns the appropriate `Pizza` or `Cake` object.
+
+## 💡 Concepts Practiced
+
+- ✅ Factory Pattern
+- ✅ Java Interfaces
+- ✅ Object Creation
+- ✅ Interface-Based Programming
+- ✅ Polymorphism
+- ✅ `implements` Keyword
+- ✅ `new` Keyword
+- ✅ Method Implementation
+- ✅ Conditional Statements
+- ✅ `equalsIgnoreCase()`
+- ✅ Returning Objects
+- ✅ Common Interface Reference
+- ✅ Object-Oriented Programming
+- ✅ HackerRank Problem Solving
+- ✅ Core Java
+
+## 🧠 Key Learning
+
+The Factory Pattern provides a way to create objects without requiring the calling code to directly decide which concrete class should be instantiated.
+
+In this challenge:
+
+1. The `Food` interface defines the common type.
+2. `Pizza` and `Cake` implement the `Food` interface.
+3. The `FoodFactory` receives the order as a `String`.
+4. If the order is `"pizza"`, the factory creates a `Pizza` object.
+5. If the order is `"cake"`, the factory creates a `Cake` object.
+6. The created object is returned as a `Food` reference.
+
+This demonstrates how a factory can centralize object creation and work with different implementations through a common interface.
+
+## 🎯 What I Learned
+
+Through this challenge, I learned:
+
+- How the Factory Pattern works in Java.
+- How a factory class can create different objects.
+- How interfaces can provide a common return type.
+- How `Pizza` and `Cake` can be handled through the `Food` interface.
+- How object creation can be controlled using a factory method.
+- How conditional statements can determine which object should be created.
+- How polymorphism allows different objects to be returned through the same interface type.
+- How the Factory Pattern supports cleaner and more flexible object creation.
 
 ---
 
@@ -374,19 +443,6 @@ The main steps used in this challenge are:
 Using Varargs makes the method flexible because it can process multiple integer values with a single method definition.
 
 This challenge helped me strengthen my understanding of **prime number logic, Varargs, loops, conditions, and flexible method design**.
-
-## 🎯 What I Learned
-
-Through this challenge, I learned:
-
-- How to check whether a number is prime.
-- How to process multiple integers using Java Varargs.
-- How `int... numbers` works in a method.
-- How loops and conditions can be used for prime number validation.
-- How Varargs can reduce the need for multiple overloaded methods.
-- How to write a flexible method for multiple integer inputs.
-- How the solution remains compatible with Java Reflection requirements.
-- How to apply logical thinking to HackerRank programming problems.
 
 ---
 
@@ -432,18 +488,6 @@ The main steps used in this challenge are:
 5. Print the sorted method names.
 
 This challenge helped me understand how Java programs can inspect class information dynamically.
-
-## 🎯 What I Learned
-
-Through this challenge, I learned:
-
-- How to access a class using the `Class` object.
-- How to retrieve methods using Reflection.
-- How to use `getDeclaredMethods()`.
-- How to work with `Method` objects.
-- How to store method names in an `ArrayList`.
-- How to sort a collection using `Collections.sort()`.
-- How Reflection can be used for runtime inspection.
 
 ---
 
@@ -563,6 +607,40 @@ The challenge uses addition operations to calculate the sum of multiple integer 
 The Day 51 challenge demonstrates how Java Varargs can be used to process multiple integer values through a single method.
 
 The method uses `int... numbers` to accept multiple integers and applies prime number logic to check each value.
+
+---
+
+# 🏭 Java Factory Pattern
+
+The Factory Pattern is a creational design pattern that provides a way to create objects based on a given requirement.
+
+## Concepts Practiced
+
+- ✅ Factory Pattern
+- ✅ Factory Class
+- ✅ Factory Method
+- ✅ Object Creation
+- ✅ Interfaces
+- ✅ Polymorphism
+- ✅ Common Interface Reference
+- ✅ `new` Keyword
+- ✅ Conditional Object Creation
+- ✅ `equalsIgnoreCase()`
+- ✅ Interface Implementation
+- ✅ Object-Oriented Design
+
+## Day 52 Challenge
+
+The Day 52 challenge demonstrates how the `FoodFactory` class creates different objects based on the requested food type.
+
+The `getFood(String order)` method checks the order and returns:
+
+- `new Pizza()` when the order is `"pizza"`
+- `new Cake()` when the order is `"cake"`
+
+Both objects are returned using the common `Food` interface.
+
+This challenge helped strengthen my understanding of **Factory Pattern, interfaces, polymorphism, object creation, and flexible program design**.
 
 ---
 
@@ -983,6 +1061,40 @@ The solution uses Java Varargs with `int... numbers`, allowing one method to rec
 
 ---
 
+# 🏭 Factory Pattern & Object Creation
+
+## Concepts Practiced
+
+- ✅ Factory Pattern
+- ✅ Factory Method
+- ✅ Object Creation
+- ✅ Interfaces
+- ✅ Polymorphism
+- ✅ Interface-Based Programming
+- ✅ Common Return Type
+- ✅ Conditional Object Creation
+- ✅ `new` Keyword
+- ✅ `equalsIgnoreCase()`
+- ✅ Code Reusability
+- ✅ Flexible Object Creation
+
+## Day 52 Challenge
+
+The Day 52 challenge demonstrates the use of the **Factory Pattern** in Java.
+
+A `FoodFactory` class is responsible for creating the appropriate `Food` object based on the order provided.
+
+The factory returns:
+
+- 🍕 `Pizza` object for `"pizza"`
+- 🍰 `Cake` object for `"cake"`
+
+Both classes implement the `Food` interface, allowing them to be returned using a common interface type.
+
+This challenge strengthened my understanding of **design patterns, interfaces, polymorphism, object creation, and Object-Oriented Programming**.
+
+---
+
 # 🛡️ Exception & Error Handling
 
 - ✅ Exception Handling
@@ -1061,6 +1173,9 @@ The solution uses Java Varargs with `int... numbers`, allowing one method to rec
 - 📋 Class and Method Inspection
 - 🔢 Prime Number Checking
 - 🧮 Number Validation
+- 🏭 Factory Pattern
+- 🧱 Factory-Based Object Creation
+- 🔌 Interface-Based Object Creation
 - ⚠️ Runtime Exception Handling
 - 🚨 `InputMismatchException`
 - ➗ `ArithmeticException`
@@ -1146,7 +1261,8 @@ The solution uses Java Varargs with `int... numbers`, allowing one method to rec
 - ✅ Day 49 Completed 🎉🔥📌
 - ✅ Day 50 Completed 🎉🔥🔬
 - ✅ Day 51 Completed 🎉🔥🔢
-- ⏳ Day 52–99 Continuing...
+- ✅ Day 52 Completed 🎉🔥🏭
+- ⏳ Day 53–99 Continuing...
 - 🎯 Day 100 Final Goal
 
 ---
@@ -1155,13 +1271,13 @@ The solution uses Java Varargs with `int... numbers`, allowing one method to rec
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **51 / 100** |
-| 💻 Challenges Solved | **51** |
+| 📅 Days Completed | **52 / 100** |
+| 💻 Challenges Solved | **52** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection & Prime Number Logic** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection, Prime Number Logic & Factory Pattern** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
-| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs & Reflection** |
+| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection & Factory Pattern** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
 | 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
@@ -1173,21 +1289,22 @@ The solution uses Java Varargs with `int... numbers`, allowing one method to rec
 | 📌 Varargs | **Variable-Length Arguments, Multiple Integer Processing & Prime Checker** |
 | 🔬 Reflection | **Class, Method, `getDeclaredMethods()` & Runtime Inspection** |
 | 🔢 Prime Checker | **Prime Number Logic, Loops, Conditions & Multiple Integer Validation** |
-| 📈 Progress | **51% Complete** 🚀 |
-| 🔥 Current Streak | **51 Days** |
-| ⏳ Days Remaining | **49 Days** |
+| 🏭 Factory Pattern | **FoodFactory, Interface-Based Object Creation & Polymorphism** |
+| 📈 Progress | **52% Complete** 🚀 |
+| 🔥 Current Streak | **52 Days** |
+| ⏳ Days Remaining | **48 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **51 Days of Java Practice Completed! 🎉🔥🚀**
+## **52 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **51 days down, 49 more to go!**
+> **52 days down, 48 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, and prime number logic.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, and object creation using the Factory Pattern.
 
-The journey continues with **consistency, discipline, practice, and continuous learning.** Day 51 adds **Prime Number Logic and flexible Varargs-based processing** to the journey. ☕💻🔥
+The journey continues with **consistency, discipline, practice, and continuous learning.** Day 52 adds **Factory Pattern and interface-based object creation** to the journey. ☕💻🏭🔥
 
 ---
 
@@ -1212,6 +1329,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 49 | ✅ Completed 🎉🔥📌 |
 | 🎯 Day 50 | ✅ Completed 🎉🔥🔬 |
 | 🎯 Day 51 | ✅ Completed 🎉🔥🔢 |
+| 🎯 Day 52 | ✅ Completed 🎉🔥🏭 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
 
@@ -1236,14 +1354,15 @@ Day 48      ████████████████████ 100% �
 Day 49      ████████████████████ 100% ✅
 Day 50      ████████████████████ 100% ✅
 Day 51      ████████████████████ 100% ✅
-Day 75      ██████████░░░░░░░░░░ 51% ⏳
-Day 100     ██████████░░░░░░░░░░ 51% ⏳
+Day 52      ████████████████████ 100% ✅
+Day 75      ██████████░░░░░░░░░░ 52% ⏳
+Day 100     ██████████░░░░░░░░░░ 52% ⏳
 
 ## 🚀 Overall Progress
 
-[██████████░░░░░░░░░░░] 51%
+[██████████░░░░░░░░░░░] 52%
 
-**51 / 100 Days Completed**
+**52 / 100 Days Completed**
 
 ---
 
@@ -1299,6 +1418,9 @@ It is also about:
 - 📋 Inspecting classes and methods at runtime
 - 🔢 Checking prime numbers using Java logic
 - ➕ Processing multiple integers using Varargs
+- 🏭 Understanding the Factory Pattern
+- 🧱 Creating objects through a factory method
+- 🔌 Using interfaces for flexible object creation
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1355,6 +1477,9 @@ Every challenge helps me improve my:
 - 📋 Runtime Class and Method Inspection
 - 🔢 Prime Number Checking
 - 🧮 Number Validation
+- 🏭 Factory Pattern
+- 🧱 Factory-Based Object Creation
+- 🔌 Interface-Based Programming
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1393,6 +1518,7 @@ The upcoming days will focus on more Java concepts, including:
 - 🔹 Sorting Algorithms
 - 🔹 Advanced Collections
 - 🔹 Object-Oriented Design
+- 🔹 Design Patterns
 - 🔹 Advanced Problem Solving
 
 ---
@@ -1430,7 +1556,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#Day51` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#DesignPatterns` `#ObjectCreation` `#Day52` `#OpenToWork`
 
 ---
 
@@ -1440,6 +1566,7 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**51 Days Completed ✅ | 49 Days Remaining ⏳ | 100 Days Goal 🎯**
+**52 Days Completed ✅ | 48 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🚀**
+```
