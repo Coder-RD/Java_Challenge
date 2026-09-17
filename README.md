@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, Factory Pattern, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -40,12 +40,14 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - ➕ Perform operations using variable-length arguments.
 - 🔬 Learn Java Reflection.
 - 🧩 Inspect classes and methods using Reflection API.
-- 📋 Retrieve declared methods dynamically.
 - 🔢 Understand Prime Number Logic.
 - 🔍 Check whether numbers are prime.
 - 🏭 Understand the Factory Pattern.
 - 🧱 Learn object creation using a factory class.
 - 🔄 Return different object types through a common interface.
+- 🔐 Understand the Singleton Design Pattern.
+- 🧩 Learn controlled object creation using a single instance.
+- 🏗️ Understand private constructors and static instance management.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -103,6 +105,7 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔢 Prime Number Logic
 - 🔍 Number Validation
 - 🏭 Factory Pattern
+- 🔐 Singleton Pattern
 - 🏗️ Object Creation
 - 🔌 Interface-Based Object Creation
 - 🧠 Problem Solving
@@ -278,6 +281,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Factory Pattern.java
 │   └── Screenshot 2026-09-16 094737.png
 │
+├── 📁 Day-53/
+│   ├── Java Singleton Pattern.java
+│   └── Screenshot 2026-09-17 163749.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -340,8 +347,76 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 50 | Java Reflection – Attributes | Completed 🎉🔥🔬 |
 | ✅ Day 51 | Prime Checker | Completed 🎉🔥🔢 |
 | ✅ Day 52 | Java Factory Pattern | Completed 🎉🔥🏭 |
-| ⏳ Day 53–99 | Upcoming Challenges | Pending |
+| ✅ Day 53 | Java Singleton Pattern | Completed 🎉🔥🔐 |
+| ⏳ Day 54–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 📌 Day 53 – Java Singleton Pattern
+
+## 📚 Challenge
+
+The **Java Singleton Pattern** challenge focuses on implementing the Singleton Design Pattern in Java.
+
+The Singleton Pattern ensures that a class has only **one instance** and provides a common way to access that instance.
+
+In this challenge, a `Singleton` class is created with:
+
+- A private constructor.
+- A static instance variable.
+- A public `String` variable named `str`.
+- A static `getSingleInstance()` method.
+- Controlled creation of the Singleton object.
+
+## 💡 Concepts Practiced
+
+- ✅ Singleton Design Pattern
+- ✅ Private Constructor
+- ✅ Static Instance
+- ✅ Static Method
+- ✅ Object Creation
+- ✅ Instance Management
+- ✅ Class Design
+- ✅ Access Modifiers
+- ✅ `private` Keyword
+- ✅ `public` Keyword
+- ✅ `static` Keyword
+- ✅ Java OOP
+- ✅ Design Patterns
+- ✅ HackerRank Problem Solving
+- ✅ Core Java
+
+## 🧠 Key Learning
+
+The Singleton Pattern is used when only one instance of a class should be created.
+
+The main concepts demonstrated in this challenge are:
+
+1. The constructor is declared `private` so that objects cannot be created directly from outside the class.
+2. A static variable is used to hold the single instance of the class.
+3. The `getSingleInstance()` method provides access to that instance.
+4. If the instance does not already exist, a new object is created.
+5. The same instance is returned for subsequent calls.
+
+This challenge helped strengthen my understanding of **private constructors, static members, object creation, instance management, and design patterns in Java**.
+
+## 🎯 What I Learned
+
+Through this challenge, I learned:
+
+- How the Singleton Design Pattern works.
+- How to restrict direct object creation using a private constructor.
+- How static variables can maintain a single class instance.
+- How static methods can provide access to a shared instance.
+- How object creation can be controlled inside a class.
+- How design patterns can be implemented using Core Java concepts.
+- How OOP concepts can be applied to practical programming problems.
+
+## 📂 Day 53 Files
+
+- `Day-53/Java Singleton Pattern.java`
+- `Day-53/Screenshot 2026-09-17 163749.png`
 
 ---
 
@@ -388,19 +463,6 @@ In this challenge:
 
 This demonstrates how a factory can centralize object creation and work with different implementations through a common interface.
 
-## 🎯 What I Learned
-
-Through this challenge, I learned:
-
-- How the Factory Pattern works in Java.
-- How a factory class can create different objects.
-- How interfaces can provide a common return type.
-- How `Pizza` and `Cake` can be handled through the `Food` interface.
-- How object creation can be controlled using a factory method.
-- How conditional statements can determine which object should be created.
-- How polymorphism allows different objects to be returned through the same interface type.
-- How the Factory Pattern supports cleaner and more flexible object creation.
-
 ---
 
 # 📌 Day 51 – Prime Checker
@@ -409,23 +471,22 @@ Through this challenge, I learned:
 
 The **Prime Checker** challenge focuses on checking whether multiple integers are prime numbers using Java **Varargs**.
 
-In this challenge, the program uses a method with the `int... numbers` parameter to handle multiple integer inputs through a single method.
+The program uses a method with the `int... numbers` parameter to handle multiple integer inputs through a single method.
 
 The program applies prime number logic using loops and conditions to determine whether each given number is prime.
 
 ## 💡 Concepts Practiced
 
-- ✅ Prime number logic
+- ✅ Prime Number Logic
 - ✅ Varargs
 - ✅ `int... numbers`
-- ✅ Multiple integer inputs
-- ✅ Loops & conditions
-- ✅ Number validation
-- ✅ Method design
-- ✅ Variable-length arguments
-- ✅ Avoiding unnecessary method overloading
-- ✅ Java Reflection compatibility
-- ✅ HackerRank problem solving
+- ✅ Multiple Integer Inputs
+- ✅ Loops and Conditions
+- ✅ Number Validation
+- ✅ Method Design
+- ✅ Variable-Length Arguments
+- ✅ Java Reflection Compatibility
+- ✅ HackerRank Problem Solving
 - ✅ Core Java
 
 ## 🧠 Key Learning
@@ -440,8 +501,6 @@ The main steps used in this challenge are:
 4. Determine the prime status of each given number.
 
 Using Varargs makes the method flexible because it can process multiple integer values with a single method definition.
-
-This challenge helped me strengthen my understanding of **prime number logic, Varargs, loops, conditions, and flexible method design**.
 
 ---
 
@@ -468,67 +527,11 @@ The method names are stored in an `ArrayList`, sorted alphabetically, and printe
 - ✅ Reflection API
 - ✅ `ArrayList`
 - ✅ `Collections.sort()`
-- ✅ Enhanced `for` loop
+- ✅ Enhanced `for` Loop
 - ✅ Method Name Retrieval
 - ✅ Runtime Class Inspection
 - ✅ Sorting Method Names
 - ✅ Core Java
-
-## 🧠 Key Learning
-
-Java Reflection provides the ability to inspect classes and their members dynamically at runtime.
-
-The main steps used in this challenge are:
-
-1. Access the `Student` class using `Student.class`.
-2. Retrieve all declared methods using `getDeclaredMethods()`.
-3. Store the method names inside an `ArrayList`.
-4. Sort the method names alphabetically.
-5. Print the sorted method names.
-
-This challenge helped me understand how Java programs can inspect class information dynamically.
-
----
-
-# 📌 Day 49 – Java Varargs – Simple Addition
-
-## 📚 Challenge
-
-The **Java Varargs – Simple Addition** challenge focuses on using **variable-length arguments** in Java.
-
-Varargs allow a method to accept a variable number of arguments of the same data type.
-
-In this challenge, overloaded `add()` methods are used to calculate the sum of different numbers of integer arguments.
-
-The program demonstrates adding:
-
-- 2 numbers
-- 3 numbers
-- 5 numbers
-- 6 numbers
-
-The output displays both the mathematical expression and the calculated sum.
-
-## 💡 Concepts Practiced
-
-- ✅ Java Varargs
-- ✅ Variable-Length Arguments
-- ✅ Method Parameters
-- ✅ Method Overloading
-- ✅ Multiple Arguments
-- ✅ Integer Addition
-- ✅ Method Implementation
-- ✅ `System.out.println()`
-- ✅ Problem Solving
-- ✅ Core Java Fundamentals
-
-## 🧠 Key Learning
-
-Varargs provide a convenient way to pass multiple values to a method.
-
-The syntax `int... numbers` allows a method to accept a variable number of integer arguments.
-
-This makes the method flexible because it can work with different numbers of arguments without requiring a separate method for every possible argument count.
 
 ---
 
@@ -639,7 +642,37 @@ The `getFood(String order)` method checks the order and returns:
 
 Both objects are returned using the common `Food` interface.
 
-This challenge helped strengthen my understanding of **Factory Pattern, interfaces, polymorphism, object creation, and flexible program design**.
+This challenge strengthened my understanding of **Factory Pattern, interfaces, polymorphism, object creation, and flexible program design**.
+
+---
+
+# 🔐 Java Singleton Pattern
+
+The Singleton Pattern is a creational design pattern used to control object creation so that only one instance of a class is maintained.
+
+## Concepts Practiced
+
+- ✅ Singleton Pattern
+- ✅ Private Constructor
+- ✅ Static Instance
+- ✅ Static Method
+- ✅ Controlled Object Creation
+- ✅ Instance Management
+- ✅ Access Modifiers
+- ✅ Class Design
+- ✅ Object-Oriented Programming
+- ✅ Design Patterns
+- ✅ Core Java
+
+## Day 53 Challenge
+
+The Day 53 challenge demonstrates how to implement a Singleton class in Java.
+
+The `Singleton` class uses a private constructor to prevent direct object creation.
+
+A static instance is maintained inside the class, and the `getSingleInstance()` method provides access to the single object.
+
+This challenge strengthened my understanding of **Singleton Pattern, private constructors, static members, controlled object creation, and Java OOP**.
 
 ---
 
@@ -717,7 +750,6 @@ The Java `Iterator` interface provides a way to traverse elements of a collectio
 - ✅ Iterator Position
 - ✅ Breaking Iteration
 - ✅ Processing Remaining Elements
-- ✅ ArrayList Iterator
 
 ## Day 46 Challenge
 
@@ -1094,6 +1126,32 @@ This challenge strengthened my understanding of **design patterns, interfaces, p
 
 ---
 
+# 🔐 Singleton Pattern & Controlled Object Creation
+
+## Concepts Practiced
+
+- ✅ Singleton Pattern
+- ✅ Private Constructor
+- ✅ Static Instance
+- ✅ Static Method
+- ✅ Single Object Instance
+- ✅ Controlled Object Creation
+- ✅ Instance Management
+- ✅ Access Modifiers
+- ✅ Object-Oriented Programming
+- ✅ Design Patterns
+- ✅ Core Java
+
+## Day 53 Challenge
+
+The Day 53 challenge demonstrates the **Singleton Design Pattern** in Java.
+
+The `Singleton` class controls object creation using a private constructor and provides a static method to access its single instance.
+
+This challenge helped strengthen my understanding of **private constructors, static variables, static methods, object creation, instance management, and design patterns**.
+
+---
+
 # 🛡️ Exception & Error Handling
 
 - ✅ Exception Handling
@@ -1148,6 +1206,29 @@ This challenge strengthened my understanding of **design patterns, interfaces, p
 
 ---
 
+# 🏗️ Java Design Patterns
+
+The challenge journey now includes practical exposure to Java design patterns.
+
+## Factory Pattern
+
+- 🏭 Factory-based object creation
+- 🔌 Interface-based programming
+- 🧩 Polymorphism
+- 🎯 Conditional object creation
+
+## Singleton Pattern
+
+- 🔐 Single instance management
+- 🔒 Private constructor
+- ⚙️ Static instance
+- 🔄 Static access method
+- 🧱 Controlled object creation
+
+These challenges provide practical experience with **Object-Oriented Design and reusable programming concepts**.
+
+---
+
 # 🧠 Skills I'm Building
 
 - ☕ Core Java
@@ -1173,7 +1254,9 @@ This challenge strengthened my understanding of **design patterns, interfaces, p
 - 🔢 Prime Number Checking
 - 🧮 Number Validation
 - 🏭 Factory Pattern
+- 🔐 Singleton Pattern
 - 🧱 Factory-Based Object Creation
+- 🔒 Controlled Object Creation
 - 🔌 Interface-Based Object Creation
 - ⚠️ Runtime Exception Handling
 - 🚨 `InputMismatchException`
@@ -1261,7 +1344,8 @@ This challenge strengthened my understanding of **design patterns, interfaces, p
 - ✅ Day 50 Completed 🎉🔥🔬
 - ✅ Day 51 Completed 🎉🔥🔢
 - ✅ Day 52 Completed 🎉🔥🏭
-- ⏳ Day 53–99 Continuing...
+- ✅ Day 53 Completed 🎉🔥🔐
+- ⏳ Day 54–99 Continuing...
 - 🎯 Day 100 Final Goal
 
 ---
@@ -1270,13 +1354,13 @@ This challenge strengthened my understanding of **design patterns, interfaces, p
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **52 / 100** |
-| 💻 Challenges Solved | **52** |
+| 📅 Days Completed | **53 / 100** |
+| 💻 Challenges Solved | **53** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection, Prime Number Logic & Factory Pattern** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection, Prime Number Logic, Factory Pattern & Singleton Pattern** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
-| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection & Factory Pattern** |
+| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection, Factory Pattern & Singleton Pattern** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
 | 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
@@ -1289,21 +1373,24 @@ This challenge strengthened my understanding of **design patterns, interfaces, p
 | 🔬 Reflection | **Class, Method, `getDeclaredMethods()` & Runtime Inspection** |
 | 🔢 Prime Checker | **Prime Number Logic, Loops, Conditions & Multiple Integer Validation** |
 | 🏭 Factory Pattern | **FoodFactory, Interface-Based Object Creation & Polymorphism** |
-| 📈 Progress | **52% Complete** 🚀 |
-| 🔥 Current Streak | **52 Days** |
-| ⏳ Days Remaining | **48 Days** |
+| 🔐 Singleton Pattern | **Private Constructor, Static Instance & Controlled Object Creation** |
+| 📈 Progress | **53% Complete** 🚀 |
+| 🔥 Current Streak | **53 Days** |
+| ⏳ Days Remaining | **47 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **52 Days of Java Practice Completed! 🎉🔥🚀**
+## **53 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **52 days down, 48 more to go!**
+> **53 days down, 47 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, and object creation using the Factory Pattern.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, Factory Pattern, and Singleton Pattern.
 
-The journey continues with **consistency, discipline, practice, and continuous learning.** Day 52 adds **Factory Pattern and interface-based object creation** to the journey. ☕💻🏭🔥
+The journey continues with **consistency, discipline, practice, and continuous learning.**
+
+Day 53 adds **Singleton Pattern and controlled object creation** to the journey. ☕💻🔐🔥
 
 ---
 
@@ -1329,6 +1416,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 50 | ✅ Completed 🎉🔥🔬 |
 | 🎯 Day 51 | ✅ Completed 🎉🔥🔢 |
 | 🎯 Day 52 | ✅ Completed 🎉🔥🏭 |
+| 🎯 Day 53 | ✅ Completed 🎉🔥🔐 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
 
@@ -1354,14 +1442,15 @@ Day 49      ████████████████████ 100% �
 Day 50      ████████████████████ 100% ✅
 Day 51      ████████████████████ 100% ✅
 Day 52      ████████████████████ 100% ✅
-Day 75      ██████████░░░░░░░░░░ 52% ⏳
-Day 100     ██████████░░░░░░░░░░ 52% ⏳
+Day 53      ████████████████████ 100% ✅
+Day 75      ███████████░░░░░░░░░ 53% ⏳
+Day 100     ███████████░░░░░░░░░ 53% ⏳
 
 ## 🚀 Overall Progress
 
-[██████████░░░░░░░░░░░] 52%
+[███████████░░░░░░░░░] 53%
 
-**52 / 100 Days Completed**
+**53 / 100 Days Completed**
 
 ---
 
@@ -1418,7 +1507,9 @@ It is also about:
 - 🔢 Checking prime numbers using Java logic
 - ➕ Processing multiple integers using Varargs
 - 🏭 Understanding the Factory Pattern
+- 🔐 Understanding the Singleton Pattern
 - 🧱 Creating objects through a factory method
+- 🔒 Controlling object creation through Singleton implementation
 - 🔌 Using interfaces for flexible object creation
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
@@ -1477,7 +1568,9 @@ Every challenge helps me improve my:
 - 🔢 Prime Number Checking
 - 🧮 Number Validation
 - 🏭 Factory Pattern
+- 🔐 Singleton Pattern
 - 🧱 Factory-Based Object Creation
+- 🔒 Controlled Object Creation
 - 🔌 Interface-Based Programming
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
@@ -1555,7 +1648,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#DesignPatterns` `#ObjectCreation` `#Day52` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#SingletonPattern` `#DesignPatterns` `#ObjectCreation` `#Day53` `#OpenToWork`
 
 ---
 
@@ -1565,6 +1658,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**52 Days Completed ✅ | 48 Days Remaining ⏳ | 100 Days Goal 🎯**
+**53 Days Completed ✅ | 47 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🔐🚀**
