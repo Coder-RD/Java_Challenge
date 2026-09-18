@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, Regular Expressions, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -48,6 +48,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔐 Understand the Singleton Design Pattern.
 - 🧩 Learn controlled object creation using a single instance.
 - 🏗️ Understand private constructors and static instance management.
+- 🔍 Learn Regular Expressions and pattern matching.
+- 🌐 Validate IPv4 addresses using Java Regex.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -106,6 +108,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔍 Number Validation
 - 🏭 Factory Pattern
 - 🔐 Singleton Pattern
+- 🔍 Regex Pattern Matching
+- 🌐 IPv4 Validation
 - 🏗️ Object Creation
 - 🔌 Interface-Based Object Creation
 - 🧠 Problem Solving
@@ -285,6 +289,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Singleton Pattern.java
 │   └── Screenshot 2026-09-17 163749.png
 │
+├── 📁 Day-54/
+│   ├── Java Regex.java
+│   └── Screenshot 2026-09-18 102522.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -348,8 +356,82 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 51 | Prime Checker | Completed 🎉🔥🔢 |
 | ✅ Day 52 | Java Factory Pattern | Completed 🎉🔥🏭 |
 | ✅ Day 53 | Java Singleton Pattern | Completed 🎉🔥🔐 |
-| ⏳ Day 54–99 | Upcoming Challenges | Pending |
+| ✅ Day 54 | Java Regex – IPv4 Validation | Completed 🎉🔥🔍 |
+| ⏳ Day 55–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 📌 Day 54 – Java Regex – IPv4 Validation
+
+## 📚 Challenge
+
+The **Java Regex** challenge focuses on creating a regular expression to validate IPv4 addresses.
+
+An IPv4 address is written in the form:
+
+`A.B.C.D`
+
+Each section must contain a value from **0 to 255**. Leading zeros are allowed, and each section cannot contain more than three digits.
+
+## 💡 Concepts Practiced
+
+- ✅ Regular Expressions
+- ✅ Regex Pattern Matching
+- ✅ IPv4 Address Validation
+- ✅ String Validation
+- ✅ Pattern Structure
+- ✅ Capturing Groups
+- ✅ Numeric Range Validation
+- ✅ Leading Zero Handling
+- ✅ Dot Character Escaping
+- ✅ Java String Escape Sequences
+- ✅ HackerRank Problem Solving
+- ✅ Core Java
+
+## 🧠 Key Learning
+
+The solution uses a regular expression to validate all four sections of an IPv4 address.
+
+The pattern checks:
+
+1. Exactly four numeric sections.
+2. Each section is separated by a dot.
+3. Each section contains at most three digits.
+4. Each section has a value between `0` and `255`.
+5. Leading zeros are allowed.
+6. Invalid formats such as extra sections, missing sections, letters, or values greater than `255` are rejected.
+
+## 🔍 Example Valid Addresses
+
+- `000.12.12.034`
+- `121.234.12.12`
+- `23.45.12.56`
+
+## ❌ Example Invalid Addresses
+
+- `000.12.234.23.23`
+- `666.666.23.23`
+- `.213.123.23.32`
+- `23.45.22.32.`
+- `I.Am.not.an.ip`
+
+## 🎯 What I Learned
+
+Through this challenge, I learned:
+
+- How to create a regular expression for IP address validation.
+- How to define numeric ranges using Regex.
+- How to validate structured strings.
+- How to handle leading zeros.
+- How to escape special characters in Java strings.
+- How Regex can be used for input validation.
+- How to combine multiple Regex conditions into a single pattern.
+
+## 📂 Day 54 Files
+
+- `Day-54/Java Regex.java`
+- `Day-54/Screenshot 2026-09-18 102522.png`
 
 ---
 
@@ -400,18 +482,6 @@ The main concepts demonstrated in this challenge are:
 5. The same instance is returned for subsequent calls.
 
 This challenge helped strengthen my understanding of **private constructors, static members, object creation, instance management, and design patterns in Java**.
-
-## 🎯 What I Learned
-
-Through this challenge, I learned:
-
-- How the Singleton Design Pattern works.
-- How to restrict direct object creation using a private constructor.
-- How static variables can maintain a single class instance.
-- How static methods can provide access to a shared instance.
-- How object creation can be controlled inside a class.
-- How design patterns can be implemented using Core Java concepts.
-- How OOP concepts can be applied to practical programming problems.
 
 ## 📂 Day 53 Files
 
@@ -1044,6 +1114,9 @@ When the special `"###"` string is reached, the loop stops and the remaining str
 - ✅ String Replacement
 - ✅ Tag Content Extraction
 - ✅ Nested Tags
+- ✅ IPv4 Address Validation
+- ✅ Numeric Range Validation
+- ✅ Leading Zero Handling
 
 ---
 
@@ -1152,6 +1225,41 @@ This challenge helped strengthen my understanding of **private constructors, sta
 
 ---
 
+# 🔍 Regex & IPv4 Validation
+
+## Concepts Practiced
+
+- ✅ Regular Expressions
+- ✅ Regex Pattern Matching
+- ✅ IPv4 Validation
+- ✅ Numeric Range Checking
+- ✅ `0–255` Range Validation
+- ✅ Leading Zeros
+- ✅ Four-Part IP Structure
+- ✅ Dot-Separated Values
+- ✅ Java String Escaping
+- ✅ Input Validation
+- ✅ Pattern Matching
+- ✅ Core Java
+
+## Day 54 Challenge
+
+The Day 54 challenge demonstrates how Java Regular Expressions can be used to validate IPv4 addresses.
+
+The IPv4 validation pattern checks four sections separated by dots, where every section must represent a number between `0` and `255`.
+
+The solution also supports leading zeros while rejecting invalid addresses containing:
+
+- More than four sections
+- Missing sections
+- Values greater than `255`
+- Non-numeric characters
+- Invalid dot placement
+
+This challenge strengthened my understanding of **Regular Expressions, pattern matching, numeric range validation, string validation, and Java escape sequences**.
+
+---
+
 # 🛡️ Exception & Error Handling
 
 - ✅ Exception Handling
@@ -1208,7 +1316,7 @@ This challenge helped strengthen my understanding of **private constructors, sta
 
 # 🏗️ Java Design Patterns
 
-The challenge journey now includes practical exposure to Java design patterns.
+The challenge journey includes practical exposure to Java design patterns.
 
 ## Factory Pattern
 
@@ -1255,18 +1363,14 @@ These challenges provide practical experience with **Object-Oriented Design and 
 - 🧮 Number Validation
 - 🏭 Factory Pattern
 - 🔐 Singleton Pattern
-- 🧱 Factory-Based Object Creation
 - 🔒 Controlled Object Creation
-- 🔌 Interface-Based Object Creation
-- ⚠️ Runtime Exception Handling
-- 🚨 `InputMismatchException`
-- ➗ `ArithmeticException`
+- 🔍 Regular Expressions
+- 🌐 IPv4 Address Validation
 - 📦 Collection Framework
 - 📋 ArrayList
 - 🧩 Problem Solving
 - 🧠 Logical Thinking
 - 🔤 String Handling
-- 🔍 Regular Expressions
 - 💻 Programming Fundamentals
 - 📦 Array Handling
 - 📐 2D Array Processing
@@ -1336,16 +1440,17 @@ These challenges provide practical experience with **Object-Oriented Design and 
 - ✅ Day 42 Completed
 - ✅ Day 43 Completed
 - ✅ Day 44 Completed
-- ✅ Day 45 Completed 🎉
-- ✅ Day 46 Completed 🎉🔥
-- ✅ Day 47 Completed 🎉🔥🛡️
-- ✅ Day 48 Completed 🎉🔥⚡
-- ✅ Day 49 Completed 🎉🔥📌
-- ✅ Day 50 Completed 🎉🔥🔬
-- ✅ Day 51 Completed 🎉🔥🔢
-- ✅ Day 52 Completed 🎉🔥🏭
-- ✅ Day 53 Completed 🎉🔥🔐
-- ⏳ Day 54–99 Continuing...
+- ✅ Day 45 Completed
+- ✅ Day 46 Completed
+- ✅ Day 47 Completed
+- ✅ Day 48 Completed
+- ✅ Day 49 Completed
+- ✅ Day 50 Completed
+- ✅ Day 51 Completed
+- ✅ Day 52 Completed
+- ✅ Day 53 Completed
+- ✅ Day 54 Completed 🔍🔥
+- ⏳ Day 55–99 Continuing...
 - 🎯 Day 100 Final Goal
 
 ---
@@ -1354,11 +1459,11 @@ These challenges provide practical experience with **Object-Oriented Design and 
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **53 / 100** |
-| 💻 Challenges Solved | **53** |
+| 📅 Days Completed | **54 / 100** |
+| 💻 Challenges Solved | **54** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection, Prime Number Logic, Factory Pattern & Singleton Pattern** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern & Regular Expressions** |
 | 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
 | 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection, Factory Pattern & Singleton Pattern** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
@@ -1374,23 +1479,24 @@ These challenges provide practical experience with **Object-Oriented Design and 
 | 🔢 Prime Checker | **Prime Number Logic, Loops, Conditions & Multiple Integer Validation** |
 | 🏭 Factory Pattern | **FoodFactory, Interface-Based Object Creation & Polymorphism** |
 | 🔐 Singleton Pattern | **Private Constructor, Static Instance & Controlled Object Creation** |
-| 📈 Progress | **53% Complete** 🚀 |
-| 🔥 Current Streak | **53 Days** |
-| ⏳ Days Remaining | **47 Days** |
+| 🔍 Regex | **Pattern Matching, IPv4 Validation & Numeric Range Checking** |
+| 📈 Progress | **54% Complete** 🚀 |
+| 🔥 Current Streak | **54 Days** |
+| ⏳ Days Remaining | **46 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **53 Days of Java Practice Completed! 🎉🔥🚀**
+## **54 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **53 days down, 47 more to go!**
+> **54 days down, 46 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, Factory Pattern, and Singleton Pattern.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, Factory Pattern, Singleton Pattern, and Regular Expressions.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.**
 
-Day 53 adds **Singleton Pattern and controlled object creation** to the journey. ☕💻🔐🔥
+Day 54 adds **Regular Expressions and IPv4 address validation** to the journey. ☕💻🔍🔥
 
 ---
 
@@ -1417,6 +1523,7 @@ Day 53 adds **Singleton Pattern and controlled object creation** to the journey.
 | 🎯 Day 51 | ✅ Completed 🎉🔥🔢 |
 | 🎯 Day 52 | ✅ Completed 🎉🔥🏭 |
 | 🎯 Day 53 | ✅ Completed 🎉🔥🔐 |
+| 🎯 Day 54 | ✅ Completed 🎉🔥🔍 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
 
@@ -1443,14 +1550,15 @@ Day 50      ████████████████████ 100% �
 Day 51      ████████████████████ 100% ✅
 Day 52      ████████████████████ 100% ✅
 Day 53      ████████████████████ 100% ✅
-Day 75      ███████████░░░░░░░░░ 53% ⏳
-Day 100     ███████████░░░░░░░░░ 53% ⏳
+Day 54      ████████████████████ 100% ✅
+Day 75      ███████████░░░░░░░░░ 54% ⏳
+Day 100     ███████████░░░░░░░░░ 54% ⏳
 
 ## 🚀 Overall Progress
 
-[███████████░░░░░░░░░] 53%
+[███████████░░░░░░░░░] 54%
 
-**53 / 100 Days Completed**
+**54 / 100 Days Completed**
 
 ---
 
@@ -1511,6 +1619,8 @@ It is also about:
 - 🧱 Creating objects through a factory method
 - 🔒 Controlling object creation through Singleton implementation
 - 🔌 Using interfaces for flexible object creation
+- 🔍 Understanding Regular Expressions
+- 🌐 Validating IPv4 addresses
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1572,6 +1682,8 @@ Every challenge helps me improve my:
 - 🧱 Factory-Based Object Creation
 - 🔒 Controlled Object Creation
 - 🔌 Interface-Based Programming
+- 🔍 Regular Expressions
+- 🌐 IPv4 Validation
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1648,7 +1760,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#SingletonPattern` `#DesignPatterns` `#ObjectCreation` `#Day53` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#SingletonPattern` `#DesignPatterns` `#ObjectCreation` `#RegularExpressions` `#JavaRegex` `#Regex` `#IPv4` `#IPValidation` `#Day54` `#OpenToWork`
 
 ---
 
@@ -1658,6 +1770,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**53 Days Completed ✅ | 47 Days Remaining ⏳ | 100 Days Goal 🎯**
+**54 Days Completed ✅ | 46 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🔐🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🔐🔍🚀**
