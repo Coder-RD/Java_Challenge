@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, Regular Expressions, and programming fundamentals**.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, Regular Expressions, PriorityQueue, and programming fundamentals**.
 
 The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
 
@@ -50,6 +50,9 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🏗️ Understand private constructors and static instance management.
 - 🔍 Learn Regular Expressions and pattern matching.
 - 🌐 Validate IPv4 addresses using Java Regex.
+- 📦 Understand `PriorityQueue`.
+- ⚖️ Implement custom priority rules using `Comparator`.
+- 🔢 Perform multi-level object comparison.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -110,6 +113,9 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 🔐 Singleton Pattern
 - 🔍 Regex Pattern Matching
 - 🌐 IPv4 Validation
+- 📦 PriorityQueue
+- ⚖️ Custom Priority Ordering
+- 🔢 Multi-Level Object Comparison
 - 🏗️ Object Creation
 - 🔌 Interface-Based Object Creation
 - 🧠 Problem Solving
@@ -293,6 +299,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Regex.java
 │   └── Screenshot 2026-09-18 102522.png
 │
+├── 📁 Day-55/
+│   ├── Java Priority Queue.java
+│   └── Screenshot 2026-09-19 210330.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -357,8 +367,68 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 52 | Java Factory Pattern | Completed 🎉🔥🏭 |
 | ✅ Day 53 | Java Singleton Pattern | Completed 🎉🔥🔐 |
 | ✅ Day 54 | Java Regex – IPv4 Validation | Completed 🎉🔥🔍 |
-| ⏳ Day 55–99 | Upcoming Challenges | Pending |
+| ✅ Day 55 | Java Priority Queue | Completed 🎉🔥⚖️📦 |
+| ⏳ Day 56–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 📌 Day 55 – Java Priority Queue
+
+## 📚 Challenge
+
+The **Java Priority Queue** challenge focuses on using a `PriorityQueue` with a custom `Comparator` to manage students according to multiple priority rules.
+
+The program processes two types of events: `ENTER` adds a student to the queue, while `SERVED` removes the student with the highest priority.
+
+## 💡 Priority Rules
+
+Students are prioritized in the following order:
+
+1. 🎓 Higher CGPA comes first.
+2. 🔤 If CGPA is the same, the student name is compared in ascending alphabetical order.
+3. 🆔 If both CGPA and name are the same, the student with the lower ID comes first.
+
+## 🧠 Concepts Practiced
+
+- ✅ `PriorityQueue`
+- ✅ `Comparator`
+- ✅ Custom Priority Ordering
+- ✅ Multi-Level Comparison
+- ✅ CGPA-Based Priority
+- ✅ Alphabetical Name Comparison
+- ✅ ID-Based Tie Breaking
+- ✅ `compare()` Method
+- ✅ `poll()` Operation
+- ✅ Queue Operations
+- ✅ Java Collections Framework
+- ✅ `Student` Objects
+- ✅ Event-Based Processing
+- ✅ `ENTER` Events
+- ✅ `SERVED` Events
+- ✅ Object Comparison
+- ✅ Sorting Logic
+- ✅ Problem Solving
+- ✅ Core Java
+
+## 🔄 Problem-Solving Approach
+
+The solution creates a `PriorityQueue<Student>` and supplies a custom `Comparator<Student>` to control how students are ordered.
+
+The program then processes each event:
+
+1. `ENTER` creates a `Student` object and adds it to the priority queue.
+2. `SERVED` removes the student currently having the highest priority.
+3. After all events are processed, the remaining students are retrieved from the queue in priority order.
+
+## 🎯 What I Learned
+
+Through this challenge, I strengthened my understanding of **PriorityQueue, Comparator, custom object ordering, multi-level sorting, queue operations, Java Collections, and event-based problem solving**.
+
+## 📂 Day 55 Files
+
+- `Day-55/Java Priority Queue.java`
+- `Day-55/Screenshot 2026-09-19 210330.png`
 
 ---
 
@@ -1260,6 +1330,46 @@ This challenge strengthened my understanding of **Regular Expressions, pattern m
 
 ---
 
+# 📦 Java PriorityQueue & Custom Priority Ordering
+
+## Concepts Practiced
+
+- ✅ `PriorityQueue`
+- ✅ `Comparator`
+- ✅ Custom Priority Ordering
+- ✅ Multi-Level Comparison
+- ✅ Higher CGPA Priority
+- ✅ Alphabetical Name Priority
+- ✅ Lower ID Tie Breaking
+- ✅ `compare()` Method
+- ✅ `poll()` Operation
+- ✅ Queue Operations
+- ✅ Java Collections Framework
+- ✅ Student Object Management
+- ✅ Event Processing
+- ✅ `ENTER` Event
+- ✅ `SERVED` Event
+- ✅ Object Comparison
+- ✅ Custom Sorting Logic
+- ✅ Data Structure Fundamentals
+- ✅ Problem Solving
+
+## Day 55 Challenge
+
+The Day 55 challenge demonstrates how to use Java's **PriorityQueue** with a custom `Comparator`.
+
+The program manages student objects according to three priority conditions:
+
+1. Higher CGPA gets higher priority.
+2. If CGPA is equal, names are compared alphabetically.
+3. If both CGPA and name are equal, the student with the lower ID gets priority.
+
+The program processes `ENTER` events to add students and `SERVED` events to remove the highest-priority student.
+
+This challenge strengthened my understanding of **PriorityQueue, Comparator, custom priority ordering, multi-level comparison, queue operations, Java Collections, and event-based processing**.
+
+---
+
 # 🛡️ Exception & Error Handling
 
 - ✅ Exception Handling
@@ -1366,6 +1476,9 @@ These challenges provide practical experience with **Object-Oriented Design and 
 - 🔒 Controlled Object Creation
 - 🔍 Regular Expressions
 - 🌐 IPv4 Address Validation
+- 📦 PriorityQueue
+- ⚖️ Custom Priority Ordering
+- 🔢 Multi-Level Object Comparison
 - 📦 Collection Framework
 - 📋 ArrayList
 - 🧩 Problem Solving
@@ -1396,62 +1509,68 @@ These challenges provide practical experience with **Object-Oriented Design and 
 
 # 📅 Challenge Progress
 
-- ✅ Day 1 Completed
-- ✅ Day 2 Completed
-- ✅ Day 3 Completed
-- ✅ Day 4 Completed
-- ✅ Day 5 Completed
-- ✅ Day 6 Completed
-- ✅ Day 7 Completed
-- ✅ Day 8 Completed
-- ✅ Day 9 Completed
-- ✅ Day 10 Completed
-- ✅ Day 11 Completed
-- ✅ Day 12 Completed
-- ✅ Day 13 Completed
-- ✅ Day 14 Completed
-- ✅ Day 15 Completed
-- ✅ Day 16 Completed
-- ✅ Day 17 Completed
-- ✅ Day 18 Completed
-- ✅ Day 19 Completed
-- ✅ Day 20 Completed
-- ✅ Day 21 Completed
-- ✅ Day 22 Completed
-- ✅ Day 23 Completed
-- ✅ Day 24 Completed
-- ✅ Day 25 Completed
-- ✅ Day 26 Completed
-- ✅ Day 27 Completed
-- ✅ Day 28 Completed
-- ✅ Day 29 Completed
-- ✅ Day 30 Completed
-- ✅ Day 31 Completed
-- ✅ Day 32 Completed
-- ✅ Day 33 Completed
-- ✅ Day 34 Completed
-- ✅ Day 35 Completed
-- ✅ Day 36 Completed
-- ✅ Day 37 Completed
-- ✅ Day 38 Completed
-- ✅ Day 39 Completed
-- ✅ Day 40 Completed
-- ✅ Day 41 Completed
-- ✅ Day 42 Completed
-- ✅ Day 43 Completed
-- ✅ Day 44 Completed
-- ✅ Day 45 Completed
-- ✅ Day 46 Completed
-- ✅ Day 47 Completed
-- ✅ Day 48 Completed
-- ✅ Day 49 Completed
-- ✅ Day 50 Completed
-- ✅ Day 51 Completed
-- ✅ Day 52 Completed
-- ✅ Day 53 Completed
-- ✅ Day 54 Completed 🔍🔥
-- ⏳ Day 55–99 Continuing...
-- 🎯 Day 100 Final Goal
+## 🎯 Completed Days
+
+- ✅ Day 1
+- ✅ Day 2
+- ✅ Day 3
+- ✅ Day 4
+- ✅ Day 5
+- ✅ Day 6
+- ✅ Day 7
+- ✅ Day 8
+- ✅ Day 9
+- ✅ Day 10
+- ✅ Day 11
+- ✅ Day 12
+- ✅ Day 13
+- ✅ Day 14
+- ✅ Day 15
+- ✅ Day 16
+- ✅ Day 17
+- ✅ Day 18
+- ✅ Day 19
+- ✅ Day 20
+- ✅ Day 21
+- ✅ Day 22
+- ✅ Day 23
+- ✅ Day 24
+- ✅ Day 25
+- ✅ Day 26
+- ✅ Day 27
+- ✅ Day 28
+- ✅ Day 29
+- ✅ Day 30
+- ✅ Day 31
+- ✅ Day 32
+- ✅ Day 33
+- ✅ Day 34
+- ✅ Day 35
+- ✅ Day 36
+- ✅ Day 37
+- ✅ Day 38
+- ✅ Day 39
+- ✅ Day 40
+- ✅ Day 41
+- ✅ Day 42
+- ✅ Day 43
+- ✅ Day 44
+- ✅ Day 45
+- ✅ Day 46
+- ✅ Day 47
+- ✅ Day 48
+- ✅ Day 49
+- ✅ Day 50
+- ✅ Day 51
+- ✅ Day 52
+- ✅ Day 53
+- ✅ Day 54
+- ✅ Day 55 ⚖️📦🔥
+
+## ⏳ Remaining
+
+- ⏳ Day 56 → Day 99
+- 🎯 Day 100 → Final Goal
 
 ---
 
@@ -1459,14 +1578,14 @@ These challenges provide practical experience with **Object-Oriented Design and 
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **54 / 100** |
-| 💻 Challenges Solved | **54** |
+| 📅 Days Completed | **55 / 100** |
+| 💻 Challenges Solved | **55** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern & Regular Expressions** |
-| 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet & BitSet** |
-| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection, Factory Pattern & Singleton Pattern** |
-| ⚖️ Sorting Concepts | **Comparator, Custom Sorting & Object Comparison** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, Regular Expressions & PriorityQueue** |
+| 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet, BitSet & PriorityQueue** |
+| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection, Factory Pattern, Singleton Pattern & PriorityQueue** |
+| ⚖️ Sorting Concepts | **Comparator, Custom Sorting, Object Comparison & Multi-Level Priority Ordering** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
 | 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
 | 🔄 Polymorphism Concepts | **Method Overriding, Method Overloading, Runtime Polymorphism, Dynamic Method Dispatch & `super`** |
@@ -1480,23 +1599,24 @@ These challenges provide practical experience with **Object-Oriented Design and 
 | 🏭 Factory Pattern | **FoodFactory, Interface-Based Object Creation & Polymorphism** |
 | 🔐 Singleton Pattern | **Private Constructor, Static Instance & Controlled Object Creation** |
 | 🔍 Regex | **Pattern Matching, IPv4 Validation & Numeric Range Checking** |
-| 📈 Progress | **54% Complete** 🚀 |
-| 🔥 Current Streak | **54 Days** |
-| ⏳ Days Remaining | **46 Days** |
+| 📦 PriorityQueue | **Student Priority Management, Custom Comparator & Event Processing** |
+| 📈 Progress | **55% Complete** 🚀 |
+| 🔥 Current Streak | **55 Days** |
+| ⏳ Days Remaining | **45 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **54 Days of Java Practice Completed! 🎉🔥🚀**
+## **55 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **54 days down, 46 more to go!**
+> **55 days down, 45 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, Factory Pattern, Singleton Pattern, and Regular Expressions.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, Factory Pattern, Singleton Pattern, Regular Expressions, and PriorityQueue.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.**
 
-Day 54 adds **Regular Expressions and IPv4 address validation** to the journey. ☕💻🔍🔥
+Day 55 adds **PriorityQueue and custom priority-based student processing** to the journey. ☕💻📦⚖️🔥
 
 ---
 
@@ -1524,6 +1644,7 @@ Day 54 adds **Regular Expressions and IPv4 address validation** to the journey. 
 | 🎯 Day 52 | ✅ Completed 🎉🔥🏭 |
 | 🎯 Day 53 | ✅ Completed 🎉🔥🔐 |
 | 🎯 Day 54 | ✅ Completed 🎉🔥🔍 |
+| 🎯 Day 55 | ✅ Completed 🎉🔥⚖️📦 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
 
@@ -1551,14 +1672,15 @@ Day 51      ████████████████████ 100% �
 Day 52      ████████████████████ 100% ✅
 Day 53      ████████████████████ 100% ✅
 Day 54      ████████████████████ 100% ✅
-Day 75      ███████████░░░░░░░░░ 54% ⏳
-Day 100     ███████████░░░░░░░░░ 54% ⏳
+Day 55      ████████████████████ 100% ✅
+Day 75      ███████████░░░░░░░░░ 55% ⏳
+Day 100     ███████████░░░░░░░░░ 55% ⏳
 
 ## 🚀 Overall Progress
 
-[███████████░░░░░░░░░] 54%
+[███████████░░░░░░░░░] 55%
 
-**54 / 100 Days Completed**
+**55 / 100 Days Completed**
 
 ---
 
@@ -1621,6 +1743,9 @@ It is also about:
 - 🔌 Using interfaces for flexible object creation
 - 🔍 Understanding Regular Expressions
 - 🌐 Validating IPv4 addresses
+- 📦 Working with `PriorityQueue`
+- ⚖️ Building custom priority rules with `Comparator`
+- 🔢 Implementing multi-level object comparison
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1684,6 +1809,9 @@ Every challenge helps me improve my:
 - 🔌 Interface-Based Programming
 - 🔍 Regular Expressions
 - 🌐 IPv4 Validation
+- 📦 PriorityQueue
+- ⚖️ Custom Priority Ordering
+- 🔢 Multi-Level Object Comparison
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1760,7 +1888,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#SingletonPattern` `#DesignPatterns` `#ObjectCreation` `#RegularExpressions` `#JavaRegex` `#Regex` `#IPv4` `#IPValidation` `#Day54` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#SingletonPattern` `#DesignPatterns` `#ObjectCreation` `#RegularExpressions` `#JavaRegex` `#Regex` `#IPv4` `#IPValidation` `#Day54` `#Day55` `#PriorityQueue` `#JavaPriorityQueue` `#JavaCollections` `#Comparator` `#CustomPriority` `#OpenToWork`
 
 ---
 
@@ -1770,6 +1898,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**54 Days Completed ✅ | 46 Days Remaining ⏳ | 100 Days Goal 🎯**
+**55 Days Completed ✅ | 45 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🔐🔍🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🔐🔍📦🚀**
