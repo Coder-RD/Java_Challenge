@@ -53,6 +53,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 📦 Understand `PriorityQueue`.
 - ⚖️ Implement custom priority rules using `Comparator`.
 - 🔢 Perform multi-level object comparison.
+- 🗃️ Understand the Java `Deque` data structure.
+- ↔️ Perform insertion and removal operations from both ends of a deque.
 - 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Prepare for technical interviews.
 - 💼 Build a strong programming portfolio.
@@ -116,8 +118,8 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 - 📦 PriorityQueue
 - ⚖️ Custom Priority Ordering
 - 🔢 Multi-Level Object Comparison
-- 🏗️ Object Creation
-- 🔌 Interface-Based Object Creation
+- ↔️ Deque
+- 🔄 Double-Ended Queue Operations
 - 🧠 Problem Solving
 - 🎯 Algorithmic Thinking
 
@@ -303,6 +305,10 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 │   ├── Java Priority Queue.java
 │   └── Screenshot 2026-09-19 210330.png
 │
+├── 📁 Day-56/
+│   ├── Java Dequeue.java
+│   └── Screenshot 2026-09-20 080031.png
+│
 ├── 📄 README.md
 │
 └── 📄 LICENSE
@@ -368,8 +374,89 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 | ✅ Day 53 | Java Singleton Pattern | Completed 🎉🔥🔐 |
 | ✅ Day 54 | Java Regex – IPv4 Validation | Completed 🎉🔥🔍 |
 | ✅ Day 55 | Java Priority Queue | Completed 🎉🔥⚖️📦 |
-| ⏳ Day 56–99 | Upcoming Challenges | Pending |
+| ✅ Day 56 | Java Deque | Completed 🎉🔥↔️📦 |
+| ⏳ Day 57–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 📌 Day 56 – Java Deque
+
+## 📚 Challenge
+
+The **Java Deque** challenge focuses on working with a **Double-Ended Queue** using Java's `Deque` interface.
+
+A deque allows elements to be inserted and removed from **both the front and the rear** of the collection.
+
+The challenge demonstrates how a deque can be used to efficiently manage and process elements while maintaining collection order.
+
+## 💡 Concepts Practiced
+
+- ✅ `Deque` Interface
+- ✅ Double-Ended Queue
+- ✅ `ArrayDeque`
+- ✅ Java Collections Framework
+- ✅ Adding Elements
+- ✅ Removing Elements
+- ✅ Front-End Operations
+- ✅ Rear-End Operations
+- ✅ Queue Processing
+- ✅ Collection Management
+- ✅ Dynamic Data Handling
+- ✅ Duplicate Element Handling
+- ✅ Maximum Unique Elements
+- ✅ Sliding Window Logic
+- ✅ Set-Based Tracking
+- ✅ `HashSet`
+- ✅ `add()`
+- ✅ `remove()`
+- ✅ `addFirst()`
+- ✅ `removeFirst()`
+- ✅ `addLast()`
+- ✅ `removeLast()`
+- ✅ Problem Solving
+
+## 🧠 Key Learning
+
+The `Deque` interface represents a **double-ended queue**, meaning elements can be inserted and removed from either end.
+
+Java provides `ArrayDeque` as an efficient implementation of the `Deque` interface.
+
+The challenge helps understand how deque operations can be combined with a `HashSet` to track unique elements and process a sequence using a sliding-window style approach.
+
+## 🔄 Problem-Solving Approach
+
+The solution works with a deque to maintain the current sequence of elements while processing the input.
+
+The general approach includes:
+
+1. ➕ Add elements to the deque.
+2. 🔍 Track elements using a `HashSet`.
+3. ♻️ Handle duplicate values when required.
+4. 🗑️ Remove elements from the appropriate end.
+5. 📊 Maintain the current number of unique elements.
+6. 🏆 Track the maximum number of unique elements found.
+
+This approach demonstrates practical usage of **Deque, ArrayDeque, HashSet, and sliding-window based problem solving**.
+
+## 🎯 What I Learned
+
+Through this challenge, I strengthened my understanding of:
+
+- Java `Deque`
+- `ArrayDeque`
+- Double-ended queue operations
+- Adding and removing elements from both ends
+- `HashSet` for unique-element tracking
+- Sliding-window style processing
+- Collection-based problem solving
+- Efficient data handling
+- Java Collections Framework
+
+## 📂 Day 56 Files
+
+- `Day-56/Java Dequeue.java`
+- `Day-56/Screenshot 2026-09-20 080031.png`
 
 ---
 
@@ -551,7 +638,7 @@ The main concepts demonstrated in this challenge are:
 4. If the instance does not already exist, a new object is created.
 5. The same instance is returned for subsequent calls.
 
-This challenge helped strengthen my understanding of **private constructors, static members, object creation, instance management, and design patterns in Java**.
+This challenge strengthened my understanding of **private constructors, static members, object creation, instance management, and design patterns in Java**.
 
 ## 📂 Day 53 Files
 
@@ -1370,80 +1457,34 @@ This challenge strengthened my understanding of **PriorityQueue, Comparator, cus
 
 ---
 
-# 🛡️ Exception & Error Handling
+# ↔️ Java Deque
 
-- ✅ Exception Handling
-- ✅ `try-catch`
-- ✅ `throw`
-- ✅ `throws`
-- ✅ Custom Exception Messages
-- ✅ Runtime Exceptions
-- ✅ `InputMismatchException`
-- ✅ `ArithmeticException`
-- ✅ Input Validation
-- ✅ Division by Zero Handling
-- ✅ Negative Input Handling
-- ✅ Zero Input Validation
-- ✅ Exception Flow
-- ✅ Defensive Programming
-- ✅ Error Handling
+## Concepts Practiced
 
----
+- ✅ `Deque`
+- ✅ Double-Ended Queue
+- ✅ `ArrayDeque`
+- ✅ Front and Rear Operations
+- ✅ `addFirst()`
+- ✅ `addLast()`
+- ✅ `removeFirst()`
+- ✅ `removeLast()`
+- ✅ Queue Processing
+- ✅ Java Collections Framework
+- ✅ `HashSet`
+- ✅ Unique Element Tracking
+- ✅ Duplicate Handling
+- ✅ Sliding Window Logic
+- ✅ Maximum Unique Elements
+- ✅ Collection-Based Problem Solving
 
-# 📌 Varargs & Flexible Methods
+## Day 56 Challenge
 
-- ✅ Java Varargs
-- ✅ Variable-Length Arguments
-- ✅ Method Parameters
-- ✅ Multiple Integer Arguments
-- ✅ Flexible Method Calls
-- ✅ Addition Using Varargs
-- ✅ Method Overloading
-- ✅ Expression Formatting
-- ✅ Result Calculation
-- ✅ Prime Number Processing
-- ✅ Core Java Programming
+The Day 56 challenge focuses on using Java's **Deque** data structure to process elements from both ends of a collection.
 
----
+The solution uses a deque to maintain the current sequence and a `HashSet` to keep track of unique values while processing the input.
 
-# 🔬 Java Reflection & Runtime Inspection
-
-- ✅ Reflection API
-- ✅ `Class` Object
-- ✅ `Method` Object
-- ✅ `Student.class`
-- ✅ `getDeclaredMethods()`
-- ✅ Retrieving Declared Methods
-- ✅ Method Name Extraction
-- ✅ `ArrayList`
-- ✅ `Collections.sort()`
-- ✅ Alphabetical Method Sorting
-- ✅ Runtime Class Inspection
-- ✅ Dynamic Program Inspection
-- ✅ Java Reflection Fundamentals
-
----
-
-# 🏗️ Java Design Patterns
-
-The challenge journey includes practical exposure to Java design patterns.
-
-## Factory Pattern
-
-- 🏭 Factory-based object creation
-- 🔌 Interface-based programming
-- 🧩 Polymorphism
-- 🎯 Conditional object creation
-
-## Singleton Pattern
-
-- 🔐 Single instance management
-- 🔒 Private constructor
-- ⚙️ Static instance
-- 🔄 Static access method
-- 🧱 Controlled object creation
-
-These challenges provide practical experience with **Object-Oriented Design and reusable programming concepts**.
+This challenge strengthened my understanding of **double-ended queues, ArrayDeque, HashSet, unique-element tracking, sliding-window processing, and Java Collections**.
 
 ---
 
@@ -1479,6 +1520,8 @@ These challenges provide practical experience with **Object-Oriented Design and 
 - 📦 PriorityQueue
 - ⚖️ Custom Priority Ordering
 - 🔢 Multi-Level Object Comparison
+- ↔️ Deque
+- 🔄 Double-Ended Queue Operations
 - 📦 Collection Framework
 - 📋 ArrayList
 - 🧩 Problem Solving
@@ -1565,11 +1608,12 @@ These challenges provide practical experience with **Object-Oriented Design and 
 - ✅ Day 52
 - ✅ Day 53
 - ✅ Day 54
-- ✅ Day 55 ⚖️📦🔥
+- ✅ Day 55
+- ✅ Day 56 ↔️📦🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 56 → Day 99
+- ⏳ Day 57 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -1578,13 +1622,13 @@ These challenges provide practical experience with **Object-Oriented Design and 
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **55 / 100** |
-| 💻 Challenges Solved | **55** |
+| 📅 Days Completed | **56 / 100** |
+| 💻 Challenges Solved | **56** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super`, `instanceof`, Iterator, Exception Handling, Varargs, Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, Regular Expressions & PriorityQueue** |
-| 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet, BitSet & PriorityQueue** |
-| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection, Factory Pattern, Singleton Pattern & PriorityQueue** |
+| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Polymorphism, Exception Handling, Varargs, Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, Regular Expressions, PriorityQueue & Deque** |
+| 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet, BitSet, PriorityQueue & Deque** |
+| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection, Factory Pattern, Singleton Pattern, PriorityQueue & Deque** |
 | ⚖️ Sorting Concepts | **Comparator, Custom Sorting, Object Comparison & Multi-Level Priority Ordering** |
 | 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
 | 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
@@ -1600,23 +1644,24 @@ These challenges provide practical experience with **Object-Oriented Design and 
 | 🔐 Singleton Pattern | **Private Constructor, Static Instance & Controlled Object Creation** |
 | 🔍 Regex | **Pattern Matching, IPv4 Validation & Numeric Range Checking** |
 | 📦 PriorityQueue | **Student Priority Management, Custom Comparator & Event Processing** |
-| 📈 Progress | **55% Complete** 🚀 |
-| 🔥 Current Streak | **55 Days** |
-| ⏳ Days Remaining | **45 Days** |
+| ↔️ Deque | **Double-Ended Queue, ArrayDeque, Front/Rear Operations & Unique Element Tracking** |
+| 📈 Progress | **56% Complete** 🚀 |
+| 🔥 Current Streak | **56 Days** |
+| ⏳ Days Remaining | **44 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **55 Days of Java Practice Completed! 🎉🔥🚀**
+## **56 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **55 days down, 45 more to go!**
+> **56 days down, 44 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, Factory Pattern, Singleton Pattern, Regular Expressions, and PriorityQueue.
+Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, Factory Pattern, Singleton Pattern, Regular Expressions, PriorityQueue, and Deque.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.**
 
-Day 55 adds **PriorityQueue and custom priority-based student processing** to the journey. ☕💻📦⚖️🔥
+Day 56 adds **Deque and double-ended collection processing** to the journey. ☕💻↔️📦🔥
 
 ---
 
@@ -1645,6 +1690,7 @@ Day 55 adds **PriorityQueue and custom priority-based student processing** to th
 | 🎯 Day 53 | ✅ Completed 🎉🔥🔐 |
 | 🎯 Day 54 | ✅ Completed 🎉🔥🔍 |
 | 🎯 Day 55 | ✅ Completed 🎉🔥⚖️📦 |
+| 🎯 Day 56 | ✅ Completed 🎉🔥↔️📦 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
 
@@ -1673,14 +1719,15 @@ Day 52      ████████████████████ 100% �
 Day 53      ████████████████████ 100% ✅
 Day 54      ████████████████████ 100% ✅
 Day 55      ████████████████████ 100% ✅
-Day 75      ███████████░░░░░░░░░ 55% ⏳
-Day 100     ███████████░░░░░░░░░ 55% ⏳
+Day 56      ████████████████████ 100% ✅
+Day 75      ███████████░░░░░░░░░ 56% ⏳
+Day 100     ███████████░░░░░░░░░ 56% ⏳
 
 ## 🚀 Overall Progress
 
-[███████████░░░░░░░░░] 55%
+[███████████░░░░░░░░░] 56%
 
-**55 / 100 Days Completed**
+**56 / 100 Days Completed**
 
 ---
 
@@ -1746,6 +1793,10 @@ It is also about:
 - 📦 Working with `PriorityQueue`
 - ⚖️ Building custom priority rules with `Comparator`
 - 🔢 Implementing multi-level object comparison
+- ↔️ Working with Java `Deque`
+- 🔄 Performing operations from both ends of a collection
+- 🧩 Tracking unique elements using `HashSet`
+- 🪟 Understanding sliding-window style processing
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software development opportunities
@@ -1812,6 +1863,9 @@ Every challenge helps me improve my:
 - 📦 PriorityQueue
 - ⚖️ Custom Priority Ordering
 - 🔢 Multi-Level Object Comparison
+- ↔️ Deque
+- 🔄 Double-Ended Queue Processing
+- 🧩 Unique Element Tracking
 - 🧠 Data Structure Fundamentals
 - 🚀 Coding Confidence
 - ♻️ Code Reusability
@@ -1834,6 +1888,7 @@ The upcoming days will focus on more Java concepts, including:
 - 🔹 HashMap
 - 🔹 Stack
 - 🔹 Queue
+- 🔹 Deque
 - 🔹 Generics
 - 🔹 Comparator
 - 🔹 Iterator
@@ -1888,7 +1943,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#SingletonPattern` `#DesignPatterns` `#ObjectCreation` `#RegularExpressions` `#JavaRegex` `#Regex` `#IPv4` `#IPValidation` `#Day54` `#Day55` `#PriorityQueue` `#JavaPriorityQueue` `#JavaCollections` `#Comparator` `#CustomPriority` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#SingletonPattern` `#DesignPatterns` `#ObjectCreation` `#RegularExpressions` `#JavaRegex` `#Regex` `#IPv4` `#IPValidation` `#Day54` `#Day55` `#Day56` `#PriorityQueue` `#JavaPriorityQueue` `#JavaCollections` `#Comparator` `#CustomPriority` `#Deque` `#ArrayDeque` `#JavaDeque` `#100DaysOfCode` `#OpenToWork`
 
 ---
 
@@ -1898,6 +1953,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**55 Days Completed ✅ | 45 Days Remaining ⏳ | 100 Days Goal 🎯**
+**56 Days Completed ✅ | 44 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🔐🔍📦🚀**
+**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🔐🔍📦↔️🚀**
