@@ -1,316 +1,186 @@
-# ☕ 100 Days of Java Challenge
+# 🗄️ 100 Days of SQL Challenge
 
-Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
+<p align="center">
+  <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
+  <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
+  <img src="https://img.shields.io/badge/DB2-SQL-orange?style=for-the-badge" alt="DB2 SQL">
+  <img src="https://img.shields.io/badge/Progress-57%25-success?style=for-the-badge" alt="57% Progress">
+</p>
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve coding challenges to strengthen my **Core Java, Object-Oriented Programming, problem-solving, logical thinking, algorithmic thinking, data structures, Java Collections, Generics, Comparator, Sorting, Bit Manipulation, BitSet, Inheritance, Abstraction, Interfaces, Method Overriding, Method Overloading, `super` keyword, `instanceof` operator, Iterator, Exception Handling, Try-Catch, Custom Exceptions, Power Calculation, Varargs, Java Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, Regular Expressions, PriorityQueue, and programming fundamentals**.
-
-The goal is to solve **one Java programming challenge every day for 100 days**, build consistency, and continuously improve my coding and problem-solving abilities. 💻☕
-
----
-
-# 🎯 Goal
-
-- ☕ Practice Java every day for 100 days.
-- 📚 Strengthen Core Java concepts.
-- 🧩 Improve problem-solving and logical thinking.
-- 🧠 Develop algorithmic thinking.
-- 💻 Solve programming challenges on HackerRank.
-- 📦 Understand Java Collections and Data Structures.
-- 🧬 Learn and apply Java Generics.
-- ⚖️ Understand Comparator and custom sorting.
-- 🔢 Learn Bit Manipulation and BitSet.
-- 🏛️ Strengthen Object-Oriented Programming concepts.
-- 🔗 Understand Java Inheritance and code reusability.
-- 🎭 Understand Java Abstraction and abstract classes.
-- 🔌 Understand Java Interfaces and polymorphism.
-- 🔄 Understand Method Overriding and Runtime Polymorphism.
-- 🔀 Understand Method Overloading.
-- 🔍 Understand object type checking using the `instanceof` operator.
-- 🔁 Learn how to use the Java `Iterator` interface.
-- 🧭 Understand collection traversal using `Iterator`.
-- 🛡️ Learn Java Exception Handling.
-- 🔄 Understand `try-catch` blocks.
-- ⚠️ Handle runtime exceptions safely.
-- 🎯 Understand `InputMismatchException`.
-- ➗ Understand `ArithmeticException`.
-- 🚨 Understand custom exception handling.
-- 🧮 Implement power calculation using Java methods.
-- 🧾 Understand `throw` and `throws`.
-- 📌 Understand Java Varargs.
-- ➕ Perform operations using variable-length arguments.
-- 🔬 Learn Java Reflection.
-- 🧩 Inspect classes and methods using Reflection API.
-- 🔢 Understand Prime Number Logic.
-- 🔍 Check whether numbers are prime.
-- 🏭 Understand the Factory Pattern.
-- 🧱 Learn object creation using a factory class.
-- 🔄 Return different object types through a common interface.
-- 🔐 Understand the Singleton Design Pattern.
-- 🧩 Learn controlled object creation using a single instance.
-- 🏗️ Understand private constructors and static instance management.
-- 🔍 Learn Regular Expressions and pattern matching.
-- 🌐 Validate IPv4 addresses using Java Regex.
-- 📦 Understand `PriorityQueue`.
-- ⚖️ Implement custom priority rules using `Comparator`.
-- 🔢 Perform multi-level object comparison.
-- 🗃️ Understand the Java `Deque` data structure.
-- ↔️ Perform insertion and removal operations from both ends of a deque.
-- 🚀 Build consistency through the #100DaysOfCode challenge.
-- 🎯 Prepare for technical interviews.
-- 💼 Build a strong programming portfolio.
-- 🌱 Learn and improve through consistent daily practice.
+<p align="center">
+  <strong>🚀 Learn • Practice • Solve • Improve • Repeat 🚀</strong>
+</p>
 
 ---
 
-# 🛠️ Platform & Technology
+## 👋 About This Challenge
 
-- 💻 HackerRank
-- ☕ Java
-- 🧠 Core Java
-- 🏛️ Object-Oriented Programming
-- 🔗 Inheritance
-- 🎭 Abstraction
-- 🔌 Interfaces
-- 🔄 Method Overriding
-- 🔀 Method Overloading
-- 🧩 Polymorphism
-- 🔍 `instanceof` Operator
-- 🔁 Iterator
-- 🛡️ Exception Handling
-- 🔄 Try-Catch
-- 🚨 Custom Exceptions
-- 🧾 `throw`
-- 🧾 `throws`
-- 🧮 Power Calculation
-- 📌 Varargs
-- ➕ Variable-Length Arguments
-- 🔬 Java Reflection
-- 📋 `Class`
-- 🧩 `Method`
-- 📚 Reflection API
-- 📦 Collection Framework
-- 📋 List
-- 📦 ArrayList
-- 🔤 String Handling
-- 🔍 Regular Expressions
-- 🔢 BigDecimal
-- 🔢 BigInteger
-- 📦 Arrays
-- 📐 2D Arrays
-- 🔗 Subarrays
-- 🔄 Recursion
-- 🔙 Backtracking
-- 🗺️ Map
-- 🔑 HashMap
-- 🗂️ Stack
-- 🧩 HashSet
-- 🧬 Generics
-- ⚖️ Comparator
-- 🔤 Custom Sorting
-- 🔢 BitSet
-- 🔀 Bit Manipulation
-- 🔢 Prime Number Logic
-- 🔍 Number Validation
-- 🏭 Factory Pattern
-- 🔐 Singleton Pattern
-- 🔍 Regex Pattern Matching
-- 🌐 IPv4 Validation
-- 📦 PriorityQueue
-- ⚖️ Custom Priority Ordering
-- 🔢 Multi-Level Object Comparison
-- ↔️ Deque
-- 🔄 Double-Ended Queue Operations
-- 🧠 Problem Solving
-- 🎯 Algorithmic Thinking
+Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
+
+This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, mathematical problem solving, window functions, SQL pivoting, date-based analysis, and advanced SQL querying.
+
+The goal is to solve **one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL, database, analytical, and problem-solving abilities. 💻🗄️🔥
+
+---
+
+# 🎯 Challenge Goals
+
+- 🗄️ Practice SQL every day for 100 days
+- 📚 Strengthen SQL fundamentals
+- 🧠 Improve logical and analytical thinking
+- 🧩 Improve problem-solving skills
+- 💻 Solve SQL challenges on HackerRank
+- 📊 Learn data analysis using SQL
+- 🔢 Practice aggregate functions
+- 🔍 Improve filtering and sorting skills
+- 🔤 Practice string and text operations
+- 🧮 Practice mathematical functions
+- 📐 Understand rounding and truncation
+- 📍 Work with geographic and location-based data
+- 🌎 Analyze latitude and longitude values
+- 🔢 Improve decimal precision handling
+- 🔗 Understand relational data and JOIN operations
+- 🧠 Practice subqueries and nested queries
+- 🔀 Use CASE statements for conditional analysis
+- 📌 Practice DISTINCT, GROUP BY, and aggregation
+- 🏆 Analyze leaderboard and ranking-based SQL problems
+- 🔄 Identify and analyze symmetric pairs
+- 🔗 Practice multi-table relational queries
+- 💰 Compare and analyze related data across tables
+- 📈 Develop statistical thinking using SQL
+- 🔢 Apply mathematical and divisibility logic using SQL
+- 🔢 Practice window functions and row numbering
+- 🔄 Understand SQL pivoting techniques
+- 📅 Analyze date-based submission data
+- 👥 Analyze user activity and consistency
+- 🏆 Identify daily maximum contributors
+- 🎯 Prepare for technical interviews
+- 💼 Build a strong SQL and database portfolio
+- 🌱 Learn and improve through consistent daily practice
+
+---
+
+# 🛠️ Platform & Technologies
+
+| 🛠️ Category | Details |
+|---|---|
+| 💻 Platform | HackerRank |
+| 🗄️ Language | SQL |
+| 🧠 SQL Dialect | DB2 SQL |
+| 🔍 Filtering | WHERE, Conditional Filtering |
+| 📊 Aggregation | COUNT(), SUM(), AVG(), MIN(), MAX() |
+| 🔤 String Operations | String Handling & Text Processing |
+| 🔎 Pattern Matching | Regular Expressions |
+| 🔗 Relational Operations | JOINs |
+| 🔄 Pair Analysis | Symmetric Pair Matching |
+| 🧠 Advanced Queries | Subqueries |
+| 🔀 Conditional Logic | CASE Statements |
+| 📌 Data Grouping | GROUP BY |
+| 🔍 Group Filtering | HAVING |
+| 📍 Geographic Data | Latitude & Longitude |
+| 🔢 Numerical Processing | ROUND(), Decimal Precision, MOD() |
+| 🏆 Leaderboard Analysis | Scores, COUNT(), GROUP BY, HAVING |
+| 🔗 Multi-Table Analysis | Students, Friends & Packages |
+| 💰 Salary Comparison | Related Record Analysis |
+| 🔢 Window Functions | ROW_NUMBER() |
+| 🔄 SQL Pivoting | Conditional Aggregation & Row Alignment |
+| 📅 Date Analysis | Date Filtering & Date-Based Analysis |
+| 👥 Activity Analysis | Daily Submission Tracking |
+| 🏆 Ranking | Daily Maximum Submission Analysis |
+| 📈 Analysis | Statistical & Data Analysis |
 
 ---
 
 # 📂 Repository Structure
 
-100-Days-of-Java-Challenge/
-│
-├── 📁 Day-01/
-│   └── Java Hello World.java
-│
-├── 📁 Day-02/
-│   └── Java Stdin and Stdout I.java
-│
-├── 📁 Day-03/
-│   └── Java Stdin and Stdout II.java
-│
-├── 📁 Day-04/
-│   └── Java If-Else.java
-│
-├── 📁 Day-05/
-│   └── Java Loops I.java
-│
-├── 📁 Day-06/
-│   └── Java Loops II.java
-│
-├── 📁 Day-07/
-│   └── Java Output Formatting.java
-│
-├── 📁 Day-08/
-│   └── Java Datatypes.java
-│
-├── 📁 Day-09/
-│   └── Java End-of-file.java
-│
-├── 📁 Day-10/
-│   └── Java Static Initializer Block.java
-│
-├── 📁 Day-11/
-│   └── Java Int to String.java
-│
-├── 📁 Day-12/
-│   └── Java Date and Time.java
-│
-├── 📁 Day-13/
-│   └── Java Currency Formatter.java
-│
-├── 📁 Day-14/
-│   └── Java BigInteger.java
-│
-├── 📁 Day-15/
-│   └── Java BigDecimal.java
-│
-├── 📁 Day-16/
-│   └── Java 1D Array.java
-│
-├── 📁 Day-17/
-│   └── Java 2D Array.java
-│
-├── 📁 Day-18/
-│   └── Java Subarray.java
-│
-├── 📁 Day-19/
-│   └── Java Arraylist.java
-│
-├── 📁 Day-20/
-│   └── Java List.java
-│
-├── 📁 Day-21/
-│   └── Java Map.java
-│
-├── 📁 Day-22/
-│   └── Java Stack.java
-│
-├── 📁 Day-23/
-│   └── Java Hashset.java
-│
-├── 📁 Day-24/
-│   └── Java Generics.java
-│
-├── 📁 Day-25/
-│   └── Java Comparator.java
-│
-├── 📁 Day-26/
-│   └── Java Inheritance I.java
-│
-├── 📁 Day-27/
-│   └── Java Inheritance II.java
-│
-├── 📁 Day-28/
-│   └── Java Abstract Class.java
-│
-├── 📁 Day-29/
-│   └── Java Interface.java
-│
-├── 📁 Day-30/
-│   └── Java Method Overriding.java
-│
-├── 📁 Day-31/
-│   └── Java Method Overloading.java
-│
-├── 📁 Day-32/
-│   └── Java Encapsulation.java
-│
-├── 📁 Day-33/
-│   └── Java Polymorphism.java
-│
-├── 📁 Day-34/
-│   └── Java Exception Handling.java
-│
-├── 📁 Day-35/
-│   └── Java Try Catch.java
-│
-├── 📁 Day-36/
-│   └── Java Multiple Exceptions.java
-│
-├── 📁 Day-37/
-│   └── Java Custom Exception.java
-│
-├── 📁 Day-38/
-│   └── Java Exception Handling Advanced.java
-│
-├── 📁 Day-39/
-│   └── Java Inheritance Advanced.java
-│
-├── 📁 Day-40/
-│   └── Java OOP Challenge.java
-│
-├── 📁 Day-41/
-│   └── Java Classes and Objects.java
-│
-├── 📁 Day-42/
-│   └── Java Constructors.java
-│
-├── 📁 Day-43/
-│   └── Java Access Modifiers.java
-│
-├── 📁 Day-44/
-│   └── Java This Keyword.java
-│
-├── 📁 Day-45/
-│   ├── Java Instanceof keyword.java
-│   └── Screenshot 2026-09-09 095507.png
-│
-├── 📁 Day-46/
-│   ├── Java Iterator.java
-│   └── Screenshot 2026-09-10 182611.png
-│
-├── 📁 Day-47/
-│   ├── Java Exception Handling (Try-catch).java
-│   └── Screenshot 2026-09-11 152427.png
-│
-├── 📁 Day-48/
-│   ├── Java Exception Handling.java
-│   └── Screenshot 2026-09-12 143319.png
-│
-├── 📁 Day-49/
-│   ├── Java Varargs - Simple Addition.java
-│   └── Screenshot 2026-09-13 091213.png
-│
-├── 📁 Day-50/
-│   ├── Java Reflection - Attributes.java
-│   └── Screenshot 2026-09-14 084223.png
-│
-├── 📁 Day-51/
-│   ├── Prime Checker.java
-│   └── Output Screenshot
-│
-├── 📁 Day-52/
-│   ├── Java Factory Pattern.java
-│   └── Screenshot 2026-09-16 094737.png
-│
-├── 📁 Day-53/
-│   ├── Java Singleton Pattern.java
-│   └── Screenshot 2026-09-17 163749.png
-│
-├── 📁 Day-54/
-│   ├── Java Regex.java
-│   └── Screenshot 2026-09-18 102522.png
-│
-├── 📁 Day-55/
-│   ├── Java Priority Queue.java
-│   └── Screenshot 2026-09-19 210330.png
-│
-├── 📁 Day-56/
-│   ├── Java Dequeue.java
-│   └── Screenshot 2026-09-20 080031.png
-│
+📁 **100-Days-of-SQL-Challenge**
+
+├── 📁 Day1-SQL/  
+├── 📁 Day2-SQL/  
+├── 📁 Day3-SQL/  
+├── 📁 Day4-SQL/  
+├── 📁 Day5-SQL/  
+├── 📁 Day6-SQL/  
+├── 📁 Day7-SQL/  
+├── 📁 Day8-SQL/  
+├── 📁 Day9-SQL/  
+├── 📁 Day10-SQL/  
+├── 📁 Day11-SQL/  
+├── 📁 Day12-SQL/  
+├── 📁 Day13-SQL/  
+├── 📁 Day14-SQL/  
+├── 📁 Day15-SQL/  
+├── 📁 Day16-SQL/  
+├── 📁 Day17-SQL/  
+├── 📁 Day18-SQL/  
+├── 📁 Day19-SQL/  
+├── 📁 Day20-SQL/  
+├── 📁 Day21-SQL/  
+├── 📁 Day22-SQL/  
+├── 📁 Day23-SQL/  
+├── 📁 Day24-SQL/  
+├── 📁 Day25-SQL/  
+├── 📁 Day26-SQL/  
+├── 📁 Day27-SQL/  
+├── 📁 Day28-SQL/  
+├── 📁 Day29-SQL/  
+├── 📁 Day30-SQL/  
+├── 📁 Day31-SQL/  
+├── 📁 Day32-SQL/  
+├── 📁 Day33-SQL/  
+├── 📁 Day34-SQL/  
+├── 📁 Day35-SQL/  
+├── 📁 Day36-SQL/  
+├── 📁 Day37-SQL/  
+├── 📁 Day38-SQL/  
+├── 📁 Day39-SQL/  
+├── 📁 Day40-SQL/  
+├── 📁 Day41-SQL/  
+├── 📁 Day42-SQL/  
+├── 📁 Day43-SQL/  
+├── 📁 Day44-SQL/  
+│   ├── 📄 New Companies.sql  
+│   └── 📸 Screenshot 2026-09-08 130013.png  
+├── 📁 Day45-SQL/  
+│   ├── 📄 Weather Observation Station 20.sql  
+│   └── 📸 Screenshot 2026-09-09 100733.png  
+├── 📁 Day46-SQL/  
+│   ├── 📄 The Report.sql  
+│   └── 📸 Screenshot 2026-09-10 181832.png  
+├── 📁 Day47-SQL/  
+│   ├── 📄 Top Competitors.sql  
+│   └── 📸 Screenshot 2026-09-11 153810.png  
+├── 📁 Day48-SQL/  
+│   ├── 📄 Ollivander's Inventory.sql  
+│   └── 📸 Screenshot 2026-09-12 142045.png  
+├── 📁 Day49-SQL/  
+│   ├── 📄 Challenges.sql  
+│   └── 📸 Screenshot 2026-09-13 085302.png  
+├── 📁 Day50-SQL/  
+│   ├── 📄 Contest Leaderboard.sql  
+│   └── 📸 Screenshot 2026-09-14 085728.png  
+├── 📁 Day51-SQL/  
+│   ├── 📄 SQL Project Planning.sql  
+│   └── 📸 Screenshot 2026-09-15 180330.png  
+├── 📁 Day52-SQL/  
+│   ├── 📄 Placements.sql  
+│   └── 📸 Screenshot 2026-09-16 095852.png  
+├── 📁 Day53-SQL/  
+│   ├── 📄 Symmetric Pairs.sql  
+│   └── 📸 Screenshot 2026-09-17 163143.png  
+├── 📁 Day54-SQL/  
+│   ├── 📄 Interviews.sql  
+│   └── 📸 Screenshot 2026-09-18 103142.png  
+├── 📁 Day55-SQL/  
+│   ├── 📄 Print Prime Numbers.sql  
+│   └── 📸 Screenshot 2026-09-19 201219.png  
+├── 📁 Day56-SQL/  
+│   ├── 📄 Occupations.sql  
+│   └── 📸 Screenshot 2026-09-20 085257.png  
+├── 📁 Day57-SQL/  
+│   ├── 📄 15 Days of Learning SQL.sql  
+│   └── 📸 Screenshot 2026-09-21 074740.png  
 ├── 📄 README.md
-│
 └── 📄 LICENSE
 
 ---
@@ -319,1234 +189,452 @@ The goal is to solve **one Java programming challenge every day for 100 days**, 
 
 | Day | Challenge | Status |
 |---|---|---|
-| ✅ Day 1 | Java Challenge | Completed |
-| ✅ Day 2 | Java Challenge | Completed |
-| ✅ Day 3 | Java Challenge | Completed |
-| ✅ Day 4 | Java Challenge | Completed |
-| ✅ Day 5 | Java Challenge | Completed |
-| ✅ Day 6 | Java Challenge | Completed |
-| ✅ Day 7 | Java Challenge | Completed |
-| ✅ Day 8 | Java Challenge | Completed |
-| ✅ Day 9 | Java Challenge | Completed |
-| ✅ Day 10 | Java Challenge | Completed |
-| ✅ Day 11 | Java Challenge | Completed |
-| ✅ Day 12 | Java Challenge | Completed |
-| ✅ Day 13 | Java Challenge | Completed |
-| ✅ Day 14 | Java String Reverse | Completed |
-| ✅ Day 15 | Java Challenge | Completed |
-| ✅ Day 16 | Java Challenge | Completed |
-| ✅ Day 17 | Java String Reverse | Completed |
-| ✅ Day 18 | Java Anagrams | Completed |
-| ✅ Day 19 | Java String Tokens | Completed |
-| ✅ Day 20 | Pattern Syntax Checker | Completed |
-| ✅ Day 21 | Duplicate Words | Completed |
-| ✅ Day 22 | Tag Content Extractor | Completed |
-| ✅ Day 23 | Java BigDecimal | Completed |
-| ✅ Day 24 | Java Primality Test | Completed |
-| ✅ Day 25 | Java BigInteger | Completed |
-| ✅ Day 26 | Java 1D Array | Completed |
-| ✅ Day 27 | Java 2D Array | Completed |
-| ✅ Day 28 | Java Subarray | Completed |
-| ✅ Day 29 | Java Challenge | Completed |
-| ✅ Day 30 | Java 1D Array (Part 2) | Completed |
-| ✅ Day 31 | Java List | Completed |
-| ✅ Day 32 | Java Map | Completed |
-| ✅ Day 33 | Java Stack | Completed |
-| ✅ Day 34 | Java HashSet | Completed |
-| ✅ Day 35 | Java Generics | Completed |
-| ✅ Day 36 | Java Comparator | Completed |
-| ✅ Day 37 | Java Sort | Completed |
-| ✅ Day 38 | Java BitSet | Completed |
-| ✅ Day 39 | Java Inheritance I | Completed |
-| ✅ Day 40 | Java Inheritance II | Completed |
-| ✅ Day 41 | Java Abstract Class | Completed |
-| ✅ Day 42 | Java Interface | Completed |
-| ✅ Day 43 | Java Method Overriding | Completed |
-| ✅ Day 44 | Java Method Overriding 2 (Super Keyword) | Completed |
-| ✅ Day 45 | Java Instanceof Keyword | Completed 🎉 |
-| ✅ Day 46 | Java Iterator | Completed 🎉🔥 |
-| ✅ Day 47 | Java Exception Handling (Try-Catch) | Completed 🎉🔥🛡️ |
-| ✅ Day 48 | Java Exception Handling – Power Calculator | Completed 🎉🔥⚡ |
-| ✅ Day 49 | Java Varargs – Simple Addition | Completed 🎉🔥📌 |
-| ✅ Day 50 | Java Reflection – Attributes | Completed 🎉🔥🔬 |
-| ✅ Day 51 | Prime Checker | Completed 🎉🔥🔢 |
-| ✅ Day 52 | Java Factory Pattern | Completed 🎉🔥🏭 |
-| ✅ Day 53 | Java Singleton Pattern | Completed 🎉🔥🔐 |
-| ✅ Day 54 | Java Regex – IPv4 Validation | Completed 🎉🔥🔍 |
-| ✅ Day 55 | Java Priority Queue | Completed 🎉🔥⚖️📦 |
-| ✅ Day 56 | Java Deque | Completed 🎉🔥↔️📦 |
-| ⏳ Day 57–99 | Upcoming Challenges | Pending |
+| ✅ Day 1 | SQL Challenge | Completed |
+| ✅ Day 2 | SQL Challenge | Completed |
+| ✅ Day 3 | SQL Challenge | Completed |
+| ✅ Day 4 | SQL Challenge | Completed |
+| ✅ Day 5 | SQL Challenge | Completed |
+| ✅ Day 6 | SQL Challenge | Completed |
+| ✅ Day 7 | SQL Challenge | Completed |
+| ✅ Day 8 | SQL Challenge | Completed |
+| ✅ Day 9 | SQL Challenge | Completed |
+| ✅ Day 10 | SQL Challenge | Completed |
+| ✅ Day 11 | SQL Challenge | Completed |
+| ✅ Day 12 | SQL Challenge | Completed |
+| ✅ Day 13 | SQL Challenge | Completed |
+| ✅ Day 14 | SQL Challenge | Completed |
+| ✅ Day 15 | SQL Challenge | Completed |
+| ✅ Day 16 | SQL Challenge | Completed |
+| ✅ Day 17 | SQL Challenge | Completed |
+| ✅ Day 18 | SQL Challenge | Completed |
+| ✅ Day 19 | SQL Challenge | Completed |
+| ✅ Day 20 | SQL Challenge | Completed |
+| ✅ Day 21 | SQL Challenge | Completed |
+| ✅ Day 22 | SQL Challenge | Completed |
+| ✅ Day 23 | SQL Challenge | Completed |
+| ✅ Day 24 | SQL Challenge | Completed |
+| ✅ Day 25 | SQL Challenge | Completed |
+| ✅ Day 26 | SQL Challenge | Completed |
+| ✅ Day 27 | SQL Challenge | Completed |
+| ✅ Day 28 | SQL Challenge | Completed |
+| ✅ Day 29 | SQL Challenge | Completed |
+| ✅ Day 30 | SQL Challenge | Completed |
+| ✅ Day 31 | SQL Challenge | Completed |
+| ✅ Day 32 | SQL Challenge | Completed |
+| ✅ Day 33 | SQL Challenge | Completed |
+| ✅ Day 34 | SQL Challenge | Completed |
+| ✅ Day 35 | SQL Challenge | Completed |
+| ✅ Day 36 | SQL Challenge | Completed |
+| ✅ Day 37 | SQL Challenge | Completed |
+| ✅ Day 38 | SQL Challenge | Completed |
+| ✅ Day 39 | SQL Challenge | Completed |
+| ✅ Day 40 | SQL Challenge | Completed |
+| ✅ Day 41 | SQL Challenge | Completed |
+| ✅ Day 42 | SQL Challenge | Completed |
+| ✅ Day 43 | SQL Challenge | Completed |
+| ✅ Day 44 | New Companies | Completed |
+| ✅ Day 45 | Weather Observation Station 20 | Completed 🎉 |
+| ✅ Day 46 | The Report | Completed 🎉🔥 |
+| ✅ Day 47 | Top Competitors | Completed 🎉🏆🔥 |
+| ✅ Day 48 | Ollivander's Inventory | Completed 🎉🪄🔥 |
+| ✅ Day 49 | Challenges | Completed 🎉🏆🔥 |
+| ✅ Day 50 | Contest Leaderboard | Completed 🎉🏆🔥 |
+| ✅ Day 51 | SQL Project Planning | Completed 🎉🏆🔥 |
+| ✅ Day 52 | Placements | Completed 🎉🏆🔥🔗 |
+| ✅ Day 53 | Symmetric Pairs | Completed 🎉🔄🔥 |
+| ✅ Day 54 | Interviews | Completed 🎉💻🔥 |
+| ✅ Day 55 | Print Prime Numbers | Completed 🎉🔢🔥 |
+| ✅ Day 56 | Occupations | Completed 🎉🔄📊🔥 |
+| ✅ Day 57 | 15 Days of Learning SQL | Completed 🎉📅🏆🔥 |
+| ⏳ Day 58–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
 
-# 📌 Day 56 – Java Deque
+# 🆕 Day 57 – 15 Days of Learning SQL
 
-## 📚 Challenge
+## 📌 Challenge Information
 
-The **Java Deque** challenge focuses on working with a **Double-Ended Queue** using Java's `Deque` interface.
-
-A deque allows elements to be inserted and removed from **both the front and the rear** of the collection.
-
-The challenge demonstrates how a deque can be used to efficiently manage and process elements while maintaining collection order.
-
-## 💡 Concepts Practiced
-
-- ✅ `Deque` Interface
-- ✅ Double-Ended Queue
-- ✅ `ArrayDeque`
-- ✅ Java Collections Framework
-- ✅ Adding Elements
-- ✅ Removing Elements
-- ✅ Front-End Operations
-- ✅ Rear-End Operations
-- ✅ Queue Processing
-- ✅ Collection Management
-- ✅ Dynamic Data Handling
-- ✅ Duplicate Element Handling
-- ✅ Maximum Unique Elements
-- ✅ Sliding Window Logic
-- ✅ Set-Based Tracking
-- ✅ `HashSet`
-- ✅ `add()`
-- ✅ `remove()`
-- ✅ `addFirst()`
-- ✅ `removeFirst()`
-- ✅ `addLast()`
-- ✅ `removeLast()`
-- ✅ Problem Solving
-
-## 🧠 Key Learning
-
-The `Deque` interface represents a **double-ended queue**, meaning elements can be inserted and removed from either end.
-
-Java provides `ArrayDeque` as an efficient implementation of the `Deque` interface.
-
-The challenge helps understand how deque operations can be combined with a `HashSet` to track unique elements and process a sequence using a sliding-window style approach.
-
-## 🔄 Problem-Solving Approach
-
-The solution works with a deque to maintain the current sequence of elements while processing the input.
-
-The general approach includes:
-
-1. ➕ Add elements to the deque.
-2. 🔍 Track elements using a `HashSet`.
-3. ♻️ Handle duplicate values when required.
-4. 🗑️ Remove elements from the appropriate end.
-5. 📊 Maintain the current number of unique elements.
-6. 🏆 Track the maximum number of unique elements found.
-
-This approach demonstrates practical usage of **Deque, ArrayDeque, HashSet, and sliding-window based problem solving**.
-
-## 🎯 What I Learned
-
-Through this challenge, I strengthened my understanding of:
-
-- Java `Deque`
-- `ArrayDeque`
-- Double-ended queue operations
-- Adding and removing elements from both ends
-- `HashSet` for unique-element tracking
-- Sliding-window style processing
-- Collection-based problem solving
-- Efficient data handling
-- Java Collections Framework
-
-## 📂 Day 56 Files
-
-- `Day-56/Java Dequeue.java`
-- `Day-56/Screenshot 2026-09-20 080031.png`
+- 💻 **Platform:** HackerRank
+- 🗄️ **Language:** SQL
+- 🏆 **Challenge:** 15 Days of Learning SQL
+- 📅 **Day:** 57
+- 📆 **Contest Period:** March 01, 2016 – March 15, 2016
+- 🧠 **SQL Dialect:** DB2 SQL
+- ✅ **Status:** Completed
 
 ---
 
-# 📌 Day 55 – Java Priority Queue
+## 🎯 Challenge Objective
 
-## 📚 Challenge
+The **15 Days of Learning SQL** challenge requires analyzing hacker submissions during a SQL contest.
 
-The **Java Priority Queue** challenge focuses on using a `PriorityQueue` with a custom `Comparator` to manage students according to multiple priority rules.
+For each day of the contest, the query determines:
 
-The program processes two types of events: `ENTER` adds a student to the queue, while `SERVED` removes the student with the highest priority.
+- 👥 The total number of unique hackers who submitted at least once on every day starting from the first day of the contest.
+- 🏆 The hacker who made the maximum number of submissions on that particular day.
+- 🔢 If multiple hackers made the same maximum number of submissions, the hacker with the lowest `hacker_id` is selected.
+- 👤 The selected hacker's `hacker_id` and `name` are displayed.
+- 📅 Results are ordered by submission date.
 
-## 💡 Priority Rules
-
-Students are prioritized in the following order:
-
-1. 🎓 Higher CGPA comes first.
-2. 🔤 If CGPA is the same, the student name is compared in ascending alphabetical order.
-3. 🆔 If both CGPA and name are the same, the student with the lower ID comes first.
+---
 
 ## 🧠 Concepts Practiced
 
-- ✅ `PriorityQueue`
-- ✅ `Comparator`
-- ✅ Custom Priority Ordering
-- ✅ Multi-Level Comparison
-- ✅ CGPA-Based Priority
-- ✅ Alphabetical Name Comparison
-- ✅ ID-Based Tie Breaking
-- ✅ `compare()` Method
-- ✅ `poll()` Operation
-- ✅ Queue Operations
-- ✅ Java Collections Framework
-- ✅ `Student` Objects
-- ✅ Event-Based Processing
-- ✅ `ENTER` Events
-- ✅ `SERVED` Events
-- ✅ Object Comparison
-- ✅ Sorting Logic
-- ✅ Problem Solving
-- ✅ Core Java
-
-## 🔄 Problem-Solving Approach
-
-The solution creates a `PriorityQueue<Student>` and supplies a custom `Comparator<Student>` to control how students are ordered.
-
-The program then processes each event:
-
-1. `ENTER` creates a `Student` object and adds it to the priority queue.
-2. `SERVED` removes the student currently having the highest priority.
-3. After all events are processed, the remaining students are retrieved from the queue in priority order.
-
-## 🎯 What I Learned
-
-Through this challenge, I strengthened my understanding of **PriorityQueue, Comparator, custom object ordering, multi-level sorting, queue operations, Java Collections, and event-based problem solving**.
-
-## 📂 Day 55 Files
-
-- `Day-55/Java Priority Queue.java`
-- `Day-55/Screenshot 2026-09-19 210330.png`
+- ✅ Date-based SQL analysis
+- ✅ Date filtering
+- ✅ `COUNT(DISTINCT ...)`
+- ✅ `COUNT(*)`
+- ✅ `GROUP BY`
+- ✅ `JOIN`
+- ✅ Common Table Expressions
+- ✅ `WITH` clause
+- ✅ Window Functions
+- ✅ `ROW_NUMBER()`
+- ✅ `PARTITION BY`
+- ✅ `ORDER BY`
+- ✅ Tie-breaking logic
+- ✅ Maximum submission analysis
+- ✅ Daily submission analysis
+- ✅ Consistent hacker identification
+- ✅ Hacker activity tracking
+- ✅ Relational data analysis
+- ✅ DB2 date functions
+- ✅ `DAYS()`
+- ✅ Conditional filtering
+- ✅ Multi-level query processing
+- ✅ Sorting results by date
 
 ---
 
-# 📌 Day 54 – Java Regex – IPv4 Validation
+## 📖 Problem-Solving Approach
 
-## 📚 Challenge
+### 1. 📅 Filter Contest Dates
 
-The **Java Regex** challenge focuses on creating a regular expression to validate IPv4 addresses.
+The `Submissions` table is filtered to include only records from:
 
-An IPv4 address is written in the form:
+**March 01, 2016 to March 15, 2016**
 
-`A.B.C.D`
+This ensures that only submissions made during the contest period are considered.
 
-Each section must contain a value from **0 to 255**. Leading zeros are allowed, and each section cannot contain more than three digits.
+### 2. 👥 Calculate Daily Submission Counts
 
-## 💡 Concepts Practiced
+The submission data is grouped by:
 
-- ✅ Regular Expressions
-- ✅ Regex Pattern Matching
-- ✅ IPv4 Address Validation
-- ✅ String Validation
-- ✅ Pattern Structure
-- ✅ Capturing Groups
-- ✅ Numeric Range Validation
-- ✅ Leading Zero Handling
-- ✅ Dot Character Escaping
-- ✅ Java String Escape Sequences
-- ✅ HackerRank Problem Solving
-- ✅ Core Java
+- `submission_date`
+- `hacker_id`
 
-## 🧠 Key Learning
+The number of submissions made by each hacker on each day is calculated using `COUNT(*)`.
 
-The solution uses a regular expression to validate all four sections of an IPv4 address.
+This allows the query to identify the daily submission activity of every hacker.
 
-The pattern checks:
+### 3. 🏆 Identify the Daily Top Hacker
 
-1. Exactly four numeric sections.
-2. Each section is separated by a dot.
-3. Each section contains at most three digits.
-4. Each section has a value between `0` and `255`.
-5. Leading zeros are allowed.
-6. Invalid formats such as extra sections, missing sections, letters, or values greater than `255` are rejected.
+A window function using `ROW_NUMBER()` is applied separately for every submission date.
 
-## 🔍 Example Valid Addresses
+The records are ordered by:
 
-- `000.12.12.034`
-- `121.234.12.12`
-- `23.45.12.56`
+1. Highest number of submissions
+2. Lowest `hacker_id` when submission counts are tied
 
-## ❌ Example Invalid Addresses
+This ensures that exactly the required hacker is selected for each day.
 
-- `000.12.234.23.23`
-- `666.666.23.23`
-- `.213.123.23.32`
-- `23.45.22.32.`
-- `I.Am.not.an.ip`
+### 4. 👥 Identify Consistent Hackers
 
-## 🎯 What I Learned
+For each date, the query checks how many distinct dates each hacker submitted from the beginning of the contest up to that date.
 
-Through this challenge, I learned:
+The hacker is considered consistent when the number of submission dates matches the number of contest days elapsed.
 
-- How to create a regular expression for IP address validation.
-- How to define numeric ranges using Regex.
-- How to validate structured strings.
-- How to handle leading zeros.
-- How to escape special characters in Java strings.
-- How Regex can be used for input validation.
-- How to combine multiple Regex conditions into a single pattern.
+For example:
 
-## 📂 Day 54 Files
+- March 01 → hacker must have submitted on 1 day
+- March 02 → hacker must have submitted on 2 consecutive days
+- March 03 → hacker must have submitted on 3 consecutive days
+- March 04 → hacker must have submitted on 4 consecutive days
 
-- `Day-54/Java Regex.java`
-- `Day-54/Screenshot 2026-09-18 102522.png`
+The same logic continues throughout the contest.
+
+### 5. 🔢 Count Unique Consistent Hackers
+
+After identifying the hackers who submitted every day from the contest start, `COUNT(DISTINCT hacker_id)` is used to determine the total number of such hackers for each date.
+
+### 6. 🔗 Join With Hacker Information
+
+The selected daily hacker is joined with the `Hackers` table using `hacker_id`.
+
+This retrieves the hacker's corresponding name.
+
+### 7. 📊 Produce the Final Result
+
+The final output contains:
+
+- 📅 Submission date
+- 👥 Number of consistent hackers
+- 🆔 Hacker ID of the daily maximum contributor
+- 👤 Hacker name
+
+The final result is sorted by `submission_date`.
 
 ---
 
-# 📌 Day 53 – Java Singleton Pattern
+## 💡 Key SQL Functions & Techniques Used
 
-## 📚 Challenge
-
-The **Java Singleton Pattern** challenge focuses on implementing the Singleton Design Pattern in Java.
-
-The Singleton Pattern ensures that a class has only **one instance** and provides a common way to access that instance.
-
-In this challenge, a `Singleton` class is created with:
-
-- A private constructor.
-- A static instance variable.
-- A public `String` variable named `str`.
-- A static `getSingleInstance()` method.
-- Controlled creation of the Singleton object.
-
-## 💡 Concepts Practiced
-
-- ✅ Singleton Design Pattern
-- ✅ Private Constructor
-- ✅ Static Instance
-- ✅ Static Method
-- ✅ Object Creation
-- ✅ Instance Management
-- ✅ Class Design
-- ✅ Access Modifiers
-- ✅ `private` Keyword
-- ✅ `public` Keyword
-- ✅ `static` Keyword
-- ✅ Java OOP
-- ✅ Design Patterns
-- ✅ HackerRank Problem Solving
-- ✅ Core Java
-
-## 🧠 Key Learning
-
-The Singleton Pattern is used when only one instance of a class should be created.
-
-The main concepts demonstrated in this challenge are:
-
-1. The constructor is declared `private` so that objects cannot be created directly from outside the class.
-2. A static variable is used to hold the single instance of the class.
-3. The `getSingleInstance()` method provides access to that instance.
-4. If the instance does not already exist, a new object is created.
-5. The same instance is returned for subsequent calls.
-
-This challenge strengthened my understanding of **private constructors, static members, object creation, instance management, and design patterns in Java**.
-
-## 📂 Day 53 Files
-
-- `Day-53/Java Singleton Pattern.java`
-- `Day-53/Screenshot 2026-09-17 163749.png`
+| SQL Function / Concept | Purpose |
+|---|---|
+| `COUNT(*)` | Counts submissions |
+| `COUNT(DISTINCT ...)` | Counts unique hackers/dates |
+| `GROUP BY` | Groups submission records |
+| `ROW_NUMBER()` | Assigns ranking within each date |
+| `PARTITION BY` | Separates ranking by submission date |
+| `ORDER BY` | Sorts submission counts and hacker IDs |
+| `JOIN` | Connects submission data with hacker details |
+| `WITH` | Creates Common Table Expressions |
+| `DAYS()` | Calculates date differences in DB2 |
+| `DISTINCT` | Removes duplicate values |
+| `WHERE` | Filters contest-period records |
 
 ---
 
-# 📌 Day 52 – Java Factory Pattern
+## 🎓 Learning Outcome
 
-## 📚 Challenge
+Day 57 improved my understanding of:
 
-The **Java Factory Pattern** challenge focuses on understanding how a factory can be used to create objects based on a given input.
-
-In this challenge, a `Food` interface is implemented by two classes: `Pizza` and `Cake`.
-
-The `FoodFactory` class contains a `getFood(String order)` method. Based on the given order, the factory creates and returns the appropriate `Pizza` or `Cake` object.
-
-## 💡 Concepts Practiced
-
-- ✅ Factory Pattern
-- ✅ Java Interfaces
-- ✅ Object Creation
-- ✅ Interface-Based Programming
-- ✅ Polymorphism
-- ✅ `implements` Keyword
-- ✅ `new` Keyword
-- ✅ Method Implementation
-- ✅ Conditional Statements
-- ✅ `equalsIgnoreCase()`
-- ✅ Returning Objects
-- ✅ Common Interface Reference
-- ✅ Object-Oriented Programming
-- ✅ HackerRank Problem Solving
-- ✅ Core Java
-
-## 🧠 Key Learning
-
-The Factory Pattern provides a way to create objects without requiring the calling code to directly decide which concrete class should be instantiated.
-
-In this challenge:
-
-1. The `Food` interface defines the common type.
-2. `Pizza` and `Cake` implement the `Food` interface.
-3. The `FoodFactory` receives the order as a `String`.
-4. If the order is `"pizza"`, the factory creates a `Pizza` object.
-5. If the order is `"cake"`, the factory creates a `Cake` object.
-6. The created object is returned as a `Food` reference.
-
-This demonstrates how a factory can centralize object creation and work with different implementations through a common interface.
+- 📅 Date-based SQL analysis
+- 👥 Tracking user activity across multiple days
+- 🔢 Counting distinct records
+- 🏆 Finding maximum values within groups
+- 🪟 Using window functions
+- 🔢 Using `ROW_NUMBER()` for ranking
+- 📌 Using `PARTITION BY`
+- 🔀 Implementing tie-breaking conditions
+- 🧩 Using Common Table Expressions
+- 🔗 Combining multiple tables using JOIN
+- 🧠 Writing multi-level SQL queries
+- 📊 Performing daily data analysis
+- 🗄️ Working with DB2 date functions
+- 🎯 Solving complex HackerRank SQL problems
 
 ---
 
-# 📌 Day 51 – Prime Checker
+## 📂 Files Added
 
-## 📚 Challenge
-
-The **Prime Checker** challenge focuses on checking whether multiple integers are prime numbers using Java **Varargs**.
-
-The program uses a method with the `int... numbers` parameter to handle multiple integer inputs through a single method.
-
-The program applies prime number logic using loops and conditions to determine whether each given number is prime.
-
-## 💡 Concepts Practiced
-
-- ✅ Prime Number Logic
-- ✅ Varargs
-- ✅ `int... numbers`
-- ✅ Multiple Integer Inputs
-- ✅ Loops and Conditions
-- ✅ Number Validation
-- ✅ Method Design
-- ✅ Variable-Length Arguments
-- ✅ Java Reflection Compatibility
-- ✅ HackerRank Problem Solving
-- ✅ Core Java
-
-## 🧠 Key Learning
-
-A prime number is a number greater than 1 that has only two factors: `1` and itself.
-
-The main steps used in this challenge are:
-
-1. Accept multiple integers using `int... numbers`.
-2. Process each number using a loop.
-3. Check whether the number is prime using conditions.
-4. Determine the prime status of each given number.
-
-Using Varargs makes the method flexible because it can process multiple integer values with a single method definition.
+- 💻 `15 Days of Learning SQL.sql`
+- 📸 `Screenshot 2026-09-21 074740.png`
 
 ---
 
-# 📌 Day 50 – Java Reflection – Attributes
+# 🆕 Day 56 – Occupations
 
-## 📚 Challenge
+## 📌 Challenge Information
 
-The **Java Reflection – Attributes** challenge focuses on using the Java Reflection API to inspect a class and retrieve its declared methods.
-
-Java Reflection allows a program to examine information about classes, methods, fields, and other program elements at runtime.
-
-In this challenge, the `Student` class is accessed using `Student.class`.
-
-The program then retrieves the declared methods using `getDeclaredMethods()`.
-
-The method names are stored in an `ArrayList`, sorted alphabetically, and printed.
-
-## 💡 Concepts Practiced
-
-- ✅ Java Reflection
-- ✅ `Class`
-- ✅ `Method`
-- ✅ `getDeclaredMethods()`
-- ✅ Reflection API
-- ✅ `ArrayList`
-- ✅ `Collections.sort()`
-- ✅ Enhanced `for` Loop
-- ✅ Method Name Retrieval
-- ✅ Runtime Class Inspection
-- ✅ Sorting Method Names
-- ✅ Core Java
+- 💻 **Platform:** HackerRank
+- 🗄️ **Language:** SQL
+- 🏆 **Challenge:** Occupations
+- 📅 **Day:** 56
+- ✅ **Status:** Completed
+- 🧠 **SQL Dialect:** DB2 SQL
 
 ---
 
-# 🛡️ Java Exception Handling
+## 🎯 Challenge Objective
 
-Exception handling is used to handle unexpected situations and runtime errors in Java programs.
+The **Occupations** challenge requires pivoting the `Occupation` column in the `OCCUPATIONS` table so that each name is displayed under the corresponding occupation.
 
-## Concepts Practiced
+The output must contain four columns in this specific order:
 
-- ✅ Exception Handling
-- ✅ `try` Block
-- ✅ `catch` Block
-- ✅ Multiple `catch` Blocks
-- ✅ `InputMismatchException`
-- ✅ `ArithmeticException`
-- ✅ Runtime Exceptions
-- ✅ Invalid Input Handling
-- ✅ Division by Zero
-- ✅ Exception Flow
-- ✅ Error Handling
-- ✅ `Scanner` Input Handling
-- ✅ Preventing Program Termination
-- ✅ Defensive Programming
-- ✅ `throw`
-- ✅ `throws`
-- ✅ Custom Exception Messages
-- ✅ Input Validation
+1. 👨‍⚕️ Doctor
+2. 👨‍🏫 Professor
+3. 🎤 Singer
+4. 🎭 Actor
 
-## Day 47 Challenge
+Names must be arranged in **alphabetical order within each occupation**.
 
-The Day 47 challenge demonstrates how Java can handle different runtime exceptions using `try-catch`.
-
-The program performs integer division and handles:
-
-- Invalid integer input using `InputMismatchException`
-- Division by zero using `ArithmeticException`
-
-## Day 48 Challenge
-
-The Day 48 challenge demonstrates how Java exceptions can be used to validate input values in a power calculator.
-
-The program handles:
-
-- Negative values using a custom exception message
-- Both values being zero using a custom exception message
-- Valid values using power calculation
+When an occupation has fewer names than another occupation, the remaining positions contain `NULL` values.
 
 ---
 
-# 📌 Java Varargs
+## 🧠 Concepts Practiced
 
-Varargs, or variable-length arguments, allow a Java method to accept zero or more arguments of the same type.
-
-## Concepts Practiced
-
-- ✅ Varargs
-- ✅ Variable-Length Arguments
-- ✅ Method Parameters
-- ✅ Integer Arguments
-- ✅ Multiple Values
-- ✅ Method Flexibility
-- ✅ Method Overloading
-- ✅ Addition Operations
-- ✅ Prime Number Processing
-- ✅ Core Java
-
-## Day 49 Challenge
-
-The Day 49 challenge demonstrates how Java methods can work with different numbers of arguments.
-
-The challenge uses addition operations to calculate the sum of multiple integer values and displays the complete mathematical expression along with the result.
-
-## Day 51 Challenge
-
-The Day 51 challenge demonstrates how Java Varargs can be used to process multiple integer values through a single method.
-
-The method uses `int... numbers` to accept multiple integers and applies prime number logic to check each value.
+- ✅ SQL Pivoting
+- ✅ Row-to-Column Transformation
+- ✅ Window Functions
+- ✅ `ROW_NUMBER()`
+- ✅ `PARTITION BY`
+- ✅ `ORDER BY`
+- ✅ CASE Statements
+- ✅ Conditional Aggregation
+- ✅ `MAX()`
+- ✅ `GROUP BY`
+- ✅ NULL Handling
+- ✅ Alphabetical Sorting
+- ✅ Data Transformation
+- ✅ Output Formatting
+- ✅ DB2 SQL
 
 ---
 
-# 🏭 Java Factory Pattern
+## 📖 Problem-Solving Approach
 
-The Factory Pattern is a creational design pattern that provides a way to create objects based on a given requirement.
+### 1. 🔍 Read Occupation Data
 
-## Concepts Practiced
+The `OCCUPATIONS` table contains names and their corresponding occupations.
 
-- ✅ Factory Pattern
-- ✅ Factory Class
-- ✅ Factory Method
-- ✅ Object Creation
-- ✅ Interfaces
-- ✅ Polymorphism
-- ✅ Common Interface Reference
-- ✅ `new` Keyword
-- ✅ Conditional Object Creation
-- ✅ `equalsIgnoreCase()`
-- ✅ Interface Implementation
-- ✅ Object-Oriented Design
+The occupation can be:
 
-## Day 52 Challenge
+- 👨‍⚕️ Doctor
+- 👨‍🏫 Professor
+- 🎤 Singer
+- 🎭 Actor
 
-The Day 52 challenge demonstrates how the `FoodFactory` class creates different objects based on the requested food type.
+### 2. 🔤 Sort Names Alphabetically
 
-The `getFood(String order)` method checks the order and returns:
+Names are arranged alphabetically within each occupation using `ORDER BY Name`.
 
-- `new Pizza()` when the order is `"pizza"`
-- `new Cake()` when the order is `"cake"`
+### 3. 🔢 Assign Row Numbers
 
-Both objects are returned using the common `Food` interface.
+`ROW_NUMBER()` is used with `PARTITION BY Occupation`.
 
-This challenge strengthened my understanding of **Factory Pattern, interfaces, polymorphism, object creation, and flexible program design**.
+This creates an independent sequence for each occupation.
 
----
+### 4. 🔀 Pivot the Data
 
-# 🔐 Java Singleton Pattern
+`CASE` statements identify the occupation, while conditional aggregation places names into the correct columns.
 
-The Singleton Pattern is a creational design pattern used to control object creation so that only one instance of a class is maintained.
+### 5. 📊 Group Matching Positions
 
-## Concepts Practiced
+`GROUP BY` combines records with the same generated row number.
 
-- ✅ Singleton Pattern
-- ✅ Private Constructor
-- ✅ Static Instance
-- ✅ Static Method
-- ✅ Controlled Object Creation
-- ✅ Instance Management
-- ✅ Access Modifiers
-- ✅ Class Design
-- ✅ Object-Oriented Programming
-- ✅ Design Patterns
-- ✅ Core Java
+### 6. 🧩 Handle Missing Values
 
-## Day 53 Challenge
-
-The Day 53 challenge demonstrates how to implement a Singleton class in Java.
-
-The `Singleton` class uses a private constructor to prevent direct object creation.
-
-A static instance is maintained inside the class, and the `getSingleInstance()` method provides access to the single object.
-
-This challenge strengthened my understanding of **Singleton Pattern, private constructors, static members, controlled object creation, and Java OOP**.
+If an occupation does not have a name for a particular position, the corresponding output remains `NULL`.
 
 ---
 
-# 🔬 Java Reflection
+## 📂 Files Added
 
-Java Reflection is a powerful feature that allows a program to inspect and interact with classes, methods, fields, and other program elements at runtime.
-
-## Concepts Practiced
-
-- ✅ Reflection API
-- ✅ `Class`
-- ✅ `Method`
-- ✅ `getDeclaredMethods()`
-- ✅ Runtime Class Inspection
-- ✅ Method Information
-- ✅ Dynamic Method Retrieval
-- ✅ `ArrayList`
-- ✅ Sorting
-- ✅ `Collections.sort()`
-
-## Day 50 Challenge
-
-The Day 50 challenge demonstrates how Reflection can be used to inspect the methods declared inside the `Student` class.
-
-The solution retrieves the declared methods, stores their names, sorts them alphabetically, and prints the result.
+- 💻 `Occupations.sql`
+- 📸 `Screenshot 2026-09-20 085257.png`
 
 ---
 
-# 🔍 Java `instanceof` Operator
+# 🆕 Day 55 – Print Prime Numbers
 
-The `instanceof` operator is used to check whether an object is an instance of a specified class or type.
+## 📌 Challenge Information
 
-## Concepts Practiced
-
-- ✅ `instanceof` Operator
-- ✅ Object Type Checking
-- ✅ Runtime Type Identification
-- ✅ Checking Class Instances
-- ✅ Multiple Class Types
-- ✅ Working with `ArrayList<Object>`
-- ✅ Student, Rockstar and Hacker Objects
-- ✅ Counting Objects Based on Type
-- ✅ Object-Oriented Programming
-- ✅ Polymorphism and Type Checking
-
-## Day 45 Challenge
-
-The Day 45 challenge demonstrates how `instanceof` can be used to identify different object types stored inside an `ArrayList`.
-
-The solution checks whether each object is an instance of:
-
-- `Student`
-- `Rockstar`
-- `Hacker`
-
-and counts the number of objects belonging to each class.
+- 💻 **Platform:** HackerRank
+- 🗄️ **Language:** SQL
+- 🏆 **Challenge:** Print Prime Numbers
+- 📅 **Day:** 55
+- ✅ **Status:** Completed
+- 🧠 **SQL Dialect:** DB2 SQL
 
 ---
 
-# 🔁 Java Iterator
+## 🎯 Challenge Objective
 
-The Java `Iterator` interface provides a way to traverse elements of a collection one by one.
+The **Print Prime Numbers** challenge requires printing all prime numbers less than or equal to **1000**.
 
-## Concepts Practiced
+The numbers must be printed on a **single line**, separated by the ampersand (`&`) character.
 
-- ✅ `Iterator` Interface
-- ✅ `iterator()`
-- ✅ `hasNext()`
-- ✅ `next()`
-- ✅ `ArrayList` Traversal
-- ✅ Collection Traversal
-- ✅ Object Type Checking
-- ✅ `instanceof`
-- ✅ Mixed-Type Collections
-- ✅ Iterator Position
-- ✅ Breaking Iteration
-- ✅ Processing Remaining Elements
+Example format:
 
-## Day 46 Challenge
-
-The Day 46 challenge demonstrates how an `Iterator` can be used to traverse an `ArrayList` containing integers and strings.
-
-The iterator identifies the first `String` element using `instanceof`.
-
-When the special `"###"` string is reached, the loop stops and the remaining string elements are printed.
+`2&3&5&7&11&13`
 
 ---
 
-# 🔗 Java Inheritance
+## 🧠 Concepts Practiced
 
-- ✅ Parent Class
-- ✅ Child Class
-- ✅ `extends` Keyword
-- ✅ Inheriting Methods
-- ✅ Adding Child-Specific Methods
-- ✅ Code Reusability
-- ✅ IS-A Relationship
-- ✅ Object Creation Using Child Class
-- ✅ Method Access Through Inheritance
-- ✅ Superclass and Subclass
-- ✅ Method Reuse
-- ✅ Inherited Methods
-- ✅ Basic Inheritance Hierarchy
-- ✅ Calling Parent Class Methods
-- ✅ `super` Keyword
-
----
-
-# 🎭 Java Abstraction
-
-- ✅ Abstract Classes
-- ✅ Abstract Methods
-- ✅ `abstract` Keyword
-- ✅ Implementing Abstract Methods
-- ✅ Concrete Child Classes
-- ✅ Method Overriding
-- ✅ Inheritance with Abstract Classes
-- ✅ Cannot Instantiate Abstract Classes
-- ✅ Base Class Design
-- ✅ Abstraction in OOP
-- ✅ Code Reusability
-- ✅ Interfaces
-- ✅ Interface-Based Abstraction
-
----
-
-# 🔌 Java Interfaces
-
-- ✅ Interface Basics
-- ✅ Interface Method Signatures
-- ✅ Implementing an Interface
-- ✅ `implements` Keyword
-- ✅ Method Implementation
-- ✅ Method Overriding
-- ✅ Interface-Based Abstraction
-- ✅ Polymorphism
-- ✅ Multiple Interface Concepts
-- ✅ Interface Reference Concepts
-- ✅ Using Interfaces with Classes
-- ✅ Core OOP Principles
-
----
-
-# 🔄 Java Method Overriding
-
-- ✅ Method Overriding
-- ✅ Parent Class Method
-- ✅ Child Class Method
-- ✅ Method Redefinition
-- ✅ `@Override` Annotation
-- ✅ Inheritance and Overriding
-- ✅ Runtime Method Dispatch
-- ✅ Runtime Polymorphism
-- ✅ Dynamic Method Dispatch
-- ✅ Parent and Child Class Relationships
-- ✅ Code Reusability
-- ✅ Object-Oriented Programming
-- ✅ Calling Overridden Methods
-- ✅ `super.method()` Syntax
-- ✅ Accessing Superclass Implementation
-
----
-
-# 🔀 Java Method Overloading
-
-- ✅ Method Overloading
-- ✅ Multiple Methods with Same Name
-- ✅ Different Parameter Lists
-- ✅ Compile-Time Polymorphism
-- ✅ Method Parameters
-- ✅ Method Reusability
-- ✅ Flexible Method Design
-- ✅ Overloaded `add()` Methods
-- ✅ Integer Arguments
-- ✅ Core Java Concepts
-
----
-
-# 🧩 Array Programming
-
-- ✅ One-Dimensional Arrays
-- ✅ Two-Dimensional Arrays
-- ✅ Array Declaration
-- ✅ Array Initialization
-- ✅ Array Indexing
-- ✅ Array Traversal
-- ✅ `array.length`
-- ✅ Nested `for` Loops
-- ✅ Matrix/Grid Processing
-- ✅ Hourglass Pattern
-- ✅ Subarray Processing
-- ✅ Contiguous Array Elements
-- ✅ Running Sum
-- ✅ Negative Subarray Sum
-- ✅ Forward Movement
-- ✅ Backward Movement
-- ✅ Leap Movement
-- ✅ Array Path Traversal
-- ✅ Visited Cell Handling
-- ✅ Recursion
-- ✅ Backtracking
-
----
-
-# 📋 Java List & Collections
-
-- ✅ Java `List`
-- ✅ `ArrayList`
-- ✅ List Initialization
-- ✅ List Indexing
-- ✅ List Traversal
-- ✅ Adding Elements
-- ✅ Inserting Elements at an Index
-- ✅ Deleting Elements
-- ✅ Updating List Structure
-- ✅ Processing Multiple Queries
-- ✅ Dynamic List Operations
-- ✅ Collection-Based Problem Solving
-- ✅ Iterator-Based Traversal
-
----
-
-# 🗺️ Java Map
-
-- ✅ `Map`
-- ✅ `HashMap`
-- ✅ Key-Value Pairs
-- ✅ Map Insertion
-- ✅ Map Searching
-- ✅ Key Lookup
-- ✅ `containsKey()`
-- ✅ `get()`
-- ✅ Dynamic Data Storage
-- ✅ Collection-Based Problem Solving
-
----
-
-# 🗂️ Java Stack
-
-- ✅ Stack Data Structure
-- ✅ LIFO Principle
-- ✅ `push()`
-- ✅ `pop()`
-- ✅ `peek()`
-- ✅ Parentheses Matching
-- ✅ Balanced Brackets
-- ✅ `{ }` Matching
-- ✅ `[ ]` Matching
-- ✅ `( )` Matching
-- ✅ Stack-Based Problem Solving
-- ✅ Input Processing
-- ✅ Logical Validation
-
----
-
-# 🧩 Java HashSet
-
-- ✅ `HashSet`
-- ✅ Set Data Structure
-- ✅ Unique Elements
-- ✅ Duplicate Handling
-- ✅ `add()`
-- ✅ `size()`
-- ✅ String Pair Storage
-- ✅ Set-Based Problem Solving
-- ✅ Collection Framework
-- ✅ Unique Pair Identification
-- ✅ Dynamic Set Operations
-
----
-
-# 🧬 Java Generics
-
-- ✅ Generic Methods
-- ✅ Generic Classes
-- ✅ Type Parameters
-- ✅ Type Safety
-- ✅ Reusable Methods
-- ✅ Multiple Data Types
-- ✅ Generic Arrays
-- ✅ Integer Array Processing
-- ✅ String Array Processing
-- ✅ Java Type System
-- ✅ Code Reusability
-- ✅ Avoiding Method Overloading
-
----
-
-# ⚖️ Java Comparator
-
-- ✅ `Comparator` Interface
-- ✅ Custom Object Comparison
-- ✅ `compare()` Method
-- ✅ Custom Sorting
-- ✅ `Arrays.sort()`
-- ✅ Descending Score Sorting
-- ✅ Alphabetical Name Sorting
-- ✅ Multi-Level Sorting
-- ✅ Object Array Sorting
-- ✅ Comparing Integer Values
-- ✅ Comparing String Values
-- ✅ Java Collections Concepts
-- ✅ Interface Implementation
-- ✅ Problem-Solving with Interfaces
-
----
-
-# 🔀 Java Sorting
-
-- ✅ Object Sorting
-- ✅ Custom Sorting
-- ✅ `Comparator`
-- ✅ `compareTo()`
-- ✅ `Arrays.sort()`
-- ✅ Multi-Level Sorting
-- ✅ Descending Order
-- ✅ Alphabetical Order
-- ✅ CGPA-Based Sorting
-- ✅ Name-Based Sorting
-- ✅ ID-Based Tie Breaking
-- ✅ Object Comparison
-- ✅ Sorting Complex Objects
-
----
-
-# 🔢 Bit Manipulation & BitSet
-
-- ✅ Java `BitSet`
-- ✅ Bit Manipulation
-- ✅ Binary Representation Concepts
-- ✅ BitSet Initialization
-- ✅ `SET` Operation
-- ✅ `FLIP` Operation
-- ✅ `AND` Operation
-- ✅ `OR` Operation
-- ✅ `XOR` Operation
-- ✅ `cardinality()`
-- ✅ Bit-Based Data Processing
-- ✅ Logical Bit Operations
-- ✅ Problem Solving with BitSet
-
----
-
-# 🔤 String Programming
-
-- ✅ String Reverse
-- ✅ Palindrome
-- ✅ Anagrams
-- ✅ String Tokens
-- ✅ String Splitting
-- ✅ Character Processing
-- ✅ String Comparison
-- ✅ String Manipulation
-
----
-
-# 🔍 Regular Expressions
-
-- ✅ Regular Expressions
-- ✅ Regex Pattern Matching
-- ✅ Pattern Syntax Checking
-- ✅ Pattern Compilation
-- ✅ `Pattern.compile()`
-- ✅ `Matcher`
-- ✅ `find()`
-- ✅ Capturing Groups
-- ✅ Case-Insensitive Regex
-- ✅ Duplicate Word Detection
-- ✅ String Replacement
-- ✅ Tag Content Extraction
-- ✅ Nested Tags
-- ✅ IPv4 Address Validation
-- ✅ Numeric Range Validation
-- ✅ Leading Zero Handling
-
----
-
-# 🔢 Number Handling
-
-- ✅ BigDecimal
-- ✅ BigDecimal Precision
-- ✅ BigDecimal Comparison
-- ✅ Decimal Number Sorting
-- ✅ BigInteger
-- ✅ Large Number Handling
-- ✅ Prime Number Checking
-- ✅ `isProbablePrime()`
-- ✅ BigInteger Addition
-- ✅ BigInteger Multiplication
-- ✅ Handling Extremely Large Integers
-- ✅ Divisor Calculation
-- ✅ Power Calculation
-- ✅ Numeric Validation
-- ✅ Prime Checker
-- ✅ Prime Number Logic
+- ✅ Prime Number Identification
+- ✅ Number Generation
+- ✅ Mathematical Logic
 - ✅ Divisibility Checking
-- ✅ Multiple Integer Validation
+- ✅ `MOD()`
+- ✅ `NOT EXISTS`
+- ✅ Filtering Numbers
+- ✅ Recursive Number Generation
+- ✅ `LISTAGG()`
+- ✅ `RTRIM()`
+- ✅ Sorting Numbers
+- ✅ Single-Line Output Formatting
+- ✅ Custom Separators
+- ✅ DB2 SQL
 
 ---
 
-# 🔢 Prime Number Checking
+## 📖 Problem-Solving Approach
 
-## Concepts Practiced
+### 1. 🔢 Generate Numbers
 
-- ✅ Prime Number Logic
-- ✅ Checking Numbers Greater Than 1
-- ✅ Divisibility Checking
-- ✅ Loops and Conditions
-- ✅ Multiple Integer Processing
-- ✅ Java Varargs
-- ✅ `int... numbers`
-- ✅ Number Validation
-- ✅ Core Java Problem Solving
+Numbers from **2 to 1000** are generated for analysis.
 
-## Day 51 Challenge
+### 2. 🧮 Check Divisibility
 
-The Day 51 challenge focuses on checking multiple integers to determine whether they are prime numbers.
+`MOD()` is used to determine whether a number is divisible by another number.
 
-The solution uses Java Varargs with `int... numbers`, allowing one method to receive multiple integer values and process them using prime number logic.
+### 3. 🔍 Identify Prime Numbers
 
----
+`NOT EXISTS` is used to exclude numbers having divisors other than 1 and themselves.
 
-# 🏭 Factory Pattern & Object Creation
+### 4. 📈 Sort the Prime Numbers
 
-## Concepts Practiced
+The identified prime numbers are ordered in ascending order.
 
-- ✅ Factory Pattern
-- ✅ Factory Method
-- ✅ Object Creation
-- ✅ Interfaces
-- ✅ Polymorphism
-- ✅ Interface-Based Programming
-- ✅ Common Return Type
-- ✅ Conditional Object Creation
-- ✅ `new` Keyword
-- ✅ `equalsIgnoreCase()`
-- ✅ Code Reusability
-- ✅ Flexible Object Creation
+### 5. 🔗 Combine the Results
 
-## Day 52 Challenge
+`LISTAGG()` combines all prime numbers into a single output line using `&` as the separator.
 
-The Day 52 challenge demonstrates the use of the **Factory Pattern** in Java.
+### 6. 🧹 Format the Output
 
-A `FoodFactory` class is responsible for creating the appropriate `Food` object based on the order provided.
-
-The factory returns:
-
-- 🍕 `Pizza` object for `"pizza"`
-- 🍰 `Cake` object for `"cake"`
-
-Both classes implement the `Food` interface, allowing them to be returned using a common interface type.
-
-This challenge strengthened my understanding of **design patterns, interfaces, polymorphism, object creation, and Object-Oriented Programming**.
+`RTRIM()` is used where required to remove unwanted trailing spaces.
 
 ---
 
-# 🔐 Singleton Pattern & Controlled Object Creation
+## 📂 Files Added
 
-## Concepts Practiced
-
-- ✅ Singleton Pattern
-- ✅ Private Constructor
-- ✅ Static Instance
-- ✅ Static Method
-- ✅ Single Object Instance
-- ✅ Controlled Object Creation
-- ✅ Instance Management
-- ✅ Access Modifiers
-- ✅ Object-Oriented Programming
-- ✅ Design Patterns
-- ✅ Core Java
-
-## Day 53 Challenge
-
-The Day 53 challenge demonstrates the **Singleton Design Pattern** in Java.
-
-The `Singleton` class controls object creation using a private constructor and provides a static method to access its single instance.
-
-This challenge helped strengthen my understanding of **private constructors, static variables, static methods, object creation, instance management, and design patterns**.
+- 💻 `Print Prime Numbers.sql`
+- 📸 `Screenshot 2026-09-19 201219.png`
 
 ---
 
-# 🔍 Regex & IPv4 Validation
+# 🧠 SQL Skills I'm Building
 
-## Concepts Practiced
-
-- ✅ Regular Expressions
-- ✅ Regex Pattern Matching
-- ✅ IPv4 Validation
-- ✅ Numeric Range Checking
-- ✅ `0–255` Range Validation
-- ✅ Leading Zeros
-- ✅ Four-Part IP Structure
-- ✅ Dot-Separated Values
-- ✅ Java String Escaping
-- ✅ Input Validation
-- ✅ Pattern Matching
-- ✅ Core Java
-
-## Day 54 Challenge
-
-The Day 54 challenge demonstrates how Java Regular Expressions can be used to validate IPv4 addresses.
-
-The IPv4 validation pattern checks four sections separated by dots, where every section must represent a number between `0` and `255`.
-
-The solution also supports leading zeros while rejecting invalid addresses containing:
-
-- More than four sections
-- Missing sections
-- Values greater than `255`
-- Non-numeric characters
-- Invalid dot placement
-
-This challenge strengthened my understanding of **Regular Expressions, pattern matching, numeric range validation, string validation, and Java escape sequences**.
-
----
-
-# 📦 Java PriorityQueue & Custom Priority Ordering
-
-## Concepts Practiced
-
-- ✅ `PriorityQueue`
-- ✅ `Comparator`
-- ✅ Custom Priority Ordering
-- ✅ Multi-Level Comparison
-- ✅ Higher CGPA Priority
-- ✅ Alphabetical Name Priority
-- ✅ Lower ID Tie Breaking
-- ✅ `compare()` Method
-- ✅ `poll()` Operation
-- ✅ Queue Operations
-- ✅ Java Collections Framework
-- ✅ Student Object Management
-- ✅ Event Processing
-- ✅ `ENTER` Event
-- ✅ `SERVED` Event
-- ✅ Object Comparison
-- ✅ Custom Sorting Logic
-- ✅ Data Structure Fundamentals
-- ✅ Problem Solving
-
-## Day 55 Challenge
-
-The Day 55 challenge demonstrates how to use Java's **PriorityQueue** with a custom `Comparator`.
-
-The program manages student objects according to three priority conditions:
-
-1. Higher CGPA gets higher priority.
-2. If CGPA is equal, names are compared alphabetically.
-3. If both CGPA and name are equal, the student with the lower ID gets priority.
-
-The program processes `ENTER` events to add students and `SERVED` events to remove the highest-priority student.
-
-This challenge strengthened my understanding of **PriorityQueue, Comparator, custom priority ordering, multi-level comparison, queue operations, Java Collections, and event-based processing**.
-
----
-
-# ↔️ Java Deque
-
-## Concepts Practiced
-
-- ✅ `Deque`
-- ✅ Double-Ended Queue
-- ✅ `ArrayDeque`
-- ✅ Front and Rear Operations
-- ✅ `addFirst()`
-- ✅ `addLast()`
-- ✅ `removeFirst()`
-- ✅ `removeLast()`
-- ✅ Queue Processing
-- ✅ Java Collections Framework
-- ✅ `HashSet`
-- ✅ Unique Element Tracking
-- ✅ Duplicate Handling
-- ✅ Sliding Window Logic
-- ✅ Maximum Unique Elements
-- ✅ Collection-Based Problem Solving
-
-## Day 56 Challenge
-
-The Day 56 challenge focuses on using Java's **Deque** data structure to process elements from both ends of a collection.
-
-The solution uses a deque to maintain the current sequence and a `HashSet` to keep track of unique values while processing the input.
-
-This challenge strengthened my understanding of **double-ended queues, ArrayDeque, HashSet, unique-element tracking, sliding-window processing, and Java Collections**.
-
----
-
-# 🧠 Skills I'm Building
-
-- ☕ Core Java
-- 🏛️ Object-Oriented Programming
-- 🔗 Inheritance
-- 🎭 Abstraction
-- 🔌 Interfaces
-- 🔄 Method Overriding
-- 🔀 Method Overloading
-- 🧩 Polymorphism
-- 🔑 `super` Keyword
-- 🔍 `instanceof` Operator
-- 🔁 Iterator
-- 🛡️ Exception Handling
-- 🔄 Try-Catch
-- 🚨 Custom Exceptions
-- 🧾 `throw` and `throws`
-- 🧮 Power Calculation
-- 📌 Java Varargs
-- ➕ Variable-Length Arguments
-- 🔬 Java Reflection
-- 📋 Class and Method Inspection
-- 🔢 Prime Number Checking
-- 🧮 Number Validation
-- 🏭 Factory Pattern
-- 🔐 Singleton Pattern
-- 🔒 Controlled Object Creation
-- 🔍 Regular Expressions
-- 🌐 IPv4 Address Validation
-- 📦 PriorityQueue
-- ⚖️ Custom Priority Ordering
-- 🔢 Multi-Level Object Comparison
-- ↔️ Deque
-- 🔄 Double-Ended Queue Operations
-- 📦 Collection Framework
-- 📋 ArrayList
-- 🧩 Problem Solving
-- 🧠 Logical Thinking
+- 🗄️ SQL Fundamentals
+- 💻 Database Querying
+- 🔍 Data Filtering
+- 📊 Data Aggregation
+- 🔢 Mathematical Functions
 - 🔤 String Handling
-- 💻 Programming Fundamentals
-- 📦 Array Handling
-- 📐 2D Array Processing
-- 📋 List Handling
-- 🗺️ Map Handling
-- 🗂️ Stack Data Structure
-- 🧩 HashSet
-- 🔑 HashMap
-- 🧬 Java Generics
-- ⚖️ Comparator
-- 🔀 Custom Sorting
-- 📝 Pattern Matching
-- 🔢 Number Handling
-- 🔢 Bit Manipulation
-- 📊 BitSet
-- 🔄 Recursion
-- 🔙 Backtracking
-- 🎯 Algorithmic Thinking
-- 🚀 Coding Consistency
-- 💼 Technical Interview Preparation
+- 🔍 Regular Expressions
+- 🔗 JOIN Operations
+- 🔄 Self JOIN Operations
+- 🧠 Subqueries
+- 🔀 Conditional Logic
+- 📌 DISTINCT
+- 📊 GROUP BY
+- 📌 HAVING
+- 📈 Statistical Analysis
+- 📍 Geographic Data Analysis
+- 🌎 Latitude & Longitude Processing
+- 📏 Distance Calculation
+- 🔢 Decimal Precision
+- 🧩 Relational Data Analysis
+- 🔄 Symmetric Pair Analysis
+- 💰 Salary Comparison
+- 👥 Relationship-Based Data Analysis
+- 🏆 Leaderboard Analysis
+- 🧠 Multi-Table Querying
+- 📊 Submission Statistics
+- 👁️ View Statistics
+- 🔢 Prime Number Identification
+- 🧮 Divisibility Logic
+- 🔢 Window Functions
+- 🔄 SQL Pivoting
+- 📅 Date-Based Analysis
+- 👥 Daily Activity Analysis
+- 🏆 Ranking & Tie-Breaking
+- 🧩 Common Table Expressions
+- 🚀 Advanced SQL Querying
+- 🎯 Technical Interview Preparation
 
 ---
 
@@ -1597,23 +685,24 @@ This challenge strengthened my understanding of **double-ended queues, ArrayDequ
 - ✅ Day 41
 - ✅ Day 42
 - ✅ Day 43
-- ✅ Day 44
-- ✅ Day 45
-- ✅ Day 46
-- ✅ Day 47
-- ✅ Day 48
-- ✅ Day 49
-- ✅ Day 50
-- ✅ Day 51
-- ✅ Day 52
-- ✅ Day 53
-- ✅ Day 54
-- ✅ Day 55
-- ✅ Day 56 ↔️📦🔥
+- ✅ Day 44 🎉
+- ✅ Day 45 🎉🔥
+- ✅ Day 46 🎉🔥
+- ✅ Day 47 🎉🏆🔥
+- ✅ Day 48 🎉🪄🔥
+- ✅ Day 49 🎉🏆🔥
+- ✅ Day 50 🎉🏆🔥
+- ✅ Day 51 🎉🏆🔥
+- ✅ Day 52 🎉🏆🔥🔗
+- ✅ Day 53 🎉🔄🔥
+- ✅ Day 54 🎉💻🔥
+- ✅ Day 55 🎉🔢🔥
+- ✅ Day 56 🎉🔄📊🔥
+- ✅ Day 57 🎉📅🏆🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 57 → Day 99
+- ⏳ Day 58 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -1622,46 +711,38 @@ This challenge strengthened my understanding of **double-ended queues, ArrayDequ
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **56 / 100** |
-| 💻 Challenges Solved | **56** |
-| ☕ Language | **Java** |
+| 📅 Days Completed | **57 / 100** |
+| 💻 Challenges Solved | **57** |
+| 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
-| 🧠 Focus | **Core Java, OOP, Collections, Generics, Comparator, Sorting, BitSet, Inheritance, Abstraction, Interfaces, Polymorphism, Exception Handling, Varargs, Reflection, Prime Number Logic, Factory Pattern, Singleton Pattern, Regular Expressions, PriorityQueue & Deque** |
-| 📦 Data Structures Practiced | **Arrays, List, Map, Stack, HashSet, BitSet, PriorityQueue & Deque** |
-| 🧬 Advanced Concepts | **Generics, Regex, BigInteger, BigDecimal, Exception Handling, Varargs, Reflection, Factory Pattern, Singleton Pattern, PriorityQueue & Deque** |
-| ⚖️ Sorting Concepts | **Comparator, Custom Sorting, Object Comparison & Multi-Level Priority Ordering** |
-| 🔢 Bit Operations | **SET, FLIP, AND, OR, XOR & cardinality** |
-| 🏛️ OOP Concepts | **Classes, Objects, Inheritance, Abstraction, Interfaces & Polymorphism** |
-| 🔄 Polymorphism Concepts | **Method Overriding, Method Overloading, Runtime Polymorphism, Dynamic Method Dispatch & `super`** |
-| 🔍 Type Checking | **`instanceof` Operator & Runtime Type Checking** |
-| 🔁 Collection Traversal | **Iterator, `hasNext()`, `next()` & ArrayList Traversal** |
-| 🛡️ Exception Handling | **Try-Catch, InputMismatchException, ArithmeticException, `throw`, `throws` & Custom Exceptions** |
-| 🧮 Power Calculation | **MyCalculator, `power(int, int)` & Input Validation** |
-| 📌 Varargs | **Variable-Length Arguments, Multiple Integer Processing & Prime Checker** |
-| 🔬 Reflection | **Class, Method, `getDeclaredMethods()` & Runtime Inspection** |
-| 🔢 Prime Checker | **Prime Number Logic, Loops, Conditions & Multiple Integer Validation** |
-| 🏭 Factory Pattern | **FoodFactory, Interface-Based Object Creation & Polymorphism** |
-| 🔐 Singleton Pattern | **Private Constructor, Static Instance & Controlled Object Creation** |
-| 🔍 Regex | **Pattern Matching, IPv4 Validation & Numeric Range Checking** |
-| 📦 PriorityQueue | **Student Priority Management, Custom Comparator & Event Processing** |
-| ↔️ Deque | **Double-Ended Queue, ArrayDeque, Front/Rear Operations & Unique Element Tracking** |
-| 📈 Progress | **56% Complete** 🚀 |
-| 🔥 Current Streak | **56 Days** |
-| ⏳ Days Remaining | **44 Days** |
+| 🧠 SQL Dialect | **DB2 SQL** |
+| 📈 Progress | **57% Complete** 🚀 |
+| 🔥 Current Streak | **57 Days** |
+| ⏳ Days Remaining | **43 Days** |
+| 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
+| 🔢 Numerical Processing | **ROUND(), MOD(), Decimal Precision & Divisibility** |
+| 📍 Geographic Analysis | **Latitude, Longitude, Coordinates & Distance** |
+| 📈 Statistical Concepts | **Average, Median, Count & Numerical Analysis** |
+| 🔗 Relational Concepts | **JOINs, Self JOINs, Relationships & Relational Analysis** |
+| 🔄 Pair Analysis | **Symmetric Pairs & Reversed Pair Matching** |
+| 💰 Comparison Analysis | **Salary Comparison & Related Record Analysis** |
+| 🏆 Leaderboard Concepts | **Maximum Scores, GROUP BY, HAVING & Sorting** |
+| 📊 Submission Analysis | **Daily Submissions, Consistent Hackers & Maximum Contributors** |
+| 🔢 Mathematical SQL | **Prime Number Identification & Divisibility Logic** |
+| 🔄 Pivoting Concepts | **ROW_NUMBER(), PARTITION BY, CASE, MAX() & Conditional Aggregation** |
+| 🧩 Advanced Queries | **CTEs, Window Functions, Subqueries & Multi-Level Analysis** |
 
 ---
 
 # 🔥 Current Streak
 
-## **56 Days of Java Practice Completed! 🎉🔥🚀**
+## **57 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **56 days down, 44 more to go!**
+> **57 days down, 43 more to go!**
 
-Every Java challenge helps me strengthen my programming fundamentals, problem-solving abilities, data structures, Java Collections, Generics, object comparison, custom sorting, bit manipulation, inheritance, abstraction, interfaces, polymorphism, method overriding, method overloading, `super`, runtime type checking using `instanceof`, collection traversal using `Iterator`, exception handling using `try-catch`, `throw`, and `throws`, flexible method design using Varargs, runtime inspection using Java Reflection, prime number logic, Factory Pattern, Singleton Pattern, Regular Expressions, PriorityQueue, and Deque.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, and problem-solving abilities**.
 
-The journey continues with **consistency, discipline, practice, and continuous learning.**
-
-Day 56 adds **Deque and double-ended collection processing** to the journey. ☕💻↔️📦🔥
+The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
 ---
 
@@ -1679,55 +760,85 @@ Day 56 adds **Deque and double-ended collection processing** to the journey. ☕
 | 🎯 Day 42 | ✅ Completed 🎉🔥 |
 | 🎯 Day 43 | ✅ Completed 🎉🔥 |
 | 🎯 Day 44 | ✅ Completed 🎉🔥 |
-| 🎯 Day 45 | ✅ Completed 🎉🔥🔍 |
-| 🎯 Day 46 | ✅ Completed 🎉🔥🔁 |
-| 🎯 Day 47 | ✅ Completed 🎉🔥🛡️ |
-| 🎯 Day 48 | ✅ Completed 🎉🔥⚡ |
-| 🎯 Day 49 | ✅ Completed 🎉🔥📌 |
-| 🎯 Day 50 | ✅ Completed 🎉🔥🔬 |
-| 🎯 Day 51 | ✅ Completed 🎉🔥🔢 |
-| 🎯 Day 52 | ✅ Completed 🎉🔥🏭 |
-| 🎯 Day 53 | ✅ Completed 🎉🔥🔐 |
-| 🎯 Day 54 | ✅ Completed 🎉🔥🔍 |
-| 🎯 Day 55 | ✅ Completed 🎉🔥⚖️📦 |
-| 🎯 Day 56 | ✅ Completed 🎉🔥↔️📦 |
+| 🎯 Day 45 | ✅ Completed 🎉🔥 |
+| 🎯 Day 46 | ✅ Completed 🎉🔥🗄️ |
+| 🎯 Day 47 | ✅ Completed 🎉🏆🔥 |
+| 🎯 Day 48 | ✅ Completed 🎉🪄🔥 |
+| 🎯 Day 49 | ✅ Completed 🎉🏆🔥 |
+| 🎯 Day 50 | ✅ Completed 🎉🏆🔥 |
+| 🎯 Day 51 | ✅ Completed 🎉🏆🔥 |
+| 🎯 Day 52 | ✅ Completed 🎉🏆🔥🔗 |
+| 🎯 Day 53 | ✅ Completed 🎉🔄🔥 |
+| 🎯 Day 54 | ✅ Completed 🎉💻🔥 |
+| 🎯 Day 55 | ✅ Completed 🎉🔢🔥 |
+| 🎯 Day 56 | ✅ Completed 🎉🔄📊🔥 |
+| 🎯 Day 57 | ✅ Completed 🎉📅🏆🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
-| 🏆 Day 100 | ⏳ Goal |
+| 🏆 Day 100 | ⏳ Final Goal |
 
 ---
 
 # 📊 Progress Tracker
 
-Day 1       ████████████████████ 100% ✅
-Day 10      ████████████████████ 100% ✅
-Day 20      ████████████████████ 100% ✅
-Day 30      ████████████████████ 100% ✅
-Day 35      ████████████████████ 100% ✅
-Day 40      ████████████████████ 100% ✅
-Day 41      ████████████████████ 100% ✅
-Day 42      ████████████████████ 100% ✅
-Day 43      ████████████████████ 100% ✅
-Day 44      ████████████████████ 100% ✅
-Day 45      ████████████████████ 100% ✅
-Day 46      ████████████████████ 100% ✅
-Day 47      ████████████████████ 100% ✅
-Day 48      ████████████████████ 100% ✅
-Day 49      ████████████████████ 100% ✅
-Day 50      ████████████████████ 100% ✅
-Day 51      ████████████████████ 100% ✅
-Day 52      ████████████████████ 100% ✅
-Day 53      ████████████████████ 100% ✅
-Day 54      ████████████████████ 100% ✅
-Day 55      ████████████████████ 100% ✅
-Day 56      ████████████████████ 100% ✅
-Day 75      ███████████░░░░░░░░░ 56% ⏳
-Day 100     ███████████░░░░░░░░░ 56% ⏳
+**Day 1**  
+████████████████████ 100% ✅
+
+**Day 10**  
+████████████████████ 100% ✅
+
+**Day 20**  
+████████████████████ 100% ✅
+
+**Day 30**  
+████████████████████ 100% ✅
+
+**Day 40**  
+████████████████████ 100% ✅
+
+**Day 45**  
+████████████████████ 100% ✅
+
+**Day 46**  
+████████████████████ 100% ✅
+
+**Day 47**  
+████████████████████ 100% ✅
+
+**Day 48**  
+████████████████████ 100% ✅
+
+**Day 49**  
+████████████████████ 100% ✅
+
+**Day 50**  
+████████████████████ 100% ✅
+
+**Day 51**  
+████████████████████ 100% ✅
+
+**Day 52**  
+████████████████████ 100% ✅
+
+**Day 53**  
+████████████████████ 100% ✅
+
+**Day 54**  
+████████████████████ 100% ✅
+
+**Day 55**  
+████████████████████ 100% ✅
+
+**Day 56**  
+████████████████████ 100% ✅
+
+**Day 57**  
+████████████████████ 100% ✅
 
 ## 🚀 Overall Progress
 
-[███████████░░░░░░░░░] 56%
+███████████░░░░░░░░░ **57%**
 
-**56 / 100 Days Completed**
+### **57 / 100 Days Completed**
 
 ---
 
@@ -1735,191 +846,150 @@ Day 100     ███████████░░░░░░░░░ 56% ⏳
 
 My daily learning process includes:
 
-1. 📖 Understand the problem statement.
-2. 🧠 Analyze the required output.
-3. ✍️ Write the Java solution.
-4. 🧪 Test the solution on HackerRank.
-5. 🔍 Understand the result.
-6. 🛠️ Debug errors when required.
-7. 📂 Save the Java solution in this repository.
-8. 📸 Add the successful submission screenshot.
-9. 📝 Review the Java concepts used.
-10. 🚀 Continue to the next challenge.
+1. 📖 Understand the SQL problem statement
+2. 🧠 Analyze the required output
+3. 🔍 Identify the required tables and columns
+4. 🔗 Understand relationships between tables
+5. 🔄 Identify matching and related records
+6. ✍️ Write the SQL query
+7. 🧪 Test the query on HackerRank
+8. 🔍 Understand the result
+9. 🛠️ Debug errors when required
+10. 📊 Analyze the data and query logic
+11. 📂 Save the SQL solution in this repository
+12. 📸 Add the successful submission screenshot
+13. 📝 Review the SQL concepts used
+14. 🚀 Continue to the next challenge
 
 ---
 
 # 🌱 Learning in Public
 
-This challenge is not only about solving programming problems.
+This challenge is not only about solving SQL problems.
 
 It is also about:
 
 - 🔥 Building consistency
-- 📚 Learning new Java concepts
+- 📚 Learning new SQL concepts
 - 🧠 Improving logical thinking
-- 💻 Writing better Java programs
+- 📊 Improving analytical thinking
+- 💻 Writing better SQL queries
 - 🧩 Improving problem-solving skills
-- 📦 Understanding data structures
-- 🗂️ Working with Java Collections
-- 🧬 Understanding Generic Programming
-- ⚖️ Learning object comparison and custom sorting
-- 🔢 Understanding Bit Manipulation
-- 🔗 Understanding Object-Oriented Programming and Inheritance
-- 🎭 Understanding Abstraction and Abstract Classes
-- 🔌 Understanding Interfaces and Polymorphism
-- 🔄 Understanding Method Overriding
-- 🔀 Understanding Method Overloading
-- 🔑 Understanding the `super` keyword
-- 🔍 Understanding runtime type checking with `instanceof`
-- 🔁 Understanding collection traversal with `Iterator`
-- 🛡️ Understanding Java Exception Handling
-- 🔄 Understanding `try-catch`
-- ⚠️ Handling runtime exceptions
-- 🧾 Understanding `throw` and `throws`
-- 🧮 Implementing power calculation
-- 📌 Understanding Java Varargs
-- ➕ Processing variable numbers of arguments
-- 🔬 Understanding Java Reflection
-- 📋 Inspecting classes and methods at runtime
-- 🔢 Checking prime numbers using Java logic
-- ➕ Processing multiple integers using Varargs
-- 🏭 Understanding the Factory Pattern
-- 🔐 Understanding the Singleton Pattern
-- 🧱 Creating objects through a factory method
-- 🔒 Controlling object creation through Singleton implementation
-- 🔌 Using interfaces for flexible object creation
-- 🔍 Understanding Regular Expressions
-- 🌐 Validating IPv4 addresses
-- 📦 Working with `PriorityQueue`
-- ⚖️ Building custom priority rules with `Comparator`
-- 🔢 Implementing multi-level object comparison
-- ↔️ Working with Java `Deque`
-- 🔄 Performing operations from both ends of a collection
-- 🧩 Tracking unique elements using `HashSet`
-- 🪟 Understanding sliding-window style processing
+- 🗄️ Understanding databases
+- 📈 Learning data analysis
+- 🔢 Working with numerical data
+- 📍 Working with geographic data
+- 🔗 Understanding relational data
+- 🔄 Understanding symmetric relationships
+- 🧠 Practicing subqueries
+- 🔀 Using conditional SQL logic
+- 📊 Understanding aggregation
+- 🏆 Analyzing leaderboard data
+- 💰 Comparing related data
+- 📊 Analyzing submission and view statistics
+- 🔢 Applying mathematical logic
+- 🧮 Identifying prime numbers using SQL
+- 🔢 Practicing window functions
+- 🔄 Learning SQL pivoting
+- 📅 Analyzing date-based data
+- 👥 Tracking daily user activity
+- 🏆 Applying ranking and tie-breaking logic
+- 🧩 Using Common Table Expressions
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
-- 💼 Preparing for software development opportunities
+- 💼 Preparing for software and data-related opportunities
 
 ---
 
 # 🎯 Why This Repository?
 
-This repository documents my Java learning journey and showcases my daily progress while solving HackerRank programming challenges.
+This repository documents my **SQL learning journey** and showcases my daily progress while solving HackerRank SQL challenges.
 
-It serves as a portfolio of my Java programming skills and demonstrates my commitment to continuous learning through the **#100DaysOfCode** challenge.
+It serves as a portfolio of my **SQL and database skills** and demonstrates my commitment to continuous learning through the **#100DaysOfSQL** challenge.
 
 Every challenge helps me improve my:
 
 - 🧠 Logical Thinking
-- ☕ Java Programming Skills
+- 🗄️ SQL Programming Skills
 - 🧩 Problem-Solving Ability
-- 💻 Programming Fundamentals
-- 🔍 Pattern Recognition
+- 📊 Data Analysis
+- 🔍 Data Filtering
+- 📈 Data Aggregation
+- 🔢 Mathematical Processing
 - 🔤 String Handling
-- 🔢 Number Processing
-- 📦 Array Handling
-- 📐 2D Array Processing
-- 📋 List & Collection Handling
-- 🗺️ Map Handling
-- 🗂️ Stack-Based Problem Solving
-- 🧩 Set-Based Problem Solving
-- 🧬 Generic Programming
-- ⚖️ Object Comparison
-- 🔀 Custom Sorting
-- 🔢 Bit Manipulation
-- 📊 BitSet Operations
-- 🔗 Subarray Processing
-- 🔄 Recursion
-- 🔙 Backtracking
-- 🏛️ Object-Oriented Programming
-- 🔗 Inheritance
-- 🎭 Abstraction
-- 🔌 Interfaces
-- 🔄 Method Overriding
-- 🔀 Method Overloading
-- 🔑 Superclass Method Access
-- 🧩 Polymorphism
-- 🔍 Runtime Type Checking
-- 🔁 Iterator-Based Collection Traversal
-- 🛡️ Exception Handling
-- 🔄 Try-Catch Based Error Handling
-- 🚨 Custom Exception Handling
-- 🧾 `throw` and `throws`
-- 🧮 Power Calculation
-- 📌 Varargs
-- ➕ Variable-Length Argument Processing
-- 🔬 Java Reflection
-- 📋 Runtime Class and Method Inspection
-- 🔢 Prime Number Checking
-- 🧮 Number Validation
-- 🏭 Factory Pattern
-- 🔐 Singleton Pattern
-- 🧱 Factory-Based Object Creation
-- 🔒 Controlled Object Creation
-- 🔌 Interface-Based Programming
 - 🔍 Regular Expressions
-- 🌐 IPv4 Validation
-- 📦 PriorityQueue
-- ⚖️ Custom Priority Ordering
-- 🔢 Multi-Level Object Comparison
-- ↔️ Deque
-- 🔄 Double-Ended Queue Processing
-- 🧩 Unique Element Tracking
-- 🧠 Data Structure Fundamentals
+- 🧠 Subquery Skills
+- 🔗 JOIN Operations
+- 🔄 Self JOIN Operations
+- 🔀 Conditional Logic
+- 📌 DISTINCT
+- 📊 GROUP BY
+- 📌 HAVING
+- 📍 Geographic Data Analysis
+- 🌎 Latitude & Longitude Processing
+- 📏 Distance Calculation
+- 🔢 Decimal Precision
+- 📈 Statistical Analysis
+- 💰 Salary Comparison
+- 🔄 Symmetric Pair Analysis
+- 🔗 Multi-Table Analysis
+- 🏆 Leaderboard Analysis
+- 📊 Submission Statistics
+- 👁️ View Statistics
+- 🔢 Prime Number Identification
+- 🧮 Divisibility Logic
+- 🧩 Relational Data Understanding
+- 🌳 Hierarchical Data Analysis
+- 🔢 Window Functions
+- 🔄 SQL Pivoting
+- 📅 Date-Based Analysis
+- 👥 Daily Activity Tracking
+- 🏆 Ranking and Tie-Breaking
+- 🧩 Common Table Expressions
+- 🪄 Advanced SQL Querying
 - 🚀 Coding Confidence
-- ♻️ Code Reusability
-- 🛡️ Type-Safe Programming
+- 💼 Technical Interview Preparation
 
 ---
 
 # 🌟 Future Topics
 
-The upcoming days will focus on more Java concepts, including:
+The upcoming days will focus on more SQL concepts, including:
 
-- 🔹 Encapsulation
-- 🔹 Advanced Polymorphism
-- 🔹 Constructors
-- 🔹 Exception Handling
-- 🔹 Collections Framework
-- 🔹 ArrayList
-- 🔹 LinkedList
-- 🔹 HashSet
-- 🔹 HashMap
-- 🔹 Stack
-- 🔹 Queue
-- 🔹 Deque
-- 🔹 Generics
-- 🔹 Comparator
-- 🔹 Iterator
-- 🔹 File Handling
-- 🔹 Multithreading
-- 🔹 Java 8 Features
-- 🔹 Lambda Expressions
-- 🔹 Stream API
-- 🔹 Functional Interfaces
-- 🔹 Advanced Java Concepts
-- 🔹 Data Structures
-- 🔹 Algorithms
-- 🔹 Searching Algorithms
-- 🔹 Sorting Algorithms
-- 🔹 Advanced Collections
-- 🔹 Object-Oriented Design
-- 🔹 Design Patterns
-- 🔹 Advanced Problem Solving
+- 🔹 Advanced SQL Queries
+- 🔹 Advanced Aggregate Functions
+- 🔹 Advanced JOIN Operations
+- 🔹 Complex Subqueries
+- 🔹 Correlated Subqueries
+- 🔹 Advanced CASE Statements
+- 🔹 Advanced GROUP BY
+- 🔹 HAVING
+- 🔹 Advanced String Functions
+- 🔹 Regular Expressions
+- 🔹 Date & Time Functions
+- 🔹 Mathematical Functions
+- 🔹 Statistical Analysis
+- 🔹 Geographic Data Analysis
+- 🔹 Relational Data Analysis
+- 🔹 Hierarchical Data Analysis
+- 🔹 Advanced Multi-Table Queries
+- 🔹 Complex Data Comparisons
+- 🔹 Advanced Data Processing
+- 🔹 Complex Problem Solving
+- 🔹 Advanced Database Concepts
 
 ---
 
 # 📌 Daily Practice
 
-Every day, I solve a new Java programming problem and add the solution to this repository.
+Every day, I solve a new SQL problem and add the solution to this repository.
 
 Each day's folder may contain:
 
-- 💻 Java Solution
+- 💻 SQL Solution
 - 📸 HackerRank Submission Screenshot
 
-This repository serves as a complete record of my **100 Days of Java learning journey**.
+This repository serves as a complete record of my **100 Days of SQL learning journey**.
 
 ---
 
@@ -1935,15 +1005,17 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 
 Let's learn, build, and grow together! 🌱
 
-📌 **GitHub:**
+### 📌 GitHub
 
-https://github.com/Coder-RD
+**Coder-RD**
+
+🔗 https://github.com/Coder-RD
 
 ---
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#JavaDeveloper` `#Programming` `#Arrays` `#2DArray` `#Subarray` `#JavaList` `#ArrayList` `#JavaMap` `#HashMap` `#JavaStack` `#HashSet` `#Generics` `#JavaGenerics` `#Comparator` `#JavaComparator` `#CustomSorting` `#DataStructures` `#Collections` `#Recursion` `#Backtracking` `#ObjectComparison` `#JavaSort` `#BitSet` `#BitManipulation` `#JavaCollections` `#Inheritance` `#Abstraction` `#AbstractClass` `#Interfaces` `#JavaInterface` `#Polymorphism` `#OOP` `#ObjectOrientedProgramming` `#MethodOverriding` `#MethodOverloading` `#SuperKeyword` `#Instanceof` `#Iterator` `#JavaIterator` `#ExceptionHandling` `#TryCatch` `#Throw` `#Throws` `#CustomException` `#InputMismatchException` `#ArithmeticException` `#CollectionFramework` `#RuntimeTypeChecking` `#RuntimePolymorphism` `#CodeReusability` `#PowerCalculator` `#Varargs` `#JavaVarargs` `#VariableArguments` `#JavaReflection` `#ReflectionAPI` `#PrimeNumber` `#PrimeChecker` `#NumberValidation` `#FactoryPattern` `#SingletonPattern` `#DesignPatterns` `#ObjectCreation` `#RegularExpressions` `#JavaRegex` `#Regex` `#IPv4` `#IPValidation` `#Day54` `#Day55` `#Day56` `#PriorityQueue` `#JavaPriorityQueue` `#JavaCollections` `#Comparator` `#CustomPriority` `#Deque` `#ArrayDeque` `#JavaDeque` `#100DaysOfCode` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#CTE` `#DateAnalysis` `#DatabaseProgramming` `#Coding` `#Programming`
 
 ---
 
@@ -1951,8 +1023,14 @@ https://github.com/Coder-RD
 
 > **"Consistency is the key to mastering any skill."** 💻🔥
 
-### 🎯 Goal: Complete 100 Days of Java
+### 🎯 Goal: Complete 100 Days of SQL
 
-**56 Days Completed ✅ | 44 Days Remaining ⏳ | 100 Days Goal 🎯**
+**57 Days Completed ✅ | 43 Days Remaining ⏳ | 100 Days Goal 🎯**
 
-**Let's keep coding! ☕💻🏛️🔗🎭🔌🔄🔑🔍🔁🛡️⚖️🧬🔀🔢📌➕🔬🏭🔐🔍📦↔️🚀**
+<p align="center">
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 🧩 🚀
+</p>
+
+<p align="center">
+  <strong>🔥 57 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+</p>
