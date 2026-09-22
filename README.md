@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-57%25-success?style=for-the-badge" alt="57% Progress">
+  <img src="https://img.shields.io/badge/Progress-58%25-success?style=for-the-badge" alt="58% Progress">
 </p>
 
 <p align="center">
@@ -52,6 +52,8 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🏭 Learn Design Patterns
 - 🔨 Practice Factory Pattern
 - 🔒 Practice Singleton Pattern
+- 🔐 Understand Access Modifiers
+- 🧩 Practice Inner Classes
 - 🧠 Improve coding efficiency
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
@@ -87,6 +89,8 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🪞 Reflection | Java Reflection API |
 | 🏭 Design Patterns | Factory Pattern |
 | 🔒 Design Patterns | Singleton Pattern |
+| 🔐 Access Control | Access Modifiers |
+| 🧩 Inner Classes | Nested & Inner Class Concepts |
 | 🔢 Mathematical Logic | Prime Numbers & Number Problems |
 | 📊 Sorting | Comparator & Sorting |
 | 🧮 Bit Manipulation | Bitwise Operations |
@@ -184,6 +188,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 ├── 📁 Day-57/  
 │   ├── 📄 Valid Username Regular Expression.java  
 │   └── 📸 Screenshot 2026-09-21 080241.png  
+├── 📁 Day-58/  
+│   ├── 📄 Can You Access.java  
+│   └── 📸 Screenshot 2026-09-22 131627.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -250,8 +257,94 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | ✅ Day 55 | Java Priority Queue | Completed 🎉🏆🔥 |
 | ✅ Day 56 | Java Dequeue | Completed 🎉🔄🔥 |
 | ✅ Day 57 | Valid Username Regular Expression | Completed 🎉👤🔎🔥 |
-| ⏳ Day 58–99 | Upcoming Challenges | Pending |
+| ✅ Day 58 | Can You Access? | Completed 🎉🔐🔥 |
+| ⏳ Day 59–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 🆕 Day 58 – Can You Access?
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏆 **Challenge:** Can You Access?
+- 📅 **Day:** 58
+- 🔐 **Topic:** Access Modifiers & Inner Classes
+- 🧩 **Focus:** Encapsulation, Accessibility & Inner Classes
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The **Can You Access?** challenge focuses on understanding how access modifiers control the accessibility of class members in Java.
+
+The challenge provides an inner class containing a private method and requires accessing the functionality through the appropriate class and object structure.
+
+This challenge helps strengthen the understanding of **Java access control, private members, inner classes, object creation, and encapsulation**.
+
+---
+
+## 🔐 Access Modifiers Practiced
+
+Java provides access control through different access modifiers:
+
+| Modifier | Accessibility |
+|---|---|
+| `private` | Accessible within the same class |
+| Default | Accessible within the same package |
+| `protected` | Accessible within the same package and subclasses |
+| `public` | Accessible from anywhere |
+
+The challenge specifically reinforces the concept of accessing a **private member through its enclosing inner class**.
+
+---
+
+## 🧩 Inner Class Concepts
+
+The challenge also provides practice with:
+
+- Inner classes
+- Private inner classes
+- Creating inner class objects
+- Accessing private methods
+- Enclosing class relationships
+- Object references
+- Runtime class information
+
+---
+
+## 🧠 Concepts Practiced
+
+- 🔐 Access Modifiers
+- 🧩 Inner Classes
+- 🔒 Private Members
+- 🏗️ Object Creation
+- 📦 Encapsulation
+- 🔗 Class Relationships
+- 🧠 Object-Oriented Programming
+- 🔍 Runtime Class Information
+- 💻 Java Syntax
+- 🛠️ Problem Solving
+
+---
+
+## 💡 Key Learning
+
+Day 58 helped me understand how **access control works in Java** and how inner classes can be used to work with members that have restricted visibility.
+
+I also practiced creating an instance of an inner class and accessing its functionality through the appropriate reference.
+
+This challenge strengthened my understanding of **Encapsulation, Access Modifiers, Inner Classes, and Java OOP concepts**.
+
+---
+
+## 📂 Files Added
+
+- 💻 `Can You Access.java`
+- 📸 `Screenshot 2026-09-22 131627.png`
 
 ---
 
@@ -324,25 +417,6 @@ Therefore:
 **Minimum = 1 + 7 = 8 characters**
 
 **Maximum = 1 + 29 = 30 characters**
-
----
-
-## 💡 Examples
-
-### ✅ Valid Usernames
-
-- `Rohini123`
-- `Java_User`
-- `CoderRD123`
-- `User_2026`
-
-### ❌ Invalid Usernames
-
-- `123Rohini`
-- `Rohini@123`
-- `ab_cd`
-- `User Name`
-- `@Rohini123`
 
 ---
 
@@ -693,6 +767,8 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Method Overriding
 - `super` Keyword
 - `instanceof`
+- Access Modifiers
+- Inner Classes
 
 ## 🔹 Collections Framework
 
@@ -739,15 +815,15 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **57 / 100** |
+| 📅 Days Completed | **58 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 💻 Challenges Solved | **57** |
-| 📈 Progress | **57% Complete** |
-| 🔥 Current Streak | **57 Days** |
-| ⏳ Days Remaining | **43 Days** |
+| 💻 Challenges Solved | **58** |
+| 📈 Progress | **58% Complete** |
+| 🔥 Current Streak | **58 Days** |
+| ⏳ Days Remaining | **42 Days** |
 | 🧠 Main Focus | **Java Programming & Problem Solving** |
-| 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces & Polymorphism** |
+| 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers & Inner Classes** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
 | 🔎 Regex Focus | **Pattern Matching & Username Validation** |
 | ⚠️ Error Handling | **Exception Handling** |
@@ -758,11 +834,11 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 # 🔥 Current Streak
 
-## **57 Days of Java Practice Completed! 🎉🔥🚀**
+## **58 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **57 days down, 43 more to go!**
+> **58 days down, 42 more to go!**
 
-Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, mathematical logic, and problem-solving abilities**.
+Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, mathematical logic, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -776,13 +852,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 30 | ✅ Completed 🎉 |
 | 🎯 Day 40 | ✅ Completed 🎉🔥 |
-| 🎯 Day 43 | ✅ Completed 🎉🔥 |
-| 🎯 Day 44 | ✅ Completed 🎉🔥 |
 | 🎯 Day 45 | ✅ Completed 🎉🔥 |
-| 🎯 Day 46 | ✅ Completed 🎉🔥 |
-| 🎯 Day 47 | ✅ Completed 🎉🔥 |
-| 🎯 Day 48 | ✅ Completed 🎉🔥 |
-| 🎯 Day 49 | ✅ Completed 🎉🔥 |
 | 🎯 Day 50 | ✅ Completed 🎉🪞🔥 |
 | 🎯 Day 51 | ✅ Completed 🎉🔢🔥 |
 | 🎯 Day 52 | ✅ Completed 🎉🏭🔥 |
@@ -791,6 +861,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 55 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 56 | ✅ Completed 🎉🔄🔥 |
 | 🎯 Day 57 | ✅ Completed 🎉👤🔎🔥 |
+| 🎯 Day 58 | ✅ Completed 🎉🔐🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -837,11 +908,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 57**  
 ████████████████████ 57%
 
+**Day 58**  
+████████████████████ 58%
+
 ## 🚀 Overall Progress
 
-███████████░░░░░░░░░ **57%**
+████████████░░░░░░░░ **58%**
 
-### **57 / 100 Days Completed**
+### **58 / 100 Days Completed**
 
 ---
 
@@ -881,6 +955,8 @@ It is also about:
 - ⚠️ Understanding exception handling
 - 🪞 Exploring Java Reflection
 - 🏭 Learning Design Patterns
+- 🔐 Understanding access control
+- 🧩 Working with Inner Classes
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
 - 🎯 Preparing for technical interviews
@@ -904,6 +980,8 @@ It serves as:
 - 🔎 My Regex practice
 - 🪞 My Reflection practice
 - 🏭 My Design Pattern practice
+- 🔐 My Access Modifier practice
+- 🧩 My Inner Class practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
 
@@ -972,7 +1050,7 @@ https://github.com/Coder-RD/Java_Challenge/
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day57`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day58`
 
 ---
 
@@ -982,12 +1060,12 @@ https://github.com/Coder-RD/Java_Challenge/
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**57 Days Completed ✅ | 43 Days Remaining ⏳ | 100 Days Goal 🎯**
+**58 Days Completed ✅ | 42 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔥 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🔥 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 57 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 58 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
