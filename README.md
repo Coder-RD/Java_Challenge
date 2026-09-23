@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-58%25-success?style=for-the-badge" alt="58% Progress">
+  <img src="https://img.shields.io/badge/Progress-59%25-success?style=for-the-badge" alt="59% Progress">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, and advanced Java programming concepts.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, access modifiers, inner classes, visitor patterns, and advanced Java programming concepts.
 
 The goal is to solve **one Java challenge every day for 100 days**, build consistency, improve programming skills, and continuously develop my problem-solving and coding abilities. ☕💻🔥
 
@@ -54,6 +54,8 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🔒 Practice Singleton Pattern
 - 🔐 Understand Access Modifiers
 - 🧩 Practice Inner Classes
+- 🧭 Understand Visitor Design Pattern
+- 🌳 Practice Tree Traversal
 - 🧠 Improve coding efficiency
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
@@ -89,8 +91,10 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🪞 Reflection | Java Reflection API |
 | 🏭 Design Patterns | Factory Pattern |
 | 🔒 Design Patterns | Singleton Pattern |
+| 🧭 Design Patterns | Visitor Pattern |
 | 🔐 Access Control | Access Modifiers |
 | 🧩 Inner Classes | Nested & Inner Class Concepts |
+| 🌳 Tree Processing | Tree Traversal & Visitor Pattern |
 | 🔢 Mathematical Logic | Prime Numbers & Number Problems |
 | 📊 Sorting | Comparator & Sorting |
 | 🧮 Bit Manipulation | Bitwise Operations |
@@ -191,6 +195,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 ├── 📁 Day-58/  
 │   ├── 📄 Can You Access.java  
 │   └── 📸 Screenshot 2026-09-22 131627.png  
+├── 📁 Day-59/  
+│   ├── 📄 Java Visitor Pattern.java  
+│   └── 📸 Screenshot 2026-09-23 204543.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -258,8 +265,110 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | ✅ Day 56 | Java Dequeue | Completed 🎉🔄🔥 |
 | ✅ Day 57 | Valid Username Regular Expression | Completed 🎉👤🔎🔥 |
 | ✅ Day 58 | Can You Access? | Completed 🎉🔐🔥 |
-| ⏳ Day 59–99 | Upcoming Challenges | Pending |
+| ✅ Day 59 | Java Visitor Pattern | Completed 🎉🌳🧭🔥 |
+| ⏳ Day 60–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 🆕 Day 59 – Java Visitor Pattern
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏆 **Challenge:** Tree: Visitor Pattern
+- 📅 **Day:** 59
+- 🧭 **Topic:** Visitor Design Pattern
+- 🌳 **Focus:** Tree Traversal, Visitors & OOP
+- 🧩 **Concept:** Design Patterns
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The **Tree: Visitor Pattern** challenge focuses on implementing the **Visitor Design Pattern** to perform different operations on a tree without changing the structure of the tree itself.
+
+The challenge uses a tree containing nodes with different colors and depths. Multiple visitors are implemented to calculate different values based on the properties of the nodes.
+
+This challenge provides practical experience with **tree structures, traversal, abstraction, inheritance, interfaces, polymorphism, and design patterns**.
+
+---
+
+## 🧭 Visitor Pattern
+
+The **Visitor Design Pattern** separates an operation from the object structure on which it operates.
+
+In this challenge, different visitors perform different calculations on the same tree structure.
+
+### Visitors Practiced
+
+- 🍃 **SumInLeavesVisitor**
+  - Calculates the sum of values of all leaf nodes.
+
+- 🔴 **ProductOfRedNodesVisitor**
+  - Calculates the product of values of red nodes.
+  - Uses modulo arithmetic to keep the result within the required range.
+
+- 🟢 **FancyVisitor**
+  - Calculates the absolute difference between:
+    - The sum of values of non-leaf nodes at even depth.
+    - The sum of values of green leaf nodes.
+
+---
+
+## 🌳 Tree Traversal
+
+The tree is represented using nodes connected through edges.
+
+The solution requires traversing the tree while maintaining information such as:
+
+- Node value
+- Node color
+- Node depth
+- Leaf or non-leaf status
+- Parent-child relationship
+
+The tree is rooted at the first node, and traversal is performed from the root through its connected nodes.
+
+---
+
+## 🧠 Concepts Practiced
+
+- 🧭 Visitor Design Pattern
+- 🌳 Tree Data Structure
+- 🔄 Tree Traversal
+- 🏗️ Object-Oriented Programming
+- 🔌 Interfaces
+- 🎭 Abstract Classes
+- 🔄 Polymorphism
+- 🧬 Inheritance
+- 🍃 Leaf Node Identification
+- 📊 Depth-based Processing
+- 🔴 Node Color Processing
+- 🧩 Graph Representation
+- 📋 Adjacency Lists
+- 🔢 Modular Arithmetic
+- 🧠 Problem Solving
+- 💻 Java Programming
+
+---
+
+## 💡 Key Learning
+
+Day 59 helped me understand how the **Visitor Pattern** can be applied to a tree structure to perform multiple operations without modifying the tree classes.
+
+I practiced creating different visitor implementations for different calculations and learned how tree traversal can be combined with object-oriented design patterns.
+
+This challenge strengthened my understanding of **Design Patterns, Tree Traversal, Interfaces, Abstraction, Polymorphism, and Java OOP**. 🚀
+
+---
+
+## 📂 Files Added
+
+- 💻 `Java Visitor Pattern.java`
+- 📸 `Screenshot 2026-09-23 204543.png`
 
 ---
 
@@ -795,6 +904,8 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Design Patterns
 - Factory Pattern
 - Singleton Pattern
+- Visitor Pattern
+- Tree Traversal
 
 ## 🔹 Problem Solving
 
@@ -807,6 +918,7 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Bit Manipulation
 - Pattern Matching
 - Input Validation
+- Tree-Based Problems
 - Logical Programming
 
 ---
@@ -815,30 +927,31 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **58 / 100** |
+| 📅 Days Completed | **59 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 💻 Challenges Solved | **58** |
-| 📈 Progress | **58% Complete** |
-| 🔥 Current Streak | **58 Days** |
-| ⏳ Days Remaining | **42 Days** |
+| 💻 Challenges Solved | **59** |
+| 📈 Progress | **59% Complete** |
+| 🔥 Current Streak | **59 Days** |
+| ⏳ Days Remaining | **41 Days** |
 | 🧠 Main Focus | **Java Programming & Problem Solving** |
-| 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers & Inner Classes** |
+| 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes & Visitor Pattern** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
 | 🔎 Regex Focus | **Pattern Matching & Username Validation** |
 | ⚠️ Error Handling | **Exception Handling** |
 | 🪞 Reflection | **Runtime Class Inspection** |
-| 🏭 Design Patterns | **Factory & Singleton** |
+| 🏭 Design Patterns | **Factory, Singleton & Visitor Pattern** |
+| 🌳 Tree Concepts | **Tree Traversal & Visitor-Based Processing** |
 
 ---
 
 # 🔥 Current Streak
 
-## **58 Days of Java Practice Completed! 🎉🔥🚀**
+## **59 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **58 days down, 42 more to go!**
+> **59 days down, 41 more to go!**
 
-Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, mathematical logic, and problem-solving abilities**.
+Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, mathematical logic, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -862,6 +975,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 56 | ✅ Completed 🎉🔄🔥 |
 | 🎯 Day 57 | ✅ Completed 🎉👤🔎🔥 |
 | 🎯 Day 58 | ✅ Completed 🎉🔐🔥 |
+| 🎯 Day 59 | ✅ Completed 🎉🌳🧭🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -870,52 +984,55 @@ The journey continues with **consistency, discipline, practice, and continuous l
 # 📊 Progress Tracker
 
 **Day 10**  
-████████████████████ 10%
+██░░░░░░░░░░░░░░░░░░ **10%**
 
 **Day 20**  
-████████████████████ 20%
+████░░░░░░░░░░░░░░░░ **20%**
 
 **Day 30**  
-████████████████████ 30%
+██████░░░░░░░░░░░░░░ **30%**
 
 **Day 40**  
-████████████████████ 40%
+████████░░░░░░░░░░░░ **40%**
 
 **Day 45**  
-████████████████████ 45%
+█████████░░░░░░░░░░░ **45%**
 
 **Day 50**  
-████████████████████ 50%
+██████████░░░░░░░░░░ **50%**
 
 **Day 51**  
-████████████████████ 51%
+██████████░░░░░░░░░░ **51%**
 
 **Day 52**  
-████████████████████ 52%
+██████████░░░░░░░░░░ **52%**
 
 **Day 53**  
-████████████████████ 53%
+██████████░░░░░░░░░░ **53%**
 
 **Day 54**  
-████████████████████ 54%
+███████████░░░░░░░░░ **54%**
 
 **Day 55**  
-████████████████████ 55%
+███████████░░░░░░░░░ **55%**
 
 **Day 56**  
-████████████████████ 56%
+███████████░░░░░░░░░ **56%**
 
 **Day 57**  
-████████████████████ 57%
+███████████░░░░░░░░░ **57%**
 
 **Day 58**  
-████████████████████ 58%
+███████████░░░░░░░░░ **58%**
+
+**Day 59**  
+████████████░░░░░░░░ **59%**
 
 ## 🚀 Overall Progress
 
-████████████░░░░░░░░ **58%**
+████████████░░░░░░░░ **59%**
 
-### **58 / 100 Days Completed**
+### **59 / 100 Days Completed**
 
 ---
 
@@ -957,6 +1074,8 @@ It is also about:
 - 🏭 Learning Design Patterns
 - 🔐 Understanding access control
 - 🧩 Working with Inner Classes
+- 🌳 Practicing Tree Traversal
+- 🧭 Understanding Visitor Pattern
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
 - 🎯 Preparing for technical interviews
@@ -982,6 +1101,8 @@ It serves as:
 - 🏭 My Design Pattern practice
 - 🔐 My Access Modifier practice
 - 🧩 My Inner Class practice
+- 🌳 My Tree Traversal practice
+- 🧭 My Visitor Pattern practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
 
@@ -1050,7 +1171,7 @@ https://github.com/Coder-RD/Java_Challenge/
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day58`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day59`
 
 ---
 
@@ -1060,12 +1181,12 @@ https://github.com/Coder-RD/Java_Challenge/
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**58 Days Completed ✅ | 42 Days Remaining ⏳ | 100 Days Goal 🎯**
+**59 Days Completed ✅ | 41 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🔥 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🔥 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 58 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 59 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
