@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-59%25-success?style=for-the-badge" alt="59% Progress">
+  <img src="https://img.shields.io/badge/Progress-60%25-success?style=for-the-badge" alt="60% Progress">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, access modifiers, inner classes, visitor patterns, and advanced Java programming concepts.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, access modifiers, inner classes, visitor patterns, annotations, and advanced Java programming concepts.
 
 The goal is to solve **one Java challenge every day for 100 days**, build consistency, improve programming skills, and continuously develop my problem-solving and coding abilities. ☕💻🔥
 
@@ -56,6 +56,8 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🧩 Practice Inner Classes
 - 🧭 Understand Visitor Design Pattern
 - 🌳 Practice Tree Traversal
+- 🏷️ Understand Java Annotations
+- 🔍 Practice Runtime Annotation Processing
 - 🧠 Improve coding efficiency
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
@@ -95,6 +97,8 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🔐 Access Control | Access Modifiers |
 | 🧩 Inner Classes | Nested & Inner Class Concepts |
 | 🌳 Tree Processing | Tree Traversal & Visitor Pattern |
+| 🏷️ Annotations | Custom Annotations & Metadata |
+| 🔍 Runtime Processing | Annotation Reflection |
 | 🔢 Mathematical Logic | Prime Numbers & Number Problems |
 | 📊 Sorting | Comparator & Sorting |
 | 🧮 Bit Manipulation | Bitwise Operations |
@@ -198,6 +202,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 ├── 📁 Day-59/  
 │   ├── 📄 Java Visitor Pattern.java  
 │   └── 📸 Screenshot 2026-09-23 204543.png  
+├── 📁 Day-60/  
+│   ├── 📄 Java Annotations.java  
+│   └── 📸 Screenshot 2026-09-24 201421.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -266,8 +273,131 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | ✅ Day 57 | Valid Username Regular Expression | Completed 🎉👤🔎🔥 |
 | ✅ Day 58 | Can You Access? | Completed 🎉🔐🔥 |
 | ✅ Day 59 | Java Visitor Pattern | Completed 🎉🌳🧭🔥 |
-| ⏳ Day 60–99 | Upcoming Challenges | Pending |
+| ✅ Day 60 | Java Annotations | Completed 🎉🏷️🪞🔥 |
+| ⏳ Day 61–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 🆕 Day 60 – Java Annotations
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏆 **Challenge:** Java Annotations
+- 📅 **Day:** 60
+- 🏷️ **Topic:** Java Annotations
+- 🪞 **Focus:** Custom Annotations & Reflection
+- 🔍 **Concept:** Runtime Annotation Processing
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The **Java Annotations** challenge focuses on understanding how annotations can be created and used to provide metadata about Java methods.
+
+The challenge requires creating a custom annotation and using Java Reflection to inspect the annotation at runtime.
+
+The solution identifies methods based on their annotation values, reads the configured budget limit, checks the user's role and spending amount, and invokes the appropriate method when the spending is within the allowed budget.
+
+---
+
+## 🏷️ Custom Annotation
+
+A custom annotation named `FamilyBudget` is used in the challenge.
+
+The annotation contains information such as:
+
+- 👤 User role
+- 💰 Budget limit
+- ⚙️ Annotation configuration
+- 🔍 Runtime metadata
+
+The annotation is targeted specifically at methods and retained at runtime so that it can be accessed using Java Reflection.
+
+---
+
+## 🪞 Java Reflection
+
+Reflection is used to inspect methods and their annotations dynamically.
+
+Important Reflection concepts practiced include:
+
+- `Method`
+- `getMethods()`
+- `isAnnotationPresent()`
+- `getAnnotation()`
+- `method.invoke()`
+- Runtime annotation inspection
+- Dynamic method execution
+
+---
+
+## 💰 Budget Validation Logic
+
+The program checks whether the requested spending amount is within the configured budget.
+
+For example:
+
+- 👤 Senior Member → Budget Limit: `100`
+- 👤 Junior Member → Budget Limit: `50`
+
+If the spending amount is within the allowed budget, the corresponding method is invoked.
+
+Otherwise, the program displays:
+
+**Budget Limit Over**
+
+---
+
+## 🧠 Concepts Practiced
+
+- 🏷️ Java Annotations
+- 🧩 Custom Annotations
+- `@Target`
+- `@Retention`
+- Annotation Members
+- Default Annotation Values
+- 🪞 Java Reflection API
+- `Method`
+- `getMethods()`
+- `isAnnotationPresent()`
+- `getAnnotation()`
+- `method.invoke()`
+- Runtime Metadata
+- Method Invocation
+- Exception Handling
+- Object Creation
+- OOP
+- Problem Solving
+
+---
+
+## 💡 Key Learning
+
+Day 60 helped me understand how **Java Annotations and Reflection can work together**.
+
+I learned how to:
+
+- Create a custom annotation
+- Define annotation members
+- Set annotation retention to runtime
+- Apply annotations to methods
+- Detect annotations dynamically
+- Read annotation values
+- Validate data using annotation configuration
+- Invoke methods dynamically using Reflection
+
+This challenge strengthened my understanding of **Java Metadata, Annotations, Reflection API, Runtime Processing, OOP, and Dynamic Method Invocation**. 🚀
+
+---
+
+## 📂 Files Added
+
+- 💻 `Java Annotations.java`
+- 📸 `Screenshot 2026-09-24 201421.png`
 
 ---
 
@@ -602,6 +732,7 @@ The challenge helps understand how a double-ended queue can be used for efficien
 - Collection operations
 - Duplicate handling
 - Queue operations
+- Sliding-window style processing
 
 ---
 
@@ -906,6 +1037,8 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Singleton Pattern
 - Visitor Pattern
 - Tree Traversal
+- Custom Annotations
+- Runtime Annotation Processing
 
 ## 🔹 Problem Solving
 
@@ -927,31 +1060,32 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **59 / 100** |
+| 📅 Days Completed | **60 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 💻 Challenges Solved | **59** |
-| 📈 Progress | **59% Complete** |
-| 🔥 Current Streak | **59 Days** |
-| ⏳ Days Remaining | **41 Days** |
+| 💻 Challenges Solved | **60** |
+| 📈 Progress | **60% Complete** |
+| 🔥 Current Streak | **60 Days** |
+| ⏳ Days Remaining | **40 Days** |
 | 🧠 Main Focus | **Java Programming & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes & Visitor Pattern** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
 | 🔎 Regex Focus | **Pattern Matching & Username Validation** |
 | ⚠️ Error Handling | **Exception Handling** |
-| 🪞 Reflection | **Runtime Class Inspection** |
+| 🪞 Reflection | **Runtime Class & Annotation Inspection** |
 | 🏭 Design Patterns | **Factory, Singleton & Visitor Pattern** |
 | 🌳 Tree Concepts | **Tree Traversal & Visitor-Based Processing** |
+| 🏷️ Annotation Concepts | **Custom Annotations & Runtime Processing** |
 
 ---
 
 # 🔥 Current Streak
 
-## **59 Days of Java Practice Completed! 🎉🔥🚀**
+## **60 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **59 days down, 41 more to go!**
+> **60 days down, 40 more to go!**
 
-Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, mathematical logic, and problem-solving abilities**.
+Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, mathematical logic, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -976,6 +1110,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 57 | ✅ Completed 🎉👤🔎🔥 |
 | 🎯 Day 58 | ✅ Completed 🎉🔐🔥 |
 | 🎯 Day 59 | ✅ Completed 🎉🌳🧭🔥 |
+| 🎯 Day 60 | ✅ Completed 🎉🏷️🪞🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -1028,11 +1163,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 59**  
 ████████████░░░░░░░░ **59%**
 
+**Day 60**  
+████████████░░░░░░░░ **60%**
+
 ## 🚀 Overall Progress
 
-████████████░░░░░░░░ **59%**
+████████████░░░░░░░░ **60%**
 
-### **59 / 100 Days Completed**
+### **60 / 100 Days Completed**
 
 ---
 
@@ -1076,6 +1214,8 @@ It is also about:
 - 🧩 Working with Inner Classes
 - 🌳 Practicing Tree Traversal
 - 🧭 Understanding Visitor Pattern
+- 🏷️ Working with Java Annotations
+- 🔍 Practicing Runtime Annotation Processing
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
 - 🎯 Preparing for technical interviews
@@ -1103,6 +1243,7 @@ It serves as:
 - 🧩 My Inner Class practice
 - 🌳 My Tree Traversal practice
 - 🧭 My Visitor Pattern practice
+- 🏷️ My Java Annotation practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
 
@@ -1171,7 +1312,7 @@ https://github.com/Coder-RD/Java_Challenge/
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day59`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day60`
 
 ---
 
@@ -1181,12 +1322,12 @@ https://github.com/Coder-RD/Java_Challenge/
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**59 Days Completed ✅ | 41 Days Remaining ⏳ | 100 Days Goal 🎯**
+**60 Days Completed ✅ | 40 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🔥 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔥 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 59 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 60 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
