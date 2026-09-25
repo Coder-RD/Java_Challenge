@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-60%25-success?style=for-the-badge" alt="60% Progress">
+  <img src="https://img.shields.io/badge/Progress-61%25-success?style=for-the-badge" alt="61% Progress">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, access modifiers, inner classes, visitor patterns, annotations, and advanced Java programming concepts.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, access modifiers, inner classes, visitor patterns, annotations, covariant return types, and advanced Java programming concepts.
 
 The goal is to solve **one Java challenge every day for 100 days**, build consistency, improve programming skills, and continuously develop my problem-solving and coding abilities. ☕💻🔥
 
@@ -58,6 +58,7 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🌳 Practice Tree Traversal
 - 🏷️ Understand Java Annotations
 - 🔍 Practice Runtime Annotation Processing
+- 🔄 Understand Covariant Return Types
 - 🧠 Improve coding efficiency
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
@@ -99,6 +100,7 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🌳 Tree Processing | Tree Traversal & Visitor Pattern |
 | 🏷️ Annotations | Custom Annotations & Metadata |
 | 🔍 Runtime Processing | Annotation Reflection |
+| 🔄 Return Types | Covariant Return Types |
 | 🔢 Mathematical Logic | Prime Numbers & Number Problems |
 | 📊 Sorting | Comparator & Sorting |
 | 🧮 Bit Manipulation | Bitwise Operations |
@@ -205,6 +207,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 ├── 📁 Day-60/  
 │   ├── 📄 Java Annotations.java  
 │   └── 📸 Screenshot 2026-09-24 201421.png  
+├── 📁 Day-61/  
+│   ├── 📄 Covariant Return Types.java  
+│   └── 📸 Screenshot 2026-09-25 074119.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -274,8 +279,147 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | ✅ Day 58 | Can You Access? | Completed 🎉🔐🔥 |
 | ✅ Day 59 | Java Visitor Pattern | Completed 🎉🌳🧭🔥 |
 | ✅ Day 60 | Java Annotations | Completed 🎉🏷️🪞🔥 |
-| ⏳ Day 61–99 | Upcoming Challenges | Pending |
+| ✅ Day 61 | Covariant Return Types | Completed 🎉🔄🔥 |
+| ⏳ Day 62–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 🆕 Day 61 – Covariant Return Types
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏆 **Challenge:** Java Covariant Return Types
+- 📅 **Day:** 61
+- 🔄 **Topic:** Covariant Return Types
+- 🧬 **Focus:** Inheritance & Method Overriding
+- 🔁 **Concept:** Returning Subtypes from Overridden Methods
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The **Java Covariant Return Types** challenge focuses on understanding how a subclass can override a method and return a more specific type than the return type declared in the superclass.
+
+The challenge contains a hierarchy of classes representing flowers and regions.
+
+The `Region` class contains a method that returns a `Flower` object. The subclasses `WestBengal` and `AndhraPradesh` override this method and return more specific flower types.
+
+---
+
+## 🌸 Class Structure
+
+The challenge uses the following class relationships:
+
+- 🌸 `Flower` is the parent class.
+- 🌼 `Jasmine` extends `Flower`.
+- 🌺 `Lily` extends `Flower`.
+- 🌍 `Region` is the parent region class.
+- 🏞️ `WestBengal` extends `Region`.
+- 🏞️ `AndhraPradesh` extends `Region`.
+
+The overridden method in `Region` returns a `Flower`.
+
+The subclasses return:
+
+- `WestBengal` → `Jasmine`
+- `AndhraPradesh` → `Lily`
+
+---
+
+## 🔄 Covariant Return Type
+
+A **covariant return type** allows an overriding method in a subclass to return a subtype of the return type declared by the parent class method.
+
+For example:
+
+`Region.yourNationalFlower()` returns `Flower`.
+
+`WestBengal.yourNationalFlower()` returns `Jasmine`.
+
+`AndhraPradesh.yourNationalFlower()` returns `Lily`.
+
+Since both `Jasmine` and `Lily` are subclasses of `Flower`, these are valid covariant return types.
+
+---
+
+## 🌸 Flower Classes
+
+The `Flower` class provides the common method:
+
+`whatsYourName()`
+
+The subclasses override this method:
+
+- 🌼 `Jasmine` → returns `"Jasmine"`
+- 🌺 `Lily` → returns `"Lily"`
+
+This demonstrates method overriding and runtime polymorphism.
+
+---
+
+## 🏞️ Region Classes
+
+The `Region` class defines:
+
+`Flower yourNationalFlower()`
+
+The subclasses override this method using more specific return types.
+
+### WestBengal
+
+`Jasmine yourNationalFlower()`
+
+Returns a `Jasmine` object.
+
+### AndhraPradesh
+
+`Lily yourNationalFlower()`
+
+Returns a `Lily` object.
+
+---
+
+## 🧠 Concepts Practiced
+
+- 🔄 Covariant Return Types
+- 🧬 Inheritance
+- 🔁 Method Overriding
+- 🎭 Runtime Polymorphism
+- 🌸 Parent and Child Classes
+- 🏗️ Object Creation
+- 📦 Class Relationships
+- ☕ Core Java
+- 🧠 Object-Oriented Programming
+- 🔍 Return Type Compatibility
+- 🧩 Subtype Polymorphism
+- 🛠️ Problem Solving
+
+---
+
+## 💡 Key Learning
+
+Day 61 helped me understand how **covariant return types work with inheritance and method overriding**.
+
+I learned that an overriding method does not always have to return exactly the same class type as the parent method. It can return a more specific subclass type.
+
+For example:
+
+- `Flower` → Parent return type
+- `Jasmine` → Covariant return type
+- `Lily` → Covariant return type
+
+This challenge strengthened my understanding of **Inheritance, Method Overriding, Polymorphism, Return Type Compatibility, and Object-Oriented Programming**. 🚀
+
+---
+
+## 📂 Files Added
+
+- 💻 `Covariant Return Types.java`
+- 📸 `Screenshot 2026-09-25 074119.png`
 
 ---
 
@@ -997,7 +1141,6 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 ## 🔹 Object-Oriented Programming
 
-- Classes
 - Objects
 - Encapsulation
 - Inheritance
@@ -1005,6 +1148,7 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Interfaces
 - Polymorphism
 - Method Overriding
+- Covariant Return Types
 - `super` Keyword
 - `instanceof`
 - Access Modifiers
@@ -1039,6 +1183,7 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Tree Traversal
 - Custom Annotations
 - Runtime Annotation Processing
+- Covariant Return Types
 
 ## 🔹 Problem Solving
 
@@ -1060,15 +1205,15 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **60 / 100** |
+| 📅 Days Completed | **61 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 💻 Challenges Solved | **60** |
-| 📈 Progress | **60% Complete** |
-| 🔥 Current Streak | **60 Days** |
-| ⏳ Days Remaining | **40 Days** |
+| 💻 Challenges Solved | **61** |
+| 📈 Progress | **61% Complete** |
+| 🔥 Current Streak | **61 Days** |
+| ⏳ Days Remaining | **39 Days** |
 | 🧠 Main Focus | **Java Programming & Problem Solving** |
-| 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes & Visitor Pattern** |
+| 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
 | 🔎 Regex Focus | **Pattern Matching & Username Validation** |
 | ⚠️ Error Handling | **Exception Handling** |
@@ -1076,16 +1221,17 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 | 🏭 Design Patterns | **Factory, Singleton & Visitor Pattern** |
 | 🌳 Tree Concepts | **Tree Traversal & Visitor-Based Processing** |
 | 🏷️ Annotation Concepts | **Custom Annotations & Runtime Processing** |
+| 🔄 Return Type Concepts | **Covariant Return Types** |
 
 ---
 
 # 🔥 Current Streak
 
-## **60 Days of Java Practice Completed! 🎉🔥🚀**
+## **61 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **60 days down, 40 more to go!**
+> **61 days down, 39 more to go!**
 
-Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, mathematical logic, and problem-solving abilities**.
+Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, Covariant Return Types, mathematical logic, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -1111,6 +1257,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 58 | ✅ Completed 🎉🔐🔥 |
 | 🎯 Day 59 | ✅ Completed 🎉🌳🧭🔥 |
 | 🎯 Day 60 | ✅ Completed 🎉🏷️🪞🔥 |
+| 🎯 Day 61 | ✅ Completed 🎉🔄🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -1166,11 +1313,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 60**  
 ████████████░░░░░░░░ **60%**
 
+**Day 61**  
+████████████░░░░░░░░ **61%**
+
 ## 🚀 Overall Progress
 
-████████████░░░░░░░░ **60%**
+████████████░░░░░░░░ **61%**
 
-### **60 / 100 Days Completed**
+### **61 / 100 Days Completed**
 
 ---
 
@@ -1215,6 +1365,7 @@ It is also about:
 - 🌳 Practicing Tree Traversal
 - 🧭 Understanding Visitor Pattern
 - 🏷️ Working with Java Annotations
+- 🔄 Understanding Covariant Return Types
 - 🔍 Practicing Runtime Annotation Processing
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
@@ -1244,6 +1395,7 @@ It serves as:
 - 🌳 My Tree Traversal practice
 - 🧭 My Visitor Pattern practice
 - 🏷️ My Java Annotation practice
+- 🔄 My Covariant Return Type practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
 
@@ -1312,7 +1464,7 @@ https://github.com/Coder-RD/Java_Challenge/
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day60`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#Polymorphism` `#MethodOverriding` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day61`
 
 ---
 
@@ -1322,12 +1474,12 @@ https://github.com/Coder-RD/Java_Challenge/
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**60 Days Completed ✅ | 40 Days Remaining ⏳ | 100 Days Goal 🎯**
+**61 Days Completed ✅ | 39 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔥 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 🔥 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 60 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 61 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
