@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-61%25-success?style=for-the-badge" alt="61% Progress">
+  <img src="https://img.shields.io/badge/Progress-62%25-success?style=for-the-badge" alt="62% Progress">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, access modifiers, inner classes, visitor patterns, annotations, covariant return types, and advanced Java programming concepts.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, access modifiers, inner classes, visitor patterns, annotations, covariant return types, lambda expressions, and advanced Java programming concepts.
 
 The goal is to solve **one Java challenge every day for 100 days**, build consistency, improve programming skills, and continuously develop my problem-solving and coding abilities. ☕💻🔥
 
@@ -59,6 +59,8 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🏷️ Understand Java Annotations
 - 🔍 Practice Runtime Annotation Processing
 - 🔄 Understand Covariant Return Types
+- ⚡ Learn Lambda Expressions
+- 🔗 Practice Functional Interfaces
 - 🧠 Improve coding efficiency
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
@@ -101,6 +103,8 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🏷️ Annotations | Custom Annotations & Metadata |
 | 🔍 Runtime Processing | Annotation Reflection |
 | 🔄 Return Types | Covariant Return Types |
+| ⚡ Functional Programming | Lambda Expressions |
+| 🔗 Functional Interfaces | `PerformOperation` & Lambda Implementation |
 | 🔢 Mathematical Logic | Prime Numbers & Number Problems |
 | 📊 Sorting | Comparator & Sorting |
 | 🧮 Bit Manipulation | Bitwise Operations |
@@ -210,6 +214,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 ├── 📁 Day-61/  
 │   ├── 📄 Covariant Return Types.java  
 │   └── 📸 Screenshot 2026-09-25 074119.png  
+├── 📁 Day-62/  
+│   ├── 📄 Java Lambda Expressions.java  
+│   └── 📸 Screenshot 2026-09-26 175658.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -280,8 +287,157 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | ✅ Day 59 | Java Visitor Pattern | Completed 🎉🌳🧭🔥 |
 | ✅ Day 60 | Java Annotations | Completed 🎉🏷️🪞🔥 |
 | ✅ Day 61 | Covariant Return Types | Completed 🎉🔄🔥 |
-| ⏳ Day 62–99 | Upcoming Challenges | Pending |
+| ✅ Day 62 | Java Lambda Expressions | Completed 🎉⚡🔥 |
+| ⏳ Day 63–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 🆕 Day 62 – Java Lambda Expressions
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏆 **Challenge:** Java Lambda Expressions
+- 📅 **Day:** 62
+- ⚡ **Topic:** Lambda Expressions
+- 🔗 **Focus:** Functional Interfaces & Functional Programming
+- 🧩 **Concept:** Passing Behavior Using Lambda Expressions
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The **Java Lambda Expressions** challenge focuses on understanding how lambda expressions can be used to provide implementations of functional interfaces.
+
+The challenge defines a `PerformOperation` interface containing a `check()` method. Different operations are implemented using lambda expressions to determine whether a number is:
+
+- 🔢 Odd or Even
+- 🔍 Prime or Composite
+- 🔄 Palindrome or Not Palindrome
+
+The solution uses lambda expressions to create concise implementations of these operations.
+
+---
+
+## ⚡ Lambda Expressions
+
+A **lambda expression** is a short way of writing an implementation of a functional interface.
+
+General syntax:
+
+`(parameters) -> expression`
+
+or:
+
+`(parameters) -> { statements }`
+
+Lambda expressions help reduce unnecessary code and make functional-style programming easier to write.
+
+---
+
+## 🔗 Functional Interface
+
+The challenge uses the following interface:
+
+`PerformOperation`
+
+It contains one abstract method:
+
+`boolean check(int a)`
+
+Since the interface contains a single abstract method, it can be implemented using lambda expressions.
+
+---
+
+## 🔢 Odd or Even
+
+The first operation checks whether a number is odd or even.
+
+The lambda expression uses the modulo operator:
+
+`a % 2 != 0`
+
+If the condition is true, the number is **ODD**.
+
+Otherwise, it is **EVEN**.
+
+---
+
+## 🔍 Prime or Composite
+
+The second operation checks whether a number is prime.
+
+The solution verifies whether the number has any divisor other than `1` and itself.
+
+Numbers less than `2` are treated as non-prime.
+
+The solution uses a loop up to the square root of the number to perform efficient prime checking.
+
+The output is:
+
+- `PRIME`
+- `COMPOSITE`
+
+---
+
+## 🔄 Palindrome Checking
+
+The third operation checks whether a number reads the same forward and backward.
+
+The number is reversed using digit extraction and the reversed number is compared with the original number.
+
+The output is:
+
+- `PALINDROME`
+- `NOT PALINDROME`
+
+---
+
+## 🧠 Concepts Practiced
+
+- ⚡ Lambda Expressions
+- 🔗 Functional Interfaces
+- ☕ Java 8 Features
+- 🧩 Functional Programming
+- 🔢 Odd and Even Checking
+- 🔍 Prime Number Checking
+- 🔄 Palindrome Checking
+- 🏗️ Interface Implementation
+- 🎭 Polymorphism
+- 🧠 Logical Programming
+- 📊 Conditional Processing
+- 🔁 Loops
+- 🔢 Mathematical Operations
+- 🛠️ Problem Solving
+- 💻 Core Java
+
+---
+
+## 💡 Key Learning
+
+Day 62 helped me understand how **Lambda Expressions can simplify the implementation of functional interfaces**.
+
+I learned how to:
+
+- Create lambda expressions
+- Work with functional interfaces
+- Pass behavior as an object
+- Implement different operations concisely
+- Use lambda expressions with conditional logic
+- Apply Java 8 functional programming concepts
+- Solve multiple logical operations using a common interface
+
+This challenge strengthened my understanding of **Lambda Expressions, Functional Interfaces, Java 8 Features, Functional Programming, Interfaces, Polymorphism, and Problem Solving**. 🚀
+
+---
+
+## 📂 Files Added
+
+- 💻 `Java Lambda Expressions.java`
+- 📸 `Screenshot 2026-09-26 175658.png`
 
 ---
 
@@ -1184,6 +1340,9 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Custom Annotations
 - Runtime Annotation Processing
 - Covariant Return Types
+- Lambda Expressions
+- Functional Interfaces
+- Functional Programming
 
 ## 🔹 Problem Solving
 
@@ -1205,13 +1364,13 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **61 / 100** |
+| 📅 Days Completed | **62 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 💻 Challenges Solved | **61** |
-| 📈 Progress | **61% Complete** |
-| 🔥 Current Streak | **61 Days** |
-| ⏳ Days Remaining | **39 Days** |
+| 💻 Challenges Solved | **62** |
+| 📈 Progress | **62% Complete** |
+| 🔥 Current Streak | **62 Days** |
+| ⏳ Days Remaining | **38 Days** |
 | 🧠 Main Focus | **Java Programming & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
@@ -1222,16 +1381,17 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 | 🌳 Tree Concepts | **Tree Traversal & Visitor-Based Processing** |
 | 🏷️ Annotation Concepts | **Custom Annotations & Runtime Processing** |
 | 🔄 Return Type Concepts | **Covariant Return Types** |
+| ⚡ Functional Programming | **Lambda Expressions & Functional Interfaces** |
 
 ---
 
 # 🔥 Current Streak
 
-## **61 Days of Java Practice Completed! 🎉🔥🚀**
+## **62 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **61 days down, 39 more to go!**
+> **62 days down, 38 more to go!**
 
-Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, Covariant Return Types, mathematical logic, and problem-solving abilities**.
+Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, Covariant Return Types, Lambda Expressions, Functional Interfaces, mathematical logic, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -1258,6 +1418,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 59 | ✅ Completed 🎉🌳🧭🔥 |
 | 🎯 Day 60 | ✅ Completed 🎉🏷️🪞🔥 |
 | 🎯 Day 61 | ✅ Completed 🎉🔄🔥 |
+| 🎯 Day 62 | ✅ Completed 🎉⚡🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -1316,11 +1477,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 61**  
 ████████████░░░░░░░░ **61%**
 
+**Day 62**  
+████████████░░░░░░░░ **62%**
+
 ## 🚀 Overall Progress
 
-████████████░░░░░░░░ **61%**
+████████████░░░░░░░░ **62%**
 
-### **61 / 100 Days Completed**
+### **62 / 100 Days Completed**
 
 ---
 
@@ -1366,6 +1530,8 @@ It is also about:
 - 🧭 Understanding Visitor Pattern
 - 🏷️ Working with Java Annotations
 - 🔄 Understanding Covariant Return Types
+- ⚡ Practicing Lambda Expressions
+- 🔗 Understanding Functional Interfaces
 - 🔍 Practicing Runtime Annotation Processing
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
@@ -1396,6 +1562,8 @@ It serves as:
 - 🧭 My Visitor Pattern practice
 - 🏷️ My Java Annotation practice
 - 🔄 My Covariant Return Type practice
+- ⚡ My Lambda Expression practice
+- 🔗 My Functional Interface practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
 
@@ -1409,8 +1577,6 @@ The upcoming days will continue with more Java programming concepts, including:
 
 - 📁 File Handling
 - 🧵 Multithreading
-- ☕ Java 8 Features
-- 🔥 Lambda Expressions
 - 🌊 Stream API
 - ⚙️ Functional Interfaces
 - 📦 Advanced Collections
@@ -1422,6 +1588,7 @@ The upcoming days will continue with more Java programming concepts, including:
 - 🎯 Interview-Oriented Java Problems
 - 🏗️ Object-Oriented Design
 - 🧩 Advanced Programming Concepts
+- ☕ Java 8+ Features
 
 ---
 
@@ -1464,7 +1631,7 @@ https://github.com/Coder-RD/Java_Challenge/
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#Polymorphism` `#MethodOverriding` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day61`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#Polymorphism` `#MethodOverriding` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day62`
 
 ---
 
@@ -1474,12 +1641,12 @@ https://github.com/Coder-RD/Java_Challenge/
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**61 Days Completed ✅ | 39 Days Remaining ⏳ | 100 Days Goal 🎯**
+**62 Days Completed ✅ | 38 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 🔥 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🔥 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 61 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 62 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
