@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-62%25-success?style=for-the-badge" alt="62% Progress">
+  <img src="https://img.shields.io/badge/Progress-63%25-success?style=for-the-badge" alt="63% Progress">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, design patterns, reflection, access modifiers, inner classes, visitor patterns, annotations, covariant return types, lambda expressions, and advanced Java programming concepts.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, reflection, design patterns, access modifiers, inner classes, visitor patterns, annotations, covariant return types, lambda expressions, functional interfaces, hashing, and advanced Java programming concepts.
 
 The goal is to solve **one Java challenge every day for 100 days**, build consistency, improve programming skills, and continuously develop my problem-solving and coding abilities. ☕💻🔥
 
@@ -61,6 +61,7 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🔄 Understand Covariant Return Types
 - ⚡ Learn Lambda Expressions
 - 🔗 Practice Functional Interfaces
+- 🔐 Understand Message Digest and Hashing
 - 🧠 Improve coding efficiency
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
@@ -105,6 +106,7 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🔄 Return Types | Covariant Return Types |
 | ⚡ Functional Programming | Lambda Expressions |
 | 🔗 Functional Interfaces | `PerformOperation` & Lambda Implementation |
+| 🔐 Hashing | `MessageDigest` & MD5 |
 | 🔢 Mathematical Logic | Prime Numbers & Number Problems |
 | 📊 Sorting | Comparator & Sorting |
 | 🧮 Bit Manipulation | Bitwise Operations |
@@ -217,6 +219,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 ├── 📁 Day-62/  
 │   ├── 📄 Java Lambda Expressions.java  
 │   └── 📸 Screenshot 2026-09-26 175658.png  
+├── 📁 Day-63/  
+│   ├── 📄 Java MD5.java  
+│   └── 📸 Screenshot 2026-09-27 093816.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -288,8 +293,117 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | ✅ Day 60 | Java Annotations | Completed 🎉🏷️🪞🔥 |
 | ✅ Day 61 | Covariant Return Types | Completed 🎉🔄🔥 |
 | ✅ Day 62 | Java Lambda Expressions | Completed 🎉⚡🔥 |
-| ⏳ Day 63–99 | Upcoming Challenges | Pending |
+| ✅ Day 63 | Java MD5 | Completed 🎉🔐🔥 |
+| ⏳ Day 64–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 🆕 Day 63 – Java MD5
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏆 **Challenge:** MD5
+- 📅 **Day:** 63
+- 🔐 **Topic:** Message-Digest Algorithm 5
+- 🧩 **Focus:** Hashing & Message Digest
+- 🛠️ **Java API:** `MessageDigest`
+- 🔤 **Output:** 32-character hexadecimal hash
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The **MD5** challenge focuses on generating the MD5 message digest of a given alphanumeric string.
+
+The solution accepts a string as input, processes it using Java's `MessageDigest` API, generates the MD5 hash, converts the resulting byte array into hexadecimal representation, and prints the final hash value.
+
+---
+
+## 🔐 MD5 Hashing
+
+**MD5 (Message-Digest Algorithm 5)** is a hashing algorithm that produces a fixed-length **128-bit message digest**, commonly represented as a **32-character hexadecimal string**.
+
+In this challenge, the main goal is to understand how Java can generate a message digest using the `MessageDigest` class.
+
+---
+
+## 🛠️ Java `MessageDigest` API
+
+The solution uses:
+
+`java.security.MessageDigest`
+
+The main steps are:
+
+1. Read the input string.
+2. Create an MD5 `MessageDigest` instance.
+3. Convert the string into bytes.
+4. Generate the digest using `digest()`.
+5. Process each byte of the resulting hash.
+6. Convert the bytes into hexadecimal representation.
+7. Print the final MD5 hash.
+
+---
+
+## 🔢 Hexadecimal Conversion
+
+The MD5 digest is returned as a byte array.
+
+Each byte is converted into a two-character hexadecimal representation using:
+
+`String.format("%02x", b & 0xff)`
+
+The `& 0xff` operation ensures that the byte is handled as an unsigned value during hexadecimal conversion.
+
+The final result contains **32 hexadecimal characters**.
+
+---
+
+## 🧠 Concepts Practiced
+
+- 🔐 MD5 Hashing
+- 🛠️ `MessageDigest`
+- 📦 `java.security` Package
+- 🔢 Byte Arrays
+- 🔠 Hexadecimal Conversion
+- 🔤 String-to-Byte Conversion
+- 🧩 Message Digest Generation
+- 🔄 Iterating Through Byte Arrays
+- ⚠️ Exception Handling
+- 🧠 Bitwise Operations
+- 💻 Core Java
+- 🛠️ Problem Solving
+
+---
+
+## 💡 Key Learning
+
+Day 63 helped me understand how Java's **`MessageDigest` API** can be used to generate a message digest from an input string.
+
+I learned how to:
+
+- Create a `MessageDigest` object
+- Select the MD5 algorithm
+- Convert strings into byte arrays
+- Generate a message digest
+- Process byte-array output
+- Convert binary hash data into hexadecimal format
+- Work with Java's security-related APIs
+
+This challenge strengthened my understanding of **Hashing, MessageDigest, Byte Arrays, Hexadecimal Representation, Java Security APIs, and Problem Solving**. 🚀
+
+> ⚠️ **Note:** MD5 is considered cryptographically broken for modern security applications. This challenge is used for learning Java's hashing and `MessageDigest` API.
+
+---
+
+## 📂 Files Added
+
+- 💻 `Java MD5.java`
+- 📸 `Screenshot 2026-09-27 093816.png`
 
 ---
 
@@ -318,13 +432,11 @@ The challenge defines a `PerformOperation` interface containing a `check()` meth
 - 🔍 Prime or Composite
 - 🔄 Palindrome or Not Palindrome
 
-The solution uses lambda expressions to create concise implementations of these operations.
-
 ---
 
 ## ⚡ Lambda Expressions
 
-A **lambda expression** is a short way of writing an implementation of a functional interface.
+A **lambda expression** is a concise way of providing an implementation for a functional interface.
 
 General syntax:
 
@@ -334,17 +446,17 @@ or:
 
 `(parameters) -> { statements }`
 
-Lambda expressions help reduce unnecessary code and make functional-style programming easier to write.
+Lambda expressions reduce boilerplate code and support functional-style programming.
 
 ---
 
 ## 🔗 Functional Interface
 
-The challenge uses the following interface:
+The challenge uses the:
 
 `PerformOperation`
 
-It contains one abstract method:
+interface containing:
 
 `boolean check(int a)`
 
@@ -354,15 +466,15 @@ Since the interface contains a single abstract method, it can be implemented usi
 
 ## 🔢 Odd or Even
 
-The first operation checks whether a number is odd or even.
+The first operation determines whether a number is odd or even.
 
-The lambda expression uses the modulo operator:
+The condition:
 
 `a % 2 != 0`
 
-If the condition is true, the number is **ODD**.
+returns true for an odd number.
 
-Otherwise, it is **EVEN**.
+Otherwise, the number is even.
 
 ---
 
@@ -370,11 +482,9 @@ Otherwise, it is **EVEN**.
 
 The second operation checks whether a number is prime.
 
-The solution verifies whether the number has any divisor other than `1` and itself.
+The solution checks whether the number has any divisor other than `1` and itself.
 
 Numbers less than `2` are treated as non-prime.
-
-The solution uses a loop up to the square root of the number to perform efficient prime checking.
 
 The output is:
 
@@ -387,7 +497,7 @@ The output is:
 
 The third operation checks whether a number reads the same forward and backward.
 
-The number is reversed using digit extraction and the reversed number is compared with the original number.
+The number is reversed using digit extraction, and the reversed value is compared with the original number.
 
 The output is:
 
@@ -502,43 +612,6 @@ Since both `Jasmine` and `Lily` are subclasses of `Flower`, these are valid cova
 
 ---
 
-## 🌸 Flower Classes
-
-The `Flower` class provides the common method:
-
-`whatsYourName()`
-
-The subclasses override this method:
-
-- 🌼 `Jasmine` → returns `"Jasmine"`
-- 🌺 `Lily` → returns `"Lily"`
-
-This demonstrates method overriding and runtime polymorphism.
-
----
-
-## 🏞️ Region Classes
-
-The `Region` class defines:
-
-`Flower yourNationalFlower()`
-
-The subclasses override this method using more specific return types.
-
-### WestBengal
-
-`Jasmine yourNationalFlower()`
-
-Returns a `Jasmine` object.
-
-### AndhraPradesh
-
-`Lily yourNationalFlower()`
-
-Returns a `Lily` object.
-
----
-
 ## 🧠 Concepts Practiced
 
 - 🔄 Covariant Return Types
@@ -560,13 +633,7 @@ Returns a `Lily` object.
 
 Day 61 helped me understand how **covariant return types work with inheritance and method overriding**.
 
-I learned that an overriding method does not always have to return exactly the same class type as the parent method. It can return a more specific subclass type.
-
-For example:
-
-- `Flower` → Parent return type
-- `Jasmine` → Covariant return type
-- `Lily` → Covariant return type
+I learned that an overriding method can return a more specific subclass type when that type is compatible with the parent method's return type.
 
 This challenge strengthened my understanding of **Inheritance, Method Overriding, Polymorphism, Return Type Compatibility, and Object-Oriented Programming**. 🚀
 
@@ -596,11 +663,9 @@ This challenge strengthened my understanding of **Inheritance, Method Overriding
 
 ## 🎯 Challenge Objective
 
-The **Java Annotations** challenge focuses on understanding how annotations can be created and used to provide metadata about Java methods.
+The **Java Annotations** challenge focuses on creating a custom annotation and using Java Reflection to inspect annotation information at runtime.
 
-The challenge requires creating a custom annotation and using Java Reflection to inspect the annotation at runtime.
-
-The solution identifies methods based on their annotation values, reads the configured budget limit, checks the user's role and spending amount, and invokes the appropriate method when the spending is within the allowed budget.
+The solution identifies methods based on annotation values, reads configured budget information, checks the user's role and spending amount, and invokes the appropriate method when the spending amount is within the allowed budget.
 
 ---
 
@@ -615,7 +680,7 @@ The annotation contains information such as:
 - ⚙️ Annotation configuration
 - 🔍 Runtime metadata
 
-The annotation is targeted specifically at methods and retained at runtime so that it can be accessed using Java Reflection.
+The annotation is retained at runtime so that it can be accessed using Java Reflection.
 
 ---
 
@@ -623,7 +688,7 @@ The annotation is targeted specifically at methods and retained at runtime so th
 
 Reflection is used to inspect methods and their annotations dynamically.
 
-Important Reflection concepts practiced include:
+Important concepts practiced include:
 
 - `Method`
 - `getMethods()`
@@ -722,15 +787,13 @@ The **Tree: Visitor Pattern** challenge focuses on implementing the **Visitor De
 
 The challenge uses a tree containing nodes with different colors and depths. Multiple visitors are implemented to calculate different values based on the properties of the nodes.
 
-This challenge provides practical experience with **tree structures, traversal, abstraction, inheritance, interfaces, polymorphism, and design patterns**.
-
 ---
 
 ## 🧭 Visitor Pattern
 
 The **Visitor Design Pattern** separates an operation from the object structure on which it operates.
 
-In this challenge, different visitors perform different calculations on the same tree structure.
+The challenge uses different visitors to perform different calculations on the same tree structure.
 
 ### Visitors Practiced
 
@@ -752,7 +815,7 @@ In this challenge, different visitors perform different calculations on the same
 
 The tree is represented using nodes connected through edges.
 
-The solution requires traversing the tree while maintaining information such as:
+The solution processes:
 
 - Node value
 - Node color
@@ -760,7 +823,7 @@ The solution requires traversing the tree while maintaining information such as:
 - Leaf or non-leaf status
 - Parent-child relationship
 
-The tree is rooted at the first node, and traversal is performed from the root through its connected nodes.
+The tree is rooted at the first node, and traversal is performed from the root through connected nodes.
 
 ---
 
@@ -788,8 +851,6 @@ The tree is rooted at the first node, and traversal is performed from the root t
 ## 💡 Key Learning
 
 Day 59 helped me understand how the **Visitor Pattern** can be applied to a tree structure to perform multiple operations without modifying the tree classes.
-
-I practiced creating different visitor implementations for different calculations and learned how tree traversal can be combined with object-oriented design patterns.
 
 This challenge strengthened my understanding of **Design Patterns, Tree Traversal, Interfaces, Abstraction, Polymorphism, and Java OOP**. 🚀
 
@@ -822,13 +883,9 @@ The **Can You Access?** challenge focuses on understanding how access modifiers 
 
 The challenge provides an inner class containing a private method and requires accessing the functionality through the appropriate class and object structure.
 
-This challenge helps strengthen the understanding of **Java access control, private members, inner classes, object creation, and encapsulation**.
-
 ---
 
 ## 🔐 Access Modifiers Practiced
-
-Java provides access control through different access modifiers:
 
 | Modifier | Accessibility |
 |---|---|
@@ -837,18 +894,18 @@ Java provides access control through different access modifiers:
 | `protected` | Accessible within the same package and subclasses |
 | `public` | Accessible from anywhere |
 
-The challenge specifically reinforces the concept of accessing a **private member through its enclosing inner class**.
+The challenge reinforces the concept of access control and encapsulation.
 
 ---
 
 ## 🧩 Inner Class Concepts
 
-The challenge also provides practice with:
+The challenge provides practice with:
 
 - Inner classes
-- Private inner classes
+- Private members
 - Creating inner class objects
-- Accessing private methods
+- Accessing methods
 - Enclosing class relationships
 - Object references
 - Runtime class information
@@ -873,8 +930,6 @@ The challenge also provides practice with:
 ## 💡 Key Learning
 
 Day 58 helped me understand how **access control works in Java** and how inner classes can be used to work with members that have restricted visibility.
-
-I also practiced creating an instance of an inner class and accessing its functionality through the appropriate reference.
 
 This challenge strengthened my understanding of **Encapsulation, Access Modifiers, Inner Classes, and Java OOP concepts**.
 
@@ -905,14 +960,6 @@ This challenge strengthened my understanding of **Encapsulation, Access Modifier
 
 The **Valid Username Regular Expression** challenge requires creating a regular expression that validates whether a username follows the required format.
 
-The username must satisfy specific rules related to:
-
-- 🔤 Starting character
-- 🔢 Allowed characters
-- 📏 Minimum length
-- 📏 Maximum length
-- ❌ Invalid special characters
-
 ---
 
 ## 📋 Username Rules
@@ -939,23 +986,21 @@ A valid username must:
 
 | Regex Part | Meaning |
 |---|---|
-| `^` | Indicates the beginning of the string |
+| `^` | Beginning of the string |
 | `[a-zA-Z]` | First character must be an alphabet |
 | `[a-zA-Z0-9_]` | Allows letters, numbers and underscore |
 | `{7,29}` | Allows 7 to 29 additional characters |
-| `$` | Indicates the end of the string |
+| `$` | End of the string |
 
 ### 📏 Length Calculation
-
-The first character is handled separately:
 
 **1 alphabetic character + 7 to 29 additional characters**
 
 Therefore:
 
-**Minimum = 1 + 7 = 8 characters**
+**Minimum = 8 characters**
 
-**Maximum = 1 + 29 = 30 characters**
+**Maximum = 30 characters**
 
 ---
 
@@ -980,15 +1025,7 @@ Therefore:
 
 Day 57 helped me understand how **Regular Expressions can be used for input validation**.
 
-I learned how to create a regex pattern that checks:
-
-- The first character
-- Allowed characters
-- Minimum length
-- Maximum length
-- Invalid characters
-
-This challenge strengthened my understanding of **Java Regex and pattern-based validation**.
+This challenge strengthened my understanding of **Java Regex, pattern matching, character classes, quantifiers, and validation**.
 
 ---
 
@@ -1015,8 +1052,6 @@ This challenge strengthened my understanding of **Java Regex and pattern-based v
 ## 🎯 Challenge Objective
 
 The **Java Dequeue** challenge focuses on using Java's `Deque` interface to add, remove, and process elements from both ends of a collection.
-
-The challenge helps understand how a double-ended queue can be used for efficient insertion and deletion operations.
 
 ---
 
@@ -1178,7 +1213,7 @@ The **Singleton Pattern** ensures that only one instance of a particular class i
 
 ## 🎯 Challenge Objective
 
-The **Factory Pattern** focuses on creating objects through a dedicated factory rather than directly creating them in the client code.
+The **Factory Pattern** focuses on creating objects through a dedicated factory rather than directly creating them in client code.
 
 ---
 
@@ -1343,6 +1378,9 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Lambda Expressions
 - Functional Interfaces
 - Functional Programming
+- MessageDigest
+- Hashing
+- MD5
 
 ## 🔹 Problem Solving
 
@@ -1357,6 +1395,7 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Input Validation
 - Tree-Based Problems
 - Logical Programming
+- Hash Generation
 
 ---
 
@@ -1364,13 +1403,13 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **62 / 100** |
+| 📅 Days Completed | **63 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 💻 Challenges Solved | **62** |
-| 📈 Progress | **62% Complete** |
-| 🔥 Current Streak | **62 Days** |
-| ⏳ Days Remaining | **38 Days** |
+| 💻 Challenges Solved | **63** |
+| 📈 Progress | **63% Complete** |
+| 🔥 Current Streak | **63 Days** |
+| ⏳ Days Remaining | **37 Days** |
 | 🧠 Main Focus | **Java Programming & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
@@ -1382,16 +1421,17 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 | 🏷️ Annotation Concepts | **Custom Annotations & Runtime Processing** |
 | 🔄 Return Type Concepts | **Covariant Return Types** |
 | ⚡ Functional Programming | **Lambda Expressions & Functional Interfaces** |
+| 🔐 Hashing Concepts | **MessageDigest, MD5 & Hexadecimal Conversion** |
 
 ---
 
 # 🔥 Current Streak
 
-## **62 Days of Java Practice Completed! 🎉🔥🚀**
+## **63 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **62 days down, 38 more to go!**
+> **63 days down, 37 more to go!**
 
-Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, Covariant Return Types, Lambda Expressions, Functional Interfaces, mathematical logic, and problem-solving abilities**.
+Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, Covariant Return Types, Lambda Expressions, Functional Interfaces, Hashing, MessageDigest, mathematical logic, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -1419,6 +1459,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 60 | ✅ Completed 🎉🏷️🪞🔥 |
 | 🎯 Day 61 | ✅ Completed 🎉🔄🔥 |
 | 🎯 Day 62 | ✅ Completed 🎉⚡🔥 |
+| 🎯 Day 63 | ✅ Completed 🎉🔐🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -1480,11 +1521,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 62**  
 ████████████░░░░░░░░ **62%**
 
+**Day 63**  
+█████████████░░░░░░░ **63%**
+
 ## 🚀 Overall Progress
 
-████████████░░░░░░░░ **62%**
+█████████████░░░░░░░ **63%**
 
-### **62 / 100 Days Completed**
+### **63 / 100 Days Completed**
 
 ---
 
@@ -1532,7 +1576,7 @@ It is also about:
 - 🔄 Understanding Covariant Return Types
 - ⚡ Practicing Lambda Expressions
 - 🔗 Understanding Functional Interfaces
-- 🔍 Practicing Runtime Annotation Processing
+- 🔐 Exploring Hashing and MessageDigest
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
 - 🎯 Preparing for technical interviews
@@ -1564,6 +1608,7 @@ It serves as:
 - 🔄 My Covariant Return Type practice
 - ⚡ My Lambda Expression practice
 - 🔗 My Functional Interface practice
+- 🔐 My Hashing and MessageDigest practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
 
@@ -1631,7 +1676,7 @@ https://github.com/Coder-RD/Java_Challenge/
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#Polymorphism` `#MethodOverriding` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day62`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#Hashing` `#Polymorphism` `#MethodOverriding` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day63`
 
 ---
 
@@ -1641,12 +1686,12 @@ https://github.com/Coder-RD/Java_Challenge/
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**62 Days Completed ✅ | 38 Days Remaining ⏳ | 100 Days Goal 🎯**
+**63 Days Completed ✅ | 37 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🔥 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🔒 🔥 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 62 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 63 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
