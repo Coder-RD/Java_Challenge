@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-63%25-success?style=for-the-badge" alt="63% Progress">
+  <img src="https://img.shields.io/badge/Progress-64%25-success?style=for-the-badge" alt="64% Progress">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, reflection, design patterns, access modifiers, inner classes, visitor patterns, annotations, covariant return types, lambda expressions, functional interfaces, hashing, and advanced Java programming concepts.
+This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, reflection, design patterns, access modifiers, inner classes, visitor patterns, annotations, covariant return types, lambda expressions, functional interfaces, hashing, cryptography, and advanced Java programming concepts.
 
 The goal is to solve **one Java challenge every day for 100 days**, build consistency, improve programming skills, and continuously develop my problem-solving and coding abilities. ☕💻🔥
 
@@ -62,6 +62,7 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - ⚡ Learn Lambda Expressions
 - 🔗 Practice Functional Interfaces
 - 🔐 Understand Message Digest and Hashing
+- 🛡️ Practice SHA-256 Cryptographic Hashing
 - 🧠 Improve coding efficiency
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
@@ -106,7 +107,8 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🔄 Return Types | Covariant Return Types |
 | ⚡ Functional Programming | Lambda Expressions |
 | 🔗 Functional Interfaces | `PerformOperation` & Lambda Implementation |
-| 🔐 Hashing | `MessageDigest` & MD5 |
+| 🔐 Hashing | `MessageDigest`, MD5 & SHA-256 |
+| 🛡️ Cryptography | SHA-256 Cryptographic Hashing |
 | 🔢 Mathematical Logic | Prime Numbers & Number Problems |
 | 📊 Sorting | Comparator & Sorting |
 | 🧮 Bit Manipulation | Bitwise Operations |
@@ -222,6 +224,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 ├── 📁 Day-63/  
 │   ├── 📄 Java MD5.java  
 │   └── 📸 Screenshot 2026-09-27 093816.png  
+├── 📁 Day-64/  
+│   ├── 📄 Java SHA-256.java  
+│   └── 📸 Screenshot 2026-09-28 071322.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -294,8 +299,123 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | ✅ Day 61 | Covariant Return Types | Completed 🎉🔄🔥 |
 | ✅ Day 62 | Java Lambda Expressions | Completed 🎉⚡🔥 |
 | ✅ Day 63 | Java MD5 | Completed 🎉🔐🔥 |
-| ⏳ Day 64–99 | Upcoming Challenges | Pending |
+| ✅ Day 64 | Java SHA-256 | Completed 🎉🔐🛡️🔥 |
+| ⏳ Day 65–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
+
+---
+
+# 🆕 Day 64 – Java SHA-256
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏆 **Challenge:** SHA-256
+- 📅 **Day:** 64
+- 🔐 **Topic:** SHA-256 Cryptographic Hashing
+- 🧩 **Focus:** Message Digest & Hashing
+- 🛠️ **Java API:** `MessageDigest`
+- 🔢 **Output:** 64-character hexadecimal hash
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The **SHA-256** challenge focuses on generating the SHA-256 hash of a given input string using Java.
+
+The solution accepts a string as input, processes it using Java's `MessageDigest` API, generates the SHA-256 digest, converts the resulting byte array into hexadecimal representation, and prints the final hash value.
+
+---
+
+## 🔐 SHA-256 Hashing
+
+**SHA-256** stands for **Secure Hash Algorithm 256-bit**.
+
+It generates a fixed-length **256-bit hash value**, commonly represented as a **64-character hexadecimal string**.
+
+In this challenge, the main objective is to understand how Java can generate a SHA-256 message digest using the `MessageDigest` class.
+
+---
+
+## 🛠️ Java `MessageDigest` API
+
+The solution uses:
+
+`java.security.MessageDigest`
+
+The main steps are:
+
+1. Read the input string.
+2. Create a SHA-256 `MessageDigest` instance.
+3. Convert the input string into bytes.
+4. Generate the digest using `digest()`.
+5. Process each byte of the resulting hash.
+6. Convert the bytes into hexadecimal representation.
+7. Print the final SHA-256 hash.
+
+---
+
+## 🔢 Hexadecimal Conversion
+
+The SHA-256 digest is returned as a byte array.
+
+Each byte is converted into a two-character hexadecimal representation using:
+
+`String.format("%02x", b & 0xff)`
+
+The `& 0xff` operation ensures that the byte is handled correctly during hexadecimal conversion.
+
+Since SHA-256 produces a 256-bit hash:
+
+**256 bits = 32 bytes = 64 hexadecimal characters**
+
+Therefore, the final SHA-256 result contains **64 hexadecimal characters**.
+
+---
+
+## 🧠 Concepts Practiced
+
+- 🔐 SHA-256 Hashing
+- 🛡️ Cryptographic Hash Functions
+- 🛠️ `MessageDigest`
+- 📦 `java.security` Package
+- 🔢 Byte Arrays
+- 🔠 Hexadecimal Conversion
+- 🔤 String-to-Byte Conversion
+- 🧩 Message Digest Generation
+- 🔄 Iterating Through Byte Arrays
+- ⚠️ Exception Handling
+- 🧠 Bitwise Operations
+- 💻 Core Java
+- 🧠 Problem Solving
+
+---
+
+## 💡 Key Learning
+
+Day 64 helped me understand how Java's **`MessageDigest` API** can be used to generate a SHA-256 hash from an input string.
+
+I learned how to:
+
+- Create a `MessageDigest` object
+- Select the SHA-256 algorithm
+- Convert strings into byte arrays
+- Generate a cryptographic digest
+- Process byte-array output
+- Convert binary hash data into hexadecimal format
+- Understand fixed-length cryptographic hashes
+- Work with Java security-related APIs
+
+This challenge strengthened my understanding of **Hashing, SHA-256, MessageDigest, Byte Arrays, Hexadecimal Representation, Java Security APIs, and Problem Solving**. 🚀
+
+---
+
+## 📂 Files Added
+
+- 💻 `Java SHA-256.java`
+- 📸 `Screenshot 2026-09-28 071322.png`
 
 ---
 
@@ -392,7 +512,7 @@ I learned how to:
 - Generate a message digest
 - Process byte-array output
 - Convert binary hash data into hexadecimal format
-- Work with Java's security-related APIs
+- Work with Java security-related APIs
 
 This challenge strengthened my understanding of **Hashing, MessageDigest, Byte Arrays, Hexadecimal Representation, Java Security APIs, and Problem Solving**. 🚀
 
@@ -442,7 +562,7 @@ General syntax:
 
 `(parameters) -> expression`
 
-or:
+or
 
 `(parameters) -> { statements }`
 
@@ -1379,8 +1499,9 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Functional Interfaces
 - Functional Programming
 - MessageDigest
-- Hashing
 - MD5
+- SHA-256
+- Cryptographic Hashing
 
 ## 🔹 Problem Solving
 
@@ -1396,6 +1517,7 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - Tree-Based Problems
 - Logical Programming
 - Hash Generation
+- Cryptographic Hashing
 
 ---
 
@@ -1403,13 +1525,13 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **63 / 100** |
+| 📅 Days Completed | **64 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platform | **HackerRank** |
-| 💻 Challenges Solved | **63** |
-| 📈 Progress | **63% Complete** |
-| 🔥 Current Streak | **63 Days** |
-| ⏳ Days Remaining | **37 Days** |
+| 💻 Challenges Solved | **64** |
+| 📈 Progress | **64% Complete** |
+| 🔥 Current Streak | **64 Days** |
+| ⏳ Days Remaining | **36 Days** |
 | 🧠 Main Focus | **Java Programming & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
@@ -1421,17 +1543,18 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 | 🏷️ Annotation Concepts | **Custom Annotations & Runtime Processing** |
 | 🔄 Return Type Concepts | **Covariant Return Types** |
 | ⚡ Functional Programming | **Lambda Expressions & Functional Interfaces** |
-| 🔐 Hashing Concepts | **MessageDigest, MD5 & Hexadecimal Conversion** |
+| 🔐 Hashing Concepts | **MessageDigest, MD5, SHA-256 & Hexadecimal Conversion** |
+| 🛡️ Cryptography | **SHA-256 Cryptographic Hashing** |
 
 ---
 
 # 🔥 Current Streak
 
-## **63 Days of Java Practice Completed! 🎉🔥🚀**
+## **64 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **63 days down, 37 more to go!**
+> **64 days down, 36 more to go!**
 
-Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, Covariant Return Types, Lambda Expressions, Functional Interfaces, Hashing, MessageDigest, mathematical logic, and problem-solving abilities**.
+Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, Covariant Return Types, Lambda Expressions, Functional Interfaces, Hashing, MessageDigest, Cryptography, mathematical logic, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -1460,6 +1583,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 61 | ✅ Completed 🎉🔄🔥 |
 | 🎯 Day 62 | ✅ Completed 🎉⚡🔥 |
 | 🎯 Day 63 | ✅ Completed 🎉🔐🔥 |
+| 🎯 Day 64 | ✅ Completed 🎉🔐🛡️🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -1524,11 +1648,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 63**  
 █████████████░░░░░░░ **63%**
 
+**Day 64**  
+█████████████░░░░░░░ **64%**
+
 ## 🚀 Overall Progress
 
-█████████████░░░░░░░ **63%**
+█████████████░░░░░░░ **64%**
 
-### **63 / 100 Days Completed**
+### **64 / 100 Days Completed**
 
 ---
 
@@ -1577,6 +1704,7 @@ It is also about:
 - ⚡ Practicing Lambda Expressions
 - 🔗 Understanding Functional Interfaces
 - 🔐 Exploring Hashing and MessageDigest
+- 🛡️ Understanding SHA-256 Cryptographic Hashing
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
 - 🎯 Preparing for technical interviews
@@ -1609,6 +1737,7 @@ It serves as:
 - ⚡ My Lambda Expression practice
 - 🔗 My Functional Interface practice
 - 🔐 My Hashing and MessageDigest practice
+- 🛡️ My SHA-256 and Cryptography practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
 
@@ -1676,7 +1805,7 @@ https://github.com/Coder-RD/Java_Challenge/
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#Hashing` `#Polymorphism` `#MethodOverriding` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day63`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#Polymorphism` `#MethodOverriding` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day64`
 
 ---
 
@@ -1686,12 +1815,12 @@ https://github.com/Coder-RD/Java_Challenge/
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**63 Days Completed ✅ | 37 Days Remaining ⏳ | 100 Days Goal 🎯**
+**64 Days Completed ✅ | 36 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🔒 🔥 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🔥 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 63 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 64 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
