@@ -3,8 +3,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
+  <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-64%25-success?style=for-the-badge" alt="64% Progress">
+  <img src="https://img.shields.io/badge/Progress-65%25-success?style=for-the-badge" alt="65% Progress">
 </p>
 
 <p align="center">
@@ -17,9 +18,13 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! 🚀
 
-This repository documents my daily Java programming journey through **HackerRank**, where I solve Java challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, problem-solving, logical thinking, collections, strings, arrays, exception handling, regular expressions, reflection, design patterns, access modifiers, inner classes, visitor patterns, annotations, covariant return types, lambda expressions, functional interfaces, hashing, cryptography, and advanced Java programming concepts.
+This repository documents my daily Java programming journey through **HackerRank and LeetCode**, where I solve Java programming and problem-solving challenges to strengthen my Core Java fundamentals, Object-Oriented Programming, Collections, Strings, Arrays, Algorithms, Data Structures, Exception Handling, Regular Expressions, Reflection, Design Patterns, Annotations, Lambda Expressions, Functional Interfaces, Hashing, Cryptography, and advanced programming concepts.
 
-The goal is to solve **one Java challenge every day for 100 days**, build consistency, improve programming skills, and continuously develop my problem-solving and coding abilities. ☕💻🔥
+For **Days 1–64**, I practiced Java challenges primarily on **HackerRank**.
+
+Starting from **Day 65**, I am continuing the challenge on **LeetCode** to expand my algorithmic problem-solving and Data Structures & Algorithms practice.
+
+The goal is to solve **one Java challenge every day for 100 days**, build consistency, improve problem-solving skills, and continuously develop my programming abilities. ☕💻🔥
 
 ---
 
@@ -30,6 +35,7 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🧠 Improve logical and analytical thinking
 - 🧩 Improve problem-solving skills
 - 💻 Solve Java challenges on HackerRank
+- 💡 Solve Java problems on LeetCode
 - 🔤 Practice String manipulation
 - 🔢 Practice Arrays and mathematical problems
 - 🔄 Understand loops and conditional statements
@@ -47,7 +53,6 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🧩 Understand Generics
 - 🔢 Practice Varargs
 - 🔎 Learn Regular Expressions
-- 👤 Practice Username Validation using Regex
 - 🪞 Understand Java Reflection
 - 🏭 Learn Design Patterns
 - 🔨 Practice Factory Pattern
@@ -57,24 +62,25 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 - 🧭 Understand Visitor Design Pattern
 - 🌳 Practice Tree Traversal
 - 🏷️ Understand Java Annotations
-- 🔍 Practice Runtime Annotation Processing
 - 🔄 Understand Covariant Return Types
 - ⚡ Learn Lambda Expressions
 - 🔗 Practice Functional Interfaces
 - 🔐 Understand Message Digest and Hashing
 - 🛡️ Practice SHA-256 Cryptographic Hashing
-- 🧠 Improve coding efficiency
+- 🧠 Strengthen Data Structures and Algorithms
+- 🔍 Practice Searching and Sorting
+- 📊 Analyze algorithmic complexity
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
 - 🌱 Learn and improve through consistent daily practice
 
 ---
 
-# 🛠️ Platform & Technologies
+# 🛠️ Platforms & Technologies
 
 | 🛠️ Category | Details |
 |---|---|
-| 💻 Platform | HackerRank |
+| 💻 Platforms | HackerRank & LeetCode |
 | ☕ Language | Java |
 | 🧠 Programming | Core Java |
 | 🔢 Basic Concepts | Variables, Data Types, Operators |
@@ -94,7 +100,6 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🧩 Generics | Generic Classes & Methods |
 | 🔢 Variable Arguments | Varargs |
 | 🔎 Pattern Matching | Regular Expressions |
-| 👤 Validation | Username Validation |
 | 🪞 Reflection | Java Reflection API |
 | 🏭 Design Patterns | Factory Pattern |
 | 🔒 Design Patterns | Singleton Pattern |
@@ -109,11 +114,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 | 🔗 Functional Interfaces | `PerformOperation` & Lambda Implementation |
 | 🔐 Hashing | `MessageDigest`, MD5 & SHA-256 |
 | 🛡️ Cryptography | SHA-256 Cryptographic Hashing |
-| 🔢 Mathematical Logic | Prime Numbers & Number Problems |
-| 📊 Sorting | Comparator & Sorting |
-| 🧮 Bit Manipulation | Bitwise Operations |
-| 💻 BitSet | Java BitSet |
+| 🧮 Algorithms | Searching, Sorting & Mathematical Logic |
 | 🧠 Problem Solving | Logical & Algorithmic Problems |
+| 📊 DSA | Data Structures & Algorithms |
 
 ---
 
@@ -227,6 +230,9 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 ├── 📁 Day-64/  
 │   ├── 📄 Java SHA-256.java  
 │   └── 📸 Screenshot 2026-09-28 071322.png  
+├── 📁 Day-65/  
+│   ├── 📄 Integer to Roman.java  
+│   └── 📸 Screenshot 2026-09-29 131346.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -234,1202 +240,228 @@ The goal is to solve **one Java challenge every day for 100 days**, build consis
 
 # ✅ Progress
 
-| Day | Challenge | Status |
+| Day | Platform | Challenge | Status |
+|---|---|---|---|
+| ✅ Day 1 | HackerRank | Java Challenge | Completed |
+| ✅ Day 2 | HackerRank | Java Challenge | Completed |
+| ✅ Day 3 | HackerRank | Java Challenge | Completed |
+| ✅ Day 4 | HackerRank | Java Challenge | Completed |
+| ✅ Day 5 | HackerRank | Java Challenge | Completed |
+| ✅ Day 6 | HackerRank | Java Challenge | Completed |
+| ✅ Day 7 | HackerRank | Java Challenge | Completed |
+| ✅ Day 8 | HackerRank | Java Challenge | Completed |
+| ✅ Day 9 | HackerRank | Java Challenge | Completed |
+| ✅ Day 10 | HackerRank | Java Challenge | Completed |
+| ✅ Day 11 | HackerRank | Java Challenge | Completed |
+| ✅ Day 12 | HackerRank | Java Challenge | Completed |
+| ✅ Day 13 | HackerRank | Java Challenge | Completed |
+| ✅ Day 14 | HackerRank | Java Challenge | Completed |
+| ✅ Day 15 | HackerRank | Java Challenge | Completed |
+| ✅ Day 16 | HackerRank | Java Challenge | Completed |
+| ✅ Day 17 | HackerRank | Java Challenge | Completed |
+| ✅ Day 18 | HackerRank | Java Challenge | Completed |
+| ✅ Day 19 | HackerRank | Java Challenge | Completed |
+| ✅ Day 20 | HackerRank | Java Challenge | Completed |
+| ✅ Day 21 | HackerRank | Java Challenge | Completed |
+| ✅ Day 22 | HackerRank | Java Challenge | Completed |
+| ✅ Day 23 | HackerRank | Java Challenge | Completed |
+| ✅ Day 24 | HackerRank | Java Challenge | Completed |
+| ✅ Day 25 | HackerRank | Java Challenge | Completed |
+| ✅ Day 26 | HackerRank | Java Challenge | Completed |
+| ✅ Day 27 | HackerRank | Java Challenge | Completed |
+| ✅ Day 28 | HackerRank | Java Challenge | Completed |
+| ✅ Day 29 | HackerRank | Java Challenge | Completed |
+| ✅ Day 30 | HackerRank | Java Challenge | Completed |
+| ✅ Day 31 | HackerRank | Java Challenge | Completed |
+| ✅ Day 32 | HackerRank | Java Challenge | Completed |
+| ✅ Day 33 | HackerRank | Java Challenge | Completed |
+| ✅ Day 34 | HackerRank | Java Challenge | Completed |
+| ✅ Day 35 | HackerRank | Java Challenge | Completed |
+| ✅ Day 36 | HackerRank | Java Challenge | Completed |
+| ✅ Day 37 | HackerRank | Java Challenge | Completed |
+| ✅ Day 38 | HackerRank | Java Challenge | Completed |
+| ✅ Day 39 | HackerRank | Java Challenge | Completed |
+| ✅ Day 40 | HackerRank | Java Challenge | Completed |
+| ✅ Day 41 | HackerRank | Java Challenge | Completed |
+| ✅ Day 42 | HackerRank | Java Challenge | Completed |
+| ✅ Day 43 | HackerRank | Java Challenge | Completed |
+| ✅ Day 44 | HackerRank | Java Method Overriding 2 (Super Keyword) | Completed |
+| ✅ Day 45 | HackerRank | Java Instanceof Keyword | Completed 🎉 |
+| ✅ Day 46 | HackerRank | Java Iterator | Completed 🎉🔥 |
+| ✅ Day 47 | HackerRank | Java Exception Handling (Try-Catch) | Completed 🎉🔥 |
+| ✅ Day 48 | HackerRank | Java Exception Handling | Completed 🎉🔥 |
+| ✅ Day 49 | HackerRank | Java Varargs - Simple Addition | Completed 🎉🔥 |
+| ✅ Day 50 | HackerRank | Java Reflection - Attributes | Completed 🎉🪞🔥 |
+| ✅ Day 51 | HackerRank | Prime Checker | Completed 🎉🔢🔥 |
+| ✅ Day 52 | HackerRank | Java Factory Pattern | Completed 🎉🏭🔥 |
+| ✅ Day 53 | HackerRank | Java Singleton Pattern | Completed 🎉🔒🔥 |
+| ✅ Day 54 | HackerRank | Java Regex | Completed 🎉🔎🔥 |
+| ✅ Day 55 | HackerRank | Java Priority Queue | Completed 🎉🏆🔥 |
+| ✅ Day 56 | HackerRank | Java Dequeue | Completed 🎉🔄🔥 |
+| ✅ Day 57 | HackerRank | Valid Username Regular Expression | Completed 🎉👤🔎🔥 |
+| ✅ Day 58 | HackerRank | Can You Access? | Completed 🎉🔐🔥 |
+| ✅ Day 59 | HackerRank | Java Visitor Pattern | Completed 🎉🌳🧭🔥 |
+| ✅ Day 60 | HackerRank | Java Annotations | Completed 🎉🏷️🪞🔥 |
+| ✅ Day 61 | HackerRank | Covariant Return Types | Completed 🎉🔄🔥 |
+| ✅ Day 62 | HackerRank | Java Lambda Expressions | Completed 🎉⚡🔥 |
+| ✅ Day 63 | HackerRank | Java MD5 | Completed 🎉🔐🔥 |
+| ✅ Day 64 | HackerRank | Java SHA-256 | Completed 🎉🔐🛡️🔥 |
+| ✅ Day 65 | LeetCode | Integer to Roman | Completed 🎉🔢🔥 |
+| ⏳ Day 66–99 | — | Upcoming Challenges | Pending |
+| 🎯 Day 100 | — | Final Goal | Pending |
+
+---
+
+# 🆕 Day 65 – Integer to Roman
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** LeetCode
+- ☕ **Language:** Java
+- 🏆 **Problem:** Integer to Roman
+- 📅 **Day:** 65
+- 🔢 **Topic:** Integer Conversion
+- 🧠 **Focus:** Arrays, Greedy Approach & String Construction
+- 🔄 **Concept:** Converting Integers into Roman Numerals
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The **Integer to Roman** problem focuses on converting an integer into its corresponding **Roman numeral representation**.
+
+The solution processes the integer from the largest Roman numeral value to the smallest and constructs the Roman numeral by repeatedly selecting the largest possible value.
+
+---
+
+## 🏛️ Roman Numeral Values
+
+| Symbol | Value |
+|---|---:|
+| M | 1000 |
+| CM | 900 |
+| D | 500 |
+| CD | 400 |
+| C | 100 |
+| XC | 90 |
+| L | 50 |
+| XL | 40 |
+| X | 10 |
+| IX | 9 |
+| V | 5 |
+| IV | 4 |
+| I | 1 |
+
+---
+
+## 🧠 Approach
+
+The solution uses two arrays:
+
+- One array stores Roman numeral values.
+- Another array stores their corresponding Roman numeral symbols.
+
+The algorithm:
+
+1. Start with the largest Roman numeral value.
+2. Check whether the current value can be subtracted from the input number.
+3. If possible, append the corresponding Roman symbol.
+4. Subtract the value from the number.
+5. Continue until the number becomes `0`.
+6. Return the generated Roman numeral string.
+
+This approach follows a **greedy strategy**, selecting the largest possible Roman numeral value at each step.
+
+---
+
+## 🧩 Concepts Practiced
+
+- 🔢 Integer Manipulation
+- 🏛️ Roman Numerals
+- 🧠 Greedy Algorithm
+- 📊 Arrays
+- 🔄 Loops
+- 🔤 String Construction
+- `StringBuilder`
+- 📋 Mapping Values to Symbols
+- 🧮 Mathematical Logic
+- 🧠 Algorithmic Thinking
+- 💻 Java Problem Solving
+- 🚀 LeetCode Practice
+
+---
+
+## 💡 Key Learning
+
+Day 65 introduced a new platform into my **100 Days of Java Challenge — LeetCode**.
+
+Through the **Integer to Roman** problem, I practiced converting numerical values into Roman numeral representations using a greedy approach.
+
+This challenge strengthened my understanding of **Arrays, StringBuilder, Greedy Algorithms, Loops, Integer Manipulation, and Algorithmic Problem Solving**. 🚀
+
+---
+
+## 📂 Files Added
+
+- 💻 `Integer to Roman.java`
+- 📸 `Screenshot 2026-09-29 131346.png`
+
+---
+
+# 🏆 Platform Journey
+
+My 100 Days of Java Challenge is now expanding across multiple coding platforms.
+
+| Days | Platform | Focus |
 |---|---|---|
-| ✅ Day 1 | Java Challenge | Completed |
-| ✅ Day 2 | Java Challenge | Completed |
-| ✅ Day 3 | Java Challenge | Completed |
-| ✅ Day 4 | Java Challenge | Completed |
-| ✅ Day 5 | Java Challenge | Completed |
-| ✅ Day 6 | Java Challenge | Completed |
-| ✅ Day 7 | Java Challenge | Completed |
-| ✅ Day 8 | Java Challenge | Completed |
-| ✅ Day 9 | Java Challenge | Completed |
-| ✅ Day 10 | Java Challenge | Completed |
-| ✅ Day 11 | Java Challenge | Completed |
-| ✅ Day 12 | Java Challenge | Completed |
-| ✅ Day 13 | Java Challenge | Completed |
-| ✅ Day 14 | Java Challenge | Completed |
-| ✅ Day 15 | Java Challenge | Completed |
-| ✅ Day 16 | Java Challenge | Completed |
-| ✅ Day 17 | Java Challenge | Completed |
-| ✅ Day 18 | Java Challenge | Completed |
-| ✅ Day 19 | Java Challenge | Completed |
-| ✅ Day 20 | Java Challenge | Completed |
-| ✅ Day 21 | Java Challenge | Completed |
-| ✅ Day 22 | Java Challenge | Completed |
-| ✅ Day 23 | Java Challenge | Completed |
-| ✅ Day 24 | Java Challenge | Completed |
-| ✅ Day 25 | Java Challenge | Completed |
-| ✅ Day 26 | Java Challenge | Completed |
-| ✅ Day 27 | Java Challenge | Completed |
-| ✅ Day 28 | Java Challenge | Completed |
-| ✅ Day 29 | Java Challenge | Completed |
-| ✅ Day 30 | Java Challenge | Completed |
-| ✅ Day 31 | Java Challenge | Completed |
-| ✅ Day 32 | Java Challenge | Completed |
-| ✅ Day 33 | Java Challenge | Completed |
-| ✅ Day 34 | Java Challenge | Completed |
-| ✅ Day 35 | Java Challenge | Completed |
-| ✅ Day 36 | Java Challenge | Completed |
-| ✅ Day 37 | Java Challenge | Completed |
-| ✅ Day 38 | Java Challenge | Completed |
-| ✅ Day 39 | Java Challenge | Completed |
-| ✅ Day 40 | Java Challenge | Completed |
-| ✅ Day 41 | Java Challenge | Completed |
-| ✅ Day 42 | Java Challenge | Completed |
-| ✅ Day 43 | Java Challenge | Completed |
-| ✅ Day 44 | Java Method Overriding 2 (Super Keyword) | Completed |
-| ✅ Day 45 | Java Instanceof Keyword | Completed 🎉 |
-| ✅ Day 46 | Java Iterator | Completed 🎉🔥 |
-| ✅ Day 47 | Java Exception Handling (Try-Catch) | Completed 🎉🔥 |
-| ✅ Day 48 | Java Exception Handling | Completed 🎉🔥 |
-| ✅ Day 49 | Java Varargs - Simple Addition | Completed 🎉🔥 |
-| ✅ Day 50 | Java Reflection - Attributes | Completed 🎉🪞🔥 |
-| ✅ Day 51 | Prime Checker | Completed 🎉🔢🔥 |
-| ✅ Day 52 | Java Factory Pattern | Completed 🎉🏭🔥 |
-| ✅ Day 53 | Java Singleton Pattern | Completed 🎉🔒🔥 |
-| ✅ Day 54 | Java Regex | Completed 🎉🔎🔥 |
-| ✅ Day 55 | Java Priority Queue | Completed 🎉🏆🔥 |
-| ✅ Day 56 | Java Dequeue | Completed 🎉🔄🔥 |
-| ✅ Day 57 | Valid Username Regular Expression | Completed 🎉👤🔎🔥 |
-| ✅ Day 58 | Can You Access? | Completed 🎉🔐🔥 |
-| ✅ Day 59 | Java Visitor Pattern | Completed 🎉🌳🧭🔥 |
-| ✅ Day 60 | Java Annotations | Completed 🎉🏷️🪞🔥 |
-| ✅ Day 61 | Covariant Return Types | Completed 🎉🔄🔥 |
-| ✅ Day 62 | Java Lambda Expressions | Completed 🎉⚡🔥 |
-| ✅ Day 63 | Java MD5 | Completed 🎉🔐🔥 |
-| ✅ Day 64 | Java SHA-256 | Completed 🎉🔐🛡️🔥 |
-| ⏳ Day 65–99 | Upcoming Challenges | Pending |
-| 🎯 Day 100 | Final Goal | Pending |
+| 📅 Day 1–64 | HackerRank | Core Java, OOP, Collections & Advanced Java |
+| 📅 Day 65–100 | LeetCode | Java, Algorithms & Data Structures |
 
----
+### ☕ HackerRank Journey
 
-# 🆕 Day 64 – Java SHA-256
+Days 1–64 focused on building a strong Java foundation through HackerRank challenges.
 
-## 📌 Challenge Information
+Topics included:
 
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** SHA-256
-- 📅 **Day:** 64
-- 🔐 **Topic:** SHA-256 Cryptographic Hashing
-- 🧩 **Focus:** Message Digest & Hashing
-- 🛠️ **Java API:** `MessageDigest`
-- 🔢 **Output:** 64-character hexadecimal hash
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **SHA-256** challenge focuses on generating the SHA-256 hash of a given input string using Java.
-
-The solution accepts a string as input, processes it using Java's `MessageDigest` API, generates the SHA-256 digest, converts the resulting byte array into hexadecimal representation, and prints the final hash value.
-
----
-
-## 🔐 SHA-256 Hashing
-
-**SHA-256** stands for **Secure Hash Algorithm 256-bit**.
-
-It generates a fixed-length **256-bit hash value**, commonly represented as a **64-character hexadecimal string**.
-
-In this challenge, the main objective is to understand how Java can generate a SHA-256 message digest using the `MessageDigest` class.
-
----
-
-## 🛠️ Java `MessageDigest` API
-
-The solution uses:
-
-`java.security.MessageDigest`
-
-The main steps are:
-
-1. Read the input string.
-2. Create a SHA-256 `MessageDigest` instance.
-3. Convert the input string into bytes.
-4. Generate the digest using `digest()`.
-5. Process each byte of the resulting hash.
-6. Convert the bytes into hexadecimal representation.
-7. Print the final SHA-256 hash.
-
----
-
-## 🔢 Hexadecimal Conversion
-
-The SHA-256 digest is returned as a byte array.
-
-Each byte is converted into a two-character hexadecimal representation using:
-
-`String.format("%02x", b & 0xff)`
-
-The `& 0xff` operation ensures that the byte is handled correctly during hexadecimal conversion.
-
-Since SHA-256 produces a 256-bit hash:
-
-**256 bits = 32 bytes = 64 hexadecimal characters**
-
-Therefore, the final SHA-256 result contains **64 hexadecimal characters**.
-
----
-
-## 🧠 Concepts Practiced
-
-- 🔐 SHA-256 Hashing
-- 🛡️ Cryptographic Hash Functions
-- 🛠️ `MessageDigest`
-- 📦 `java.security` Package
-- 🔢 Byte Arrays
-- 🔠 Hexadecimal Conversion
-- 🔤 String-to-Byte Conversion
-- 🧩 Message Digest Generation
-- 🔄 Iterating Through Byte Arrays
-- ⚠️ Exception Handling
-- 🧠 Bitwise Operations
-- 💻 Core Java
-- 🧠 Problem Solving
-
----
-
-## 💡 Key Learning
-
-Day 64 helped me understand how Java's **`MessageDigest` API** can be used to generate a SHA-256 hash from an input string.
-
-I learned how to:
-
-- Create a `MessageDigest` object
-- Select the SHA-256 algorithm
-- Convert strings into byte arrays
-- Generate a cryptographic digest
-- Process byte-array output
-- Convert binary hash data into hexadecimal format
-- Understand fixed-length cryptographic hashes
-- Work with Java security-related APIs
-
-This challenge strengthened my understanding of **Hashing, SHA-256, MessageDigest, Byte Arrays, Hexadecimal Representation, Java Security APIs, and Problem Solving**. 🚀
-
----
-
-## 📂 Files Added
-
-- 💻 `Java SHA-256.java`
-- 📸 `Screenshot 2026-09-28 071322.png`
-
----
-
-# 🆕 Day 63 – Java MD5
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** MD5
-- 📅 **Day:** 63
-- 🔐 **Topic:** Message-Digest Algorithm 5
-- 🧩 **Focus:** Hashing & Message Digest
-- 🛠️ **Java API:** `MessageDigest`
-- 🔤 **Output:** 32-character hexadecimal hash
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **MD5** challenge focuses on generating the MD5 message digest of a given alphanumeric string.
-
-The solution accepts a string as input, processes it using Java's `MessageDigest` API, generates the MD5 hash, converts the resulting byte array into hexadecimal representation, and prints the final hash value.
-
----
-
-## 🔐 MD5 Hashing
-
-**MD5 (Message-Digest Algorithm 5)** is a hashing algorithm that produces a fixed-length **128-bit message digest**, commonly represented as a **32-character hexadecimal string**.
-
-In this challenge, the main goal is to understand how Java can generate a message digest using the `MessageDigest` class.
-
----
-
-## 🛠️ Java `MessageDigest` API
-
-The solution uses:
-
-`java.security.MessageDigest`
-
-The main steps are:
-
-1. Read the input string.
-2. Create an MD5 `MessageDigest` instance.
-3. Convert the string into bytes.
-4. Generate the digest using `digest()`.
-5. Process each byte of the resulting hash.
-6. Convert the bytes into hexadecimal representation.
-7. Print the final MD5 hash.
-
----
-
-## 🔢 Hexadecimal Conversion
-
-The MD5 digest is returned as a byte array.
-
-Each byte is converted into a two-character hexadecimal representation using:
-
-`String.format("%02x", b & 0xff)`
-
-The `& 0xff` operation ensures that the byte is handled as an unsigned value during hexadecimal conversion.
-
-The final result contains **32 hexadecimal characters**.
-
----
-
-## 🧠 Concepts Practiced
-
-- 🔐 MD5 Hashing
-- 🛠️ `MessageDigest`
-- 📦 `java.security` Package
-- 🔢 Byte Arrays
-- 🔠 Hexadecimal Conversion
-- 🔤 String-to-Byte Conversion
-- 🧩 Message Digest Generation
-- 🔄 Iterating Through Byte Arrays
-- ⚠️ Exception Handling
-- 🧠 Bitwise Operations
-- 💻 Core Java
-- 🛠️ Problem Solving
-
----
-
-## 💡 Key Learning
-
-Day 63 helped me understand how Java's **`MessageDigest` API** can be used to generate a message digest from an input string.
-
-I learned how to:
-
-- Create a `MessageDigest` object
-- Select the MD5 algorithm
-- Convert strings into byte arrays
-- Generate a message digest
-- Process byte-array output
-- Convert binary hash data into hexadecimal format
-- Work with Java security-related APIs
-
-This challenge strengthened my understanding of **Hashing, MessageDigest, Byte Arrays, Hexadecimal Representation, Java Security APIs, and Problem Solving**. 🚀
-
-> ⚠️ **Note:** MD5 is considered cryptographically broken for modern security applications. This challenge is used for learning Java's hashing and `MessageDigest` API.
-
----
-
-## 📂 Files Added
-
-- 💻 `Java MD5.java`
-- 📸 `Screenshot 2026-09-27 093816.png`
-
----
-
-# 🆕 Day 62 – Java Lambda Expressions
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Lambda Expressions
-- 📅 **Day:** 62
-- ⚡ **Topic:** Lambda Expressions
-- 🔗 **Focus:** Functional Interfaces & Functional Programming
-- 🧩 **Concept:** Passing Behavior Using Lambda Expressions
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Java Lambda Expressions** challenge focuses on understanding how lambda expressions can be used to provide implementations of functional interfaces.
-
-The challenge defines a `PerformOperation` interface containing a `check()` method. Different operations are implemented using lambda expressions to determine whether a number is:
-
-- 🔢 Odd or Even
-- 🔍 Prime or Composite
-- 🔄 Palindrome or Not Palindrome
-
----
-
-## ⚡ Lambda Expressions
-
-A **lambda expression** is a concise way of providing an implementation for a functional interface.
-
-General syntax:
-
-`(parameters) -> expression`
-
-or
-
-`(parameters) -> { statements }`
-
-Lambda expressions reduce boilerplate code and support functional-style programming.
-
----
-
-## 🔗 Functional Interface
-
-The challenge uses the:
-
-`PerformOperation`
-
-interface containing:
-
-`boolean check(int a)`
-
-Since the interface contains a single abstract method, it can be implemented using lambda expressions.
-
----
-
-## 🔢 Odd or Even
-
-The first operation determines whether a number is odd or even.
-
-The condition:
-
-`a % 2 != 0`
-
-returns true for an odd number.
-
-Otherwise, the number is even.
-
----
-
-## 🔍 Prime or Composite
-
-The second operation checks whether a number is prime.
-
-The solution checks whether the number has any divisor other than `1` and itself.
-
-Numbers less than `2` are treated as non-prime.
-
-The output is:
-
-- `PRIME`
-- `COMPOSITE`
-
----
-
-## 🔄 Palindrome Checking
-
-The third operation checks whether a number reads the same forward and backward.
-
-The number is reversed using digit extraction, and the reversed value is compared with the original number.
-
-The output is:
-
-- `PALINDROME`
-- `NOT PALINDROME`
-
----
-
-## 🧠 Concepts Practiced
-
-- ⚡ Lambda Expressions
-- 🔗 Functional Interfaces
-- ☕ Java 8 Features
-- 🧩 Functional Programming
-- 🔢 Odd and Even Checking
-- 🔍 Prime Number Checking
-- 🔄 Palindrome Checking
-- 🏗️ Interface Implementation
-- 🎭 Polymorphism
-- 🧠 Logical Programming
-- 📊 Conditional Processing
-- 🔁 Loops
-- 🔢 Mathematical Operations
-- 🛠️ Problem Solving
-- 💻 Core Java
-
----
-
-## 💡 Key Learning
-
-Day 62 helped me understand how **Lambda Expressions can simplify the implementation of functional interfaces**.
-
-I learned how to:
-
-- Create lambda expressions
-- Work with functional interfaces
-- Pass behavior as an object
-- Implement different operations concisely
-- Use lambda expressions with conditional logic
-- Apply Java 8 functional programming concepts
-- Solve multiple logical operations using a common interface
-
-This challenge strengthened my understanding of **Lambda Expressions, Functional Interfaces, Java 8 Features, Functional Programming, Interfaces, Polymorphism, and Problem Solving**. 🚀
-
----
-
-## 📂 Files Added
-
-- 💻 `Java Lambda Expressions.java`
-- 📸 `Screenshot 2026-09-26 175658.png`
-
----
-
-# 🆕 Day 61 – Covariant Return Types
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Covariant Return Types
-- 📅 **Day:** 61
-- 🔄 **Topic:** Covariant Return Types
-- 🧬 **Focus:** Inheritance & Method Overriding
-- 🔁 **Concept:** Returning Subtypes from Overridden Methods
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Java Covariant Return Types** challenge focuses on understanding how a subclass can override a method and return a more specific type than the return type declared in the superclass.
-
-The challenge contains a hierarchy of classes representing flowers and regions.
-
-The `Region` class contains a method that returns a `Flower` object. The subclasses `WestBengal` and `AndhraPradesh` override this method and return more specific flower types.
-
----
-
-## 🌸 Class Structure
-
-The challenge uses the following class relationships:
-
-- 🌸 `Flower` is the parent class.
-- 🌼 `Jasmine` extends `Flower`.
-- 🌺 `Lily` extends `Flower`.
-- 🌍 `Region` is the parent region class.
-- 🏞️ `WestBengal` extends `Region`.
-- 🏞️ `AndhraPradesh` extends `Region`.
-
-The overridden method in `Region` returns a `Flower`.
-
-The subclasses return:
-
-- `WestBengal` → `Jasmine`
-- `AndhraPradesh` → `Lily`
-
----
-
-## 🔄 Covariant Return Type
-
-A **covariant return type** allows an overriding method in a subclass to return a subtype of the return type declared by the parent class method.
-
-For example:
-
-`Region.yourNationalFlower()` returns `Flower`.
-
-`WestBengal.yourNationalFlower()` returns `Jasmine`.
-
-`AndhraPradesh.yourNationalFlower()` returns `Lily`.
-
-Since both `Jasmine` and `Lily` are subclasses of `Flower`, these are valid covariant return types.
-
----
-
-## 🧠 Concepts Practiced
-
-- 🔄 Covariant Return Types
-- 🧬 Inheritance
-- 🔁 Method Overriding
-- 🎭 Runtime Polymorphism
-- 🌸 Parent and Child Classes
-- 🏗️ Object Creation
-- 📦 Class Relationships
-- ☕ Core Java
-- 🧠 Object-Oriented Programming
-- 🔍 Return Type Compatibility
-- 🧩 Subtype Polymorphism
-- 🛠️ Problem Solving
-
----
-
-## 💡 Key Learning
-
-Day 61 helped me understand how **covariant return types work with inheritance and method overriding**.
-
-I learned that an overriding method can return a more specific subclass type when that type is compatible with the parent method's return type.
-
-This challenge strengthened my understanding of **Inheritance, Method Overriding, Polymorphism, Return Type Compatibility, and Object-Oriented Programming**. 🚀
-
----
-
-## 📂 Files Added
-
-- 💻 `Covariant Return Types.java`
-- 📸 `Screenshot 2026-09-25 074119.png`
-
----
-
-# 🆕 Day 60 – Java Annotations
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Annotations
-- 📅 **Day:** 60
-- 🏷️ **Topic:** Java Annotations
-- 🪞 **Focus:** Custom Annotations & Reflection
-- 🔍 **Concept:** Runtime Annotation Processing
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Java Annotations** challenge focuses on creating a custom annotation and using Java Reflection to inspect annotation information at runtime.
-
-The solution identifies methods based on annotation values, reads configured budget information, checks the user's role and spending amount, and invokes the appropriate method when the spending amount is within the allowed budget.
-
----
-
-## 🏷️ Custom Annotation
-
-A custom annotation named `FamilyBudget` is used in the challenge.
-
-The annotation contains information such as:
-
-- 👤 User role
-- 💰 Budget limit
-- ⚙️ Annotation configuration
-- 🔍 Runtime metadata
-
-The annotation is retained at runtime so that it can be accessed using Java Reflection.
-
----
-
-## 🪞 Java Reflection
-
-Reflection is used to inspect methods and their annotations dynamically.
-
-Important concepts practiced include:
-
-- `Method`
-- `getMethods()`
-- `isAnnotationPresent()`
-- `getAnnotation()`
-- `method.invoke()`
-- Runtime annotation inspection
-- Dynamic method execution
-
----
-
-## 💰 Budget Validation Logic
-
-The program checks whether the requested spending amount is within the configured budget.
-
-For example:
-
-- 👤 Senior Member → Budget Limit: `100`
-- 👤 Junior Member → Budget Limit: `50`
-
-If the spending amount is within the allowed budget, the corresponding method is invoked.
-
-Otherwise, the program displays:
-
-**Budget Limit Over**
-
----
-
-## 🧠 Concepts Practiced
-
-- 🏷️ Java Annotations
-- 🧩 Custom Annotations
-- `@Target`
-- `@Retention`
-- Annotation Members
-- Default Annotation Values
-- 🪞 Java Reflection API
-- `Method`
-- `getMethods()`
-- `isAnnotationPresent()`
-- `getAnnotation()`
-- `method.invoke()`
-- Runtime Metadata
-- Method Invocation
-- Exception Handling
-- Object Creation
+- Core Java
 - OOP
-- Problem Solving
-
----
-
-## 💡 Key Learning
-
-Day 60 helped me understand how **Java Annotations and Reflection can work together**.
-
-I learned how to:
-
-- Create a custom annotation
-- Define annotation members
-- Set annotation retention to runtime
-- Apply annotations to methods
-- Detect annotations dynamically
-- Read annotation values
-- Validate data using annotation configuration
-- Invoke methods dynamically using Reflection
-
-This challenge strengthened my understanding of **Java Metadata, Annotations, Reflection API, Runtime Processing, OOP, and Dynamic Method Invocation**. 🚀
-
----
-
-## 📂 Files Added
-
-- 💻 `Java Annotations.java`
-- 📸 `Screenshot 2026-09-24 201421.png`
-
----
-
-# 🆕 Day 59 – Java Visitor Pattern
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Tree: Visitor Pattern
-- 📅 **Day:** 59
-- 🧭 **Topic:** Visitor Design Pattern
-- 🌳 **Focus:** Tree Traversal, Visitors & OOP
-- 🧩 **Concept:** Design Patterns
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Tree: Visitor Pattern** challenge focuses on implementing the **Visitor Design Pattern** to perform different operations on a tree without changing the structure of the tree itself.
-
-The challenge uses a tree containing nodes with different colors and depths. Multiple visitors are implemented to calculate different values based on the properties of the nodes.
-
----
-
-## 🧭 Visitor Pattern
-
-The **Visitor Design Pattern** separates an operation from the object structure on which it operates.
-
-The challenge uses different visitors to perform different calculations on the same tree structure.
-
-### Visitors Practiced
-
-- 🍃 **SumInLeavesVisitor**
-  - Calculates the sum of values of all leaf nodes.
-
-- 🔴 **ProductOfRedNodesVisitor**
-  - Calculates the product of values of red nodes.
-  - Uses modulo arithmetic to keep the result within the required range.
-
-- 🟢 **FancyVisitor**
-  - Calculates the absolute difference between:
-    - The sum of values of non-leaf nodes at even depth.
-    - The sum of values of green leaf nodes.
-
----
-
-## 🌳 Tree Traversal
-
-The tree is represented using nodes connected through edges.
-
-The solution processes:
-
-- Node value
-- Node color
-- Node depth
-- Leaf or non-leaf status
-- Parent-child relationship
-
-The tree is rooted at the first node, and traversal is performed from the root through connected nodes.
-
----
-
-## 🧠 Concepts Practiced
-
-- 🧭 Visitor Design Pattern
-- 🌳 Tree Data Structure
-- 🔄 Tree Traversal
-- 🏗️ Object-Oriented Programming
-- 🔌 Interfaces
-- 🎭 Abstract Classes
-- 🔄 Polymorphism
-- 🧬 Inheritance
-- 🍃 Leaf Node Identification
-- 📊 Depth-based Processing
-- 🔴 Node Color Processing
-- 🧩 Graph Representation
-- 📋 Adjacency Lists
-- 🔢 Modular Arithmetic
-- 🧠 Problem Solving
-- 💻 Java Programming
-
----
-
-## 💡 Key Learning
-
-Day 59 helped me understand how the **Visitor Pattern** can be applied to a tree structure to perform multiple operations without modifying the tree classes.
-
-This challenge strengthened my understanding of **Design Patterns, Tree Traversal, Interfaces, Abstraction, Polymorphism, and Java OOP**. 🚀
-
----
-
-## 📂 Files Added
-
-- 💻 `Java Visitor Pattern.java`
-- 📸 `Screenshot 2026-09-23 204543.png`
-
----
-
-# 🆕 Day 58 – Can You Access?
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Can You Access?
-- 📅 **Day:** 58
-- 🔐 **Topic:** Access Modifiers & Inner Classes
-- 🧩 **Focus:** Encapsulation, Accessibility & Inner Classes
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Can You Access?** challenge focuses on understanding how access modifiers control the accessibility of class members in Java.
-
-The challenge provides an inner class containing a private method and requires accessing the functionality through the appropriate class and object structure.
-
----
-
-## 🔐 Access Modifiers Practiced
-
-| Modifier | Accessibility |
-|---|---|
-| `private` | Accessible within the same class |
-| Default | Accessible within the same package |
-| `protected` | Accessible within the same package and subclasses |
-| `public` | Accessible from anywhere |
-
-The challenge reinforces the concept of access control and encapsulation.
-
----
-
-## 🧩 Inner Class Concepts
-
-The challenge provides practice with:
-
-- Inner classes
-- Private members
-- Creating inner class objects
-- Accessing methods
-- Enclosing class relationships
-- Object references
-- Runtime class information
-
----
-
-## 🧠 Concepts Practiced
-
-- 🔐 Access Modifiers
-- 🧩 Inner Classes
-- 🔒 Private Members
-- 🏗️ Object Creation
-- 📦 Encapsulation
-- 🔗 Class Relationships
-- 🧠 Object-Oriented Programming
-- 🔍 Runtime Class Information
-- 💻 Java Syntax
-- 🛠️ Problem Solving
-
----
-
-## 💡 Key Learning
-
-Day 58 helped me understand how **access control works in Java** and how inner classes can be used to work with members that have restricted visibility.
-
-This challenge strengthened my understanding of **Encapsulation, Access Modifiers, Inner Classes, and Java OOP concepts**.
-
----
-
-## 📂 Files Added
-
-- 💻 `Can You Access.java`
-- 📸 `Screenshot 2026-09-22 131627.png`
-
----
-
-# 🆕 Day 57 – Valid Username Regular Expression
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Valid Username Regular Expression
-- 📅 **Day:** 57
-- 🔎 **Topic:** Regular Expressions
-- 👤 **Focus:** Username Validation
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Valid Username Regular Expression** challenge requires creating a regular expression that validates whether a username follows the required format.
-
----
-
-## 📋 Username Rules
-
-A valid username must:
-
-- 🔤 Start with an alphabetic character
-- 🔠 Allow uppercase letters from `A-Z`
-- 🔡 Allow lowercase letters from `a-z`
-- 🔢 Allow numbers from `0-9`
-- 🔗 Allow underscore `_`
-- 📏 Contain between **8 and 30 characters**
-- ❌ Not contain other special characters
-
----
-
-## 🔎 Regular Expression Used
-
-`^[a-zA-Z][a-zA-Z0-9_]{7,29}$`
-
----
-
-## 🧩 Regex Explanation
-
-| Regex Part | Meaning |
-|---|---|
-| `^` | Beginning of the string |
-| `[a-zA-Z]` | First character must be an alphabet |
-| `[a-zA-Z0-9_]` | Allows letters, numbers and underscore |
-| `{7,29}` | Allows 7 to 29 additional characters |
-| `$` | End of the string |
-
-### 📏 Length Calculation
-
-**1 alphabetic character + 7 to 29 additional characters**
-
-Therefore:
-
-**Minimum = 8 characters**
-
-**Maximum = 30 characters**
-
----
-
-## 🧠 Concepts Practiced
-
-- 🔎 Regular Expressions
-- 🧩 Regex Pattern Matching
-- 👤 Username Validation
-- 🔤 Character Classes
-- 🔢 Character Ranges
-- 📏 Regex Quantifiers
-- `^` Start Anchor
-- `$` End Anchor
-- `String.matches()`
-- ❌ Invalid Character Detection
-- 📋 Input Validation
-- 🧠 Pattern-Based String Processing
-
----
-
-## 🎓 Learning Outcome
-
-Day 57 helped me understand how **Regular Expressions can be used for input validation**.
-
-This challenge strengthened my understanding of **Java Regex, pattern matching, character classes, quantifiers, and validation**.
-
----
-
-## 📂 Files Added
-
-- 💻 `Valid Username Regular Expression.java`
-- 📸 `Screenshot 2026-09-21 080241.png`
-
----
-
-# 🆕 Day 56 – Java Dequeue
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Dequeue
-- 📅 **Day:** 56
-- 🔄 **Topic:** Deque
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Java Dequeue** challenge focuses on using Java's `Deque` interface to add, remove, and process elements from both ends of a collection.
-
----
-
-## 🧠 Concepts Practiced
-
-- Deque
-- `ArrayDeque`
-- Java Collections Framework
-- Adding elements
-- Removing elements
-- Checking elements
-- First and last elements
-- Collection operations
-- Duplicate handling
-- Queue operations
-- Sliding-window style processing
-
----
-
-## 📂 Files Added
-
-- 💻 `Java Dequeue.java`
-- 📸 `Screenshot.png`
-
----
-
-# 🆕 Day 55 – Java Priority Queue
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Priority Queue
-- 📅 **Day:** 55
-- 🏆 **Topic:** PriorityQueue
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Java Priority Queue** challenge focuses on implementing a priority-based queue using Java's `PriorityQueue`.
-
-Elements are processed according to their priority instead of simple insertion order.
-
----
-
-## 🧠 Concepts Practiced
-
-- PriorityQueue
-- Queue
-- Java Collections Framework
-- Adding elements
-- Removing elements
-- Polling elements
-- Priority-based processing
-- Comparable
-- Comparator
-- Collection handling
-
----
-
-## 📂 Files Added
-
-- 💻 `Java Priority Queue.java`
-- 📸 `Screenshot.png`
-
----
-
-# 🆕 Day 54 – Java Regex
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Regex
-- 📅 **Day:** 54
-- 🔎 **Topic:** Regular Expressions
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The Java Regex challenge focuses on using regular expressions to identify and validate specific patterns in strings.
-
----
-
-## 🧠 Concepts Practiced
-
-- Regular Expressions
-- Pattern Matching
-- String Validation
-- Character Classes
-- Regex Quantifiers
-- Pattern Processing
-- Java String Methods
-
----
-
-## 📂 Files Added
-
-- 💻 `Java Regex.java`
-- 📸 `Screenshot.png`
-
----
-
-# 🆕 Day 53 – Java Singleton Pattern
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Singleton Pattern
-- 📅 **Day:** 53
-- 🔒 **Topic:** Singleton Design Pattern
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Singleton Pattern** ensures that only one instance of a particular class is created and provides a controlled way to access that instance.
-
----
-
-## 🧠 Concepts Practiced
-
-- Singleton Pattern
-- Static Members
-- Private Constructor
-- Object Creation
-- Instance Management
-- Encapsulation
-- Design Patterns
-- Object-Oriented Programming
-
----
-
-## 📂 Files Added
-
-- 💻 `Java Singleton Pattern.java`
-- 📸 `Screenshot.png`
-
----
-
-# 🆕 Day 52 – Java Factory Pattern
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Factory Pattern
-- 📅 **Day:** 52
-- 🏭 **Topic:** Factory Design Pattern
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The **Factory Pattern** focuses on creating objects through a dedicated factory rather than directly creating them in client code.
-
----
-
-## 🧠 Concepts Practiced
-
-- Factory Pattern
-- Interfaces
-- Classes
-- Object Creation
+- Inheritance
 - Polymorphism
-- Encapsulation
+- Collections
+- Exception Handling
+- Regex
+- Reflection
 - Design Patterns
-- OOP
+- Visitor Pattern
+- Annotations
+- Lambda Expressions
+- Functional Interfaces
+- MD5
+- SHA-256
+- Cryptographic Hashing
 
----
+### 💻 LeetCode Journey
 
-## 📂 Files Added
+Starting from Day 65, I am using LeetCode to continue my Java practice with a stronger focus on:
 
-- 💻 `Java Factory Pattern.java`
-- 📸 `Screenshot.png`
-
----
-
-# 🆕 Day 51 – Prime Checker
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Prime Checker
-- 📅 **Day:** 51
-- 🔢 **Topic:** Prime Numbers
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The Prime Checker challenge focuses on determining whether a given number is prime using Java programming logic.
-
----
-
-## 🧠 Concepts Practiced
-
-- Prime Numbers
-- Loops
-- Conditional Statements
-- Mathematical Logic
-- Divisibility
+- Data Structures
+- Algorithms
 - Problem Solving
-- Efficient Checking
-
----
-
-## 📂 Files Added
-
-- 💻 `Prime Checker.java`
-- 📸 `Output Screenshot.png`
-
----
-
-# 🆕 Day 50 – Java Reflection - Attributes
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- ☕ **Language:** Java
-- 🏆 **Challenge:** Java Reflection - Attributes
-- 📅 **Day:** 50
-- 🪞 **Topic:** Reflection
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The Java Reflection challenge focuses on inspecting class attributes dynamically using the Java Reflection API.
-
----
-
-## 🧠 Concepts Practiced
-
-- Java Reflection
-- Class
-- Fields
-- Attributes
-- `getDeclaredFields()`
-- Dynamic Class Inspection
-- Runtime Information
-
----
-
-## 📂 Files Added
-
-- 💻 `Java Reflection - Attributes.java`
-- 📸 `Screenshot.png`
+- Greedy Algorithms
+- Arrays
+- Strings
+- Hashing
+- Searching
+- Sorting
+- Recursion
+- Dynamic Programming
+- Trees
+- Graphs
+- Linked Lists
+- Stacks
+- Queues
+- Algorithmic Complexity
 
 ---
 
@@ -1503,21 +535,25 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 - SHA-256
 - Cryptographic Hashing
 
-## 🔹 Problem Solving
+## 🔹 DSA & Algorithms
 
-- Mathematical Problems
-- Prime Numbers
-- String Manipulation
-- Array Problems
-- Sorting
+- Arrays
+- Strings
+- Hashing
 - Searching
+- Sorting
+- Greedy Algorithms
+- Mathematical Problems
+- Recursion
+- Linked Lists
+- Stacks
+- Queues
+- Trees
+- Graphs
+- Dynamic Programming
 - Bit Manipulation
-- Pattern Matching
-- Input Validation
-- Tree-Based Problems
-- Logical Programming
-- Hash Generation
-- Cryptographic Hashing
+- Algorithmic Complexity
+- Problem Solving
 
 ---
 
@@ -1525,14 +561,14 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **64 / 100** |
+| 📅 Days Completed | **65 / 100** |
 | ☕ Language | **Java** |
-| 🏆 Platform | **HackerRank** |
-| 💻 Challenges Solved | **64** |
-| 📈 Progress | **64% Complete** |
-| 🔥 Current Streak | **64 Days** |
-| ⏳ Days Remaining | **36 Days** |
-| 🧠 Main Focus | **Java Programming & Problem Solving** |
+| 🏆 Platforms | **HackerRank & LeetCode** |
+| 💻 Challenges Solved | **65** |
+| 📈 Progress | **65% Complete** |
+| 🔥 Current Streak | **65 Days** |
+| ⏳ Days Remaining | **35 Days** |
+| 🧠 Main Focus | **Java Programming, DSA & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
 | 🔎 Regex Focus | **Pattern Matching & Username Validation** |
@@ -1545,16 +581,22 @@ Throughout this challenge, I am practicing a wide range of Java concepts.
 | ⚡ Functional Programming | **Lambda Expressions & Functional Interfaces** |
 | 🔐 Hashing Concepts | **MessageDigest, MD5, SHA-256 & Hexadecimal Conversion** |
 | 🛡️ Cryptography | **SHA-256 Cryptographic Hashing** |
+| 🧠 DSA Focus | **Algorithms, Data Structures & Problem Solving** |
+| 🏛️ Day 65 Focus | **Integer to Roman & Greedy Algorithm** |
 
 ---
 
 # 🔥 Current Streak
 
-## **64 Days of Java Practice Completed! 🎉🔥🚀**
+## **65 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **64 days down, 36 more to go!**
+> **65 days down, 35 more to go!**
 
-Every Java challenge helps me strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Exception Handling, Regular Expressions, Reflection, Design Patterns, Access Control, Inner Classes, Tree Traversal, Visitor Pattern, Annotations, Covariant Return Types, Lambda Expressions, Functional Interfaces, Hashing, MessageDigest, Cryptography, mathematical logic, and problem-solving abilities**.
+The first **64 days** helped me build a strong foundation in Java through HackerRank.
+
+On **Day 65**, I started solving Java problems on **LeetCode**, adding Data Structures and Algorithms to my learning journey.
+
+Every challenge helps me strengthen my **Core Java, OOP, Collections, Strings, Arrays, Exception Handling, Regex, Reflection, Design Patterns, Annotations, Lambda Expressions, Hashing, Cryptography, Algorithms, Data Structures, and Problem-Solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** ☕💻🔥
 
@@ -1584,6 +626,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 62 | ✅ Completed 🎉⚡🔥 |
 | 🎯 Day 63 | ✅ Completed 🎉🔐🔥 |
 | 🎯 Day 64 | ✅ Completed 🎉🔐🛡️🔥 |
+| 🎯 Day 65 | ✅ Completed 🎉🏛️🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -1603,38 +646,8 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 40**  
 ████████░░░░░░░░░░░░ **40%**
 
-**Day 45**  
-█████████░░░░░░░░░░░ **45%**
-
 **Day 50**  
 ██████████░░░░░░░░░░ **50%**
-
-**Day 51**  
-██████████░░░░░░░░░░ **51%**
-
-**Day 52**  
-██████████░░░░░░░░░░ **52%**
-
-**Day 53**  
-██████████░░░░░░░░░░ **53%**
-
-**Day 54**  
-███████████░░░░░░░░░ **54%**
-
-**Day 55**  
-███████████░░░░░░░░░ **55%**
-
-**Day 56**  
-███████████░░░░░░░░░ **56%**
-
-**Day 57**  
-███████████░░░░░░░░░ **57%**
-
-**Day 58**  
-███████████░░░░░░░░░ **58%**
-
-**Day 59**  
-████████████░░░░░░░░ **59%**
 
 **Day 60**  
 ████████████░░░░░░░░ **60%**
@@ -1651,11 +664,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 64**  
 █████████████░░░░░░░ **64%**
 
+**Day 65**  
+█████████████░░░░░░░ **65%**
+
 ## 🚀 Overall Progress
 
-█████████████░░░░░░░ **64%**
+█████████████░░░░░░░ **65%**
 
-### **64 / 100 Days Completed**
+### **65 / 100 Days Completed**
 
 ---
 
@@ -1663,13 +679,13 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 My daily learning process includes:
 
-1. 📖 Understand the Java problem statement
+1. 📖 Understand the problem statement
 2. 🧠 Analyze the required logic
 3. 🔍 Identify the required Java concepts
 4. ✍️ Write the Java solution
 5. 🧪 Compile and test the program
 6. 🔍 Debug errors when required
-7. ✅ Submit the solution on HackerRank
+7. ✅ Submit the solution on HackerRank or LeetCode
 8. 📸 Save the successful output/submission
 9. 📂 Upload the solution to GitHub
 10. 📝 Review the concepts used
@@ -1679,7 +695,7 @@ My daily learning process includes:
 
 # 🌱 Learning in Public
 
-This challenge is not only about solving Java problems.
+This challenge is not only about solving programming problems.
 
 It is also about:
 
@@ -1691,7 +707,6 @@ It is also about:
 - 🏗️ Strengthening OOP concepts
 - 📦 Understanding Collections
 - 🔎 Practicing Regular Expressions
-- 👤 Learning input validation
 - ⚠️ Understanding exception handling
 - 🪞 Exploring Java Reflection
 - 🏭 Learning Design Patterns
@@ -1705,6 +720,9 @@ It is also about:
 - 🔗 Understanding Functional Interfaces
 - 🔐 Exploring Hashing and MessageDigest
 - 🛡️ Understanding SHA-256 Cryptographic Hashing
+- 🧮 Practicing Algorithms
+- 📊 Practicing Data Structures
+- 💡 Improving algorithmic thinking
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
 - 🎯 Preparing for technical interviews
@@ -1714,7 +732,7 @@ It is also about:
 
 # 🎯 Why This Repository?
 
-This repository documents my **Java learning journey** and showcases my daily progress while solving HackerRank Java challenges.
+This repository documents my **100 Days of Java learning journey** and showcases my daily progress while solving programming challenges.
 
 It serves as:
 
@@ -1738,6 +756,9 @@ It serves as:
 - 🔗 My Functional Interface practice
 - 🔐 My Hashing and MessageDigest practice
 - 🛡️ My SHA-256 and Cryptography practice
+- 🧮 My Algorithm practice
+- 📊 My Data Structures practice
+- 💡 My DSA problem-solving practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
 
@@ -1747,7 +768,7 @@ Every completed challenge represents another step toward becoming a stronger Jav
 
 # 🌟 Future Topics
 
-The upcoming days will continue with more Java programming concepts, including:
+The upcoming days will continue with Java programming and DSA concepts, including:
 
 - 📁 File Handling
 - 🧵 Multithreading
@@ -1758,7 +779,14 @@ The upcoming days will continue with more Java programming concepts, including:
 - 🔍 Searching Algorithms
 - 🔄 Sorting Algorithms
 - 🧠 Advanced Problem Solving
-- 🚀 Advanced Java
+- 🔗 Linked Lists
+- 🌳 Trees
+- 🕸️ Graphs
+- 🔢 Dynamic Programming
+- 🏃 Greedy Algorithms
+- 🔐 Hashing
+- 🔄 Recursion
+- ⚡ Backtracking
 - 🎯 Interview-Oriented Java Problems
 - 🏗️ Object-Oriented Design
 - 🧩 Advanced Programming Concepts
@@ -1773,9 +801,9 @@ Every day, I solve a new Java problem and add the solution to this repository.
 Each day's folder may contain:
 
 - ☕ Java Solution
-- 📸 HackerRank Submission Screenshot
+- 📸 HackerRank or LeetCode Submission Screenshot
 
-This repository serves as a complete record of my **100 Days of Java learning journey**.
+The repository serves as a complete record of my **100 Days of Java learning journey**.
 
 ---
 
@@ -1797,15 +825,23 @@ Let's learn, build, and grow together! 🌱
 
 https://github.com/Coder-RD
 
-### 💻 Java Challenge Repository
+### ☕ Java Challenge Repository
 
 https://github.com/Coder-RD/Java_Challenge/
+
+### 🏆 HackerRank
+
+HackerRank is the primary platform used for **Days 1–64** of this challenge.
+
+### 💻 LeetCode
+
+LeetCode is the platform I am using from **Day 65 onward** for Java-based algorithm and Data Structures & Algorithms practice.
 
 ---
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#UsernameValidation` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#Polymorphism` `#MethodOverriding` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day64`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#GreedyAlgorithm` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day65`
 
 ---
 
@@ -1815,12 +851,12 @@ https://github.com/Coder-RD/Java_Challenge/
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**64 Days Completed ✅ | 36 Days Remaining ⏳ | 100 Days Goal 🎯**
+**65 Days Completed ✅ | 35 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🔥 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 64 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 65 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
