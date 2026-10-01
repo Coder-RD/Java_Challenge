@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-66%25-success?style=for-the-badge" alt="66% Progress">
+  <img src="https://img.shields.io/badge/Progress-67%25-success?style=for-the-badge" alt="67% Progress">
 </p>
 
 <p align="center">
@@ -194,6 +194,9 @@ The goal is simple:
 ├── 📁 Day-66/  
 │   ├── 📄 Roman to Integer.java  
 │   └── 📸 Screenshot 2026-09-30 080412.png  
+├── 📁 Day-67/  
+│   ├── 📄 Two Sum.java  
+│   └── 📸 Screenshot 2026-10-01 080722.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -269,110 +272,87 @@ The goal is simple:
 | ✅ Day 64 | HackerRank | Java SHA-256 | Completed 🎉🔐🛡️🔥 |
 | ✅ Day 65 | LeetCode | Integer to Roman | Completed 🎉🏛️🔥 |
 | ✅ Day 66 | LeetCode | Roman to Integer | Completed 🎉🔢🔥 |
-| ⏳ Day 67–99 | — | Upcoming Challenges | Pending |
+| ✅ Day 67 | LeetCode | Two Sum | Completed 🎉🎯🔥 |
+| ⏳ Day 68–99 | — | Upcoming Challenges | Pending |
 | 🎯 Day 100 | — | Final Goal | Pending |
 
 ---
 
-# 🆕 Day 66 – Roman to Integer
+# 🆕 Day 67 – Two Sum
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🏆 **Problem:** Roman to Integer
-- 📅 **Day:** 66
-- 🔢 **Topic:** String & Integer Conversion
-- 🧠 **Focus:** Strings, HashMap/Mapping, Traversal & Conditional Logic
-- 🔄 **Concept:** Converting Roman Numerals into Integers
+- 🏆 **Problem:** Two Sum
+- 📅 **Day:** 67
+- 🔢 **Topic:** Arrays & Hashing
+- 🧠 **Focus:** Array Traversal, HashMap, Searching & Problem Solving
+- 🎯 **Goal:** Find two indices whose values add up to the target
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **Roman to Integer** problem focuses on converting a Roman numeral string into its corresponding integer value.
+The **Two Sum** problem requires finding two numbers in an array whose sum is equal to a given target value.
 
-The solution processes the Roman numeral characters and determines whether each value should be **added or subtracted** based on the value of the following character.
-
----
-
-## 🏛️ Roman Numeral Values
-
-| Symbol | Value |
-|---|---:|
-| I | 1 |
-| V | 5 |
-| X | 10 |
-| L | 50 |
-| C | 100 |
-| D | 500 |
-| M | 1000 |
-
-### Special Subtractive Combinations
-
-| Combination | Value |
-|---|---:|
-| IV | 4 |
-| IX | 9 |
-| XL | 40 |
-| XC | 90 |
-| CD | 400 |
-| CM | 900 |
+The solution returns the **indices of the two numbers** that satisfy the target condition.
 
 ---
 
 ## 🧠 Approach
 
-The solution traverses the Roman numeral string from left to right.
+The problem can be solved efficiently using a **HashMap**.
 
-1. Convert each Roman symbol into its corresponding integer value.
-2. Compare the current value with the next value.
-3. If the current value is smaller than the next value, subtract it.
-4. Otherwise, add it to the result.
-5. Continue until all characters are processed.
-6. Return the final integer value.
+1. Traverse the array from left to right.
+2. For each element, calculate the required complement.
+3. Check whether the complement already exists in the HashMap.
+4. If it exists, the required pair has been found.
+5. Return the indices of the two elements.
+6. Otherwise, store the current value and its index in the HashMap.
+7. Continue until the required pair is found.
 
-This approach handles both normal Roman numeral combinations and subtractive combinations such as `IV`, `IX`, `XL`, `XC`, `CD`, and `CM`.
+This approach avoids checking every possible pair and provides an efficient solution for the problem.
 
 ---
 
 ## 🧩 Concepts Practiced
 
-- 🏛️ Roman Numerals
-- 🔤 String Traversal
-- 🔢 Integer Conversion
-- 🧠 Conditional Logic
-- 🔄 Loops
-- 📊 Character Processing
-- 🗺️ Value Mapping
-- 🧮 Mathematical Logic
-- 💻 Java Problem Solving
-- 🧠 Algorithmic Thinking
-- 🚀 LeetCode Practice
+- 🔢 Arrays
+- 🗺️ HashMap
+- 🔍 Searching
+- 🎯 Target Sum
+- 🔄 Array Traversal
+- 🧠 Logical Thinking
+- 📊 Time Complexity
+- 💾 Space Complexity
+- ☕ Java Collections
+- 🧠 Data Structures
+- 🚀 Algorithmic Problem Solving
 
 ---
 
 ## 💡 Key Learning
 
-Day 66 continued my **LeetCode journey** after completing the first 64 days on HackerRank.
+Day 67 continued my **LeetCode journey** with the classic **Two Sum** problem.
 
-The **Roman to Integer** challenge helped me practice string traversal, character-to-value mapping, conditional logic, and handling subtractive Roman numeral combinations.
+This challenge helped me strengthen my understanding of **arrays, HashMap, searching, target-based calculations, and efficient problem-solving**.
 
-This challenge strengthened my understanding of **Strings, Loops, Conditions, Integer Conversion, and Algorithmic Problem Solving**. 🚀
+It also provided practical experience with using a HashMap to improve the efficiency of searching for required values.
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `Roman to Integer.java`
-- 📸 `Screenshot 2026-09-30 080412.png`
+- 💻 `Two Sum.java`
+- 📸 `Screenshot 2026-10-01 080722.png`
 
 ---
 
 # 🏆 Platform Journey
 
-My **100 Days of Java Challenge** is now expanding across multiple coding platforms.
+My **100 Days of Java Challenge** is now progressing across multiple coding platforms.
 
 | Days | Platform | Focus |
 |---|---|---|
@@ -482,6 +462,7 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - LinkedList
 - List
 - Map
+- HashMap
 - HashSet
 - Stack
 - Queue
@@ -518,6 +499,7 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Arrays
 - Strings
 - Hashing
+- HashMap
 - Searching
 - Sorting
 - Greedy Algorithms
@@ -539,16 +521,16 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **66 / 100** |
+| 📅 Days Completed | **67 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platforms | **HackerRank & LeetCode** |
-| 💻 Challenges Solved | **66** |
-| 📈 Progress | **66% Complete** |
-| 🔥 Current Streak | **66 Days** |
-| ⏳ Days Remaining | **34 Days** |
+| 💻 Challenges Solved | **67** |
+| 📈 Progress | **67% Complete** |
+| 🔥 Current Streak | **67 Days** |
+| ⏳ Days Remaining | **33 Days** |
 | 🧠 Main Focus | **Java Programming, DSA & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
-| 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque & PriorityQueue** |
+| 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque, PriorityQueue & HashMap** |
 | 🔎 Regex Focus | **Pattern Matching & Username Validation** |
 | ⚠️ Error Handling | **Exception Handling** |
 | 🪞 Reflection | **Runtime Class & Annotation Inspection** |
@@ -559,23 +541,25 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | ⚡ Functional Programming | **Lambda Expressions & Functional Interfaces** |
 | 🔐 Hashing Concepts | **MessageDigest, MD5, SHA-256 & Hexadecimal Conversion** |
 | 🛡️ Cryptography | **SHA-256 Cryptographic Hashing** |
-| 🧠 DSA Focus | **Algorithms, Data Structures & Problem Solving** |
-| 🏛️ Day 65 Focus | **Integer to Roman & Greedy Algorithm** |
+| 🏛️ Day 65 Focus | **Integer to Roman & Roman Numeral Processing** |
 | 🔢 Day 66 Focus | **Roman to Integer & String Processing** |
+| 🎯 Day 67 Focus | **Two Sum, Arrays & HashMap** |
 
 ---
 
 # 🔥 Current Streak
 
-## **66 Days of Java Practice Completed! 🎉🔥🚀**
+## **67 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **66 days down, 34 more to go!**
+> **67 days down, 33 more to go!**
 
 The first **64 days** helped me build a strong foundation in Java through HackerRank.
 
 On **Day 65**, I started solving Java problems on **LeetCode**, adding Data Structures and Algorithms to my learning journey.
 
-On **Day 66**, I solved **Roman to Integer**, strengthening my understanding of String Processing, Roman Numerals, Conditional Logic, and Algorithmic Problem Solving.
+On **Day 66**, I solved **Roman to Integer**, strengthening my understanding of String Processing, Roman Numerals, and Conditional Logic.
+
+On **Day 67**, I solved **Two Sum**, strengthening my understanding of Arrays, HashMap, Searching, and efficient problem-solving.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -609,6 +593,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 64 | ✅ Completed 🎉🔐🛡️🔥 |
 | 🎯 Day 65 | ✅ Completed 🎉🏛️🔥 |
 | 🎯 Day 66 | ✅ Completed 🎉🔢🔥 |
+| 🎯 Day 67 | ✅ Completed 🎉🎯🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -653,11 +638,14 @@ Every challenge is another step toward becoming a stronger Java programmer.
 **Day 66**  
 █████████████░░░░░░░ **66%**
 
+**Day 67**  
+██████████████░░░░░░ **67%**
+
 ## 🚀 Overall Progress
 
-█████████████░░░░░░░ **66%**
+██████████████░░░░░░ **67%**
 
-### **66 / 100 Days Completed**
+### **67 / 100 Days Completed**
 
 ---
 
@@ -827,7 +815,7 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#GreedyAlgorithm` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day66`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#RomanToInteger` `#IntegerToRoman` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day67`
 
 ---
 
@@ -837,12 +825,12 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**66 Days Completed ✅ | 34 Days Remaining ⏳ | 100 Days Goal 🎯**
+**67 Days Completed ✅ | 33 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 66 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 67 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
