@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-67%25-success?style=for-the-badge" alt="67% Progress">
+  <img src="https://img.shields.io/badge/Progress-68%25-success?style=for-the-badge" alt="68% Progress">
 </p>
 
 <p align="center">
@@ -197,6 +197,9 @@ The goal is simple:
 ├── 📁 Day-67/  
 │   ├── 📄 Two Sum.java  
 │   └── 📸 Screenshot 2026-10-01 080722.png  
+├── 📁 Day-68/  
+│   ├── 📄 Add Two Numbers.java  
+│   └── 📸 Screenshot 2026-10-02 084243.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -273,61 +276,70 @@ The goal is simple:
 | ✅ Day 65 | LeetCode | Integer to Roman | Completed 🎉🏛️🔥 |
 | ✅ Day 66 | LeetCode | Roman to Integer | Completed 🎉🔢🔥 |
 | ✅ Day 67 | LeetCode | Two Sum | Completed 🎉🎯🔥 |
-| ⏳ Day 68–99 | — | Upcoming Challenges | Pending |
-| 🎯 Day 100 | — | Final Goal | Pending |
+| ✅ Day 68 | LeetCode | Add Two Numbers | Completed 🎉➕🔥 |
+| ⏳ Day 69–99 | LeetCode | Upcoming DSA Challenges | Pending |
+| 🎯 Day 100 | LeetCode | Final Goal | Pending |
 
 ---
 
-# 🆕 Day 67 – Two Sum
+# 🆕 Day 68 – Add Two Numbers
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🏆 **Problem:** Two Sum
-- 📅 **Day:** 67
-- 🔢 **Topic:** Arrays & Hashing
-- 🧠 **Focus:** Array Traversal, HashMap, Searching & Problem Solving
-- 🎯 **Goal:** Find two indices whose values add up to the target
+- 🏆 **Problem:** Add Two Numbers
+- 📅 **Day:** 68
+- 🔢 **Topic:** Linked Lists, Mathematics & Data Structures
+- 🧠 **Focus:** Linked List Traversal, Addition, Carry Handling & Problem Solving
+- 🎯 **Goal:** Add two numbers represented by linked lists
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **Two Sum** problem requires finding two numbers in an array whose sum is equal to a given target value.
+The **Add Two Numbers** problem requires adding two numbers represented by two linked lists.
 
-The solution returns the **indices of the two numbers** that satisfy the target condition.
+Each linked list stores the digits of a number in reverse order. The task is to add the two numbers and return the result as a linked list.
+
+The solution must correctly handle:
+
+- Individual digit addition
+- Carry values
+- Different linked-list lengths
+- Remaining nodes
+- Final carry
 
 ---
 
 ## 🧠 Approach
 
-The problem can be solved efficiently using a **HashMap**.
+The problem can be solved by traversing both linked lists simultaneously.
 
-1. Traverse the array from left to right.
-2. For each element, calculate the required complement.
-3. Check whether the complement already exists in the HashMap.
-4. If it exists, the required pair has been found.
-5. Return the indices of the two elements.
-6. Otherwise, store the current value and its index in the HashMap.
-7. Continue until the required pair is found.
+1. Start with the first nodes of both linked lists.
+2. Add the values of the current nodes along with the carry.
+3. Store the resulting digit in a new linked-list node.
+4. Calculate the carry for the next position.
+5. Move to the next nodes of both lists.
+6. Continue while either list still has nodes or a carry remains.
+7. Return the resulting linked list.
 
-This approach avoids checking every possible pair and provides an efficient solution for the problem.
+This approach processes each digit once and provides an efficient solution.
 
 ---
 
 ## 🧩 Concepts Practiced
 
-- 🔢 Arrays
-- 🗺️ HashMap
-- 🔍 Searching
-- 🎯 Target Sum
-- 🔄 Array Traversal
+- 🔗 Linked Lists
+- 🔢 Mathematics
+- ➕ Addition
+- 🔄 Linked List Traversal
+- 🧮 Carry Handling
 - 🧠 Logical Thinking
 - 📊 Time Complexity
 - 💾 Space Complexity
-- ☕ Java Collections
+- ☕ Java
 - 🧠 Data Structures
 - 🚀 Algorithmic Problem Solving
 
@@ -335,24 +347,24 @@ This approach avoids checking every possible pair and provides an efficient solu
 
 ## 💡 Key Learning
 
-Day 67 continued my **LeetCode journey** with the classic **Two Sum** problem.
+Day 68 continued my **LeetCode journey** with the **Add Two Numbers** problem.
 
-This challenge helped me strengthen my understanding of **arrays, HashMap, searching, target-based calculations, and efficient problem-solving**.
+This challenge helped me strengthen my understanding of **Linked Lists, node traversal, digit-by-digit addition, carry handling, and data-structure-based problem solving**.
 
-It also provided practical experience with using a HashMap to improve the efficiency of searching for required values.
+It was another step toward building stronger foundations in **Data Structures and Algorithms using Java**.
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `Two Sum.java`
-- 📸 `Screenshot 2026-10-01 080722.png`
+- 💻 `Add Two Numbers.java`
+- 📸 `Screenshot 2026-10-02 084243.png`
 
 ---
 
 # 🏆 Platform Journey
 
-My **100 Days of Java Challenge** is now progressing across multiple coding platforms.
+My **100 Days of Java Challenge** is progressing across multiple coding platforms.
 
 | Days | Platform | Focus |
 |---|---|---|
@@ -412,16 +424,25 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Hashing
 - Searching
 - Sorting
-- Greedy Algorithms
-- Recursion
-- Dynamic Programming
 - Linked Lists
 - Trees
 - Graphs
 - Stacks
 - Queues
+- Recursion
+- Dynamic Programming
+- Greedy Algorithms
 - Mathematical Problems
 - Algorithmic Complexity
+
+### Completed LeetCode Problems
+
+| Day | Problem | Main Concept |
+|---|---|---|
+| ✅ Day 65 | Integer to Roman | Strings & Roman Numerals |
+| ✅ Day 66 | Roman to Integer | String Processing & Mapping |
+| ✅ Day 67 | Two Sum | Arrays & HashMap |
+| ✅ Day 68 | Add Two Numbers | Linked Lists & Carry Handling |
 
 ---
 
@@ -521,13 +542,13 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **67 / 100** |
+| 📅 Days Completed | **68 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platforms | **HackerRank & LeetCode** |
-| 💻 Challenges Solved | **67** |
-| 📈 Progress | **67% Complete** |
-| 🔥 Current Streak | **67 Days** |
-| ⏳ Days Remaining | **33 Days** |
+| 💻 Challenges Solved | **68** |
+| 📈 Progress | **68% Complete** |
+| 🔥 Current Streak | **68 Days** |
+| ⏳ Days Remaining | **32 Days** |
 | 🧠 Main Focus | **Java Programming, DSA & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque, PriorityQueue & HashMap** |
@@ -544,14 +565,15 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | 🏛️ Day 65 Focus | **Integer to Roman & Roman Numeral Processing** |
 | 🔢 Day 66 Focus | **Roman to Integer & String Processing** |
 | 🎯 Day 67 Focus | **Two Sum, Arrays & HashMap** |
+| 🔗 Day 68 Focus | **Add Two Numbers, Linked Lists & Carry Handling** |
 
 ---
 
 # 🔥 Current Streak
 
-## **67 Days of Java Practice Completed! 🎉🔥🚀**
+## **68 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **67 days down, 33 more to go!**
+> **68 days down, 32 more to go!**
 
 The first **64 days** helped me build a strong foundation in Java through HackerRank.
 
@@ -560,6 +582,8 @@ On **Day 65**, I started solving Java problems on **LeetCode**, adding Data Stru
 On **Day 66**, I solved **Roman to Integer**, strengthening my understanding of String Processing, Roman Numerals, and Conditional Logic.
 
 On **Day 67**, I solved **Two Sum**, strengthening my understanding of Arrays, HashMap, Searching, and efficient problem-solving.
+
+On **Day 68**, I solved **Add Two Numbers**, strengthening my understanding of Linked Lists, node traversal, addition, carry handling, and data structures.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -594,6 +618,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 65 | ✅ Completed 🎉🏛️🔥 |
 | 🎯 Day 66 | ✅ Completed 🎉🔢🔥 |
 | 🎯 Day 67 | ✅ Completed 🎉🎯🔥 |
+| 🎯 Day 68 | ✅ Completed 🎉➕🔗🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -641,11 +666,14 @@ Every challenge is another step toward becoming a stronger Java programmer.
 **Day 67**  
 ██████████████░░░░░░ **67%**
 
+**Day 68**  
+██████████████░░░░░░ **68%**
+
 ## 🚀 Overall Progress
 
-██████████████░░░░░░ **67%**
+██████████████░░░░░░ **68%**
 
-### **67 / 100 Days Completed**
+### **68 / 100 Days Completed**
 
 ---
 
@@ -696,6 +724,7 @@ It is also about:
 - 🛡️ Understanding SHA-256 Cryptographic Hashing
 - 🧮 Practicing Algorithms
 - 📊 Practicing Data Structures
+- 🔗 Practicing Linked Lists
 - 💡 Improving algorithmic thinking
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
@@ -732,6 +761,7 @@ It serves as:
 - 🛡️ My SHA-256 and Cryptography practice
 - 🧮 My Algorithm practice
 - 📊 My Data Structures practice
+- 🔗 My Linked List practice
 - 💡 My DSA problem-solving practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
@@ -815,7 +845,7 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#RomanToInteger` `#IntegerToRoman` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day67`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day68`
 
 ---
 
@@ -825,12 +855,12 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**67 Days Completed ✅ | 33 Days Remaining ⏳ | 100 Days Goal 🎯**
+**68 Days Completed ✅ | 32 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 67 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 68 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
