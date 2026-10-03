@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-68%25-success?style=for-the-badge" alt="68% Progress">
+  <img src="https://img.shields.io/badge/Progress-69%25-success?style=for-the-badge" alt="69% Progress">
 </p>
 
 <p align="center">
@@ -117,6 +117,8 @@ The goal is simple:
 | 🧮 Algorithms | Searching, Sorting & Mathematical Logic |
 | 🧠 Problem Solving | Logical & Algorithmic Problems |
 | 📊 DSA | Data Structures & Algorithms |
+| 🔗 Linked Lists | Node Traversal & Carry Handling |
+| 🪟 Sliding Window | Longest Substring & Unique Characters |
 
 ---
 
@@ -200,6 +202,9 @@ The goal is simple:
 ├── 📁 Day-68/  
 │   ├── 📄 Add Two Numbers.java  
 │   └── 📸 Screenshot 2026-10-02 084243.png  
+├── 📁 Day-69/  
+│   ├── 📄 Longest Substring Without Repeating Characters.java  
+│   └── 📸 Screenshot 2026-10-03 081009.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -276,66 +281,70 @@ The goal is simple:
 | ✅ Day 65 | LeetCode | Integer to Roman | Completed 🎉🏛️🔥 |
 | ✅ Day 66 | LeetCode | Roman to Integer | Completed 🎉🔢🔥 |
 | ✅ Day 67 | LeetCode | Two Sum | Completed 🎉🎯🔥 |
-| ✅ Day 68 | LeetCode | Add Two Numbers | Completed 🎉➕🔥 |
-| ⏳ Day 69–99 | LeetCode | Upcoming DSA Challenges | Pending |
+| ✅ Day 68 | LeetCode | Add Two Numbers | Completed 🎉➕🔗🔥 |
+| ✅ Day 69 | LeetCode | Longest Substring Without Repeating Characters | Completed 🎉🪟🔤🔥 |
+| ⏳ Day 70–99 | LeetCode | Upcoming DSA Challenges | Pending |
 | 🎯 Day 100 | LeetCode | Final Goal | Pending |
 
 ---
 
-# 🆕 Day 68 – Add Two Numbers
+# 🆕 Day 69 – Longest Substring Without Repeating Characters
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🏆 **Problem:** Add Two Numbers
-- 📅 **Day:** 68
-- 🔢 **Topic:** Linked Lists, Mathematics & Data Structures
-- 🧠 **Focus:** Linked List Traversal, Addition, Carry Handling & Problem Solving
-- 🎯 **Goal:** Add two numbers represented by linked lists
+- 🏆 **Problem:** Longest Substring Without Repeating Characters
+- 📅 **Day:** 69
+- 🔤 **Topic:** Strings, Hashing & Sliding Window
+- 🧠 **Focus:** String Traversal, Unique Characters, HashMap/HashSet & Sliding Window
+- 🎯 **Goal:** Find the length of the longest substring without repeating characters
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **Add Two Numbers** problem requires adding two numbers represented by two linked lists.
+The **Longest Substring Without Repeating Characters** problem requires finding the length of the longest substring in which every character appears only once.
 
-Each linked list stores the digits of a number in reverse order. The task is to add the two numbers and return the result as a linked list.
+For example, given a string containing repeated characters, the solution must identify the longest continuous substring that contains no duplicate characters.
 
-The solution must correctly handle:
+The solution needs to correctly handle:
 
-- Individual digit addition
-- Carry values
-- Different linked-list lengths
-- Remaining nodes
-- Final carry
+- Repeated characters
+- Unique characters
+- Empty strings
+- Single-character strings
+- Different substring lengths
+- Moving the search window efficiently
 
 ---
 
 ## 🧠 Approach
 
-The problem can be solved by traversing both linked lists simultaneously.
+The problem can be efficiently solved using the **Sliding Window technique**.
 
-1. Start with the first nodes of both linked lists.
-2. Add the values of the current nodes along with the carry.
-3. Store the resulting digit in a new linked-list node.
-4. Calculate the carry for the next position.
-5. Move to the next nodes of both lists.
-6. Continue while either list still has nodes or a carry remains.
-7. Return the resulting linked list.
+1. Start with two pointers representing the current window.
+2. Traverse the string from left to right.
+3. Track the characters currently inside the window.
+4. When a duplicate character is found, move the left side of the window forward.
+5. Continue until the current window contains only unique characters.
+6. Calculate the length of the current window.
+7. Keep track of the maximum length found.
+8. Return the maximum substring length.
 
-This approach processes each digit once and provides an efficient solution.
+This approach avoids checking every possible substring separately and improves the efficiency of the solution.
 
 ---
 
 ## 🧩 Concepts Practiced
 
-- 🔗 Linked Lists
-- 🔢 Mathematics
-- ➕ Addition
-- 🔄 Linked List Traversal
-- 🧮 Carry Handling
+- 🔤 Strings
+- 🔎 Character Processing
+- 🪟 Sliding Window
+- 🔗 Hashing
+- 📦 HashMap / HashSet
+- 🔄 String Traversal
 - 🧠 Logical Thinking
 - 📊 Time Complexity
 - 💾 Space Complexity
@@ -345,20 +354,36 @@ This approach processes each digit once and provides an efficient solution.
 
 ---
 
+## ⏱️ Complexity
+
+### Time Complexity
+
+**O(n)**
+
+The string is processed efficiently using a sliding-window approach.
+
+### Space Complexity
+
+**O(k)**
+
+Additional space is used to track characters in the current window, where `k` represents the number of distinct characters being tracked.
+
+---
+
 ## 💡 Key Learning
 
-Day 68 continued my **LeetCode journey** with the **Add Two Numbers** problem.
+Day 69 continued my **LeetCode journey** with the **Longest Substring Without Repeating Characters** problem.
 
-This challenge helped me strengthen my understanding of **Linked Lists, node traversal, digit-by-digit addition, carry handling, and data-structure-based problem solving**.
+This challenge helped me strengthen my understanding of **Strings, Sliding Window, Hashing, character tracking, duplicate detection, and efficient algorithmic problem-solving**.
 
-It was another step toward building stronger foundations in **Data Structures and Algorithms using Java**.
+It was another important step toward improving my **Data Structures and Algorithms skills using Java**.
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `Add Two Numbers.java`
-- 📸 `Screenshot 2026-10-02 084243.png`
+- 💻 `Longest Substring Without Repeating Characters.java`
+- 📸 `Screenshot 2026-10-03 081009.png`
 
 ---
 
@@ -373,7 +398,7 @@ My **100 Days of Java Challenge** is progressing across multiple coding platform
 
 ---
 
-## ☕ HackerRank Journey — Days 1–64
+# ☕ HackerRank Journey — Days 1–64
 
 The first 64 days focused on building a strong Java foundation through HackerRank challenges.
 
@@ -412,7 +437,7 @@ Major topics included:
 
 ---
 
-## 💻 LeetCode Journey — Day 65 Onward
+# 💻 LeetCode Journey — Day 65 Onward
 
 Starting from Day 65, I am using LeetCode to continue Java practice with a stronger focus on:
 
@@ -434,8 +459,9 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Greedy Algorithms
 - Mathematical Problems
 - Algorithmic Complexity
+- Sliding Window
 
-### Completed LeetCode Problems
+## ✅ Completed LeetCode Problems
 
 | Day | Problem | Main Concept |
 |---|---|---|
@@ -443,6 +469,7 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | ✅ Day 66 | Roman to Integer | String Processing & Mapping |
 | ✅ Day 67 | Two Sum | Arrays & HashMap |
 | ✅ Day 68 | Add Two Numbers | Linked Lists & Carry Handling |
+| ✅ Day 69 | Longest Substring Without Repeating Characters | Strings, Hashing & Sliding Window |
 
 ---
 
@@ -533,6 +560,7 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Graphs
 - Dynamic Programming
 - Bit Manipulation
+- Sliding Window
 - Algorithmic Complexity
 - Problem Solving
 
@@ -542,13 +570,13 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **68 / 100** |
+| 📅 Days Completed | **69 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platforms | **HackerRank & LeetCode** |
-| 💻 Challenges Solved | **68** |
-| 📈 Progress | **68% Complete** |
-| 🔥 Current Streak | **68 Days** |
-| ⏳ Days Remaining | **32 Days** |
+| 💻 Challenges Solved | **69** |
+| 📈 Progress | **69% Complete** |
+| 🔥 Current Streak | **69 Days** |
+| ⏳ Days Remaining | **31 Days** |
 | 🧠 Main Focus | **Java Programming, DSA & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque, PriorityQueue & HashMap** |
@@ -566,14 +594,15 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | 🔢 Day 66 Focus | **Roman to Integer & String Processing** |
 | 🎯 Day 67 Focus | **Two Sum, Arrays & HashMap** |
 | 🔗 Day 68 Focus | **Add Two Numbers, Linked Lists & Carry Handling** |
+| 🪟 Day 69 Focus | **Longest Substring Without Repeating Characters, Strings, Hashing & Sliding Window** |
 
 ---
 
 # 🔥 Current Streak
 
-## **68 Days of Java Practice Completed! 🎉🔥🚀**
+## **69 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **68 days down, 32 more to go!**
+> **69 days down, 31 more to go!**
 
 The first **64 days** helped me build a strong foundation in Java through HackerRank.
 
@@ -584,6 +613,8 @@ On **Day 66**, I solved **Roman to Integer**, strengthening my understanding of 
 On **Day 67**, I solved **Two Sum**, strengthening my understanding of Arrays, HashMap, Searching, and efficient problem-solving.
 
 On **Day 68**, I solved **Add Two Numbers**, strengthening my understanding of Linked Lists, node traversal, addition, carry handling, and data structures.
+
+On **Day 69**, I solved **Longest Substring Without Repeating Characters**, strengthening my understanding of Strings, Hashing, Sliding Window, duplicate detection, and efficient algorithmic problem-solving.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -619,6 +650,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 66 | ✅ Completed 🎉🔢🔥 |
 | 🎯 Day 67 | ✅ Completed 🎉🎯🔥 |
 | 🎯 Day 68 | ✅ Completed 🎉➕🔗🔥 |
+| 🎯 Day 69 | ✅ Completed 🎉🪟🔤🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -669,11 +701,14 @@ Every challenge is another step toward becoming a stronger Java programmer.
 **Day 68**  
 ██████████████░░░░░░ **68%**
 
+**Day 69**  
+██████████████░░░░░░ **69%**
+
 ## 🚀 Overall Progress
 
-██████████████░░░░░░ **68%**
+██████████████░░░░░░ **69%**
 
-### **68 / 100 Days Completed**
+### **69 / 100 Days Completed**
 
 ---
 
@@ -725,6 +760,8 @@ It is also about:
 - 🧮 Practicing Algorithms
 - 📊 Practicing Data Structures
 - 🔗 Practicing Linked Lists
+- 🪟 Practicing Sliding Window
+- 🔤 Practicing String Algorithms
 - 💡 Improving algorithmic thinking
 - 💻 Writing cleaner Java code
 - 🛠️ Debugging programming errors
@@ -762,6 +799,8 @@ It serves as:
 - 🧮 My Algorithm practice
 - 📊 My Data Structures practice
 - 🔗 My Linked List practice
+- 🪟 My Sliding Window practice
+- 🔤 My String Algorithm practice
 - 💡 My DSA problem-solving practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
@@ -791,6 +830,7 @@ The upcoming days will continue with Java programming and DSA concepts, includin
 - 🔐 Hashing
 - 🔄 Recursion
 - ⚡ Backtracking
+- 🪟 Sliding Window
 - 🎯 Interview-Oriented Java Problems
 - 🏗️ Object-Oriented Design
 - 🧩 Advanced Programming Concepts
@@ -845,7 +885,7 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day68`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#Strings` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day69`
 
 ---
 
@@ -855,12 +895,12 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**68 Days Completed ✅ | 32 Days Remaining ⏳ | 100 Days Goal 🎯**
+**69 Days Completed ✅ | 31 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🪟 🔤 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 68 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 69 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
