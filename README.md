@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-69%25-success?style=for-the-badge" alt="69% Progress">
+  <img src="https://img.shields.io/badge/Progress-70%25-success?style=for-the-badge" alt="70% Progress">
 </p>
 
 <p align="center">
@@ -119,6 +119,8 @@ The goal is simple:
 | 📊 DSA | Data Structures & Algorithms |
 | 🔗 Linked Lists | Node Traversal & Carry Handling |
 | 🪟 Sliding Window | Longest Substring & Unique Characters |
+| 🔍 Binary Search | Efficient Searching in Sorted Data |
+| 📈 Median Finding | Median of Sorted Arrays |
 
 ---
 
@@ -205,6 +207,9 @@ The goal is simple:
 ├── 📁 Day-69/  
 │   ├── 📄 Longest Substring Without Repeating Characters.java  
 │   └── 📸 Screenshot 2026-10-03 081009.png  
+├── 📁 Day-70/  
+│   ├── 📄 Median of Two Sorted Arrays.java  
+│   └── 📸 Screenshot 2026-10-04 133425.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -283,74 +288,78 @@ The goal is simple:
 | ✅ Day 67 | LeetCode | Two Sum | Completed 🎉🎯🔥 |
 | ✅ Day 68 | LeetCode | Add Two Numbers | Completed 🎉➕🔗🔥 |
 | ✅ Day 69 | LeetCode | Longest Substring Without Repeating Characters | Completed 🎉🪟🔤🔥 |
-| ⏳ Day 70–99 | LeetCode | Upcoming DSA Challenges | Pending |
+| ✅ Day 70 | LeetCode | Median of Two Sorted Arrays | Completed 🎉📊🔍🔥 |
+| ⏳ Day 71–99 | LeetCode | Upcoming DSA Challenges | Pending |
 | 🎯 Day 100 | LeetCode | Final Goal | Pending |
 
 ---
 
-# 🆕 Day 69 – Longest Substring Without Repeating Characters
+# 🆕 Day 70 – Median of Two Sorted Arrays
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🏆 **Problem:** Longest Substring Without Repeating Characters
-- 📅 **Day:** 69
-- 🔤 **Topic:** Strings, Hashing & Sliding Window
-- 🧠 **Focus:** String Traversal, Unique Characters, HashMap/HashSet & Sliding Window
-- 🎯 **Goal:** Find the length of the longest substring without repeating characters
+- 🏆 **Problem:** Median of Two Sorted Arrays
+- 📅 **Day:** 70
+- 📊 **Topic:** Arrays, Binary Search & Divide and Conquer
+- 🧠 **Focus:** Sorted Arrays, Median Calculation, Binary Search & Efficient Algorithm Design
+- 🎯 **Goal:** Find the median of two sorted arrays efficiently
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **Longest Substring Without Repeating Characters** problem requires finding the length of the longest substring in which every character appears only once.
+The **Median of Two Sorted Arrays** problem requires finding the median value from two sorted arrays.
 
-For example, given a string containing repeated characters, the solution must identify the longest continuous substring that contains no duplicate characters.
+The challenge focuses on designing an efficient algorithm that can work with two sorted arrays without unnecessarily combining and sorting all elements.
 
 The solution needs to correctly handle:
 
-- Repeated characters
-- Unique characters
-- Empty strings
-- Single-character strings
-- Different substring lengths
-- Moving the search window efficiently
+- Two sorted arrays
+- Arrays of different sizes
+- Arrays containing positive and negative values
+- Even total number of elements
+- Odd total number of elements
+- Empty individual arrays
+- Duplicate values
+- Boundary conditions
+- Efficient median calculation
 
 ---
 
 ## 🧠 Approach
 
-The problem can be efficiently solved using the **Sliding Window technique**.
+The problem can be approached using **Binary Search** and the concept of partitioning two sorted arrays.
 
-1. Start with two pointers representing the current window.
-2. Traverse the string from left to right.
-3. Track the characters currently inside the window.
-4. When a duplicate character is found, move the left side of the window forward.
-5. Continue until the current window contains only unique characters.
-6. Calculate the length of the current window.
-7. Keep track of the maximum length found.
-8. Return the maximum substring length.
+The main idea is to divide the arrays into left and right partitions such that:
 
-This approach avoids checking every possible substring separately and improves the efficiency of the solution.
+1. The left partition contains the correct number of elements.
+2. Every element in the left partition is less than or equal to every element in the right partition.
+3. The correct partition is found using binary search.
+4. The median is calculated from the boundary elements of the partitions.
+5. For an odd total number of elements, the median comes from the left partition.
+6. For an even total number of elements, the median is calculated using the two middle boundary values.
+
+An efficient solution aims to avoid unnecessary merging and sorting of the arrays.
 
 ---
 
 ## 🧩 Concepts Practiced
 
-- 🔤 Strings
-- 🔎 Character Processing
-- 🪟 Sliding Window
-- 🔗 Hashing
-- 📦 HashMap / HashSet
-- 🔄 String Traversal
-- 🧠 Logical Thinking
+- 🔢 Arrays
+- 📊 Sorted Arrays
+- 🔍 Binary Search
+- 🧩 Divide and Conquer
+- 📈 Median Calculation
+- 🔄 Array Partitioning
+- 🧠 Algorithmic Thinking
 - 📊 Time Complexity
 - 💾 Space Complexity
 - ☕ Java
 - 🧠 Data Structures
-- 🚀 Algorithmic Problem Solving
+- 🚀 Efficient Problem Solving
 
 ---
 
@@ -358,38 +367,47 @@ This approach avoids checking every possible substring separately and improves t
 
 ### Time Complexity
 
-**O(n)**
+**O(log(min(m, n)))**
 
-The string is processed efficiently using a sliding-window approach.
+An optimized binary-search approach works on the smaller of the two arrays.
 
 ### Space Complexity
 
-**O(k)**
+**O(1)**
 
-Additional space is used to track characters in the current window, where `k` represents the number of distinct characters being tracked.
+The optimized approach uses constant additional space apart from the input arrays.
 
 ---
 
 ## 💡 Key Learning
 
-Day 69 continued my **LeetCode journey** with the **Longest Substring Without Repeating Characters** problem.
+Day 70 was an important milestone in my **LeetCode journey**.
 
-This challenge helped me strengthen my understanding of **Strings, Sliding Window, Hashing, character tracking, duplicate detection, and efficient algorithmic problem-solving**.
+The **Median of Two Sorted Arrays** problem helped me strengthen my understanding of:
 
-It was another important step toward improving my **Data Structures and Algorithms skills using Java**.
+- Binary Search
+- Sorted Arrays
+- Array Partitioning
+- Median Calculation
+- Divide and Conquer
+- Boundary Conditions
+- Algorithm Optimization
+- Time and Space Complexity
+
+This challenge improved my ability to think beyond straightforward solutions and focus on **efficient algorithm design**.
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `Longest Substring Without Repeating Characters.java`
-- 📸 `Screenshot 2026-10-03 081009.png`
+- 💻 `Median of Two Sorted Arrays.java`
+- 📸 `Screenshot 2026-10-04 133425.png`
 
 ---
 
 # 🏆 Platform Journey
 
-My **100 Days of Java Challenge** is progressing across multiple coding platforms.
+My **100 Days of Java Challenge** is progressing across two major coding platforms.
 
 | Days | Platform | Focus |
 |---|---|---|
@@ -460,6 +478,8 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Mathematical Problems
 - Algorithmic Complexity
 - Sliding Window
+- Binary Search
+- Divide and Conquer
 
 ## ✅ Completed LeetCode Problems
 
@@ -470,6 +490,7 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | ✅ Day 67 | Two Sum | Arrays & HashMap |
 | ✅ Day 68 | Add Two Numbers | Linked Lists & Carry Handling |
 | ✅ Day 69 | Longest Substring Without Repeating Characters | Strings, Hashing & Sliding Window |
+| ✅ Day 70 | Median of Two Sorted Arrays | Arrays, Binary Search & Divide and Conquer |
 
 ---
 
@@ -561,6 +582,8 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Dynamic Programming
 - Bit Manipulation
 - Sliding Window
+- Binary Search
+- Divide and Conquer
 - Algorithmic Complexity
 - Problem Solving
 
@@ -570,13 +593,13 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **69 / 100** |
+| 📅 Days Completed | **70 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platforms | **HackerRank & LeetCode** |
-| 💻 Challenges Solved | **69** |
-| 📈 Progress | **69% Complete** |
-| 🔥 Current Streak | **69 Days** |
-| ⏳ Days Remaining | **31 Days** |
+| 💻 Challenges Solved | **70** |
+| 📈 Progress | **70% Complete** |
+| 🔥 Current Streak | **70 Days** |
+| ⏳ Days Remaining | **30 Days** |
 | 🧠 Main Focus | **Java Programming, DSA & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque, PriorityQueue & HashMap** |
@@ -595,26 +618,29 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | 🎯 Day 67 Focus | **Two Sum, Arrays & HashMap** |
 | 🔗 Day 68 Focus | **Add Two Numbers, Linked Lists & Carry Handling** |
 | 🪟 Day 69 Focus | **Longest Substring Without Repeating Characters, Strings, Hashing & Sliding Window** |
+| 📊 Day 70 Focus | **Median of Two Sorted Arrays, Binary Search & Divide and Conquer** |
 
 ---
 
 # 🔥 Current Streak
 
-## **69 Days of Java Practice Completed! 🎉🔥🚀**
+## **70 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **69 days down, 31 more to go!**
+> **70 days down, 30 more to go!**
 
 The first **64 days** helped me build a strong foundation in Java through HackerRank.
 
 On **Day 65**, I started solving Java problems on **LeetCode**, adding Data Structures and Algorithms to my learning journey.
 
-On **Day 66**, I solved **Roman to Integer**, strengthening my understanding of String Processing, Roman Numerals, and Conditional Logic.
+On **Day 66**, I solved **Roman to Integer**, strengthening my understanding of String Processing and Roman Numerals.
 
-On **Day 67**, I solved **Two Sum**, strengthening my understanding of Arrays, HashMap, Searching, and efficient problem-solving.
+On **Day 67**, I solved **Two Sum**, strengthening my understanding of Arrays, HashMap, and efficient searching.
 
-On **Day 68**, I solved **Add Two Numbers**, strengthening my understanding of Linked Lists, node traversal, addition, carry handling, and data structures.
+On **Day 68**, I solved **Add Two Numbers**, strengthening my understanding of Linked Lists, node traversal, addition, and carry handling.
 
-On **Day 69**, I solved **Longest Substring Without Repeating Characters**, strengthening my understanding of Strings, Hashing, Sliding Window, duplicate detection, and efficient algorithmic problem-solving.
+On **Day 69**, I solved **Longest Substring Without Repeating Characters**, strengthening my understanding of Strings, Hashing, Sliding Window, and duplicate detection.
+
+On **Day 70**, I solved **Median of Two Sorted Arrays**, strengthening my understanding of Sorted Arrays, Binary Search, Array Partitioning, Median Calculation, Divide and Conquer, and algorithm optimization.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -651,7 +677,9 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 67 | ✅ Completed 🎉🎯🔥 |
 | 🎯 Day 68 | ✅ Completed 🎉➕🔗🔥 |
 | 🎯 Day 69 | ✅ Completed 🎉🪟🔤🔥 |
+| 🎯 Day 70 | ✅ Completed 🎉📊🔍🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
+| 🎯 Day 80 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -704,11 +732,16 @@ Every challenge is another step toward becoming a stronger Java programmer.
 **Day 69**  
 ██████████████░░░░░░ **69%**
 
+**Day 70**  
+██████████████░░░░░░ **70%**
+
 ## 🚀 Overall Progress
 
-██████████████░░░░░░ **69%**
+██████████████░░░░░░ **70%**
 
-### **69 / 100 Days Completed**
+### **70 / 100 Days Completed**
+
+### **30 Days Remaining**
 
 ---
 
@@ -761,6 +794,8 @@ It is also about:
 - 📊 Practicing Data Structures
 - 🔗 Practicing Linked Lists
 - 🪟 Practicing Sliding Window
+- 🔍 Practicing Binary Search
+- 📊 Practicing Median-Based Problems
 - 🔤 Practicing String Algorithms
 - 💡 Improving algorithmic thinking
 - 💻 Writing cleaner Java code
@@ -800,6 +835,8 @@ It serves as:
 - 📊 My Data Structures practice
 - 🔗 My Linked List practice
 - 🪟 My Sliding Window practice
+- 🔍 My Binary Search practice
+- 📈 My Median Calculation practice
 - 🔤 My String Algorithm practice
 - 💡 My DSA problem-solving practice
 - 💼 A part of my placement preparation
@@ -831,6 +868,8 @@ The upcoming days will continue with Java programming and DSA concepts, includin
 - 🔄 Recursion
 - ⚡ Backtracking
 - 🪟 Sliding Window
+- 🔍 Binary Search
+- 📊 Divide and Conquer
 - 🎯 Interview-Oriented Java Problems
 - 🏗️ Object-Oriented Design
 - 🧩 Advanced Programming Concepts
@@ -885,7 +924,7 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#Strings` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day69`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#BinarySearch` `#DivideAndConquer` `#Strings` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#MedianOfTwoSortedArrays` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day70`
 
 ---
 
@@ -895,12 +934,12 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**69 Days Completed ✅ | 31 Days Remaining ⏳ | 100 Days Goal 🎯**
+**70 Days Completed ✅ | 30 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🪟 🔤 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🔍 🪟 🔤 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 69 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 70 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
