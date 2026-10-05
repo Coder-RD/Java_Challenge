@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-70%25-success?style=for-the-badge" alt="70% Progress">
+  <img src="https://img.shields.io/badge/Progress-71%25-success?style=for-the-badge" alt="71% Progress">
 </p>
 
 <p align="center">
@@ -46,7 +46,7 @@ The goal is simple:
 - 🎭 Understand Abstraction
 - 🔌 Practice Interfaces
 - 🔄 Understand Method Overriding
-- 🔍 Practice `instanceof`
+- 🔍 Practice instanceof
 - ⚠️ Handle exceptions using Try-Catch
 - 📦 Learn Java Collections Framework
 - 🔁 Practice Iterator
@@ -92,7 +92,7 @@ The goal is simple:
 | 🎭 Abstraction | Abstract Classes |
 | 🔌 Interfaces | Interface Implementation |
 | 🔄 Polymorphism | Method Overriding |
-| 🔍 Object Checking | `instanceof` |
+| 🔍 Object Checking | instanceof |
 | ⚠️ Exception Handling | Try-Catch & Exceptions |
 | 📦 Collections | List, Map, Set, Stack, Queue & Deque |
 | 🔁 Iteration | Iterator |
@@ -111,8 +111,8 @@ The goal is simple:
 | 🔍 Runtime Processing | Annotation Reflection |
 | 🔄 Return Types | Covariant Return Types |
 | ⚡ Functional Programming | Lambda Expressions |
-| 🔗 Functional Interfaces | `PerformOperation` & Lambda Implementation |
-| 🔐 Hashing | `MessageDigest`, MD5 & SHA-256 |
+| 🔗 Functional Interfaces | PerformOperation & Lambda Implementation |
+| 🔐 Hashing | MessageDigest, MD5 & SHA-256 |
 | 🛡️ Cryptography | SHA-256 Cryptographic Hashing |
 | 🧮 Algorithms | Searching, Sorting & Mathematical Logic |
 | 🧠 Problem Solving | Logical & Algorithmic Problems |
@@ -121,6 +121,8 @@ The goal is simple:
 | 🪟 Sliding Window | Longest Substring & Unique Characters |
 | 🔍 Binary Search | Efficient Searching in Sorted Data |
 | 📈 Median Finding | Median of Sorted Arrays |
+| 🔢 Integer Manipulation | Digit Extraction & Integer Reversal |
+| 🛡️ Overflow Handling | 32-bit Integer Boundary Handling |
 
 ---
 
@@ -210,6 +212,9 @@ The goal is simple:
 ├── 📁 Day-70/  
 │   ├── 📄 Median of Two Sorted Arrays.java  
 │   └── 📸 Screenshot 2026-10-04 133425.png  
+├── 📁 Day-71/  
+│   ├── 📄 Reverse Integer.java  
+│   └── 📸 Screenshot 2026-10-05 083100.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -289,77 +294,92 @@ The goal is simple:
 | ✅ Day 68 | LeetCode | Add Two Numbers | Completed 🎉➕🔗🔥 |
 | ✅ Day 69 | LeetCode | Longest Substring Without Repeating Characters | Completed 🎉🪟🔤🔥 |
 | ✅ Day 70 | LeetCode | Median of Two Sorted Arrays | Completed 🎉📊🔍🔥 |
-| ⏳ Day 71–99 | LeetCode | Upcoming DSA Challenges | Pending |
+| ✅ Day 71 | LeetCode | Reverse Integer | Completed 🎉🔄🔢🔥 |
+| ⏳ Day 72–99 | LeetCode | Upcoming DSA Challenges | Pending |
 | 🎯 Day 100 | LeetCode | Final Goal | Pending |
 
 ---
 
-# 🆕 Day 70 – Median of Two Sorted Arrays
+# 🆕 Day 71 – Reverse Integer
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🏆 **Problem:** Median of Two Sorted Arrays
-- 📅 **Day:** 70
-- 📊 **Topic:** Arrays, Binary Search & Divide and Conquer
-- 🧠 **Focus:** Sorted Arrays, Median Calculation, Binary Search & Efficient Algorithm Design
-- 🎯 **Goal:** Find the median of two sorted arrays efficiently
+- 🏆 **Problem:** Reverse Integer
+- 📅 **Day:** 71
+- 🔢 **Topic:** Integer Manipulation, Mathematics & Overflow Handling
+- 🧠 **Focus:** Digit Extraction, Integer Reversal, Arithmetic Operations & Boundary Conditions
+- 🎯 **Goal:** Reverse the digits of a signed 32-bit integer
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **Median of Two Sorted Arrays** problem requires finding the median value from two sorted arrays.
+The **Reverse Integer** problem requires reversing the digits of a given signed 32-bit integer.
 
-The challenge focuses on designing an efficient algorithm that can work with two sorted arrays without unnecessarily combining and sorting all elements.
+For example:
 
-The solution needs to correctly handle:
+- Positive numbers should have their digits reversed.
+- Negative numbers should remain negative after reversal.
+- Trailing zeroes in the original number naturally disappear after reversal.
+- If the reversed value exceeds the range of a signed 32-bit integer, the result must be `0`.
 
-- Two sorted arrays
-- Arrays of different sizes
-- Arrays containing positive and negative values
-- Even total number of elements
-- Odd total number of elements
-- Empty individual arrays
-- Duplicate values
-- Boundary conditions
-- Efficient median calculation
+The valid 32-bit signed integer range is:
+
+**-2³¹ to 2³¹ - 1**
+
+The challenge focuses on performing digit manipulation while correctly handling integer overflow.
 
 ---
 
 ## 🧠 Approach
 
-The problem can be approached using **Binary Search** and the concept of partitioning two sorted arrays.
+The solution uses arithmetic operations to reverse the integer digit by digit.
 
-The main idea is to divide the arrays into left and right partitions such that:
+### Step 1 — Extract the Last Digit
 
-1. The left partition contains the correct number of elements.
-2. Every element in the left partition is less than or equal to every element in the right partition.
-3. The correct partition is found using binary search.
-4. The median is calculated from the boundary elements of the partitions.
-5. For an odd total number of elements, the median comes from the left partition.
-6. For an even total number of elements, the median is calculated using the two middle boundary values.
+The `% 10` operator is used to extract the last digit of the number.
 
-An efficient solution aims to avoid unnecessary merging and sorting of the arrays.
+### Step 2 — Build the Reversed Number
+
+The extracted digit is added to the reversed number after multiplying the current reversed value by `10`.
+
+### Step 3 — Remove the Last Digit
+
+Integer division by `10` removes the last digit from the original number.
+
+### Step 4 — Repeat
+
+A `while` loop continues the process until all digits have been processed.
+
+### Step 5 — Handle Overflow
+
+Before adding a new digit, the solution checks whether multiplying the current reversed value by `10` would cause the result to exceed the 32-bit signed integer range.
+
+If overflow occurs:
+
+**Return `0`.**
 
 ---
 
 ## 🧩 Concepts Practiced
 
-- 🔢 Arrays
-- 📊 Sorted Arrays
-- 🔍 Binary Search
-- 🧩 Divide and Conquer
-- 📈 Median Calculation
-- 🔄 Array Partitioning
-- 🧠 Algorithmic Thinking
-- 📊 Time Complexity
-- 💾 Space Complexity
-- ☕ Java
-- 🧠 Data Structures
-- 🚀 Efficient Problem Solving
+- 🔢 Integer manipulation
+- ➗ Modulus operator `%`
+- ➗ Integer division `/`
+- 🔄 While loop
+- 🧮 Arithmetic operations
+- 🔁 Digit extraction
+- 🔢 Number reversal
+- ➕ Positive numbers
+- ➖ Negative numbers
+- 🛡️ Integer overflow
+- 📏 32-bit integer limits
+- 🧠 Edge-case handling
+- ☕ Java problem solving
+- 💻 LeetCode DSA practice
 
 ---
 
@@ -367,41 +387,32 @@ An efficient solution aims to avoid unnecessary merging and sorting of the array
 
 ### Time Complexity
 
-**O(log(min(m, n)))**
+**O(log₁₀ n)**
 
-An optimized binary-search approach works on the smaller of the two arrays.
+The algorithm processes each digit of the input number once.
 
 ### Space Complexity
 
 **O(1)**
 
-The optimized approach uses constant additional space apart from the input arrays.
+Only a constant amount of extra memory is used.
 
 ---
 
 ## 💡 Key Learning
 
-Day 70 was an important milestone in my **LeetCode journey**.
+Day 71 helped strengthen my understanding of **integer digit manipulation and overflow handling in Java**.
 
-The **Median of Two Sorted Arrays** problem helped me strengthen my understanding of:
+The problem demonstrated how simple arithmetic operators such as `%` and `/` can be used to process individual digits without converting the number into a String.
 
-- Binary Search
-- Sorted Arrays
-- Array Partitioning
-- Median Calculation
-- Divide and Conquer
-- Boundary Conditions
-- Algorithm Optimization
-- Time and Space Complexity
-
-This challenge improved my ability to think beyond straightforward solutions and focus on **efficient algorithm design**.
+The most important learning was handling the **32-bit signed integer boundary condition**, which is essential when working with numerical algorithms.
 
 ---
 
-## 📂 Files Added
+## 📂 Day 71 Files
 
-- 💻 `Median of Two Sorted Arrays.java`
-- 📸 `Screenshot 2026-10-04 133425.png`
+- 💻 `Reverse Integer.java`
+- 📸 `Screenshot 2026-10-05 083100.png`
 
 ---
 
@@ -480,8 +491,11 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Sliding Window
 - Binary Search
 - Divide and Conquer
+- Integer Manipulation
 
-## ✅ Completed LeetCode Problems
+---
+
+# ✅ Completed LeetCode Problems
 
 | Day | Problem | Main Concept |
 |---|---|---|
@@ -491,6 +505,7 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | ✅ Day 68 | Add Two Numbers | Linked Lists & Carry Handling |
 | ✅ Day 69 | Longest Substring Without Repeating Characters | Strings, Hashing & Sliding Window |
 | ✅ Day 70 | Median of Two Sorted Arrays | Arrays, Binary Search & Divide and Conquer |
+| ✅ Day 71 | Reverse Integer | Integer Manipulation & Overflow Handling |
 
 ---
 
@@ -508,6 +523,8 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Methods
 - Strings
 - Arrays
+- Mathematical Operations
+- Integer Manipulation
 
 ## 🔹 Object-Oriented Programming
 
@@ -584,6 +601,9 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Sliding Window
 - Binary Search
 - Divide and Conquer
+- Integer Manipulation
+- Digit Reversal
+- Overflow Handling
 - Algorithmic Complexity
 - Problem Solving
 
@@ -593,13 +613,13 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **70 / 100** |
+| 📅 Days Completed | **71 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platforms | **HackerRank & LeetCode** |
-| 💻 Challenges Solved | **70** |
-| 📈 Progress | **70% Complete** |
-| 🔥 Current Streak | **70 Days** |
-| ⏳ Days Remaining | **30 Days** |
+| 💻 Challenges Solved | **71** |
+| 📈 Progress | **71% Complete** |
+| 🔥 Current Streak | **71 Days** |
+| ⏳ Days Remaining | **29 Days** |
 | 🧠 Main Focus | **Java Programming, DSA & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque, PriorityQueue & HashMap** |
@@ -619,14 +639,15 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | 🔗 Day 68 Focus | **Add Two Numbers, Linked Lists & Carry Handling** |
 | 🪟 Day 69 Focus | **Longest Substring Without Repeating Characters, Strings, Hashing & Sliding Window** |
 | 📊 Day 70 Focus | **Median of Two Sorted Arrays, Binary Search & Divide and Conquer** |
+| 🔄 Day 71 Focus | **Reverse Integer, Digit Manipulation & Overflow Handling** |
 
 ---
 
 # 🔥 Current Streak
 
-## **70 Days of Java Practice Completed! 🎉🔥🚀**
+## **71 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **70 days down, 30 more to go!**
+> **71 days down, 29 more to go!**
 
 The first **64 days** helped me build a strong foundation in Java through HackerRank.
 
@@ -641,6 +662,8 @@ On **Day 68**, I solved **Add Two Numbers**, strengthening my understanding of L
 On **Day 69**, I solved **Longest Substring Without Repeating Characters**, strengthening my understanding of Strings, Hashing, Sliding Window, and duplicate detection.
 
 On **Day 70**, I solved **Median of Two Sorted Arrays**, strengthening my understanding of Sorted Arrays, Binary Search, Array Partitioning, Median Calculation, Divide and Conquer, and algorithm optimization.
+
+On **Day 71**, I solved **Reverse Integer**, strengthening my understanding of digit manipulation, arithmetic operations, integer reversal, negative numbers, and 32-bit integer overflow handling.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -678,6 +701,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 68 | ✅ Completed 🎉➕🔗🔥 |
 | 🎯 Day 69 | ✅ Completed 🎉🪟🔤🔥 |
 | 🎯 Day 70 | ✅ Completed 🎉📊🔍🔥 |
+| 🎯 Day 71 | ✅ Completed 🎉🔄🔢🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 80 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
@@ -735,13 +759,16 @@ Every challenge is another step toward becoming a stronger Java programmer.
 **Day 70**  
 ██████████████░░░░░░ **70%**
 
+**Day 71**  
+██████████████░░░░░░ **71%**
+
 ## 🚀 Overall Progress
 
-██████████████░░░░░░ **70%**
+██████████████░░░░░░ **71%**
 
-### **70 / 100 Days Completed**
+### **71 / 100 Days Completed**
 
-### **30 Days Remaining**
+### **29 Days Remaining**
 
 ---
 
@@ -795,7 +822,10 @@ It is also about:
 - 🔗 Practicing Linked Lists
 - 🪟 Practicing Sliding Window
 - 🔍 Practicing Binary Search
-- 📊 Practicing Median-Based Problems
+- 📈 Practicing Median Calculation
+- 🔢 Practicing Integer Manipulation
+- 🔄 Practicing Digit Reversal
+- 🛡️ Handling Integer Overflow
 - 🔤 Practicing String Algorithms
 - 💡 Improving algorithmic thinking
 - 💻 Writing cleaner Java code
@@ -837,6 +867,9 @@ It serves as:
 - 🪟 My Sliding Window practice
 - 🔍 My Binary Search practice
 - 📈 My Median Calculation practice
+- 🔢 My Integer Manipulation practice
+- 🔄 My Digit Reversal practice
+- 🛡️ My Overflow Handling practice
 - 🔤 My String Algorithm practice
 - 💡 My DSA problem-solving practice
 - 💼 A part of my placement preparation
@@ -924,7 +957,7 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#BinarySearch` `#DivideAndConquer` `#Strings` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#MedianOfTwoSortedArrays` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day70`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#BinarySearch` `#DivideAndConquer` `#Strings` `#IntegerManipulation` `#IntegerReversal` `#OverflowHandling` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#MedianOfTwoSortedArrays` `#ReverseInteger` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day71`
 
 ---
 
@@ -934,12 +967,12 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**70 Days Completed ✅ | 30 Days Remaining ⏳ | 100 Days Goal 🎯**
+**71 Days Completed ✅ | 29 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🔍 🪟 🔤 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🔍 🪟 🔤 🔢 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 70 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 71 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
