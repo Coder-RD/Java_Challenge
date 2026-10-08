@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-73%25-success?style=for-the-badge" alt="73% Progress">
+  <img src="https://img.shields.io/badge/Progress-74%25-success?style=for-the-badge" alt="74% Progress">
 </p>
 
 <p align="center">
@@ -18,11 +18,11 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! ☕💻
 
-This repository documents my daily Java programming journey through **HackerRank and LeetCode**, where I solve programming challenges to strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Algorithms, Data Structures, Exception Handling, Regular Expressions, Reflection, Design Patterns, Annotations, Lambda Expressions, Functional Interfaces, Hashing, Cryptography, Sliding Window, Binary Search, Linked Lists, Palindrome Algorithms, Integer Manipulation, and problem-solving skills**.
+This repository documents my daily Java programming journey through **HackerRank and LeetCode**, where I solve programming challenges to strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Algorithms, Data Structures, Exception Handling, Regular Expressions, Reflection, Design Patterns, Annotations, Lambda Expressions, Functional Interfaces, Hashing, Cryptography, Sliding Window, Binary Search, Linked Lists, Palindrome Algorithms, Integer Manipulation, String Parsing, Overflow Handling, Boundary Conditions, and problem-solving skills**.
 
 For **Days 1–64**, I practiced Java challenges primarily on **HackerRank**.
 
-Starting from **Day 65**, I transitioned to **LeetCode** to focus more on **Data Structures, Algorithms, Strings, Arrays, Hashing, Linked Lists, Sliding Window, Binary Search, Mathematical Problems, Palindrome Algorithms, Integer Manipulation, and algorithmic problem-solving**.
+Starting from **Day 65**, I transitioned to **LeetCode** to focus more on **Data Structures, Algorithms, Strings, Arrays, Hashing, Linked Lists, Sliding Window, Binary Search, Mathematical Problems, Palindrome Algorithms, Integer Manipulation, String Parsing, and algorithmic problem-solving**.
 
 The goal is simple:
 
@@ -75,7 +75,9 @@ The goal is simple:
 - 🔎 Practice Binary Search
 - 📈 Practice Median Finding
 - 🔢 Practice Integer Manipulation
+- 🔄 Practice Digit Reversal
 - 🔤 Practice Palindrome and String Algorithms
+- 🧮 Practice Mathematical Problem Solving
 - 🛡️ Handle Integer Overflow
 - 🧠 Practice Expand Around Center
 - 🎯 Prepare for technical interviews
@@ -131,10 +133,11 @@ The goal is simple:
 | 📈 Median Finding | Median of Sorted Arrays |
 | 🔢 Integer Manipulation | Digit Extraction & Integer Reversal |
 | 🛡️ Overflow Handling | 32-bit Integer Boundary Handling |
-| 🔤 Palindrome Algorithms | Palindromic String Detection & Expansion |
+| 🔤 Palindrome Algorithms | Palindromic String & Number Detection |
 | 🧠 String Algorithms | String Parsing & Character Processing |
 | 🔤 String Conversion | String to Integer Conversion |
-| ⚠️ Edge Case Handling | Whitespace, Sign, Digits & Overflow |
+| 🔢 Number Reversal | Reverse Integer & Palindrome Number |
+| ⚠️ Edge Case Handling | Negative Numbers, Zero, Whitespace, Sign & Overflow |
 
 ---
 
@@ -233,7 +236,10 @@ The goal is simple:
 ├── 📁 Day-73/  
 │   ├── 📄 String to Integer (atoi).java  
 │   └── 📸 Screenshot 2026-10-07 075622.png  
-├── 📄 README.md
+├── 📁 Day-74/  
+│   ├── 📄 Palindrome Number.java  
+│   └── 📸 Screenshot 2026-10-08 080052.png  
+├── 📄 README.md  
 └── 📄 LICENSE
 
 ---
@@ -271,7 +277,7 @@ The goal is simple:
 | ✅ Day 27 | HackerRank | Java Challenge | Completed |
 | ✅ Day 28 | HackerRank | Java Challenge | Completed |
 | ✅ Day 29 | HackerRank | Java Challenge | Completed |
-| ✅ Day 30 | HackerRank | Java Challenge | Completed |
+| 🎉 Day 30 | HackerRank | Java Challenge | Completed |
 | ✅ Day 31 | HackerRank | Java Challenge | Completed |
 | ✅ Day 32 | HackerRank | Java Challenge | Completed |
 | ✅ Day 33 | HackerRank | Java Challenge | Completed |
@@ -281,185 +287,240 @@ The goal is simple:
 | ✅ Day 37 | HackerRank | Java Challenge | Completed |
 | ✅ Day 38 | HackerRank | Java Challenge | Completed |
 | ✅ Day 39 | HackerRank | Java Challenge | Completed |
-| ✅ Day 40 | HackerRank | Java Challenge | Completed |
+| 🔥 Day 40 | HackerRank | Java Challenge | Completed |
 | ✅ Day 41 | HackerRank | Java Challenge | Completed |
 | ✅ Day 42 | HackerRank | Java Challenge | Completed |
 | ✅ Day 43 | HackerRank | Java Challenge | Completed |
-| ✅ Day 44 | HackerRank | Java Method Overriding 2 (Super Keyword) | Completed |
-| ✅ Day 45 | HackerRank | Java Instanceof Keyword | Completed 🎉 |
-| ✅ Day 46 | HackerRank | Java Iterator | Completed 🎉🔥 |
-| ✅ Day 47 | HackerRank | Java Exception Handling (Try-Catch) | Completed 🎉🔥 |
-| ✅ Day 48 | HackerRank | Java Exception Handling | Completed 🎉🔥 |
-| ✅ Day 49 | HackerRank | Java Varargs - Simple Addition | Completed 🎉🔥 |
-| ✅ Day 50 | HackerRank | Java Reflection - Attributes | Completed 🎉🪞🔥 |
-| ✅ Day 51 | HackerRank | Prime Checker | Completed 🎉🔢🔥 |
-| ✅ Day 52 | HackerRank | Java Factory Pattern | Completed 🎉🏭🔥 |
-| ✅ Day 53 | HackerRank | Java Singleton Pattern | Completed 🎉🔒🔥 |
-| ✅ Day 54 | HackerRank | Java Regex | Completed 🎉🔎🔥 |
-| ✅ Day 55 | HackerRank | Java Priority Queue | Completed 🎉🏆🔥 |
-| ✅ Day 56 | HackerRank | Java Dequeue | Completed 🎉🔄🔥 |
-| ✅ Day 57 | HackerRank | Valid Username Regular Expression | Completed 🎉👤🔎🔥 |
-| ✅ Day 58 | HackerRank | Can You Access? | Completed 🎉🔐🔥 |
-| ✅ Day 59 | HackerRank | Java Visitor Pattern | Completed 🎉🌳🧭🔥 |
-| ✅ Day 60 | HackerRank | Java Annotations | Completed 🎉🏷️🪞🔥 |
-| ✅ Day 61 | HackerRank | Covariant Return Types | Completed 🎉🔄🔥 |
-| ✅ Day 62 | HackerRank | Java Lambda Expressions | Completed 🎉⚡🔥 |
-| ✅ Day 63 | HackerRank | Java MD5 | Completed 🎉🔐🔥 |
-| ✅ Day 64 | HackerRank | Java SHA-256 | Completed 🎉🔐🛡️🔥 |
-| ✅ Day 65 | LeetCode | Integer to Roman | Completed 🎉🏛️🔥 |
-| ✅ Day 66 | LeetCode | Roman to Integer | Completed 🎉🔢🔥 |
-| ✅ Day 67 | LeetCode | Two Sum | Completed 🎉🎯🔥 |
-| ✅ Day 68 | LeetCode | Add Two Numbers | Completed 🎉➕🔗🔥 |
-| ✅ Day 69 | LeetCode | Longest Substring Without Repeating Characters | Completed 🎉🪟🔤🔥 |
-| ✅ Day 70 | LeetCode | Median of Two Sorted Arrays | Completed 🎉📊🔍🔥 |
-| ✅ Day 71 | LeetCode | Reverse Integer | Completed 🎉🔄🔢🔥 |
-| ✅ Day 72 | LeetCode | Longest Palindromic Substring | Completed 🎉🔤🪞🔥 |
-| ✅ Day 73 | LeetCode | String to Integer (atoi) | Completed 🎉🔤🔢🔥 |
-| ⏳ Day 74–99 | LeetCode | Upcoming DSA Challenges | Pending |
+| 🎉 Day 44 | HackerRank | Java Method Overriding 2 (Super Keyword) | Completed |
+| 🎉 Day 45 | HackerRank | Java Instanceof Keyword | Completed |
+| 🎉 Day 46 | HackerRank | Java Iterator | Completed |
+| 🎉 Day 47 | HackerRank | Java Exception Handling (Try-Catch) | Completed |
+| 🎉 Day 48 | HackerRank | Java Exception Handling | Completed |
+| 🎉 Day 49 | HackerRank | Java Varargs - Simple Addition | Completed |
+| 🎉 Day 50 | HackerRank | Java Reflection - Attributes | Completed |
+| 🎉 Day 51 | HackerRank | Prime Checker | Completed |
+| 🎉 Day 52 | HackerRank | Java Factory Pattern | Completed |
+| 🎉 Day 53 | HackerRank | Java Singleton Pattern | Completed |
+| 🎉 Day 54 | HackerRank | Java Regex | Completed |
+| 🎉 Day 55 | HackerRank | Java Priority Queue | Completed |
+| 🎉 Day 56 | HackerRank | Java Dequeue | Completed |
+| 🎉 Day 57 | HackerRank | Valid Username Regular Expression | Completed |
+| 🎉 Day 58 | HackerRank | Can You Access? | Completed |
+| 🎉 Day 59 | HackerRank | Java Visitor Pattern | Completed |
+| 🎉 Day 60 | HackerRank | Java Annotations | Completed |
+| 🎉 Day 61 | HackerRank | Covariant Return Types | Completed |
+| 🎉 Day 62 | HackerRank | Java Lambda Expressions | Completed |
+| 🎉 Day 63 | HackerRank | Java MD5 | Completed |
+| 🎉 Day 64 | HackerRank | Java SHA-256 | Completed |
+| 🎉 Day 65 | LeetCode | Integer to Roman | Completed |
+| 🎉 Day 66 | LeetCode | Roman to Integer | Completed |
+| 🎉 Day 67 | LeetCode | Two Sum | Completed |
+| 🎉 Day 68 | LeetCode | Add Two Numbers | Completed |
+| 🎉 Day 69 | LeetCode | Longest Substring Without Repeating Characters | Completed |
+| 🎉 Day 70 | LeetCode | Median of Two Sorted Arrays | Completed |
+| 🎉 Day 71 | LeetCode | Reverse Integer | Completed |
+| 🎉 Day 72 | LeetCode | Longest Palindromic Substring | Completed |
+| 🎉 Day 73 | LeetCode | String to Integer (atoi) | Completed |
+| 🪞 Day 74 | LeetCode | Palindrome Number | Completed |
+| ⏳ Day 75–99 | LeetCode | Upcoming DSA Challenges | Pending |
 | 🎯 Day 100 | LeetCode | Final Goal | Pending |
 
 ---
 
-# 🆕 Day 73 – String to Integer (atoi)
+# 🆕 Day 74 – Palindrome Number
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🏆 **Problem:** String to Integer (atoi)
-- 📅 **Day:** 73
-- 🔤 **Topic:** String Processing & Integer Conversion
-- 🧠 **Focus:** String Parsing, Character Processing, Sign Handling & Integer Overflow
-- 🎯 **Goal:** Convert a string into a 32-bit signed integer
+- 🏆 **Problem:** Palindrome Number
+- 🔢 **Problem Number:** LeetCode #9
+- 📅 **Day:** 74
+- 🎯 **Difficulty:** Easy
+- 🔢 **Topic:** Math & Integer Manipulation
+- 🔄 **Technique:** Number Reversal
+- 🧠 **Focus:** Digit Extraction, Integer Reversal, Comparison & Edge Cases
+- 💾 **Extra Space:** O(1)
+- ⏱️ **Time Complexity:** O(log₁₀ n)
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **String to Integer (atoi)** problem requires converting a given string into a valid 32-bit signed integer.
+The **Palindrome Number** problem asks us to determine whether a given integer reads the same from left to right and right to left.
 
-The solution needs to process the input carefully while handling:
+A number is called a **palindrome** if its digits remain unchanged when the number is reversed.
 
-- Leading whitespace
-- Optional positive or negative sign
-- Numeric characters
-- Non-numeric characters
-- Integer overflow and underflow
+### Example 1
 
-The result must remain within the range of a **32-bit signed integer**.
+Input: `121`
 
-### Example Cases
+Output: `true`
 
-- `"42"` → `42`
-- `"   -42"` → `-42`
-- `"4193 with words"` → `4193`
-- `"words and 987"` → `0`
+Explanation:
 
-This problem strengthens understanding of **String parsing, character processing, integer conversion, boundary conditions, and overflow handling**.
+`121` reads as `121` from both directions.
+
+### Example 2
+
+Input: `-121`
+
+Output: `false`
+
+Explanation:
+
+A negative number is not considered a palindrome because reversing `-121` results in `121-`.
+
+### Example 3
+
+Input: `10`
+
+Output: `false`
+
+Explanation:
+
+Reversing `10` gives `01`, which is not equal to the original number.
 
 ---
 
-## 🧠 Approach
+## 🧠 Approach Used
 
-The solution processes the string step by step.
+I solved this problem using **mathematical operations** instead of converting the integer into a String.
 
-### Step 1 — Remove Leading Whitespace
+The solution follows these steps:
 
-Ignore all whitespace characters appearing before the number.
+1. Check whether the number is negative.
+2. Store the original number.
+3. Extract the last digit using the `%` operator.
+4. Build the reversed number.
+5. Remove the last digit using integer division.
+6. Continue until the number becomes zero.
+7. Compare the original number with the reversed number.
+8. Return `true` if both numbers are equal.
+9. Otherwise, return `false`.
 
-### Step 2 — Check the Sign
+This approach uses **constant extra space**.
 
-Check whether the next character is:
+---
 
-- `+` → Positive number
-- `-` → Negative number
+## 🔢 Core Logic
 
-If no sign exists, the number is treated as positive.
+The last digit of an integer can be obtained using the modulo operator.
 
-### Step 3 — Process Digits
+For example:
 
-Read characters while they are numeric digits from `0` to `9`.
+`121 % 10 = 1`
 
-For each digit:
+The last digit can be removed using integer division:
 
-- Convert the character into its numeric value.
-- Update the current result.
-- Continue until a non-digit character is encountered.
+`121 / 10 = 12`
 
-### Step 4 — Handle Overflow
+The reversed number can be constructed by multiplying the current reversed number by `10` and adding the extracted digit.
 
-The result must remain within:
+This process continues until all digits have been processed.
 
-- `Integer.MIN_VALUE`
-- `Integer.MAX_VALUE`
+Finally, the original number and reversed number are compared.
 
-If the calculated number exceeds the valid 32-bit range, return the corresponding boundary value.
+---
 
-### Step 5 — Return the Integer
+## 🧪 Dry Run – Example `121`
 
-Return the final signed integer after processing the valid numeric portion of the input.
+| Step | Current Number | Extracted Digit | Reversed Number |
+|---|---:|---:|---:|
+| 1 | 121 | 1 | 1 |
+| 2 | 12 | 2 | 12 |
+| 3 | 1 | 1 | 121 |
+
+Final comparison:
+
+- Original Number = `121`
+- Reversed Number = `121`
+
+Result:
+
+`true`
+
+Therefore, `121` is a palindrome.
+
+---
+
+## ❌ Important Edge Cases
+
+The solution handles different types of input:
+
+| Input | Output | Reason |
+|---:|:---:|---|
+| `121` | `true` | Same from both directions |
+| `-121` | `false` | Negative number |
+| `10` | `false` | Reversed number is `01` |
+| `0` | `true` | Single digit |
+| `7` | `true` | Single digit |
+| `123` | `false` | Reverse is `321` |
+| `1221` | `true` | Same from both directions |
 
 ---
 
 ## 🧩 Concepts Practiced
 
-- 🔤 String manipulation
-- 🔍 String parsing
-- 🔢 Character-to-digit conversion
-- 🔄 String traversal
-- ➕ Positive number handling
-- ➖ Negative number handling
-- ⚠️ Integer overflow handling
-- 🛡️ 32-bit signed integer boundaries
-- 🧠 Conditional logic
-- 🔁 Iterative processing
-- 📏 Boundary checking
-- 🧩 Edge-case handling
-- ☕ Java programming
-- 💻 LeetCode DSA
-- 🎯 Problem-solving
+- ☕ Java Programming
+- 🔢 Integer Manipulation
+- 🔄 Number Reversal
+- 🧮 Mathematical Operations
+- `%` Modulo Operator
+- `/` Integer Division
+- 🔁 While Loop
+- 🔍 Conditional Statements
+- 🔢 Digit Extraction
+- 🧠 Logical Thinking
+- ⚠️ Edge Case Handling
+- 💾 Constant Space Problem Solving
+- 🎯 Algorithmic Thinking
+- 💻 LeetCode Problem Solving
 
 ---
 
-## ⏱️ Complexity
+## ⏱️ Complexity Analysis
 
 ### Time Complexity
 
-**O(n)**
+**O(log₁₀ n)**
 
-The string is traversed from left to right once.
+The number of iterations depends on the number of digits in the input integer.
 
 ### Space Complexity
 
 **O(1)**
 
-Only a constant amount of additional memory is required.
+Only a fixed number of variables are used, so the algorithm requires constant extra space.
 
 ---
 
-## 💡 Key Learning
+## 💡 Why Use Mathematical Operations?
 
-Day 73 helped strengthen my understanding of **String parsing and integer conversion**.
+Instead of converting the number into a String, this solution works directly with the digits of the integer.
 
-The most important part of this problem was handling different edge cases correctly, especially:
+This approach provides practice with:
 
-- Leading spaces
-- Positive and negative signs
-- Non-digit characters
-- Empty or invalid input
-- Integer overflow
-- Integer underflow
-- 32-bit signed integer limits
+- Digit extraction
+- Integer division
+- Modulo operations
+- Number reversal
+- Constant-space algorithms
+- Mathematical problem solving
 
-This challenge improved my ability to write robust solutions that correctly handle **boundary conditions and unexpected input cases**.
+It also strengthens the ability to solve numerical problems without relying on String conversion.
 
 ---
 
-## 📂 Day 73 Files
+## 📂 Day 74 Files
 
-- 💻 `String to Integer (atoi).java`
-- 📸 `Screenshot 2026-10-07 075622.png`
+- 💻 `Palindrome Number.java`
+- 📸 `Screenshot 2026-10-08 080052.png`
+
+The Java file contains the complete solution for **LeetCode #9 – Palindrome Number**.
+
+The screenshot contains the successful submission/result for the completed challenge.
 
 ---
 
@@ -467,10 +528,10 @@ This challenge improved my ability to write robust solutions that correctly hand
 
 My **100 Days of Java Challenge** is progressing across two major coding platforms.
 
-| Days | Platform | Focus |
+| Days | Platform | Main Focus |
 |---|---|---|
 | 📅 Day 1–64 | HackerRank | Core Java, OOP, Collections & Advanced Java |
-| 📅 Day 65–100 | LeetCode | Java, Algorithms & Data Structures |
+| 📅 Day 65–100 | LeetCode | Java, DSA, Algorithms & Problem Solving |
 
 ---
 
@@ -539,8 +600,10 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Binary Search
 - Divide and Conquer
 - Integer Manipulation
+- Digit Reversal
 - Palindrome Algorithms
 - String Algorithms
+- String Parsing
 - Overflow Handling
 - Boundary Conditions
 
@@ -559,6 +622,7 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | ✅ Day 71 | Reverse Integer | Integer Manipulation & Overflow Handling |
 | ✅ Day 72 | Longest Palindromic Substring | Strings, Palindrome Detection & Center Expansion |
 | ✅ Day 73 | String to Integer (atoi) | String Parsing, Integer Conversion & Overflow Handling |
+| 🪞 Day 74 | Palindrome Number | Integer Manipulation, Number Reversal & Palindrome Detection |
 
 ---
 
@@ -580,6 +644,7 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Integer Manipulation
 - Character Processing
 - String Parsing
+- Number Reversal
 
 ## 🔹 Object-Oriented Programming
 
@@ -659,12 +724,13 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Divide and Conquer
 - Integer Manipulation
 - Digit Reversal
-- Overflow Handling
-- Boundary Conditions
+- Number Reversal
 - Palindrome Algorithms
 - Expand Around Center
 - String Algorithms
 - Algorithmic Complexity
+- Overflow Handling
+- Boundary Conditions
 - Problem Solving
 
 ---
@@ -673,13 +739,13 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **73 / 100** |
+| 📅 Days Completed | **74 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platforms | **HackerRank & LeetCode** |
-| 💻 Challenges Solved | **73** |
-| 📈 Progress | **73% Complete** |
-| 🔥 Current Streak | **73 Days** |
-| ⏳ Days Remaining | **27 Days** |
+| 💻 Challenges Solved | **74** |
+| 📈 Progress | **74% Complete** 🚀 |
+| 🔥 Current Streak | **74 Days** |
+| ⏳ Days Remaining | **26 Days** |
 | 🧠 Main Focus | **Java Programming, DSA & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque, PriorityQueue & HashMap** |
@@ -702,14 +768,15 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | 🔄 Day 71 Focus | **Reverse Integer, Digit Manipulation & Overflow Handling** |
 | 🪞 Day 72 Focus | **Longest Palindromic Substring, Strings, Palindrome Detection & Center Expansion** |
 | 🔤 Day 73 Focus | **String to Integer (atoi), String Parsing, Character Processing & Overflow Handling** |
+| 🔢 Day 74 Focus | **Palindrome Number, Integer Manipulation, Number Reversal & Palindrome Detection** |
 
 ---
 
 # 🔥 Current Streak
 
-## **73 Days of Java Practice Completed! 🎉🔥🚀**
+## **74 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **73 days down, 27 more to go!**
+> **74 days down, 26 more to go!**
 
 The first **64 days** helped me build a strong foundation in Java through HackerRank.
 
@@ -730,6 +797,8 @@ On **Day 71**, I solved **Reverse Integer**, strengthening my understanding of d
 On **Day 72**, I solved **Longest Palindromic Substring**, strengthening my understanding of String Algorithms, Palindrome Detection, Character Comparison, Substring Processing, and the Expand Around Center technique.
 
 On **Day 73**, I solved **String to Integer (atoi)**, strengthening my understanding of String Parsing, Character Processing, Sign Handling, Integer Conversion, Boundary Conditions, and Overflow Handling.
+
+On **Day 74**, I solved **Palindrome Number**, strengthening my understanding of Integer Manipulation, Digit Extraction, Number Reversal, Modulo Operations, Integer Division, Palindrome Detection, Edge Cases, and Constant-Space Problem Solving.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -770,6 +839,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 71 | ✅ Completed 🎉🔄🔢🔥 |
 | 🎯 Day 72 | ✅ Completed 🎉🪞🔤🔥 |
 | 🎯 Day 73 | ✅ Completed 🎉🔤🔢🔥 |
+| 🎯 Day 74 | ✅ Completed 🎉🔢🪞🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 80 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
@@ -836,13 +906,16 @@ Every challenge is another step toward becoming a stronger Java programmer.
 **Day 73**  
 ███████████████░░░░░ **73%**
 
+**Day 74**  
+███████████████░░░░░ **74%**
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ **73%**
+███████████████░░░░░ **74%**
 
-### **73 / 100 Days Completed**
+### **74 / 100 Days Completed**
 
-### **27 Days Remaining**
+### **26 Days Remaining**
 
 ---
 
@@ -904,7 +977,7 @@ It is also about:
 - 🪞 Practicing Palindrome Algorithms
 - 🧠 Learning Expand Around Center
 - 🔤 Practicing String Parsing
-- ➕ Handling Positive and Negative Numbers
+- 🔢 Practicing Number Reversal
 - ⚠️ Practicing Boundary Condition Handling
 - 💡 Improving algorithmic thinking
 - 💻 Writing cleaner Java code
@@ -1040,7 +1113,7 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#BinarySearch` `#DivideAndConquer` `#Strings` `#StringParsing` `#StringToInteger` `#Atoi` `#IntegerManipulation` `#IntegerReversal` `#OverflowHandling` `#BoundaryConditions` `#Palindrome` `#PalindromeSubstring` `#LongestPalindromicSubstring` `#ExpandAroundCenter` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#MedianOfTwoSortedArrays` `#ReverseInteger` `#StringToIntegerAtoi` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day73`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#BinarySearch` `#DivideAndConquer` `#Strings` `#StringParsing` `#StringToInteger` `#Atoi` `#IntegerManipulation` `#IntegerReversal` `#NumberReversal` `#Palindrome` `#PalindromeNumber` `#OverflowHandling` `#BoundaryConditions` `#PalindromeSubstring` `#LongestPalindromicSubstring` `#ExpandAroundCenter` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#MedianOfTwoSortedArrays` `#ReverseInteger` `#StringToIntegerAtoi` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day74`
 
 ---
 
@@ -1050,12 +1123,12 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**73 Days Completed ✅ | 27 Days Remaining ⏳ | 100 Days Goal 🎯**
+**74 Days Completed ✅ | 26 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🔍 🪟 🔤 🔢 🪞 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 73 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 74 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
