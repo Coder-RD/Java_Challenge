@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-74%25-success?style=for-the-badge" alt="74% Progress">
+  <img src="https://img.shields.io/badge/Progress-75%25-success?style=for-the-badge" alt="75% Progress">
 </p>
 
 <p align="center">
@@ -18,11 +18,13 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! ☕💻
 
-This repository documents my daily Java programming journey through **HackerRank and LeetCode**, where I solve programming challenges to strengthen my **Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Algorithms, Data Structures, Exception Handling, Regular Expressions, Reflection, Design Patterns, Annotations, Lambda Expressions, Functional Interfaces, Hashing, Cryptography, Sliding Window, Binary Search, Linked Lists, Palindrome Algorithms, Integer Manipulation, String Parsing, Overflow Handling, Boundary Conditions, and problem-solving skills**.
+This repository documents my daily Java programming journey through **HackerRank and LeetCode**, where I solve programming challenges to strengthen my Core Java, Object-Oriented Programming, Collections, Strings, Arrays, Algorithms, Data Structures, Exception Handling, Regular Expressions, Reflection, Design Patterns, Annotations, Lambda Expressions, Functional Interfaces, Hashing, Cryptography, Sliding Window, Binary Search, Linked Lists, Palindrome Algorithms, Integer Manipulation, String Parsing, Two-Pointer Techniques, Greedy Thinking, and problem-solving skills.
 
-For **Days 1–64**, I practiced Java challenges primarily on **HackerRank**.
+For **Days 1–64**, I practiced Java challenges primarily on HackerRank.
 
-Starting from **Day 65**, I transitioned to **LeetCode** to focus more on **Data Structures, Algorithms, Strings, Arrays, Hashing, Linked Lists, Sliding Window, Binary Search, Mathematical Problems, Palindrome Algorithms, Integer Manipulation, String Parsing, and algorithmic problem-solving**.
+Starting from **Day 65**, I transitioned to LeetCode to focus more on Data Structures and Algorithms, including Arrays, Strings, Hashing, Linked Lists, Sliding Window, Binary Search, Mathematical Problems, Palindrome Algorithms, Integer Manipulation, String Parsing, and efficient algorithmic problem-solving.
+
+On **Day 75**, I solved **Container With Most Water**, strengthening my understanding of Arrays, Two-Pointer Techniques, Area Calculation, Greedy Thinking, and Time Complexity Optimization.
 
 The goal is simple:
 
@@ -50,7 +52,7 @@ The goal is simple:
 - ⚠️ Handle exceptions using Try-Catch
 - 📦 Learn Java Collections Framework
 - 🔁 Practice Iterator
-- 📚 Work with Lists, Maps, Sets, Queues and Deques
+- 📚 Work with Lists, Maps, Sets, Queues, and Deques
 - 🏆 Practice PriorityQueue
 - 🧩 Understand Generics
 - 🔢 Practice Varargs
@@ -80,6 +82,11 @@ The goal is simple:
 - 🧮 Practice Mathematical Problem Solving
 - 🛡️ Handle Integer Overflow
 - 🧠 Practice Expand Around Center
+- 👆 Learn Two-Pointer Techniques
+- 📐 Calculate Areas using Array Elements
+- ⚖️ Compare Values Efficiently
+- 🎯 Explore Greedy Problem-Solving Techniques
+- ⏱️ Optimize Time Complexity
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong Java programming portfolio
 - 🌱 Learn and improve through consistent daily practice
@@ -137,6 +144,10 @@ The goal is simple:
 | 🧠 String Algorithms | String Parsing & Character Processing |
 | 🔤 String Conversion | String to Integer Conversion |
 | 🔢 Number Reversal | Reverse Integer & Palindrome Number |
+| 👆 Two Pointers | Efficient Array Traversal |
+| 📐 Area Calculation | Container With Most Water |
+| ⚖️ Greedy Technique | Choosing Which Pointer to Move |
+| ⏱️ Complexity Optimization | O(n) Array Processing |
 | ⚠️ Edge Case Handling | Negative Numbers, Zero, Whitespace, Sign & Overflow |
 
 ---
@@ -239,6 +250,9 @@ The goal is simple:
 ├── 📁 Day-74/  
 │   ├── 📄 Palindrome Number.java  
 │   └── 📸 Screenshot 2026-10-08 080052.png  
+├── 📁 Day-75/  
+│   ├── 📄 Container With Most Water.java  
+│   └── 📸 Screenshot 2026-10-09 210924.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -321,160 +335,177 @@ The goal is simple:
 | 🎉 Day 71 | LeetCode | Reverse Integer | Completed |
 | 🎉 Day 72 | LeetCode | Longest Palindromic Substring | Completed |
 | 🎉 Day 73 | LeetCode | String to Integer (atoi) | Completed |
-| 🪞 Day 74 | LeetCode | Palindrome Number | Completed |
-| ⏳ Day 75–99 | LeetCode | Upcoming DSA Challenges | Pending |
+| 🎉 Day 74 | LeetCode | Palindrome Number | Completed |
+| 🎉 Day 75 | LeetCode | Container With Most Water | Completed |
+| ⏳ Day 76–99 | LeetCode | Upcoming DSA Challenges | Pending |
 | 🎯 Day 100 | LeetCode | Final Goal | Pending |
 
 ---
 
-# 🆕 Day 74 – Palindrome Number
+# 🆕 Day 75 – Container With Most Water
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🏆 **Problem:** Palindrome Number
-- 🔢 **Problem Number:** LeetCode #9
-- 📅 **Day:** 74
-- 🎯 **Difficulty:** Easy
-- 🔢 **Topic:** Math & Integer Manipulation
-- 🔄 **Technique:** Number Reversal
-- 🧠 **Focus:** Digit Extraction, Integer Reversal, Comparison & Edge Cases
+- 🏆 **Problem:** Container With Most Water
+- 🔢 **Problem Number:** LeetCode #11
+- 📅 **Day:** 75
+- 🎯 **Difficulty:** Medium
+- 🔢 **Topic:** Arrays
+- 👆 **Technique:** Two-Pointer Approach
+- 🧠 **Focus:** Area Calculation, Pointer Movement, Greedy Thinking & Optimization
+- ⏱️ **Time Complexity:** O(n)
 - 💾 **Extra Space:** O(1)
-- ⏱️ **Time Complexity:** O(log₁₀ n)
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **Palindrome Number** problem asks us to determine whether a given integer reads the same from left to right and right to left.
+The **Container With Most Water** problem asks us to find two vertical lines in an integer array that, together with the x-axis, form a container capable of holding the maximum amount of water.
 
-A number is called a **palindrome** if its digits remain unchanged when the number is reversed.
+Each array element represents the height of a vertical line, and its index represents its position.
+
+The amount of water held between two lines depends on:
+
+- The distance between the two lines.
+- The height of the shorter line.
+
+The objective is to find the maximum possible area.
 
 ### Example 1
 
-Input: `121`
+Input: `height = [1,8,6,2,5,4,8,3,7]`
 
-Output: `true`
+Output: `49`
 
 Explanation:
 
-`121` reads as `121` from both directions.
+The lines at indices 1 and 8 have heights 8 and 7.
+
+Width = `8 - 1 = 7`
+
+Height = `min(8, 7) = 7`
+
+Area = `7 × 7 = 49`
+
+Therefore, the maximum area is `49`.
 
 ### Example 2
 
-Input: `-121`
+Input: `height = [1,1]`
 
-Output: `false`
-
-Explanation:
-
-A negative number is not considered a palindrome because reversing `-121` results in `121-`.
-
-### Example 3
-
-Input: `10`
-
-Output: `false`
+Output: `1`
 
 Explanation:
 
-Reversing `10` gives `01`, which is not equal to the original number.
+Width = `1`
+
+Minimum height = `1`
+
+Area = `1 × 1 = 1`
+
+Therefore, the maximum area is `1`.
 
 ---
 
 ## 🧠 Approach Used
 
-I solved this problem using **mathematical operations** instead of converting the integer into a String.
+I solved this problem using the **Two-Pointer Approach**.
 
-The solution follows these steps:
+Instead of checking every possible pair of lines, the solution starts with two pointers at opposite ends of the array and moves them toward each other.
 
-1. Check whether the number is negative.
-2. Store the original number.
-3. Extract the last digit using the `%` operator.
-4. Build the reversed number.
-5. Remove the last digit using integer division.
-6. Continue until the number becomes zero.
-7. Compare the original number with the reversed number.
-8. Return `true` if both numbers are equal.
-9. Otherwise, return `false`.
+### Steps
 
-This approach uses **constant extra space**.
+1. Initialize a left pointer at index `0`.
+2. Initialize a right pointer at the last index.
+3. Calculate the width between the two pointers.
+4. Find the minimum height of the two selected lines.
+5. Calculate the area using width multiplied by the minimum height.
+6. Update the maximum area if the current area is greater.
+7. Move the pointer pointing to the shorter line inward.
+8. Repeat until the left pointer meets the right pointer.
+9. Return the maximum area.
 
----
-
-## 🔢 Core Logic
-
-The last digit of an integer can be obtained using the modulo operator.
-
-For example:
-
-`121 % 10 = 1`
-
-The last digit can be removed using integer division:
-
-`121 / 10 = 12`
-
-The reversed number can be constructed by multiplying the current reversed number by `10` and adding the extracted digit.
-
-This process continues until all digits have been processed.
-
-Finally, the original number and reversed number are compared.
+This approach avoids unnecessary comparisons and improves efficiency.
 
 ---
 
-## 🧪 Dry Run – Example `121`
+## 📐 Core Logic
 
-| Step | Current Number | Extracted Digit | Reversed Number |
-|---|---:|---:|---:|
-| 1 | 121 | 1 | 1 |
-| 2 | 12 | 2 | 12 |
-| 3 | 1 | 1 | 121 |
+The area of water between two lines is calculated using:
 
-Final comparison:
+**Area = Width × Minimum Height**
 
-- Original Number = `121`
-- Reversed Number = `121`
+In mathematical form:
 
-Result:
+`area = (right - left) * Math.min(height[left], height[right])`
 
-`true`
+The maximum area is updated whenever a larger area is found.
 
-Therefore, `121` is a palindrome.
+The pointer movement rule is:
+
+- If `height[left] < height[right]`, increment `left`.
+- Otherwise, decrement `right`.
+
+Moving the shorter line is important because the amount of water is limited by the shorter line. Moving the taller line inward cannot increase the width and does not improve the limiting height for that pair.
+
+---
+
+## 🧪 Dry Run – Example
+
+Input:
+
+`height = [1,8,6,2,5,4,8,3,7]`
+
+| Left Index | Right Index | Left Height | Right Height | Width | Area | Maximum Area |
+|---:|---:|---:|---:|---:|---:|---:|
+| 0 | 8 | 1 | 7 | 8 | 8 | 8 |
+| 1 | 8 | 8 | 7 | 7 | 49 | 49 |
+| 1 | 7 | 8 | 3 | 6 | 18 | 49 |
+| 1 | 6 | 8 | 8 | 5 | 40 | 49 |
+| 1 | 5 | 8 | 4 | 4 | 16 | 49 |
+| 1 | 4 | 8 | 5 | 3 | 15 | 49 |
+| 1 | 3 | 8 | 2 | 2 | 4 | 49 |
+| 1 | 2 | 8 | 6 | 1 | 6 | 49 |
+
+Final result:
+
+`49`
+
+The maximum area is `49`.
 
 ---
 
 ## ❌ Important Edge Cases
 
-The solution handles different types of input:
-
 | Input | Output | Reason |
-|---:|:---:|---|
-| `121` | `true` | Same from both directions |
-| `-121` | `false` | Negative number |
-| `10` | `false` | Reversed number is `01` |
-| `0` | `true` | Single digit |
-| `7` | `true` | Single digit |
-| `123` | `false` | Reverse is `321` |
-| `1221` | `true` | Same from both directions |
+|---|---:|---|
+| `[1,1]` | `1` | Minimum valid input size |
+| `[1,2]` | `1` | Two different heights |
+| `[1,2,1]` | `2` | Maximum area is formed by the outer lines |
+| `[4,3,2,1,4]` | `16` | Maximum area is formed by the first and last lines |
+| `[1,8,6,2,5,4,8,3,7]` | `49` | Maximum area example |
+| `[2,3,4,5,18,17,6]` | `17` | Maximum area is found by comparing multiple pairs |
 
 ---
 
 ## 🧩 Concepts Practiced
 
 - ☕ Java Programming
-- 🔢 Integer Manipulation
-- 🔄 Number Reversal
-- 🧮 Mathematical Operations
-- `%` Modulo Operator
-- `/` Integer Division
-- 🔁 While Loop
+- 🔢 Arrays
+- 👆 Two-Pointer Technique
+- 📐 Area Calculation
+- ⚖️ Minimum Value Comparison
+- 🔄 Pointer Movement
+- 🧠 Greedy Thinking
+- ⏱️ Time Complexity Optimization
+- 💾 Constant Extra Space
 - 🔍 Conditional Statements
-- 🔢 Digit Extraction
-- 🧠 Logical Thinking
+- 🔁 Loops
+- 🧪 Dry Run Analysis
 - ⚠️ Edge Case Handling
-- 💾 Constant Space Problem Solving
 - 🎯 Algorithmic Thinking
 - 💻 LeetCode Problem Solving
 
@@ -484,43 +515,47 @@ The solution handles different types of input:
 
 ### Time Complexity
 
-**O(log₁₀ n)**
+**O(n)**
 
-The number of iterations depends on the number of digits in the input integer.
+Each pointer moves toward the other, and every iteration moves one pointer inward. Therefore, the total number of iterations is proportional to the array length.
 
 ### Space Complexity
 
 **O(1)**
 
-Only a fixed number of variables are used, so the algorithm requires constant extra space.
+The algorithm uses only a fixed number of variables, such as the left pointer, right pointer, current area, and maximum area.
+
+No additional array or collection is required.
 
 ---
 
-## 💡 Why Use Mathematical Operations?
+## 💡 Why Use the Two-Pointer Approach?
 
-Instead of converting the number into a String, this solution works directly with the digits of the integer.
+A brute-force solution checks every possible pair of lines, resulting in O(n²) time complexity.
 
-This approach provides practice with:
+The Two-Pointer Approach reduces the time complexity to O(n).
 
-- Digit extraction
-- Integer division
-- Modulo operations
-- Number reversal
-- Constant-space algorithms
-- Mathematical problem solving
+It helps develop an understanding of:
 
-It also strengthens the ability to solve numerical problems without relying on String conversion.
+- Efficient array traversal
+- Pointer-based problem solving
+- Greedy decision-making
+- Area optimization
+- Reducing unnecessary comparisons
+- Writing time-efficient algorithms
+
+This technique is useful in many array and string problems.
 
 ---
 
-## 📂 Day 74 Files
+## 📂 Day 75 Files
 
-- 💻 `Palindrome Number.java`
-- 📸 `Screenshot 2026-10-08 080052.png`
+- 💻 `Container With Most Water.java`
+- 📸 `Screenshot 2026-10-09 210924.png`
 
-The Java file contains the complete solution for **LeetCode #9 – Palindrome Number**.
+The Java file contains the solution for **LeetCode #11 – Container With Most Water**.
 
-The screenshot contains the successful submission/result for the completed challenge.
+The screenshot records the submission/result for the completed challenge.
 
 ---
 
@@ -606,6 +641,9 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - String Parsing
 - Overflow Handling
 - Boundary Conditions
+- Two-Pointer Techniques
+- Array Optimization
+- Area Calculation
 
 ---
 
@@ -622,7 +660,8 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | ✅ Day 71 | Reverse Integer | Integer Manipulation & Overflow Handling |
 | ✅ Day 72 | Longest Palindromic Substring | Strings, Palindrome Detection & Center Expansion |
 | ✅ Day 73 | String to Integer (atoi) | String Parsing, Integer Conversion & Overflow Handling |
-| 🪞 Day 74 | Palindrome Number | Integer Manipulation, Number Reversal & Palindrome Detection |
+| ✅ Day 74 | Palindrome Number | Integer Manipulation, Number Reversal & Palindrome Detection |
+| ✅ Day 75 | Container With Most Water | Arrays, Two Pointers, Area Calculation & Greedy Thinking |
 
 ---
 
@@ -727,6 +766,8 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 - Number Reversal
 - Palindrome Algorithms
 - Expand Around Center
+- Two-Pointer Technique
+- Area Optimization
 - String Algorithms
 - Algorithmic Complexity
 - Overflow Handling
@@ -739,13 +780,13 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **74 / 100** |
+| 📅 Days Completed | **75 / 100** |
 | ☕ Language | **Java** |
 | 🏆 Platforms | **HackerRank & LeetCode** |
-| 💻 Challenges Solved | **74** |
-| 📈 Progress | **74% Complete** 🚀 |
-| 🔥 Current Streak | **74 Days** |
-| ⏳ Days Remaining | **26 Days** |
+| 💻 Challenges Solved | **75** |
+| 📈 Progress | **75% Complete** 🚀 |
+| 🔥 Current Streak | **75 Days** |
+| ⏳ Days Remaining | **25 Days** |
 | 🧠 Main Focus | **Java Programming, DSA & Problem Solving** |
 | 🏗️ OOP Focus | **Inheritance, Abstraction, Interfaces, Polymorphism, Access Modifiers, Inner Classes, Visitor Pattern & Covariant Return Types** |
 | 📦 Collections Focus | **List, Map, Set, Stack, Queue, Deque, PriorityQueue & HashMap** |
@@ -769,18 +810,19 @@ Starting from Day 65, I am using LeetCode to continue Java practice with a stron
 | 🪞 Day 72 Focus | **Longest Palindromic Substring, Strings, Palindrome Detection & Center Expansion** |
 | 🔤 Day 73 Focus | **String to Integer (atoi), String Parsing, Character Processing & Overflow Handling** |
 | 🔢 Day 74 Focus | **Palindrome Number, Integer Manipulation, Number Reversal & Palindrome Detection** |
+| 👆 Day 75 Focus | **Container With Most Water, Arrays, Two-Pointer Technique, Area Calculation & Greedy Thinking** |
 
 ---
 
 # 🔥 Current Streak
 
-## **74 Days of Java Practice Completed! 🎉🔥🚀**
+## **75 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **74 days down, 26 more to go!**
+> **75 days down, 25 more to go!**
 
 The first **64 days** helped me build a strong foundation in Java through HackerRank.
 
-On **Day 65**, I started solving Java problems on **LeetCode**, adding Data Structures and Algorithms to my learning journey.
+On **Day 65**, I started solving Java problems on LeetCode, adding Data Structures and Algorithms to my learning journey.
 
 On **Day 66**, I solved **Roman to Integer**, strengthening my understanding of String Processing and Roman Numerals.
 
@@ -799,6 +841,8 @@ On **Day 72**, I solved **Longest Palindromic Substring**, strengthening my unde
 On **Day 73**, I solved **String to Integer (atoi)**, strengthening my understanding of String Parsing, Character Processing, Sign Handling, Integer Conversion, Boundary Conditions, and Overflow Handling.
 
 On **Day 74**, I solved **Palindrome Number**, strengthening my understanding of Integer Manipulation, Digit Extraction, Number Reversal, Modulo Operations, Integer Division, Palindrome Detection, Edge Cases, and Constant-Space Problem Solving.
+
+On **Day 75**, I solved **Container With Most Water**, strengthening my understanding of Arrays, Two-Pointer Techniques, Area Calculation, Pointer Movement, Greedy Thinking, and O(n) Time Complexity Optimization.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -840,7 +884,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 72 | ✅ Completed 🎉🪞🔤🔥 |
 | 🎯 Day 73 | ✅ Completed 🎉🔤🔢🔥 |
 | 🎯 Day 74 | ✅ Completed 🎉🔢🪞🔥 |
-| 🎯 Day 75 | ⏳ Upcoming |
+| 🎯 Day 75 | ✅ Completed 🎉👆📐🔥 |
 | 🎯 Day 80 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -909,13 +953,16 @@ Every challenge is another step toward becoming a stronger Java programmer.
 **Day 74**  
 ███████████████░░░░░ **74%**
 
+**Day 75**  
+███████████████░░░░░ **75%**
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ **74%**
+███████████████░░░░░ **75%**
 
-### **74 / 100 Days Completed**
+### **75 / 100 Days Completed**
 
-### **26 Days Remaining**
+### **25 Days Remaining**
 
 ---
 
@@ -978,6 +1025,10 @@ It is also about:
 - 🧠 Learning Expand Around Center
 - 🔤 Practicing String Parsing
 - 🔢 Practicing Number Reversal
+- 👆 Practicing Two-Pointer Techniques
+- 📐 Optimizing Area Calculation
+- ⚖️ Applying Greedy Decisions
+- ⏱️ Improving Time Complexity
 - ⚠️ Practicing Boundary Condition Handling
 - 💡 Improving algorithmic thinking
 - 💻 Writing cleaner Java code
@@ -1025,6 +1076,8 @@ It serves as:
 - 🔤 My String Algorithm practice
 - 🪞 My Palindrome Algorithm practice
 - 🧠 My String Parsing practice
+- 👆 My Two-Pointer Technique practice
+- 📐 My Area Optimization practice
 - 🎯 My DSA problem-solving practice
 - 💼 A part of my placement preparation
 - 🚀 A demonstration of consistency
@@ -1059,6 +1112,7 @@ The upcoming days will continue with Java programming and DSA concepts, includin
 - 📊 Divide and Conquer
 - 🔤 Advanced String Algorithms
 - 🪞 Palindrome-Based Problems
+- 👆 Two-Pointer Problems
 - 🎯 Interview-Oriented Java Problems
 - 🏗️ Object-Oriented Design
 - 🧩 Advanced Programming Concepts
@@ -1075,7 +1129,7 @@ Each day's folder may contain:
 - ☕ Java Solution
 - 📸 HackerRank or LeetCode Submission Screenshot
 
-The repository serves as a complete record of my **100 Days of Java learning journey**.
+The repository serves as a record of my **100 Days of Java learning journey**.
 
 ---
 
@@ -1113,7 +1167,7 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#BinarySearch` `#DivideAndConquer` `#Strings` `#StringParsing` `#StringToInteger` `#Atoi` `#IntegerManipulation` `#IntegerReversal` `#NumberReversal` `#Palindrome` `#PalindromeNumber` `#OverflowHandling` `#BoundaryConditions` `#PalindromeSubstring` `#LongestPalindromicSubstring` `#ExpandAroundCenter` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#MedianOfTwoSortedArrays` `#ReverseInteger` `#StringToIntegerAtoi` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day74`
+`#100DaysOfCode` `#100DaysOfJava` `#Java` `#JavaProgramming` `#CoreJava` `#HackerRank` `#LeetCode` `#JavaChallenge` `#CodingChallenge` `#OOP` `#ObjectOrientedProgramming` `#JavaCollections` `#CollectionsFramework` `#JavaRegex` `#Regex` `#ExceptionHandling` `#JavaReflection` `#JavaAnnotations` `#Annotations` `#DesignPatterns` `#FactoryPattern` `#SingletonPattern` `#VisitorPattern` `#TreeTraversal` `#PriorityQueue` `#Deque` `#Iterator` `#Generics` `#Varargs` `#AccessModifiers` `#InnerClasses` `#CovariantReturnTypes` `#LambdaExpressions` `#FunctionalProgramming` `#FunctionalInterface` `#MessageDigest` `#MD5` `#SHA256` `#SHA256Hashing` `#Cryptography` `#Hashing` `#HashMap` `#Arrays` `#LinkedList` `#SlidingWindow` `#BinarySearch` `#DivideAndConquer` `#Strings` `#StringParsing` `#StringToInteger` `#Atoi` `#IntegerManipulation` `#IntegerReversal` `#NumberReversal` `#Palindrome` `#PalindromeNumber` `#OverflowHandling` `#BoundaryConditions` `#PalindromeSubstring` `#LongestPalindromicSubstring` `#ExpandAroundCenter` `#TwoPointers` `#ContainerWithMostWater` `#GreedyAlgorithms` `#ArrayProblems` `#Polymorphism` `#MethodOverriding` `#DSA` `#DataStructures` `#Algorithms` `#TwoSum` `#AddTwoNumbers` `#RomanToInteger` `#IntegerToRoman` `#LongestSubstringWithoutRepeatingCharacters` `#MedianOfTwoSortedArrays` `#ReverseInteger` `#StringToIntegerAtoi` `#ProblemSolving` `#CodingJourney` `#LearningInPublic` `#GitHub` `#Programming` `#SoftwareDevelopment` `#MCA` `#Day75`
 
 ---
 
@@ -1123,12 +1177,12 @@ LeetCode is the platform I am using from **Day 65 onward** for Java-based algori
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**74 Days Completed ✅ | 26 Days Remaining ⏳ | 100 Days Goal 🎯**
+**75 Days Completed ✅ | 25 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🔍 🪟 🔤 🔢 🪞 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 🧭 🏷️ 🔄 ⚡ 🔗 🛡️ 🧮 📊 🔍 🪟 🔤 🔢 👆 📐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 74 Days of Consistent Java Practice — Keep Going! 🔥</strong>
+  <strong>🔥 75 Days of Consistent Java Practice — Keep Going! 🔥</strong>
 </p>
