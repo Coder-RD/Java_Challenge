@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-76%25-success?style=for-the-badge" alt="76% Progress">
+  <img src="https://img.shields.io/badge/Progress-77%25-success?style=for-the-badge" alt="77% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>76 Days Completed ✅ | 24 Days Remaining ⏳ | 100 Days Goal 🎯</strong>
+  <strong>77 Days Completed ✅ | 23 Days Remaining ⏳ | 100 Days Goal 🎯</strong>
 </p>
 
 ---
@@ -22,13 +22,13 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! ☕💻
 
-This repository documents my daily Java programming journey through **HackerRank and LeetCode**. The main objective is to strengthen my Core Java knowledge, improve Data Structures and Algorithms (DSA), develop logical thinking, and build efficient problem-solving skills through consistent practice.
+This repository documents my daily Java programming journey through **HackerRank and LeetCode**. The objective is to strengthen my Core Java knowledge, improve Data Structures and Algorithms (DSA), develop logical thinking, and build efficient problem-solving skills through consistent practice.
 
-For **Days 1–64**, I practiced Java programming challenges primarily on HackerRank.
+For **Days 1–64**, I practiced Java programming challenges primarily on HackerRank, covering Core Java, Object-Oriented Programming, Collections, Exception Handling, Regular Expressions, Reflection, Design Patterns, Lambda Expressions, and Cryptographic Hashing.
 
-Starting from **Day 65**, I transitioned to LeetCode to focus on algorithmic problem-solving, data structures, arrays, strings, linked lists, binary search, sliding window, mathematical problems, and optimization techniques.
+Starting from **Day 65**, I transitioned to LeetCode to focus on algorithmic problem-solving, data structures, arrays, strings, linked lists, binary search, sliding window, two pointers, and mathematical problems.
 
-On **Day 76**, I solved **Longest Common Prefix**, strengthening my understanding of String Manipulation, Character Comparison, Prefix Matching, Array Traversal, and Edge Case Handling.
+On **Day 77**, I solved **Letter Combinations of a Phone Number**, strengthening my understanding of Strings, Arrays, Recursion, Backtracking, and Depth-First Search (DFS).
 
 The goal is simple:
 
@@ -56,6 +56,8 @@ The goal is simple:
 - ⚠️ Handle exceptions, boundary conditions, and integer overflow.
 - ⚡ Learn Lambda Expressions and Functional Interfaces.
 - 🏭 Understand common Java design patterns.
+- 🔄 Develop recursion and backtracking skills.
+- 🌳 Explore tree traversal and graph algorithms.
 - ⏱️ Analyze time and space complexity.
 - 🎯 Prepare for technical interviews and placement opportunities.
 - 💼 Build a strong Java programming portfolio.
@@ -88,6 +90,8 @@ The goal is simple:
 | 🔗 Linked Lists | Node Traversal and Carry Handling |
 | 🪞 Palindrome Algorithms | Palindrome Detection and Center Expansion |
 | 🔢 Number Processing | Digit Extraction, Integer Reversal, Mathematical Operations |
+| 🔄 Recursion | Recursive Problem Solving and Backtracking |
+| 📱 Combinatorial Problems | Phone Keypad Mapping and Combination Generation |
 | 🛡️ Boundary Handling | Negative Numbers, Integer Overflow, Edge Cases |
 | 📈 Optimization | Time Complexity and Space Complexity Analysis |
 
@@ -139,8 +143,16 @@ The repository contains separate folders for each completed daily challenge.
     ├── Day-76/
     │   ├── Longest Common Prefix.java
     │   └── Screenshot 2026-10-10 062700.png
+    ├── Day-77/
+    │   ├── Letter Combinations of a Phone Number.java
+    │   └── Screenshot 2026-10-11 060411.png
+    ├── Day-78/
+    ├── ...
+    ├── Day-100/
     ├── README.md
     └── LICENSE
+
+Each daily folder contains the Java solution and, where available, a screenshot documenting the submission or result.
 
 ---
 
@@ -224,97 +236,111 @@ The repository contains separate folders for each completed daily challenge.
 | Day 74 | LeetCode | Palindrome Number | ✅ Completed |
 | Day 75 | LeetCode | Container With Most Water | ✅ Completed |
 | Day 76 | LeetCode | Longest Common Prefix | ✅ Completed |
-| Day 77–99 | LeetCode | Upcoming DSA Challenges | ⏳ Pending |
+| Day 77 | LeetCode | Letter Combinations of a Phone Number | ✅ Completed |
+| Day 78–99 | LeetCode | Upcoming DSA Challenges | ⏳ Pending |
 | Day 100 | LeetCode | Final Challenge | 🎯 Goal |
 
 ---
 
-# 🆕 Day 76 – Longest Common Prefix
+# 🆕 Day 77 – Letter Combinations of a Phone Number
 
 ## 📌 Challenge Information
 
 - **Platform:** LeetCode
 - **Language:** Java
-- **Problem:** Longest Common Prefix
-- **Problem Number:** LeetCode #14
-- **Day:** 76
-- **Difficulty:** Easy
-- **Topic:** Strings
-- **Technique:** Prefix Matching and Character Comparison
+- **Problem:** Letter Combinations of a Phone Number
+- **Problem Number:** LeetCode #17
+- **Day:** 77
+- **Difficulty:** Medium
+- **Topic:** Strings, Recursion, and Backtracking
+- **Technique:** Depth-First Search (DFS) and Combination Generation
 - **Status:** Completed
 
 ## 🎯 Challenge Objective
 
-The **Longest Common Prefix** problem asks us to find the longest string that appears at the beginning of every string in a given array.
+The **Letter Combinations of a Phone Number** problem asks us to generate all possible letter combinations represented by a string of digits from `2` to `9`.
 
-If there is no common prefix, the function should return an empty string.
+Each digit corresponds to a set of letters on a traditional telephone keypad. The task is to return every possible combination in any order.
 
 ### Example 1
 
-Input: `strs = ["flower","flow","flight"]`
+Input: `digits = "23"`
 
-Output: `"fl"`
+Output: `["ad","ae","af","bd","be","bf","cd","ce","cf"]`
 
 Explanation:
 
-The strings share the characters `f` and `l` at the beginning. The next characters differ, so the longest common prefix is `"fl"`.
+- Digit `2` represents `a`, `b`, and `c`.
+- Digit `3` represents `d`, `e`, and `f`.
+- Combining these letters produces nine possible combinations.
 
 ### Example 2
 
-Input: `strs = ["dog","racecar","car"]`
+Input: `digits = ""`
 
-Output: `""`
+Output: `[]`
 
 Explanation:
 
-The strings do not share a common prefix, so the result is an empty string.
+An empty input string produces an empty list of combinations.
+
+### Example 3
+
+Input: `digits = "2"`
+
+Output: `["a","b","c"]`
+
+Explanation:
+
+Digit `2` corresponds to three letters: `a`, `b`, and `c`.
 
 ## 🧠 Approach
 
-The problem can be solved using character-by-character comparison, vertical scanning, horizontal scanning, or other prefix-matching techniques.
+A common approach uses **backtracking** to generate every possible combination.
 
-A common approach is to compare the characters at the same index across all strings:
+1. Handle the empty input by returning an empty list.
+2. Create a mapping between digits and their corresponding letters.
+3. Start processing the first digit.
+4. Try each letter associated with the current digit.
+5. Append the selected letter to the current combination.
+6. Recursively process the next digit.
+7. When the combination contains one letter for every digit, add it to the result.
+8. Backtrack by removing the last selected letter and try the next possibility.
 
-1. Check whether the input array is empty.
-2. Start from the first character of the strings.
-3. Compare the character at the current index across all strings.
-4. Stop if a string ends or a character differs.
-5. Return the matching prefix.
-
-The exact implementation details depend on the approach used in the submitted Java solution.
+This process explores all possible combinations without needing to generate them manually.
 
 ## 🧩 Concepts Practiced
 
 - Java Strings
-- String Arrays
-- Character Comparison
-- Prefix Matching
-- Array Traversal
-- Loops and Conditional Statements
-- String Length
-- Empty String Handling
-- Edge Case Analysis
-- Algorithmic Thinking
+- Arrays
+- ArrayList
+- HashMap or Digit-to-Letter Mapping
+- Recursion
+- Backtracking
+- Depth-First Search (DFS)
+- Combination Generation
+- StringBuilder
+- Base Cases
+- Empty Input Handling
+- Recursive State Management
+- Algorithmic Complexity
 
 ## ⏱️ Complexity Analysis
 
-For a typical character-by-character solution, let:
+Let `n` be the number of digits in the input and `k` be the maximum number of letters associated with a digit. For digits from `2` to `9`, `k` is at most `4`.
 
-- `n` be the number of strings.
-- `m` be the length of the shortest string.
+**Time Complexity:** O(n × kⁿ), accounting for generating up to `kⁿ` combinations of length `n`.
 
-**Time Complexity:** O(n × m) in the worst case, because characters may need to be compared across all strings.
+**Space Complexity:** O(n) auxiliary space for the recursion depth and current combination, excluding the output list. The output itself can contain up to O(n × kⁿ) characters.
 
-**Space Complexity:** Depends on the implementation. A solution that tracks only indices and returns a substring generally uses O(1) auxiliary space, excluding the returned string.
+## 📂 Day 77 Files
 
-## 📂 Day 76 Files
+- `Letter Combinations of a Phone Number.java`
+- `Screenshot 2026-10-11 060411.png`
 
-- `Longest Common Prefix.java`
-- `Screenshot 2026-10-10 062700.png`
+The Java file contains the solution for **LeetCode #17 – Letter Combinations of a Phone Number**.
 
-The Java file contains the solution for **LeetCode #14 – Longest Common Prefix**.
-
-The screenshot records the submission or result for the completed challenge.
+The screenshot documents the submission or result for the completed challenge.
 
 ---
 
@@ -325,7 +351,7 @@ My 100 Days of Java Challenge is divided into two learning phases.
 | Days | Platform | Primary Focus |
 |---|---|---|
 | Days 1–64 | HackerRank | Core Java, OOP, Collections, and Advanced Java |
-| Days 65–100 | LeetCode | Java, DSA, Algorithms, and Problem Solving |
+| Days 65–100 | LeetCode | Java, DSA, Algorithms, Recursion, and Problem Solving |
 
 ---
 
@@ -367,12 +393,12 @@ Major topics included:
 
 Starting from Day 65, I began solving Java programming challenges on LeetCode with a stronger focus on Data Structures and Algorithms.
 
-### Completed Problems
+## ✅ Completed Problems
 
 | Day | Problem | Main Concepts |
 |---|---|---|
 | Day 65 | Integer to Roman | Strings and Roman Numerals |
-| Day 66 | Roman to Integer | String Processing and Mapping |
+| Day 66 | Roman to Integer | String Processing and Value Mapping |
 | Day 67 | Two Sum | Arrays and HashMap |
 | Day 68 | Add Two Numbers | Linked Lists and Carry Handling |
 | Day 69 | Longest Substring Without Repeating Characters | Strings, Hashing, and Sliding Window |
@@ -383,8 +409,9 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 | Day 74 | Palindrome Number | Digit Manipulation and Palindrome Detection |
 | Day 75 | Container With Most Water | Arrays, Two Pointers, and Greedy Thinking |
 | Day 76 | Longest Common Prefix | Strings, Character Comparison, and Prefix Matching |
+| Day 77 | Letter Combinations of a Phone Number | Strings, Recursion, Backtracking, and DFS |
 
-### Upcoming Areas of Practice
+## ⏳ Upcoming Areas of Practice
 
 - Arrays and Strings
 - Hashing and HashMap
@@ -492,9 +519,11 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 - Prefix Matching
 - Mathematical Problems
 - Recursion
-- Dynamic Programming
 - Backtracking
+- Dynamic Programming
 - Bit Manipulation
+- Depth-First Search
+- Combination Generation
 - Time Complexity
 - Space Complexity
 - Edge Case Handling
@@ -506,12 +535,12 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **76 / 100** |
+| 📅 Days Completed | **77 / 100** |
 | ☕ Programming Language | **Java** |
 | 🏆 Platforms | **HackerRank and LeetCode** |
-| 💻 Completed Challenges | **76** |
-| 📈 Progress | **76% Complete** 🚀 |
-| ⏳ Days Remaining | **24 Days** |
+| 💻 Completed Challenges | **77** |
+| 📈 Progress | **77% Complete** 🚀 |
+| ⏳ Days Remaining | **23 Days** |
 | 🎯 Final Goal | **100 Days of Java Practice** |
 | 🧠 Primary Focus | **Java, DSA, and Problem Solving** |
 | 🏗️ OOP Focus | Inheritance, Abstraction, Interfaces, and Polymorphism |
@@ -529,31 +558,34 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 | 🔤 String Parsing | String to Integer (atoi) |
 | 👆 Two Pointers | Container With Most Water |
 | 🔠 Prefix Matching | Longest Common Prefix |
+| 🔄 Recursion and Backtracking | Letter Combinations of a Phone Number |
+| 🌳 DFS | Recursive Exploration and Combination Generation |
 
 ---
 
 # 🔥 Current Streak
 
-## **76 Days of Java Practice Completed! 🎉🔥🚀**
+## **77 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **76 days down, 24 more to go!**
+> **77 days down, 23 more to go!**
 
 The first 64 days helped me establish a strong foundation in Java through HackerRank.
 
 From Day 65 onward, I have been solving LeetCode problems to strengthen my Data Structures and Algorithms skills.
 
-- **Day 65:** Solved *Integer to Roman*, focusing on Roman numeral representation and String Processing.
-- **Day 66:** Solved *Roman to Integer*, practicing String Processing and value mapping.
-- **Day 67:** Solved *Two Sum*, strengthening Arrays, HashMap, and efficient searching.
-- **Day 68:** Solved *Add Two Numbers*, practicing Linked Lists, node traversal, addition, and carry handling.
-- **Day 69:** Solved *Longest Substring Without Repeating Characters*, exploring Strings, Hashing, and Sliding Window.
-- **Day 70:** Solved *Median of Two Sorted Arrays*, strengthening Binary Search, array partitioning, and Divide and Conquer.
+- **Day 65:** Solved *Integer to Roman*, focusing on Roman numeral representation and string processing.
+- **Day 66:** Solved *Roman to Integer*, practicing string processing and value mapping.
+- **Day 67:** Solved *Two Sum*, strengthening arrays, HashMap, and efficient searching.
+- **Day 68:** Solved *Add Two Numbers*, practicing linked lists, node traversal, addition, and carry handling.
+- **Day 69:** Solved *Longest Substring Without Repeating Characters*, exploring strings, hashing, and sliding window.
+- **Day 70:** Solved *Median of Two Sorted Arrays*, strengthening binary search, array partitioning, and divide and conquer.
 - **Day 71:** Solved *Reverse Integer*, practicing digit manipulation, integer reversal, and overflow handling.
 - **Day 72:** Solved *Longest Palindromic Substring*, exploring palindrome detection and Expand Around Center.
-- **Day 73:** Solved *String to Integer (atoi)*, practicing String Parsing, sign handling, and overflow protection.
+- **Day 73:** Solved *String to Integer (atoi)*, practicing string parsing, sign handling, and overflow protection.
 - **Day 74:** Solved *Palindrome Number*, strengthening digit extraction, number reversal, and palindrome detection.
-- **Day 75:** Solved *Container With Most Water*, practicing Two-Pointer Techniques, area calculation, and Greedy Thinking.
-- **Day 76:** Solved *Longest Common Prefix*, strengthening String Manipulation, Character Comparison, and Prefix Matching.
+- **Day 75:** Solved *Container With Most Water*, practicing two-pointer techniques, area calculation, and greedy thinking.
+- **Day 76:** Solved *Longest Common Prefix*, strengthening string manipulation, character comparison, and prefix matching.
+- **Day 77:** Solved *Letter Combinations of a Phone Number*, practicing recursion, backtracking, digit-to-letter mapping, and combination generation.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -576,6 +608,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 70 | ✅ Completed |
 | 🎯 Day 75 | ✅ Completed |
 | 🎯 Day 76 | ✅ Completed |
+| 🎯 Day 77 | ✅ Completed |
 | 🎯 Day 80 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -640,13 +673,17 @@ Every challenge is another step toward becoming a stronger Java programmer.
 
 ███████████████░░░░░ 76%
 
+**Day 77**
+
+███████████████░░░░░ 77%
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ 76%
+███████████████░░░░░ 77%
 
-### **76 / 100 Days Completed**
+### **77 / 100 Days Completed**
 
-### **24 Days Remaining**
+### **23 Days Remaining**
 
 ---
 
@@ -693,6 +730,8 @@ Through this challenge, I am working to:
 - 🔤 Improve String Processing and Prefix Matching.
 - 👆 Apply Two-Pointer Techniques.
 - 📐 Practice area calculation and optimization.
+- 🔄 Develop recursion and backtracking skills.
+- 🌳 Explore depth-first search and combination generation.
 - 🧠 Strengthen logical and analytical thinking.
 - ⏱️ Understand algorithmic complexity.
 - ⚠️ Handle boundary conditions and edge cases.
@@ -728,6 +767,8 @@ It serves as:
 - 🪞 My Palindrome Algorithm practice.
 - 👆 My Two-Pointer Technique practice.
 - 🔠 My String Algorithm and Prefix Matching practice.
+- 🔄 My Recursion and Backtracking practice.
+- 🌳 My DFS and Combination Generation practice.
 - 💼 A part of my technical interview preparation.
 - 🚀 A demonstration of consistency and continuous learning.
 
@@ -811,7 +852,7 @@ LeetCode is the platform I am using from Day 65 onward for Java-based algorithm 
 
 # 🔖 Hashtags
 
-#100DaysOfCode #100DaysOfJava #Java #JavaProgramming #CoreJava #HackerRank #LeetCode #JavaChallenge #CodingChallenge #OOP #ObjectOrientedProgramming #JavaCollections #CollectionsFramework #JavaRegex #ExceptionHandling #JavaReflection #JavaAnnotations #DesignPatterns #FactoryPattern #SingletonPattern #VisitorPattern #TreeTraversal #PriorityQueue #Deque #Iterator #Generics #Varargs #CovariantReturnTypes #LambdaExpressions #FunctionalProgramming #FunctionalInterface #MessageDigest #MD5 #SHA256 #Cryptography #Hashing #HashMap #Arrays #LinkedList #SlidingWindow #BinarySearch #DivideAndConquer #Strings #StringParsing #StringToInteger #Atoi #IntegerManipulation #IntegerReversal #Palindrome #PalindromeNumber #OverflowHandling #BoundaryConditions #LongestPalindromicSubstring #ExpandAroundCenter #TwoPointers #ContainerWithMostWater #LongestCommonPrefix #GreedyAlgorithms #ArrayProblems #DSA #DataStructures #Algorithms #TwoSum #AddTwoNumbers #RomanToInteger #IntegerToRoman #LongestSubstringWithoutRepeatingCharacters #MedianOfTwoSortedArrays #ReverseInteger #ProblemSolving #CodingJourney #LearningInPublic #GitHub #Programming #SoftwareDevelopment #MCA #Day76
+#100DaysOfCode #100DaysOfJava #Java #JavaProgramming #CoreJava #HackerRank #LeetCode #JavaChallenge #CodingChallenge #OOP #ObjectOrientedProgramming #JavaCollections #CollectionsFramework #JavaRegex #ExceptionHandling #JavaReflection #JavaAnnotations #DesignPatterns #FactoryPattern #SingletonPattern #VisitorPattern #TreeTraversal #PriorityQueue #Deque #Iterator #Generics #Varargs #CovariantReturnTypes #LambdaExpressions #FunctionalProgramming #FunctionalInterface #MessageDigest #MD5 #SHA256 #Cryptography #Hashing #HashMap #Arrays #LinkedList #SlidingWindow #BinarySearch #DivideAndConquer #Strings #StringParsing #StringToInteger #Atoi #IntegerManipulation #IntegerReversal #Palindrome #PalindromeNumber #OverflowHandling #BoundaryConditions #LongestPalindromicSubstring #ExpandAroundCenter #TwoPointers #ContainerWithMostWater #LongestCommonPrefix #LetterCombinationsOfAPhoneNumber #Recursion #Backtracking #DepthFirstSearch #CombinationGeneration #GreedyAlgorithms #ArrayProblems #DSA #DataStructures #Algorithms #TwoSum #AddTwoNumbers #RomanToInteger #IntegerToRoman #LongestSubstringWithoutRepeatingCharacters #MedianOfTwoSortedArrays #ReverseInteger #ProblemSolving #CodingJourney #LearningInPublic #GitHub #Programming #SoftwareDevelopment #MCA #Day77
 
 ---
 
@@ -821,12 +862,12 @@ LeetCode is the platform I am using from Day 65 onward for Java-based algorithm 
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**76 Days Completed ✅ | 24 Days Remaining ⏳ | 100 Days Goal 🎯**
+**77 Days Completed ✅ | 23 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 ⚡ 🔗 🛡️ 🧮 📊 🪟 🔤 🔢 👆 🔠 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 76 Days of Java Practice — One Step Closer to 100! 🔥</strong>
+  <strong>🔥 77 Days of Java Practice — One Step Closer to 100! 🔥</strong>
 </p>
