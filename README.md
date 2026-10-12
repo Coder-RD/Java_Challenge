@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-77%25-success?style=for-the-badge" alt="77% Progress">
+  <img src="https://img.shields.io/badge/Progress-78%25-success?style=for-the-badge" alt="78% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>77 Days Completed ✅ | 23 Days Remaining ⏳ | 100 Days Goal 🎯</strong>
+  <strong>78 Days Completed ✅ | 22 Days Remaining ⏳ | 100 Days Goal 🎯</strong>
 </p>
 
 ---
@@ -26,9 +26,11 @@ This repository documents my daily Java programming journey through **HackerRank
 
 For **Days 1–64**, I practiced Java programming challenges primarily on HackerRank, covering Core Java, Object-Oriented Programming, Collections, Exception Handling, Regular Expressions, Reflection, Design Patterns, Lambda Expressions, and Cryptographic Hashing.
 
-Starting from **Day 65**, I transitioned to LeetCode to focus on algorithmic problem-solving, data structures, arrays, strings, linked lists, binary search, sliding window, two pointers, and mathematical problems.
+Starting from **Day 65**, I transitioned to LeetCode to focus on algorithmic problem-solving, data structures, arrays, strings, linked lists, binary search, sliding window, two pointers, recursion, backtracking, and mathematical problems.
 
-On **Day 77**, I solved **Letter Combinations of a Phone Number**, strengthening my understanding of Strings, Arrays, Recursion, Backtracking, and Depth-First Search (DFS).
+On **Day 77**, I solved **Letter Combinations of a Phone Number**, strengthening my understanding of Strings, Recursion, Backtracking, and Depth-First Search (DFS).
+
+On **Day 78**, I solved **Next Permutation**, practicing array manipulation, lexicographical ordering, and the Two-Pointer technique to find the next greater permutation efficiently.
 
 The goal is simple:
 
@@ -58,6 +60,7 @@ The goal is simple:
 - 🏭 Understand common Java design patterns.
 - 🔄 Develop recursion and backtracking skills.
 - 🌳 Explore tree traversal and graph algorithms.
+- 🔀 Practice permutations and array rearrangement.
 - ⏱️ Analyze time and space complexity.
 - 🎯 Prepare for technical interviews and placement opportunities.
 - 💼 Build a strong Java programming portfolio.
@@ -88,10 +91,11 @@ The goal is simple:
 | 🪟 Sliding Window | Substring Processing and Duplicate Detection |
 | 👆 Two Pointers | Efficient Array Traversal and Optimization |
 | 🔗 Linked Lists | Node Traversal and Carry Handling |
-| 🪞 Palindrome Algorithms | Palindrome Detection and Center Expansion |
+| 🪞 Palindrome Algorithms | Palindrome Detection and Expand Around Center |
 | 🔢 Number Processing | Digit Extraction, Integer Reversal, Mathematical Operations |
 | 🔄 Recursion | Recursive Problem Solving and Backtracking |
 | 📱 Combinatorial Problems | Phone Keypad Mapping and Combination Generation |
+| 🔀 Permutations | Lexicographical Ordering and In-Place Array Rearrangement |
 | 🛡️ Boundary Handling | Negative Numbers, Integer Overflow, Edge Cases |
 | 📈 Optimization | Time Complexity and Space Complexity Analysis |
 
@@ -99,7 +103,7 @@ The goal is simple:
 
 ## 📂 Repository Structure
 
-The repository contains separate folders for each completed daily challenge.
+The repository contains separate folders for each daily challenge.
 
     Java_Challenge/
     ├── Day-1/
@@ -147,6 +151,8 @@ The repository contains separate folders for each completed daily challenge.
     │   ├── Letter Combinations of a Phone Number.java
     │   └── Screenshot 2026-10-11 060411.png
     ├── Day-78/
+    │   ├── Next Permutation.java
+    │   └── Screenshot 2026-10-12 131254.png
     ├── ...
     ├── Day-100/
     ├── README.md
@@ -237,108 +243,106 @@ Each daily folder contains the Java solution and, where available, a screenshot 
 | Day 75 | LeetCode | Container With Most Water | ✅ Completed |
 | Day 76 | LeetCode | Longest Common Prefix | ✅ Completed |
 | Day 77 | LeetCode | Letter Combinations of a Phone Number | ✅ Completed |
-| Day 78–99 | LeetCode | Upcoming DSA Challenges | ⏳ Pending |
+| Day 78 | LeetCode | Next Permutation | ✅ Completed |
+| Day 79–99 | LeetCode | Upcoming DSA Challenges | ⏳ Pending |
 | Day 100 | LeetCode | Final Challenge | 🎯 Goal |
 
 ---
 
-# 🆕 Day 77 – Letter Combinations of a Phone Number
+# 🆕 Day 78 – Next Permutation
 
 ## 📌 Challenge Information
 
 - **Platform:** LeetCode
 - **Language:** Java
-- **Problem:** Letter Combinations of a Phone Number
-- **Problem Number:** LeetCode #17
-- **Day:** 77
+- **Problem:** Next Permutation
+- **Problem Number:** LeetCode #31
+- **Day:** 78
 - **Difficulty:** Medium
-- **Topic:** Strings, Recursion, and Backtracking
-- **Technique:** Depth-First Search (DFS) and Combination Generation
+- **Topic:** Arrays and Algorithms
+- **Technique:** Two Pointers and In-Place Array Manipulation
 - **Status:** Completed
 
 ## 🎯 Challenge Objective
 
-The **Letter Combinations of a Phone Number** problem asks us to generate all possible letter combinations represented by a string of digits from `2` to `9`.
+The **Next Permutation** problem requires rearranging an array of integers into the next lexicographically greater permutation.
 
-Each digit corresponds to a set of letters on a traditional telephone keypad. The task is to return every possible combination in any order.
+If the array is already arranged in the highest possible order, it must be rearranged into ascending order, representing the smallest possible permutation.
+
+The rearrangement must be performed in place, using constant auxiliary space.
 
 ### Example 1
 
-Input: `digits = "23"`
+Input: `nums = [1,2,3]`
 
-Output: `["ad","ae","af","bd","be","bf","cd","ce","cf"]`
+Output: `[1,3,2]`
 
 Explanation:
 
-- Digit `2` represents `a`, `b`, and `c`.
-- Digit `3` represents `d`, `e`, and `f`.
-- Combining these letters produces nine possible combinations.
+The next lexicographically greater permutation after `[1,2,3]` is `[1,3,2]`.
 
 ### Example 2
 
-Input: `digits = ""`
+Input: `nums = [3,2,1]`
 
-Output: `[]`
+Output: `[1,2,3]`
 
 Explanation:
 
-An empty input string produces an empty list of combinations.
+The input is already the highest possible permutation, so the array is rearranged into ascending order.
 
 ### Example 3
 
-Input: `digits = "2"`
+Input: `nums = [1,1,5]`
 
-Output: `["a","b","c"]`
+Output: `[1,5,1]`
 
 Explanation:
 
-Digit `2` corresponds to three letters: `a`, `b`, and `c`.
+The next lexicographically greater permutation is `[1,5,1]`.
 
 ## 🧠 Approach
 
-A common approach uses **backtracking** to generate every possible combination.
+An efficient solution uses a combination of scanning, swapping, and reversing.
 
-1. Handle the empty input by returning an empty list.
-2. Create a mapping between digits and their corresponding letters.
-3. Start processing the first digit.
-4. Try each letter associated with the current digit.
-5. Append the selected letter to the current combination.
-6. Recursively process the next digit.
-7. When the combination contains one letter for every digit, add it to the result.
-8. Backtrack by removing the last selected letter and try the next possibility.
+1. Start from the right side of the array.
+2. Find the first index `i` where `nums[i] < nums[i + 1]`. This identifies the pivot.
+3. If a pivot exists, scan from the right to find the first element greater than `nums[i]`.
+4. Swap the pivot with that element.
+5. Reverse the suffix beginning at index `i + 1` to place it in ascending order.
+6. If no pivot exists, reverse the entire array to obtain the smallest permutation.
 
-This process explores all possible combinations without needing to generate them manually.
+This approach modifies the array in place without generating all possible permutations.
 
 ## 🧩 Concepts Practiced
 
-- Java Strings
-- Arrays
-- ArrayList
-- HashMap or Digit-to-Letter Mapping
-- Recursion
-- Backtracking
-- Depth-First Search (DFS)
-- Combination Generation
-- StringBuilder
-- Base Cases
-- Empty Input Handling
-- Recursive State Management
-- Algorithmic Complexity
+- Java Arrays
+- Array Traversal
+- Lexicographical Ordering
+- Two-Pointer Technique
+- In-Place Array Manipulation
+- Pivot Identification
+- Element Swapping
+- Reversing an Array
+- Ascending and Descending Order
+- Edge Case Handling
+- Algorithm Optimization
+- Time and Space Complexity
 
 ## ⏱️ Complexity Analysis
 
-Let `n` be the number of digits in the input and `k` be the maximum number of letters associated with a digit. For digits from `2` to `9`, `k` is at most `4`.
+Let `n` be the length of the input array.
 
-**Time Complexity:** O(n × kⁿ), accounting for generating up to `kⁿ` combinations of length `n`.
+**Time Complexity:** O(n), because finding the pivot, finding the successor, and reversing the suffix each require at most a linear scan.
 
-**Space Complexity:** O(n) auxiliary space for the recursion depth and current combination, excluding the output list. The output itself can contain up to O(n × kⁿ) characters.
+**Auxiliary Space Complexity:** O(1), because the algorithm rearranges the array in place without requiring an additional array.
 
-## 📂 Day 77 Files
+## 📂 Day 78 Files
 
-- `Letter Combinations of a Phone Number.java`
-- `Screenshot 2026-10-11 060411.png`
+- `Next Permutation.java`
+- `Screenshot 2026-10-12 131254.png`
 
-The Java file contains the solution for **LeetCode #17 – Letter Combinations of a Phone Number**.
+The Java file contains the solution for **LeetCode #31 – Next Permutation**.
 
 The screenshot documents the submission or result for the completed challenge.
 
@@ -410,6 +414,7 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 | Day 75 | Container With Most Water | Arrays, Two Pointers, and Greedy Thinking |
 | Day 76 | Longest Common Prefix | Strings, Character Comparison, and Prefix Matching |
 | Day 77 | Letter Combinations of a Phone Number | Strings, Recursion, Backtracking, and DFS |
+| Day 78 | Next Permutation | Arrays, Two Pointers, and In-Place Rearrangement |
 
 ## ⏳ Upcoming Areas of Practice
 
@@ -428,6 +433,7 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 - Mathematical Problems
 - Bit Manipulation
 - Advanced String Algorithms
+- Permutations and Combinations
 - Technical Interview Problems
 
 ---
@@ -517,6 +523,9 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 - Two-Pointer Technique
 - Palindrome Algorithms
 - Prefix Matching
+- Lexicographical Ordering
+- Permutation Generation
+- In-Place Array Manipulation
 - Mathematical Problems
 - Recursion
 - Backtracking
@@ -535,12 +544,12 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **77 / 100** |
+| 📅 Days Completed | **78 / 100** |
 | ☕ Programming Language | **Java** |
 | 🏆 Platforms | **HackerRank and LeetCode** |
-| 💻 Completed Challenges | **77** |
-| 📈 Progress | **77% Complete** 🚀 |
-| ⏳ Days Remaining | **23 Days** |
+| 💻 Completed Challenges | **78** |
+| 📈 Progress | **78% Complete** 🚀 |
+| ⏳ Days Remaining | **22 Days** |
 | 🎯 Final Goal | **100 Days of Java Practice** |
 | 🧠 Primary Focus | **Java, DSA, and Problem Solving** |
 | 🏗️ OOP Focus | Inheritance, Abstraction, Interfaces, and Polymorphism |
@@ -556,18 +565,19 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 | 🔄 Integer Manipulation | Reverse Integer and Palindrome Number |
 | 🪞 Palindrome Algorithms | Longest Palindromic Substring and Palindrome Number |
 | 🔤 String Parsing | String to Integer (atoi) |
-| 👆 Two Pointers | Container With Most Water |
+| 👆 Two Pointers | Container With Most Water and Next Permutation |
 | 🔠 Prefix Matching | Longest Common Prefix |
 | 🔄 Recursion and Backtracking | Letter Combinations of a Phone Number |
 | 🌳 DFS | Recursive Exploration and Combination Generation |
+| 🔀 Permutation Algorithms | Next Permutation and Lexicographical Ordering |
 
 ---
 
 # 🔥 Current Streak
 
-## **77 Days of Java Practice Completed! 🎉🔥🚀**
+## **78 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **77 days down, 23 more to go!**
+> **78 days down, 22 more to go!**
 
 The first 64 days helped me establish a strong foundation in Java through HackerRank.
 
@@ -586,6 +596,7 @@ From Day 65 onward, I have been solving LeetCode problems to strengthen my Data 
 - **Day 75:** Solved *Container With Most Water*, practicing two-pointer techniques, area calculation, and greedy thinking.
 - **Day 76:** Solved *Longest Common Prefix*, strengthening string manipulation, character comparison, and prefix matching.
 - **Day 77:** Solved *Letter Combinations of a Phone Number*, practicing recursion, backtracking, digit-to-letter mapping, and combination generation.
+- **Day 78:** Solved *Next Permutation*, practicing pivot identification, element swapping, lexicographical ordering, and in-place array rearrangement.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -609,6 +620,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 75 | ✅ Completed |
 | 🎯 Day 76 | ✅ Completed |
 | 🎯 Day 77 | ✅ Completed |
+| 🎯 Day 78 | ✅ Completed |
 | 🎯 Day 80 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -677,13 +689,17 @@ Every challenge is another step toward becoming a stronger Java programmer.
 
 ███████████████░░░░░ 77%
 
+**Day 78**
+
+███████████████░░░░░ 78%
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ 77%
+███████████████░░░░░ 78%
 
-### **77 / 100 Days Completed**
+### **78 / 100 Days Completed**
 
-### **23 Days Remaining**
+### **22 Days Remaining**
 
 ---
 
@@ -730,6 +746,7 @@ Through this challenge, I am working to:
 - 🔤 Improve String Processing and Prefix Matching.
 - 👆 Apply Two-Pointer Techniques.
 - 📐 Practice area calculation and optimization.
+- 🔀 Understand permutation generation and lexicographical ordering.
 - 🔄 Develop recursion and backtracking skills.
 - 🌳 Explore depth-first search and combination generation.
 - 🧠 Strengthen logical and analytical thinking.
@@ -767,6 +784,7 @@ It serves as:
 - 🪞 My Palindrome Algorithm practice.
 - 👆 My Two-Pointer Technique practice.
 - 🔠 My String Algorithm and Prefix Matching practice.
+- 🔀 My Permutation and Array Rearrangement practice.
 - 🔄 My Recursion and Backtracking practice.
 - 🌳 My DFS and Combination Generation practice.
 - 💼 A part of my technical interview preparation.
@@ -796,6 +814,7 @@ The upcoming days will continue with Java programming and DSA concepts, includin
 - 👆 Two-Pointer Problems
 - 📊 Divide and Conquer
 - 🔄 Sorting Algorithms
+- 🔀 Permutations and Combinations
 - 🧮 Mathematical Problems
 - 🔢 Bit Manipulation
 - 🎯 Interview-Oriented Coding Problems
@@ -852,7 +871,7 @@ LeetCode is the platform I am using from Day 65 onward for Java-based algorithm 
 
 # 🔖 Hashtags
 
-#100DaysOfCode #100DaysOfJava #Java #JavaProgramming #CoreJava #HackerRank #LeetCode #JavaChallenge #CodingChallenge #OOP #ObjectOrientedProgramming #JavaCollections #CollectionsFramework #JavaRegex #ExceptionHandling #JavaReflection #JavaAnnotations #DesignPatterns #FactoryPattern #SingletonPattern #VisitorPattern #TreeTraversal #PriorityQueue #Deque #Iterator #Generics #Varargs #CovariantReturnTypes #LambdaExpressions #FunctionalProgramming #FunctionalInterface #MessageDigest #MD5 #SHA256 #Cryptography #Hashing #HashMap #Arrays #LinkedList #SlidingWindow #BinarySearch #DivideAndConquer #Strings #StringParsing #StringToInteger #Atoi #IntegerManipulation #IntegerReversal #Palindrome #PalindromeNumber #OverflowHandling #BoundaryConditions #LongestPalindromicSubstring #ExpandAroundCenter #TwoPointers #ContainerWithMostWater #LongestCommonPrefix #LetterCombinationsOfAPhoneNumber #Recursion #Backtracking #DepthFirstSearch #CombinationGeneration #GreedyAlgorithms #ArrayProblems #DSA #DataStructures #Algorithms #TwoSum #AddTwoNumbers #RomanToInteger #IntegerToRoman #LongestSubstringWithoutRepeatingCharacters #MedianOfTwoSortedArrays #ReverseInteger #ProblemSolving #CodingJourney #LearningInPublic #GitHub #Programming #SoftwareDevelopment #MCA #Day77
+#100DaysOfCode #100DaysOfJava #Java #JavaProgramming #CoreJava #HackerRank #LeetCode #JavaChallenge #CodingChallenge #OOP #ObjectOrientedProgramming #JavaCollections #CollectionsFramework #JavaRegex #ExceptionHandling #JavaReflection #JavaAnnotations #DesignPatterns #FactoryPattern #SingletonPattern #VisitorPattern #TreeTraversal #PriorityQueue #Deque #Iterator #Generics #Varargs #CovariantReturnTypes #LambdaExpressions #FunctionalProgramming #FunctionalInterface #MessageDigest #MD5 #SHA256 #Cryptography #Hashing #HashMap #Arrays #LinkedList #SlidingWindow #BinarySearch #DivideAndConquer #Strings #StringParsing #StringToInteger #Atoi #IntegerManipulation #IntegerReversal #Palindrome #PalindromeNumber #OverflowHandling #BoundaryConditions #LongestPalindromicSubstring #ExpandAroundCenter #TwoPointers #ContainerWithMostWater #LongestCommonPrefix #LetterCombinationsOfAPhoneNumber #NextPermutation #LexicographicalOrdering #Recursion #Backtracking #DepthFirstSearch #CombinationGeneration #GreedyAlgorithms #ArrayProblems #DSA #DataStructures #Algorithms #TwoSum #AddTwoNumbers #RomanToInteger #IntegerToRoman #LongestSubstringWithoutRepeatingCharacters #MedianOfTwoSortedArrays #ReverseInteger #ProblemSolving #CodingJourney #LearningInPublic #GitHub #Programming #SoftwareDevelopment #MCA #Day78
 
 ---
 
@@ -862,12 +881,12 @@ LeetCode is the platform I am using from Day 65 onward for Java-based algorithm 
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**77 Days Completed ✅ | 23 Days Remaining ⏳ | 100 Days Goal 🎯**
+**78 Days Completed ✅ | 22 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 ⚡ 🔗 🛡️ 🧮 📊 🪟 🔤 🔢 👆 🔠 🚀
+  ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 ⚡ 🔗 🛡️ 🧮 📊 🪟 🔤 🔢 👆 🔀 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 77 Days of Java Practice — One Step Closer to 100! 🔥</strong>
+  <strong>🔥 78 Days of Java Practice — One Step Closer to 100! 🔥</strong>
 </p>
