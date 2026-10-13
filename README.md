@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-Java-brightgreen?style=for-the-badge" alt="HackerRank Java">
   <img src="https://img.shields.io/badge/LeetCode-Java-orange?style=for-the-badge" alt="LeetCode Java">
   <img src="https://img.shields.io/badge/Core%20Java-Programming-blue?style=for-the-badge" alt="Core Java">
-  <img src="https://img.shields.io/badge/Progress-78%25-success?style=for-the-badge" alt="78% Progress">
+  <img src="https://img.shields.io/badge/Progress-79%25-success?style=for-the-badge" alt="79% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>78 Days Completed ✅ | 22 Days Remaining ⏳ | 100 Days Goal 🎯</strong>
+  <strong>79 Days Completed ✅ | 21 Days Remaining ⏳ | 100 Days Goal 🎯</strong>
 </p>
 
 ---
@@ -22,7 +22,7 @@
 
 Welcome to my **#100DaysOfJava Challenge** repository! ☕💻
 
-This repository documents my daily Java programming journey through **HackerRank and LeetCode**. The objective is to strengthen my Core Java knowledge, improve Data Structures and Algorithms (DSA), develop logical thinking, and build efficient problem-solving skills through consistent practice.
+This repository documents my daily Java programming journey through **HackerRank and LeetCode**. My goal is to strengthen Core Java fundamentals, improve Data Structures and Algorithms (DSA), develop logical thinking, and build efficient problem-solving skills through consistent practice.
 
 For **Days 1–64**, I practiced Java programming challenges primarily on HackerRank, covering Core Java, Object-Oriented Programming, Collections, Exception Handling, Regular Expressions, Reflection, Design Patterns, Lambda Expressions, and Cryptographic Hashing.
 
@@ -30,7 +30,9 @@ Starting from **Day 65**, I transitioned to LeetCode to focus on algorithmic pro
 
 On **Day 77**, I solved **Letter Combinations of a Phone Number**, strengthening my understanding of Strings, Recursion, Backtracking, and Depth-First Search (DFS).
 
-On **Day 78**, I solved **Next Permutation**, practicing array manipulation, lexicographical ordering, and the Two-Pointer technique to find the next greater permutation efficiently.
+On **Day 78**, I solved **Next Permutation**, practicing array manipulation, lexicographical ordering, and the Two-Pointer technique.
+
+On **Day 79**, I solved **Divide Two Integers**, focusing on integer division, bit manipulation, boundary conditions, and integer overflow handling.
 
 The goal is simple:
 
@@ -61,6 +63,7 @@ The goal is simple:
 - 🔄 Develop recursion and backtracking skills.
 - 🌳 Explore tree traversal and graph algorithms.
 - 🔀 Practice permutations and array rearrangement.
+- 🧮 Understand bit manipulation and mathematical operations.
 - ⏱️ Analyze time and space complexity.
 - 🎯 Prepare for technical interviews and placement opportunities.
 - 💼 Build a strong Java programming portfolio.
@@ -96,20 +99,80 @@ The goal is simple:
 | 🔄 Recursion | Recursive Problem Solving and Backtracking |
 | 📱 Combinatorial Problems | Phone Keypad Mapping and Combination Generation |
 | 🔀 Permutations | Lexicographical Ordering and In-Place Array Rearrangement |
+| 🧮 Bit Manipulation | Bitwise Operations and Integer Division Techniques |
 | 🛡️ Boundary Handling | Negative Numbers, Integer Overflow, Edge Cases |
-| 📈 Optimization | Time Complexity and Space Complexity Analysis |
+| ⚡ Optimization | Time Complexity and Space Complexity Analysis |
 
 ---
 
 ## 📂 Repository Structure
 
-The repository contains separate folders for each daily challenge.
+The repository contains separate folders for each daily challenge. Each folder stores the corresponding Java solution and, where available, a screenshot of the submission or result.
 
     Java_Challenge/
     ├── Day-1/
     ├── Day-2/
     ├── Day-3/
-    ├── ...
+    ├── Day-4/
+    ├── Day-5/
+    ├── Day-6/
+    ├── Day-7/
+    ├── Day-8/
+    ├── Day-9/
+    ├── Day-10/
+    ├── Day-11/
+    ├── Day-12/
+    ├── Day-13/
+    ├── Day-14/
+    ├── Day-15/
+    ├── Day-16/
+    ├── Day-17/
+    ├── Day-18/
+    ├── Day-19/
+    ├── Day-20/
+    ├── Day-21/
+    ├── Day-22/
+    ├── Day-23/
+    ├── Day-24/
+    ├── Day-25/
+    ├── Day-26/
+    ├── Day-27/
+    ├── Day-28/
+    ├── Day-29/
+    ├── Day-30/
+    ├── Day-31/
+    ├── Day-32/
+    ├── Day-33/
+    ├── Day-34/
+    ├── Day-35/
+    ├── Day-36/
+    ├── Day-37/
+    ├── Day-38/
+    ├── Day-39/
+    ├── Day-40/
+    ├── Day-41/
+    ├── Day-42/
+    ├── Day-43/
+    ├── Day-44/
+    ├── Day-45/
+    ├── Day-46/
+    ├── Day-47/
+    ├── Day-48/
+    ├── Day-49/
+    ├── Day-50/
+    ├── Day-51/
+    ├── Day-52/
+    ├── Day-53/
+    ├── Day-54/
+    ├── Day-55/
+    ├── Day-56/
+    ├── Day-57/
+    ├── Day-58/
+    ├── Day-59/
+    ├── Day-60/
+    ├── Day-61/
+    ├── Day-62/
+    ├── Day-63/
     ├── Day-64/
     ├── Day-65/
     │   ├── Integer to Roman.java
@@ -153,12 +216,34 @@ The repository contains separate folders for each daily challenge.
     ├── Day-78/
     │   ├── Next Permutation.java
     │   └── Screenshot 2026-10-12 131254.png
-    ├── ...
+    ├── Day-79/
+    │   ├── Divide Two Integers.java
+    │   └── Screenshot 2026-10-13 074209.png
+    ├── Day-80/
+    ├── Day-81/
+    ├── Day-82/
+    ├── Day-83/
+    ├── Day-84/
+    ├── Day-85/
+    ├── Day-86/
+    ├── Day-87/
+    ├── Day-88/
+    ├── Day-89/
+    ├── Day-90/
+    ├── Day-91/
+    ├── Day-92/
+    ├── Day-93/
+    ├── Day-94/
+    ├── Day-95/
+    ├── Day-96/
+    ├── Day-97/
+    ├── Day-98/
+    ├── Day-99/
     ├── Day-100/
     ├── README.md
     └── LICENSE
 
-Each daily folder contains the Java solution and, where available, a screenshot documenting the submission or result.
+**Note:** Days 1–64 contain the earlier HackerRank challenges. Days 65 onward contain the LeetCode solutions. The Day-80 through Day-100 folders represent the planned remaining challenge structure.
 
 ---
 
@@ -244,8 +329,110 @@ Each daily folder contains the Java solution and, where available, a screenshot 
 | Day 76 | LeetCode | Longest Common Prefix | ✅ Completed |
 | Day 77 | LeetCode | Letter Combinations of a Phone Number | ✅ Completed |
 | Day 78 | LeetCode | Next Permutation | ✅ Completed |
-| Day 79–99 | LeetCode | Upcoming DSA Challenges | ⏳ Pending |
+| Day 79 | LeetCode | Divide Two Integers | ✅ Completed |
+| Day 80–99 | LeetCode | Upcoming DSA Challenges | ⏳ Pending |
 | Day 100 | LeetCode | Final Challenge | 🎯 Goal |
+
+---
+
+# 🆕 Day 79 – Divide Two Integers
+
+## 📌 Challenge Information
+
+- **Platform:** LeetCode
+- **Language:** Java
+- **Problem:** Divide Two Integers
+- **Problem Number:** LeetCode #29
+- **Day:** 79
+- **Difficulty:** Medium
+- **Topic:** Mathematics, Bit Manipulation, and Integer Operations
+- **Status:** Completed
+
+## 🎯 Challenge Objective
+
+The **Divide Two Integers** problem requires dividing two integers without using multiplication, division, or the modulo operator.
+
+The result must be truncated toward zero, meaning the fractional part is discarded.
+
+The solution must also handle integer overflow. If the result exceeds the 32-bit signed integer range, it must be clamped to the maximum or minimum integer value as required by the problem.
+
+### Example 1
+
+Input: `dividend = 10, divisor = 3`
+
+Output: `3`
+
+Explanation:
+
+The result of `10 / 3` is `3.333...`. After truncating toward zero, the answer is `3`.
+
+### Example 2
+
+Input: `dividend = 7, divisor = -3`
+
+Output: `-2`
+
+Explanation:
+
+The result of `7 / -3` is `-2.333...`. After truncating toward zero, the answer is `-2`.
+
+### Example 3
+
+Input: `dividend = -2147483648, divisor = -1`
+
+Output: `2147483647`
+
+Explanation:
+
+The mathematical result exceeds the maximum 32-bit signed integer. Therefore, the result is clamped to `2147483647`.
+
+## 🧠 Approach
+
+An efficient solution can use bit shifting and repeated subtraction.
+
+1. Handle the integer overflow case when the dividend is the minimum 32-bit integer and the divisor is `-1`.
+2. Determine the sign of the result by checking whether the dividend and divisor have the same sign.
+3. Convert the values to a wider integer type before performing absolute-value operations to avoid overflow.
+4. Repeatedly double the divisor using left shifts until it is close to the remaining dividend.
+5. Subtract the largest suitable shifted divisor from the remaining dividend.
+6. Add the corresponding power of two to the quotient.
+7. Repeat until the remaining dividend is smaller than the divisor.
+8. Apply the correct sign to the quotient.
+9. Return the result within the required integer range.
+
+This technique avoids using the prohibited arithmetic operators and reduces the number of subtraction operations.
+
+## 🧩 Concepts Practiced
+
+- Java Integer Operations
+- Bit Manipulation
+- Left Shift Operator
+- Repeated Subtraction
+- Integer Division
+- Sign Handling
+- Negative Numbers
+- Integer Overflow
+- Boundary Conditions
+- Edge Case Handling
+- Mathematical Reasoning
+- Algorithm Optimization
+
+## ⏱️ Complexity Analysis
+
+Let `n` represent the magnitude of the dividend.
+
+**Time Complexity:** O(log² n) for the straightforward repeated-doubling approach, because each outer iteration may perform a logarithmic scan of shifted divisor values.
+
+**Auxiliary Space Complexity:** O(1), because the solution uses a constant number of variables.
+
+## 📂 Day 79 Files
+
+- `Divide Two Integers.java`
+- `Screenshot 2026-10-13 074209.png`
+
+The Java file contains the solution for **LeetCode #29 – Divide Two Integers**.
+
+The screenshot documents the submission or result for the completed challenge.
 
 ---
 
@@ -277,19 +464,11 @@ Input: `nums = [1,2,3]`
 
 Output: `[1,3,2]`
 
-Explanation:
-
-The next lexicographically greater permutation after `[1,2,3]` is `[1,3,2]`.
-
 ### Example 2
 
 Input: `nums = [3,2,1]`
 
 Output: `[1,2,3]`
-
-Explanation:
-
-The input is already the highest possible permutation, so the array is rearranged into ascending order.
 
 ### Example 3
 
@@ -297,22 +476,14 @@ Input: `nums = [1,1,5]`
 
 Output: `[1,5,1]`
 
-Explanation:
-
-The next lexicographically greater permutation is `[1,5,1]`.
-
 ## 🧠 Approach
 
-An efficient solution uses a combination of scanning, swapping, and reversing.
-
-1. Start from the right side of the array.
-2. Find the first index `i` where `nums[i] < nums[i + 1]`. This identifies the pivot.
-3. If a pivot exists, scan from the right to find the first element greater than `nums[i]`.
+1. Scan the array from right to left to find the first index `i` where `nums[i] < nums[i + 1]`.
+2. This index is the pivot.
+3. If a pivot exists, find the rightmost element greater than `nums[i]`.
 4. Swap the pivot with that element.
-5. Reverse the suffix beginning at index `i + 1` to place it in ascending order.
-6. If no pivot exists, reverse the entire array to obtain the smallest permutation.
-
-This approach modifies the array in place without generating all possible permutations.
+5. Reverse the suffix beginning at index `i + 1`.
+6. If no pivot exists, reverse the entire array.
 
 ## 🧩 Concepts Practiced
 
@@ -324,27 +495,18 @@ This approach modifies the array in place without generating all possible permut
 - Pivot Identification
 - Element Swapping
 - Reversing an Array
-- Ascending and Descending Order
 - Edge Case Handling
-- Algorithm Optimization
-- Time and Space Complexity
 
 ## ⏱️ Complexity Analysis
 
-Let `n` be the length of the input array.
+**Time Complexity:** O(n)
 
-**Time Complexity:** O(n), because finding the pivot, finding the successor, and reversing the suffix each require at most a linear scan.
-
-**Auxiliary Space Complexity:** O(1), because the algorithm rearranges the array in place without requiring an additional array.
+**Auxiliary Space Complexity:** O(1)
 
 ## 📂 Day 78 Files
 
 - `Next Permutation.java`
 - `Screenshot 2026-10-12 131254.png`
-
-The Java file contains the solution for **LeetCode #31 – Next Permutation**.
-
-The screenshot documents the submission or result for the completed challenge.
 
 ---
 
@@ -415,6 +577,7 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 | Day 76 | Longest Common Prefix | Strings, Character Comparison, and Prefix Matching |
 | Day 77 | Letter Combinations of a Phone Number | Strings, Recursion, Backtracking, and DFS |
 | Day 78 | Next Permutation | Arrays, Two Pointers, and In-Place Rearrangement |
+| Day 79 | Divide Two Integers | Bit Manipulation, Integer Division, and Overflow Handling |
 
 ## ⏳ Upcoming Areas of Practice
 
@@ -527,10 +690,11 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 - Permutation Generation
 - In-Place Array Manipulation
 - Mathematical Problems
+- Bit Manipulation
+- Integer Division
 - Recursion
 - Backtracking
 - Dynamic Programming
-- Bit Manipulation
 - Depth-First Search
 - Combination Generation
 - Time Complexity
@@ -544,12 +708,12 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **78 / 100** |
+| 📅 Days Completed | **79 / 100** |
 | ☕ Programming Language | **Java** |
 | 🏆 Platforms | **HackerRank and LeetCode** |
-| 💻 Completed Challenges | **78** |
-| 📈 Progress | **78% Complete** 🚀 |
-| ⏳ Days Remaining | **22 Days** |
+| 💻 Completed Challenges | **79** |
+| 📈 Progress | **79% Complete** 🚀 |
+| ⏳ Days Remaining | **21 Days** |
 | 🎯 Final Goal | **100 Days of Java Practice** |
 | 🧠 Primary Focus | **Java, DSA, and Problem Solving** |
 | 🏗️ OOP Focus | Inheritance, Abstraction, Interfaces, and Polymorphism |
@@ -562,7 +726,7 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 | 🔗 Linked Lists | Node Traversal and Carry Handling |
 | 🪟 Sliding Window | Longest Substring Without Repeating Characters |
 | 📊 Binary Search | Median of Two Sorted Arrays |
-| 🔄 Integer Manipulation | Reverse Integer and Palindrome Number |
+| 🔢 Integer Manipulation | Reverse Integer and Palindrome Number |
 | 🪞 Palindrome Algorithms | Longest Palindromic Substring and Palindrome Number |
 | 🔤 String Parsing | String to Integer (atoi) |
 | 👆 Two Pointers | Container With Most Water and Next Permutation |
@@ -570,14 +734,15 @@ Starting from Day 65, I began solving Java programming challenges on LeetCode wi
 | 🔄 Recursion and Backtracking | Letter Combinations of a Phone Number |
 | 🌳 DFS | Recursive Exploration and Combination Generation |
 | 🔀 Permutation Algorithms | Next Permutation and Lexicographical Ordering |
+| 🧮 Bit Manipulation | Divide Two Integers |
 
 ---
 
 # 🔥 Current Streak
 
-## **78 Days of Java Practice Completed! 🎉🔥🚀**
+## **79 Days of Java Practice Completed! 🎉🔥🚀**
 
-> **78 days down, 22 more to go!**
+> **79 days down, 21 more to go!**
 
 The first 64 days helped me establish a strong foundation in Java through HackerRank.
 
@@ -597,6 +762,7 @@ From Day 65 onward, I have been solving LeetCode problems to strengthen my Data 
 - **Day 76:** Solved *Longest Common Prefix*, strengthening string manipulation, character comparison, and prefix matching.
 - **Day 77:** Solved *Letter Combinations of a Phone Number*, practicing recursion, backtracking, digit-to-letter mapping, and combination generation.
 - **Day 78:** Solved *Next Permutation*, practicing pivot identification, element swapping, lexicographical ordering, and in-place array rearrangement.
+- **Day 79:** Solved *Divide Two Integers*, practicing bit manipulation, repeated subtraction, sign handling, and integer overflow management.
 
 Every challenge is another step toward becoming a stronger Java programmer.
 
@@ -621,6 +787,7 @@ Every challenge is another step toward becoming a stronger Java programmer.
 | 🎯 Day 76 | ✅ Completed |
 | 🎯 Day 77 | ✅ Completed |
 | 🎯 Day 78 | ✅ Completed |
+| 🎯 Day 79 | ✅ Completed |
 | 🎯 Day 80 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -693,13 +860,17 @@ Every challenge is another step toward becoming a stronger Java programmer.
 
 ███████████████░░░░░ 78%
 
+**Day 79**
+
+███████████████░░░░░ 79%
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ 78%
+███████████████░░░░░ 79%
 
-### **78 / 100 Days Completed**
+### **79 / 100 Days Completed**
 
-### **22 Days Remaining**
+### **21 Days Remaining**
 
 ---
 
@@ -747,6 +918,7 @@ Through this challenge, I am working to:
 - 👆 Apply Two-Pointer Techniques.
 - 📐 Practice area calculation and optimization.
 - 🔀 Understand permutation generation and lexicographical ordering.
+- 🧮 Practice bit manipulation and integer division.
 - 🔄 Develop recursion and backtracking skills.
 - 🌳 Explore depth-first search and combination generation.
 - 🧠 Strengthen logical and analytical thinking.
@@ -785,6 +957,7 @@ It serves as:
 - 👆 My Two-Pointer Technique practice.
 - 🔠 My String Algorithm and Prefix Matching practice.
 - 🔀 My Permutation and Array Rearrangement practice.
+- 🧮 My Bit Manipulation and Integer Division practice.
 - 🔄 My Recursion and Backtracking practice.
 - 🌳 My DFS and Combination Generation practice.
 - 💼 A part of my technical interview preparation.
@@ -871,7 +1044,7 @@ LeetCode is the platform I am using from Day 65 onward for Java-based algorithm 
 
 # 🔖 Hashtags
 
-#100DaysOfCode #100DaysOfJava #Java #JavaProgramming #CoreJava #HackerRank #LeetCode #JavaChallenge #CodingChallenge #OOP #ObjectOrientedProgramming #JavaCollections #CollectionsFramework #JavaRegex #ExceptionHandling #JavaReflection #JavaAnnotations #DesignPatterns #FactoryPattern #SingletonPattern #VisitorPattern #TreeTraversal #PriorityQueue #Deque #Iterator #Generics #Varargs #CovariantReturnTypes #LambdaExpressions #FunctionalProgramming #FunctionalInterface #MessageDigest #MD5 #SHA256 #Cryptography #Hashing #HashMap #Arrays #LinkedList #SlidingWindow #BinarySearch #DivideAndConquer #Strings #StringParsing #StringToInteger #Atoi #IntegerManipulation #IntegerReversal #Palindrome #PalindromeNumber #OverflowHandling #BoundaryConditions #LongestPalindromicSubstring #ExpandAroundCenter #TwoPointers #ContainerWithMostWater #LongestCommonPrefix #LetterCombinationsOfAPhoneNumber #NextPermutation #LexicographicalOrdering #Recursion #Backtracking #DepthFirstSearch #CombinationGeneration #GreedyAlgorithms #ArrayProblems #DSA #DataStructures #Algorithms #TwoSum #AddTwoNumbers #RomanToInteger #IntegerToRoman #LongestSubstringWithoutRepeatingCharacters #MedianOfTwoSortedArrays #ReverseInteger #ProblemSolving #CodingJourney #LearningInPublic #GitHub #Programming #SoftwareDevelopment #MCA #Day78
+#100DaysOfCode #100DaysOfJava #Java #JavaProgramming #CoreJava #HackerRank #LeetCode #JavaChallenge #CodingChallenge #OOP #ObjectOrientedProgramming #JavaCollections #CollectionsFramework #JavaRegex #ExceptionHandling #JavaReflection #JavaAnnotations #DesignPatterns #FactoryPattern #SingletonPattern #VisitorPattern #TreeTraversal #PriorityQueue #Deque #Iterator #Generics #Varargs #CovariantReturnTypes #LambdaExpressions #FunctionalProgramming #FunctionalInterface #MessageDigest #MD5 #SHA256 #Cryptography #Hashing #HashMap #Arrays #LinkedList #SlidingWindow #BinarySearch #DivideAndConquer #Strings #StringParsing #StringToInteger #Atoi #IntegerManipulation #IntegerReversal #Palindrome #PalindromeNumber #OverflowHandling #BoundaryConditions #LongestPalindromicSubstring #ExpandAroundCenter #TwoPointers #ContainerWithMostWater #LongestCommonPrefix #LetterCombinationsOfAPhoneNumber #NextPermutation #DivideTwoIntegers #BitManipulation #LexicographicalOrdering #Recursion #Backtracking #DepthFirstSearch #CombinationGeneration #GreedyAlgorithms #ArrayProblems #DSA #DataStructures #Algorithms #TwoSum #AddTwoNumbers #RomanToInteger #IntegerToRoman #LongestSubstringWithoutRepeatingCharacters #MedianOfTwoSortedArrays #ReverseInteger #ProblemSolving #CodingJourney #LearningInPublic #GitHub #Programming #SoftwareDevelopment #MCA #Day79
 
 ---
 
@@ -881,12 +1054,12 @@ LeetCode is the platform I am using from Day 65 onward for Java-based algorithm 
 
 ### 🎯 Goal: Complete 100 Days of Java
 
-**78 Days Completed ✅ | 22 Days Remaining ⏳ | 100 Days Goal 🎯**
+**79 Days Completed ✅ | 21 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   ☕ 💻 🧠 🧩 🏗️ 📦 🔎 ⚠️ 🪞 🏭 🔐 🌳 ⚡ 🔗 🛡️ 🧮 📊 🪟 🔤 🔢 👆 🔀 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 78 Days of Java Practice — One Step Closer to 100! 🔥</strong>
+  <strong>🔥 79 Days of Java Practice — One Step Closer to 100! 🔥</strong>
 </p>
