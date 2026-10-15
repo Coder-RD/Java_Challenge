@@ -2,15 +2,17 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
-  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=java" alt="Java">
+  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" alt="Java">
   <img src="https://img.shields.io/badge/LeetCode-Practice-yellow?style=for-the-badge&logo=leetcode" alt="LeetCode">
   <img src="https://img.shields.io/badge/HackerRank-Practice-brightgreen?style=for-the-badge&logo=hackerrank" alt="HackerRank">
-  <img src="https://img.shields.io/badge/Progress-80%25-success?style=for-the-badge" alt="80% Progress">
+  <img src="https://img.shields.io/badge/Progress-81%25-success?style=for-the-badge" alt="81% Progress">
 </p>
 
 Welcome to my **#100DaysOfJava Challenge!** 🚀
 
 This repository documents my journey of solving Java programming challenges every day. I started with **HackerRank Java challenges** and continued with **LeetCode problems** to strengthen my programming fundamentals, data structures, algorithms, and problem-solving skills.
+
+Through consistent practice, I am improving my understanding of Java, exploring different algorithmic techniques, and preparing for technical interviews and software development opportunities.
 
 Every day is an opportunity to learn something new, improve my coding skills, and move one step closer to becoming a better software developer. 💻
 
@@ -24,6 +26,7 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 - 📦 Understand Java Collections and data structures.
 - 🔎 Practice regular expressions and string manipulation.
 - ⚙️ Learn algorithms, recursion, and dynamic programming.
+- 🔄 Develop a strong understanding of backtracking and DFS.
 - 💻 Solve coding problems on HackerRank and LeetCode.
 - 📈 Track daily progress and maintain consistency.
 - 🎯 Prepare for technical interviews and placement opportunities.
@@ -34,18 +37,18 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 ## 📊 Current Challenge Status
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Days%20Completed-80%2F100-success?style=for-the-badge" alt="Days Completed">
-  <img src="https://img.shields.io/badge/Progress-80%25-brightgreen?style=for-the-badge" alt="Progress">
-  <img src="https://img.shields.io/badge/Days%20Remaining-20-orange?style=for-the-badge" alt="Days Remaining">
+  <img src="https://img.shields.io/badge/Days%20Completed-81%2F100-success?style=for-the-badge" alt="Days Completed">
+  <img src="https://img.shields.io/badge/Progress-81%25-brightgreen?style=for-the-badge" alt="Progress">
+  <img src="https://img.shields.io/badge/Days%20Remaining-19-orange?style=for-the-badge" alt="Days Remaining">
 </p>
 
 | 📊 Category | Details |
 |---|---|
 | 🎯 Challenge | 100 Days of Java |
 | ☕ Programming Language | Java |
-| 📅 Days Completed | 80 / 100 |
-| 📈 Overall Progress | 80% |
-| ⏳ Days Remaining | 20 |
+| 📅 Days Completed | 81 / 100 |
+| 📈 Overall Progress | 81% |
+| ⏳ Days Remaining | 19 |
 | 💻 Initial Platform | HackerRank |
 | 🚀 Current Platform | LeetCode |
 | 🧠 Focus | Java, DSA, Algorithms, Problem Solving |
@@ -145,10 +148,13 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 - Two Pointers
 - Recursion
 - Backtracking
+- Depth-First Search (DFS)
 - Dynamic Programming
 - Tree Traversal
 - String Matching
+- Matrix Traversal
 - Combinatorial Problems
+- Permutations and Combinations
 - Algorithm Optimization
 - Time and Space Complexity
 
@@ -157,6 +163,8 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 ## 📂 Repository Structure
 
 The repository is organized into individual folders for each completed challenge.
+
+Each daily folder contains the corresponding Java solution and may include a screenshot of the successful submission.
 
     Java_Challenge/
     │
@@ -230,11 +238,13 @@ The repository is organized into individual folders for each completed challenge
     │
     ├── Day-80/
     │   ├── Regular Expression Matching.java
-    │   └── Screenshot 2026-10-14 082748.png
+    │   └── Screenshot
+    │
+    ├── Day-81/
+    │   ├── Word Search.java
+    │   └── Screenshot 2026-10-15 075532.png
     │
     └── README.md
-
-Note: Each daily folder contains the corresponding Java solution and may include a screenshot of the successful submission.
 
 ---
 
@@ -280,62 +290,74 @@ Note: Each daily folder contains the corresponding Java solution and may include
 | 78 | LeetCode | Next Permutation | ✅ Completed |
 | 79 | LeetCode | Regular Expression Matching | ✅ Completed |
 | 80 | LeetCode | Regular Expression Matching | ✅ Completed |
-| 81–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
+| 81 | LeetCode | Word Search | ✅ Completed |
+| 82–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
 | 100 | Final Challenge | 100 Days of Java Completed | 🏆 Goal |
 
 ---
 
-## 🆕 Day 80 – Regular Expression Matching
+## 🆕 Day 81 – Word Search
 
 ### 📌 Challenge Information
 
-- 📅 **Day:** 80
+- 📅 **Day:** 81
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🧩 **Problem:** Regular Expression Matching
-- 🔢 **Problem Number:** #10
-- 🧠 **Difficulty:** Hard
-- 📂 **Folder:** Day-80
+- 🧩 **Problem:** Word Search
+- 🔢 **Problem Number:** #79
+- 🧠 **Difficulty:** Medium
+- 📂 **Folder:** Day-81
+- 📄 **Solution File:** `Word Search.java`
+- 📸 **Screenshot:** `Screenshot 2026-10-15 075532.png`
 
 ### 📚 Concepts Practiced
 
-- 🔎 Regular Expressions
-- 🧩 String Matching
-- ⭐ Dynamic Programming
-- 🔄 Pattern Matching
-- 🧠 Algorithmic Thinking
+- 🔄 Backtracking
+- 🔍 Depth-First Search (DFS)
+- 🔁 Recursion
+- 🧩 Two-Dimensional Array Traversal
+- 📍 Matrix Search
+- 🧠 Logical Thinking and Problem Solving
+- ⚙️ Algorithm Optimization
 - 📊 Time and Space Complexity
-- 💻 Java Problem Solving
 
 ### 💡 Problem Overview
 
-The Regular Expression Matching problem checks whether a given input string matches a pattern containing two special characters:
+The Word Search problem requires determining whether a given word exists in a two-dimensional character grid.
 
-- `.` matches any single character.
-- `*` matches zero or more occurrences of the preceding element.
+The word can be constructed using horizontally or vertically adjacent cells. Each cell can be used only once during a single search path.
 
-The solution must determine whether the entire input string matches the complete pattern.
+The solution explores possible paths through the grid and uses backtracking to abandon invalid paths and continue searching for a valid match.
+
+### 🔍 Approach
+
+1. Traverse the character grid to find a cell matching the first character of the target word.
+2. Start a recursive Depth-First Search (DFS) from the matching cell.
+3. Check the adjacent cells in the four directions: up, down, left, and right.
+4. Continue searching when the next character matches the corresponding character in the target word.
+5. Mark visited cells so that the same cell is not used more than once in the current path.
+6. Backtrack when a path fails, restoring the cell's availability for other possible paths.
+7. Return `true` when the entire word is found; otherwise, return `false`.
 
 ### 🎯 Learning Outcomes
 
 Through this challenge, I strengthened my understanding of:
 
-- Regular expression matching.
-- Handling special pattern characters.
-- Breaking a complex problem into smaller subproblems.
-- Applying dynamic programming to string problems.
-- Analyzing algorithm efficiency.
-- Solving challenging LeetCode problems using Java.
+- Applying DFS to matrix-based problems.
+- Using recursion to explore possible paths.
+- Implementing backtracking to handle unsuccessful search paths.
+- Managing visited cells during grid traversal.
+- Breaking a complex problem into smaller steps.
+- Understanding the relationship between recursion and search algorithms.
 
 ### 📂 Files Added
 
-    Day-80/
-    ├── Regular Expression Matching.java
-    └── Screenshot 2026-10-14 082748.png
+- `Day-81/Word Search.java`
+- `Day-81/Screenshot 2026-10-15 075532.png`
 
 ### ✅ Status
 
-**Day 80 Completed Successfully! 🎉🔥**
+**Day 81 Completed Successfully! 🎉🔥**
 
 ---
 
@@ -399,11 +421,15 @@ Practiced array manipulation, permutation logic, and in-place algorithm implemen
 
 ### Day 79 – Regular Expression Matching
 
-Continued practicing string-pattern matching and dynamic programming concepts.
+Practiced string-pattern matching and dynamic programming concepts.
 
 ### Day 80 – Regular Expression Matching
 
-Further strengthened regular expression matching, string processing, and dynamic programming problem-solving skills.
+Continued working on pattern matching, string processing, and algorithmic problem-solving.
+
+### Day 81 – Word Search
+
+Practiced DFS, recursion, backtracking, and two-dimensional array traversal to find a target word in a character grid.
 
 ---
 
@@ -420,17 +446,18 @@ Further strengthened regular expression matching, string processing, and dynamic
 | Day 70 | ✅ Completed |
 | Day 75 | ✅ Completed |
 | Day 80 | ✅ Completed |
+| Day 81 | ✅ Completed |
 | Day 90 | ⏳ Upcoming |
 | Day 100 | 🏆 Final Goal |
 
 ### 🚀 Overall Progress
 
-**80 / 100 Days Completed**
+**81 / 100 Days Completed**
 
-████████████████░░░░ **80%**
+**Progress: 81%**
 
-- ✅ Completed: 80 days
-- ⏳ Remaining: 20 days
+- ✅ Completed: 81 days
+- ⏳ Remaining: 19 days
 - 🎯 Target: 100 days
 - 🔥 Next milestone: Day 90
 
@@ -465,6 +492,7 @@ By consistently solving programming challenges, I am working on improving:
 - 🔎 String manipulation and regular expressions
 - 🧠 Logical and analytical thinking
 - 🔄 Recursion and backtracking
+- 🔍 Depth-First Search
 - ⚙️ Algorithm design
 - 📊 Time and space complexity analysis
 - 🧩 Data structures and algorithms
@@ -544,12 +572,12 @@ https://github.com/Coder-RD/SQL-Challenge/
 
 ## 🔖 Hashtags
 
-#100DaysOfJava #Java #LeetCode #HackerRank #DSA #DataStructures #Algorithms #DynamicProgramming #RegularExpressions #ProblemSolving #CodingChallenge #GitHub #JavaProgramming #LearningInPublic #SoftwareDevelopment #KeepLearning
+#100DaysOfJava #Java #LeetCode #HackerRank #DSA #DataStructures #Algorithms #Backtracking #DFS #Recursion #ProblemSolving #CodingChallenge #GitHub #JavaProgramming #LearningInPublic #SoftwareDevelopment #KeepLearning
 
 ---
 
 <p align="center">
-  <b>🔥 80 Days Completed — 20 Days to Go! 🔥</b>
+  <b>🔥 81 Days Completed — 19 Days to Go! 🔥</b>
   <br>
   <b>One Day at a Time. One Problem at a Time. One Step Closer to the Goal. ☕🚀</b>
 </p>
