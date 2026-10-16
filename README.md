@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" alt="Java">
   <img src="https://img.shields.io/badge/LeetCode-Practice-yellow?style=for-the-badge&logo=leetcode" alt="LeetCode">
   <img src="https://img.shields.io/badge/HackerRank-Practice-brightgreen?style=for-the-badge&logo=hackerrank" alt="HackerRank">
-  <img src="https://img.shields.io/badge/Progress-81%25-success?style=for-the-badge" alt="81% Progress">
+  <img src="https://img.shields.io/badge/Progress-82%25-success?style=for-the-badge" alt="82% Progress">
 </p>
 
 Welcome to my **#100DaysOfJava Challenge!** 🚀
@@ -37,18 +37,18 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 ## 📊 Current Challenge Status
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Days%20Completed-81%2F100-success?style=for-the-badge" alt="Days Completed">
-  <img src="https://img.shields.io/badge/Progress-81%25-brightgreen?style=for-the-badge" alt="Progress">
-  <img src="https://img.shields.io/badge/Days%20Remaining-19-orange?style=for-the-badge" alt="Days Remaining">
+  <img src="https://img.shields.io/badge/Days%20Completed-82%2F100-success?style=for-the-badge" alt="Days Completed">
+  <img src="https://img.shields.io/badge/Progress-82%25-brightgreen?style=for-the-badge" alt="Progress">
+  <img src="https://img.shields.io/badge/Days%20Remaining-18-orange?style=for-the-badge" alt="Days Remaining">
 </p>
 
 | 📊 Category | Details |
 |---|---|
 | 🎯 Challenge | 100 Days of Java |
 | ☕ Programming Language | Java |
-| 📅 Days Completed | 81 / 100 |
-| 📈 Overall Progress | 81% |
-| ⏳ Days Remaining | 19 |
+| 📅 Days Completed | 82 / 100 |
+| 📈 Overall Progress | 82% |
+| ⏳ Days Remaining | 18 |
 | 💻 Initial Platform | HackerRank |
 | 🚀 Current Platform | LeetCode |
 | 🧠 Focus | Java, DSA, Algorithms, Problem Solving |
@@ -157,6 +157,8 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 - Permutations and Combinations
 - Algorithm Optimization
 - Time and Space Complexity
+- String Pattern Simulation
+- Character Traversal and Indexing
 
 ---
 
@@ -244,6 +246,10 @@ Each daily folder contains the corresponding Java solution and may include a scr
     │   ├── Word Search.java
     │   └── Screenshot 2026-10-15 075532.png
     │
+    ├── Day-82/
+    │   ├── Zigzag Conversion.java
+    │   └── Screenshot 2026-10-16 084526.png
+    │
     └── README.md
 
 ---
@@ -291,73 +297,73 @@ Each daily folder contains the corresponding Java solution and may include a scr
 | 79 | LeetCode | Regular Expression Matching | ✅ Completed |
 | 80 | LeetCode | Regular Expression Matching | ✅ Completed |
 | 81 | LeetCode | Word Search | ✅ Completed |
-| 82–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
+| 82 | LeetCode | Zigzag Conversion | ✅ Completed |
+| 83–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
 | 100 | Final Challenge | 100 Days of Java Completed | 🏆 Goal |
 
 ---
 
-## 🆕 Day 81 – Word Search
+## 🆕 Day 82 – Zigzag Conversion
 
 ### 📌 Challenge Information
 
-- 📅 **Day:** 81
+- 📅 **Day:** 82
 - 💻 **Platform:** LeetCode
 - ☕ **Language:** Java
-- 🧩 **Problem:** Word Search
-- 🔢 **Problem Number:** #79
+- 🧩 **Problem:** Zigzag Conversion
+- 🔢 **Problem Number:** #6
 - 🧠 **Difficulty:** Medium
-- 📂 **Folder:** Day-81
-- 📄 **Solution File:** `Word Search.java`
-- 📸 **Screenshot:** `Screenshot 2026-10-15 075532.png`
+- 📂 **Folder:** `Day-82`
+- 📄 **Solution File:** `Zigzag Conversion.java`
+- 📸 **Screenshot:** `Screenshot 2026-10-16 084526.png`
 
 ### 📚 Concepts Practiced
 
-- 🔄 Backtracking
-- 🔍 Depth-First Search (DFS)
-- 🔁 Recursion
-- 🧩 Two-Dimensional Array Traversal
-- 📍 Matrix Search
+- 🔤 String Manipulation
+- 🔄 Zigzag Pattern Simulation
+- 📍 Character Traversal
+- 📊 Row-by-Row String Processing
 - 🧠 Logical Thinking and Problem Solving
-- ⚙️ Algorithm Optimization
-- 📊 Time and Space Complexity
+- ⚙️ Algorithm Design
+- 📈 Time and Space Complexity
 
 ### 💡 Problem Overview
 
-The Word Search problem requires determining whether a given word exists in a two-dimensional character grid.
+The Zigzag Conversion problem requires converting a given string into a zigzag pattern across a specified number of rows and then reading the characters row by row to produce the final string.
 
-The word can be constructed using horizontally or vertically adjacent cells. Each cell can be used only once during a single search path.
-
-The solution explores possible paths through the grid and uses backtracking to abandon invalid paths and continue searching for a valid match.
+The characters are arranged vertically and diagonally in a zigzag pattern. Once the pattern is constructed, the characters are combined row by row to generate the converted string.
 
 ### 🔍 Approach
 
-1. Traverse the character grid to find a cell matching the first character of the target word.
-2. Start a recursive Depth-First Search (DFS) from the matching cell.
-3. Check the adjacent cells in the four directions: up, down, left, and right.
-4. Continue searching when the next character matches the corresponding character in the target word.
-5. Mark visited cells so that the same cell is not used more than once in the current path.
-6. Backtrack when a path fails, restoring the cell's availability for other possible paths.
-7. Return `true` when the entire word is found; otherwise, return `false`.
+1. Read the input string and the specified number of rows.
+2. Handle special cases, such as a single row or a string that does not require zigzag rearrangement.
+3. Create a suitable structure to store characters for each row.
+4. Traverse the input string character by character.
+5. Move downward through the rows until reaching the last row.
+6. Change direction and move upward diagonally until reaching the first row.
+7. Continue alternating between downward and upward movement while processing the characters.
+8. Combine the characters row by row to obtain the final converted string.
+9. Return the converted string as the result.
 
 ### 🎯 Learning Outcomes
 
 Through this challenge, I strengthened my understanding of:
 
-- Applying DFS to matrix-based problems.
-- Using recursion to explore possible paths.
-- Implementing backtracking to handle unsuccessful search paths.
-- Managing visited cells during grid traversal.
-- Breaking a complex problem into smaller steps.
-- Understanding the relationship between recursion and search algorithms.
+- Manipulating strings in Java.
+- Simulating a zigzag pattern using row-based processing.
+- Traversing characters in a specific order.
+- Managing direction changes during iteration.
+- Handling special cases in string problems.
+- Developing a structured approach to algorithmic problems.
 
 ### 📂 Files Added
 
-- `Day-81/Word Search.java`
-- `Day-81/Screenshot 2026-10-15 075532.png`
+- `Day-82/Zigzag Conversion.java`
+- `Day-82/Screenshot 2026-10-16 084526.png`
 
 ### ✅ Status
 
-**Day 81 Completed Successfully! 🎉🔥**
+**Day 82 Completed Successfully! 🎉🔥**
 
 ---
 
@@ -431,6 +437,10 @@ Continued working on pattern matching, string processing, and algorithmic proble
 
 Practiced DFS, recursion, backtracking, and two-dimensional array traversal to find a target word in a character grid.
 
+### Day 82 – Zigzag Conversion
+
+Practiced string manipulation, zigzag pattern simulation, character traversal, and row-by-row string processing.
+
 ---
 
 ## 📈 Progress Tracker
@@ -447,17 +457,18 @@ Practiced DFS, recursion, backtracking, and two-dimensional array traversal to f
 | Day 75 | ✅ Completed |
 | Day 80 | ✅ Completed |
 | Day 81 | ✅ Completed |
+| Day 82 | ✅ Completed |
 | Day 90 | ⏳ Upcoming |
 | Day 100 | 🏆 Final Goal |
 
 ### 🚀 Overall Progress
 
-**81 / 100 Days Completed**
+**82 / 100 Days Completed**
 
-**Progress: 81%**
+**Progress: 82%**
 
-- ✅ Completed: 81 days
-- ⏳ Remaining: 19 days
+- ✅ Completed: 82 days
+- ⏳ Remaining: 18 days
 - 🎯 Target: 100 days
 - 🔥 Next milestone: Day 90
 
@@ -572,12 +583,12 @@ https://github.com/Coder-RD/SQL-Challenge/
 
 ## 🔖 Hashtags
 
-#100DaysOfJava #Java #LeetCode #HackerRank #DSA #DataStructures #Algorithms #Backtracking #DFS #Recursion #ProblemSolving #CodingChallenge #GitHub #JavaProgramming #LearningInPublic #SoftwareDevelopment #KeepLearning
+#100DaysOfJava #Java #LeetCode #HackerRank #DSA #DataStructures #Algorithms #StringManipulation #ProblemSolving #CodingChallenge #GitHub #JavaProgramming #LearningInPublic #SoftwareDevelopment #KeepLearning
 
 ---
 
 <p align="center">
-  <b>🔥 81 Days Completed — 19 Days to Go! 🔥</b>
+  <b>🔥 82 Days Completed — 18 Days to Go! 🔥</b>
   <br>
   <b>One Day at a Time. One Problem at a Time. One Step Closer to the Goal. ☕🚀</b>
 </p>
