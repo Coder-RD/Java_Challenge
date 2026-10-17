@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" alt="Java">
   <img src="https://img.shields.io/badge/LeetCode-Practice-yellow?style=for-the-badge&logo=leetcode" alt="LeetCode">
   <img src="https://img.shields.io/badge/HackerRank-Practice-brightgreen?style=for-the-badge&logo=hackerrank" alt="HackerRank">
-  <img src="https://img.shields.io/badge/Progress-82%25-success?style=for-the-badge" alt="82% Progress">
+  <img src="https://img.shields.io/badge/Progress-83%25-success?style=for-the-badge" alt="83% Progress">
 </p>
 
 Welcome to my **#100DaysOfJava Challenge!** 🚀
@@ -37,18 +37,18 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 ## 📊 Current Challenge Status
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Days%20Completed-82%2F100-success?style=for-the-badge" alt="Days Completed">
-  <img src="https://img.shields.io/badge/Progress-82%25-brightgreen?style=for-the-badge" alt="Progress">
-  <img src="https://img.shields.io/badge/Days%20Remaining-18-orange?style=for-the-badge" alt="Days Remaining">
+  <img src="https://img.shields.io/badge/Days%20Completed-83%2F100-success?style=for-the-badge" alt="Days Completed">
+  <img src="https://img.shields.io/badge/Progress-83%25-brightgreen?style=for-the-badge" alt="Progress">
+  <img src="https://img.shields.io/badge/Days%20Remaining-17-orange?style=for-the-badge" alt="Days Remaining">
 </p>
 
 | 📊 Category | Details |
 |---|---|
 | 🎯 Challenge | 100 Days of Java |
 | ☕ Programming Language | Java |
-| 📅 Days Completed | 82 / 100 |
-| 📈 Overall Progress | 82% |
-| ⏳ Days Remaining | 18 |
+| 📅 Days Completed | 83 / 100 |
+| 📈 Overall Progress | 83% |
+| ⏳ Days Remaining | 17 |
 | 💻 Initial Platform | HackerRank |
 | 🚀 Current Platform | LeetCode |
 | 🧠 Focus | Java, DSA, Algorithms, Problem Solving |
@@ -168,13 +168,17 @@ The repository is organized into individual folders for each completed challenge
 
 Each daily folder contains the corresponding Java solution and may include a screenshot of the successful submission.
 
+- `Day-1/` to `Day-64/` — HackerRank Java challenges.
+- `Day-65/` to `Day-83/` — LeetCode problems.
+- `README.md` — Challenge overview, progress tracker, and documentation.
+
+### 📁 Recent Folder Structure
+
     Java_Challenge/
     │
     ├── Day-1/
     ├── Day-2/
     ├── Day-3/
-    ├── ...
-    ├── Day-57/
     ├── ...
     ├── Day-64/
     │
@@ -250,6 +254,10 @@ Each daily folder contains the corresponding Java solution and may include a scr
     │   ├── Zigzag Conversion.java
     │   └── Screenshot 2026-10-16 084526.png
     │
+    ├── Day-83/
+    │   ├── 3Sum.java
+    │   └── Screenshot 2026-10-17 160528.png
+    │
     └── README.md
 
 ---
@@ -298,72 +306,101 @@ Each daily folder contains the corresponding Java solution and may include a scr
 | 80 | LeetCode | Regular Expression Matching | ✅ Completed |
 | 81 | LeetCode | Word Search | ✅ Completed |
 | 82 | LeetCode | Zigzag Conversion | ✅ Completed |
-| 83–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
+| 83 | LeetCode | 3Sum | ✅ Completed |
+| 84–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
 | 100 | Final Challenge | 100 Days of Java Completed | 🏆 Goal |
 
 ---
 
-## 🆕 Day 82 – Zigzag Conversion
+## 🆕 Day 83 – 3Sum
 
 ### 📌 Challenge Information
 
-- 📅 **Day:** 82
+- 📅 **Day:** 83
 - 💻 **Platform:** LeetCode
-- ☕ **Language:** Java
-- 🧩 **Problem:** Zigzag Conversion
-- 🔢 **Problem Number:** #6
-- 🧠 **Difficulty:** Medium
-- 📂 **Folder:** `Day-82`
-- 📄 **Solution File:** `Zigzag Conversion.java`
-- 📸 **Screenshot:** `Screenshot 2026-10-16 084526.png`
+- 🔢 **Problem Number:** #15
+- ☕ **Programming Language:** Java
+- 🧩 **Problem:** 3Sum
+- 📂 **Folder:** `Day-83`
+- 📄 **Solution File:** `3Sum.java`
+- 📸 **Screenshot:** `Screenshot 2026-10-17 160528.png`
 
 ### 📚 Concepts Practiced
 
-- 🔤 String Manipulation
-- 🔄 Zigzag Pattern Simulation
-- 📍 Character Traversal
-- 📊 Row-by-Row String Processing
-- 🧠 Logical Thinking and Problem Solving
-- ⚙️ Algorithm Design
-- 📈 Time and Space Complexity
+- Arrays
+- Sorting
+- Two-Pointer Technique
+- Duplicate Handling
+- Nested Iteration
+- Efficient Searching
+- Problem-Solving
+- Time and Space Complexity
 
 ### 💡 Problem Overview
 
-The Zigzag Conversion problem requires converting a given string into a zigzag pattern across a specified number of rows and then reading the characters row by row to produce the final string.
+The 3Sum problem asks us to find all unique triplets in an integer array whose sum is equal to zero.
 
-The characters are arranged vertically and diagonally in a zigzag pattern. Once the pattern is constructed, the characters are combined row by row to generate the converted string.
+Given an integer array `nums`, we need to identify three elements at different indices such that:
+
+`nums[i] + nums[j] + nums[k] == 0`
+
+The solution must return all unique triplets without including duplicate combinations.
 
 ### 🔍 Approach
 
-1. Read the input string and the specified number of rows.
-2. Handle special cases, such as a single row or a string that does not require zigzag rearrangement.
-3. Create a suitable structure to store characters for each row.
-4. Traverse the input string character by character.
-5. Move downward through the rows until reaching the last row.
-6. Change direction and move upward diagonally until reaching the first row.
-7. Continue alternating between downward and upward movement while processing the characters.
-8. Combine the characters row by row to obtain the final converted string.
-9. Return the converted string as the result.
+1. Sort the input array.
+2. Iterate through the array and select the first element of each potential triplet.
+3. Skip duplicate first elements to avoid repeated triplets.
+4. Initialize two pointers: one immediately after the selected element and another at the end of the array.
+5. Calculate the sum of the three selected elements.
+6. If the sum is zero, add the triplet to the result.
+7. Move both pointers and skip duplicate values.
+8. If the sum is less than zero, move the left pointer forward.
+9. If the sum is greater than zero, move the right pointer backward.
+10. Continue until all possible unique triplets have been considered.
+11. Return the resulting list of triplets.
+
+### 🧠 Example
+
+**Input:**
+
+`nums = [-1, 0, 1, 2, -1, -4]`
+
+**Output:**
+
+`[[-1, -1, 2], [-1, 0, 1]]`
+
+**Explanation:**
+
+The unique triplets `[-1, -1, 2]` and `[-1, 0, 1]` both have a sum equal to zero.
+
+### ⚙️ Complexity Analysis
+
+For the standard sorting and two-pointer approach:
+
+- **Time Complexity:** O(n²), where n is the length of the array.
+- **Auxiliary Space Complexity:** Depends on the sorting implementation and additional variables; commonly O(log n) for in-place sorting.
+- **Result Space:** Depends on the number of unique triplets found.
 
 ### 🎯 Learning Outcomes
 
-Through this challenge, I strengthened my understanding of:
+Through this challenge, I practiced:
 
-- Manipulating strings in Java.
-- Simulating a zigzag pattern using row-based processing.
-- Traversing characters in a specific order.
-- Managing direction changes during iteration.
-- Handling special cases in string problems.
-- Developing a structured approach to algorithmic problems.
+- Sorting arrays before searching.
+- Applying the two-pointer technique.
+- Finding combinations that satisfy a mathematical condition.
+- Avoiding duplicate triplets.
+- Improving the efficiency of array-based algorithms.
+- Understanding time and space complexity.
 
 ### 📂 Files Added
 
-- `Day-82/Zigzag Conversion.java`
-- `Day-82/Screenshot 2026-10-16 084526.png`
+- `Day-83/3Sum.java`
+- `Day-83/Screenshot 2026-10-17 160528.png`
 
 ### ✅ Status
 
-**Day 82 Completed Successfully! 🎉🔥**
+**Day 83 Completed Successfully! 🎉🔥**
 
 ---
 
@@ -441,6 +478,10 @@ Practiced DFS, recursion, backtracking, and two-dimensional array traversal to f
 
 Practiced string manipulation, zigzag pattern simulation, character traversal, and row-by-row string processing.
 
+### Day 83 – 3Sum
+
+Practiced sorting, the two-pointer technique, duplicate handling, and finding unique triplets whose sum equals zero.
+
 ---
 
 ## 📈 Progress Tracker
@@ -458,17 +499,18 @@ Practiced string manipulation, zigzag pattern simulation, character traversal, a
 | Day 80 | ✅ Completed |
 | Day 81 | ✅ Completed |
 | Day 82 | ✅ Completed |
+| Day 83 | ✅ Completed |
 | Day 90 | ⏳ Upcoming |
 | Day 100 | 🏆 Final Goal |
 
 ### 🚀 Overall Progress
 
-**82 / 100 Days Completed**
+**83 / 100 Days Completed**
 
-**Progress: 82%**
+**Progress: 83%**
 
-- ✅ Completed: 82 days
-- ⏳ Remaining: 18 days
+- ✅ Completed: 83 days
+- ⏳ Remaining: 17 days
 - 🎯 Target: 100 days
 - 🔥 Next milestone: Day 90
 
@@ -583,12 +625,12 @@ https://github.com/Coder-RD/SQL-Challenge/
 
 ## 🔖 Hashtags
 
-#100DaysOfJava #Java #LeetCode #HackerRank #DSA #DataStructures #Algorithms #StringManipulation #ProblemSolving #CodingChallenge #GitHub #JavaProgramming #LearningInPublic #SoftwareDevelopment #KeepLearning
+#100DaysOfJava #Java #LeetCode #HackerRank #DSA #DataStructures #Algorithms #TwoPointers #ArrayProblems #ProblemSolving #CodingChallenge #GitHub #JavaProgramming #LearningInPublic #SoftwareDevelopment #KeepLearning
 
 ---
 
 <p align="center">
-  <b>🔥 82 Days Completed — 18 Days to Go! 🔥</b>
+  <b>🔥 83 Days Completed — 17 Days to Go! 🔥</b>
   <br>
   <b>One Day at a Time. One Problem at a Time. One Step Closer to the Goal. ☕🚀</b>
 </p>
