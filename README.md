@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" alt="Java">
   <img src="https://img.shields.io/badge/LeetCode-Practice-yellow?style=for-the-badge&logo=leetcode" alt="LeetCode">
   <img src="https://img.shields.io/badge/HackerRank-Practice-brightgreen?style=for-the-badge&logo=hackerrank" alt="HackerRank">
-  <img src="https://img.shields.io/badge/Progress-84%25-success?style=for-the-badge" alt="84% Progress">
+  <img src="https://img.shields.io/badge/Progress-85%25-success?style=for-the-badge" alt="85% Progress">
 </p>
 
 Welcome to my **#100DaysOfJava Challenge!** 🚀
@@ -37,18 +37,18 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 ## 📊 Current Challenge Status
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Days%20Completed-84%2F100-success?style=for-the-badge" alt="Days Completed">
-  <img src="https://img.shields.io/badge/Progress-84%25-brightgreen?style=for-the-badge" alt="Progress">
-  <img src="https://img.shields.io/badge/Days%20Remaining-16-orange?style=for-the-badge" alt="Days Remaining">
+  <img src="https://img.shields.io/badge/Days%20Completed-85%2F100-success?style=for-the-badge" alt="Days Completed">
+  <img src="https://img.shields.io/badge/Progress-85%25-brightgreen?style=for-the-badge" alt="Progress">
+  <img src="https://img.shields.io/badge/Days%20Remaining-15-orange?style=for-the-badge" alt="Days Remaining">
 </p>
 
 | 📊 Category | Details |
 |---|---|
 | 🎯 Challenge | 100 Days of Java |
 | ☕ Programming Language | Java |
-| 📅 Days Completed | 84 / 100 |
-| 📈 Overall Progress | 84% |
-| ⏳ Days Remaining | 16 |
+| 📅 Days Completed | 85 / 100 |
+| 📈 Overall Progress | 85% |
+| ⏳ Days Remaining | 15 |
 | 💻 Initial Platform | HackerRank |
 | 🚀 Current Platform | LeetCode |
 | 🧠 Focus | Java, DSA, Algorithms, Problem Solving |
@@ -159,6 +159,9 @@ Every day is an opportunity to learn something new, improve my coding skills, an
 - Time and Space Complexity
 - String Pattern Simulation
 - Character Traversal and Indexing
+- Triplet and Combination Problems
+- Target-Based Searching
+- Absolute Difference Calculations
 
 ---
 
@@ -169,99 +172,80 @@ The repository is organized into individual folders for each completed challenge
 Each daily folder contains the corresponding Java solution and may include a screenshot of the successful submission.
 
 - `Day-1/` to `Day-64/` — HackerRank Java challenges.
-- `Day-65/` to `Day-84/` — LeetCode problems.
+- `Day-65/` to `Day-85/` — LeetCode problems.
 - `README.md` — Challenge overview, progress tracker, and documentation.
 
 ### 📁 Recent Folder Structure
 
     Java_Challenge/
-    │
     ├── Day-1/
     ├── Day-2/
     ├── Day-3/
     ├── ...
     ├── Day-64/
-    │
     ├── Day-65/
     │   ├── Integer to Roman.java
     │   └── Screenshot
-    │
     ├── Day-66/
     │   ├── Roman to Integer.java
     │   └── Screenshot
-    │
     ├── Day-67/
     │   ├── Two Sum.java
     │   └── Screenshot
-    │
     ├── Day-68/
     │   ├── Add Two Numbers.java
     │   └── Screenshot
-    │
     ├── Day-69/
     │   ├── Longest Substring Without Repeating Characters.java
     │   └── Screenshot
-    │
     ├── Day-70/
     │   ├── Median of Two Sorted Arrays.java
     │   └── Screenshot
-    │
     ├── Day-71/
     │   ├── Reverse Integer.java
     │   └── Screenshot
-    │
     ├── Day-72/
     │   ├── Longest Palindromic Substring.java
     │   └── Screenshot
-    │
     ├── Day-73/
     │   ├── String to Integer (atoi).java
     │   └── Screenshot
-    │
     ├── Day-74/
     │   ├── Palindrome Number.java
     │   └── Screenshot
-    │
     ├── Day-75/
     │   ├── Container With Most Water.java
     │   └── Screenshot
-    │
     ├── Day-76/
     │   ├── Longest Common Prefix.java
     │   └── Screenshot
-    │
     ├── Day-77/
     │   ├── Letter Combinations of a Phone Number.java
     │   └── Screenshot
-    │
     ├── Day-78/
     │   ├── Next Permutation.java
     │   └── Screenshot
-    │
     ├── Day-79/
     │   ├── Regular Expression Matching.java
     │   └── Screenshot
-    │
     ├── Day-80/
     │   ├── Regular Expression Matching.java
     │   └── Screenshot
-    │
     ├── Day-81/
     │   ├── Word Search.java
     │   └── Screenshot 2026-10-15 075532.png
-    │
     ├── Day-82/
     │   ├── Zigzag Conversion.java
     │   └── Screenshot 2026-10-16 084526.png
-    │
     ├── Day-83/
     │   ├── 3Sum.java
     │   └── Screenshot 2026-10-17 160528.png
-    │
     ├── Day-84/
     │   ├── 3Sum Closest.java
     │   └── Screenshot 2026-10-18 111139.png
-    │
+    ├── Day-85/
+    │   ├── 4Sum.java
+    │   └── Screenshot 2026-10-19 081654.png
     └── README.md
 
 ---
@@ -312,109 +296,112 @@ Each daily folder contains the corresponding Java solution and may include a scr
 | 82 | LeetCode | Zigzag Conversion | ✅ Completed |
 | 83 | LeetCode | 3Sum | ✅ Completed |
 | 84 | LeetCode | 3Sum Closest | ✅ Completed |
-| 85–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
+| 85 | LeetCode | 4Sum | ✅ Completed |
+| 86–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
 | 100 | Final Challenge | 100 Days of Java Completed | 🏆 Goal |
 
 ---
 
-## 🆕 Day 84 – 3Sum Closest
+## 🆕 Day 85 – 4Sum
 
 ### 📌 Challenge Information
 
-- 📅 **Day:** 84
+- 📅 **Day:** 85
 - 💻 **Platform:** LeetCode
-- 🔢 **Problem Number:** #16
+- 🔢 **Problem Number:** #18
 - ☕ **Programming Language:** Java
-- 🧩 **Problem:** 3Sum Closest
-- 📂 **Folder:** `Day-84`
-- 📄 **Solution File:** `3Sum Closest.java`
-- 📸 **Screenshot:** `Screenshot 2026-10-18 111139.png`
+- 🧩 **Problem:** 4Sum
+- 📂 **Folder:** `Day-85`
+- 📄 **Solution File:** `4Sum.java`
+- 📸 **Screenshot:** `Screenshot 2026-10-19 081654.png`
 
 ### 📚 Concepts Practiced
 
 - Arrays
 - Sorting
 - Two-Pointer Technique
-- Absolute Difference
+- Nested Loops
+- Duplicate Handling
 - Target-Based Searching
-- Efficient Array Traversal
-- Problem-Solving
+- Integer Sum Calculations
+- Algorithm Optimization
 - Time and Space Complexity
 
 ### 💡 Problem Overview
 
-The 3Sum Closest problem asks us to find three integers in an array whose sum is closest to a given target.
+The 4Sum problem asks us to find all unique quadruplets in an integer array whose sum equals a given target.
 
-Given an integer array `nums` and an integer `target`, select three different elements from the array so that their sum has the smallest possible absolute difference from the target.
+Given an integer array `nums` and an integer `target`, return a list of all unique quadruplets `[nums[a], nums[b], nums[c], nums[d]]` such that:
 
-Return the sum of those three integers.
+- The four indices are distinct.
+- The sum of the four selected elements equals the target.
+- Duplicate quadruplets are not included in the result.
 
 ### 🔍 Approach
 
 1. Sort the input array in ascending order.
-2. Initialize a variable to store the closest sum using the first three elements.
-3. Iterate through the array and select one element as the first number.
-4. Initialize two pointers: one immediately after the selected element and another at the end of the array.
-5. Calculate the sum of the three selected elements.
-6. Compare the absolute difference between the current sum and the target with the difference for the best sum found so far.
-7. Update the closest sum whenever a better sum is found.
-8. If the current sum equals the target, return it immediately because no closer sum is possible.
-9. If the current sum is less than the target, move the left pointer forward.
-10. If the current sum is greater than the target, move the right pointer backward.
-11. Continue until all relevant combinations have been considered.
-12. Return the closest sum.
+2. Use the first loop to select the first element of the quadruplet.
+3. Skip duplicate values for the first element to avoid repeated quadruplets.
+4. Use the second loop to select the second element.
+5. Skip duplicate values for the second element.
+6. Initialize two pointers: one immediately after the second element and another at the end of the array.
+7. Calculate the sum of the four selected elements.
+8. If the sum equals the target, add the quadruplet to the result.
+9. Move both pointers and skip duplicate values.
+10. If the sum is less than the target, move the left pointer forward.
+11. If the sum is greater than the target, move the right pointer backward.
+12. Continue until all valid combinations have been considered.
+13. Return the list of unique quadruplets.
 
 ### 🧠 Example
 
 **Input:**
 
-`nums = [-1, 2, 1, -4]`
+`nums = [1, 0, -1, 0, -2, 2]`
 
-`target = 1`
+`target = 0`
 
 **Output:**
 
-`2`
+`[[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]`
 
 **Explanation:**
 
-The triplet `[-1, 2, 1]` produces the sum:
+The array contains three unique quadruplets whose sums equal zero:
 
-`-1 + 2 + 1 = 2`
+- `-2 + (-1) + 1 + 2 = 0`
+- `-2 + 0 + 0 + 2 = 0`
+- `-1 + 0 + 0 + 1 = 0`
 
-The absolute difference between the sum and the target is:
-
-`|2 - 1| = 1`
-
-Therefore, the closest sum is `2`.
+Therefore, these three unique quadruplets form the result.
 
 ### ⚙️ Complexity Analysis
 
 For the standard sorting and two-pointer approach:
 
-- **Time Complexity:** O(n²), where `n` is the length of the array.
+- **Time Complexity:** O(n³), where `n` is the length of the array.
 - **Auxiliary Space Complexity:** Depends on the sorting implementation; commonly O(log n) for in-place sorting.
-- **Additional Variables:** O(1), excluding sorting and the input array.
+- **Result Space:** Depends on the number of unique quadruplets returned.
 
 ### 🎯 Learning Outcomes
 
 Through this challenge, I practiced:
 
-- Sorting arrays before searching.
-- Applying the two-pointer technique.
-- Finding a sum closest to a specified target.
-- Comparing absolute differences.
-- Optimizing array traversal.
+- Sorting an array before searching.
+- Applying nested loops and the two-pointer technique.
+- Finding four elements whose sum equals a target.
+- Avoiding duplicate combinations.
+- Optimizing brute-force solutions.
 - Understanding time and space complexity.
 
 ### 📂 Files Added
 
-- `Day-84/3Sum Closest.java`
-- `Day-84/Screenshot 2026-10-18 111139.png`
+- `Day-85/4Sum.java`
+- `Day-85/Screenshot 2026-10-19 081654.png`
 
 ### ✅ Status
 
-**Day 84 Completed Successfully! 🎉🔥**
+**Day 85 Completed Successfully! 🎉🔥**
 
 ---
 
@@ -500,6 +487,10 @@ Practiced sorting, the two-pointer technique, duplicate handling, and finding un
 
 Practiced sorting, the two-pointer technique, absolute difference calculations, and finding a triplet sum closest to a specified target.
 
+### Day 85 – 4Sum
+
+Practiced sorting, nested loops, the two-pointer technique, duplicate handling, and finding unique quadruplets whose sum equals a specified target.
+
 ---
 
 ## 📈 Progress Tracker
@@ -519,17 +510,18 @@ Practiced sorting, the two-pointer technique, absolute difference calculations, 
 | Day 82 | ✅ Completed |
 | Day 83 | ✅ Completed |
 | Day 84 | ✅ Completed |
+| Day 85 | ✅ Completed |
 | Day 90 | ⏳ Upcoming |
 | Day 100 | 🏆 Final Goal |
 
 ### 🚀 Overall Progress
 
-**84 / 100 Days Completed**
+**85 / 100 Days Completed**
 
-**Progress: 84%**
+**Progress: 85%**
 
-- ✅ Completed: 84 days
-- ⏳ Remaining: 16 days
+- ✅ Completed: 85 days
+- ⏳ Remaining: 15 days
 - 🎯 Target: 100 days
 - 🔥 Next milestone: Day 90
 
@@ -649,7 +641,7 @@ https://github.com/Coder-RD/SQL-Challenge/
 ---
 
 <p align="center">
-  <b>🔥 84 Days Completed — 16 Days to Go! 🔥</b>
+  <b>🔥 85 Days Completed — 15 Days to Go! 🔥</b>
   <br>
   <b>One Day at a Time. One Problem at a Time. One Step Closer to the Goal. ☕🚀</b>
 </p>
