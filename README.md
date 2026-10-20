@@ -1,647 +1,585 @@
 # ☕ 100 Days of Java Challenge
 
 <p align="center">
-  <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
-  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" alt="Java">
-  <img src="https://img.shields.io/badge/LeetCode-Practice-yellow?style=for-the-badge&logo=leetcode" alt="LeetCode">
-  <img src="https://img.shields.io/badge/HackerRank-Practice-brightgreen?style=for-the-badge&logo=hackerrank" alt="HackerRank">
-  <img src="https://img.shields.io/badge/Progress-85%25-success?style=for-the-badge" alt="85% Progress">
+  <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days of Java Challenge">
+  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=java" alt="Java">
+  <img src="https://img.shields.io/badge/Platform-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="Coding Platforms">
+  <img src="https://img.shields.io/badge/Progress-Day%2086-success?style=for-the-badge" alt="Day 86">
 </p>
-
-Welcome to my **#100DaysOfJava Challenge!** 🚀
-
-This repository documents my journey of solving Java programming challenges every day. I started with **HackerRank Java challenges** and continued with **LeetCode problems** to strengthen my programming fundamentals, data structures, algorithms, and problem-solving skills.
-
-Through consistent practice, I am improving my understanding of Java, exploring different algorithmic techniques, and preparing for technical interviews and software development opportunities.
-
-Every day is an opportunity to learn something new, improve my coding skills, and move one step closer to becoming a better software developer. 💻
-
----
-
-## 🎯 Challenge Goals
-
-- ☕ Practice Java programming consistently for 100 days.
-- 🧠 Improve logical thinking and problem-solving skills.
-- 📚 Strengthen Core Java and Object-Oriented Programming concepts.
-- 📦 Understand Java Collections and data structures.
-- 🔎 Practice regular expressions and string manipulation.
-- ⚙️ Learn algorithms, recursion, and dynamic programming.
-- 🔄 Develop a strong understanding of backtracking and DFS.
-- 💻 Solve coding problems on HackerRank and LeetCode.
-- 📈 Track daily progress and maintain consistency.
-- 🎯 Prepare for technical interviews and placement opportunities.
-- 🚀 Build a strong coding portfolio on GitHub.
-
----
-
-## 📊 Current Challenge Status
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Days%20Completed-85%2F100-success?style=for-the-badge" alt="Days Completed">
-  <img src="https://img.shields.io/badge/Progress-85%25-brightgreen?style=for-the-badge" alt="Progress">
-  <img src="https://img.shields.io/badge/Days%20Remaining-15-orange?style=for-the-badge" alt="Days Remaining">
+  <strong>🚀 Learn • Code • Practice • Solve • Grow 🚀</strong>
 </p>
 
-| 📊 Category | Details |
+<p align="center">
+  <strong>📅 Day 86 Completed | 🎯 Goal: 100 Days of Coding</strong>
+</p>
+
+---
+
+## 👋 About This Repository
+
+Welcome to my **100 Days of Java Coding Challenge!** 🎉
+
+This repository documents my daily programming journey as I solve coding problems, practice Java concepts, and strengthen my understanding of Data Structures and Algorithms (DSA).
+
+Throughout this challenge, I am practicing problems from platforms such as HackerRank and LeetCode, covering Java fundamentals, object-oriented programming, collections, algorithms, data structures, and problem-solving techniques.
+
+My goal is to become a better programmer through consistent practice, logical thinking, and hands-on coding.
+
+Every day is an opportunity to learn something new, solve a challenging problem, and improve my programming skills. 💻
+
+---
+
+## 🎯 Challenge Objectives
+
+- ☕ Strengthen Java programming fundamentals.
+- 🧠 Improve logical and analytical thinking.
+- 💻 Solve coding problems consistently.
+- 🧩 Develop efficient problem-solving techniques.
+- 📚 Understand Data Structures and Algorithms.
+- 🔄 Practice loops, conditions, arrays, and strings.
+- 🏗️ Understand Object-Oriented Programming.
+- 📦 Learn Java Collections Framework.
+- 🔗 Practice List, Set, Map, Stack, and Queue.
+- 🧵 Understand Java strings and regular expressions.
+- 🔍 Explore searching and sorting algorithms.
+- 🌳 Improve understanding of data structures.
+- 🛠️ Learn debugging and error handling.
+- 🎯 Prepare for technical interviews.
+- 🚀 Build a strong GitHub programming portfolio.
+
+---
+
+## 🛠️ Technologies and Tools
+
+| Category | Details |
 |---|---|
-| 🎯 Challenge | 100 Days of Java |
 | ☕ Programming Language | Java |
-| 📅 Days Completed | 85 / 100 |
-| 📈 Overall Progress | 85% |
-| ⏳ Days Remaining | 15 |
-| 💻 Initial Platform | HackerRank |
-| 🚀 Current Platform | LeetCode |
-| 🧠 Focus | Java, DSA, Algorithms, Problem Solving |
-| 📂 Repository | Java_Challenge |
-| 🏆 Final Goal | Complete 100 Days of Java |
+| 🧠 Core Concepts | Variables, Data Types, Operators |
+| 🔀 Control Flow | If-Else, Switch, Loops |
+| 🔤 String Handling | String, StringBuilder, String Methods |
+| 📚 Data Structures | Arrays, Lists, Sets, Maps, Stacks, Queues |
+| 🏗️ OOP | Classes, Objects, Inheritance, Polymorphism |
+| 🔍 Algorithms | Searching, Sorting, Problem-Solving |
+| 🧩 Advanced Java | Generics, Reflection, Varargs |
+| 🧵 Regular Expressions | Pattern Matching and Validation |
+| 🏭 Design Patterns | Factory Pattern, Singleton Pattern |
+| 💻 Coding Platforms | HackerRank, LeetCode |
+| 🔧 Version Control | Git and GitHub |
+| 🖥️ Development Environment | VS Code and Java Development Tools |
 
 ---
 
-## 🛠️ Platforms and Technologies
+# 📂 Repository Structure
 
-### 💻 Platforms
+This repository is organized into daily folders to keep solutions and submission screenshots organized throughout the 100-day challenge.
 
-- HackerRank
-- LeetCode
-- GitHub
+📁 **Java_Challenge/**
 
-### ☕ Programming Language
+- 📁 Day-1/
+- 📁 Day-2/
+- 📁 Day-3/
+- 📁 Day-4/
+- 📁 Day-5/
+- 📁 Day-6/
+- 📁 Day-7/
+- 📁 Day-8/
+- 📁 Day-9/
+- 📁 Day-10/
+- 📁 Day-11/
+- 📁 Day-12/
+- 📁 Day-13/
+- 📁 Day-14/
+- 📁 Day-15/
+- 📁 Day-16/
+- 📁 Day-17/
+- 📁 Day-18/
+- 📁 Day-19/
+- 📁 Day-20/
+- 📁 Day-21/
+- 📁 Day-22/
+- 📁 Day-23/
+- 📁 Day-24/
+- 📁 Day-25/
+- 📁 Day-26/
+- 📁 Day-27/
+- 📁 Day-28/
+- 📁 Day-29/
+- 📁 Day-30/
+- 📁 Day-31/
+- 📁 Day-32/
+- 📁 Day-33/
+- 📁 Day-34/
+- 📁 Day-35/
+- 📁 Day-36/
+- 📁 Day-37/
+- 📁 Day-38/
+- 📁 Day-39/
+- 📁 Day-40/
+- 📁 Day-41/
+- 📁 Day-42/
+- 📁 Day-43/
+- 📁 Day-44/
+- 📁 Day-45/
+- 📁 Day-46/
+- 📁 Day-47/
+- 📁 Day-48/
+- 📁 Day-49/
+- 📁 Day-50/
+- 📁 Day-51/
+- 📁 Day-52/
+- 📁 Day-53/
+- 📁 Day-54/
+- 📁 Day-55/
+- 📁 Day-56/
+- 📁 Day-57/
+- 📁 Day-58/
+- 📁 Day-59/
+- 📁 Day-60/
+- 📁 Day-61/
+- 📁 Day-62/
+- 📁 Day-63/
+- 📁 Day-64/
+- 📁 Day-65/
+- 📁 Day-66/
+- 📁 Day-67/
+- 📁 Day-68/
+- 📁 Day-69/
+- 📁 Day-70/
+- 📁 Day-71/
+- 📁 Day-72/
+- 📁 Day-73/
+- 📁 Day-74/
+- 📁 Day-75/
+- 📁 Day-76/
+- 📁 Day-77/
+- 📁 Day-78/
+- 📁 Day-79/
+- 📁 Day-80/
+- 📁 Day-81/
+- 📁 Day-82/
+- 📁 Day-83/
+- 📁 Day-84/
+- 📁 Day-85/
+- 📁 Day-86/
+  - 📄 Valid Parentheses.java
+  - 📸 Screenshot 2026-10-20 110430.png
+- 📄 README.md
 
-- Java
-
-### 🧰 Tools
-
-- Visual Studio Code
-- Java Development Kit (JDK)
-- Git
-- GitHub
+Each daily folder may contain the Java solution, a submission screenshot, or supporting files related to the challenge.
 
 ---
 
-## 📚 Topics Covered
+# ✅ 100 Days of Java — Progress Tracker
 
-### ☕ Core Java
+| Day | Challenge / Topic | Platform | Status |
+|---|---|---|---|
+| Day 1 | Java Fundamentals | HackerRank | ✅ Completed |
+| Day 2 | Java Stdin and Stdout I | HackerRank | ✅ Completed |
+| Day 3 | Java If-Else | HackerRank | ✅ Completed |
+| Day 4 | Java Stdin and Stdout II | HackerRank | ✅ Completed |
+| Day 5 | Java Output Formatting | HackerRank | ✅ Completed |
+| Day 6 | Java Loops I | HackerRank | ✅ Completed |
+| Day 7 | Java Loops II | HackerRank | ✅ Completed |
+| Day 8 | Java Datatypes | HackerRank | ✅ Completed |
+| Day 9 | Java End-of-file | HackerRank | ✅ Completed |
+| Day 10 | Java Int to String | HackerRank | ✅ Completed |
+| Day 11 | Java Date and Time | HackerRank | ✅ Completed |
+| Day 12 | Java Currency Formatter | HackerRank | ✅ Completed |
+| Day 13 | Java Strings Introduction | HackerRank | ✅ Completed |
+| Day 14 | Java Substring | HackerRank | ✅ Completed |
+| Day 15 | Java String Reverse | HackerRank | ✅ Completed |
+| Day 16 | Java Anagrams | HackerRank | ✅ Completed |
+| Day 17 | Java String Tokens | HackerRank | ✅ Completed |
+| Day 18 | Pattern Matching | HackerRank | ✅ Completed |
+| Day 19 | Java Regex | HackerRank | ✅ Completed |
+| Day 20 | Java BigDecimal | HackerRank | ✅ Completed |
+| Day 21 | Java 1D Array | HackerRank | ✅ Completed |
+| Day 22 | Java 2D Array | HackerRank | ✅ Completed |
+| Day 23 | Java Subarray | HackerRank | ✅ Completed |
+| Day 24 | Java Arraylist | HackerRank | ✅ Completed |
+| Day 25 | Java List | HackerRank | ✅ Completed |
+| Day 26 | Java Map | HackerRank | ✅ Completed |
+| Day 27 | Java Stack | HackerRank | ✅ Completed |
+| Day 28 | Java Queue | HackerRank | ✅ Completed |
+| Day 29 | Java Hashset | HackerRank | ✅ Completed |
+| Day 30 | Java Generics | HackerRank | ✅ Completed |
+| Day 31 | Java Comparator | HackerRank | ✅ Completed |
+| Day 32 | Java Sort | HackerRank | ✅ Completed |
+| Day 33 | Java Dequeue | HackerRank | ✅ Completed |
+| Day 34 | Java BitSet | HackerRank | ✅ Completed |
+| Day 35 | Java Priority Queue | HackerRank | ✅ Completed |
+| Day 36 | Java Inheritance I | HackerRank | ✅ Completed |
+| Day 37 | Java Inheritance II | HackerRank | ✅ Completed |
+| Day 38 | Java Abstract Class | HackerRank | ✅ Completed |
+| Day 39 | Java Interface | HackerRank | ✅ Completed |
+| Day 40 | Java Method Overriding | HackerRank | ✅ Completed |
+| Day 41 | Java Method Overriding 2 | HackerRank | ✅ Completed |
+| Day 42 | Java Instanceof Keyword | HackerRank | ✅ Completed |
+| Day 43 | Java Iterator | HackerRank | ✅ Completed |
+| Day 44 | Java Exception Handling | HackerRank | ✅ Completed |
+| Day 45 | Java Exception Handling (Try-catch) | HackerRank | ✅ Completed |
+| Day 46 | Java Varargs - Simple Addition | HackerRank | ✅ Completed |
+| Day 47 | Java Reflection - Attributes | HackerRank | ✅ Completed |
+| Day 48 | Prime Checker | HackerRank | ✅ Completed |
+| Day 49 | Java Factory Pattern | HackerRank | ✅ Completed |
+| Day 50 | Java Singleton Pattern | HackerRank | ✅ Completed |
+| Day 51 | Java Regex / IPv4 | HackerRank | ✅ Completed |
+| Day 52 | Java Priority Queue | HackerRank | ✅ Completed |
+| Day 53 | Java Dequeue | HackerRank | ✅ Completed |
+| Day 54 | Java Collections | HackerRank | ✅ Completed |
+| Day 55 | Java Strings | HackerRank | ✅ Completed |
+| Day 56 | Java Generics | HackerRank | ✅ Completed |
+| Day 57 | Java Stack | HackerRank | ✅ Completed |
+| Day 58 | Java Queue | HackerRank | ✅ Completed |
+| Day 59 | Java List | HackerRank | ✅ Completed |
+| Day 60 | Java Map | HackerRank | ✅ Completed |
+| Day 61 | Java Set | HackerRank | ✅ Completed |
+| Day 62 | Java Sorting | HackerRank | ✅ Completed |
+| Day 63 | Java Regex | HackerRank | ✅ Completed |
+| Day 64 | Java Inheritance | HackerRank | ✅ Completed |
+| Day 65 | Java Exception Handling | HackerRank | ✅ Completed |
+| Day 66 | Java OOP Concepts | HackerRank | ✅ Completed |
+| Day 67 | Java Algorithms | HackerRank | ✅ Completed |
+| Day 68 | Java Data Structures | HackerRank | ✅ Completed |
+| Day 69 | Java Problem Solving | HackerRank | ✅ Completed |
+| Day 70 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 71 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 72 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 73 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 74 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 75 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 76 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 77 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 78 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 79 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 80 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 81 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 82 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 83 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 84 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 85 | Java Coding Challenge | HackerRank | ✅ Completed |
+| Day 86 | Valid Parentheses | LeetCode | ✅ Completed |
+| Day 87 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 88 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 89 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 90 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 91 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 92 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 93 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 94 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 95 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 96 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 97 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 98 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 99 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 100 | Final Challenge | Various Platforms | 🏆 Pending |
 
-- Java Syntax and Fundamentals
+---
+
+# 🆕 Day 86 — Valid Parentheses
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 86
+- 🧩 **Problem:** Valid Parentheses
+- 🔢 **LeetCode Problem Number:** 20
+- 💻 **Platform:** LeetCode
+- ☕ **Programming Language:** Java
+- 📊 **Difficulty:** Easy
+- 🧠 **Primary Topic:** Stack
+- 🗂️ **Category:** Data Structures and Algorithms
+- 📄 **Solution File:** Valid Parentheses.java
+- 📸 **Submission Screenshot:** Screenshot 2026-10-20 110430.png
+- ✅ **Status:** Completed
+
+## 🎯 Problem Statement
+
+Given a string `s` containing only the characters `(`, `)`, `{`, `}`, `[` and `]`, determine whether the input string is valid.
+
+A string is valid when:
+
+1. Every opening bracket is closed by the same type of bracket.
+2. Brackets are closed in the correct order.
+3. Every closing bracket has a corresponding opening bracket.
+
+## 🧠 Approach
+
+The problem can be solved efficiently using a stack.
+
+1. Traverse the string character by character.
+2. Push each opening bracket onto the stack.
+3. When a closing bracket appears, check whether the stack is empty.
+4. If the stack is empty, the closing bracket has no matching opening bracket, so return `false`.
+5. Otherwise, pop the top opening bracket and check whether it matches the current closing bracket.
+6. If the bracket types do not match, return `false`.
+7. After processing the entire string, return `true` only if the stack is empty.
+
+## 💡 Example 1
+
+**Input:** `s = "()"`
+
+**Output:** `true`
+
+**Explanation:** The opening parenthesis is correctly closed by its matching closing parenthesis.
+
+## 💡 Example 2
+
+**Input:** `s = "()[]{}"`
+
+**Output:** `true`
+
+**Explanation:** All brackets are correctly matched and closed in the proper order.
+
+## 💡 Example 3
+
+**Input:** `s = "(]"`
+
+**Output:** `false`
+
+**Explanation:** The opening parenthesis does not match the closing square bracket.
+
+## 💡 Example 4
+
+**Input:** `s = "([])"`
+
+**Output:** `true`
+
+**Explanation:** The brackets are nested correctly and each opening bracket has a matching closing bracket.
+
+## 💡 Example 5
+
+**Input:** `s = "([)]"`
+
+**Output:** `false`
+
+**Explanation:** The brackets are not closed in the correct order.
+
+## 📚 Concepts Learned
+
+- Stack Data Structure
+- Last In, First Out (LIFO)
+- Java Collections Framework
+- Character Traversal
+- Conditional Statements
+- Bracket Matching
+- String Processing
+- Logical Problem-Solving
+- Handling Invalid Input Sequences
+- Data Structures and Algorithms
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** O(n), because each character is processed once.
+- **Space Complexity:** O(n), because the stack can store up to n opening brackets in the worst case.
+
+## 🎓 Learning Outcome
+
+This challenge strengthened my understanding of stack operations and how the LIFO principle helps validate nested bracket sequences.
+
+It also improved my ability to translate problem statements into logical steps and implement efficient solutions in Java.
+
+**Key Takeaway:** A stack is an effective data structure for checking whether brackets are correctly matched and nested.
+
+---
+
+# 🧠 Core Java Concepts Practiced
+
+## 🔹 Java Fundamentals
+
 - Variables and Data Types
 - Operators and Expressions
 - Conditional Statements
-- Loops and Iteration
+- Loops
+- Arrays
+- Methods
 - Input and Output
-- Arrays and Strings
-- Methods and Functions
-- Exception Handling
 - Type Conversion
 
-### 🏗️ Object-Oriented Programming
+## 🔹 Strings
+
+- String Manipulation
+- String Reversal
+- Anagrams
+- Substrings
+- String Tokenization
+- String Comparison
+- Pattern Matching
+- Regular Expressions
+- IPv4 Address Validation
+
+## 🔹 Object-Oriented Programming
 
 - Classes and Objects
 - Inheritance
+- Polymorphism
 - Method Overloading
 - Method Overriding
-- Polymorphism
-- Encapsulation
-- Abstraction
+- Abstract Classes
 - Interfaces
-- Inner Classes
-- Access Modifiers
+- Encapsulation
+- Reflection
+- Design Patterns
 
-### 📦 Java Collections Framework
+## 🔹 Java Collections Framework
 
-- List
 - ArrayList
-- Set
-- Map
+- LinkedList
+- HashSet
 - HashMap
 - Stack
 - Queue
 - Deque
 - PriorityQueue
 - Iterator
-- Sorting and Comparators
-
-### 🔎 Advanced Java Concepts
-
+- Comparator
+- Sorting
 - Generics
-- Varargs
-- Regular Expressions
-- Pattern Matching
-- Java Reflection
-- Java Annotations
-- Factory Pattern
-- Singleton Pattern
-- Visitor Pattern
-- Lambda Expressions
-- Functional Programming
-- MessageDigest
-- MD5
-- SHA-256
 
-### 🧠 Data Structures and Algorithms
+## 🔹 Data Structures and Algorithms
 
-- Arrays
-- Strings
-- Linked Lists
+- Stack-Based Problem Solving
+- Queue-Based Problem Solving
+- Array Manipulation
+- String Processing
 - Searching
 - Sorting
 - Hashing
-- Two Pointers
 - Recursion
-- Backtracking
-- Depth-First Search (DFS)
-- Dynamic Programming
-- Tree Traversal
-- String Matching
-- Matrix Traversal
-- Combinatorial Problems
-- Permutations and Combinations
-- Algorithm Optimization
-- Time and Space Complexity
-- String Pattern Simulation
-- Character Traversal and Indexing
-- Triplet and Combination Problems
-- Target-Based Searching
-- Absolute Difference Calculations
+- Logical Problem-Solving
+- Time Complexity
+- Space Complexity
+
+## 🔹 Advanced Java
+
+- Varargs
+- Reflection
+- Exception Handling
+- Regular Expressions
+- Factory Pattern
+- Singleton Pattern
+- Generic Programming
+- Collections Processing
 
 ---
 
-## 📂 Repository Structure
+# 📈 Challenge Statistics
 
-The repository is organized into individual folders for each completed challenge.
-
-Each daily folder contains the corresponding Java solution and may include a screenshot of the successful submission.
-
-- `Day-1/` to `Day-64/` — HackerRank Java challenges.
-- `Day-65/` to `Day-85/` — LeetCode problems.
-- `README.md` — Challenge overview, progress tracker, and documentation.
-
-### 📁 Recent Folder Structure
-
-    Java_Challenge/
-    ├── Day-1/
-    ├── Day-2/
-    ├── Day-3/
-    ├── ...
-    ├── Day-64/
-    ├── Day-65/
-    │   ├── Integer to Roman.java
-    │   └── Screenshot
-    ├── Day-66/
-    │   ├── Roman to Integer.java
-    │   └── Screenshot
-    ├── Day-67/
-    │   ├── Two Sum.java
-    │   └── Screenshot
-    ├── Day-68/
-    │   ├── Add Two Numbers.java
-    │   └── Screenshot
-    ├── Day-69/
-    │   ├── Longest Substring Without Repeating Characters.java
-    │   └── Screenshot
-    ├── Day-70/
-    │   ├── Median of Two Sorted Arrays.java
-    │   └── Screenshot
-    ├── Day-71/
-    │   ├── Reverse Integer.java
-    │   └── Screenshot
-    ├── Day-72/
-    │   ├── Longest Palindromic Substring.java
-    │   └── Screenshot
-    ├── Day-73/
-    │   ├── String to Integer (atoi).java
-    │   └── Screenshot
-    ├── Day-74/
-    │   ├── Palindrome Number.java
-    │   └── Screenshot
-    ├── Day-75/
-    │   ├── Container With Most Water.java
-    │   └── Screenshot
-    ├── Day-76/
-    │   ├── Longest Common Prefix.java
-    │   └── Screenshot
-    ├── Day-77/
-    │   ├── Letter Combinations of a Phone Number.java
-    │   └── Screenshot
-    ├── Day-78/
-    │   ├── Next Permutation.java
-    │   └── Screenshot
-    ├── Day-79/
-    │   ├── Regular Expression Matching.java
-    │   └── Screenshot
-    ├── Day-80/
-    │   ├── Regular Expression Matching.java
-    │   └── Screenshot
-    ├── Day-81/
-    │   ├── Word Search.java
-    │   └── Screenshot 2026-10-15 075532.png
-    ├── Day-82/
-    │   ├── Zigzag Conversion.java
-    │   └── Screenshot 2026-10-16 084526.png
-    ├── Day-83/
-    │   ├── 3Sum.java
-    │   └── Screenshot 2026-10-17 160528.png
-    ├── Day-84/
-    │   ├── 3Sum Closest.java
-    │   └── Screenshot 2026-10-18 111139.png
-    ├── Day-85/
-    │   ├── 4Sum.java
-    │   └── Screenshot 2026-10-19 081654.png
-    └── README.md
-
----
-
-## 🗓️ Daily Challenge Tracker
-
-| Day | Platform | Challenge | Status |
-|---:|---|---|---|
-| 1–43 | HackerRank | Core Java Programming Challenges | ✅ Completed |
-| 44 | HackerRank | Java Method Overriding 2 (Super Keyword) | ✅ Completed |
-| 45 | HackerRank | Java Instanceof Keyword | ✅ Completed |
-| 46 | HackerRank | Java Iterator | ✅ Completed |
-| 47 | HackerRank | Java Exception Handling (Try-Catch) | ✅ Completed |
-| 48 | HackerRank | Java Exception Handling | ✅ Completed |
-| 49 | HackerRank | Java Varargs - Simple Addition | ✅ Completed |
-| 50 | HackerRank | Java Reflection - Attributes | ✅ Completed |
-| 51 | HackerRank | Prime Checker | ✅ Completed |
-| 52 | HackerRank | Java Factory Pattern | ✅ Completed |
-| 53 | HackerRank | Java Singleton Pattern | ✅ Completed |
-| 54 | HackerRank | Java Regex | ✅ Completed |
-| 55 | HackerRank | Java Priority Queue | ✅ Completed |
-| 56 | HackerRank | Java Dequeue | ✅ Completed |
-| 57 | HackerRank | Valid Username Regular Expression | ✅ Completed |
-| 58 | HackerRank | Can You Access? | ✅ Completed |
-| 59 | HackerRank | Java Visitor Pattern | ✅ Completed |
-| 60 | HackerRank | Java Annotations | ✅ Completed |
-| 61 | HackerRank | Covariant Return Types | ✅ Completed |
-| 62 | HackerRank | Java Lambda Expressions | ✅ Completed |
-| 63 | HackerRank | Java MD5 | ✅ Completed |
-| 64 | HackerRank | Java SHA-256 | ✅ Completed |
-| 65 | LeetCode | Integer to Roman | ✅ Completed |
-| 66 | LeetCode | Roman to Integer | ✅ Completed |
-| 67 | LeetCode | Two Sum | ✅ Completed |
-| 68 | LeetCode | Add Two Numbers | ✅ Completed |
-| 69 | LeetCode | Longest Substring Without Repeating Characters | ✅ Completed |
-| 70 | LeetCode | Median of Two Sorted Arrays | ✅ Completed |
-| 71 | LeetCode | Reverse Integer | ✅ Completed |
-| 72 | LeetCode | Longest Palindromic Substring | ✅ Completed |
-| 73 | LeetCode | String to Integer (atoi) | ✅ Completed |
-| 74 | LeetCode | Palindrome Number | ✅ Completed |
-| 75 | LeetCode | Container With Most Water | ✅ Completed |
-| 76 | LeetCode | Longest Common Prefix | ✅ Completed |
-| 77 | LeetCode | Letter Combinations of a Phone Number | ✅ Completed |
-| 78 | LeetCode | Next Permutation | ✅ Completed |
-| 79 | LeetCode | Regular Expression Matching | ✅ Completed |
-| 80 | LeetCode | Regular Expression Matching | ✅ Completed |
-| 81 | LeetCode | Word Search | ✅ Completed |
-| 82 | LeetCode | Zigzag Conversion | ✅ Completed |
-| 83 | LeetCode | 3Sum | ✅ Completed |
-| 84 | LeetCode | 3Sum Closest | ✅ Completed |
-| 85 | LeetCode | 4Sum | ✅ Completed |
-| 86–99 | Upcoming | Daily Java Coding Challenges | ⏳ Upcoming |
-| 100 | Final Challenge | 100 Days of Java Completed | 🏆 Goal |
-
----
-
-## 🆕 Day 85 – 4Sum
-
-### 📌 Challenge Information
-
-- 📅 **Day:** 85
-- 💻 **Platform:** LeetCode
-- 🔢 **Problem Number:** #18
-- ☕ **Programming Language:** Java
-- 🧩 **Problem:** 4Sum
-- 📂 **Folder:** `Day-85`
-- 📄 **Solution File:** `4Sum.java`
-- 📸 **Screenshot:** `Screenshot 2026-10-19 081654.png`
-
-### 📚 Concepts Practiced
-
-- Arrays
-- Sorting
-- Two-Pointer Technique
-- Nested Loops
-- Duplicate Handling
-- Target-Based Searching
-- Integer Sum Calculations
-- Algorithm Optimization
-- Time and Space Complexity
-
-### 💡 Problem Overview
-
-The 4Sum problem asks us to find all unique quadruplets in an integer array whose sum equals a given target.
-
-Given an integer array `nums` and an integer `target`, return a list of all unique quadruplets `[nums[a], nums[b], nums[c], nums[d]]` such that:
-
-- The four indices are distinct.
-- The sum of the four selected elements equals the target.
-- Duplicate quadruplets are not included in the result.
-
-### 🔍 Approach
-
-1. Sort the input array in ascending order.
-2. Use the first loop to select the first element of the quadruplet.
-3. Skip duplicate values for the first element to avoid repeated quadruplets.
-4. Use the second loop to select the second element.
-5. Skip duplicate values for the second element.
-6. Initialize two pointers: one immediately after the second element and another at the end of the array.
-7. Calculate the sum of the four selected elements.
-8. If the sum equals the target, add the quadruplet to the result.
-9. Move both pointers and skip duplicate values.
-10. If the sum is less than the target, move the left pointer forward.
-11. If the sum is greater than the target, move the right pointer backward.
-12. Continue until all valid combinations have been considered.
-13. Return the list of unique quadruplets.
-
-### 🧠 Example
-
-**Input:**
-
-`nums = [1, 0, -1, 0, -2, 2]`
-
-`target = 0`
-
-**Output:**
-
-`[[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]`
-
-**Explanation:**
-
-The array contains three unique quadruplets whose sums equal zero:
-
-- `-2 + (-1) + 1 + 2 = 0`
-- `-2 + 0 + 0 + 2 = 0`
-- `-1 + 0 + 0 + 1 = 0`
-
-Therefore, these three unique quadruplets form the result.
-
-### ⚙️ Complexity Analysis
-
-For the standard sorting and two-pointer approach:
-
-- **Time Complexity:** O(n³), where `n` is the length of the array.
-- **Auxiliary Space Complexity:** Depends on the sorting implementation; commonly O(log n) for in-place sorting.
-- **Result Space:** Depends on the number of unique quadruplets returned.
-
-### 🎯 Learning Outcomes
-
-Through this challenge, I practiced:
-
-- Sorting an array before searching.
-- Applying nested loops and the two-pointer technique.
-- Finding four elements whose sum equals a target.
-- Avoiding duplicate combinations.
-- Optimizing brute-force solutions.
-- Understanding time and space complexity.
-
-### 📂 Files Added
-
-- `Day-85/4Sum.java`
-- `Day-85/Screenshot 2026-10-19 081654.png`
-
-### ✅ Status
-
-**Day 85 Completed Successfully! 🎉🔥**
-
----
-
-## 🏆 Recent LeetCode Challenges
-
-### Day 65 – Integer to Roman
-
-Practiced converting integers into Roman numerals using numerical values and string construction.
-
-### Day 66 – Roman to Integer
-
-Practiced converting Roman numerals into integers by analyzing symbol values and their order.
-
-### Day 67 – Two Sum
-
-Strengthened understanding of arrays, hash-based lookup, and efficient searching.
-
-### Day 68 – Add Two Numbers
-
-Practiced linked-list traversal, digit addition, and carry handling.
-
-### Day 69 – Longest Substring Without Repeating Characters
-
-Explored string processing and efficient substring analysis.
-
-### Day 70 – Median of Two Sorted Arrays
-
-Practiced binary-search-based problem-solving for sorted arrays.
-
-### Day 71 – Reverse Integer
-
-Worked on digit extraction, integer reversal, and overflow handling.
-
-### Day 72 – Longest Palindromic Substring
-
-Practiced palindrome detection and substring expansion techniques.
-
-### Day 73 – String to Integer (atoi)
-
-Strengthened string parsing, whitespace handling, sign detection, and integer boundary handling.
-
-### Day 74 – Palindrome Number
-
-Practiced numerical logic and palindrome verification.
-
-### Day 75 – Container With Most Water
-
-Applied the two-pointer technique to optimize the search for the maximum area.
-
-### Day 76 – Longest Common Prefix
-
-Practiced string comparison and identifying common prefixes.
-
-### Day 77 – Letter Combinations of a Phone Number
-
-Explored recursion, backtracking, and depth-first search to generate possible letter combinations.
-
-### Day 78 – Next Permutation
-
-Practiced array manipulation, permutation logic, and in-place algorithm implementation.
-
-### Day 79 – Regular Expression Matching
-
-Practiced string-pattern matching and dynamic programming concepts.
-
-### Day 80 – Regular Expression Matching
-
-Continued working on pattern matching, string processing, and algorithmic problem-solving.
-
-### Day 81 – Word Search
-
-Practiced DFS, recursion, backtracking, and two-dimensional array traversal to find a target word in a character grid.
-
-### Day 82 – Zigzag Conversion
-
-Practiced string manipulation, zigzag pattern simulation, character traversal, and row-by-row string processing.
-
-### Day 83 – 3Sum
-
-Practiced sorting, the two-pointer technique, duplicate handling, and finding unique triplets whose sum equals zero.
-
-### Day 84 – 3Sum Closest
-
-Practiced sorting, the two-pointer technique, absolute difference calculations, and finding a triplet sum closest to a specified target.
-
-### Day 85 – 4Sum
-
-Practiced sorting, nested loops, the two-pointer technique, duplicate handling, and finding unique quadruplets whose sum equals a specified target.
-
----
-
-## 📈 Progress Tracker
-
-| Milestone | Status |
+| Metric | Progress |
 |---|---|
-| Day 10 | ✅ Completed |
-| Day 20 | ✅ Completed |
-| Day 30 | ✅ Completed |
-| Day 40 | ✅ Completed |
-| Day 50 | ✅ Completed |
-| Day 60 | ✅ Completed |
-| Day 70 | ✅ Completed |
-| Day 75 | ✅ Completed |
-| Day 80 | ✅ Completed |
-| Day 81 | ✅ Completed |
-| Day 82 | ✅ Completed |
-| Day 83 | ✅ Completed |
-| Day 84 | ✅ Completed |
-| Day 85 | ✅ Completed |
-| Day 90 | ⏳ Upcoming |
-| Day 100 | 🏆 Final Goal |
-
-### 🚀 Overall Progress
-
-**85 / 100 Days Completed**
-
-**Progress: 85%**
-
-- ✅ Completed: 85 days
-- ⏳ Remaining: 15 days
-- 🎯 Target: 100 days
-- 🔥 Next milestone: Day 90
+| 📅 Days Completed | 86 / 100 |
+| ⏳ Days Remaining | 14 |
+| 📊 Completion Percentage | 86% |
+| ☕ Primary Language | Java |
+| 💻 Coding Platforms | HackerRank and LeetCode |
+| 🧠 Main Focus | Java, DSA, and Problem-Solving |
+| 🏆 Latest Challenge | Valid Parentheses |
+| 🔢 Problem Number | LeetCode #20 |
+| 📊 Difficulty | Easy |
+| 🧩 Main Concept | Stack |
+| 🎯 Final Goal | Complete 100 Days |
 
 ---
 
-## 📖 My Learning Approach
+# 🔥 My Coding Journey
 
-For every coding challenge, I follow a consistent learning process:
+## 86 Days Completed! 🎉
 
-1. 📖 Read and understand the problem statement.
-2. 🧠 Identify the expected input and output.
-3. 🔍 Analyze the constraints and edge cases.
-4. ✍️ Develop a logical solution.
-5. ☕ Implement the solution in Java.
-6. 🧪 Test the solution using relevant examples.
-7. 🛠️ Debug errors and improve the implementation.
-8. ⚙️ Analyze time and space complexity where applicable.
-9. 📂 Save the solution in the appropriate daily folder.
-10. 📸 Add the submission screenshot when available.
-11. 📤 Commit the completed work to GitHub.
-12. 🚀 Continue learning through the next challenge.
+Every problem I solve helps me strengthen my Java fundamentals, understand new programming concepts, and improve my logical thinking.
+
+This challenge is helping me develop consistency, confidence, and practical programming skills.
+
+From basic Java statements to collections, object-oriented programming, design patterns, and stack-based algorithm problems, each challenge contributes to my growth as a programmer.
+
+My goal is not only to complete 100 days but also to understand the logic behind every solution and continuously improve my coding skills.
+
+**86 days completed. 14 days remaining. The journey continues!** 🚀
 
 ---
 
-## 🌱 Skills Developed
+# 🎯 Upcoming Goals
 
-By consistently solving programming challenges, I am working on improving:
-
-- ☕ Java programming fundamentals
-- 🏗️ Object-Oriented Programming
-- 📦 Java Collections Framework
-- 🔎 String manipulation and regular expressions
-- 🧠 Logical and analytical thinking
-- 🔄 Recursion and backtracking
-- 🔍 Depth-First Search
-- ⚙️ Algorithm design
-- 📊 Time and space complexity analysis
-- 🧩 Data structures and algorithms
-- 🛠️ Debugging and problem-solving
-- 💻 Git and GitHub workflow
-- 🎯 Technical interview preparation
-- 📈 Consistency and self-discipline
+- 🔹 Solve more Java coding problems.
+- 🔹 Practice additional LeetCode Easy and Medium problems.
+- 🔹 Strengthen Data Structures and Algorithms.
+- 🔹 Improve understanding of stacks and queues.
+- 🔹 Practice arrays and strings.
+- 🔹 Learn searching and sorting algorithms.
+- 🔹 Improve time and space complexity analysis.
+- 🔹 Strengthen Java Collections Framework knowledge.
+- 🔹 Practice object-oriented programming questions.
+- 🔹 Prepare for technical interviews.
+- 🔹 Complete the remaining 14 days.
+- 🔹 Reach the 100-day milestone.
 
 ---
 
-## 🎯 Why This Repository?
+# 📂 Daily Learning Workflow
 
-This repository represents my continuous learning journey and commitment to becoming a better Java programmer.
-
-It serves as:
-
-- ☕ My Java learning journal
-- 💻 My daily coding practice portfolio
-- 📚 My Core Java reference
-- 🧠 My problem-solving practice record
-- 📈 My progress tracker
-- 🔎 My regular expression practice
-- 🧩 My algorithm-learning journey
-- 🚀 A part of my placement preparation
-- 🏆 A record of my commitment to consistent learning
-
-Every completed challenge helps me improve my programming knowledge, strengthen my problem-solving skills, and prepare for future software development opportunities.
+1. 📖 Read the problem statement carefully.
+2. 🧠 Understand the requirements and constraints.
+3. 🔍 Identify the relevant data structure or algorithm.
+4. ✍️ Develop a logical approach.
+5. 💻 Implement the solution in Java.
+6. 🧪 Test the solution using sample inputs.
+7. 🔧 Debug errors and improve the implementation.
+8. ⏱️ Analyze time and space complexity.
+9. 📸 Save the submission screenshot when available.
+10. 📂 Upload the solution to the appropriate daily folder.
+11. 📝 Document the concepts learned.
+12. 🚀 Move on to the next challenge.
 
 ---
 
-## 🔮 What's Next?
+# 🌱 Why I Started This Challenge
 
-I will continue working toward Day 100 by solving more coding problems and strengthening my understanding of:
+I started this challenge to build a consistent coding habit, strengthen my Java programming skills, and gain practical experience solving programming problems.
 
-- 🧠 Data Structures and Algorithms
-- 🔄 Recursion and Backtracking
-- ⭐ Dynamic Programming
-- 🔎 String Algorithms
-- 📦 Arrays and Linked Lists
-- 🌳 Trees and Graphs
-- 🔍 Searching and Sorting
-- ⚡ Efficient Algorithm Design
-- 🎯 Interview-Oriented Problems
-- 💻 Advanced Java Programming
+By documenting my daily progress, I can track my learning journey, revisit previous solutions, and identify areas for improvement.
 
-My goal is to complete all 100 days while learning something valuable from every challenge.
+This repository reflects my commitment to learning, practicing, and growing as a programmer.
 
 ---
 
-## ⭐ Support
+# ⭐ Support My Journey
 
-If you find this repository useful or inspiring, please consider giving it a **⭐ Star**.
+If you find this repository helpful, please consider giving it a ⭐ Star.
 
-Your support motivates me to keep learning, solving problems, and sharing my progress with the developer community. 🚀
-
----
-
-## 🤝 Connect With Me
-
-Let's learn, build, and grow together! 🌱
-
-### 💻 GitHub Profile
-
-**Coder-RD**
-
-https://github.com/Coder-RD
-
-### ☕ Java Challenge Repository
-
-https://github.com/Coder-RD/Java_Challenge/
-
-### 🗄️ SQL Challenge Repository
-
-https://github.com/Coder-RD/SQL-Challenge/
+Your support motivates me to continue learning, solving problems, and sharing my progress with the developer community.
 
 ---
 
-## 🔖 Hashtags
+# 🤝 Connect With Me
 
-#100DaysOfJava #Java #LeetCode #HackerRank #DSA #DataStructures #Algorithms #TwoPointers #ArrayProblems #ProblemSolving #CodingChallenge #GitHub #JavaProgramming #LearningInPublic #SoftwareDevelopment #KeepLearning
+👩‍💻 **GitHub Profile:** Coder-RD
+
+🔗 https://github.com/Coder-RD
+
+☕ **Java Challenge Repository**
+
+🔗 https://github.com/Coder-RD/Java_Challenge/
+
+💻 **LeetCode Problem — Valid Parentheses**
+
+🔗 https://leetcode.com/problems/valid-parentheses/
 
 ---
+
+# 🔖 Topics and Hashtags
+
+#100DaysOfCode #Java #JavaProgramming #LeetCode #HackerRank #DSA #DataStructures #Algorithms #Stack #ValidParentheses #ProblemSolving #CodingChallenge #JavaDeveloper #LearningJourney #GitHub #DailyCoding #CoreJava #ObjectOrientedProgramming #JavaCollections #SoftwareDevelopment #Programming #TechnicalInterviewPreparation #Consistency #KeepLearning #KeepCoding
+
+---
+
+# 🚀 Keep Learning. Keep Coding. Keep Growing.
+
+> "Success comes from consistent practice, patience, and continuous improvement."
 
 <p align="center">
-  <b>🔥 85 Days Completed — 15 Days to Go! 🔥</b>
-  <br>
-  <b>One Day at a Time. One Problem at a Time. One Step Closer to the Goal. ☕🚀</b>
+  <strong>☕ 86 Days Completed | ⏳ 14 Days Remaining | 🏆 Goal: 100 Days</strong>
+</p>
+
+<p align="center">
+  <strong>🔥 One Problem at a Time. One Day at a Time. 🔥</strong>
 </p>
