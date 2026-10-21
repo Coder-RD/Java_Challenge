@@ -2,9 +2,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days of Java Challenge">
-  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=java" alt="Java">
-  <img src="https://img.shields.io/badge/Platform-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="Coding Platforms">
-  <img src="https://img.shields.io/badge/Progress-Day%2086-success?style=for-the-badge" alt="Day 86">
+  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" alt="Java">
+  <img src="https://img.shields.io/badge/Platforms-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="Coding Platforms">
+  <img src="https://img.shields.io/badge/Progress-Day%2087-success?style=for-the-badge" alt="Day 87">
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 Day 86 Completed | 🎯 Goal: 100 Days of Coding</strong>
+  <strong>📅 Day 87 Completed | 🎯 Goal: 100 Days of Coding</strong>
 </p>
 
 ---
@@ -23,7 +23,7 @@ Welcome to my **100 Days of Java Coding Challenge!** 🎉
 
 This repository documents my daily programming journey as I solve coding problems, practice Java concepts, and strengthen my understanding of Data Structures and Algorithms (DSA).
 
-Throughout this challenge, I am practicing problems from platforms such as HackerRank and LeetCode, covering Java fundamentals, object-oriented programming, collections, algorithms, data structures, and problem-solving techniques.
+Throughout this challenge, I am solving problems from platforms such as HackerRank and LeetCode. The challenges cover Java fundamentals, object-oriented programming, strings, collections, algorithms, data structures, and problem-solving techniques.
 
 My goal is to become a better programmer through consistent practice, logical thinking, and hands-on coding.
 
@@ -39,13 +39,14 @@ Every day is an opportunity to learn something new, solve a challenging problem,
 - 🧩 Develop efficient problem-solving techniques.
 - 📚 Understand Data Structures and Algorithms.
 - 🔄 Practice loops, conditions, arrays, and strings.
-- 🏗️ Understand Object-Oriented Programming.
-- 📦 Learn Java Collections Framework.
-- 🔗 Practice List, Set, Map, Stack, and Queue.
+- 🏗️ Strengthen Object-Oriented Programming concepts.
+- 📦 Learn the Java Collections Framework.
+- 🔗 Practice lists, sets, maps, stacks, queues, and linked lists.
 - 🧵 Understand Java strings and regular expressions.
 - 🔍 Explore searching and sorting algorithms.
-- 🌳 Improve understanding of data structures.
-- 🛠️ Learn debugging and error handling.
+- 🌳 Improve knowledge of different data structures.
+- 🛠️ Learn debugging and exception handling.
+- ⏱️ Analyze time and space complexity.
 - 🎯 Prepare for technical interviews.
 - 🚀 Build a strong GitHub programming portfolio.
 
@@ -59,8 +60,8 @@ Every day is an opportunity to learn something new, solve a challenging problem,
 | 🧠 Core Concepts | Variables, Data Types, Operators |
 | 🔀 Control Flow | If-Else, Switch, Loops |
 | 🔤 String Handling | String, StringBuilder, String Methods |
-| 📚 Data Structures | Arrays, Lists, Sets, Maps, Stacks, Queues |
-| 🏗️ OOP | Classes, Objects, Inheritance, Polymorphism |
+| 📚 Data Structures | Arrays, Lists, Sets, Maps, Stacks, Queues, Linked Lists |
+| 🏗️ OOP | Classes, Objects, Inheritance, Polymorphism, Abstraction |
 | 🔍 Algorithms | Searching, Sorting, Problem-Solving |
 | 🧩 Advanced Java | Generics, Reflection, Varargs |
 | 🧵 Regular Expressions | Pattern Matching and Validation |
@@ -71,9 +72,9 @@ Every day is an opportunity to learn something new, solve a challenging problem,
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
-This repository is organized into daily folders to keep solutions and submission screenshots organized throughout the 100-day challenge.
+This repository is organized into daily folders to keep Java solutions, submission screenshots, and supporting files organized throughout the challenge.
 
 📁 **Java_Challenge/**
 
@@ -165,9 +166,12 @@ This repository is organized into daily folders to keep solutions and submission
 - 📁 Day-86/
   - 📄 Valid Parentheses.java
   - 📸 Screenshot 2026-10-20 110430.png
+- 📁 Day-87/
+  - 📄 Remove Nth Node From End of List.java
+  - 📸 Screenshot 2026-10-21 081956.png
 - 📄 README.md
 
-Each daily folder may contain the Java solution, a submission screenshot, or supporting files related to the challenge.
+Each daily folder may contain the Java solution, a submission screenshot, or other supporting files related to the challenge.
 
 ---
 
@@ -261,7 +265,7 @@ Each daily folder may contain the Java solution, a submission screenshot, or sup
 | Day 84 | Java Coding Challenge | HackerRank | ✅ Completed |
 | Day 85 | Java Coding Challenge | HackerRank | ✅ Completed |
 | Day 86 | Valid Parentheses | LeetCode | ✅ Completed |
-| Day 87 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 87 | Remove Nth Node From End of List | LeetCode | ✅ Completed |
 | Day 88 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 89 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 90 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
@@ -278,109 +282,90 @@ Each daily folder may contain the Java solution, a submission screenshot, or sup
 
 ---
 
-# 🆕 Day 86 — Valid Parentheses
+# 🆕 Day 87 — Remove Nth Node From End of List
 
 ## 📌 Challenge Information
 
-- 📅 **Day:** 86
-- 🧩 **Problem:** Valid Parentheses
-- 🔢 **LeetCode Problem Number:** 20
+- 📅 **Day:** 87
+- 🧩 **Problem:** Remove Nth Node From End of List
+- 🔢 **LeetCode Problem Number:** 19
 - 💻 **Platform:** LeetCode
 - ☕ **Programming Language:** Java
-- 📊 **Difficulty:** Easy
-- 🧠 **Primary Topic:** Stack
+- 📊 **Difficulty:** Medium
+- 🧠 **Primary Topics:** Linked List, Two Pointers
 - 🗂️ **Category:** Data Structures and Algorithms
-- 📄 **Solution File:** Valid Parentheses.java
-- 📸 **Submission Screenshot:** Screenshot 2026-10-20 110430.png
+- 📄 **Solution File:** Remove Nth Node From End of List.java
+- 📸 **Submission Screenshot:** Screenshot 2026-10-21 081956.png
 - ✅ **Status:** Completed
 
 ## 🎯 Problem Statement
 
-Given a string `s` containing only the characters `(`, `)`, `{`, `}`, `[` and `]`, determine whether the input string is valid.
+Given the head of a singly linked list and an integer `n`, remove the `nth` node from the end of the list and return its head.
 
-A string is valid when:
-
-1. Every opening bracket is closed by the same type of bracket.
-2. Brackets are closed in the correct order.
-3. Every closing bracket has a corresponding opening bracket.
+The solution should efficiently identify the target node and update the linked list without unnecessarily traversing it multiple times.
 
 ## 🧠 Approach
 
-The problem can be solved efficiently using a stack.
+This problem can be solved using the **two-pointer technique** and a dummy node.
 
-1. Traverse the string character by character.
-2. Push each opening bracket onto the stack.
-3. When a closing bracket appears, check whether the stack is empty.
-4. If the stack is empty, the closing bracket has no matching opening bracket, so return `false`.
-5. Otherwise, pop the top opening bracket and check whether it matches the current closing bracket.
-6. If the bracket types do not match, return `false`.
-7. After processing the entire string, return `true` only if the stack is empty.
+1. Create a dummy node pointing to the head of the linked list.
+2. Initialize two pointers, `fast` and `slow`, at the dummy node.
+3. Move the `fast` pointer `n` steps forward.
+4. Move both pointers one step at a time until `fast` reaches the last node.
+5. At this point, `slow` points to the node immediately before the target node.
+6. Update `slow.next` to skip the node that needs to be removed.
+7. Return `dummy.next` as the updated head.
+
+The dummy node also handles the edge case where the first node must be removed.
 
 ## 💡 Example 1
 
-**Input:** `s = "()"`
+**Input:** `head = [1,2,3,4,5], n = 2`
 
-**Output:** `true`
+**Output:** `[1,2,3,5]`
 
-**Explanation:** The opening parenthesis is correctly closed by its matching closing parenthesis.
+**Explanation:** The second node from the end is `4`, so it is removed from the list.
 
 ## 💡 Example 2
 
-**Input:** `s = "()[]{}"`
+**Input:** `head = [1], n = 1`
 
-**Output:** `true`
+**Output:** `[]`
 
-**Explanation:** All brackets are correctly matched and closed in the proper order.
+**Explanation:** The only node is removed, leaving an empty list.
 
 ## 💡 Example 3
 
-**Input:** `s = "(]"`
+**Input:** `head = [1,2], n = 1`
 
-**Output:** `false`
+**Output:** `[1]`
 
-**Explanation:** The opening parenthesis does not match the closing square bracket.
-
-## 💡 Example 4
-
-**Input:** `s = "([])"`
-
-**Output:** `true`
-
-**Explanation:** The brackets are nested correctly and each opening bracket has a matching closing bracket.
-
-## 💡 Example 5
-
-**Input:** `s = "([)]"`
-
-**Output:** `false`
-
-**Explanation:** The brackets are not closed in the correct order.
+**Explanation:** The last node, `2`, is removed from the list.
 
 ## 📚 Concepts Learned
 
-- Stack Data Structure
-- Last In, First Out (LIFO)
-- Java Collections Framework
-- Character Traversal
-- Conditional Statements
-- Bracket Matching
-- String Processing
-- Logical Problem-Solving
-- Handling Invalid Input Sequences
+- Singly Linked Lists
+- Two-Pointer Technique
+- Dummy Node Usage
+- Pointer Manipulation
+- Node Deletion
+- Edge Case Handling
+- Efficient Linked List Traversal
 - Data Structures and Algorithms
+- Time and Space Complexity Analysis
 
 ## ⏱️ Complexity Analysis
 
-- **Time Complexity:** O(n), because each character is processed once.
-- **Space Complexity:** O(n), because the stack can store up to n opening brackets in the worst case.
+- **Time Complexity:** `O(L)` — where `L` is the number of nodes in the linked list. The list is traversed in one pass after the pointers are initialized.
+- **Space Complexity:** `O(1)` — only a constant number of additional pointers and one dummy node are used.
 
 ## 🎓 Learning Outcome
 
-This challenge strengthened my understanding of stack operations and how the LIFO principle helps validate nested bracket sequences.
+This challenge improved my understanding of linked-list manipulation and the two-pointer technique.
 
-It also improved my ability to translate problem statements into logical steps and implement efficient solutions in Java.
+I learned how to maintain a fixed distance between two pointers to locate a node from the end of a linked list efficiently.
 
-**Key Takeaway:** A stack is an effective data structure for checking whether brackets are correctly matched and nested.
+**Key Takeaway:** The two-pointer technique, combined with a dummy node, makes linked-list deletion efficient and simplifies edge-case handling.
 
 ---
 
@@ -439,10 +424,12 @@ It also improved my ability to translate problem statements into logical steps a
 
 ## 🔹 Data Structures and Algorithms
 
-- Stack-Based Problem Solving
-- Queue-Based Problem Solving
 - Array Manipulation
 - String Processing
+- Stack-Based Problem Solving
+- Queue-Based Problem Solving
+- Linked List Operations
+- Two-Pointer Technique
 - Searching
 - Sorting
 - Hashing
@@ -468,33 +455,33 @@ It also improved my ability to translate problem statements into logical steps a
 
 | Metric | Progress |
 |---|---|
-| 📅 Days Completed | 86 / 100 |
-| ⏳ Days Remaining | 14 |
-| 📊 Completion Percentage | 86% |
+| 📅 Days Completed | 87 / 100 |
+| ⏳ Days Remaining | 13 |
+| 📊 Completion Percentage | 87% |
 | ☕ Primary Language | Java |
 | 💻 Coding Platforms | HackerRank and LeetCode |
 | 🧠 Main Focus | Java, DSA, and Problem-Solving |
-| 🏆 Latest Challenge | Valid Parentheses |
-| 🔢 Problem Number | LeetCode #20 |
-| 📊 Difficulty | Easy |
-| 🧩 Main Concept | Stack |
+| 🏆 Latest Challenge | Remove Nth Node From End of List |
+| 🔢 Problem Number | LeetCode #19 |
+| 📊 Difficulty | Medium |
+| 🧩 Main Concept | Linked List and Two Pointers |
 | 🎯 Final Goal | Complete 100 Days |
 
 ---
 
 # 🔥 My Coding Journey
 
-## 86 Days Completed! 🎉
+## 87 Days Completed! 🎉
 
 Every problem I solve helps me strengthen my Java fundamentals, understand new programming concepts, and improve my logical thinking.
 
 This challenge is helping me develop consistency, confidence, and practical programming skills.
 
-From basic Java statements to collections, object-oriented programming, design patterns, and stack-based algorithm problems, each challenge contributes to my growth as a programmer.
+From basic Java statements to collections, object-oriented programming, design patterns, and algorithmic problems involving stacks and linked lists, every challenge contributes to my growth as a programmer.
 
 My goal is not only to complete 100 days but also to understand the logic behind every solution and continuously improve my coding skills.
 
-**86 days completed. 14 days remaining. The journey continues!** 🚀
+**87 days completed. 13 days remaining. The journey continues!** 🚀
 
 ---
 
@@ -503,14 +490,14 @@ My goal is not only to complete 100 days but also to understand the logic behind
 - 🔹 Solve more Java coding problems.
 - 🔹 Practice additional LeetCode Easy and Medium problems.
 - 🔹 Strengthen Data Structures and Algorithms.
-- 🔹 Improve understanding of stacks and queues.
+- 🔹 Improve understanding of linked lists, stacks, and queues.
 - 🔹 Practice arrays and strings.
 - 🔹 Learn searching and sorting algorithms.
 - 🔹 Improve time and space complexity analysis.
 - 🔹 Strengthen Java Collections Framework knowledge.
 - 🔹 Practice object-oriented programming questions.
 - 🔹 Prepare for technical interviews.
-- 🔹 Complete the remaining 14 days.
+- 🔹 Complete the remaining 13 days.
 - 🔹 Reach the 100-day milestone.
 
 ---
@@ -552,23 +539,17 @@ Your support motivates me to continue learning, solving problems, and sharing my
 
 # 🤝 Connect With Me
 
-👩‍💻 **GitHub Profile:** Coder-RD
+👩‍💻 **GitHub Profile:** [Coder-RD](https://github.com/Coder-RD)
 
-🔗 https://github.com/Coder-RD
+☕ **Java Challenge Repository:** [Java_Challenge](https://github.com/Coder-RD/Java_Challenge/)
 
-☕ **Java Challenge Repository**
-
-🔗 https://github.com/Coder-RD/Java_Challenge/
-
-💻 **LeetCode Problem — Valid Parentheses**
-
-🔗 https://leetcode.com/problems/valid-parentheses/
+💻 **LeetCode Problem — Remove Nth Node From End of List:** [LeetCode #19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
 ---
 
 # 🔖 Topics and Hashtags
 
-#100DaysOfCode #Java #JavaProgramming #LeetCode #HackerRank #DSA #DataStructures #Algorithms #Stack #ValidParentheses #ProblemSolving #CodingChallenge #JavaDeveloper #LearningJourney #GitHub #DailyCoding #CoreJava #ObjectOrientedProgramming #JavaCollections #SoftwareDevelopment #Programming #TechnicalInterviewPreparation #Consistency #KeepLearning #KeepCoding
+#100DaysOfCode #Java #JavaProgramming #LeetCode #HackerRank #DSA #DataStructures #Algorithms #LinkedList #TwoPointers #ProblemSolving #CodingChallenge #JavaDeveloper #LearningJourney #GitHub #DailyCoding #CoreJava #ObjectOrientedProgramming #JavaCollections #SoftwareDevelopment #Programming #TechnicalInterviewPreparation #Consistency #KeepLearning #KeepCoding
 
 ---
 
@@ -577,7 +558,7 @@ Your support motivates me to continue learning, solving problems, and sharing my
 > "Success comes from consistent practice, patience, and continuous improvement."
 
 <p align="center">
-  <strong>☕ 86 Days Completed | ⏳ 14 Days Remaining | 🏆 Goal: 100 Days</strong>
+  <strong>☕ 87 Days Completed | ⏳ 13 Days Remaining | 🏆 Goal: 100 Days</strong>
 </p>
 
 <p align="center">
