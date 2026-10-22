@@ -1,80 +1,78 @@
 # ☕ 100 Days of Java Challenge
 
 <p align="center">
-  <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days of Java Challenge">
-  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" alt="Java">
-  <img src="https://img.shields.io/badge/Platforms-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="Coding Platforms">
-  <img src="https://img.shields.io/badge/Progress-Day%2087-success?style=for-the-badge" alt="Day 87">
+  <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
+  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=java" alt="Java">
+  <img src="https://img.shields.io/badge/Platform-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="Coding Platforms">
+  <img src="https://img.shields.io/badge/Progress-88%25-success?style=for-the-badge" alt="Challenge Progress">
 </p>
 
 <p align="center">
-  <strong>🚀 Learn • Code • Practice • Solve • Grow 🚀</strong>
+  <strong>🚀 Learn • Code • Practice • Solve • Improve 🚀</strong>
 </p>
 
 <p align="center">
-  <strong>📅 Day 87 Completed | 🎯 Goal: 100 Days of Coding</strong>
+  <strong>📅 88 Days Completed | 12 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
 
-## 👋 About This Repository
+## 👋 About This Challenge
 
-Welcome to my **100 Days of Java Coding Challenge!** 🎉
+Welcome to my **#100DaysOfCode Java Challenge** repository! 🚀
 
-This repository documents my daily programming journey as I solve coding problems, practice Java concepts, and strengthen my understanding of Data Structures and Algorithms (DSA).
+This repository documents my daily Java programming journey through coding challenges, algorithmic problems, and practical programming exercises on platforms such as HackerRank and LeetCode.
 
-Throughout this challenge, I am solving problems from platforms such as HackerRank and LeetCode. The challenges cover Java fundamentals, object-oriented programming, strings, collections, algorithms, data structures, and problem-solving techniques.
+My goal is to strengthen my Java programming fundamentals, improve problem-solving abilities, understand data structures and algorithms, and develop efficient coding techniques through consistent daily practice.
 
-My goal is to become a better programmer through consistent practice, logical thinking, and hands-on coding.
+Throughout this challenge, I have explored Java fundamentals, object-oriented programming, strings, arrays, collections, exception handling, reflection, design patterns, regular expressions, linked lists, and other important programming concepts.
 
-Every day is an opportunity to learn something new, solve a challenging problem, and improve my programming skills. 💻
+Each day provides an opportunity to solve a new problem, understand its logic, improve code efficiency, and develop the skills needed for technical interviews and software development.
 
----
-
-## 🎯 Challenge Objectives
+## 🎯 Challenge Goals
 
 - ☕ Strengthen Java programming fundamentals.
-- 🧠 Improve logical and analytical thinking.
-- 💻 Solve coding problems consistently.
-- 🧩 Develop efficient problem-solving techniques.
-- 📚 Understand Data Structures and Algorithms.
-- 🔄 Practice loops, conditions, arrays, and strings.
-- 🏗️ Strengthen Object-Oriented Programming concepts.
-- 📦 Learn the Java Collections Framework.
-- 🔗 Practice lists, sets, maps, stacks, queues, and linked lists.
-- 🧵 Understand Java strings and regular expressions.
-- 🔍 Explore searching and sorting algorithms.
-- 🌳 Improve knowledge of different data structures.
-- 🛠️ Learn debugging and exception handling.
-- ⏱️ Analyze time and space complexity.
-- 🎯 Prepare for technical interviews.
-- 🚀 Build a strong GitHub programming portfolio.
+- 🧠 Improve logical thinking and problem-solving skills.
+- 🔢 Practice arrays, strings, and mathematical operations.
+- 🔗 Understand linked lists and pointer manipulation.
+- 📚 Learn and apply data structures and algorithms.
+- 🧩 Practice object-oriented programming concepts.
+- 🔄 Understand loops, conditions, and recursion.
+- 🧵 Explore Java collections and data handling.
+- ⚡ Improve time and space complexity analysis.
+- 🏗️ Learn design patterns such as Factory and Singleton.
+- 🔍 Practice regular expressions and pattern matching.
+- 🪞 Explore Java Reflection API.
+- 🛠️ Handle exceptions and edge cases effectively.
+- 💻 Solve coding challenges on HackerRank and LeetCode.
+- 📈 Build consistency through daily coding practice.
+- 🚀 Develop interview-ready programming skills.
 
 ---
 
-## 🛠️ Technologies and Tools
+## 🛠️ Technologies & Platforms
 
 | Category | Details |
 |---|---|
 | ☕ Programming Language | Java |
-| 🧠 Core Concepts | Variables, Data Types, Operators |
-| 🔀 Control Flow | If-Else, Switch, Loops |
-| 🔤 String Handling | String, StringBuilder, String Methods |
-| 📚 Data Structures | Arrays, Lists, Sets, Maps, Stacks, Queues, Linked Lists |
-| 🏗️ OOP | Classes, Objects, Inheritance, Polymorphism, Abstraction |
-| 🔍 Algorithms | Searching, Sorting, Problem-Solving |
-| 🧩 Advanced Java | Generics, Reflection, Varargs |
-| 🧵 Regular Expressions | Pattern Matching and Validation |
-| 🏭 Design Patterns | Factory Pattern, Singleton Pattern |
 | 💻 Coding Platforms | HackerRank, LeetCode |
-| 🔧 Version Control | Git and GitHub |
-| 🖥️ Development Environment | VS Code and Java Development Tools |
+| 🧠 Problem-Solving | Algorithms and Logical Thinking |
+| 🔢 Data Structures | Arrays, Strings, Linked Lists, Collections |
+| 🏗️ Programming Paradigm | Object-Oriented Programming |
+| 🔄 Control Flow | Loops, Conditions, Recursion |
+| 🧩 Design Patterns | Factory Pattern, Singleton Pattern |
+| 🔍 Pattern Matching | Regular Expressions |
+| 🪞 Java Features | Reflection API, Varargs |
+| 📊 Complexity Analysis | Time and Auxiliary Space Complexity |
+| 🔗 Linked List Techniques | Traversal, Node Connections, Two Pointers |
+| 🧪 Testing | Sample Inputs, Edge Cases, Output Validation |
+| 🌱 Version Control | Git and GitHub |
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
-This repository is organized into daily folders to keep Java solutions, submission screenshots, and supporting files organized throughout the challenge.
+This repository is organized into daily folders to make it easy to track my progress and review individual solutions.
 
 📁 **Java_Challenge/**
 
@@ -164,403 +162,622 @@ This repository is organized into daily folders to keep Java solutions, submissi
 - 📁 Day-84/
 - 📁 Day-85/
 - 📁 Day-86/
-  - 📄 Valid Parentheses.java
-  - 📸 Screenshot 2026-10-20 110430.png
 - 📁 Day-87/
-  - 📄 Remove Nth Node From End of List.java
-  - 📸 Screenshot 2026-10-21 081956.png
+- 📁 Day-88/
 - 📄 README.md
 
-Each daily folder may contain the Java solution, a submission screenshot, or other supporting files related to the challenge.
+Each daily folder contains the corresponding Java solution and may include a screenshot of the successful submission.
 
 ---
 
-# ✅ 100 Days of Java — Progress Tracker
+# ✅ Progress Tracker
 
-| Day | Challenge / Topic | Platform | Status |
+| Day | Challenge | Platform | Status |
 |---|---|---|---|
-| Day 1 | Java Fundamentals | HackerRank | ✅ Completed |
-| Day 2 | Java Stdin and Stdout I | HackerRank | ✅ Completed |
-| Day 3 | Java If-Else | HackerRank | ✅ Completed |
-| Day 4 | Java Stdin and Stdout II | HackerRank | ✅ Completed |
-| Day 5 | Java Output Formatting | HackerRank | ✅ Completed |
-| Day 6 | Java Loops I | HackerRank | ✅ Completed |
-| Day 7 | Java Loops II | HackerRank | ✅ Completed |
-| Day 8 | Java Datatypes | HackerRank | ✅ Completed |
-| Day 9 | Java End-of-file | HackerRank | ✅ Completed |
-| Day 10 | Java Int to String | HackerRank | ✅ Completed |
-| Day 11 | Java Date and Time | HackerRank | ✅ Completed |
-| Day 12 | Java Currency Formatter | HackerRank | ✅ Completed |
-| Day 13 | Java Strings Introduction | HackerRank | ✅ Completed |
-| Day 14 | Java Substring | HackerRank | ✅ Completed |
-| Day 15 | Java String Reverse | HackerRank | ✅ Completed |
-| Day 16 | Java Anagrams | HackerRank | ✅ Completed |
-| Day 17 | Java String Tokens | HackerRank | ✅ Completed |
-| Day 18 | Pattern Matching | HackerRank | ✅ Completed |
-| Day 19 | Java Regex | HackerRank | ✅ Completed |
-| Day 20 | Java BigDecimal | HackerRank | ✅ Completed |
-| Day 21 | Java 1D Array | HackerRank | ✅ Completed |
-| Day 22 | Java 2D Array | HackerRank | ✅ Completed |
-| Day 23 | Java Subarray | HackerRank | ✅ Completed |
-| Day 24 | Java Arraylist | HackerRank | ✅ Completed |
-| Day 25 | Java List | HackerRank | ✅ Completed |
-| Day 26 | Java Map | HackerRank | ✅ Completed |
-| Day 27 | Java Stack | HackerRank | ✅ Completed |
-| Day 28 | Java Queue | HackerRank | ✅ Completed |
-| Day 29 | Java Hashset | HackerRank | ✅ Completed |
-| Day 30 | Java Generics | HackerRank | ✅ Completed |
-| Day 31 | Java Comparator | HackerRank | ✅ Completed |
-| Day 32 | Java Sort | HackerRank | ✅ Completed |
-| Day 33 | Java Dequeue | HackerRank | ✅ Completed |
-| Day 34 | Java BitSet | HackerRank | ✅ Completed |
-| Day 35 | Java Priority Queue | HackerRank | ✅ Completed |
-| Day 36 | Java Inheritance I | HackerRank | ✅ Completed |
-| Day 37 | Java Inheritance II | HackerRank | ✅ Completed |
-| Day 38 | Java Abstract Class | HackerRank | ✅ Completed |
-| Day 39 | Java Interface | HackerRank | ✅ Completed |
-| Day 40 | Java Method Overriding | HackerRank | ✅ Completed |
-| Day 41 | Java Method Overriding 2 | HackerRank | ✅ Completed |
-| Day 42 | Java Instanceof Keyword | HackerRank | ✅ Completed |
-| Day 43 | Java Iterator | HackerRank | ✅ Completed |
-| Day 44 | Java Exception Handling | HackerRank | ✅ Completed |
-| Day 45 | Java Exception Handling (Try-catch) | HackerRank | ✅ Completed |
-| Day 46 | Java Varargs - Simple Addition | HackerRank | ✅ Completed |
-| Day 47 | Java Reflection - Attributes | HackerRank | ✅ Completed |
-| Day 48 | Prime Checker | HackerRank | ✅ Completed |
-| Day 49 | Java Factory Pattern | HackerRank | ✅ Completed |
-| Day 50 | Java Singleton Pattern | HackerRank | ✅ Completed |
-| Day 51 | Java Regex / IPv4 | HackerRank | ✅ Completed |
-| Day 52 | Java Priority Queue | HackerRank | ✅ Completed |
-| Day 53 | Java Dequeue | HackerRank | ✅ Completed |
-| Day 54 | Java Collections | HackerRank | ✅ Completed |
-| Day 55 | Java Strings | HackerRank | ✅ Completed |
-| Day 56 | Java Generics | HackerRank | ✅ Completed |
-| Day 57 | Java Stack | HackerRank | ✅ Completed |
-| Day 58 | Java Queue | HackerRank | ✅ Completed |
-| Day 59 | Java List | HackerRank | ✅ Completed |
-| Day 60 | Java Map | HackerRank | ✅ Completed |
-| Day 61 | Java Set | HackerRank | ✅ Completed |
-| Day 62 | Java Sorting | HackerRank | ✅ Completed |
-| Day 63 | Java Regex | HackerRank | ✅ Completed |
-| Day 64 | Java Inheritance | HackerRank | ✅ Completed |
-| Day 65 | Java Exception Handling | HackerRank | ✅ Completed |
-| Day 66 | Java OOP Concepts | HackerRank | ✅ Completed |
-| Day 67 | Java Algorithms | HackerRank | ✅ Completed |
-| Day 68 | Java Data Structures | HackerRank | ✅ Completed |
-| Day 69 | Java Problem Solving | HackerRank | ✅ Completed |
-| Day 70 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 71 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 72 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 73 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 74 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 75 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 76 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 77 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 78 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 79 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 80 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 81 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 82 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 83 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 84 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 85 | Java Coding Challenge | HackerRank | ✅ Completed |
-| Day 86 | Valid Parentheses | LeetCode | ✅ Completed |
-| Day 87 | Remove Nth Node From End of List | LeetCode | ✅ Completed |
-| Day 88 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 89 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 90 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 91 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 92 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 93 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 94 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 95 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 96 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 97 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 98 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 99 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 100 | Final Challenge | Various Platforms | 🏆 Pending |
+| ✅ Day 1 | Java Challenge | HackerRank | Completed |
+| ✅ Day 2 | Java Challenge | HackerRank | Completed |
+| ✅ Day 3 | Java Challenge | HackerRank | Completed |
+| ✅ Day 4 | Java Challenge | HackerRank | Completed |
+| ✅ Day 5 | Java Challenge | HackerRank | Completed |
+| ✅ Day 6 | Java Challenge | HackerRank | Completed |
+| ✅ Day 7 | Java Challenge | HackerRank | Completed |
+| ✅ Day 8 | Java Challenge | HackerRank | Completed |
+| ✅ Day 9 | Java Challenge | HackerRank | Completed |
+| ✅ Day 10 | Java Challenge | HackerRank | Completed |
+| ✅ Day 11 | Java Challenge | HackerRank | Completed |
+| ✅ Day 12 | Java Challenge | HackerRank | Completed |
+| ✅ Day 13 | Java Challenge | HackerRank | Completed |
+| ✅ Day 14 | Java Challenge | HackerRank | Completed |
+| ✅ Day 15 | Java Challenge | HackerRank | Completed |
+| ✅ Day 16 | Java Challenge | HackerRank | Completed |
+| ✅ Day 17 | Java Challenge | HackerRank | Completed |
+| ✅ Day 18 | Java Challenge | HackerRank | Completed |
+| ✅ Day 19 | Java Challenge | HackerRank | Completed |
+| ✅ Day 20 | Java Challenge | HackerRank | Completed |
+| ✅ Day 21 | Java Challenge | HackerRank | Completed |
+| ✅ Day 22 | Java Challenge | HackerRank | Completed |
+| ✅ Day 23 | Java Challenge | HackerRank | Completed |
+| ✅ Day 24 | Java Challenge | HackerRank | Completed |
+| ✅ Day 25 | Java Challenge | HackerRank | Completed |
+| ✅ Day 26 | Java Challenge | HackerRank | Completed |
+| ✅ Day 27 | Java Challenge | HackerRank | Completed |
+| ✅ Day 28 | Java Challenge | HackerRank | Completed |
+| ✅ Day 29 | Java Challenge | HackerRank | Completed |
+| 🎉 Day 30 | Java Challenge | HackerRank | Completed |
+| ✅ Day 31 | Java Challenge | HackerRank | Completed |
+| ✅ Day 32 | Java Challenge | HackerRank | Completed |
+| ✅ Day 33 | Java Challenge | HackerRank | Completed |
+| ✅ Day 34 | Java Challenge | HackerRank | Completed |
+| ✅ Day 35 | Java Challenge | HackerRank | Completed |
+| ✅ Day 36 | Java Challenge | HackerRank | Completed |
+| ✅ Day 37 | Java Challenge | HackerRank | Completed |
+| ✅ Day 38 | Java Challenge | HackerRank | Completed |
+| ✅ Day 39 | Java Challenge | HackerRank | Completed |
+| 🔥 Day 40 | Java Challenge | HackerRank | Completed |
+| ✅ Day 41 | Java Challenge | HackerRank | Completed |
+| ✅ Day 42 | Java Challenge | HackerRank | Completed |
+| ✅ Day 43 | Java Challenge | HackerRank | Completed |
+| ✅ Day 44 | Java Challenge | HackerRank | Completed |
+| ✅ Day 45 | Java Challenge | HackerRank | Completed |
+| ✅ Day 46 | Java Challenge | HackerRank | Completed |
+| ✅ Day 47 | Java Challenge | HackerRank | Completed |
+| ✅ Day 48 | Java Challenge | HackerRank | Completed |
+| 🔢 Day 49 | Java Varargs - Simple Addition | HackerRank | Completed |
+| 🪞 Day 50 | Java Reflection - Attributes | HackerRank | Completed |
+| 🔢 Day 51 | Prime Checker | HackerRank | Completed |
+| 🏭 Day 52 | Java Factory Pattern | HackerRank | Completed |
+| 🔒 Day 53 | Java Singleton Pattern | HackerRank | Completed |
+| ✅ Day 54 | Java Challenge | HackerRank | Completed |
+| ✅ Day 55 | Java Challenge | HackerRank | Completed |
+| 🔗 Day 56 | Java Dequeue | HackerRank | Completed |
+| ✅ Day 57 | Java Challenge | HackerRank | Completed |
+| ✅ Day 58 | Java Challenge | HackerRank | Completed |
+| ✅ Day 59 | Java Challenge | HackerRank | Completed |
+| ✅ Day 60 | Java Challenge | HackerRank | Completed |
+| ✅ Day 61 | Java Challenge | HackerRank | Completed |
+| ✅ Day 62 | Java Challenge | HackerRank | Completed |
+| ✅ Day 63 | Java Challenge | HackerRank | Completed |
+| ✅ Day 64 | Java Challenge | HackerRank | Completed |
+| ✅ Day 65 | Java Challenge | HackerRank | Completed |
+| ✅ Day 66 | Java Challenge | HackerRank | Completed |
+| ✅ Day 67 | Java Challenge | HackerRank | Completed |
+| ✅ Day 68 | Java Challenge | HackerRank | Completed |
+| ✅ Day 69 | Java Challenge | HackerRank | Completed |
+| ✅ Day 70 | Java Challenge | HackerRank | Completed |
+| ✅ Day 71 | Java Challenge | HackerRank | Completed |
+| ✅ Day 72 | Java Challenge | HackerRank | Completed |
+| ✅ Day 73 | Java Challenge | HackerRank | Completed |
+| ✅ Day 74 | Java Challenge | HackerRank | Completed |
+| ✅ Day 75 | Java Challenge | HackerRank | Completed |
+| ✅ Day 76 | Java Challenge | HackerRank | Completed |
+| ✅ Day 77 | Java Challenge | HackerRank | Completed |
+| ✅ Day 78 | Java Challenge | HackerRank | Completed |
+| ✅ Day 79 | Java Challenge | HackerRank | Completed |
+| ✅ Day 80 | Java Challenge | HackerRank | Completed |
+| ✅ Day 81 | Java Challenge | HackerRank | Completed |
+| ✅ Day 82 | Java Challenge | HackerRank | Completed |
+| ✅ Day 83 | Java Challenge | HackerRank | Completed |
+| ✅ Day 84 | Java Challenge | HackerRank | Completed |
+| ✅ Day 85 | Java Challenge | HackerRank | Completed |
+| ✅ Day 86 | Java Challenge | HackerRank | Completed |
+| ✅ Day 87 | Java Challenge | HackerRank | Completed |
+| 🔗 Day 88 | Merge Two Sorted Lists | LeetCode | Completed |
+| ⏳ Day 89 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 90 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 91 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 92 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 93 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 94 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 95 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 96 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 97 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 98 | Upcoming Java Challenge | Various Platforms | Pending |
+| ⏳ Day 99 | Upcoming Java Challenge | Various Platforms | Pending |
+| 🏆 Day 100 | Final Challenge | Various Platforms | Pending |
 
 ---
 
-# 🆕 Day 87 — Remove Nth Node From End of List
+# 🆕 Day 88 – Merge Two Sorted Lists
 
 ## 📌 Challenge Information
 
-- 📅 **Day:** 87
-- 🧩 **Problem:** Remove Nth Node From End of List
-- 🔢 **LeetCode Problem Number:** 19
+- 📅 **Day:** 88
+- 🧩 **Problem:** Merge Two Sorted Lists
+- 🔢 **LeetCode Problem:** 21
 - 💻 **Platform:** LeetCode
-- ☕ **Programming Language:** Java
-- 📊 **Difficulty:** Medium
-- 🧠 **Primary Topics:** Linked List, Two Pointers
-- 🗂️ **Category:** Data Structures and Algorithms
-- 📄 **Solution File:** Remove Nth Node From End of List.java
-- 📸 **Submission Screenshot:** Screenshot 2026-10-21 081956.png
+- ☕ **Language:** Java
+- 🔗 **Topic:** Linked Lists
+- 🧠 **Concepts:** Two Pointers, Dummy Node, Node Manipulation
+- 📄 **Solution File:** `Merge Two Sorted Lists.java`
+- 📸 **Submission Screenshot:** `Screenshot 2026-10-22 160838.png`
 - ✅ **Status:** Completed
 
-## 🎯 Problem Statement
+### 🎯 Problem Statement
 
-Given the head of a singly linked list and an integer `n`, remove the `nth` node from the end of the list and return its head.
+Given the heads of two sorted linked lists, `list1` and `list2`, merge the two lists into one sorted linked list.
 
-The solution should efficiently identify the target node and update the linked list without unnecessarily traversing it multiple times.
+The merged list must be created by connecting the existing nodes of the two lists while preserving their sorted order.
 
-## 🧠 Approach
+Return the head of the merged linked list.
 
-This problem can be solved using the **two-pointer technique** and a dummy node.
+### 📥 Example 1
 
-1. Create a dummy node pointing to the head of the linked list.
-2. Initialize two pointers, `fast` and `slow`, at the dummy node.
-3. Move the `fast` pointer `n` steps forward.
-4. Move both pointers one step at a time until `fast` reaches the last node.
-5. At this point, `slow` points to the node immediately before the target node.
-6. Update `slow.next` to skip the node that needs to be removed.
-7. Return `dummy.next` as the updated head.
+**Input:**
 
-The dummy node also handles the edge case where the first node must be removed.
+- `list1 = [1, 2, 4]`
+- `list2 = [1, 3, 4]`
 
-## 💡 Example 1
+**Output:**
 
-**Input:** `head = [1,2,3,4,5], n = 2`
+`[1, 1, 2, 3, 4, 4]`
 
-**Output:** `[1,2,3,5]`
+### 📥 Example 2
 
-**Explanation:** The second node from the end is `4`, so it is removed from the list.
+**Input:**
 
-## 💡 Example 2
+- `list1 = []`
+- `list2 = []`
 
-**Input:** `head = [1], n = 1`
+**Output:**
 
-**Output:** `[]`
+`[]`
 
-**Explanation:** The only node is removed, leaving an empty list.
+### 📥 Example 3
 
-## 💡 Example 3
+**Input:**
 
-**Input:** `head = [1,2], n = 1`
+- `list1 = []`
+- `list2 = [0]`
 
-**Output:** `[1]`
+**Output:**
 
-**Explanation:** The last node, `2`, is removed from the list.
+`[0]`
 
-## 📚 Concepts Learned
+### 💡 Approach
+
+The solution uses an iterative two-pointer technique to merge the lists efficiently.
+
+1. Create a dummy node to simplify construction of the merged list.
+2. Maintain a `current` pointer to the last node of the merged list.
+3. Compare the values of the current nodes in both input lists.
+4. Attach the smaller-valued node to the merged list.
+5. Advance the pointer of the list from which the node was selected.
+6. Move `current` forward after each attachment.
+7. When either input list becomes empty, attach the remaining nodes of the other list.
+8. Return `dummy.next`, which points to the head of the merged list.
+
+### 🧠 Concepts Practiced
 
 - Singly Linked Lists
 - Two-Pointer Technique
-- Dummy Node Usage
+- Dummy Node
+- Linked List Traversal
+- Node Connections
+- Sorted Data Merging
+- Conditional Statements
 - Pointer Manipulation
-- Node Deletion
 - Edge Case Handling
-- Efficient Linked List Traversal
-- Data Structures and Algorithms
-- Time and Space Complexity Analysis
+- Algorithmic Problem-Solving
 
-## ⏱️ Complexity Analysis
+### ⏱️ Complexity Analysis
 
-- **Time Complexity:** `O(L)` — where `L` is the number of nodes in the linked list. The list is traversed in one pass after the pointers are initialized.
-- **Space Complexity:** `O(1)` — only a constant number of additional pointers and one dummy node are used.
+- **Time Complexity:** `O(n + m)` — Each node is processed at most once.
+- **Auxiliary Space Complexity:** `O(1)` — The algorithm uses a constant number of pointers and reuses the existing nodes.
 
-## 🎓 Learning Outcome
+Here, `n` and `m` represent the numbers of nodes in the two input lists.
 
-This challenge improved my understanding of linked-list manipulation and the two-pointer technique.
+### 🎓 Learning Outcome
 
-I learned how to maintain a fixed distance between two pointers to locate a node from the end of a linked list efficiently.
+By solving this problem, I strengthened my understanding of linked list manipulation and learned how to combine two sorted linked lists without creating additional data nodes.
 
-**Key Takeaway:** The two-pointer technique, combined with a dummy node, makes linked-list deletion efficient and simplifies edge-case handling.
+The dummy-node technique made the implementation simpler, while the two-pointer approach helped maintain sorted order efficiently.
+
+**Key Takeaway:** Two pointers and a dummy node provide a simple and efficient way to merge two sorted linked lists in linear time.
 
 ---
 
-# 🧠 Core Java Concepts Practiced
+# 🆕 Day 56 – Java Dequeue
 
-## 🔹 Java Fundamentals
+## 📌 Challenge Information
+
+- 📅 **Day:** 56
+- 🧩 **Problem:** Java Dequeue
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🔍 **Topic:** Java Collections Framework
+- 🔗 **Concepts:** Deque, HashSet, Sliding Window
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Find the maximum number of unique integers among all contiguous subsequences of a specified length.
+
+### 💡 Concepts Practiced
+
+- Deque Interface
+- HashSet
+- Sliding Window Technique
+- Adding and Removing Elements
+- Tracking Unique Values
+- Efficient Collection Management
+
+### 🎓 Learning Outcome
+
+Strengthened my understanding of Java collections and learned how a sliding-window approach can solve sequence-processing problems efficiently.
+
+---
+
+# 🆕 Day 53 – Java Singleton Pattern
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 53
+- 🧩 **Problem:** Java Singleton Pattern
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏗️ **Topic:** Design Patterns
+- 🔒 **Concept:** Singleton Pattern
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Implement a Singleton class that ensures only one instance of a class is available.
+
+### 💡 Concepts Practiced
+
+- Private Constructors
+- Static Variables
+- Instance Control
+- Object-Oriented Programming
+- Design Pattern Implementation
+
+### 🎓 Learning Outcome
+
+Improved my understanding of object creation and learned how the Singleton Pattern controls the number of instances of a class.
+
+---
+
+# 🆕 Day 52 – Java Factory Pattern
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 52
+- 🧩 **Problem:** Java Factory Pattern
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🏗️ **Topic:** Design Patterns
+- 🏭 **Concept:** Factory Pattern
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Use a factory class to create objects based on the supplied input.
+
+### 💡 Concepts Practiced
+
+- Factory Pattern
+- Object Creation
+- Polymorphism
+- Abstraction
+- Object-Oriented Programming
+
+### 🎓 Learning Outcome
+
+Learned how the Factory Pattern separates object creation from the code that uses those objects.
+
+---
+
+# 🆕 Day 51 – Prime Checker
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 51
+- 🧩 **Problem:** Prime Checker
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🔢 **Topic:** Number Theory
+- 🧠 **Concepts:** Varargs, Loops, Conditions, Prime Number Logic
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Check a collection of integers and determine which values are prime numbers.
+
+### 💡 Concepts Practiced
+
+- Prime Number Identification
+- Variable-Length Arguments
+- Loops and Conditional Statements
+- Modulo Operator
+- Mathematical Logic
+- Input Processing
+
+### 🎓 Learning Outcome
+
+Strengthened my understanding of number theory and learned how to apply prime-number logic to multiple inputs using Java.
+
+---
+
+# 🆕 Day 50 – Java Reflection: Attributes
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 50
+- 🧩 **Problem:** Java Reflection - Attributes
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🪞 **Topic:** Reflection API
+- 🔍 **Concepts:** Class Metadata, Field Inspection, Sorting
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Use Java Reflection to retrieve and process the declared fields of a class.
+
+### 💡 Concepts Practiced
+
+- Java Reflection API
+- Class Inspection
+- Field Metadata
+- Sorting Field Names
+- Arrays and Collections
+- Java Class Structure
+
+### 🎓 Learning Outcome
+
+Improved my understanding of Java Reflection and learned how to inspect class attributes programmatically.
+
+---
+
+# 🆕 Day 49 – Java Varargs: Simple Addition
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 49
+- 🧩 **Problem:** Java Varargs - Simple Addition
+- 💻 **Platform:** HackerRank
+- ☕ **Language:** Java
+- 🔢 **Topic:** Variable-Length Arguments
+- 🧠 **Concepts:** Varargs, Loops, Summation
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Use Java varargs to accept multiple integer arguments and calculate their sum.
+
+### 💡 Concepts Practiced
+
+- Variable-Length Arguments
+- Method Parameters
+- Arithmetic Operations
+- Loops
+- Method Calls
+
+### 🎓 Learning Outcome
+
+Learned how varargs allow a method to accept a variable number of arguments without requiring multiple overloaded methods.
+
+---
+
+# 🧠 Core Java Concepts I'm Practicing
+
+## ☕ Java Fundamentals
 
 - Variables and Data Types
 - Operators and Expressions
 - Conditional Statements
 - Loops
-- Arrays
 - Methods
+- Arrays
+- Strings
 - Input and Output
-- Type Conversion
 
-## 🔹 Strings
-
-- String Manipulation
-- String Reversal
-- Anagrams
-- Substrings
-- String Tokenization
-- String Comparison
-- Pattern Matching
-- Regular Expressions
-- IPv4 Address Validation
-
-## 🔹 Object-Oriented Programming
+## 🏗️ Object-Oriented Programming
 
 - Classes and Objects
+- Encapsulation
 - Inheritance
 - Polymorphism
+- Abstraction
+- Constructors
+- Interfaces
 - Method Overloading
 - Method Overriding
-- Abstract Classes
-- Interfaces
-- Encapsulation
-- Reflection
-- Design Patterns
 
-## 🔹 Java Collections Framework
+## 📚 Data Structures
 
-- ArrayList
-- LinkedList
+- Arrays
+- Strings
+- Linked Lists
+- Stacks
+- Queues
+- Deques
 - HashSet
 - HashMap
-- Stack
-- Queue
-- Deque
 - PriorityQueue
-- Iterator
-- Comparator
-- Sorting
-- Generics
+- Java Collections Framework
 
-## 🔹 Data Structures and Algorithms
+## 🔍 Algorithms
 
-- Array Manipulation
-- String Processing
-- Stack-Based Problem Solving
-- Queue-Based Problem Solving
-- Linked List Operations
-- Two-Pointer Technique
 - Searching
 - Sorting
-- Hashing
-- Recursion
-- Logical Problem-Solving
-- Time Complexity
-- Space Complexity
+- Two-Pointer Technique
+- Sliding Window
+- Linked List Traversal
+- Prime Number Checking
+- String Processing
+- Mathematical Operations
+- Algorithmic Complexity Analysis
 
-## 🔹 Advanced Java
+## ⚡ Advanced Java
 
-- Varargs
-- Reflection
 - Exception Handling
+- Generics
+- Varargs
+- Reflection API
 - Regular Expressions
+- Collections
+- Iterators
+- Comparable and Comparator
+- Object Creation
+- Design Patterns
+
+## 🏗️ Design Patterns
+
 - Factory Pattern
 - Singleton Pattern
-- Generic Programming
-- Collections Processing
+
+## 🔗 Linked List Concepts
+
+- Node Creation
+- Node Traversal
+- Pointer Manipulation
+- Sorted Linked List Merging
+- Dummy Node Technique
+- Two-Pointer Approach
+- Edge Case Handling
 
 ---
 
-# 📈 Challenge Statistics
+# 📅 Challenge Progress
 
-| Metric | Progress |
+## 🎯 Completed Milestones
+
+- ✅ Day 10 – First Milestone
+- ✅ Day 20 – Consistency Milestone
+- ✅ Day 30 – One-Month Milestone
+- ✅ Day 40 – Continuous Practice
+- ✅ Day 50 – Advanced Java Concepts
+- ✅ Day 60 – Collections and Programming Practice
+- ✅ Day 70 – Continued Problem-Solving
+- ✅ Day 80 – Algorithmic Practice
+- ✅ Day 88 – Merge Two Sorted Lists
+
+## ⏳ Upcoming Milestones
+
+- ⏳ Day 90 – 90% Progress
+- ⏳ Day 100 – Challenge Completion
+
+---
+
+# 📊 Current Statistics
+
+| Category | Details |
 |---|---|
-| 📅 Days Completed | 87 / 100 |
-| ⏳ Days Remaining | 13 |
-| 📊 Completion Percentage | 87% |
-| ☕ Primary Language | Java |
-| 💻 Coding Platforms | HackerRank and LeetCode |
-| 🧠 Main Focus | Java, DSA, and Problem-Solving |
-| 🏆 Latest Challenge | Remove Nth Node From End of List |
-| 🔢 Problem Number | LeetCode #19 |
-| 📊 Difficulty | Medium |
-| 🧩 Main Concept | Linked List and Two Pointers |
-| 🎯 Final Goal | Complete 100 Days |
+| 📅 Days Completed | 88 / 100 |
+| 💻 Challenges Completed | 88 |
+| ☕ Programming Language | Java |
+| 🏆 Platforms | HackerRank and LeetCode |
+| 📚 Main Focus | Java, Data Structures, Algorithms |
+| 🔗 Latest Challenge | Merge Two Sorted Lists |
+| 🧠 Latest Concepts | Linked Lists, Two Pointers, Dummy Node |
+| 📈 Progress | 88% |
+| ⏳ Days Remaining | 12 |
+| 🎯 Final Goal | Complete 100 Days of Coding |
 
 ---
 
-# 🔥 My Coding Journey
+# 📖 My Daily Learning Process
 
-## 87 Days Completed! 🎉
-
-Every problem I solve helps me strengthen my Java fundamentals, understand new programming concepts, and improve my logical thinking.
-
-This challenge is helping me develop consistency, confidence, and practical programming skills.
-
-From basic Java statements to collections, object-oriented programming, design patterns, and algorithmic problems involving stacks and linked lists, every challenge contributes to my growth as a programmer.
-
-My goal is not only to complete 100 days but also to understand the logic behind every solution and continuously improve my coding skills.
-
-**87 days completed. 13 days remaining. The journey continues!** 🚀
-
----
-
-# 🎯 Upcoming Goals
-
-- 🔹 Solve more Java coding problems.
-- 🔹 Practice additional LeetCode Easy and Medium problems.
-- 🔹 Strengthen Data Structures and Algorithms.
-- 🔹 Improve understanding of linked lists, stacks, and queues.
-- 🔹 Practice arrays and strings.
-- 🔹 Learn searching and sorting algorithms.
-- 🔹 Improve time and space complexity analysis.
-- 🔹 Strengthen Java Collections Framework knowledge.
-- 🔹 Practice object-oriented programming questions.
-- 🔹 Prepare for technical interviews.
-- 🔹 Complete the remaining 13 days.
-- 🔹 Reach the 100-day milestone.
+1. 📖 Read and understand the problem statement.
+2. 🧠 Identify the input, output, and constraints.
+3. 🔍 Analyze possible approaches.
+4. ✍️ Write a Java solution.
+5. 🧪 Test the solution with sample inputs.
+6. 🔎 Consider edge cases.
+7. ⚡ Analyze time and auxiliary space complexity.
+8. 🛠️ Debug errors and improve the solution.
+9. 📂 Save the code in the appropriate daily folder.
+10. 📸 Upload the submission screenshot when available.
+11. 📝 Review the concepts learned.
+12. 🚀 Continue to the next challenge.
 
 ---
 
-# 📂 Daily Learning Workflow
+# 🌱 Learning in Public
 
-1. 📖 Read the problem statement carefully.
-2. 🧠 Understand the requirements and constraints.
-3. 🔍 Identify the relevant data structure or algorithm.
-4. ✍️ Develop a logical approach.
-5. 💻 Implement the solution in Java.
-6. 🧪 Test the solution using sample inputs.
-7. 🔧 Debug errors and improve the implementation.
-8. ⏱️ Analyze time and space complexity.
-9. 📸 Save the submission screenshot when available.
-10. 📂 Upload the solution to the appropriate daily folder.
-11. 📝 Document the concepts learned.
-12. 🚀 Move on to the next challenge.
+This challenge represents my commitment to learning programming through consistent daily practice.
 
----
+Through these exercises, I am working to:
 
-# 🌱 Why I Started This Challenge
-
-I started this challenge to build a consistent coding habit, strengthen my Java programming skills, and gain practical experience solving programming problems.
-
-By documenting my daily progress, I can track my learning journey, revisit previous solutions, and identify areas for improvement.
-
-This repository reflects my commitment to learning, practicing, and growing as a programmer.
+- Build strong Java fundamentals.
+- Improve algorithmic thinking.
+- Understand data structures.
+- Write cleaner and more efficient code.
+- Practice object-oriented programming.
+- Understand time and space complexity.
+- Improve debugging skills.
+- Learn common design patterns.
+- Strengthen linked list and collection handling.
+- Prepare for technical interviews.
+- Maintain consistency in coding.
+- Document my progress on GitHub.
 
 ---
 
-# ⭐ Support My Journey
+# 🌟 Future Learning Goals
 
-If you find this repository helpful, please consider giving it a ⭐ Star.
+As I continue this journey, I aim to explore:
 
-Your support motivates me to continue learning, solving problems, and sharing my progress with the developer community.
+- Advanced Data Structures
+- Advanced Algorithms
+- Binary Trees and Binary Search Trees
+- Graph Algorithms
+- Dynamic Programming
+- Backtracking
+- Recursion and Memoization
+- Advanced Linked List Problems
+- Advanced String Algorithms
+- Hashing Techniques
+- Priority Queues and Heaps
+- Java Streams
+- Multithreading
+- Concurrency
+- Java Memory Management
+- Exception Handling Best Practices
+- Design Patterns
+- Object-Oriented Design
+- Coding Interview Problems
+- Time and Space Optimization
+
+---
+
+# ⭐ Support
+
+If you find this repository useful or inspiring, please consider giving it a ⭐ Star.
+
+Your support motivates me to continue learning, practicing, and sharing my programming journey.
 
 ---
 
 # 🤝 Connect With Me
 
-👩‍💻 **GitHub Profile:** [Coder-RD](https://github.com/Coder-RD)
+### 👩‍💻 GitHub Profile
 
-☕ **Java Challenge Repository:** [Java_Challenge](https://github.com/Coder-RD/Java_Challenge/)
+**Coder-RD**
 
-💻 **LeetCode Problem — Remove Nth Node From End of List:** [LeetCode #19](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+🔗 https://github.com/Coder-RD
+
+### ☕ Java Challenge Repository
+
+🔗 https://github.com/Coder-RD/Java_Challenge/
 
 ---
 
-# 🔖 Topics and Hashtags
+# 🔖 Hashtags
 
-#100DaysOfCode #Java #JavaProgramming #LeetCode #HackerRank #DSA #DataStructures #Algorithms #LinkedList #TwoPointers #ProblemSolving #CodingChallenge #JavaDeveloper #LearningJourney #GitHub #DailyCoding #CoreJava #ObjectOrientedProgramming #JavaCollections #SoftwareDevelopment #Programming #TechnicalInterviewPreparation #Consistency #KeepLearning #KeepCoding
+#100DaysOfCode #Java #JavaProgramming #HackerRank #LeetCode #DataStructures #Algorithms #LinkedList #MergeTwoSortedLists #TwoPointers #DummyNode #ProblemSolving #CodingChallenge #JavaDeveloper #ObjectOrientedProgramming #FactoryPattern #SingletonPattern #ReflectionAPI #Varargs #JavaCollections #Deque #HashSet #PriorityQueue #RegularExpressions #GitHub #DailyCoding #LearningInPublic #SoftwareDevelopment #CodingJourney #TechnicalInterviewPreparation
 
 ---
 
 # 🚀 Keep Learning. Keep Coding. Keep Growing.
 
-> "Success comes from consistent practice, patience, and continuous improvement."
+> "Great developers are built through consistent practice, curiosity, and continuous learning."
 
 <p align="center">
-  <strong>☕ 87 Days Completed | ⏳ 13 Days Remaining | 🏆 Goal: 100 Days</strong>
+  ☕ 💻 🧠 🔢 🔗 📚 ⚡ 🏗️ 🧩 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 One Problem at a Time. One Day at a Time. 🔥</strong>
+  <strong>🔥 88 Days Completed | 12 Days Remaining | 100 Days Goal 🔥</strong>
 </p>
