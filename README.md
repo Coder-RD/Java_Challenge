@@ -2,9 +2,9 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
-  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=java" alt="Java">
-  <img src="https://img.shields.io/badge/Platform-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="Coding Platforms">
-  <img src="https://img.shields.io/badge/Progress-88%25-success?style=for-the-badge" alt="Challenge Progress">
+  <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk" alt="Java">
+  <img src="https://img.shields.io/badge/Platforms-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="Coding Platforms">
+  <img src="https://img.shields.io/badge/Progress-89%25-success?style=for-the-badge" alt="Challenge Progress">
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 88 Days Completed | 12 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 89 Days Completed | 11 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -25,25 +25,31 @@ This repository documents my daily Java programming journey through coding chall
 
 My goal is to strengthen my Java programming fundamentals, improve problem-solving abilities, understand data structures and algorithms, and develop efficient coding techniques through consistent daily practice.
 
-Throughout this challenge, I have explored Java fundamentals, object-oriented programming, strings, arrays, collections, exception handling, reflection, design patterns, regular expressions, linked lists, and other important programming concepts.
+Throughout this challenge, I have explored Java fundamentals, object-oriented programming, strings, arrays, collections, exception handling, reflection, design patterns, regular expressions, linked lists, recursion, backtracking, and other important programming concepts.
 
 Each day provides an opportunity to solve a new problem, understand its logic, improve code efficiency, and develop the skills needed for technical interviews and software development.
+
+This repository serves as a record of my learning progress, completed challenges, Java solutions, and coding achievements.
+
+---
 
 ## 🎯 Challenge Goals
 
 - ☕ Strengthen Java programming fundamentals.
 - 🧠 Improve logical thinking and problem-solving skills.
 - 🔢 Practice arrays, strings, and mathematical operations.
-- 🔗 Understand linked lists and pointer manipulation.
+- 🔗 Understand linked lists and node manipulation.
 - 📚 Learn and apply data structures and algorithms.
 - 🧩 Practice object-oriented programming concepts.
-- 🔄 Understand loops, conditions, and recursion.
+- 🔄 Understand loops, conditions, recursion, and backtracking.
 - 🧵 Explore Java collections and data handling.
 - ⚡ Improve time and space complexity analysis.
 - 🏗️ Learn design patterns such as Factory and Singleton.
 - 🔍 Practice regular expressions and pattern matching.
-- 🪞 Explore Java Reflection API.
+- 🪞 Explore the Java Reflection API.
 - 🛠️ Handle exceptions and edge cases effectively.
+- 🔎 Solve problems using two-pointer techniques.
+- 🧮 Practice combinatorial problems and mathematical logic.
 - 💻 Solve coding challenges on HackerRank and LeetCode.
 - 📈 Build consistency through daily coding practice.
 - 🚀 Develop interview-ready programming skills.
@@ -60,11 +66,13 @@ Each day provides an opportunity to solve a new problem, understand its logic, i
 | 🔢 Data Structures | Arrays, Strings, Linked Lists, Collections |
 | 🏗️ Programming Paradigm | Object-Oriented Programming |
 | 🔄 Control Flow | Loops, Conditions, Recursion |
+| 🔙 Algorithmic Techniques | Backtracking, Two Pointers |
 | 🧩 Design Patterns | Factory Pattern, Singleton Pattern |
 | 🔍 Pattern Matching | Regular Expressions |
 | 🪞 Java Features | Reflection API, Varargs |
 | 📊 Complexity Analysis | Time and Auxiliary Space Complexity |
 | 🔗 Linked List Techniques | Traversal, Node Connections, Two Pointers |
+| 📚 Collections | ArrayList, HashSet, Deque, PriorityQueue |
 | 🧪 Testing | Sample Inputs, Edge Cases, Output Validation |
 | 🌱 Version Control | Git and GitHub |
 
@@ -164,9 +172,10 @@ This repository is organized into daily folders to make it easy to track my prog
 - 📁 Day-86/
 - 📁 Day-87/
 - 📁 Day-88/
+- 📁 Day-89/
 - 📄 README.md
 
-Each daily folder contains the corresponding Java solution and may include a screenshot of the successful submission.
+Each daily folder contains the corresponding programming solution and may include a screenshot of the successful submission.
 
 ---
 
@@ -262,7 +271,7 @@ Each daily folder contains the corresponding Java solution and may include a scr
 | ✅ Day 86 | Java Challenge | HackerRank | Completed |
 | ✅ Day 87 | Java Challenge | HackerRank | Completed |
 | 🔗 Day 88 | Merge Two Sorted Lists | LeetCode | Completed |
-| ⏳ Day 89 | Upcoming Java Challenge | Various Platforms | Pending |
+| 🔙 Day 89 | Generate Parentheses | LeetCode | Completed |
 | ⏳ Day 90 | Upcoming Java Challenge | Various Platforms | Pending |
 | ⏳ Day 91 | Upcoming Java Challenge | Various Platforms | Pending |
 | ⏳ Day 92 | Upcoming Java Challenge | Various Platforms | Pending |
@@ -274,6 +283,86 @@ Each daily folder contains the corresponding Java solution and may include a scr
 | ⏳ Day 98 | Upcoming Java Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming Java Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Challenge | Various Platforms | Pending |
+
+---
+
+# 🆕 Day 89 – Generate Parentheses
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 89
+- 🧩 **Problem:** Generate Parentheses
+- 🔢 **LeetCode Problem:** 22
+- 💻 **Platform:** LeetCode
+- ☕ **Language:** Java
+- 🔙 **Topic:** Backtracking and Recursion
+- 🧠 **Concepts:** Recursive Backtracking, StringBuilder, Valid Parentheses
+- 📄 **Solution File:** `Generate Parentheses.java`
+- 📸 **Submission Screenshot:** `Screenshot 2026-10-23 145331.png`
+- ✅ **Status:** Completed
+
+### 🎯 Problem Statement
+
+Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+A combination is valid when every opening parenthesis has a corresponding closing parenthesis and no closing parenthesis appears before its matching opening parenthesis.
+
+### 📥 Example 1
+
+**Input:**
+
+`n = 3`
+
+**Output:**
+
+`["((()))","(()())","(())()","()(())","()()()"]`
+
+### 📥 Example 2
+
+**Input:**
+
+`n = 1`
+
+**Output:**
+
+`["()"]`
+
+### 💡 Approach: Backtracking
+
+The solution uses backtracking to explore all valid combinations of opening and closing parentheses.
+
+1. Start with an empty string.
+2. Add an opening parenthesis `(` if the number of opening parentheses is less than `n`.
+3. Add a closing parenthesis `)` only when the number of closing parentheses is less than the number of opening parentheses.
+4. Continue building the string recursively.
+5. When the string length becomes `2 * n`, add the completed combination to the result list.
+6. Backtrack by removing the last character and explore other valid combinations.
+7. Return the list containing all generated combinations.
+
+### 🧠 Concepts Practiced
+
+- Recursion
+- Backtracking
+- StringBuilder
+- ArrayList
+- Valid Parentheses
+- Conditional Logic
+- State Tracking
+- Combinatorial Problem-Solving
+- Time and Space Complexity Analysis
+
+### ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(Cₙ × n)`, where `Cₙ` is the nth Catalan number. This accounts for generating and storing all valid strings of length `2n`.
+- **Auxiliary Space Complexity:** `O(n)` for the recursion stack and current string, excluding the output list.
+
+### 🎓 Learning Outcome
+
+By solving this problem, I strengthened my understanding of recursion and backtracking and learned how to generate valid combinations while avoiding unnecessary search paths.
+
+The condition `close < open` ensures that a closing parenthesis is added only when an unmatched opening parenthesis exists. This prevents invalid combinations from being generated.
+
+**Key Takeaway:** Backtracking efficiently explores possible combinations while using constraints to ensure that only valid parentheses sequences are generated.
 
 ---
 
@@ -296,7 +385,7 @@ Each daily folder contains the corresponding Java solution and may include a scr
 
 Given the heads of two sorted linked lists, `list1` and `list2`, merge the two lists into one sorted linked list.
 
-The merged list must be created by connecting the existing nodes of the two lists while preserving their sorted order.
+The merged list must preserve sorted order and reuse the existing nodes.
 
 Return the head of the merged linked list.
 
@@ -335,16 +424,16 @@ Return the head of the merged linked list.
 
 ### 💡 Approach
 
-The solution uses an iterative two-pointer technique to merge the lists efficiently.
+The solution uses an iterative two-pointer technique.
 
-1. Create a dummy node to simplify construction of the merged list.
-2. Maintain a `current` pointer to the last node of the merged list.
-3. Compare the values of the current nodes in both input lists.
+1. Create a dummy node to simplify the construction of the merged list.
+2. Maintain a `current` pointer to the last node in the merged list.
+3. Compare the current values of both input lists.
 4. Attach the smaller-valued node to the merged list.
 5. Advance the pointer of the list from which the node was selected.
-6. Move `current` forward after each attachment.
-7. When either input list becomes empty, attach the remaining nodes of the other list.
-8. Return `dummy.next`, which points to the head of the merged list.
+6. Move `current` forward.
+7. When one list becomes empty, attach the remaining nodes of the other list.
+8. Return `dummy.next`, the head of the merged list.
 
 ### 🧠 Concepts Practiced
 
@@ -354,25 +443,21 @@ The solution uses an iterative two-pointer technique to merge the lists efficien
 - Linked List Traversal
 - Node Connections
 - Sorted Data Merging
-- Conditional Statements
 - Pointer Manipulation
 - Edge Case Handling
-- Algorithmic Problem-Solving
 
 ### ⏱️ Complexity Analysis
 
 - **Time Complexity:** `O(n + m)` — Each node is processed at most once.
-- **Auxiliary Space Complexity:** `O(1)` — The algorithm uses a constant number of pointers and reuses the existing nodes.
+- **Auxiliary Space Complexity:** `O(1)` — A constant number of pointers is used, and existing nodes are reused.
 
 Here, `n` and `m` represent the numbers of nodes in the two input lists.
 
 ### 🎓 Learning Outcome
 
-By solving this problem, I strengthened my understanding of linked list manipulation and learned how to combine two sorted linked lists without creating additional data nodes.
+This problem strengthened my understanding of linked list manipulation and taught me how to merge two sorted linked lists efficiently without creating additional data nodes.
 
-The dummy-node technique made the implementation simpler, while the two-pointer approach helped maintain sorted order efficiently.
-
-**Key Takeaway:** Two pointers and a dummy node provide a simple and efficient way to merge two sorted linked lists in linear time.
+**Key Takeaway:** Two pointers and a dummy node simplify linked list merging while preserving sorted order.
 
 ---
 
@@ -607,6 +692,9 @@ Learned how varargs allow a method to accept a variable number of arguments with
 - Prime Number Checking
 - String Processing
 - Mathematical Operations
+- Recursion
+- Backtracking
+- Combinatorial Generation
 - Algorithmic Complexity Analysis
 
 ## ⚡ Advanced Java
@@ -652,6 +740,7 @@ Learned how varargs allow a method to accept a variable number of arguments with
 - ✅ Day 70 – Continued Problem-Solving
 - ✅ Day 80 – Algorithmic Practice
 - ✅ Day 88 – Merge Two Sorted Lists
+- ✅ Day 89 – Generate Parentheses
 
 ## ⏳ Upcoming Milestones
 
@@ -664,15 +753,16 @@ Learned how varargs allow a method to accept a variable number of arguments with
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | 88 / 100 |
-| 💻 Challenges Completed | 88 |
+| 📅 Days Completed | 89 / 100 |
+| 💻 Challenges Completed | 89 |
 | ☕ Programming Language | Java |
 | 🏆 Platforms | HackerRank and LeetCode |
 | 📚 Main Focus | Java, Data Structures, Algorithms |
-| 🔗 Latest Challenge | Merge Two Sorted Lists |
-| 🧠 Latest Concepts | Linked Lists, Two Pointers, Dummy Node |
-| 📈 Progress | 88% |
-| ⏳ Days Remaining | 12 |
+| 🔗 Day 88 Challenge | Merge Two Sorted Lists |
+| 🔙 Day 89 Challenge | Generate Parentheses |
+| 🧠 Latest Concepts | Backtracking, Recursion, Valid Parentheses |
+| 📈 Progress | 89% |
+| ⏳ Days Remaining | 11 |
 | 🎯 Final Goal | Complete 100 Days of Coding |
 
 ---
@@ -709,6 +799,7 @@ Through these exercises, I am working to:
 - Improve debugging skills.
 - Learn common design patterns.
 - Strengthen linked list and collection handling.
+- Improve recursion and backtracking skills.
 - Prepare for technical interviews.
 - Maintain consistency in coding.
 - Document my progress on GitHub.
@@ -724,7 +815,7 @@ As I continue this journey, I aim to explore:
 - Binary Trees and Binary Search Trees
 - Graph Algorithms
 - Dynamic Programming
-- Backtracking
+- Advanced Backtracking
 - Recursion and Memoization
 - Advanced Linked List Problems
 - Advanced String Algorithms
@@ -762,11 +853,15 @@ Your support motivates me to continue learning, practicing, and sharing my progr
 
 🔗 https://github.com/Coder-RD/Java_Challenge/
 
+### 🧩 LeetCode Challenge
+
+🔗 https://leetcode.com/problems/generate-parentheses/
+
 ---
 
 # 🔖 Hashtags
 
-#100DaysOfCode #Java #JavaProgramming #HackerRank #LeetCode #DataStructures #Algorithms #LinkedList #MergeTwoSortedLists #TwoPointers #DummyNode #ProblemSolving #CodingChallenge #JavaDeveloper #ObjectOrientedProgramming #FactoryPattern #SingletonPattern #ReflectionAPI #Varargs #JavaCollections #Deque #HashSet #PriorityQueue #RegularExpressions #GitHub #DailyCoding #LearningInPublic #SoftwareDevelopment #CodingJourney #TechnicalInterviewPreparation
+#100DaysOfCode #Java #JavaProgramming #HackerRank #LeetCode #DataStructures #Algorithms #Backtracking #Recursion #GenerateParentheses #LinkedList #MergeTwoSortedLists #TwoPointers #DummyNode #ProblemSolving #CodingChallenge #JavaDeveloper #ObjectOrientedProgramming #FactoryPattern #SingletonPattern #ReflectionAPI #Varargs #JavaCollections #Deque #HashSet #PriorityQueue #RegularExpressions #GitHub #DailyCoding #LearningInPublic #SoftwareDevelopment #CodingJourney #TechnicalInterviewPreparation
 
 ---
 
@@ -775,9 +870,9 @@ Your support motivates me to continue learning, practicing, and sharing my progr
 > "Great developers are built through consistent practice, curiosity, and continuous learning."
 
 <p align="center">
-  ☕ 💻 🧠 🔢 🔗 📚 ⚡ 🏗️ 🧩 🚀
+  ☕ 💻 🧠 🔢 🔗 📚 ⚡ 🏗️ 🧩 🔙 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 88 Days Completed | 12 Days Remaining | 100 Days Goal 🔥</strong>
+  <strong>🔥 89 Days Completed | 11 Days Remaining | 100 Days Goal 🔥</strong>
 </p>
