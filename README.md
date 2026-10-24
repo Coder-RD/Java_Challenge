@@ -1,4 +1,3 @@
-```markdown
 # ☕ 100 Days of Java Challenge
 
 <p align="center">
@@ -374,4 +373,3 @@ https://github.com/Coder-RD/Java_Challenge/
 <p align="center">
   <strong>🔥 90 Days of Consistent Java Practice — The Journey Continues! 🔥</strong>
 </p>
-```
