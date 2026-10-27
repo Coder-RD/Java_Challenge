@@ -1,10 +1,10 @@
 # ☕ 100 Days of Java Challenge 🚀
 
 <p align="center">
-  <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge&logo=java&logoColor=white" alt="100 Days of Java Challenge">
+  <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="100 Days of Java Challenge">
   <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-  <img src="https://img.shields.io/badge/Platform-HackerRank-brightgreen?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank">
-  <img src="https://img.shields.io/badge/Progress-92%25-success?style=for-the-badge" alt="92% Progress">
+  <img src="https://img.shields.io/badge/Platform-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="HackerRank and LeetCode">
+  <img src="https://img.shields.io/badge/Progress-93%25-success?style=for-the-badge" alt="93% Progress">
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 92 Days Completed | 8 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 93 Days Completed | 7 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -23,9 +23,11 @@ Welcome to my **100 Days of Java Challenge!** 🎉
 
 This repository documents my daily Java programming journey through coding challenges, problem-solving exercises, data structures, algorithms, object-oriented programming, and practical programming concepts.
 
-My goal is to improve my Java programming skills, strengthen logical thinking, and develop efficient solutions by practicing consistently every day.
+My goal is to strengthen my Java programming skills, improve logical thinking, and develop efficient solutions through consistent daily practice.
 
-Throughout this challenge, I have worked on problems involving arrays, strings, loops, collections, exception handling, object-oriented programming, recursion, linked lists, stacks, queues, and algorithmic problem-solving.
+Throughout this challenge, I have solved problems involving arrays, strings, loops, collections, exception handling, object-oriented programming, recursion, linked lists, stacks, queues, and algorithmic problem-solving.
+
+I practice coding problems on platforms such as HackerRank and LeetCode, documenting my solutions and learning progress in individual daily folders.
 
 Each completed challenge represents another step toward becoming a better programmer. 🚀
 
@@ -41,6 +43,7 @@ Each completed challenge represents another step toward becoming a better progra
 - 🔗 Practice linked lists, stacks, queues, and other data structures.
 - 🧩 Solve coding interview problems.
 - 💻 Write clean, readable, and efficient Java code.
+- ⏱️ Analyze time and space complexity.
 - 📈 Maintain consistency through daily practice.
 - 🏆 Complete the 100 Days of Java Challenge.
 
@@ -145,6 +148,7 @@ Each completed challenge represents another step toward becoming a better progra
 - Greedy Algorithms
 - Priority Queues
 - Merge Algorithms
+- Pointer Manipulation
 - Time and Space Complexity
 
 ### 💡 Problem-Solving Techniques
@@ -152,6 +156,8 @@ Each completed challenge represents another step toward becoming a better progra
 - Optimized Algorithms
 - In-Place Array Modification
 - Two-Pointer Algorithms
+- Linked List Manipulation
+- Iterative Algorithms
 - Recursion and Backtracking
 - Mathematical Computation
 - Frequency Counting
@@ -171,164 +177,281 @@ The repository is organized into individual folders to make daily solutions easy
 - 📁 Day-92/
   - 📄 Remove Element.java
   - 📸 Screenshot 2026-10-26 095317.png
-- 📁 Day93-Java/ through Day100-Java/ — Upcoming challenges
+- 📁 Day-93/
+  - 📄 Swap Nodes in Pairs.java
+  - 📸 Screenshot 2026-10-27 160248.png
+- 📁 Day-94/ through Day-99/ — Upcoming challenges
+- 🏆 Day-100 — Final challenge
 - 📄 README.md
 
 Each daily folder contains the relevant Java solution and, where applicable, a screenshot of the successful submission.
 
-### 📌 Latest Challenge
-
-| Detail | Information |
-|---|---|
-| 📅 Day | 92 |
-| 💻 Problem | Remove Element |
-| 🏆 Platform | LeetCode |
-| 🔢 Problem Number | 27 |
-| ☕ Language | Java |
-| 🧠 Technique | Two Pointers |
-| 📦 Data Structure | Array |
-| ⚙️ Approach | In-Place Modification |
-| 📄 Solution | `Day-92/Remove Element.java` |
-| 📸 Screenshot | `Day-92/Screenshot 2026-10-26 095317.png` |
-| ✅ Status | Completed |
-
 ---
 
-# 🆕 Day 92 – Remove Element 🚀
+# 🆕 Day 93 – Swap Nodes in Pairs 🔗
 
 ## 📌 Problem Information
 
-- **Platform:** LeetCode
-- **Problem Number:** 27
-- **Problem Name:** Remove Element
-- **Difficulty:** Easy
-- **Language:** Java
-- **Topic:** Arrays
-- **Technique:** Two Pointers
-- **Approach:** In-Place Modification
-- **Status:** Completed ✅
+- 📅 **Day:** 93
+- 🧩 **Problem:** Swap Nodes in Pairs
+- 🔢 **LeetCode Problem Number:** 24
+- 💻 **Platform:** LeetCode
+- 🏷️ **Difficulty:** Medium
+- ☕ **Language:** Java
+- 🔗 **Topic:** Linked Lists
+- 🧠 **Technique:** Pointer Manipulation
+- ⚙️ **Approach:** Iterative
+- 📁 **Directory:** `Day-93/`
+- 📄 **Solution File:** `Day-93/Swap Nodes in Pairs.java`
+- 📸 **Submission Screenshot:** `Day-93/Screenshot 2026-10-27 160248.png`
+- ✅ **Status:** Completed
+
+🔗 **Problem Link:** https://leetcode.com/problems/swap-nodes-in-pairs/
 
 ## 🎯 Problem Statement
 
-Given an integer array `nums` and an integer `val`, remove all occurrences of `val` from the array in-place.
+Given the head of a singly linked list, swap every two adjacent nodes and return the head of the modified list.
 
-Return the number of elements that are not equal to `val`.
+The values stored in the nodes must not be modified. Only the links between nodes can be changed.
 
-The first `k` elements of the modified array must contain all the values that are not equal to `val`. The order of these remaining elements does not matter.
+The solution must rearrange the existing nodes instead of swapping their values.
 
-The original array must be modified without creating another array for storing the result.
+## 📝 Examples
 
-## 💻 Java Solution
-
-    class Solution {
-        public int removeElement(int[] nums, int val) {
-            int k = 0;
-
-            for (int i = 0; i < nums.length; i++) {
-                if (nums[i] != val) {
-                    nums[k] = nums[i];
-                    k++;
-                }
-            }
-
-            return k;
-        }
-    }
-
-## 🔍 Approach Explained
-
-### 1. Initialize the Pointer
-
-Initialize `k = 0` to represent the position where the next valid element will be placed.
-
-### 2. Traverse the Array
-
-Use a `for` loop to examine each element of the original array.
-
-### 3. Check the Condition
-
-If `nums[i] != val`, the current element should remain in the array's valid portion.
-
-### 4. Replace the Element
-
-Copy the current valid element to `nums[k]`.
-
-### 5. Increment the Pointer
-
-Increase `k` to prepare the position for the next valid element.
-
-### 6. Return the Result
-
-After processing all elements, return `k`, the number of elements that are not equal to `val`.
-
-## 🧪 Example
+### Example 1
 
 **Input:**
 
-    nums = [0,1,2,2,3,0,4,2]
-    val = 2
+`head = [1,2,3,4]`
 
 **Output:**
 
-    k = 5
+`[2,1,4,3]`
 
-**First Five Elements:**
+**Explanation:**
 
-    [0,1,3,0,4]
+The first pair, `1 → 2`, becomes `2 → 1`.
 
-The first five positions contain all the elements that are not equal to `2`.
+The second pair, `3 → 4`, becomes `4 → 3`.
 
-The values after the first five positions do not matter.
+The final linked list is `2 → 1 → 4 → 3`.
+
+### Example 2
+
+**Input:**
+
+`head = []`
+
+**Output:**
+
+`[]`
+
+**Explanation:**
+
+An empty linked list remains empty.
+
+### Example 3
+
+**Input:**
+
+`head = [1]`
+
+**Output:**
+
+`[1]`
+
+**Explanation:**
+
+A single-node linked list does not require any swapping.
+
+### Example 4
+
+**Input:**
+
+`head = [1,2,3]`
+
+**Output:**
+
+`[2,1,3]`
+
+**Explanation:**
+
+The first two nodes are swapped. The remaining node stays in its original position because it has no adjacent partner.
+
+## 💻 Java Solution
+
+The following is the standard iterative solution for LeetCode's `Swap Nodes in Pairs` problem.
+
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode prev = dummy;
+
+        while (prev.next != null && prev.next.next != null) {
+            ListNode first = prev.next;
+            ListNode second = first.next;
+
+            first.next = second.next;
+            second.next = first;
+            prev.next = second;
+
+            prev = first;
+        }
+
+        return dummy.next;
+    }
+}
+
+## 🔍 Approach Explained
+
+### 1. Create a Dummy Node
+
+Create a dummy node and connect it to the original head.
+
+The dummy node simplifies the process of swapping the first pair because the head of the linked list may change.
+
+### 2. Initialize the Previous Pointer
+
+Set `prev` to the dummy node.
+
+This pointer tracks the node immediately before the pair being swapped.
+
+### 3. Check Whether a Pair Exists
+
+Continue the loop while both `prev.next` and `prev.next.next` exist.
+
+This ensures that two nodes are available before attempting a swap.
+
+### 4. Identify the Two Nodes
+
+Use two references:
+
+- `first` points to the first node in the current pair.
+- `second` points to the second node in the current pair.
+
+For example, in `1 → 2 → 3 → 4`, the first pair is `1 → 2`.
+
+### 5. Update the First Node's Link
+
+Set `first.next = second.next`.
+
+This connects the first node to the node that comes after the current pair.
+
+### 6. Reverse the Pair
+
+Set `second.next = first`.
+
+The second node now points to the first node.
+
+The pair changes from `1 → 2` to `2 → 1`.
+
+### 7. Connect the Previous Node
+
+Set `prev.next = second`.
+
+This connects the previous part of the linked list to the newly swapped pair.
+
+### 8. Move to the Next Pair
+
+Set `prev = first`.
+
+After swapping, `first` becomes the second node in the swapped pair, so it is now positioned immediately before the next pair.
+
+### 9. Return the Updated Head
+
+Return `dummy.next`, which points to the head of the modified linked list.
+
+## 🔄 Visual Representation
+
+**Original Linked List:**
+
+`1 → 2 → 3 → 4 → NULL`
+
+**After Swapping the First Pair:**
+
+`2 → 1 → 3 → 4 → NULL`
+
+**After Swapping the Second Pair:**
+
+`2 → 1 → 4 → 3 → NULL`
+
+**Final Linked List:**
+
+`2 → 1 → 4 → 3 → NULL`
+
+## 🧠 Important Concepts Practiced
+
+- Singly Linked Lists
+- Node References
+- Pointer Manipulation
+- Iterative Traversal
+- Swapping Adjacent Nodes
+- Dummy Node Technique
+- Updating Next Pointers
+- Preserving Node Values
+- Handling Empty Lists
+- Handling Single-Node Lists
+- Handling Odd Numbers of Nodes
+- Algorithm Design
 
 ## ⏱️ Complexity Analysis
 
-- **Time Complexity:** O(n), because the array is traversed once.
-- **Space Complexity:** O(1), because the solution modifies the original array using constant extra space.
+Let `n` represent the number of nodes in the linked list.
 
-## 🧠 Key Learnings
+- **Time Complexity:** O(n), because the algorithm visits each pair of nodes once.
+- **Auxiliary Space Complexity:** O(1), because the algorithm uses a fixed number of additional references and one dummy node.
 
-- Practiced array traversal.
-- Applied the two-pointer technique.
-- Learned in-place array modification.
-- Removed unwanted elements without creating another array.
-- Improved understanding of time and space complexity.
-- Practiced returning the valid array length.
-- Learned how to handle duplicate values.
-- Strengthened problem-solving skills for coding interviews.
+The algorithm modifies the existing links without creating a new linked list.
 
-**Key Takeaway:** The two-pointer technique allows us to remove unwanted elements efficiently while maintaining constant extra space.
+## 🎓 Learning Outcomes
+
+By completing Day 93, I strengthened my understanding of linked list operations and learned how to swap adjacent nodes without modifying their stored values.
+
+This problem helped me practice:
+
+- Managing references between linked list nodes.
+- Updating multiple `next` pointers safely.
+- Using a dummy node to simplify head changes.
+- Traversing a linked list in pairs.
+- Handling edge cases involving empty and odd-length lists.
+- Writing an efficient iterative solution.
+- Analyzing time and auxiliary space complexity.
+
+**Key Takeaway:** Linked list nodes can be swapped by changing their links instead of changing their values.
 
 ---
 
 # 📅 100 Days of Java Progress Tracker
 
-| Day | Challenge / Topic | Status |
-|---|---|---|
-| Day 1–10 | Java Fundamentals and Programming Challenges | ✅ Completed |
-| Day 11–20 | Java Basics, Strings, and Problem Solving | ✅ Completed |
-| Day 21–30 | Java Programming and Object-Oriented Concepts | ✅ Completed |
-| Day 31–40 | Java Problem Solving and Advanced Concepts | ✅ Completed |
-| Day 41–48 | Java Programming Challenges | ✅ Completed |
-| Day 49 | Varargs - Simple Addition | ✅ Completed |
-| Day 50 | Reflection - Attributes | ✅ Completed |
-| Day 51 | Prime Checker | ✅ Completed |
-| Day 52 | Factory Pattern | ✅ Completed |
-| Day 53 | Singleton Pattern | ✅ Completed |
-| Day 54–55 | Java Programming Challenges | ✅ Completed |
-| Day 56 | Dequeue | ✅ Completed |
-| Day 57–87 | Java Programming and Problem-Solving Challenges | ✅ Completed |
-| Day 88 | Java Coding Challenge | ✅ Completed |
-| Day 89 | Generate Parentheses | ✅ Completed |
-| Day 90–91 | Java Coding Challenges | ✅ Completed |
-| Day 92 | Remove Element | ✅ Completed |
-| Day 93 | Upcoming Java Challenge | ⏳ Pending |
-| Day 94 | Upcoming Java Challenge | ⏳ Pending |
-| Day 95 | Upcoming Java Challenge | ⏳ Pending |
-| Day 96 | Upcoming Java Challenge | ⏳ Pending |
-| Day 97 | Upcoming Java Challenge | ⏳ Pending |
-| Day 98 | Upcoming Java Challenge | ⏳ Pending |
-| Day 99 | Upcoming Java Challenge | ⏳ Pending |
-| Day 100 | Final Challenge | 🏆 Pending |
+| Day | Challenge / Topic | Platform | Status |
+|---|---|---|---|
+| Day 1–10 | Java Fundamentals and Programming Challenges | HackerRank | ✅ Completed |
+| Day 11–20 | Java Basics, Strings, and Problem Solving | HackerRank | ✅ Completed |
+| Day 21–30 | Java Programming and Object-Oriented Concepts | HackerRank | ✅ Completed |
+| Day 31–40 | Java Problem Solving and Advanced Concepts | HackerRank | ✅ Completed |
+| Day 41–48 | Java Programming Challenges | HackerRank | ✅ Completed |
+| Day 49 | Varargs - Simple Addition | HackerRank | ✅ Completed |
+| Day 50 | Reflection - Attributes | HackerRank | ✅ Completed |
+| Day 51 | Prime Checker | HackerRank | ✅ Completed |
+| Day 52 | Factory Pattern | HackerRank | ✅ Completed |
+| Day 53 | Singleton Pattern | HackerRank | ✅ Completed |
+| Day 54–55 | Java Programming Challenges | HackerRank | ✅ Completed |
+| Day 56 | Dequeue | HackerRank | ✅ Completed |
+| Day 57–87 | Java Programming and Problem-Solving Challenges | Various Platforms | ✅ Completed |
+| Day 88 | Java Coding Challenge | LeetCode | ✅ Completed |
+| Day 89 | Generate Parentheses | LeetCode | ✅ Completed |
+| Day 90–91 | Java Coding Challenges | LeetCode | ✅ Completed |
+| Day 92 | Remove Element | LeetCode | ✅ Completed |
+| Day 93 | Swap Nodes in Pairs | LeetCode | ✅ Completed |
+| Day 94 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 95 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 96 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 97 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 98 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 99 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 100 | Final Challenge | — | 🏆 Pending |
 
 ---
 
@@ -337,22 +460,23 @@ The values after the first five positions do not matter.
 | Metric | Progress |
 |---|---|
 | 🎯 Total Goal | 100 Days |
-| ✅ Completed Days | 92 |
-| ⏳ Remaining Days | 8 |
-| 📈 Overall Progress | 92% |
+| ✅ Completed Days | 93 |
+| ⏳ Remaining Days | 7 |
+| 📈 Overall Progress | 93% |
 | 💻 Programming Language | Java |
 | 🧠 Main Focus | Problem Solving and DSA |
-| 🔥 Latest Completed Day | Day 92 |
+| 🔥 Latest Completed Day | Day 93 |
+| 🧩 Latest Problem | Swap Nodes in Pairs |
 | 🏆 Final Target | Day 100 |
 
 ## 📈 Visual Progress
 
-██████████████████░░ **92%**
+███████████████████░ **93%**
 
-**92 / 100 Days Completed**
+**93 / 100 Days Completed**
 
-- ✅ Completed: 92 days
-- ⏳ Remaining: 8 days
+- ✅ Completed: 93 days
+- ⏳ Remaining: 7 days
 - 🎯 Target: 100 days
 
 ---
@@ -371,6 +495,7 @@ The values after the first five positions do not matter.
 | 🎯 Day 80 | ✅ Completed |
 | 🎯 Day 90 | ✅ Completed |
 | 🎯 Day 92 | ✅ Completed |
+| 🎯 Day 93 | ✅ Completed 🎉🔗 |
 | 🏆 Day 100 | ⏳ Upcoming |
 
 ---
@@ -419,7 +544,7 @@ My approach to solving each programming challenge:
 
 # 🔥 Why This Challenge Matters
 
-The 100 Days of Java Challenge helps me build a consistent programming habit and improve my ability to solve real-world coding problems.
+The 100 Days of Java Challenge helps me build a consistent programming habit and improve my ability to solve coding problems.
 
 By solving problems regularly, I am learning to:
 
@@ -441,7 +566,7 @@ Every completed challenge is an opportunity to improve. 🚀
 
 As I progress toward Day 100, my goals are to:
 
-- Complete the remaining eight days.
+- Complete the remaining seven days.
 - Practice more data structures and algorithms.
 - Solve additional array and string problems.
 - Improve algorithm optimization skills.
@@ -483,7 +608,7 @@ Your support motivates me to keep learning, practicing, and sharing my programmi
 
 # 🔖 Tags
 
-#Java #100DaysOfJava #100DaysOfCode #JavaProgramming #LeetCode #HackerRank #DataStructures #Algorithms #DSA #ProblemSolving #CodingChallenge #Arrays #TwoPointers #InPlaceAlgorithm #ObjectOrientedProgramming #JavaCollections #Recursion #LinkedList #Stack #Queue #CodingJourney #GitHub #LearningInPublic #SoftwareDevelopment #Programming #CodeEveryDay
+#Java #100DaysOfJava #100DaysOfCode #JavaProgramming #LeetCode #HackerRank #DataStructures #Algorithms #DSA #ProblemSolving #CodingChallenge #Arrays #TwoPointers #LinkedList #SwapNodesInPairs #PointerManipulation #DummyNode #ObjectOrientedProgramming #JavaCollections #Recursion #Stack #Queue #CodingJourney #GitHub #LearningInPublic #SoftwareDevelopment #Programming #CodeEveryDay
 
 ---
 
@@ -492,7 +617,7 @@ Your support motivates me to keep learning, practicing, and sharing my programmi
 > "Success comes from consistency, practice, and the willingness to learn every day." 💻🔥
 
 <p align="center">
-  <strong>☕ 92 Days Completed | 8 Days Remaining | 🎯 100 Days Goal</strong>
+  <strong>☕ 93 Days Completed | 7 Days Remaining | 🎯 100 Days Goal</strong>
 </p>
 
 <p align="center">
