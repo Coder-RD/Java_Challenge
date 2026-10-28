@@ -87,6 +87,9 @@ Each completed challenge represents another step toward becoming a better progra
 - String Formatting
 - Regular Expressions
 - Pattern Matching
+- Substring Processing
+- Sliding Window for String Problems
+- Frequency Counting
 
 ### 🏗️ Object-Oriented Programming
 - Classes and Objects
@@ -162,6 +165,7 @@ Each completed challenge represents another step toward becoming a better progra
 - Mathematical Computation
 - Frequency Counting
 - Hash-Based Lookup
+- Sliding Window Optimization
 - Edge-Case Handling
 - Algorithm Optimization
 
@@ -173,18 +177,229 @@ The repository is organized into individual folders to make daily solutions easy
 
 📁 **Java_Challenge/**
 
-- 📁 Day1-Java/ through Day92/
+- 📁 Day1-Java/ through Day-91/
 - 📁 Day-92/
   - 📄 Remove Element.java
   - 📸 Screenshot 2026-10-26 095317.png
 - 📁 Day-93/
   - 📄 Swap Nodes in Pairs.java
   - 📸 Screenshot 2026-10-27 160248.png
-- 📁 Day-94/ through Day-99/ — Upcoming challenges
-- 🏆 Day-100 — Final challenge
+- 📁 Day-94/
+  - 📄 Substring with Concatenation of All Words.java
+  - 📸 Screenshot 2026-10-28 083413.png
+- 📁 Day-95/ — Upcoming challenge
+- 📁 Day-96/ — Upcoming challenge
+- 📁 Day-97/ — Upcoming challenge
+- 📁 Day-98/ — Upcoming challenge
+- 📁 Day-99/ — Upcoming challenge
+- 🏆 Day-100/ — Final challenge
 - 📄 README.md
 
 Each daily folder contains the relevant Java solution and, where applicable, a screenshot of the successful submission.
+
+---
+
+# 🆕 Day 94 – Substring with Concatenation of All Words 🔤
+
+## 📌 Problem Information
+
+- 📅 **Day:** 94
+- 🧩 **Problem:** Substring with Concatenation of All Words
+- 🔢 **LeetCode Problem Number:** 30
+- 💻 **Platform:** LeetCode
+- 🏷️ **Difficulty:** Hard
+- ☕ **Language:** Java
+- 🔗 **Topics:** Strings, Sliding Window, HashMap
+- 🧠 **Technique:** Frequency Counting and Sliding Window
+- 📁 **Directory:** `Day-94/`
+- 📄 **Solution File:** `Day-94/Substring with Concatenation of All Words.java`
+- 📸 **Submission Screenshot:** `Day-94/Screenshot 2026-10-28 083413.png`
+- ✅ **Status:** Completed
+
+🔗 **Problem Link:** https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+
+## 🎯 Problem Statement
+
+You are given a string `s` and an array of strings `words`. All strings in `words` have the same length.
+
+A concatenated string is a string that contains every word from `words` exactly once, in any order, joined together without any intervening characters.
+
+Return an array of all starting indices of substrings in `s` that are concatenations of every word in `words`.
+
+The answer can be returned in any order.
+
+## 📝 Examples
+
+### Example 1
+
+**Input:**
+
+`s = "barfoothefoobarman"`
+
+`words = ["foo","bar"]`
+
+**Output:**
+
+`[0,9]`
+
+**Explanation:**
+
+The substring starting at index `0` is `"barfoo"`, which contains `"bar"` and `"foo"`.
+
+The substring starting at index `9` is `"foobar"`, which also contains both words.
+
+Both substrings are valid concatenations.
+
+### Example 2
+
+**Input:**
+
+`s = "wordgoodgoodgoodbestword"`
+
+`words = ["word","good","best","word"]`
+
+**Output:**
+
+`[]`
+
+**Explanation:**
+
+No substring contains all the words with the required frequencies.
+
+### Example 3
+
+**Input:**
+
+`s = "barfoofoobarthefoobarman"`
+
+`words = ["bar","foo","the"]`
+
+**Output:**
+
+`[6,9,12]`
+
+**Explanation:**
+
+The substrings starting at indices `6`, `9`, and `12` contain all three words exactly once, in valid concatenation order.
+
+## 🧠 Approach Explained
+
+### 1. Calculate Word Lengths
+
+Determine the length of each word and the total length required for a valid concatenation.
+
+If there are `k` words and each word has length `wordLength`, then:
+
+`totalLength = k × wordLength`
+
+A valid substring must contain exactly this many characters.
+
+### 2. Build the Word Frequency Map
+
+Use a `HashMap` to record how many times each word appears in the `words` array.
+
+This helps identify duplicate words and ensures that each word occurs the required number of times.
+
+### 3. Apply the Sliding Window Technique
+
+Since all words have the same length, process the string using windows aligned to word boundaries.
+
+For each possible starting offset from `0` to `wordLength - 1`, move through the string in steps of `wordLength`.
+
+### 4. Track Words Inside the Window
+
+Extract one word at a time and maintain its frequency in a second `HashMap`.
+
+If a word does not exist in the expected frequency map, reset the current window and continue searching after that word.
+
+### 5. Handle Excess Word Frequencies
+
+If a word appears more frequently than allowed, move the left boundary forward by one word at a time until the frequency becomes valid.
+
+### 6. Identify Valid Concatenations
+
+When the current window contains the required number of words with the correct frequencies, record the starting index.
+
+Continue searching to identify other valid substrings.
+
+### 7. Return the Result
+
+Return all recorded starting indices.
+
+## 🔄 Example Walkthrough
+
+Given:
+
+`s = "barfoothefoobarman"`
+
+`words = ["foo","bar"]`
+
+The required word frequencies are:
+
+- `foo`: 1
+- `bar`: 1
+
+The total required substring length is `6`.
+
+Valid substrings:
+
+- Index `0`: `"barfoo"`
+- Index `9`: `"foobar"`
+
+Therefore, the output is:
+
+`[0,9]`
+
+## 💻 Java Solution
+
+The standard LeetCode approach uses a sliding window and frequency maps to find all valid starting indices.
+
+The solution file for this challenge is available in the `Day-94/` directory.
+
+## 🧩 Important Concepts Practiced
+
+- String Manipulation
+- Sliding Window Technique
+- HashMap
+- Frequency Counting
+- Substring Processing
+- Fixed-Length Word Matching
+- Efficient String Traversal
+- Handling Duplicate Words
+- Window Boundary Management
+- Edge-Case Handling
+- Algorithm Optimization
+
+## ⏱️ Complexity Analysis
+
+Let:
+
+- `n` be the length of string `s`.
+- `k` be the number of words.
+- `w` be the length of each word.
+
+For a sliding-window implementation that uses word-frequency maps and processes each word-sized window incrementally:
+
+- **Time Complexity:** Typically `O(n)` word-window operations, with additional cost for extracting and hashing words. If word comparisons and hashing are treated as constant-time operations, this is commonly described as `O(n)`.
+- **Auxiliary Space Complexity:** `O(k)` for the frequency maps, excluding the returned list and depending on the number of distinct words.
+
+The exact complexity can vary with the implementation and the cost of substring creation and hashing.
+
+## 🎓 Learning Outcomes
+
+By completing Day 94, I strengthened my understanding of advanced string-processing problems and learned how to combine sliding windows with frequency maps.
+
+This problem helped me practice:
+
+- Tracking word frequencies efficiently.
+- Processing fixed-length words.
+- Finding concatenations in different word orders.
+- Handling duplicate words correctly.
+- Moving window boundaries without restarting the entire search.
+- Optimizing repeated string comparisons.
+- Understanding algorithmic time and space complexity.
+
+**Key Takeaway:** Sliding windows and HashMaps can efficiently solve string problems that require matching multiple words and their frequencies.
 
 ---
 
@@ -214,7 +429,7 @@ Given the head of a singly linked list, swap every two adjacent nodes and return
 
 The values stored in the nodes must not be modified. Only the links between nodes can be changed.
 
-The solution must rearrange the existing nodes instead of swapping their values.
+The solution rearranges existing nodes instead of swapping their values.
 
 ## 📝 Examples
 
@@ -280,88 +495,22 @@ The first two nodes are swapped. The remaining node stays in its original positi
 
 ## 💻 Java Solution
 
-The following is the standard iterative solution for LeetCode's `Swap Nodes in Pairs` problem.
+The standard iterative solution for LeetCode's `Swap Nodes in Pairs` problem is based on a dummy node and pointer manipulation.
 
-class Solution {
-    public ListNode swapPairs(ListNode head) {
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-
-        ListNode prev = dummy;
-
-        while (prev.next != null && prev.next.next != null) {
-            ListNode first = prev.next;
-            ListNode second = first.next;
-
-            first.next = second.next;
-            second.next = first;
-            prev.next = second;
-
-            prev = first;
-        }
-
-        return dummy.next;
-    }
-}
+The solution file is available in the `Day-93/` directory.
 
 ## 🔍 Approach Explained
 
-### 1. Create a Dummy Node
-
-Create a dummy node and connect it to the original head.
-
-The dummy node simplifies the process of swapping the first pair because the head of the linked list may change.
-
-### 2. Initialize the Previous Pointer
-
-Set `prev` to the dummy node.
-
-This pointer tracks the node immediately before the pair being swapped.
-
-### 3. Check Whether a Pair Exists
-
-Continue the loop while both `prev.next` and `prev.next.next` exist.
-
-This ensures that two nodes are available before attempting a swap.
-
-### 4. Identify the Two Nodes
-
-Use two references:
-
-- `first` points to the first node in the current pair.
-- `second` points to the second node in the current pair.
-
-For example, in `1 → 2 → 3 → 4`, the first pair is `1 → 2`.
-
-### 5. Update the First Node's Link
-
-Set `first.next = second.next`.
-
-This connects the first node to the node that comes after the current pair.
-
-### 6. Reverse the Pair
-
-Set `second.next = first`.
-
-The second node now points to the first node.
-
-The pair changes from `1 → 2` to `2 → 1`.
-
-### 7. Connect the Previous Node
-
-Set `prev.next = second`.
-
-This connects the previous part of the linked list to the newly swapped pair.
-
-### 8. Move to the Next Pair
-
-Set `prev = first`.
-
-After swapping, `first` becomes the second node in the swapped pair, so it is now positioned immediately before the next pair.
-
-### 9. Return the Updated Head
-
-Return `dummy.next`, which points to the head of the modified linked list.
+1. Create a dummy node connected to the original head.
+2. Initialize a `prev` pointer to the dummy node.
+3. Check whether two adjacent nodes are available.
+4. Store references to the first and second nodes.
+5. Connect the first node to the node after the pair.
+6. Point the second node to the first node.
+7. Connect the previous node to the second node.
+8. Move the previous pointer to the first node.
+9. Repeat until fewer than two nodes remain.
+10. Return `dummy.next` as the updated head.
 
 ## 🔄 Visual Representation
 
@@ -400,8 +549,8 @@ Return `dummy.next`, which points to the head of the modified linked list.
 
 Let `n` represent the number of nodes in the linked list.
 
-- **Time Complexity:** O(n), because the algorithm visits each pair of nodes once.
-- **Auxiliary Space Complexity:** O(1), because the algorithm uses a fixed number of additional references and one dummy node.
+- **Time Complexity:** `O(n)`, because the algorithm processes each pair once.
+- **Auxiliary Space Complexity:** `O(1)`, because it uses a fixed number of additional references and a dummy node.
 
 The algorithm modifies the existing links without creating a new linked list.
 
@@ -415,7 +564,7 @@ This problem helped me practice:
 - Updating multiple `next` pointers safely.
 - Using a dummy node to simplify head changes.
 - Traversing a linked list in pairs.
-- Handling edge cases involving empty and odd-length lists.
+- Handling empty and odd-length lists.
 - Writing an efficient iterative solution.
 - Analyzing time and auxiliary space complexity.
 
@@ -445,7 +594,7 @@ This problem helped me practice:
 | Day 90–91 | Java Coding Challenges | LeetCode | ✅ Completed |
 | Day 92 | Remove Element | LeetCode | ✅ Completed |
 | Day 93 | Swap Nodes in Pairs | LeetCode | ✅ Completed |
-| Day 94 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 94 | Substring with Concatenation of All Words | LeetCode | ✅ Completed |
 | Day 95 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 96 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 97 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
@@ -460,23 +609,23 @@ This problem helped me practice:
 | Metric | Progress |
 |---|---|
 | 🎯 Total Goal | 100 Days |
-| ✅ Completed Days | 93 |
-| ⏳ Remaining Days | 7 |
-| 📈 Overall Progress | 93% |
+| ✅ Completed Days | 94 |
+| ⏳ Remaining Days | 6 |
+| 📈 Overall Progress | 94% |
 | 💻 Programming Language | Java |
 | 🧠 Main Focus | Problem Solving and DSA |
-| 🔥 Latest Completed Day | Day 93 |
-| 🧩 Latest Problem | Swap Nodes in Pairs |
+| 🔥 Latest Completed Day | Day 94 |
+| 🧩 Latest Problem | Substring with Concatenation of All Words |
 | 🏆 Final Target | Day 100 |
 
 ## 📈 Visual Progress
 
-███████████████████░ **93%**
+███████████████████░ **94%**
 
-**93 / 100 Days Completed**
+**94 / 100 Days Completed**
 
-- ✅ Completed: 93 days
-- ⏳ Remaining: 7 days
+- ✅ Completed: 94 days
+- ⏳ Remaining: 6 days
 - 🎯 Target: 100 days
 
 ---
@@ -495,7 +644,8 @@ This problem helped me practice:
 | 🎯 Day 80 | ✅ Completed |
 | 🎯 Day 90 | ✅ Completed |
 | 🎯 Day 92 | ✅ Completed |
-| 🎯 Day 93 | ✅ Completed 🎉🔗 |
+| 🎯 Day 93 | ✅ Completed |
+| 🎯 Day 94 | ✅ Completed 🎉 |
 | 🏆 Day 100 | ⏳ Upcoming |
 
 ---
@@ -566,7 +716,7 @@ Every completed challenge is an opportunity to improve. 🚀
 
 As I progress toward Day 100, my goals are to:
 
-- Complete the remaining seven days.
+- Complete the remaining six days.
 - Practice more data structures and algorithms.
 - Solve additional array and string problems.
 - Improve algorithm optimization skills.
@@ -608,7 +758,7 @@ Your support motivates me to keep learning, practicing, and sharing my programmi
 
 # 🔖 Tags
 
-#Java #100DaysOfJava #100DaysOfCode #JavaProgramming #LeetCode #HackerRank #DataStructures #Algorithms #DSA #ProblemSolving #CodingChallenge #Arrays #TwoPointers #LinkedList #SwapNodesInPairs #PointerManipulation #DummyNode #ObjectOrientedProgramming #JavaCollections #Recursion #Stack #Queue #CodingJourney #GitHub #LearningInPublic #SoftwareDevelopment #Programming #CodeEveryDay
+#Java #100DaysOfJava #100DaysOfCode #JavaProgramming #LeetCode #HackerRank #DataStructures #Algorithms #DSA #ProblemSolving #CodingChallenge #Arrays #Strings #SlidingWindow #HashMap #SubstringConcatenation #LinkedList #SwapNodesInPairs #PointerManipulation #ObjectOrientedProgramming #JavaCollections #Recursion #Stack #Queue #CodingJourney #GitHub #LearningInPublic #SoftwareDevelopment #Programming #CodeEveryDay
 
 ---
 
@@ -617,7 +767,7 @@ Your support motivates me to keep learning, practicing, and sharing my programmi
 > "Success comes from consistency, practice, and the willingness to learn every day." 💻🔥
 
 <p align="center">
-  <strong>☕ 93 Days Completed | 7 Days Remaining | 🎯 100 Days Goal</strong>
+  <strong>☕ 94 Days Completed | 6 Days Remaining | 🎯 100 Days Goal</strong>
 </p>
 
 <p align="center">
