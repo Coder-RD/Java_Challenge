@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="100 Days of Java Challenge">
   <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
   <img src="https://img.shields.io/badge/Platform-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="HackerRank and LeetCode">
-  <img src="https://img.shields.io/badge/Progress-93%25-success?style=for-the-badge" alt="93% Progress">
+  <img src="https://img.shields.io/badge/Progress-95%25-success?style=for-the-badge" alt="95% Progress">
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 93 Days Completed | 7 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 95 Days Completed | 5 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -187,7 +187,9 @@ The repository is organized into individual folders to make daily solutions easy
 - 📁 Day-94/
   - 📄 Substring with Concatenation of All Words.java
   - 📸 Screenshot 2026-10-28 083413.png
-- 📁 Day-95/ — Upcoming challenge
+- 📁 Day-95/
+  - 📄 Reverse Nodes in k-Group.java
+  - 📸 Screenshot 2026-10-29 135951.png
 - 📁 Day-96/ — Upcoming challenge
 - 📁 Day-97/ — Upcoming challenge
 - 📁 Day-98/ — Upcoming challenge
@@ -196,6 +198,184 @@ The repository is organized into individual folders to make daily solutions easy
 - 📄 README.md
 
 Each daily folder contains the relevant Java solution and, where applicable, a screenshot of the successful submission.
+
+---
+
+# 🆕 Day 95 – Reverse Nodes in k-Group 🔗
+
+## 📌 Problem Information
+
+- 📅 **Day:** 95
+- 🧩 **Problem:** Reverse Nodes in k-Group
+- 🔢 **LeetCode Problem Number:** 25
+- 💻 **Platform:** LeetCode
+- 🏷️ **Difficulty:** Hard
+- ☕ **Language:** Java
+- 🔗 **Topics:** Linked Lists, Recursion, Pointer Manipulation
+- 🧠 **Technique:** In-Place Linked List Reversal
+- 📁 **Directory:** `Day-95/`
+- 📄 **Solution File:** `Day-95/Reverse Nodes in k-Group.java`
+- 📸 **Submission Screenshot:** `Day-95/Screenshot 2026-10-29 135951.png`
+- ✅ **Status:** Completed
+
+🔗 **Problem Link:** https://leetcode.com/problems/reverse-nodes-in-k-group/
+
+## 🎯 Problem Statement
+
+Given the head of a linked list, reverse the nodes of the list `k` at a time and return the modified list.
+
+If the number of nodes is not a multiple of `k`, the remaining nodes at the end must stay in their original order.
+
+The nodes themselves must be rearranged by changing their links. The values stored in the nodes must not be modified.
+
+## 📝 Examples
+
+### Example 1
+
+**Input:**
+
+`head = [1,2,3,4,5]`
+
+`k = 2`
+
+**Output:**
+
+`[2,1,4,3,5]`
+
+**Explanation:**
+
+The first two nodes are reversed to obtain `[2,1]`.
+
+The next two nodes are reversed to obtain `[4,3]`.
+
+The final node remains unchanged because fewer than `k` nodes remain.
+
+### Example 2
+
+**Input:**
+
+`head = [1,2,3,4,5]`
+
+`k = 3`
+
+**Output:**
+
+`[3,2,1,4,5]`
+
+**Explanation:**
+
+The first three nodes are reversed to obtain `[3,2,1]`.
+
+The remaining two nodes stay in their original order.
+
+### Example 3
+
+**Input:**
+
+`head = [1,2,3,4,5,6]`
+
+`k = 2`
+
+**Output:**
+
+`[2,1,4,3,6,5]`
+
+**Explanation:**
+
+Each consecutive group of two nodes is reversed.
+
+## 🧠 Approach Explained
+
+### 1. Create a Dummy Node
+
+Create a dummy node before the original head. This simplifies the process of reconnecting the reversed groups, especially when the first group changes the head.
+
+### 2. Identify the Next Group
+
+Find the kth node from the node preceding the current group.
+
+If fewer than `k` nodes remain, stop reversing and leave the remaining nodes unchanged.
+
+### 3. Store the Group Boundaries
+
+Identify the first node of the group and the node immediately after the group. These references help reconnect the reversed group to the rest of the linked list.
+
+### 4. Reverse the Group
+
+Reverse the links of exactly `k` nodes using an iterative or recursive approach.
+
+### 5. Reconnect the Reversed Group
+
+Connect the previous group's tail to the new head of the reversed group.
+
+Connect the original first node, which becomes the group's tail, to the next unreversed node.
+
+### 6. Continue Processing
+
+Move to the next group and repeat the process until fewer than `k` nodes remain.
+
+### 7. Return the Updated Head
+
+Return `dummy.next`, which points to the head of the modified linked list.
+
+## 🔄 Visual Representation
+
+**Original Linked List:**
+
+`1 → 2 → 3 → 4 → 5 → NULL`
+
+**For k = 2:**
+
+First group: `1 → 2` becomes `2 → 1`
+
+Second group: `3 → 4` becomes `4 → 3`
+
+Remaining node: `5` stays unchanged.
+
+**Final Linked List:**
+
+`2 → 1 → 4 → 3 → 5 → NULL`
+
+## 🧩 Important Concepts Practiced
+
+- Singly Linked Lists
+- In-Place Reversal
+- Pointer Manipulation
+- Iterative Algorithms
+- Recursion
+- Group-Based Processing
+- Dummy Node Technique
+- Updating Next Pointers
+- Reconnecting Linked List Segments
+- Edge-Case Handling
+- Preserving Node Values
+- Algorithm Optimization
+
+## ⏱️ Complexity Analysis
+
+Let `n` represent the number of nodes in the linked list.
+
+- **Time Complexity:** `O(n)`, because each node is processed a constant number of times.
+- **Auxiliary Space Complexity:** `O(1)` for an iterative in-place implementation. A recursive implementation may require `O(n/k)` stack space for recursive calls, depending on its design.
+
+The iterative approach is space-efficient because it rearranges the existing nodes without creating a new linked list.
+
+## 🎓 Learning Outcomes
+
+By completing Day 95, I strengthened my understanding of advanced linked list manipulation and learned how to reverse nodes in fixed-size groups.
+
+This problem helped me practice:
+
+- Reversing linked list nodes in groups.
+- Managing multiple pointers safely.
+- Identifying group boundaries.
+- Reconnecting reversed and unreversed segments.
+- Handling incomplete groups at the end.
+- Preserving the original node values.
+- Analyzing time and space complexity.
+- Applying linked list techniques to challenging interview problems.
+
+**Key Takeaway:** Reversing a linked list in groups requires careful pointer management, correct group-boundary identification, and proper reconnection of each reversed segment.
 
 ---
 
@@ -222,7 +402,7 @@ Each daily folder contains the relevant Java solution and, where applicable, a s
 
 You are given a string `s` and an array of strings `words`. All strings in `words` have the same length.
 
-A concatenated string is a string that contains every word from `words` exactly once, in any order, joined together without any intervening characters.
+A concatenated string contains every word from `words` exactly once, in any order, joined together without intervening characters.
 
 Return an array of all starting indices of substrings in `s` that are concatenations of every word in `words`.
 
@@ -284,47 +464,15 @@ The substrings starting at indices `6`, `9`, and `12` contain all three words ex
 
 ## 🧠 Approach Explained
 
-### 1. Calculate Word Lengths
-
-Determine the length of each word and the total length required for a valid concatenation.
-
-If there are `k` words and each word has length `wordLength`, then:
-
-`totalLength = k × wordLength`
-
-A valid substring must contain exactly this many characters.
-
-### 2. Build the Word Frequency Map
-
-Use a `HashMap` to record how many times each word appears in the `words` array.
-
-This helps identify duplicate words and ensures that each word occurs the required number of times.
-
-### 3. Apply the Sliding Window Technique
-
-Since all words have the same length, process the string using windows aligned to word boundaries.
-
-For each possible starting offset from `0` to `wordLength - 1`, move through the string in steps of `wordLength`.
-
-### 4. Track Words Inside the Window
-
-Extract one word at a time and maintain its frequency in a second `HashMap`.
-
-If a word does not exist in the expected frequency map, reset the current window and continue searching after that word.
-
-### 5. Handle Excess Word Frequencies
-
-If a word appears more frequently than allowed, move the left boundary forward by one word at a time until the frequency becomes valid.
-
-### 6. Identify Valid Concatenations
-
-When the current window contains the required number of words with the correct frequencies, record the starting index.
-
-Continue searching to identify other valid substrings.
-
-### 7. Return the Result
-
-Return all recorded starting indices.
+1. Calculate the length of each word and the total length required for a valid concatenation.
+2. Build a `HashMap` containing the expected frequency of each word.
+3. Use the sliding window technique with offsets from `0` to `wordLength - 1`.
+4. Extract words of equal length while moving through the string.
+5. Track word frequencies in a second `HashMap`.
+6. Reset the window when a word is not present in the expected frequency map.
+7. Move the left boundary when a word occurs more frequently than allowed.
+8. Record the starting index whenever the window contains all required words with the correct frequencies.
+9. Return all valid starting indices.
 
 ## 🔄 Example Walkthrough
 
@@ -334,27 +482,19 @@ Given:
 
 `words = ["foo","bar"]`
 
-The required word frequencies are:
+Expected word frequencies:
 
 - `foo`: 1
 - `bar`: 1
 
-The total required substring length is `6`.
+Total required substring length: `6`
 
 Valid substrings:
 
 - Index `0`: `"barfoo"`
 - Index `9`: `"foobar"`
 
-Therefore, the output is:
-
-`[0,9]`
-
-## 💻 Java Solution
-
-The standard LeetCode approach uses a sliding window and frequency maps to find all valid starting indices.
-
-The solution file for this challenge is available in the `Day-94/` directory.
+**Output:** `[0,9]`
 
 ## 🧩 Important Concepts Practiced
 
@@ -372,18 +512,12 @@ The solution file for this challenge is available in the `Day-94/` directory.
 
 ## ⏱️ Complexity Analysis
 
-Let:
+Let `n` be the length of string `s`, `k` be the number of words, and `w` be the length of each word.
 
-- `n` be the length of string `s`.
-- `k` be the number of words.
-- `w` be the length of each word.
-
-For a sliding-window implementation that uses word-frequency maps and processes each word-sized window incrementally:
-
-- **Time Complexity:** Typically `O(n)` word-window operations, with additional cost for extracting and hashing words. If word comparisons and hashing are treated as constant-time operations, this is commonly described as `O(n)`.
+- **Time Complexity:** Commonly described as `O(n)` for an optimized sliding-window implementation when word comparisons and hashing are treated as constant-time operations.
 - **Auxiliary Space Complexity:** `O(k)` for the frequency maps, excluding the returned list and depending on the number of distinct words.
 
-The exact complexity can vary with the implementation and the cost of substring creation and hashing.
+The exact complexity depends on the implementation and the cost of substring creation and hashing.
 
 ## 🎓 Learning Outcomes
 
@@ -413,9 +547,8 @@ This problem helped me practice:
 - 💻 **Platform:** LeetCode
 - 🏷️ **Difficulty:** Medium
 - ☕ **Language:** Java
-- 🔗 **Topic:** Linked Lists
-- 🧠 **Technique:** Pointer Manipulation
-- ⚙️ **Approach:** Iterative
+- 🔗 **Topics:** Linked Lists, Pointer Manipulation
+- 🧠 **Technique:** Iterative Node Swapping
 - 📁 **Directory:** `Day-93/`
 - 📄 **Solution File:** `Day-93/Swap Nodes in Pairs.java`
 - 📸 **Submission Screenshot:** `Day-93/Screenshot 2026-10-27 160248.png`
@@ -429,75 +562,39 @@ Given the head of a singly linked list, swap every two adjacent nodes and return
 
 The values stored in the nodes must not be modified. Only the links between nodes can be changed.
 
-The solution rearranges existing nodes instead of swapping their values.
-
 ## 📝 Examples
 
 ### Example 1
 
-**Input:**
+**Input:** `head = [1,2,3,4]`
 
-`head = [1,2,3,4]`
+**Output:** `[2,1,4,3]`
 
-**Output:**
-
-`[2,1,4,3]`
-
-**Explanation:**
-
-The first pair, `1 → 2`, becomes `2 → 1`.
-
-The second pair, `3 → 4`, becomes `4 → 3`.
-
-The final linked list is `2 → 1 → 4 → 3`.
+**Explanation:** The first pair becomes `2 → 1`, and the second pair becomes `4 → 3`.
 
 ### Example 2
 
-**Input:**
+**Input:** `head = []`
 
-`head = []`
+**Output:** `[]`
 
-**Output:**
-
-`[]`
-
-**Explanation:**
-
-An empty linked list remains empty.
+**Explanation:** An empty linked list remains empty.
 
 ### Example 3
 
-**Input:**
+**Input:** `head = [1]`
 
-`head = [1]`
+**Output:** `[1]`
 
-**Output:**
-
-`[1]`
-
-**Explanation:**
-
-A single-node linked list does not require any swapping.
+**Explanation:** A single-node linked list does not require swapping.
 
 ### Example 4
 
-**Input:**
+**Input:** `head = [1,2,3]`
 
-`head = [1,2,3]`
+**Output:** `[2,1,3]`
 
-**Output:**
-
-`[2,1,3]`
-
-**Explanation:**
-
-The first two nodes are swapped. The remaining node stays in its original position because it has no adjacent partner.
-
-## 💻 Java Solution
-
-The standard iterative solution for LeetCode's `Swap Nodes in Pairs` problem is based on a dummy node and pointer manipulation.
-
-The solution file is available in the `Day-93/` directory.
+**Explanation:** The first two nodes are swapped, and the remaining node stays unchanged.
 
 ## 🔍 Approach Explained
 
@@ -514,23 +611,15 @@ The solution file is available in the `Day-93/` directory.
 
 ## 🔄 Visual Representation
 
-**Original Linked List:**
+**Original:**
 
 `1 → 2 → 3 → 4 → NULL`
 
-**After Swapping the First Pair:**
-
-`2 → 1 → 3 → 4 → NULL`
-
-**After Swapping the Second Pair:**
+**After Swapping:**
 
 `2 → 1 → 4 → 3 → NULL`
 
-**Final Linked List:**
-
-`2 → 1 → 4 → 3 → NULL`
-
-## 🧠 Important Concepts Practiced
+## 🧩 Important Concepts Practiced
 
 - Singly Linked Lists
 - Node References
@@ -547,26 +636,14 @@ The solution file is available in the `Day-93/` directory.
 
 ## ⏱️ Complexity Analysis
 
-Let `n` represent the number of nodes in the linked list.
+Let `n` represent the number of nodes.
 
-- **Time Complexity:** `O(n)`, because the algorithm processes each pair once.
-- **Auxiliary Space Complexity:** `O(1)`, because it uses a fixed number of additional references and a dummy node.
-
-The algorithm modifies the existing links without creating a new linked list.
+- **Time Complexity:** `O(n)`, because each pair is processed once.
+- **Auxiliary Space Complexity:** `O(1)`, because a fixed number of additional references is used.
 
 ## 🎓 Learning Outcomes
 
 By completing Day 93, I strengthened my understanding of linked list operations and learned how to swap adjacent nodes without modifying their stored values.
-
-This problem helped me practice:
-
-- Managing references between linked list nodes.
-- Updating multiple `next` pointers safely.
-- Using a dummy node to simplify head changes.
-- Traversing a linked list in pairs.
-- Handling empty and odd-length lists.
-- Writing an efficient iterative solution.
-- Analyzing time and auxiliary space complexity.
 
 **Key Takeaway:** Linked list nodes can be swapped by changing their links instead of changing their values.
 
@@ -595,12 +672,12 @@ This problem helped me practice:
 | Day 92 | Remove Element | LeetCode | ✅ Completed |
 | Day 93 | Swap Nodes in Pairs | LeetCode | ✅ Completed |
 | Day 94 | Substring with Concatenation of All Words | LeetCode | ✅ Completed |
-| Day 95 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 95 | Reverse Nodes in k-Group | LeetCode | ✅ Completed |
 | Day 96 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 97 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 98 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 99 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
-| Day 100 | Final Challenge | — | 🏆 Pending |
+| Day 100 | Final Challenge | Various Platforms | 🏆 Pending |
 
 ---
 
@@ -609,23 +686,23 @@ This problem helped me practice:
 | Metric | Progress |
 |---|---|
 | 🎯 Total Goal | 100 Days |
-| ✅ Completed Days | 94 |
-| ⏳ Remaining Days | 6 |
-| 📈 Overall Progress | 94% |
+| ✅ Completed Days | 95 |
+| ⏳ Remaining Days | 5 |
+| 📈 Overall Progress | 95% |
 | 💻 Programming Language | Java |
 | 🧠 Main Focus | Problem Solving and DSA |
-| 🔥 Latest Completed Day | Day 94 |
-| 🧩 Latest Problem | Substring with Concatenation of All Words |
+| 🔥 Latest Completed Day | Day 95 |
+| 🧩 Latest Problem | Reverse Nodes in k-Group |
 | 🏆 Final Target | Day 100 |
 
 ## 📈 Visual Progress
 
-███████████████████░ **94%**
+███████████████████░ **95%**
 
-**94 / 100 Days Completed**
+**95 / 100 Days Completed**
 
-- ✅ Completed: 94 days
-- ⏳ Remaining: 6 days
+- ✅ Completed: 95 days
+- ⏳ Remaining: 5 days
 - 🎯 Target: 100 days
 
 ---
@@ -645,7 +722,8 @@ This problem helped me practice:
 | 🎯 Day 90 | ✅ Completed |
 | 🎯 Day 92 | ✅ Completed |
 | 🎯 Day 93 | ✅ Completed |
-| 🎯 Day 94 | ✅ Completed 🎉 |
+| 🎯 Day 94 | ✅ Completed |
+| 🎯 Day 95 | ✅ Completed 🎉 |
 | 🏆 Day 100 | ⏳ Upcoming |
 
 ---
@@ -716,7 +794,7 @@ Every completed challenge is an opportunity to improve. 🚀
 
 As I progress toward Day 100, my goals are to:
 
-- Complete the remaining six days.
+- Complete the remaining five days.
 - Practice more data structures and algorithms.
 - Solve additional array and string problems.
 - Improve algorithm optimization skills.
@@ -758,7 +836,7 @@ Your support motivates me to keep learning, practicing, and sharing my programmi
 
 # 🔖 Tags
 
-#Java #100DaysOfJava #100DaysOfCode #JavaProgramming #LeetCode #HackerRank #DataStructures #Algorithms #DSA #ProblemSolving #CodingChallenge #Arrays #Strings #SlidingWindow #HashMap #SubstringConcatenation #LinkedList #SwapNodesInPairs #PointerManipulation #ObjectOrientedProgramming #JavaCollections #Recursion #Stack #Queue #CodingJourney #GitHub #LearningInPublic #SoftwareDevelopment #Programming #CodeEveryDay
+#Java #100DaysOfJava #100DaysOfCode #JavaProgramming #LeetCode #HackerRank #DataStructures #Algorithms #DSA #ProblemSolving #CodingChallenge #Arrays #Strings #SlidingWindow #HashMap #SubstringConcatenation #LinkedList #SwapNodesInPairs #ReverseNodesInKGroup #PointerManipulation #ObjectOrientedProgramming #JavaCollections #Recursion #Stack #Queue #CodingJourney #GitHub #LearningInPublic #SoftwareDevelopment #Programming #CodeEveryDay
 
 ---
 
@@ -767,7 +845,7 @@ Your support motivates me to keep learning, practicing, and sharing my programmi
 > "Success comes from consistency, practice, and the willingness to learn every day." 💻🔥
 
 <p align="center">
-  <strong>☕ 94 Days Completed | 6 Days Remaining | 🎯 100 Days Goal</strong>
+  <strong>☕ 95 Days Completed | 5 Days Remaining | 🎯 100 Days Goal</strong>
 </p>
 
 <p align="center">
