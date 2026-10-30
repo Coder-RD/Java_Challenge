@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge&logo=openjdk&logoColor=white" alt="100 Days of Java Challenge">
   <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
   <img src="https://img.shields.io/badge/Platform-HackerRank%20%7C%20LeetCode-brightgreen?style=for-the-badge" alt="HackerRank and LeetCode">
-  <img src="https://img.shields.io/badge/Progress-95%25-success?style=for-the-badge" alt="95% Progress">
+  <img src="https://img.shields.io/badge/Progress-96%25-success?style=for-the-badge" alt="96% Progress">
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 95 Days Completed | 5 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 96 Days Completed | 4 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -90,6 +90,7 @@ Each completed challenge represents another step toward becoming a better progra
 - Substring Processing
 - Sliding Window for String Problems
 - Frequency Counting
+- First Occurrence Searching
 
 ### 🏗️ Object-Oriented Programming
 - Classes and Objects
@@ -168,6 +169,7 @@ Each completed challenge represents another step toward becoming a better progra
 - Sliding Window Optimization
 - Edge-Case Handling
 - Algorithm Optimization
+- String Searching
 
 ---
 
@@ -190,7 +192,9 @@ The repository is organized into individual folders to make daily solutions easy
 - 📁 Day-95/
   - 📄 Reverse Nodes in k-Group.java
   - 📸 Screenshot 2026-10-29 135951.png
-- 📁 Day-96/ — Upcoming challenge
+- 📁 Day-96/
+  - 📄 Find the Index of the First Occurrence in a String.java
+  - 📸 Screenshot 2026-10-30 094019.png
 - 📁 Day-97/ — Upcoming challenge
 - 📁 Day-98/ — Upcoming challenge
 - 📁 Day-99/ — Upcoming challenge
@@ -198,6 +202,131 @@ The repository is organized into individual folders to make daily solutions easy
 - 📄 README.md
 
 Each daily folder contains the relevant Java solution and, where applicable, a screenshot of the successful submission.
+
+---
+
+# 🆕 Day 96 – Find the Index of the First Occurrence in a String 🔤
+
+## 📌 Problem Information
+
+- 📅 **Day:** 96
+- 🧩 **Problem:** Find the Index of the First Occurrence in a String
+- 🔢 **LeetCode Problem Number:** 28
+- 💻 **Platform:** LeetCode
+- 🏷️ **Difficulty:** Easy
+- ☕ **Language:** Java
+- 🔗 **Topics:** Strings, String Matching
+- 🧠 **Technique:** Substring Searching
+- 📁 **Directory:** `Day-96/`
+- 📄 **Solution File:** `Day-96/Find the Index of the First Occurrence in a String.java`
+- 📸 **Submission Screenshot:** `Day-96/Screenshot 2026-10-30 094019.png`
+- ✅ **Status:** Completed
+
+🔗 **Problem Link:** https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+
+## 🎯 Problem Statement
+
+Given two strings `haystack` and `needle`, return the index of the first occurrence of `needle` in `haystack`.
+
+If `needle` is not part of `haystack`, return `-1`.
+
+## 📝 Examples
+
+### Example 1
+
+**Input:**
+
+`haystack = "sadbutsad"`
+
+`needle = "sad"`
+
+**Output:**
+
+`0`
+
+**Explanation:**
+
+The substring `"sad"` first appears at index `0`. It also appears later, but the first occurrence is returned.
+
+### Example 2
+
+**Input:**
+
+`haystack = "leetcode"`
+
+`needle = "leeto"`
+
+**Output:**
+
+`-1`
+
+**Explanation:**
+
+The substring `"leeto"` does not occur in `"leetcode"`, so the result is `-1`.
+
+## 🧠 Approach Explained
+
+1. Take two input strings: `haystack` and `needle`.
+2. Search for the first occurrence of `needle` inside `haystack`.
+3. Use Java's `indexOf()` method to locate the substring.
+4. The method returns the starting index of the first match.
+5. If no match is found, it returns `-1`.
+6. Return the resulting index.
+
+## 🔄 Example Walkthrough
+
+Given:
+
+`haystack = "sadbutsad"`
+
+`needle = "sad"`
+
+The first occurrence of `"sad"` starts at index `0`.
+
+**Output:** `0`
+
+Another example:
+
+`haystack = "leetcode"`
+
+`needle = "leeto"`
+
+The substring is not present.
+
+**Output:** `-1`
+
+## 🧩 Important Concepts Practiced
+
+- Java Strings
+- String Searching
+- Substring Matching
+- String `indexOf()` Method
+- First Occurrence Detection
+- String Manipulation
+- Handling Missing Substrings
+- Edge-Case Handling
+
+## ⏱️ Complexity Analysis
+
+Let `n` be the length of `haystack` and `m` be the length of `needle`.
+
+- **Time Complexity:** The complexity depends on the string-searching implementation. Java's `indexOf()` provides an optimized search operation; its exact implementation and complexity can vary by Java version.
+- **Auxiliary Space Complexity:** Typically `O(1)` for the search operation, excluding implementation-specific internal details.
+
+## 🎓 Learning Outcomes
+
+By completing Day 96, I strengthened my understanding of Java string operations and substring searching.
+
+This problem helped me practice:
+
+- Finding the first occurrence of a substring.
+- Using Java's built-in string methods.
+- Understanding substring matching.
+- Handling cases where a substring is absent.
+- Working with string indexes.
+- Improving problem-solving skills through practical coding.
+
+**Key Takeaway:** Java provides useful built-in string methods such as `indexOf()` to locate substrings efficiently and simplify string-searching operations.
 
 ---
 
@@ -673,7 +802,7 @@ By completing Day 93, I strengthened my understanding of linked list operations 
 | Day 93 | Swap Nodes in Pairs | LeetCode | ✅ Completed |
 | Day 94 | Substring with Concatenation of All Words | LeetCode | ✅ Completed |
 | Day 95 | Reverse Nodes in k-Group | LeetCode | ✅ Completed |
-| Day 96 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
+| Day 96 | Find the Index of the First Occurrence in a String | LeetCode | ✅ Completed |
 | Day 97 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 98 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
 | Day 99 | Upcoming Java Challenge | Various Platforms | ⏳ Pending |
@@ -686,23 +815,23 @@ By completing Day 93, I strengthened my understanding of linked list operations 
 | Metric | Progress |
 |---|---|
 | 🎯 Total Goal | 100 Days |
-| ✅ Completed Days | 95 |
-| ⏳ Remaining Days | 5 |
-| 📈 Overall Progress | 95% |
+| ✅ Completed Days | 96 |
+| ⏳ Remaining Days | 4 |
+| 📈 Overall Progress | 96% |
 | 💻 Programming Language | Java |
 | 🧠 Main Focus | Problem Solving and DSA |
-| 🔥 Latest Completed Day | Day 95 |
-| 🧩 Latest Problem | Reverse Nodes in k-Group |
+| 🔥 Latest Completed Day | Day 96 |
+| 🧩 Latest Problem | Find the Index of the First Occurrence in a String |
 | 🏆 Final Target | Day 100 |
 
 ## 📈 Visual Progress
 
-███████████████████░ **95%**
+███████████████████░ **96%**
 
-**95 / 100 Days Completed**
+**96 / 100 Days Completed**
 
-- ✅ Completed: 95 days
-- ⏳ Remaining: 5 days
+- ✅ Completed: 96 days
+- ⏳ Remaining: 4 days
 - 🎯 Target: 100 days
 
 ---
@@ -723,7 +852,8 @@ By completing Day 93, I strengthened my understanding of linked list operations 
 | 🎯 Day 92 | ✅ Completed |
 | 🎯 Day 93 | ✅ Completed |
 | 🎯 Day 94 | ✅ Completed |
-| 🎯 Day 95 | ✅ Completed 🎉 |
+| 🎯 Day 95 | ✅ Completed |
+| 🎯 Day 96 | ✅ Completed 🎉 |
 | 🏆 Day 100 | ⏳ Upcoming |
 
 ---
@@ -794,7 +924,7 @@ Every completed challenge is an opportunity to improve. 🚀
 
 As I progress toward Day 100, my goals are to:
 
-- Complete the remaining five days.
+- Complete the remaining four days.
 - Practice more data structures and algorithms.
 - Solve additional array and string problems.
 - Improve algorithm optimization skills.
@@ -836,7 +966,7 @@ Your support motivates me to keep learning, practicing, and sharing my programmi
 
 # 🔖 Tags
 
-#Java #100DaysOfJava #100DaysOfCode #JavaProgramming #LeetCode #HackerRank #DataStructures #Algorithms #DSA #ProblemSolving #CodingChallenge #Arrays #Strings #SlidingWindow #HashMap #SubstringConcatenation #LinkedList #SwapNodesInPairs #ReverseNodesInKGroup #PointerManipulation #ObjectOrientedProgramming #JavaCollections #Recursion #Stack #Queue #CodingJourney #GitHub #LearningInPublic #SoftwareDevelopment #Programming #CodeEveryDay
+#Java #100DaysOfJava #100DaysOfCode #JavaProgramming #LeetCode #HackerRank #DataStructures #Algorithms #DSA #ProblemSolving #CodingChallenge #Arrays #Strings #StringSearching #SlidingWindow #HashMap #SubstringConcatenation #LinkedList #SwapNodesInPairs #ReverseNodesInKGroup #PointerManipulation #ObjectOrientedProgramming #JavaCollections #Recursion #Stack #Queue #CodingJourney #GitHub #LearningInPublic #SoftwareDevelopment #Programming #CodeEveryDay
 
 ---
 
@@ -845,7 +975,7 @@ Your support motivates me to keep learning, practicing, and sharing my programmi
 > "Success comes from consistency, practice, and the willingness to learn every day." 💻🔥
 
 <p align="center">
-  <strong>☕ 95 Days Completed | 5 Days Remaining | 🎯 100 Days Goal</strong>
+  <strong>☕ 96 Days Completed | 4 Days Remaining | 🎯 100 Days Goal</strong>
 </p>
 
 <p align="center">
