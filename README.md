@@ -4,7 +4,8 @@
   <img src="https://img.shields.io/badge/100%20Days-Java%20Challenge-orange?style=for-the-badge" alt="100 Days Java Challenge">
   <img src="https://img.shields.io/badge/Language-Java-blue?style=for-the-badge" alt="Java">
   <img src="https://img.shields.io/badge/Platform-LeetCode-yellow?style=for-the-badge" alt="LeetCode">
-  <img src="https://img.shields.io/badge/Progress-99%25-success?style=for-the-badge" alt="99% Progress">
+  <img src="https://img.shields.io/badge/Progress-100%25-brightgreen?style=for-the-badge" alt="100% Progress">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Challenge Completed">
 </p>
 
 <p align="center">
@@ -12,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 99 Days Completed | 1 Day Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 100 Days Completed | 🏆 Challenge Successfully Completed!</strong>
 </p>
 
 ---
@@ -23,9 +24,9 @@ Welcome to my **#100DaysOfJavaChallenge** repository! ☕
 
 This repository represents my 100-day journey of learning Java, strengthening programming fundamentals, and solving coding challenges through consistent daily practice.
 
-Throughout this challenge, I have worked on Java programming concepts, Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and problem-solving techniques. I have also practiced coding problems on LeetCode to improve my logical thinking, coding efficiency, and technical interview preparation.
+Throughout this challenge, I worked on Java programming concepts, Object-Oriented Programming (OOP), Data Structures and Algorithms (DSA), and problem-solving techniques. I also practiced coding problems on LeetCode to improve my logical thinking, coding efficiency, and technical interview preparation.
 
-Each day represents a new opportunity to learn, practice, solve problems, and improve my programming skills.
+Each day was an opportunity to learn something new, practice coding, solve problems, and improve my programming skills.
 
 ### 🎯 Challenge Objectives
 
@@ -45,6 +46,7 @@ Each day represents a new opportunity to learn, practice, solve problems, and im
 ## 📚 Topics Covered
 
 ### ☕ Java Fundamentals
+
 - Variables and Data Types
 - Operators and Expressions
 - Conditional Statements
@@ -54,6 +56,7 @@ Each day represents a new opportunity to learn, practice, solve problems, and im
 - String Manipulation
 
 ### 📦 Object-Oriented Programming
+
 - Classes and Objects
 - Inheritance
 - Polymorphism
@@ -63,6 +66,7 @@ Each day represents a new opportunity to learn, practice, solve problems, and im
 - Interfaces
 
 ### 📊 Data Structures
+
 - Arrays
 - Strings
 - Linked Lists
@@ -76,6 +80,7 @@ Each day represents a new opportunity to learn, practice, solve problems, and im
 - Heap
 
 ### ⚙️ Algorithms and Problem-Solving Techniques
+
 - Linear Search
 - Binary Search
 - Sorting Algorithms
@@ -89,6 +94,7 @@ Each day represents a new opportunity to learn, practice, solve problems, and im
 - Mathematical Algorithms
 
 ### 🏭 Advanced Java Concepts
+
 - Generics
 - Reflection
 - Varargs
@@ -136,6 +142,8 @@ The repository is organized into individual daily folders. Each folder contains 
     ├── Day-98/
     ├── Day-99/
     ├── Day-100/
+    │   ├── Combination Sum II.java
+    │   └── Screenshot 2026-11-03 075807.png
     │
     └── README.md
 
@@ -151,9 +159,9 @@ The repository is organized into individual daily folders. Each folder contains 
 ## 📈 Challenge Progress Tracker
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Completed-99%2F100-brightgreen?style=for-the-badge" alt="99 out of 100 completed">
-  <img src="https://img.shields.io/badge/Progress-99%25-success?style=for-the-badge" alt="99 percent completed">
-  <img src="https://img.shields.io/badge/Remaining-1%20Day-orange?style=for-the-badge" alt="1 day remaining">
+  <img src="https://img.shields.io/badge/Completed-100%2F100-brightgreen?style=for-the-badge" alt="100 out of 100 completed">
+  <img src="https://img.shields.io/badge/Progress-100%25-success?style=for-the-badge" alt="100 percent completed">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Challenge completed">
 </p>
 
 | Day | Challenge Status |
@@ -167,60 +175,72 @@ The repository is organized into individual daily folders. Each folder contains 
 | Day 61 – Day 70 | ✅ Completed |
 | Day 71 – Day 80 | ✅ Completed |
 | Day 81 – Day 90 | ✅ Completed |
-| Day 91 – Day 99 | ✅ Completed |
-| Day 100 | ⏳ Remaining |
+| Day 91 – Day 100 | ✅ Completed |
 
-### 🏆 Current Challenge Statistics
+### 🏆 Final Challenge Statistics
 
-| Metric | Progress |
+| Metric | Achievement |
 |---|---:|
 | Total Challenge Days | 100 |
-| Completed Days | 99 |
-| Remaining Days | 1 |
-| Completion Percentage | 99% |
+| Completed Days | 100 |
+| Remaining Days | 0 |
+| Completion Percentage | 100% |
 | Programming Language | Java |
 | Coding Platform | LeetCode |
-| Challenge Status | In Progress |
+| Challenge Status | 🏆 Successfully Completed |
 
 ---
 
-## 💻 Latest Coding Challenge – Day 99
+## 💻 Final Coding Challenge – Day 100
 
-### 🧩 Combination Sum
+### 🧩 Combination Sum II
 
 | Detail | Information |
 |---|---|
-| Day | 99 |
-| Problem Name | Combination Sum |
-| Problem Number | 39 |
+| Day | 100 |
+| Problem Name | Combination Sum II |
+| Problem Number | 40 |
 | Platform | LeetCode |
 | Difficulty | Medium |
 | Programming Language | Java |
-| Topics | Array, Backtracking, Recursion |
-| Directory | `Day-99` |
+| Topics | Array, Backtracking, Recursion, Sorting |
+| Directory | `Day-100` |
+| Solution File | `Combination Sum II.java` |
+| Screenshot | `Screenshot 2026-11-03 075807.png` |
 | Status | ✅ Completed |
 
 ### 📝 Problem Description
 
-Given an array of distinct integers called `candidates` and a target integer, return all unique combinations of candidates where the chosen numbers sum to the target.
+Given a collection of candidate numbers and a target number, find all unique combinations in the candidates where the chosen numbers sum to the target.
 
-The same number may be chosen an unlimited number of times. The solution must return all possible combinations without duplicate combinations.
+Each number in the candidates may only be used once in the combination.
+
+The solution must not contain duplicate combinations.
 
 ### ⚙️ Approach
 
-- Used recursion and backtracking to explore possible combinations.
-- Selected a candidate and recursively searched for the remaining target.
-- Allowed the same candidate to be reused.
+- Used sorting to arrange the candidate numbers.
+- Applied recursion and backtracking to explore possible combinations.
+- Selected candidates while keeping track of the remaining target.
+- Used each candidate at most once in a combination.
+- Skipped duplicate values at the same recursion level to avoid duplicate combinations.
 - Backtracked when a combination was completed or became invalid.
-- Stored all valid combinations in the result list.
+- Stored all valid unique combinations in the result list.
 
 ### 💡 Key Learnings
 
-- Understanding recursion and backtracking.
-- Exploring different combinations.
-- Managing recursive function calls.
-- Using arrays effectively.
+- Understanding the backtracking technique.
+- Applying recursion to generate combinations.
+- Handling duplicate elements in arrays.
+- Using sorting to simplify duplicate handling.
+- Understanding how to avoid repeated combinations.
 - Improving logical thinking and problem-solving skills.
+
+### 🎉 Day 100 Achievement
+
+Successfully completed **Day 100 – Combination Sum II**, marking the completion of my 100 Days of Java Challenge!
+
+This final problem strengthened my understanding of recursion, sorting, and backtracking while bringing this 100-day coding journey to a successful end.
 
 ---
 
@@ -233,13 +253,13 @@ The same number may be chosen an unlimited number of times. The solution must re
 | Day 97 | Coding Challenge | LeetCode | — | ✅ Completed |
 | Day 98 | Coding Challenge | LeetCode | — | ✅ Completed |
 | Day 99 | Combination Sum | LeetCode | Medium | ✅ Completed |
-| Day 100 | Final Coding Challenge | LeetCode | — | ⏳ Upcoming |
+| Day 100 | Combination Sum II | LeetCode | Medium | ✅ Completed |
 
 ---
 
 ## 🧠 Problem-Solving Approach
 
-I follow a structured approach while solving coding problems:
+I followed a structured approach while solving coding problems:
 
 1. **Understand the Problem:** Read and analyze the problem statement carefully.
 2. **Identify the Concepts:** Determine the relevant data structures and algorithms.
@@ -253,7 +273,7 @@ I follow a structured approach while solving coding problems:
 
 ## 🌟 Skills Developed
 
-This 100-day challenge has helped me continuously improve my:
+This 100-day challenge helped me continuously improve my:
 
 - Java Programming
 - Object-Oriented Programming
@@ -296,13 +316,13 @@ This 100-day challenge has helped me continuously improve my:
 | 🎯 75 Days | Practiced advanced DSA concepts |
 | 🎯 90 Days | Developed consistency and coding confidence |
 | 🎯 99 Days | Reached 99% challenge completion |
-| 🏆 100 Days | Final milestone – Upcoming |
+| 🏆 100 Days | Successfully completed the challenge |
 
 ---
 
 ## 📖 Learning Approach
 
-My learning approach throughout this challenge focuses on:
+My learning approach throughout this challenge focused on:
 
 - Practicing coding every day.
 - Understanding concepts instead of memorizing solutions.
@@ -333,7 +353,21 @@ After completing this challenge, I aim to:
 
 I believe that sharing the learning journey helps build consistency, connect with other developers, and stay motivated.
 
-I regularly document my coding progress and share important milestones through GitHub and LinkedIn.
+Throughout these 100 days, I documented my coding progress and shared important milestones through GitHub and LinkedIn.
+
+This journey taught me that consistent practice, patience, and dedication are essential for continuous improvement.
+
+---
+
+## 🏆 100 Days of Java – Successfully Completed!
+
+Completing this challenge is an important milestone in my programming journey.
+
+Over these 100 days, I consistently practiced Java, solved coding problems, explored different algorithms, and improved my problem-solving abilities.
+
+Every problem brought a new learning experience, and every challenge helped me become more confident in writing code.
+
+**100 Days Completed. 100 Days of Learning. One Step Forward in My Coding Journey!** ☕
 
 ---
 
@@ -375,7 +409,7 @@ Your support and feedback are always appreciated!
 </p>
 
 <p align="center">
-  <strong>☕ 99 Days Completed | 1 Day Remaining | 🎯 100 Days Goal</strong>
+  <strong>🏆 100 Days Completed | 100% Progress | Challenge Successfully Completed!</strong>
 </p>
 
 <p align="center">
